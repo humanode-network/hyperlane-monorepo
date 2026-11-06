@@ -1,0 +1,66 @@
+name: NPM Release
+
+# Publishes the workspace packages under the `@humanode-hyperlane` npm scope on a
+# manually pushed `npm-v<sdk version>` tag, with upstream's `pnpm release`.
+# Upstream's `release.yml` drives the same command through changesets release PRs
+# and a GitHub App, and is not used in this fork.
+
+on:
+  push:
+    tags:
+      - 'npm-v*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  LOG_FORMAT: PRETTY
+  TURBO_TELEMETRY_DISABLED: 1
+  # The Starknet build fetches its contracts through the GitHub API, which
+  # limits unauthenticated requests per IP address.
+  GITHUB_TOKEN: ${{ github.token }}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: read
+      # Signs the npm provenance statements.
+      id-token: write
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Setup Foundry
+        uses: ./.github/actions/setup-foundry
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Check the tag against the SDK version
+        run: |
+          SDK_VERSION=$(jq -r .version typescript/sdk/package.json)
+          if [ "$GITHUB_REF_NAME" != "npm-v$SDK_VERSION" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match the SDK version $SDK_VERSION"
+            exit 1
+          fi
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build and publish
+        run: pnpm release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
