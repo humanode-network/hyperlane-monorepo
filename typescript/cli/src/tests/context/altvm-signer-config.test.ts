@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { TxSubmitterType } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { TxSubmitterType } from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import {
   resolveAltVmAccountAddress,

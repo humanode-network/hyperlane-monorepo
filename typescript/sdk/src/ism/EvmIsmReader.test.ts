@@ -25,8 +25,8 @@ import {
   TestIsm__factory,
   TrustedRelayerIsm,
   TrustedRelayerIsm__factory,
-} from '@hyperlane-xyz/core';
-import { WithAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { WithAddress } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

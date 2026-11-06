@@ -6,8 +6,8 @@ import {
   ChainName,
   ChainStatus,
   mergeChainMetadataMap,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, objMap } from '@humanode-hyperlane/utils';
 
 import {
   SearchMenu,

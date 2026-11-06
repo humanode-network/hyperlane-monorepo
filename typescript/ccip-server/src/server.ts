@@ -3,8 +3,8 @@ import express from 'express';
 import { pinoHttp } from 'pino-http';
 import { Registry } from 'prom-client';
 
-import { startMetricsServer } from '@hyperlane-xyz/metrics';
-import { createServiceLogger } from '@hyperlane-xyz/utils';
+import { startMetricsServer } from '@humanode-hyperlane/metrics';
+import { createServiceLogger } from '@humanode-hyperlane/utils';
 
 import { getEnabledModules } from './config.js';
 import { ServiceFactory } from './services/BaseService.js';

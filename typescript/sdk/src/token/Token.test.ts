@@ -3,7 +3,7 @@ import { SystemProgram } from '@solana/web3.js';
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { Address, ProtocolType } from '@hyperlane-xyz/utils';
+import { Address, ProtocolType } from '@humanode-hyperlane/utils';
 
 import {
   TestChainName,

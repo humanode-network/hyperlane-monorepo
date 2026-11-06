@@ -3,8 +3,8 @@ import type { DeliverTxResponse } from '@cosmjs/cosmwasm-stargate';
 import { useChain, useChains } from '@cosmos-kit/react';
 import { useCallback, useMemo } from 'react';
 
-import { CosmosNativeSigner } from '@hyperlane-xyz/cosmos-sdk';
-import { cosmoshub } from '@hyperlane-xyz/registry';
+import { CosmosNativeSigner } from '@humanode-hyperlane/cosmos-sdk';
+import { cosmoshub } from '@humanode-hyperlane/registry';
 import {
   ChainMetadata,
   ChainName,
@@ -14,8 +14,8 @@ import {
   TypedTransactionReceipt,
   WarpTypedTransaction,
   chainMetadataToCosmosChain,
-} from '@hyperlane-xyz/sdk';
-import { HexString, ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { HexString, ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

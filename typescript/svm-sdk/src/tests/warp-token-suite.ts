@@ -2,13 +2,13 @@ import { address, type Address } from '@solana/kit';
 import { expect } from 'chai';
 import { it } from 'mocha';
 
-import type { ArtifactWriter } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+import type { ArtifactWriter } from '@humanode-hyperlane/provider-sdk/artifact';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
 import type {
   DeployedWarpAddress,
   RawNativeWarpArtifactConfig,
   RawWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 
 import { SvmSigner } from '../clients/signer.js';
 import { getProgramUpgradeAuthority } from '../deploy/program-deployer.js';

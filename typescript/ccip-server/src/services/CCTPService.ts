@@ -6,9 +6,9 @@ import { z } from 'zod';
 import {
   CctpService__factory,
   IMessageTransmitter__factory,
-} from '@hyperlane-xyz/core';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
-import { parseMessage } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
+import { parseMessage } from '@humanode-hyperlane/utils';
 
 import { createAbiHandler } from '../utils/abiHandler.js';
 import {

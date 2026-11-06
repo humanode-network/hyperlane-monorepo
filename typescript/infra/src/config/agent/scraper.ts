@@ -2,7 +2,7 @@ import {
   AgentConfig,
   ChainMap,
   ScraperConfig as ScraperAgentConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { Role } from '../../roles.js';
 import type { HelmStatefulSetValues } from '../infrastructure.js';

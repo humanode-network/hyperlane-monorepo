@@ -14,11 +14,11 @@ pragma solidity >=0.8.0;
 @@@@@@@@@       @@@@@@@@*/
 
 // ============ Core Imports ============
-import {HypERC20Collateral} from "@hyperlane-xyz/core/token/HypERC20Collateral.sol";
-import {TokenMessage} from "@hyperlane-xyz/core/token/libs/TokenMessage.sol";
-import {TypeCasts} from "@hyperlane-xyz/core/libs/TypeCasts.sol";
-import {IPostDispatchHook} from "@hyperlane-xyz/core/interfaces/hooks/IPostDispatchHook.sol";
-import {Quote} from "@hyperlane-xyz/core/interfaces/ITokenBridge.sol";
+import {HypERC20Collateral} from "@humanode-hyperlane/core/token/HypERC20Collateral.sol";
+import {TokenMessage} from "@humanode-hyperlane/core/token/libs/TokenMessage.sol";
+import {TypeCasts} from "@humanode-hyperlane/core/libs/TypeCasts.sol";
+import {IPostDispatchHook} from "@humanode-hyperlane/core/interfaces/hooks/IPostDispatchHook.sol";
+import {Quote} from "@humanode-hyperlane/core/interfaces/ITokenBridge.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";

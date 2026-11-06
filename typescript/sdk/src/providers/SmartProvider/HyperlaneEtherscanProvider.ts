@@ -1,6 +1,6 @@
 import { providers } from 'ethers';
 
-import { objFilter, rootLogger, sleep } from '@hyperlane-xyz/utils';
+import { objFilter, rootLogger, sleep } from '@humanode-hyperlane/utils';
 
 import { BlockExplorer } from '../../metadata/chainMetadataTypes.js';
 

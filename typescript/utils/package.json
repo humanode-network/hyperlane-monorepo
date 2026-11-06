@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/utils",
+  "name": "@humanode-hyperlane/utils",
   "version": "30.0.0",
   "description": "General utilities and types for the Hyperlane network",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "homepage": "https://www.hyperlane.xyz",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "/dist"
   ],
@@ -61,7 +61,7 @@
     "yaml": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/bs58": "catalog:",
     "@types/chai": "catalog:",
     "@types/lodash-es": "catalog:",

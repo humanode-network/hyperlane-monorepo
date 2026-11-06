@@ -7,8 +7,8 @@ import type {
   TransactionSigner,
 } from '@solana/kit';
 
-import type { DeployedHookAddress } from '@hyperlane-xyz/provider-sdk/hook';
-import type { DeployedIsmAddress } from '@hyperlane-xyz/provider-sdk/ism';
+import type { DeployedHookAddress } from '@humanode-hyperlane/provider-sdk/hook';
+import type { DeployedIsmAddress } from '@humanode-hyperlane/provider-sdk/ism';
 
 export type SvmInstruction = Instruction;
 

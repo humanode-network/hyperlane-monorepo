@@ -1,6 +1,6 @@
 # Hyperlane HTTP Registry Server
 
-An HTTP server that provides a RESTful API for accessing data from the Hyperlane V3 registry. This server acts as a wrapper around the `@hyperlane-xyz/registry` package, making registry data available over the network.
+An HTTP server that provides a RESTful API for accessing data from the Hyperlane V3 registry. This server acts as a wrapper around the `@humanode-hyperlane/registry` package, making registry data available over the network.
 
 ## Features
 
@@ -77,7 +77,7 @@ The server is configured using environment variables. You can place these in a `
   - Retrieves the entire content of the registry.
 - **`GET /warp-routes`**
   - Retrieves a list of all warp routes, with optional filtering.
-  - **Query Parameters**: Based on `WarpRouteFilterSchema` from `@hyperlane-xyz/registry`.
+  - **Query Parameters**: Based on `WarpRouteFilterSchema` from `@humanode-hyperlane/registry`.
 
 ### Chains
 
@@ -93,7 +93,7 @@ The server is configured using environment variables. You can place these in a `
   - Adds or updates the configuration for a specific chain. This endpoint is intended for dynamic, local registries and may not be available for all registry types.
   - **URL Parameters**:
     - `chain`: The name of the chain to update.
-  - **Request Body**: A JSON object matching the `UpdateChainSchema` from `@hyperlane-xyz/registry`.
+  - **Request Body**: A JSON object matching the `UpdateChainSchema` from `@humanode-hyperlane/registry`.
 
 ### Warp Routes
 

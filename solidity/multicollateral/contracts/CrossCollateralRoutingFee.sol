@@ -2,7 +2,7 @@
 pragma solidity >=0.8.0;
 
 import {ICrossCollateralFee} from "./interfaces/ICrossCollateralFee.sol";
-import {ITokenFee, Quote} from "@hyperlane-xyz/core/interfaces/ITokenBridge.sol";
+import {ITokenFee, Quote} from "@humanode-hyperlane/core/interfaces/ITokenBridge.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";

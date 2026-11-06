@@ -1,6 +1,6 @@
 import { constants } from 'ethers';
 
-import { Ownable, Ownable__factory } from '@hyperlane-xyz/core';
+import { Ownable, Ownable__factory } from '@humanode-hyperlane/core';
 import {
   Address,
   EvmChainId,
@@ -15,7 +15,7 @@ import {
   objMap,
   pick,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { EthersLikeProvider } from '../deploy/proxy.js';
 import { ChainMetadataManager } from '../metadata/ChainMetadataManager.js';

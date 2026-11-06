@@ -2,8 +2,8 @@ import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers.js';
 import { expect } from 'chai';
 import hre from 'hardhat';
 
-import { ERC20Test, ERC20Test__factory } from '@hyperlane-xyz/core';
-import { addressToBytes32, randomInt } from '@hyperlane-xyz/utils';
+import { ERC20Test, ERC20Test__factory } from '@humanode-hyperlane/core';
+import { addressToBytes32, randomInt } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { utils } from 'ethers';
 import hre from 'hardhat';
 
-import { InterchainGasPaymaster } from '@hyperlane-xyz/core';
+import { InterchainGasPaymaster } from '@humanode-hyperlane/core';
 
 import { TestChainName } from '../../consts/testChains.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

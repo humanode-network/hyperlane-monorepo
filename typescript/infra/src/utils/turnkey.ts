@@ -3,8 +3,8 @@ import {
   TurnkeyConfig,
   TurnkeyEvmSigner,
   TurnkeySealevelSigner,
-} from '@hyperlane-xyz/sdk';
-import { isEVMLike, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { isEVMLike, rootLogger } from '@humanode-hyperlane/utils';
 
 import { DeployEnvironment } from '../config/environment.js';
 import { TurnkeyRole } from '../roles.js';

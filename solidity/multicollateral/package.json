@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/multicollateral",
+  "name": "@humanode-hyperlane/multicollateral",
   "description": "CrossCollateralRouter solidity contracts and typechain artifacts for Hyperlane",
   "version": "1.0.2",
   "type": "module",
@@ -20,7 +20,7 @@
     "node": ">=18"
   },
   "homepage": "https://www.hyperlane.xyz",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "keywords": [
     "Hyperlane",
     "Solidity",
@@ -38,7 +38,7 @@
     "test:fork": "pnpm deps:soldeer && sh -c '. ../.env.default && forge test -vvv --match-contract ForkTest'"
   },
   "dependencies": {
-    "@hyperlane-xyz/core": "workspace:*"
+    "@humanode-hyperlane/core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "catalog:",

@@ -19,8 +19,8 @@ import { KmsEthersSigner } from 'aws-kms-ethers-signer';
 import { ethers } from 'ethers';
 import { Logger } from 'pino';
 
-import { AgentSignerKeyType, ChainName } from '@hyperlane-xyz/sdk';
-import { retryAsync, rootLogger, sleep } from '@hyperlane-xyz/utils';
+import { AgentSignerKeyType, ChainName } from '@humanode-hyperlane/sdk';
+import { retryAsync, rootLogger, sleep } from '@humanode-hyperlane/utils';
 
 import { AgentContextConfig, AwsKeyConfig } from '../../config/agent/agent.js';
 import { Role } from '../../roles.js';

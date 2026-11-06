@@ -1,8 +1,8 @@
 import { BigNumber } from 'bignumber.js';
 import { type Logger } from 'pino';
 
-import { type ChainMap, type Token } from '@hyperlane-xyz/sdk';
-import { fromWei, toWei } from '@hyperlane-xyz/utils';
+import { type ChainMap, type Token } from '@humanode-hyperlane/sdk';
+import { fromWei, toWei } from '@humanode-hyperlane/utils';
 
 import {
   type MinAmountStrategyConfig,

@@ -4,9 +4,9 @@ import { type BigNumberish, Wallet, utils } from 'ethers';
 import {
   ECDSAStakeRegistry__factory,
   TestAVSDirectory__factory,
-} from '@hyperlane-xyz/core';
-import { type ChainName } from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { type ChainName } from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { type WriteCommandContext } from '../context/types.js';
 import { log, logBlue } from '../logger.js';

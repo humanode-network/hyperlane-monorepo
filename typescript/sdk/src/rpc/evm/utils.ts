@@ -1,6 +1,6 @@
 import { Hex, Log } from 'viem';
 
-import { Address, assert } from '@hyperlane-xyz/utils';
+import { Address, assert } from '@humanode-hyperlane/utils';
 
 import {
   assertIsContractAddress,

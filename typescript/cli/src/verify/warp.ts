@@ -1,6 +1,6 @@
 import { type ContractFactory } from 'ethers';
 
-import { buildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { buildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
 import {
   type ChainMap,
   type DeployableTokenType,
@@ -16,8 +16,8 @@ import {
   isProxy,
   proxyImplementation,
   verificationUtils,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, objFilter } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, assert, objFilter } from '@humanode-hyperlane/utils';
 
 import { requestAndSaveApiKeys } from '../context/context.js';
 import { type CommandContext } from '../context/types.js';

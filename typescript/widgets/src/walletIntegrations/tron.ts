@@ -9,14 +9,14 @@ import {
   ProviderType,
   TypedTransactionReceipt,
   WarpTypedTransaction,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import {
   TronJsonRpcProvider,
   TronTransactionBuilder,
   TronTransactionResponse,
-} from '@hyperlane-xyz/tron-sdk';
+} from '@humanode-hyperlane/tron-sdk';
 
 import {
   AccountInfo,

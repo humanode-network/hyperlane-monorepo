@@ -10,7 +10,7 @@ import {
   derivedIsmAddress,
   transformConfigToCheck,
   verifyScale,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type ObjectDiff,
   assert,
@@ -19,7 +19,7 @@ import {
   isEVMLike,
   keepOnlyDiffObjects,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { log, logGreen, logRed, warnYellow } from '../logger.js';

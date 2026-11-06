@@ -4,7 +4,7 @@ import {
   HypTokenRouterConfig,
   TokenType,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 

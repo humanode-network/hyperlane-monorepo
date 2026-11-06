@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/cosmos-sdk",
+  "name": "@humanode-hyperlane/cosmos-sdk",
   "version": "30.0.0",
   "description": "Hyperlane TypeScript SDK for the Cosmos Hyperlane SDK module",
   "keywords": [
@@ -10,7 +10,7 @@
   ],
   "homepage": "https://www.hyperlane.xyz",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "/dist"
   ],
@@ -42,12 +42,12 @@
     "@cosmjs/proto-signing": "catalog:",
     "@cosmjs/stargate": "catalog:",
     "@cosmjs/tendermint-rpc": "catalog:",
-    "@hyperlane-xyz/cosmos-types": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*"
+    "@humanode-hyperlane/cosmos-types": "workspace:*",
+    "@humanode-hyperlane/provider-sdk": "workspace:*",
+    "@humanode-hyperlane/utils": "workspace:*"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

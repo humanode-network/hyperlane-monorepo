@@ -3,8 +3,8 @@ import {
   HypTokenConfig,
   HypTokenRouterConfig,
   TokenType,
-} from '@hyperlane-xyz/sdk';
-import { objFilter } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { objFilter } from '@humanode-hyperlane/utils';
 
 import {
   RouterConfigWithoutOwner,

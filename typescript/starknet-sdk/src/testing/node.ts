@@ -1,7 +1,12 @@
 import { GenericContainer, StartedTestContainer } from 'testcontainers';
 
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert, retryAsync, rootLogger, sleep } from '@hyperlane-xyz/utils';
+import { TestChainMetadata } from '@humanode-hyperlane/provider-sdk/chain';
+import {
+  assert,
+  retryAsync,
+  rootLogger,
+  sleep,
+} from '@humanode-hyperlane/utils';
 
 import {
   STARKNET_DEVNET_IMAGE,

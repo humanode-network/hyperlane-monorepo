@@ -3,7 +3,7 @@ import { groupBy } from 'lodash-es';
 import {
   type SubmissionStrategy,
   SubmissionStrategySchema,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { getTransactions, runSubmit } from '../config/submit.js';
 import { type CommandModuleWithWriteContext } from '../context/types.js';

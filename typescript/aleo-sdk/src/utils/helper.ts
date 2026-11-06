@@ -1,11 +1,11 @@
 import { BHP256, Plaintext, Program, U128 } from '@provablehq/sdk/mainnet.js';
 
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
+import { TokenType } from '@humanode-hyperlane/provider-sdk/warp';
 import {
   isValidAddressAleo,
   isZeroishAddress,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type AleoProgram, programRegistry } from '../artifacts.js';
 import { type AnyAleoNetworkClient } from '../clients/base.js';

@@ -1,8 +1,11 @@
 import { $, type ProcessPromise } from 'zx';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { type ChainName, type DerivedCoreConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
+import {
+  type ChainName,
+  type DerivedCoreConfig,
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../context/context.js';
 import { readYamlOrJson } from '../../utils/files.js';

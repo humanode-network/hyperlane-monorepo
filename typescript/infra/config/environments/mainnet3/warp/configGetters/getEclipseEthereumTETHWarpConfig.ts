@@ -5,7 +5,7 @@ import {
   HypTokenRouterConfig,
   RouterConfig,
   TokenType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { SEALEVEL_WARP_ROUTE_HANDLER_GAS_AMOUNT } from '../consts.js';
 

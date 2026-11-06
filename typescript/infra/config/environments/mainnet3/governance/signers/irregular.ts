@@ -1,4 +1,4 @@
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@humanode-hyperlane/utils';
 
 export const irregularSigners: Address[] = [
   '0x9f500df92175b2ac36f8d443382b219d211d354a',

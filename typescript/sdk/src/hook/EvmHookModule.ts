@@ -26,7 +26,7 @@ import {
   StaticAggregationHook__factory,
   StorageGasOracle,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   Domain,
@@ -39,7 +39,7 @@ import {
   eqAddress,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { CCIPContractCache } from '../ccip/utils.js';
 import { TOKEN_EXCHANGE_RATE_SCALE_ETHEREUM } from '../consts/igp.js';

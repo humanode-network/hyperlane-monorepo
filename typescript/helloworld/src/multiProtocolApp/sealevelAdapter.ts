@@ -21,8 +21,8 @@ import {
   SealevelRouterAdapter,
   SolanaWeb3Transaction,
   getSealevelAccountDataSchema,
-} from '@hyperlane-xyz/sdk';
-import { Address, Domain } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, Domain } from '@humanode-hyperlane/utils';
 
 import { IHelloWorldAdapter } from './types.js';
 

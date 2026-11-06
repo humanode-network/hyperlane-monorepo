@@ -2,13 +2,13 @@
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import type { TestIsmConfig } from '@hyperlane-xyz/provider-sdk/ism';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import type { TestIsmConfig } from '@humanode-hyperlane/provider-sdk/ism';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmIsmArtifactManager } from '../ism/ism-artifact-manager.js';

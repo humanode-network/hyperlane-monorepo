@@ -10,8 +10,8 @@ import {
   type WarpRouteDeployConfigMailboxRequired,
   type XERC20LimitsMap,
   isXERC20TokenConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, objFilter } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, assert, objFilter } from '@humanode-hyperlane/utils';
 
 import { runSubmit } from '../config/submit.js';
 import {

@@ -2,7 +2,7 @@ import {
   ALEO_NATIVE_DENOM,
   AleoProvider,
   AleoTransaction,
-} from '@hyperlane-xyz/aleo-sdk';
+} from '@humanode-hyperlane/aleo-sdk';
 import {
   Address,
   Domain,
@@ -10,7 +10,7 @@ import {
   addressToBytes32,
   assert,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { BaseAleoAdapter } from '../../app/MultiProtocolApp.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

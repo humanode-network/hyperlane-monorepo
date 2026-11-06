@@ -1,8 +1,8 @@
 import { clsx } from 'clsx';
 import React, { ButtonHTMLAttributes } from 'react';
 
-import { ChainName, MultiProtocolProvider } from '@hyperlane-xyz/sdk';
-import { ProtocolType, objKeys } from '@hyperlane-xyz/utils';
+import { ChainName, MultiProtocolProvider } from '@humanode-hyperlane/sdk';
+import { ProtocolType, objKeys } from '@humanode-hyperlane/utils';
 
 import { Button } from '../components/Button.js';
 import { IconButton } from '../components/IconButton.js';

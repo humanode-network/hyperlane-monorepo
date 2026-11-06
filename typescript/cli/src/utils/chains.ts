@@ -8,8 +8,8 @@ import {
   type ChainMetadata,
   ChainStatus,
   type MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { type ProtocolType, toTitleCase } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type ProtocolType, toTitleCase } from '@humanode-hyperlane/utils';
 
 import { log } from '../logger.js';
 

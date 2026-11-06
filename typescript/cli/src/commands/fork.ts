@@ -1,7 +1,7 @@
 import {
   type RawForkedChainConfigByChain,
   RawForkedChainConfigByChainSchema,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { type CommandModuleWithContext } from '../context/types.js';
 import { runForkCommand } from '../fork/fork.js';

@@ -12,7 +12,7 @@ import {
   IsmCacheConfig,
   MatchingList,
   RelayerConfig as RelayerAgentConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   addressToBytes32,
@@ -21,7 +21,7 @@ import {
   objMap,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   getChain,

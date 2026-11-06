@@ -1,9 +1,9 @@
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 
-import { isNullish } from '@hyperlane-xyz/utils';
+import { isNullish } from '@humanode-hyperlane/utils';
 
 import { AleoSigner } from '../clients/signer.js';
 import {

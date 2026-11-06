@@ -5,8 +5,8 @@ import {
   type ChainName,
   type Token,
   type WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType, sleep } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, ProtocolType, sleep } from '@humanode-hyperlane/utils';
 
 import {
   type ConfirmedBlockTag,

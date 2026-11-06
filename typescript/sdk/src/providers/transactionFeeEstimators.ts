@@ -17,7 +17,7 @@ import {
   ProtocolType,
   assert,
   convertToProtocolAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ChainMetadata } from '../metadata/chainMetadataTypes.js';
 

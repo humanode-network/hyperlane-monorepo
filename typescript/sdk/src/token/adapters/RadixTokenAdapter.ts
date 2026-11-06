@@ -1,6 +1,9 @@
 import { BigNumber } from 'bignumber.js';
 
-import { RadixProvider, RadixSDKTransaction } from '@hyperlane-xyz/radix-sdk';
+import {
+  RadixProvider,
+  RadixSDKTransaction,
+} from '@humanode-hyperlane/radix-sdk';
 import {
   Address,
   Domain,
@@ -8,7 +11,7 @@ import {
   assert,
   fromWei,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { BaseRadixAdapter } from '../../app/MultiProtocolApp.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

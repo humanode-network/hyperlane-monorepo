@@ -1,4 +1,4 @@
-import { ChainId, Domain } from '@hyperlane-xyz/utils';
+import { ChainId, Domain } from '@humanode-hyperlane/utils';
 
 import { ProtocolType } from './protocol.js';
 

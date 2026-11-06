@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { MailboxOnChain } from '@hyperlane-xyz/provider-sdk/mailbox';
-import { ZERO_ADDRESS_HEX_32, assert } from '@hyperlane-xyz/utils';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import { MailboxOnChain } from '@humanode-hyperlane/provider-sdk/mailbox';
+import { ZERO_ADDRESS_HEX_32, assert } from '@humanode-hyperlane/utils';
 
 import { RadixSigner } from '../clients/signer.js';
 import { RadixMailboxArtifactManager } from '../mailbox/mailbox-artifact-manager.js';

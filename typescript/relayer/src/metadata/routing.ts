@@ -1,7 +1,7 @@
 import {
   DefaultFallbackRoutingIsm__factory,
   IRoutingIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   ChainName,
   DerivedIsmConfig,
@@ -10,8 +10,8 @@ import {
   IsmType,
   RoutingIsmConfig,
   isDynamicallyRoutedIsmType,
-} from '@hyperlane-xyz/sdk';
-import { WithAddress, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { WithAddress, assert } from '@humanode-hyperlane/utils';
 
 import type { BaseMetadataBuilder } from './builder.js';
 import { decodeIsmMetadata } from './decode.js';

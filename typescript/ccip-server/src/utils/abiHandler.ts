@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 import type { Request, Response } from 'express';
 import { z } from 'zod';
 
-import { offchainLookupRequestMessageHash } from '@hyperlane-xyz/sdk';
+import { offchainLookupRequestMessageHash } from '@humanode-hyperlane/sdk';
 
 /**
  * Creates an Express handler that:

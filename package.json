@@ -1,8 +1,15 @@
 {
-  "name": "@hyperlane-xyz/monorepo",
+  "name": "@humanode-hyperlane/monorepo",
   "version": "0.0.0",
   "private": true,
   "description": "A pnpm workspace of core Hyperlane packages",
+  "workspaces": [
+    "solhint-plugin",
+    "solidity",
+    "solidity/multicollateral",
+    "typescript/*",
+    "starknet"
+  ],
   "scripts": {
     "agent-configs": "pnpm -C typescript/infra update-agent-config:mainnet3 && pnpm -C typescript/infra update-agent-config:testnet4",
     "build": "turbo run build",

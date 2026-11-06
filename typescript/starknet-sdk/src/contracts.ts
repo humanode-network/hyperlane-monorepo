@@ -15,7 +15,7 @@ import {
 import {
   ContractType,
   getCompiledContract,
-} from '@hyperlane-xyz/starknet-core';
+} from '@humanode-hyperlane/starknet-core';
 import {
   ZERO_ADDRESS_HEX_32,
   assert,
@@ -25,7 +25,7 @@ import {
   isZeroishAddress,
   normalizeAddressStarknet,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { StarknetAnnotatedTx } from './types.js';
 

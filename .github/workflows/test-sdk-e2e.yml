@@ -33,7 +33,7 @@ jobs:
       - name: pnpm-build
         uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: '@hyperlane-xyz/cosmos-sdk...'
+          build-filter: '@humanode-hyperlane/cosmos-sdk...'
 
       - name: Cosmos SDK e2e tests
         run: pnpm -C typescript/cosmos-sdk test:e2e
@@ -66,7 +66,7 @@ jobs:
       - name: pnpm-build
         uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: '@hyperlane-xyz/aleo-sdk...'
+          build-filter: '@humanode-hyperlane/aleo-sdk...'
 
       - name: Aleo SDK e2e tests (${{ matrix.test }})
         run: pnpm -C typescript/aleo-sdk test:e2e
@@ -86,7 +86,7 @@ jobs:
       - name: pnpm-build
         uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: '@hyperlane-xyz/radix-sdk...'
+          build-filter: '@humanode-hyperlane/radix-sdk...'
 
       - name: Radix SDK e2e tests
         run: pnpm -C typescript/radix-sdk test:e2e
@@ -119,7 +119,7 @@ jobs:
       - name: pnpm-build
         uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: '@hyperlane-xyz/starknet-sdk...'
+          build-filter: '@humanode-hyperlane/starknet-sdk...'
 
       - name: Starknet SDK e2e tests (${{ matrix.test }})
         run: pnpm -C typescript/starknet-sdk test:e2e
@@ -140,7 +140,7 @@ jobs:
       - name: pnpm-build
         uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: '@hyperlane-xyz/tron-sdk...'
+          build-filter: '@humanode-hyperlane/tron-sdk...'
 
       - name: Tron SDK e2e tests with coverage
         run: pnpm -C typescript/tron-sdk coverage
@@ -183,7 +183,7 @@ jobs:
       - name: pnpm-build
         uses: ./.github/actions/pnpm-build-with-cache
         with:
-          build-filter: '@hyperlane-xyz/sealevel-sdk...'
+          build-filter: '@humanode-hyperlane/sealevel-sdk...'
 
       - name: SVM SDK e2e tests (${{ matrix.test }})
         run: pnpm -C typescript/svm-sdk test:e2e

@@ -1,20 +1,20 @@
 import { expect } from 'chai';
 import { Wallet, ethers } from 'ethers';
 
-import { InterchainAccountRouter__factory } from '@hyperlane-xyz/core';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { InterchainAccountRouter__factory } from '@humanode-hyperlane/core';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type AccountConfig,
   type ChainMetadata,
   InterchainAccount,
   isContractAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   addressToBytes32,
   eqAddress,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../../context/context.js';
 import { IcaDeployStatus } from '../../../deploy/ica.js';

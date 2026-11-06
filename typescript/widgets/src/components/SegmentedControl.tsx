@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { toTitleCase } from '@hyperlane-xyz/utils';
+import { toTitleCase } from '@humanode-hyperlane/utils';
 
 interface SegmentedControlProps<O extends string> {
   options: O[];

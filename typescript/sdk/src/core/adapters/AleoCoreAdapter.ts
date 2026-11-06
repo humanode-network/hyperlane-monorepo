@@ -1,4 +1,9 @@
-import { Address, HexString, assert, pollAsync } from '@hyperlane-xyz/utils';
+import {
+  Address,
+  HexString,
+  assert,
+  pollAsync,
+} from '@humanode-hyperlane/utils';
 
 import { BaseAleoAdapter } from '../../app/MultiProtocolApp.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

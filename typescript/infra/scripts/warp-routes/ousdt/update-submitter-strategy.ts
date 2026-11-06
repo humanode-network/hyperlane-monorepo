@@ -6,9 +6,9 @@ import {
   ChainSubmissionStrategy,
   TxSubmitterType,
   WarpRouteDeployConfigSchema,
-} from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { writeYaml } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/sdk';
+import { rootLogger } from '@humanode-hyperlane/utils';
+import { writeYaml } from '@humanode-hyperlane/utils/fs';
 
 import { awSafes } from '../../../config/environments/mainnet3/governance/safe/aw.js';
 import { getWarpConfig } from '../../../config/warp.js';

@@ -14,8 +14,8 @@ import {
   MatchingList,
   ModuleType,
   RpcConsensusType,
-} from '@hyperlane-xyz/sdk';
-import { Address, addressToBytes32, objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, addressToBytes32, objMap } from '@humanode-hyperlane/utils';
 
 import {
   AgentChainConfig,

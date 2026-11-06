@@ -8,8 +8,8 @@ import {
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { isNullish, rootLogger } from '@hyperlane-xyz/utils';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { isNullish, rootLogger } from '@humanode-hyperlane/utils';
 
 import { token_registry } from '../artifacts.js';
 import { AleoSigner } from '../clients/signer.js';

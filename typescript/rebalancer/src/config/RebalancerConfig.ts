@@ -1,8 +1,8 @@
 import type { z } from 'zod';
 import { fromZodError } from 'zod-validation-error';
 
-import type { ProtocolType } from '@hyperlane-xyz/utils';
-import { readYamlOrJson } from '@hyperlane-xyz/utils/fs';
+import type { ProtocolType } from '@humanode-hyperlane/utils';
+import { readYamlOrJson } from '@humanode-hyperlane/utils/fs';
 
 import type { InventorySignerConfig } from '../core/InventoryRebalancer.js';
 import {

@@ -7,11 +7,11 @@
  * These functions validate that SDK configs are compatible with provider-sdk
  * requirements and provide clear error messages for unsupported features.
  */
-import { validateIsmConfig } from '@hyperlane-xyz/deploy-sdk';
-import { type CoreConfig as ProviderCoreConfig } from '@hyperlane-xyz/provider-sdk/core';
-import { type IsmConfig as ProviderIsmConfig } from '@hyperlane-xyz/provider-sdk/ism';
-import { type CoreConfig } from '@hyperlane-xyz/sdk';
-export { validateWarpConfigForAltVM } from '@hyperlane-xyz/sdk';
+import { validateIsmConfig } from '@humanode-hyperlane/deploy-sdk';
+import { type CoreConfig as ProviderCoreConfig } from '@humanode-hyperlane/provider-sdk/core';
+import { type IsmConfig as ProviderIsmConfig } from '@humanode-hyperlane/provider-sdk/ism';
+import { type CoreConfig } from '@humanode-hyperlane/sdk';
+export { validateWarpConfigForAltVM } from '@humanode-hyperlane/sdk';
 
 /**
  * Validates that a CoreConfig is compatible with provider-sdk requirements.

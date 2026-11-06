@@ -7,7 +7,7 @@ import {
   promiseObjAll,
   rootLogger,
   symmetricDifference,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ChainMetadata } from '../metadata/chainMetadataTypes.js';
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';

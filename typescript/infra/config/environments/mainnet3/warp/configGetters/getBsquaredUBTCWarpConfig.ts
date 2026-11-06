@@ -4,8 +4,8 @@ import {
   HypTokenRouterConfig,
   TokenType,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address } from '@humanode-hyperlane/utils';
 
 import {
   RouterConfigWithoutOwner,

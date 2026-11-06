@@ -1,4 +1,4 @@
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { TEST_SVM_CHAIN_METADATA } from '../testing/constants.js';
 import {

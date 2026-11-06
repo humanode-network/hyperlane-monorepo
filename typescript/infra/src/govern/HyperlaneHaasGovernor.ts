@@ -9,13 +9,13 @@ import {
   HyperlaneCoreChecker,
   InterchainAccount,
   ViolationType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   hasValidRefundAddress,
   isEVMLike,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { chainsToSkip } from '../config/chain.js';
 

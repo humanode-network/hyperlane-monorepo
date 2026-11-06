@@ -7,7 +7,7 @@ import {
   InterchainAccountRouter,
   TestRecipient,
   TestRecipient__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   AccountConfig,
   ChainMap,
@@ -29,8 +29,13 @@ import {
   TestCoreApp,
   TestCoreDeployer,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { Address, CallData, eqAddress, objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  Address,
+  CallData,
+  eqAddress,
+  objMap,
+} from '@humanode-hyperlane/utils';
 
 import {
   AnnotatedCallData,

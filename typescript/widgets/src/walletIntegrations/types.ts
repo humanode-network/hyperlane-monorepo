@@ -3,8 +3,8 @@ import {
   IToken,
   TypedTransactionReceipt,
   WarpTypedTransaction,
-} from '@hyperlane-xyz/sdk';
-import { HexString, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { HexString, ProtocolType } from '@humanode-hyperlane/utils';
 
 export interface ChainAddress {
   address: string;

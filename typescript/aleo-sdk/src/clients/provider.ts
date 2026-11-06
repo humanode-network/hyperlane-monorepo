@@ -1,8 +1,8 @@
 import { U128 } from '@provablehq/sdk/mainnet.js';
 import { BigNumber } from 'bignumber.js';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { assert, strip0x } from '@humanode-hyperlane/utils';
 
 import {
   getHookType,

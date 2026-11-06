@@ -1,5 +1,5 @@
-import type { MultiProvider } from '@hyperlane-xyz/sdk';
-import { fetchWithTimeout } from '@hyperlane-xyz/utils';
+import type { MultiProvider } from '@humanode-hyperlane/sdk';
+import { fetchWithTimeout } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

@@ -8,14 +8,14 @@ import {
   HyperlaneFactories,
   MultiProvider,
   serializeContractsMap,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   isEVMLike,
   objFilter,
   objMerge,
   runWithTimeout,
-} from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/utils';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import {
   Modules,

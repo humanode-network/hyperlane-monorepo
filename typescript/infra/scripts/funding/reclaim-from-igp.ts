@@ -1,13 +1,13 @@
 import chalk from 'chalk';
 import { formatEther, parseEther } from 'ethers/lib/utils.js';
 
-import { HyperlaneIgp } from '@hyperlane-xyz/sdk';
+import { HyperlaneIgp } from '@humanode-hyperlane/sdk';
 import {
   isZeroishAddress,
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { getEnvAddresses } from '../../config/registry.js';
 import { getKeyFunderConfig } from '../../src/funding/key-funder.js';

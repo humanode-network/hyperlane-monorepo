@@ -3,8 +3,8 @@ import {
   GasRouter__factory,
   Router,
   Router__factory,
-} from '@hyperlane-xyz/core';
-import { Address, Domain, bytes32ToAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { Address, Domain, bytes32ToAddress } from '@humanode-hyperlane/utils';
 
 import { BaseEvmAdapter } from '../../app/MultiProtocolApp.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

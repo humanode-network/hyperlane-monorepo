@@ -5,11 +5,11 @@ import { Wallet } from 'ethers';
 import fs from 'fs';
 import path from 'path';
 
-import { type ERC20Test, type ERC4626Test } from '@hyperlane-xyz/core';
+import { type ERC20Test, type ERC4626Test } from '@humanode-hyperlane/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   type ChainName,
@@ -20,8 +20,8 @@ import {
   TokenType,
   type WarpRouteDeployConfig,
   normalizeConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import {

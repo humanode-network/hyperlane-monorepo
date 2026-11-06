@@ -7,16 +7,16 @@ It can be used as a standalone SDK for frontend or in backend applications which
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/aleo-sdk
+npm install @humanode-hyperlane/aleo-sdk
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/aleo-sdk
+pnpm add @humanode-hyperlane/aleo-sdk
 ```
 
 ## Usage
 
 ```ts
-import { AleoProvider, AleoSigner } from "@hyperlane-xyz/aleo-sdk";
+import { AleoProvider, AleoSigner } from "@humanode-hyperlane/aleo-sdk";
 
 const signer = await AleoSigner.connectWithSigner(
   ['http://localhost:3030'],

@@ -1,5 +1,5 @@
 import type { Keypair } from '@solana/web3.js';
-import { Address, Domain, Numberish } from '@hyperlane-xyz/utils';
+import { Address, Domain, Numberish } from '@humanode-hyperlane/utils';
 
 import { EthJsonRpcBlockParameterTag } from '../../metadata/chainMetadataTypes.js';
 import { TokenMetadata } from '../types.js';

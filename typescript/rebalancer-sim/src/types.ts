@@ -4,8 +4,8 @@
  * This file contains all type definitions for the simulation framework,
  * organized by domain.
  */
-import type { WarpCoreConfig } from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+import type { WarpCoreConfig } from '@humanode-hyperlane/sdk';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import type { MockActionTracker } from './runners/MockActionTracker.js';
 

@@ -3,8 +3,8 @@ import {
   ERC721Enumerable__factory,
   IERC4626__factory,
   IXERC20Lockbox__factory,
-} from '@hyperlane-xyz/core';
-import { isEVMLike } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { isEVMLike } from '@humanode-hyperlane/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 

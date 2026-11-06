@@ -6,7 +6,7 @@ import {
   commitmentFromIcaCalls,
   isPostCallsIca,
   normalizeCalls,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { CallCommitmentsService } from '../../src/services/CallCommitmentsService.js';
 

@@ -5,8 +5,8 @@ import {
   LogLevel,
   assert,
   configureRootLogger,
-} from '@hyperlane-xyz/utils';
-import { writeYaml } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/utils';
+import { writeYaml } from '@humanode-hyperlane/utils/fs';
 
 import { strategyConfigGetterMap } from '../../config/warp.js';
 import {

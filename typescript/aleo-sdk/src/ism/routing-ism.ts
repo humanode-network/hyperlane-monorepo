@@ -1,4 +1,4 @@
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
@@ -6,12 +6,12 @@ import {
   ArtifactState,
   type ArtifactUnderived,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type RawRoutingIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { eqAddressAleo, isNullish } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import { eqAddressAleo, isNullish } from '@humanode-hyperlane/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { type AleoSigner } from '../clients/signer.js';

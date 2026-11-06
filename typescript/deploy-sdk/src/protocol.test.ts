@@ -4,7 +4,7 @@ import {
   ProtocolType,
   getProtocolProvider,
   hasProtocol,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 
 import { loadProtocolProviders } from './protocol.js';
 

@@ -1,5 +1,5 @@
-import type { ChainMap, ChainName } from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+import type { ChainMap, ChainName } from '@humanode-hyperlane/sdk';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 import type { StrategyRoute } from '../interfaces/IStrategy.js';

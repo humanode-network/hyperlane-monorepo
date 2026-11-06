@@ -2,8 +2,8 @@
 import { expect } from 'chai';
 import hre from 'hardhat';
 
-import { DomainRoutingIsm, TrustedRelayerIsm } from '@hyperlane-xyz/core';
-import { Address, randomInt } from '@hyperlane-xyz/utils';
+import { DomainRoutingIsm, TrustedRelayerIsm } from '@humanode-hyperlane/core';
+import { Address, randomInt } from '@humanode-hyperlane/utils';
 
 import { TestChainName, testChains } from '../consts/testChains.js';
 import { HyperlaneContractsMap } from '../contracts/types.js';

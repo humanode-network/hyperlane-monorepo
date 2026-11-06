@@ -1,5 +1,5 @@
-import { chainMetadata } from '@hyperlane-xyz/registry';
-import { RouterConfig } from '@hyperlane-xyz/sdk';
+import { chainMetadata } from '@humanode-hyperlane/registry';
+import { RouterConfig } from '@humanode-hyperlane/sdk';
 
 export type HelloWorldConfig = RouterConfig;
 

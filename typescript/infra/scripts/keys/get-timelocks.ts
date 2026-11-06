@@ -1,10 +1,10 @@
-import { EvmTimelockDeployer } from '@hyperlane-xyz/sdk';
+import { EvmTimelockDeployer } from '@humanode-hyperlane/sdk';
 import {
   LogFormat,
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   getGovernanceIcas,

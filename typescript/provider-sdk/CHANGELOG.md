@@ -1,4 +1,4 @@
-# @hyperlane-xyz/provider-sdk
+# @humanode-hyperlane/provider-sdk
 
 ## 4.2.3
 
@@ -6,19 +6,19 @@
 
 - 37255ba: Starknet AltVM follow-up behavior was fixed across the CLI toolchain. Warp apply/update paths now preserve existing Starknet hook and ISM settings when config leaves them unset or uses empty addresses, zero-address hook and ISM references are normalized as unset during provider artifact conversion, and core mailbox bootstrap only passes through existing hook addresses for Starknet while other AltVMs keep zero-address placeholders.
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/utils@30.0.0
+  - @humanode-hyperlane/utils@30.0.0
 
 ## 4.2.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@29.1.0
+- @humanode-hyperlane/utils@29.1.0
 
 ## 4.2.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@29.0.1
+- @humanode-hyperlane/utils@29.0.1
 
 ## 4.2.0
 
@@ -27,7 +27,7 @@
 - 084c6b6: The TypeScript packages were updated to support TypeScript 6.0 and to make ambient type loading explicit so the future TypeScript 7.0 upgrade is smoother.
 - Updated dependencies [3c6b1ad]
 - Updated dependencies [084c6b6]
-  - @hyperlane-xyz/utils@29.0.0
+  - @humanode-hyperlane/utils@29.0.0
 
 ## 4.1.0
 
@@ -37,7 +37,7 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@28.1.0
+- @humanode-hyperlane/utils@28.1.0
 
 ## 4.0.0
 
@@ -48,7 +48,7 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@28.0.0
+- @humanode-hyperlane/utils@28.0.0
 
 ## 3.1.0
 
@@ -60,13 +60,13 @@
 ### Patch Changes
 
 - Updated dependencies [b892e61]
-  - @hyperlane-xyz/utils@27.1.0
+  - @humanode-hyperlane/utils@27.1.0
 
 ## 3.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@27.0.0
+- @humanode-hyperlane/utils@27.0.0
 
 ## 3.0.0
 
@@ -78,7 +78,7 @@
 
 - Updated dependencies [06aacac]
 - Updated dependencies [1d116d8]
-  - @hyperlane-xyz/utils@26.0.0
+  - @humanode-hyperlane/utils@26.0.0
 
 ## 2.0.0
 
@@ -91,8 +91,8 @@
   - AltVMWarpRouteReader (use createWarpTokenReader instead)
   - AltVMDeployer (use createWarpTokenWriter per-chain instead)
   - warpModuleProvider (no longer needed)
-  - ismConfigToArtifact (moved to @hyperlane-xyz/provider-sdk/ism)
-  - shouldDeployNewIsm (moved to @hyperlane-xyz/provider-sdk/ism)
+  - ismConfigToArtifact (moved to @humanode-hyperlane/provider-sdk/ism)
+  - shouldDeployNewIsm (moved to @humanode-hyperlane/provider-sdk/ism)
 
   provider-sdk breaking change: warpConfigToArtifact no longer accepts pre-built ismArtifact/hookArtifact parameters; ISM and hook conversion is now handled internally from the config.
 
@@ -114,13 +114,13 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.5.0
+- @humanode-hyperlane/utils@25.5.0
 
 ## 1.4.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.4.1
+- @humanode-hyperlane/utils@25.4.1
 
 ## 1.4.0
 
@@ -131,25 +131,25 @@
 ### Patch Changes
 
 - Updated dependencies [1f021bf]
-  - @hyperlane-xyz/utils@25.4.0
+  - @humanode-hyperlane/utils@25.4.0
 
 ## 1.3.6
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.3.2
+- @humanode-hyperlane/utils@25.3.2
 
 ## 1.3.5
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.3.1
+- @humanode-hyperlane/utils@25.3.1
 
 ## 1.3.4
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.3.0
+- @humanode-hyperlane/utils@25.3.0
 
 ## 1.3.3
 
@@ -157,21 +157,21 @@
 
 - Updated dependencies [360db52]
 - Updated dependencies [ccd638d]
-  - @hyperlane-xyz/utils@25.2.0
+  - @humanode-hyperlane/utils@25.2.0
 
 ## 1.3.2
 
 ### Patch Changes
 
 - Updated dependencies [b930534]
-  - @hyperlane-xyz/utils@25.1.0
+  - @humanode-hyperlane/utils@25.1.0
 
 ## 1.3.1
 
 ### Patch Changes
 
 - Updated dependencies [52ce778]
-  - @hyperlane-xyz/utils@25.0.0
+  - @humanode-hyperlane/utils@25.0.0
 
 ## 1.3.0
 
@@ -185,7 +185,7 @@
 - Updated dependencies [d580bb6]
 - Updated dependencies [9dc71fe]
 - Updated dependencies [bde05e9]
-  - @hyperlane-xyz/utils@24.0.0
+  - @humanode-hyperlane/utils@24.0.0
 
 ## 1.2.1
 
@@ -194,7 +194,7 @@
 - 0b8c4ea: Fixed hook update logic for warp routes. The warp route reader now properly reads hook addresses from deployed contracts instead of hardcoding zero address. Hook update idempotency check fixed to use deepEquals with config normalization instead of reference equality, preventing unnecessary redeployments when applying identical configs. Aleo provider updated to handle null/zero hook addresses correctly. Protocol capability check added to restrict hook updates to Aleo only. Comprehensive test suite added covering hook type transitions (none→MerkleTree, MerkleTree→IGP, MerkleTree→none), IGP config updates (gas configs, beneficiary), and idempotency validation.
 - Updated dependencies [52fd0f8]
 - Updated dependencies [a10cfc8]
-  - @hyperlane-xyz/utils@23.0.0
+  - @humanode-hyperlane/utils@23.0.0
 
 ## 1.2.0
 
@@ -207,7 +207,7 @@
 - Updated dependencies [66ef635]
 - Updated dependencies [3aec1c4]
 - Updated dependencies [b892d63]
-  - @hyperlane-xyz/utils@22.0.0
+  - @humanode-hyperlane/utils@22.0.0
 
 ## 1.1.0
 
@@ -217,7 +217,7 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@21.1.0
+- @humanode-hyperlane/utils@21.1.0
 
 ## 1.0.0
 
@@ -229,7 +229,7 @@
 ### Patch Changes
 
 - Updated dependencies [0bce4e7]
-  - @hyperlane-xyz/utils@21.0.0
+  - @humanode-hyperlane/utils@21.0.0
 
 ## 0.7.0
 
@@ -246,7 +246,7 @@
 ### Patch Changes
 
 - Updated dependencies [11fa887]
-  - @hyperlane-xyz/utils@20.1.0
+  - @humanode-hyperlane/utils@20.1.0
 
 ## 0.6.0
 
@@ -257,13 +257,13 @@
 ### Patch Changes
 
 - Updated dependencies [b3ebc08]
-  - @hyperlane-xyz/utils@20.0.0
+  - @humanode-hyperlane/utils@20.0.0
 
 ## 0.5.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.13.0
+- @humanode-hyperlane/utils@19.13.0
 
 ## 0.4.0
 
@@ -281,7 +281,7 @@
 - Updated dependencies [08cf7eca9]
 - Updated dependencies [af2cd1729]
 - Updated dependencies [e37100e2e]
-  - @hyperlane-xyz/utils@19.12.0
+  - @humanode-hyperlane/utils@19.12.0
 
 ## 0.3.0
 
@@ -291,7 +291,7 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.11.0
+- @humanode-hyperlane/utils@19.11.0
 
 ## 0.2.0
 
@@ -308,4 +308,4 @@
 
 - Updated dependencies [aad2988c9]
 - Updated dependencies [c2a64e8c5]
-  - @hyperlane-xyz/utils@19.10.0
+  - @humanode-hyperlane/utils@19.10.0

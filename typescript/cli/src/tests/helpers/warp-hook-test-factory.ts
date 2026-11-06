@@ -1,12 +1,12 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { type HookConfig } from '@hyperlane-xyz/provider-sdk/hook';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { type HookConfig } from '@humanode-hyperlane/provider-sdk/hook';
 import {
   type DerivedWarpRouteDeployConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../utils/files.js';
 import { type HyperlaneE2EWarpTestCommands } from '../commands/warp.js';

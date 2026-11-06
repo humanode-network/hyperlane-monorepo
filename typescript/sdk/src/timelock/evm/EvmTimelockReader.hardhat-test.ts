@@ -5,8 +5,12 @@ import chaiAsPromised from 'chai-as-promised';
 import { ethers } from 'ethers';
 import hre from 'hardhat';
 
-import { TimelockController__factory } from '@hyperlane-xyz/core';
-import { assert, deepCopy, normalizeAddressEvm } from '@hyperlane-xyz/utils';
+import { TimelockController__factory } from '@humanode-hyperlane/core';
+import {
+  assert,
+  deepCopy,
+  normalizeAddressEvm,
+} from '@humanode-hyperlane/utils';
 
 import {
   KNOWN_BASE_TIMELOCK_CONTRACT,

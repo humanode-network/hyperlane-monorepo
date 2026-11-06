@@ -1,19 +1,19 @@
 import { clsx } from 'clsx';
 import React, { useState } from 'react';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   ChainMetadata,
   ChainMetadataSchema,
   MultiProtocolProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Result,
   failure,
   success,
   tryParseJsonOrYaml,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ColorPalette } from '../color.js';
 import { Button } from '../components/Button.js';

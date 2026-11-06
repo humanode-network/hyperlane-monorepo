@@ -1,8 +1,8 @@
 import { BigNumber } from 'ethers';
 import { z } from 'zod';
 
-import { InterchainGasPaymaster } from '@hyperlane-xyz/core';
-import type { Address } from '@hyperlane-xyz/utils';
+import { InterchainGasPaymaster } from '@humanode-hyperlane/core';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import type { CheckerViolation } from '../deploy/types.js';
 import { IgpSchema } from '../hook/types.js';

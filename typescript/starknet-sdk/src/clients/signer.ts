@@ -8,15 +8,15 @@ import {
   RpcProvider,
 } from 'starknet';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   ContractType,
   getCompiledClassHash,
   getCompiledContract,
   getContractArtifact,
-} from '@hyperlane-xyz/starknet-core';
-import { ZERO_ADDRESS_HEX_32, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/starknet-core';
+import { ZERO_ADDRESS_HEX_32, assert } from '@humanode-hyperlane/utils';
 
 import {
   StarknetContractName,

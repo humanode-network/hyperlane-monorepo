@@ -1,15 +1,15 @@
-import { type ArtifactDeployed } from '@hyperlane-xyz/provider-sdk/artifact';
+import { type ArtifactDeployed } from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedWarpAddress,
   type RawWarpArtifactConfig,
   computeRemoteRoutersUpdates,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   assert,
   eqAddressCosmos,
   eqOptionalAddress,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   type MsgCreateCollateralTokenEncodeObject,

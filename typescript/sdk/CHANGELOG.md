@@ -1,4 +1,4 @@
-# @hyperlane-xyz/sdk
+# @humanode-hyperlane/sdk
 
 ## 30.0.0
 
@@ -14,16 +14,16 @@
 - Updated dependencies [77db719]
 - Updated dependencies [37255ba]
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/core@11.2.0
-  - @hyperlane-xyz/deploy-sdk@4.2.3
-  - @hyperlane-xyz/provider-sdk@4.2.3
-  - @hyperlane-xyz/utils@30.0.0
-  - @hyperlane-xyz/multicollateral@1.0.2
-  - @hyperlane-xyz/tron-sdk@22.1.7
-  - @hyperlane-xyz/aleo-sdk@30.0.0
-  - @hyperlane-xyz/cosmos-sdk@30.0.0
-  - @hyperlane-xyz/radix-sdk@30.0.0
-  - @hyperlane-xyz/starknet-core@30.0.0
+  - @humanode-hyperlane/core@11.2.0
+  - @humanode-hyperlane/deploy-sdk@4.2.3
+  - @humanode-hyperlane/provider-sdk@4.2.3
+  - @humanode-hyperlane/utils@30.0.0
+  - @humanode-hyperlane/multicollateral@1.0.2
+  - @humanode-hyperlane/tron-sdk@22.1.7
+  - @humanode-hyperlane/aleo-sdk@30.0.0
+  - @humanode-hyperlane/cosmos-sdk@30.0.0
+  - @humanode-hyperlane/radix-sdk@30.0.0
+  - @humanode-hyperlane/starknet-core@30.0.0
 
 ## 29.1.0
 
@@ -34,30 +34,30 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/aleo-sdk@29.1.0
-- @hyperlane-xyz/starknet-core@29.1.0
-- @hyperlane-xyz/cosmos-sdk@29.1.0
-- @hyperlane-xyz/radix-sdk@29.1.0
-- @hyperlane-xyz/utils@29.1.0
-- @hyperlane-xyz/deploy-sdk@4.2.2
-- @hyperlane-xyz/core@11.1.0
-- @hyperlane-xyz/provider-sdk@4.2.2
-- @hyperlane-xyz/tron-sdk@22.1.6
+- @humanode-hyperlane/aleo-sdk@29.1.0
+- @humanode-hyperlane/starknet-core@29.1.0
+- @humanode-hyperlane/cosmos-sdk@29.1.0
+- @humanode-hyperlane/radix-sdk@29.1.0
+- @humanode-hyperlane/utils@29.1.0
+- @humanode-hyperlane/deploy-sdk@4.2.2
+- @humanode-hyperlane/core@11.1.0
+- @humanode-hyperlane/provider-sdk@4.2.2
+- @humanode-hyperlane/tron-sdk@22.1.6
 
 ## 29.0.1
 
 ### Patch Changes
 
 - 96508ed: Added support for scale-down convention in verifyScale, accepting both scale-up and scale-down routes for cross-decimal configurations. Fixed verifyScale to reject mismatched scales when decimals are uniform across chains. Added positivity constraint to bigint scale schema fields. Improved decimals assertion to use nullish check instead of truthiness.
-  - @hyperlane-xyz/aleo-sdk@29.0.1
-  - @hyperlane-xyz/starknet-core@29.0.1
-  - @hyperlane-xyz/cosmos-sdk@29.0.1
-  - @hyperlane-xyz/radix-sdk@29.0.1
-  - @hyperlane-xyz/utils@29.0.1
-  - @hyperlane-xyz/deploy-sdk@4.2.1
-  - @hyperlane-xyz/core@11.1.0
-  - @hyperlane-xyz/provider-sdk@4.2.1
-  - @hyperlane-xyz/tron-sdk@22.1.5
+  - @humanode-hyperlane/aleo-sdk@29.0.1
+  - @humanode-hyperlane/starknet-core@29.0.1
+  - @humanode-hyperlane/cosmos-sdk@29.0.1
+  - @humanode-hyperlane/radix-sdk@29.0.1
+  - @humanode-hyperlane/utils@29.0.1
+  - @humanode-hyperlane/deploy-sdk@4.2.1
+  - @humanode-hyperlane/core@11.1.0
+  - @humanode-hyperlane/provider-sdk@4.2.1
+  - @humanode-hyperlane/tron-sdk@22.1.5
 
 ## 29.0.0
 
@@ -78,15 +78,15 @@
 - Updated dependencies [3c6b1ad]
 - Updated dependencies [09d6760]
 - Updated dependencies [084c6b6]
-  - @hyperlane-xyz/tron-sdk@22.1.4
-  - @hyperlane-xyz/utils@29.0.0
-  - @hyperlane-xyz/deploy-sdk@4.2.0
-  - @hyperlane-xyz/aleo-sdk@29.0.0
-  - @hyperlane-xyz/cosmos-sdk@29.0.0
-  - @hyperlane-xyz/provider-sdk@4.2.0
-  - @hyperlane-xyz/radix-sdk@29.0.0
-  - @hyperlane-xyz/core@11.1.0
-  - @hyperlane-xyz/starknet-core@29.0.0
+  - @humanode-hyperlane/tron-sdk@22.1.4
+  - @humanode-hyperlane/utils@29.0.0
+  - @humanode-hyperlane/deploy-sdk@4.2.0
+  - @humanode-hyperlane/aleo-sdk@29.0.0
+  - @humanode-hyperlane/cosmos-sdk@29.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.0
+  - @humanode-hyperlane/radix-sdk@29.0.0
+  - @humanode-hyperlane/core@11.1.0
+  - @humanode-hyperlane/starknet-core@29.0.0
 
 ## 28.1.0
 
@@ -101,16 +101,16 @@
 - Updated dependencies [5caac66]
 - Updated dependencies [6c715a7]
 - Updated dependencies [2e622e8]
-  - @hyperlane-xyz/provider-sdk@4.1.0
-  - @hyperlane-xyz/radix-sdk@28.1.0
-  - @hyperlane-xyz/cosmos-sdk@28.1.0
-  - @hyperlane-xyz/aleo-sdk@28.1.0
-  - @hyperlane-xyz/core@11.1.0
-  - @hyperlane-xyz/tron-sdk@22.1.3
-  - @hyperlane-xyz/deploy-sdk@4.1.0
-  - @hyperlane-xyz/multicollateral@1.0.1
-  - @hyperlane-xyz/starknet-core@28.1.0
-  - @hyperlane-xyz/utils@28.1.0
+  - @humanode-hyperlane/provider-sdk@4.1.0
+  - @humanode-hyperlane/radix-sdk@28.1.0
+  - @humanode-hyperlane/cosmos-sdk@28.1.0
+  - @humanode-hyperlane/aleo-sdk@28.1.0
+  - @humanode-hyperlane/core@11.1.0
+  - @humanode-hyperlane/tron-sdk@22.1.3
+  - @humanode-hyperlane/deploy-sdk@4.1.0
+  - @humanode-hyperlane/multicollateral@1.0.1
+  - @humanode-hyperlane/starknet-core@28.1.0
+  - @humanode-hyperlane/utils@28.1.0
 
 ## 28.0.0
 
@@ -135,16 +135,16 @@
 - Updated dependencies [a6b7bf3]
 - Updated dependencies [a6b7bf3]
 - Updated dependencies [a4a74d8]
-  - @hyperlane-xyz/aleo-sdk@28.0.0
-  - @hyperlane-xyz/deploy-sdk@4.0.0
-  - @hyperlane-xyz/provider-sdk@4.0.0
-  - @hyperlane-xyz/cosmos-sdk@28.0.0
-  - @hyperlane-xyz/multicollateral@1.0.0
-  - @hyperlane-xyz/core@11.0.3
-  - @hyperlane-xyz/radix-sdk@28.0.0
-  - @hyperlane-xyz/tron-sdk@22.1.2
-  - @hyperlane-xyz/starknet-core@28.0.0
-  - @hyperlane-xyz/utils@28.0.0
+  - @humanode-hyperlane/aleo-sdk@28.0.0
+  - @humanode-hyperlane/deploy-sdk@4.0.0
+  - @humanode-hyperlane/provider-sdk@4.0.0
+  - @humanode-hyperlane/cosmos-sdk@28.0.0
+  - @humanode-hyperlane/multicollateral@1.0.0
+  - @humanode-hyperlane/core@11.0.3
+  - @humanode-hyperlane/radix-sdk@28.0.0
+  - @humanode-hyperlane/tron-sdk@22.1.2
+  - @humanode-hyperlane/starknet-core@28.0.0
+  - @humanode-hyperlane/utils@28.0.0
 
 ## 27.1.0
 
@@ -162,15 +162,15 @@
 - Updated dependencies [b892e61]
 - Updated dependencies [abdbbf5]
 - Updated dependencies [b892e61]
-  - @hyperlane-xyz/provider-sdk@3.1.0
-  - @hyperlane-xyz/deploy-sdk@3.1.0
-  - @hyperlane-xyz/radix-sdk@27.1.0
-  - @hyperlane-xyz/utils@27.1.0
-  - @hyperlane-xyz/aleo-sdk@27.1.0
-  - @hyperlane-xyz/cosmos-sdk@27.1.0
-  - @hyperlane-xyz/tron-sdk@22.1.1
-  - @hyperlane-xyz/core@11.0.2
-  - @hyperlane-xyz/starknet-core@27.1.0
+  - @humanode-hyperlane/provider-sdk@3.1.0
+  - @humanode-hyperlane/deploy-sdk@3.1.0
+  - @humanode-hyperlane/radix-sdk@27.1.0
+  - @humanode-hyperlane/utils@27.1.0
+  - @humanode-hyperlane/aleo-sdk@27.1.0
+  - @humanode-hyperlane/cosmos-sdk@27.1.0
+  - @humanode-hyperlane/tron-sdk@22.1.1
+  - @humanode-hyperlane/core@11.0.2
+  - @humanode-hyperlane/starknet-core@27.1.0
 
 ## 27.0.0
 
@@ -188,16 +188,16 @@
 - Updated dependencies [4a816e3]
 - Updated dependencies [f7ebf6c]
 - Updated dependencies [22cb5cb]
-  - @hyperlane-xyz/tron-sdk@22.1.0
-  - @hyperlane-xyz/multicollateral@0.2.0
-  - @hyperlane-xyz/core@11.0.2
-  - @hyperlane-xyz/deploy-sdk@3.0.1
-  - @hyperlane-xyz/aleo-sdk@27.0.0
-  - @hyperlane-xyz/starknet-core@27.0.0
-  - @hyperlane-xyz/cosmos-sdk@27.0.0
-  - @hyperlane-xyz/radix-sdk@27.0.0
-  - @hyperlane-xyz/utils@27.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.1
+  - @humanode-hyperlane/tron-sdk@22.1.0
+  - @humanode-hyperlane/multicollateral@0.2.0
+  - @humanode-hyperlane/core@11.0.2
+  - @humanode-hyperlane/deploy-sdk@3.0.1
+  - @humanode-hyperlane/aleo-sdk@27.0.0
+  - @humanode-hyperlane/starknet-core@27.0.0
+  - @humanode-hyperlane/cosmos-sdk@27.0.0
+  - @humanode-hyperlane/radix-sdk@27.0.0
+  - @humanode-hyperlane/utils@27.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.1
 
 ## 26.0.0
 
@@ -221,15 +221,15 @@
 
 - Updated dependencies [06aacac]
 - Updated dependencies [1d116d8]
-  - @hyperlane-xyz/utils@26.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.0
-  - @hyperlane-xyz/tron-sdk@22.0.0
-  - @hyperlane-xyz/core@11.0.1
-  - @hyperlane-xyz/aleo-sdk@26.0.0
-  - @hyperlane-xyz/cosmos-sdk@26.0.0
-  - @hyperlane-xyz/deploy-sdk@3.0.0
-  - @hyperlane-xyz/radix-sdk@26.0.0
-  - @hyperlane-xyz/starknet-core@26.0.0
+  - @humanode-hyperlane/utils@26.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.0
+  - @humanode-hyperlane/tron-sdk@22.0.0
+  - @humanode-hyperlane/core@11.0.1
+  - @humanode-hyperlane/aleo-sdk@26.0.0
+  - @humanode-hyperlane/cosmos-sdk@26.0.0
+  - @humanode-hyperlane/deploy-sdk@3.0.0
+  - @humanode-hyperlane/radix-sdk@26.0.0
+  - @humanode-hyperlane/starknet-core@26.0.0
 
 ## 25.5.0
 
@@ -243,8 +243,8 @@
   - AltVMWarpRouteReader (use createWarpTokenReader instead)
   - AltVMDeployer (use createWarpTokenWriter per-chain instead)
   - warpModuleProvider (no longer needed)
-  - ismConfigToArtifact (moved to @hyperlane-xyz/provider-sdk/ism)
-  - shouldDeployNewIsm (moved to @hyperlane-xyz/provider-sdk/ism)
+  - ismConfigToArtifact (moved to @humanode-hyperlane/provider-sdk/ism)
+  - shouldDeployNewIsm (moved to @humanode-hyperlane/provider-sdk/ism)
 
   provider-sdk breaking change: warpConfigToArtifact no longer accepts pre-built ismArtifact/hookArtifact parameters; ISM and hook conversion is now handled internally from the config.
 
@@ -259,30 +259,30 @@
 - 048df98: Corrected validator alias from O-OPS to P-OPS Team in multisig ISM constants.
 - Updated dependencies [e197331]
 - Updated dependencies [840fb33]
-  - @hyperlane-xyz/deploy-sdk@2.0.0
-  - @hyperlane-xyz/provider-sdk@2.0.0
-  - @hyperlane-xyz/aleo-sdk@25.5.0
-  - @hyperlane-xyz/cosmos-sdk@25.5.0
-  - @hyperlane-xyz/radix-sdk@25.5.0
-  - @hyperlane-xyz/tron-sdk@21.1.5
-  - @hyperlane-xyz/starknet-core@25.5.0
-  - @hyperlane-xyz/utils@25.5.0
-  - @hyperlane-xyz/core@11.0.1
+  - @humanode-hyperlane/deploy-sdk@2.0.0
+  - @humanode-hyperlane/provider-sdk@2.0.0
+  - @humanode-hyperlane/aleo-sdk@25.5.0
+  - @humanode-hyperlane/cosmos-sdk@25.5.0
+  - @humanode-hyperlane/radix-sdk@25.5.0
+  - @humanode-hyperlane/tron-sdk@21.1.5
+  - @humanode-hyperlane/starknet-core@25.5.0
+  - @humanode-hyperlane/utils@25.5.0
+  - @humanode-hyperlane/core@11.0.1
 
 ## 25.4.1
 
 ### Patch Changes
 
 - 5a7efbb: Fixed `getHypAdapter` to handle `EvmNative` tokens with warp connections by returning `EvmHypNativeAdapter`, enabling cross-chain transfers for mint/burn native gas tokens. Also fixed gas estimation in `WarpCore.getLocalTransferFee` to use a decimal-aware amount that survives on-chain truncation between chains with different decimals.
-  - @hyperlane-xyz/aleo-sdk@25.4.1
-  - @hyperlane-xyz/starknet-core@25.4.1
-  - @hyperlane-xyz/cosmos-sdk@25.4.1
-  - @hyperlane-xyz/radix-sdk@25.4.1
-  - @hyperlane-xyz/utils@25.4.1
-  - @hyperlane-xyz/deploy-sdk@1.4.1
-  - @hyperlane-xyz/provider-sdk@1.4.1
-  - @hyperlane-xyz/tron-sdk@21.1.4
-  - @hyperlane-xyz/core@11.0.1
+  - @humanode-hyperlane/aleo-sdk@25.4.1
+  - @humanode-hyperlane/starknet-core@25.4.1
+  - @humanode-hyperlane/cosmos-sdk@25.4.1
+  - @humanode-hyperlane/radix-sdk@25.4.1
+  - @humanode-hyperlane/utils@25.4.1
+  - @humanode-hyperlane/deploy-sdk@1.4.1
+  - @humanode-hyperlane/provider-sdk@1.4.1
+  - @humanode-hyperlane/tron-sdk@21.1.4
+  - @humanode-hyperlane/core@11.0.1
 
 ## 25.4.0
 
@@ -305,64 +305,64 @@
 - Updated dependencies [1f021bf]
 - Updated dependencies [027eeac]
 - Updated dependencies [1f021bf]
-  - @hyperlane-xyz/aleo-sdk@25.4.0
-  - @hyperlane-xyz/utils@25.4.0
-  - @hyperlane-xyz/cosmos-sdk@25.4.0
-  - @hyperlane-xyz/core@11.0.1
-  - @hyperlane-xyz/provider-sdk@1.4.0
-  - @hyperlane-xyz/radix-sdk@25.4.0
-  - @hyperlane-xyz/deploy-sdk@1.4.0
-  - @hyperlane-xyz/tron-sdk@21.1.3
-  - @hyperlane-xyz/starknet-core@25.4.0
+  - @humanode-hyperlane/aleo-sdk@25.4.0
+  - @humanode-hyperlane/utils@25.4.0
+  - @humanode-hyperlane/cosmos-sdk@25.4.0
+  - @humanode-hyperlane/core@11.0.1
+  - @humanode-hyperlane/provider-sdk@1.4.0
+  - @humanode-hyperlane/radix-sdk@25.4.0
+  - @humanode-hyperlane/deploy-sdk@1.4.0
+  - @humanode-hyperlane/tron-sdk@21.1.3
+  - @humanode-hyperlane/starknet-core@25.4.0
 
 ## 25.3.2
 
 ### Patch Changes
 
 - Updated dependencies [521d42b]
-  - @hyperlane-xyz/core@10.2.0
-  - @hyperlane-xyz/tron-sdk@21.1.2
-  - @hyperlane-xyz/deploy-sdk@1.3.6
-  - @hyperlane-xyz/aleo-sdk@25.3.2
-  - @hyperlane-xyz/starknet-core@25.3.2
-  - @hyperlane-xyz/cosmos-sdk@25.3.2
-  - @hyperlane-xyz/radix-sdk@25.3.2
-  - @hyperlane-xyz/utils@25.3.2
-  - @hyperlane-xyz/provider-sdk@1.3.6
+  - @humanode-hyperlane/core@10.2.0
+  - @humanode-hyperlane/tron-sdk@21.1.2
+  - @humanode-hyperlane/deploy-sdk@1.3.6
+  - @humanode-hyperlane/aleo-sdk@25.3.2
+  - @humanode-hyperlane/starknet-core@25.3.2
+  - @humanode-hyperlane/cosmos-sdk@25.3.2
+  - @humanode-hyperlane/radix-sdk@25.3.2
+  - @humanode-hyperlane/utils@25.3.2
+  - @humanode-hyperlane/provider-sdk@1.3.6
 
 ## 25.3.1
 
 ### Patch Changes
 
 - Updated dependencies [7636bb4]
-  - @hyperlane-xyz/tron-sdk@21.1.1
-  - @hyperlane-xyz/deploy-sdk@1.3.5
-  - @hyperlane-xyz/aleo-sdk@25.3.1
-  - @hyperlane-xyz/starknet-core@25.3.1
-  - @hyperlane-xyz/cosmos-sdk@25.3.1
-  - @hyperlane-xyz/radix-sdk@25.3.1
-  - @hyperlane-xyz/utils@25.3.1
-  - @hyperlane-xyz/provider-sdk@1.3.5
-  - @hyperlane-xyz/core@10.1.5
+  - @humanode-hyperlane/tron-sdk@21.1.1
+  - @humanode-hyperlane/deploy-sdk@1.3.5
+  - @humanode-hyperlane/aleo-sdk@25.3.1
+  - @humanode-hyperlane/starknet-core@25.3.1
+  - @humanode-hyperlane/cosmos-sdk@25.3.1
+  - @humanode-hyperlane/radix-sdk@25.3.1
+  - @humanode-hyperlane/utils@25.3.1
+  - @humanode-hyperlane/provider-sdk@1.3.5
+  - @humanode-hyperlane/core@10.1.5
 
 ## 25.3.0
 
 ### Minor Changes
 
-- aea767c: Tron Virtual Machine (TVM) support added to the Hyperlane SDK. The new `@hyperlane-xyz/tron-sdk` package provides `TronJsonRpcProvider`, `TronWallet`, and `TronContractFactory` for interacting with Tron chains. The SDK deployers now automatically use Tron-compiled factories for Create2-affected contracts (ISM/hook factories, ICA router) when deploying to Tron chains.
+- aea767c: Tron Virtual Machine (TVM) support added to the Hyperlane SDK. The new `@humanode-hyperlane/tron-sdk` package provides `TronJsonRpcProvider`, `TronWallet`, and `TronContractFactory` for interacting with Tron chains. The SDK deployers now automatically use Tron-compiled factories for Create2-affected contracts (ISM/hook factories, ICA router) when deploying to Tron chains.
 
 ### Patch Changes
 
 - Updated dependencies [aea767c]
-  - @hyperlane-xyz/tron-sdk@21.1.0
-  - @hyperlane-xyz/deploy-sdk@1.3.4
-  - @hyperlane-xyz/aleo-sdk@25.3.0
-  - @hyperlane-xyz/starknet-core@25.3.0
-  - @hyperlane-xyz/cosmos-sdk@25.3.0
-  - @hyperlane-xyz/radix-sdk@25.3.0
-  - @hyperlane-xyz/utils@25.3.0
-  - @hyperlane-xyz/provider-sdk@1.3.4
-  - @hyperlane-xyz/core@10.1.5
+  - @humanode-hyperlane/tron-sdk@21.1.0
+  - @humanode-hyperlane/deploy-sdk@1.3.4
+  - @humanode-hyperlane/aleo-sdk@25.3.0
+  - @humanode-hyperlane/starknet-core@25.3.0
+  - @humanode-hyperlane/cosmos-sdk@25.3.0
+  - @humanode-hyperlane/radix-sdk@25.3.0
+  - @humanode-hyperlane/utils@25.3.0
+  - @humanode-hyperlane/provider-sdk@1.3.4
+  - @humanode-hyperlane/core@10.1.5
 
 ## 25.2.0
 
@@ -381,14 +381,14 @@
 - Updated dependencies [360db52]
 - Updated dependencies [6091a31]
 - Updated dependencies [ccd638d]
-  - @hyperlane-xyz/utils@25.2.0
-  - @hyperlane-xyz/aleo-sdk@25.2.0
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/cosmos-sdk@25.2.0
-  - @hyperlane-xyz/deploy-sdk@1.3.3
-  - @hyperlane-xyz/provider-sdk@1.3.3
-  - @hyperlane-xyz/radix-sdk@25.2.0
-  - @hyperlane-xyz/starknet-core@25.2.0
+  - @humanode-hyperlane/utils@25.2.0
+  - @humanode-hyperlane/aleo-sdk@25.2.0
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/cosmos-sdk@25.2.0
+  - @humanode-hyperlane/deploy-sdk@1.3.3
+  - @humanode-hyperlane/provider-sdk@1.3.3
+  - @humanode-hyperlane/radix-sdk@25.2.0
+  - @humanode-hyperlane/starknet-core@25.2.0
 
 ## 25.1.0
 
@@ -398,14 +398,14 @@
 - a18d0e6: Fixed nonce collision in EvmTokenFeeModule by deploying sub-fee contracts sequentially instead of in parallel.
 - Updated dependencies [b930534]
 - Updated dependencies [cbd400c]
-  - @hyperlane-xyz/utils@25.1.0
-  - @hyperlane-xyz/radix-sdk@25.1.0
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/aleo-sdk@25.1.0
-  - @hyperlane-xyz/cosmos-sdk@25.1.0
-  - @hyperlane-xyz/deploy-sdk@1.3.2
-  - @hyperlane-xyz/provider-sdk@1.3.2
-  - @hyperlane-xyz/starknet-core@25.1.0
+  - @humanode-hyperlane/utils@25.1.0
+  - @humanode-hyperlane/radix-sdk@25.1.0
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/aleo-sdk@25.1.0
+  - @humanode-hyperlane/cosmos-sdk@25.1.0
+  - @humanode-hyperlane/deploy-sdk@1.3.2
+  - @humanode-hyperlane/provider-sdk@1.3.2
+  - @humanode-hyperlane/starknet-core@25.1.0
 
 ## 25.0.0
 
@@ -417,16 +417,16 @@
 
 ### Patch Changes
 
-- 52ce778: A `LazyAsync` helper was added to `@hyperlane-xyz/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
+- 52ce778: A `LazyAsync` helper was added to `@humanode-hyperlane/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
 - Updated dependencies [52ce778]
-  - @hyperlane-xyz/utils@25.0.0
-  - @hyperlane-xyz/cosmos-sdk@25.0.0
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/aleo-sdk@25.0.0
-  - @hyperlane-xyz/deploy-sdk@1.3.1
-  - @hyperlane-xyz/provider-sdk@1.3.1
-  - @hyperlane-xyz/radix-sdk@25.0.0
-  - @hyperlane-xyz/starknet-core@25.0.0
+  - @humanode-hyperlane/utils@25.0.0
+  - @humanode-hyperlane/cosmos-sdk@25.0.0
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/aleo-sdk@25.0.0
+  - @humanode-hyperlane/deploy-sdk@1.3.1
+  - @humanode-hyperlane/provider-sdk@1.3.1
+  - @humanode-hyperlane/radix-sdk@25.0.0
+  - @humanode-hyperlane/starknet-core@25.0.0
 
 ## 24.0.0
 
@@ -459,14 +459,14 @@
 - Updated dependencies [b1b941e]
 - Updated dependencies [9dc71fe]
 - Updated dependencies [bde05e9]
-  - @hyperlane-xyz/deploy-sdk@1.3.0
-  - @hyperlane-xyz/utils@24.0.0
-  - @hyperlane-xyz/aleo-sdk@24.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.0
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/cosmos-sdk@24.0.0
-  - @hyperlane-xyz/radix-sdk@24.0.0
-  - @hyperlane-xyz/starknet-core@24.0.0
+  - @humanode-hyperlane/deploy-sdk@1.3.0
+  - @humanode-hyperlane/utils@24.0.0
+  - @humanode-hyperlane/aleo-sdk@24.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.0
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/cosmos-sdk@24.0.0
+  - @humanode-hyperlane/radix-sdk@24.0.0
+  - @humanode-hyperlane/starknet-core@24.0.0
 
 ## 23.0.0
 
@@ -481,13 +481,13 @@
 - 52fd0f8: Added `estimateIcaHandleGas()` public method to estimate destination gas for ICA calls. `getCallRemote()` now extracts gasLimit from hookMetadata for accurate IGP quoting with the `quoteGasPayment(uint32,uint256)` overload. Fixed `hookMetadata` type from `BigNumber` to `string` in `GetCallRemoteSettings`.
 - 6ddef74: Fix warp check for Aleo.
 - 9aa93f4: Added optional `waitConfirmations` parameter to `sendTransaction()` and `handleTx()` methods in MultiProvider, which allowed callers to specify a custom number of confirmations or a block tag like "finalized" or "safe" to wait for before returning. Added `waitForBlockTag()` helper method that polled until the tagged block number reached the transaction's block number. Exported new `SendTransactionOptions` interface from SDK.
-- 42b72c3: Extracted relayer into dedicated `@hyperlane-xyz/relayer` package
+- 42b72c3: Extracted relayer into dedicated `@humanode-hyperlane/relayer` package
   - Moved `HyperlaneRelayer` class from SDK to new package
   - Moved ISM metadata builders from SDK to relayer package
   - New package supports both manual CLI execution and continuous daemon mode for K8s deployments
   - Added Prometheus metrics support with `/metrics` endpoint (enabled by default on port 9090)
   - CLI and infra now import from new package
-  - **Breaking**: The following exports were removed from `@hyperlane-xyz/sdk` and are now available from `@hyperlane-xyz/relayer`:
+  - **Breaking**: The following exports were removed from `@humanode-hyperlane/sdk` and are now available from `@humanode-hyperlane/relayer`:
     - `HyperlaneRelayer`, `RelayerCacheSchema`, `messageMatchesWhitelist`
     - `BaseMetadataBuilder`, `decodeIsmMetadata`
     - All metadata builder classes (`AggregationMetadataBuilder`, `MultisigMetadataBuilder`, etc.)
@@ -504,14 +504,14 @@
 - Updated dependencies [52fd0f8]
 - Updated dependencies [a10cfc8]
 - Updated dependencies [80f3635]
-  - @hyperlane-xyz/aleo-sdk@23.0.0
-  - @hyperlane-xyz/provider-sdk@1.2.1
-  - @hyperlane-xyz/deploy-sdk@1.2.1
-  - @hyperlane-xyz/utils@23.0.0
-  - @hyperlane-xyz/cosmos-sdk@23.0.0
-  - @hyperlane-xyz/radix-sdk@23.0.0
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/starknet-core@23.0.0
+  - @humanode-hyperlane/aleo-sdk@23.0.0
+  - @humanode-hyperlane/provider-sdk@1.2.1
+  - @humanode-hyperlane/deploy-sdk@1.2.1
+  - @humanode-hyperlane/utils@23.0.0
+  - @humanode-hyperlane/cosmos-sdk@23.0.0
+  - @humanode-hyperlane/radix-sdk@23.0.0
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/starknet-core@23.0.0
 
 ## 22.0.0
 
@@ -526,7 +526,7 @@
 - c6a6d5f: Fix CCTP warp route ISM derivation
 - 99948bc: Fixed EvmTokenFeeModule to derive routingDestinations from target config when not explicitly provided. This ensures sub-fee contracts are properly read from on-chain when updating RoutingFee configurations. Also added support for deploying new sub-fee contracts when adding destinations to an existing RoutingFee.
 - 99948bc: Fixed warp apply idempotency issue where re-running after partial failure would fail with UNPREDICTABLE_GAS_LIMIT error when ownership had already been transferred. The setFeeRecipient transaction is now only generated when the fee recipient actually needs to change.
-- 66ef635: Added `mapAllSettled` helper to @hyperlane-xyz/utils for typed parallel operations with key-based error tracking. Migrated Promise.allSettled patterns across sdk, cli, infra, and rebalancer packages to use the new helper.
+- 66ef635: Added `mapAllSettled` helper to @humanode-hyperlane/utils for typed parallel operations with key-based error tracking. Migrated Promise.allSettled patterns across sdk, cli, infra, and rebalancer packages to use the new helper.
 - 7a0a9e4: Fix `RoutingFee` deployment when the configured owner differs from the deployer signer, and avoid requiring routing destinations when deriving `RoutingFee` configs during warp deploy.
 - Updated dependencies [ade2653]
 - Updated dependencies [8b3f8da]
@@ -539,14 +539,14 @@
 - Updated dependencies [3aec1c4]
 - Updated dependencies [b892d63]
 - Updated dependencies [44fbfd6]
-  - @hyperlane-xyz/aleo-sdk@22.0.0
-  - @hyperlane-xyz/cosmos-sdk@22.0.0
-  - @hyperlane-xyz/deploy-sdk@1.2.0
-  - @hyperlane-xyz/utils@22.0.0
-  - @hyperlane-xyz/provider-sdk@1.2.0
-  - @hyperlane-xyz/radix-sdk@22.0.0
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/starknet-core@22.0.0
+  - @humanode-hyperlane/aleo-sdk@22.0.0
+  - @humanode-hyperlane/cosmos-sdk@22.0.0
+  - @humanode-hyperlane/deploy-sdk@1.2.0
+  - @humanode-hyperlane/utils@22.0.0
+  - @humanode-hyperlane/provider-sdk@1.2.0
+  - @humanode-hyperlane/radix-sdk@22.0.0
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/starknet-core@22.0.0
 
 ## 21.1.0
 
@@ -556,14 +556,14 @@
 - Updated dependencies [57a2053]
 - Updated dependencies [57a2053]
 - Updated dependencies [9c48ac8]
-  - @hyperlane-xyz/cosmos-sdk@21.1.0
-  - @hyperlane-xyz/provider-sdk@1.1.0
-  - @hyperlane-xyz/aleo-sdk@21.1.0
-  - @hyperlane-xyz/deploy-sdk@1.1.0
-  - @hyperlane-xyz/radix-sdk@21.1.0
-  - @hyperlane-xyz/starknet-core@21.1.0
-  - @hyperlane-xyz/utils@21.1.0
-  - @hyperlane-xyz/core@10.1.5
+  - @humanode-hyperlane/cosmos-sdk@21.1.0
+  - @humanode-hyperlane/provider-sdk@1.1.0
+  - @humanode-hyperlane/aleo-sdk@21.1.0
+  - @humanode-hyperlane/deploy-sdk@1.1.0
+  - @humanode-hyperlane/radix-sdk@21.1.0
+  - @humanode-hyperlane/starknet-core@21.1.0
+  - @humanode-hyperlane/utils@21.1.0
+  - @humanode-hyperlane/core@10.1.5
 
 ## 21.0.0
 
@@ -573,7 +573,7 @@
 
 ### Minor Changes
 
-- bc8b22f: Moved rebalancer-specific type definitions from `@hyperlane-xyz/sdk` to `@hyperlane-xyz/rebalancer`. Updated CLI and infra imports to use the new location. The rebalancer package is now self-contained and doesn't pollute the SDK with rebalancer-specific types.
+- bc8b22f: Moved rebalancer-specific type definitions from `@humanode-hyperlane/sdk` to `@humanode-hyperlane/rebalancer`. Updated CLI and infra imports to use the new location. The rebalancer package is now self-contained and doesn't pollute the SDK with rebalancer-specific types.
 
 ### Patch Changes
 
@@ -585,14 +585,14 @@
 - Updated dependencies [239e1a1]
 - Updated dependencies [ed10fc1]
 - Updated dependencies [0bce4e7]
-  - @hyperlane-xyz/aleo-sdk@21.0.0
-  - @hyperlane-xyz/deploy-sdk@1.0.0
-  - @hyperlane-xyz/provider-sdk@1.0.0
-  - @hyperlane-xyz/radix-sdk@21.0.0
-  - @hyperlane-xyz/cosmos-sdk@21.0.0
-  - @hyperlane-xyz/utils@21.0.0
-  - @hyperlane-xyz/core@10.1.4
-  - @hyperlane-xyz/starknet-core@21.0.0
+  - @humanode-hyperlane/aleo-sdk@21.0.0
+  - @humanode-hyperlane/deploy-sdk@1.0.0
+  - @humanode-hyperlane/provider-sdk@1.0.0
+  - @humanode-hyperlane/radix-sdk@21.0.0
+  - @humanode-hyperlane/cosmos-sdk@21.0.0
+  - @humanode-hyperlane/utils@21.0.0
+  - @humanode-hyperlane/core@10.1.4
+  - @humanode-hyperlane/starknet-core@21.0.0
 
 ## 20.1.0
 
@@ -609,13 +609,13 @@
 ### Patch Changes
 
 - Updated dependencies [11fa887]
-  - @hyperlane-xyz/utils@20.1.0
-  - @hyperlane-xyz/cosmos-sdk@20.1.0
-  - @hyperlane-xyz/radix-sdk@20.1.0
-  - @hyperlane-xyz/provider-sdk@0.7.0
-  - @hyperlane-xyz/deploy-sdk@0.7.0
-  - @hyperlane-xyz/core@10.1.3
-  - @hyperlane-xyz/starknet-core@20.1.0
+  - @humanode-hyperlane/utils@20.1.0
+  - @humanode-hyperlane/cosmos-sdk@20.1.0
+  - @humanode-hyperlane/radix-sdk@20.1.0
+  - @humanode-hyperlane/provider-sdk@0.7.0
+  - @humanode-hyperlane/deploy-sdk@0.7.0
+  - @humanode-hyperlane/core@10.1.3
+  - @humanode-hyperlane/starknet-core@20.1.0
 
 ## 20.0.0
 
@@ -627,13 +627,13 @@
 
 - Updated dependencies [b3ebc08]
 - Updated dependencies [aeac943]
-  - @hyperlane-xyz/utils@20.0.0
-  - @hyperlane-xyz/provider-sdk@0.6.0
-  - @hyperlane-xyz/core@10.1.2
-  - @hyperlane-xyz/cosmos-sdk@20.0.0
-  - @hyperlane-xyz/deploy-sdk@0.6.0
-  - @hyperlane-xyz/radix-sdk@20.0.0
-  - @hyperlane-xyz/starknet-core@20.0.0
+  - @humanode-hyperlane/utils@20.0.0
+  - @humanode-hyperlane/provider-sdk@0.6.0
+  - @humanode-hyperlane/core@10.1.2
+  - @humanode-hyperlane/cosmos-sdk@20.0.0
+  - @humanode-hyperlane/deploy-sdk@0.6.0
+  - @humanode-hyperlane/radix-sdk@20.0.0
+  - @humanode-hyperlane/starknet-core@20.0.0
 
 ## 19.13.0
 
@@ -642,13 +642,13 @@
 - 3592f258a: Fix StarknetHypCollateralAdapter to use StarknetTokenAdapter for wrappedTokenAdapter instead of synthetic adapter
 - Updated dependencies [ae8ef4389]
 - Updated dependencies [ae8ef4389]
-  - @hyperlane-xyz/radix-sdk@19.13.0
-  - @hyperlane-xyz/deploy-sdk@0.5.0
-  - @hyperlane-xyz/starknet-core@19.13.0
-  - @hyperlane-xyz/cosmos-sdk@19.13.0
-  - @hyperlane-xyz/utils@19.13.0
-  - @hyperlane-xyz/provider-sdk@0.5.0
-  - @hyperlane-xyz/core@10.1.1
+  - @humanode-hyperlane/radix-sdk@19.13.0
+  - @humanode-hyperlane/deploy-sdk@0.5.0
+  - @humanode-hyperlane/starknet-core@19.13.0
+  - @humanode-hyperlane/cosmos-sdk@19.13.0
+  - @humanode-hyperlane/utils@19.13.0
+  - @humanode-hyperlane/provider-sdk@0.5.0
+  - @humanode-hyperlane/core@10.1.1
 
 ## 19.12.0
 
@@ -672,13 +672,13 @@
 - Updated dependencies [af2cd1729]
 - Updated dependencies [43b3756d9]
 - Updated dependencies [e37100e2e]
-  - @hyperlane-xyz/provider-sdk@0.4.0
-  - @hyperlane-xyz/cosmos-sdk@19.12.0
-  - @hyperlane-xyz/radix-sdk@19.12.0
-  - @hyperlane-xyz/utils@19.12.0
-  - @hyperlane-xyz/core@10.1.0
-  - @hyperlane-xyz/deploy-sdk@0.4.0
-  - @hyperlane-xyz/starknet-core@19.12.0
+  - @humanode-hyperlane/provider-sdk@0.4.0
+  - @humanode-hyperlane/cosmos-sdk@19.12.0
+  - @humanode-hyperlane/radix-sdk@19.12.0
+  - @humanode-hyperlane/utils@19.12.0
+  - @humanode-hyperlane/core@10.1.0
+  - @humanode-hyperlane/deploy-sdk@0.4.0
+  - @humanode-hyperlane/starknet-core@19.12.0
 
 ## 19.11.0
 
@@ -691,13 +691,13 @@
 - 4c29cd341: Fix zkSync ICA compatibility and add storage ISM support in metadata builder
 - Updated dependencies [dd6260eea]
 - Updated dependencies [dd6260eea]
-  - @hyperlane-xyz/provider-sdk@0.3.0
-  - @hyperlane-xyz/radix-sdk@19.11.0
-  - @hyperlane-xyz/cosmos-sdk@19.11.0
-  - @hyperlane-xyz/deploy-sdk@0.3.0
-  - @hyperlane-xyz/starknet-core@19.11.0
-  - @hyperlane-xyz/utils@19.11.0
-  - @hyperlane-xyz/core@10.0.5
+  - @humanode-hyperlane/provider-sdk@0.3.0
+  - @humanode-hyperlane/radix-sdk@19.11.0
+  - @humanode-hyperlane/cosmos-sdk@19.11.0
+  - @humanode-hyperlane/deploy-sdk@0.3.0
+  - @humanode-hyperlane/starknet-core@19.11.0
+  - @humanode-hyperlane/utils@19.11.0
+  - @humanode-hyperlane/core@10.0.5
 
 ## 19.10.0
 
@@ -725,13 +725,13 @@
 - Updated dependencies [66bed7126]
 - Updated dependencies [29ad1d225]
 - Updated dependencies [f604423b9]
-  - @hyperlane-xyz/utils@19.10.0
-  - @hyperlane-xyz/deploy-sdk@0.2.0
-  - @hyperlane-xyz/cosmos-sdk@19.10.0
-  - @hyperlane-xyz/radix-sdk@19.10.0
-  - @hyperlane-xyz/core@10.0.4
-  - @hyperlane-xyz/provider-sdk@0.2.0
-  - @hyperlane-xyz/starknet-core@19.10.0
+  - @humanode-hyperlane/utils@19.10.0
+  - @humanode-hyperlane/deploy-sdk@0.2.0
+  - @humanode-hyperlane/cosmos-sdk@19.10.0
+  - @humanode-hyperlane/radix-sdk@19.10.0
+  - @humanode-hyperlane/core@10.0.4
+  - @humanode-hyperlane/provider-sdk@0.2.0
+  - @humanode-hyperlane/starknet-core@19.10.0
 
 ## 19.9.0
 
@@ -739,11 +739,11 @@
 
 - 8c027d852: Fixed SmartProvider fallback logic to stop retrying on blockchain errors
 - Updated dependencies [8c027d852]
-  - @hyperlane-xyz/utils@19.9.0
-  - @hyperlane-xyz/core@10.0.3
-  - @hyperlane-xyz/cosmos-sdk@19.9.0
-  - @hyperlane-xyz/radix-sdk@19.9.0
-  - @hyperlane-xyz/starknet-core@19.9.0
+  - @humanode-hyperlane/utils@19.9.0
+  - @humanode-hyperlane/core@10.0.3
+  - @humanode-hyperlane/cosmos-sdk@19.9.0
+  - @humanode-hyperlane/radix-sdk@19.9.0
+  - @humanode-hyperlane/starknet-core@19.9.0
 
 ## 19.8.0
 
@@ -759,11 +759,11 @@
 - Updated dependencies [2ed21c97d]
 - Updated dependencies [78ff6cd47]
 - Updated dependencies [3f75ad86d]
-  - @hyperlane-xyz/utils@19.8.0
-  - @hyperlane-xyz/cosmos-sdk@19.8.0
-  - @hyperlane-xyz/radix-sdk@19.8.0
-  - @hyperlane-xyz/core@10.0.2
-  - @hyperlane-xyz/starknet-core@19.8.0
+  - @humanode-hyperlane/utils@19.8.0
+  - @humanode-hyperlane/cosmos-sdk@19.8.0
+  - @humanode-hyperlane/radix-sdk@19.8.0
+  - @humanode-hyperlane/core@10.0.2
+  - @humanode-hyperlane/starknet-core@19.8.0
 
 ## 19.7.0
 
@@ -778,11 +778,11 @@
 - bdfa2047e: Fix CCTP v2 deployer constructor argument encoding
 - 343737271: Assert code exists on eth_storageAt requests
 - 5c4cef1d4: Fixed a bug where EvmHypCollateralAdapter:getWrappedTokenAddress() would not return the correct address if the route had the old versions. Add fallback for contract.getPackageVersion()
-  - @hyperlane-xyz/starknet-core@19.7.0
-  - @hyperlane-xyz/cosmos-sdk@19.7.0
-  - @hyperlane-xyz/radix-sdk@19.7.0
-  - @hyperlane-xyz/utils@19.7.0
-  - @hyperlane-xyz/core@10.0.1
+  - @humanode-hyperlane/starknet-core@19.7.0
+  - @humanode-hyperlane/cosmos-sdk@19.7.0
+  - @humanode-hyperlane/radix-sdk@19.7.0
+  - @humanode-hyperlane/utils@19.7.0
+  - @humanode-hyperlane/core@10.0.1
 
 ## 19.6.0
 
@@ -820,11 +820,11 @@
 - Updated dependencies [f930794d7]
 - Updated dependencies [419e16910]
 - Updated dependencies [9a43cdca9]
-  - @hyperlane-xyz/core@10.0.0
-  - @hyperlane-xyz/utils@19.6.0
-  - @hyperlane-xyz/cosmos-sdk@19.6.0
-  - @hyperlane-xyz/radix-sdk@19.6.0
-  - @hyperlane-xyz/starknet-core@19.6.0
+  - @humanode-hyperlane/core@10.0.0
+  - @humanode-hyperlane/utils@19.6.0
+  - @humanode-hyperlane/cosmos-sdk@19.6.0
+  - @humanode-hyperlane/radix-sdk@19.6.0
+  - @humanode-hyperlane/starknet-core@19.6.0
 
 ## 19.5.0
 
@@ -839,11 +839,11 @@
 
 - Updated dependencies [312826d10]
 - Updated dependencies [312826d10]
-  - @hyperlane-xyz/utils@19.5.0
-  - @hyperlane-xyz/radix-sdk@19.5.0
-  - @hyperlane-xyz/core@9.0.17
-  - @hyperlane-xyz/cosmos-sdk@19.5.0
-  - @hyperlane-xyz/starknet-core@19.5.0
+  - @humanode-hyperlane/utils@19.5.0
+  - @humanode-hyperlane/radix-sdk@19.5.0
+  - @humanode-hyperlane/core@9.0.17
+  - @humanode-hyperlane/cosmos-sdk@19.5.0
+  - @humanode-hyperlane/starknet-core@19.5.0
 
 ## 19.4.0
 
@@ -859,11 +859,11 @@
 - 5a4e22d34: Bump @solana/web3.js dependency explicitly from ^1.95.4 to ^1.98.4.
 - 517bbaa42: Update NON_ZERO_SENDER_ADDRESS to 0xa7ECcdb9Be08178f896c26b7BbD8C3D4E844d9Ba.
 - Updated dependencies [5a4e22d34]
-  - @hyperlane-xyz/utils@19.4.0
-  - @hyperlane-xyz/core@9.0.16
-  - @hyperlane-xyz/starknet-core@19.4.0
-  - @hyperlane-xyz/cosmos-sdk@19.4.0
-  - @hyperlane-xyz/radix-sdk@19.4.0
+  - @humanode-hyperlane/utils@19.4.0
+  - @humanode-hyperlane/core@9.0.16
+  - @humanode-hyperlane/starknet-core@19.4.0
+  - @humanode-hyperlane/cosmos-sdk@19.4.0
+  - @humanode-hyperlane/radix-sdk@19.4.0
 
 ## 19.3.0
 
@@ -873,11 +873,11 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@19.3.0
-- @hyperlane-xyz/cosmos-sdk@19.3.0
-- @hyperlane-xyz/radix-sdk@19.3.0
-- @hyperlane-xyz/utils@19.3.0
-- @hyperlane-xyz/core@9.0.15
+- @humanode-hyperlane/starknet-core@19.3.0
+- @humanode-hyperlane/cosmos-sdk@19.3.0
+- @humanode-hyperlane/radix-sdk@19.3.0
+- @humanode-hyperlane/utils@19.3.0
+- @humanode-hyperlane/core@9.0.15
 
 ## 19.2.0
 
@@ -887,21 +887,21 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@19.2.0
-- @hyperlane-xyz/cosmos-sdk@19.2.0
-- @hyperlane-xyz/radix-sdk@19.2.0
-- @hyperlane-xyz/utils@19.2.0
-- @hyperlane-xyz/core@9.0.14
+- @humanode-hyperlane/starknet-core@19.2.0
+- @humanode-hyperlane/cosmos-sdk@19.2.0
+- @humanode-hyperlane/radix-sdk@19.2.0
+- @humanode-hyperlane/utils@19.2.0
+- @humanode-hyperlane/core@9.0.14
 
 ## 19.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@19.1.1
-- @hyperlane-xyz/cosmos-sdk@19.1.1
-- @hyperlane-xyz/radix-sdk@19.1.1
-- @hyperlane-xyz/utils@19.1.1
-- @hyperlane-xyz/core@9.0.13
+- @humanode-hyperlane/starknet-core@19.1.1
+- @humanode-hyperlane/cosmos-sdk@19.1.1
+- @humanode-hyperlane/radix-sdk@19.1.1
+- @humanode-hyperlane/utils@19.1.1
+- @humanode-hyperlane/core@9.0.13
 
 ## 19.1.0
 
@@ -915,11 +915,11 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@19.1.0
-- @hyperlane-xyz/cosmos-sdk@19.1.0
-- @hyperlane-xyz/radix-sdk@19.1.0
-- @hyperlane-xyz/utils@19.1.0
-- @hyperlane-xyz/core@9.0.12
+- @humanode-hyperlane/starknet-core@19.1.0
+- @humanode-hyperlane/cosmos-sdk@19.1.0
+- @humanode-hyperlane/radix-sdk@19.1.0
+- @humanode-hyperlane/utils@19.1.0
+- @humanode-hyperlane/core@9.0.12
 
 ## 19.0.0
 
@@ -941,11 +941,11 @@
 - Updated dependencies [e42a0e8e1]
 - Updated dependencies [32479e139]
 - Updated dependencies [32479e139]
-  - @hyperlane-xyz/cosmos-sdk@19.0.0
-  - @hyperlane-xyz/radix-sdk@19.0.0
-  - @hyperlane-xyz/utils@19.0.0
-  - @hyperlane-xyz/core@9.0.11
-  - @hyperlane-xyz/starknet-core@19.0.0
+  - @humanode-hyperlane/cosmos-sdk@19.0.0
+  - @humanode-hyperlane/radix-sdk@19.0.0
+  - @humanode-hyperlane/utils@19.0.0
+  - @humanode-hyperlane/core@9.0.11
+  - @humanode-hyperlane/starknet-core@19.0.0
 
 ## 18.3.0
 
@@ -971,11 +971,11 @@
 - Updated dependencies [2c47e1143]
 - Updated dependencies [b66129ee2]
 - Updated dependencies [6b8419370]
-  - @hyperlane-xyz/radix-sdk@18.3.0
-  - @hyperlane-xyz/core@9.0.10
-  - @hyperlane-xyz/utils@18.3.0
-  - @hyperlane-xyz/starknet-core@18.3.0
-  - @hyperlane-xyz/cosmos-sdk@18.3.0
+  - @humanode-hyperlane/radix-sdk@18.3.0
+  - @humanode-hyperlane/core@9.0.10
+  - @humanode-hyperlane/utils@18.3.0
+  - @humanode-hyperlane/starknet-core@18.3.0
+  - @humanode-hyperlane/cosmos-sdk@18.3.0
 
 ## 18.2.0
 
@@ -988,11 +988,11 @@
 ### Patch Changes
 
 - Updated dependencies [dfa9d368c]
-  - @hyperlane-xyz/cosmos-sdk@18.2.0
-  - @hyperlane-xyz/starknet-core@18.2.0
-  - @hyperlane-xyz/radix-sdk@18.2.0
-  - @hyperlane-xyz/utils@18.2.0
-  - @hyperlane-xyz/core@9.0.9
+  - @humanode-hyperlane/cosmos-sdk@18.2.0
+  - @humanode-hyperlane/starknet-core@18.2.0
+  - @humanode-hyperlane/radix-sdk@18.2.0
+  - @humanode-hyperlane/utils@18.2.0
+  - @humanode-hyperlane/core@9.0.9
 
 ## 18.1.0
 
@@ -1000,11 +1000,11 @@
 
 - 73be9b8d2: Don't use radix-engine-toolkit for frontend application usage.
 - Updated dependencies [73be9b8d2]
-  - @hyperlane-xyz/radix-sdk@18.1.0
-  - @hyperlane-xyz/starknet-core@18.1.0
-  - @hyperlane-xyz/cosmos-sdk@18.1.0
-  - @hyperlane-xyz/utils@18.1.0
-  - @hyperlane-xyz/core@9.0.8
+  - @humanode-hyperlane/radix-sdk@18.1.0
+  - @humanode-hyperlane/starknet-core@18.1.0
+  - @humanode-hyperlane/cosmos-sdk@18.1.0
+  - @humanode-hyperlane/utils@18.1.0
+  - @humanode-hyperlane/core@9.0.8
 
 ## 18.0.0
 
@@ -1016,11 +1016,11 @@
 
 - ba832828f: Made decimals consistency check scale-aware and disallowed partial decimals across chains
 - Updated dependencies [cfc0eb2a7]
-  - @hyperlane-xyz/utils@18.0.0
-  - @hyperlane-xyz/core@9.0.7
-  - @hyperlane-xyz/radix-sdk@18.0.0
-  - @hyperlane-xyz/starknet-core@18.0.0
-  - @hyperlane-xyz/cosmos-sdk@18.0.0
+  - @humanode-hyperlane/utils@18.0.0
+  - @humanode-hyperlane/core@9.0.7
+  - @humanode-hyperlane/radix-sdk@18.0.0
+  - @humanode-hyperlane/starknet-core@18.0.0
+  - @humanode-hyperlane/cosmos-sdk@18.0.0
 
 ## 17.0.0
 
@@ -1039,10 +1039,10 @@
 - 7f542b288: Fix `CosmosModuleTokenAdapter` recipient conversion for populateTransferRemoteTx
 - Updated dependencies [8c15edc67]
 - Updated dependencies [e0bda316a]
-  - @hyperlane-xyz/utils@17.0.0
-  - @hyperlane-xyz/core@9.0.6
-  - @hyperlane-xyz/starknet-core@17.0.0
-  - @hyperlane-xyz/cosmos-sdk@17.0.0
+  - @humanode-hyperlane/utils@17.0.0
+  - @humanode-hyperlane/core@9.0.6
+  - @humanode-hyperlane/starknet-core@17.0.0
+  - @humanode-hyperlane/cosmos-sdk@17.0.0
 
 ## 16.2.0
 
@@ -1054,20 +1054,20 @@
 ### Patch Changes
 
 - ce4974214: Add cctp to getActualDecimals.
-  - @hyperlane-xyz/starknet-core@16.2.0
-  - @hyperlane-xyz/cosmos-sdk@16.2.0
-  - @hyperlane-xyz/utils@16.2.0
-  - @hyperlane-xyz/core@9.0.5
+  - @humanode-hyperlane/starknet-core@16.2.0
+  - @humanode-hyperlane/cosmos-sdk@16.2.0
+  - @humanode-hyperlane/utils@16.2.0
+  - @humanode-hyperlane/core@9.0.5
 
 ## 16.1.1
 
 ### Patch Changes
 
 - ea77b6ae4: Add Starknet protocol type.
-  - @hyperlane-xyz/starknet-core@16.1.1
-  - @hyperlane-xyz/cosmos-sdk@16.1.1
-  - @hyperlane-xyz/utils@16.1.1
-  - @hyperlane-xyz/core@9.0.4
+  - @humanode-hyperlane/starknet-core@16.1.1
+  - @humanode-hyperlane/cosmos-sdk@16.1.1
+  - @humanode-hyperlane/utils@16.1.1
+  - @humanode-hyperlane/core@9.0.4
 
 ## 16.1.0
 
@@ -1079,10 +1079,10 @@
 
 - e69ac9f62: Updated the HypERC20Checker to use a default anvil address instead of the signer address when asserting if a token is a hyp native
 - d9b8a7551: Handle etherscan v2 api migration
-  - @hyperlane-xyz/starknet-core@16.1.0
-  - @hyperlane-xyz/cosmos-sdk@16.1.0
-  - @hyperlane-xyz/utils@16.1.0
-  - @hyperlane-xyz/core@9.0.3
+  - @humanode-hyperlane/starknet-core@16.1.0
+  - @humanode-hyperlane/cosmos-sdk@16.1.0
+  - @humanode-hyperlane/utils@16.1.0
+  - @humanode-hyperlane/core@9.0.3
 
 ## 16.0.0
 
@@ -1101,10 +1101,10 @@
 
 - 966ad8440: Fix Starknet Adapter: balance_of
 - fabb4a5af: Introduced a shared eslint configuration that is applied to the SDK
-  - @hyperlane-xyz/starknet-core@16.0.0
-  - @hyperlane-xyz/cosmos-sdk@16.0.0
-  - @hyperlane-xyz/utils@16.0.0
-  - @hyperlane-xyz/core@9.0.2
+  - @humanode-hyperlane/starknet-core@16.0.0
+  - @humanode-hyperlane/cosmos-sdk@16.0.0
+  - @humanode-hyperlane/utils@16.0.0
+  - @humanode-hyperlane/core@9.0.2
 
 ## 15.0.0
 
@@ -1119,10 +1119,10 @@
 - d16a853c0: Update paradex AW validator address.
 - Updated dependencies [451f3f6c3]
 - Updated dependencies [a33c8abd4]
-  - @hyperlane-xyz/utils@15.0.0
-  - @hyperlane-xyz/core@9.0.1
-  - @hyperlane-xyz/starknet-core@15.0.0
-  - @hyperlane-xyz/cosmos-sdk@15.0.0
+  - @humanode-hyperlane/utils@15.0.0
+  - @humanode-hyperlane/core@9.0.1
+  - @humanode-hyperlane/starknet-core@15.0.0
+  - @humanode-hyperlane/cosmos-sdk@15.0.0
 
 ## 14.4.0
 
@@ -1133,10 +1133,10 @@
 ### Patch Changes
 
 - Updated dependencies [155f5a5e8]
-  - @hyperlane-xyz/core@9.0.0
-  - @hyperlane-xyz/starknet-core@14.4.0
-  - @hyperlane-xyz/cosmos-sdk@14.4.0
-  - @hyperlane-xyz/utils@14.4.0
+  - @humanode-hyperlane/core@9.0.0
+  - @humanode-hyperlane/starknet-core@14.4.0
+  - @humanode-hyperlane/cosmos-sdk@14.4.0
+  - @humanode-hyperlane/utils@14.4.0
 
 ## 14.3.0
 
@@ -1148,10 +1148,10 @@
 ### Patch Changes
 
 - ae0771d9e: InterchainAccount.getCallRemote now respects the localRouter override if passed in.
-  - @hyperlane-xyz/starknet-core@14.3.0
-  - @hyperlane-xyz/cosmos-sdk@14.3.0
-  - @hyperlane-xyz/utils@14.3.0
-  - @hyperlane-xyz/core@8.1.2
+  - @humanode-hyperlane/starknet-core@14.3.0
+  - @humanode-hyperlane/cosmos-sdk@14.3.0
+  - @humanode-hyperlane/utils@14.3.0
+  - @humanode-hyperlane/core@8.1.2
 
 ## 14.2.0
 
@@ -1166,10 +1166,10 @@
 
 - a7d5941c1: Fix Starknet total_supply.
 - Updated dependencies [c177c4733]
-  - @hyperlane-xyz/core@8.1.1
-  - @hyperlane-xyz/starknet-core@14.2.0
-  - @hyperlane-xyz/cosmos-sdk@14.2.0
-  - @hyperlane-xyz/utils@14.2.0
+  - @humanode-hyperlane/core@8.1.1
+  - @humanode-hyperlane/starknet-core@14.2.0
+  - @humanode-hyperlane/cosmos-sdk@14.2.0
+  - @humanode-hyperlane/utils@14.2.0
 
 ## 14.1.0
 
@@ -1183,10 +1183,10 @@
 - Updated dependencies [bd91094c3]
 - Updated dependencies [04fc563f4]
 - Updated dependencies [ecaa4ef90]
-  - @hyperlane-xyz/core@8.1.0
-  - @hyperlane-xyz/starknet-core@14.1.0
-  - @hyperlane-xyz/cosmos-sdk@14.1.0
-  - @hyperlane-xyz/utils@14.1.0
+  - @humanode-hyperlane/core@8.1.0
+  - @humanode-hyperlane/starknet-core@14.1.0
+  - @humanode-hyperlane/cosmos-sdk@14.1.0
+  - @humanode-hyperlane/utils@14.1.0
 
 ## 14.0.0
 
@@ -1200,10 +1200,10 @@
 - 88134de1f: Enable backwards-compatible ISM derivation with legacy ICAs.
 - 7ad8e394c: fix starknet token adapter
 - Updated dependencies [7ad8e394c]
-  - @hyperlane-xyz/utils@14.0.0
-  - @hyperlane-xyz/core@8.0.2
-  - @hyperlane-xyz/starknet-core@14.0.0
-  - @hyperlane-xyz/cosmos-sdk@14.0.0
+  - @humanode-hyperlane/utils@14.0.0
+  - @humanode-hyperlane/core@8.0.2
+  - @humanode-hyperlane/starknet-core@14.0.0
+  - @humanode-hyperlane/cosmos-sdk@14.0.0
 
 ## 13.4.0
 
@@ -1224,10 +1224,10 @@
 - Updated dependencies [19384e74b]
 - Updated dependencies [ec8d196d9]
 - Updated dependencies [bacf16a80]
-  - @hyperlane-xyz/utils@13.4.0
-  - @hyperlane-xyz/starknet-core@13.4.0
-  - @hyperlane-xyz/cosmos-sdk@13.4.0
-  - @hyperlane-xyz/core@8.0.1
+  - @humanode-hyperlane/utils@13.4.0
+  - @humanode-hyperlane/starknet-core@13.4.0
+  - @humanode-hyperlane/cosmos-sdk@13.4.0
+  - @humanode-hyperlane/core@8.0.1
 
 ## 13.3.0
 
@@ -1258,10 +1258,10 @@
 - Updated dependencies [b977a28]
 - Updated dependencies [88fe35f]
 - Updated dependencies [3327a6e]
-  - @hyperlane-xyz/core@8.0.0
-  - @hyperlane-xyz/starknet-core@13.3.0
-  - @hyperlane-xyz/cosmos-sdk@13.3.0
-  - @hyperlane-xyz/utils@13.3.0
+  - @humanode-hyperlane/core@8.0.0
+  - @humanode-hyperlane/starknet-core@13.3.0
+  - @humanode-hyperlane/cosmos-sdk@13.3.0
+  - @humanode-hyperlane/utils@13.3.0
 
 ## 13.2.1
 
@@ -1269,10 +1269,10 @@
 
 - 72887f7: Update to ethers v5.8.0.
 - Updated dependencies [72887f7]
-  - @hyperlane-xyz/utils@13.2.1
-  - @hyperlane-xyz/core@7.1.10
-  - @hyperlane-xyz/starknet-core@13.2.1
-  - @hyperlane-xyz/cosmos-sdk@13.2.1
+  - @humanode-hyperlane/utils@13.2.1
+  - @humanode-hyperlane/core@7.1.10
+  - @humanode-hyperlane/starknet-core@13.2.1
+  - @humanode-hyperlane/cosmos-sdk@13.2.1
 
 ## 13.2.0
 
@@ -1288,10 +1288,10 @@
 ### Patch Changes
 
 - 4d66b73: Account for zksync in legacy deployer logic.
-  - @hyperlane-xyz/starknet-core@13.2.0
-  - @hyperlane-xyz/cosmos-sdk@13.2.0
-  - @hyperlane-xyz/utils@13.2.0
-  - @hyperlane-xyz/core@7.1.9
+  - @humanode-hyperlane/starknet-core@13.2.0
+  - @humanode-hyperlane/cosmos-sdk@13.2.0
+  - @humanode-hyperlane/utils@13.2.0
+  - @humanode-hyperlane/core@7.1.9
 
 ## 13.1.1
 
@@ -1299,10 +1299,10 @@
 
 - ba4deea: Revert workspace dependency syntax.
 - Updated dependencies [ba4deea]
-  - @hyperlane-xyz/cosmos-sdk@13.1.1
-  - @hyperlane-xyz/core@7.1.8
-  - @hyperlane-xyz/starknet-core@13.1.1
-  - @hyperlane-xyz/utils@13.1.1
+  - @humanode-hyperlane/cosmos-sdk@13.1.1
+  - @humanode-hyperlane/core@7.1.8
+  - @humanode-hyperlane/starknet-core@13.1.1
+  - @humanode-hyperlane/utils@13.1.1
 
 ## 13.1.0
 
@@ -1314,10 +1314,10 @@
 ### Patch Changes
 
 - Updated dependencies [f41f766]
-  - @hyperlane-xyz/utils@13.1.0
-  - @hyperlane-xyz/core@7.1.7
-  - @hyperlane-xyz/starknet-core@13.1.0
-  - @hyperlane-xyz/cosmos-sdk@13.1.0
+  - @humanode-hyperlane/utils@13.1.0
+  - @humanode-hyperlane/core@7.1.7
+  - @humanode-hyperlane/starknet-core@13.1.0
+  - @humanode-hyperlane/cosmos-sdk@13.1.0
 
 ## 13.0.0
 
@@ -1332,10 +1332,10 @@
 - Updated dependencies [0de63e0]
 - Updated dependencies [f8696c7]
 - Updated dependencies [2724559]
-  - @hyperlane-xyz/utils@13.0.0
-  - @hyperlane-xyz/starknet-core@13.0.0
-  - @hyperlane-xyz/cosmos-sdk@13.0.0
-  - @hyperlane-xyz/core@7.1.6
+  - @humanode-hyperlane/utils@13.0.0
+  - @humanode-hyperlane/starknet-core@13.0.0
+  - @humanode-hyperlane/cosmos-sdk@13.0.0
+  - @humanode-hyperlane/core@7.1.6
 
 ## 12.6.0
 
@@ -1360,18 +1360,18 @@
 - Updated dependencies [76f0eba]
 - Updated dependencies [d182d7d]
 - Updated dependencies [b360802]
-  - @hyperlane-xyz/cosmos-sdk@12.6.0
-  - @hyperlane-xyz/utils@12.6.0
-  - @hyperlane-xyz/core@7.1.5
+  - @humanode-hyperlane/cosmos-sdk@12.6.0
+  - @humanode-hyperlane/utils@12.6.0
+  - @humanode-hyperlane/core@7.1.5
 
 ## 12.5.0
 
 ### Patch Changes
 
 - c8ace88: Export HypTokenRouterConfigMailboxOptionalSchema and HypTokenRouterConfigMailboxOptional
-  - @hyperlane-xyz/cosmos-sdk@12.5.0
-  - @hyperlane-xyz/utils@12.5.0
-  - @hyperlane-xyz/core@7.1.4
+  - @humanode-hyperlane/cosmos-sdk@12.5.0
+  - @humanode-hyperlane/utils@12.5.0
+  - @humanode-hyperlane/core@7.1.4
 
 ## 12.4.0
 
@@ -1381,9 +1381,9 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-sdk@12.4.0
-- @hyperlane-xyz/utils@12.4.0
-- @hyperlane-xyz/core@7.1.3
+- @humanode-hyperlane/cosmos-sdk@12.4.0
+- @humanode-hyperlane/utils@12.4.0
+- @humanode-hyperlane/core@7.1.3
 
 ## 12.3.0
 
@@ -1396,9 +1396,9 @@
 ### Patch Changes
 
 - Updated dependencies [7500bd6fe]
-  - @hyperlane-xyz/utils@12.3.0
-  - @hyperlane-xyz/core@7.1.2
-  - @hyperlane-xyz/cosmos-sdk@12.3.0
+  - @humanode-hyperlane/utils@12.3.0
+  - @humanode-hyperlane/core@7.1.2
+  - @humanode-hyperlane/cosmos-sdk@12.3.0
 
 ## 12.2.0
 
@@ -1409,8 +1409,8 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@12.2.0
-- @hyperlane-xyz/core@7.1.1
+- @humanode-hyperlane/utils@12.2.0
+- @humanode-hyperlane/core@7.1.1
 
 ## 12.1.0
 
@@ -1427,8 +1427,8 @@
 ### Patch Changes
 
 - Updated dependencies [e6f6d61a0]
-  - @hyperlane-xyz/core@7.1.0
-  - @hyperlane-xyz/utils@12.1.0
+  - @humanode-hyperlane/core@7.1.0
+  - @humanode-hyperlane/utils@12.1.0
 
 ## 12.0.0
 
@@ -1452,8 +1452,8 @@
 - Updated dependencies [59a087ded]
 - Updated dependencies [59a087ded]
 - Updated dependencies [59a087ded]
-  - @hyperlane-xyz/core@7.0.0
-  - @hyperlane-xyz/utils@12.0.0
+  - @humanode-hyperlane/core@7.0.0
+  - @humanode-hyperlane/utils@12.0.0
 
 ## 11.0.0
 
@@ -1469,8 +1469,8 @@
 
 - Updated dependencies [cd0424595]
 - Updated dependencies [3b060c3e1]
-  - @hyperlane-xyz/core@6.1.0
-  - @hyperlane-xyz/utils@11.0.0
+  - @humanode-hyperlane/core@6.1.0
+  - @humanode-hyperlane/utils@11.0.0
 
 ## 10.0.0
 
@@ -1489,16 +1489,16 @@
 
 - Updated dependencies [b8d95fc95]
 - Updated dependencies [fff9cbf57]
-  - @hyperlane-xyz/utils@10.0.0
-  - @hyperlane-xyz/core@6.0.4
+  - @humanode-hyperlane/utils@10.0.0
+  - @humanode-hyperlane/core@6.0.4
 
 ## 9.2.1
 
 ### Patch Changes
 
 - e3d09168e: Updated NON_ZERO_SENDER_ADDRESS to 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 to fix reading on zksync chains
-  - @hyperlane-xyz/utils@9.2.1
-  - @hyperlane-xyz/core@6.0.3
+  - @humanode-hyperlane/utils@9.2.1
+  - @humanode-hyperlane/core@6.0.3
 
 ## 9.2.0
 
@@ -1511,8 +1511,8 @@
 ### Patch Changes
 
 - 3852a9015: Fix WarpCore collateral check for lockboxes
-  - @hyperlane-xyz/utils@9.2.0
-  - @hyperlane-xyz/core@6.0.2
+  - @humanode-hyperlane/utils@9.2.0
+  - @humanode-hyperlane/core@6.0.2
 
 ## 9.1.0
 
@@ -1526,8 +1526,8 @@
 ### Patch Changes
 
 - 97c773476: Skip non-Ethereum chains when deriving token metadata
-  - @hyperlane-xyz/utils@9.1.0
-  - @hyperlane-xyz/core@6.0.1
+  - @humanode-hyperlane/utils@9.1.0
+  - @humanode-hyperlane/core@6.0.1
 
 ## 9.0.0
 
@@ -1547,8 +1547,8 @@
 - Updated dependencies [88970a78c]
 - Updated dependencies [4df37393f]
 - Updated dependencies [88970a78c]
-  - @hyperlane-xyz/core@6.0.0
-  - @hyperlane-xyz/utils@9.0.0
+  - @humanode-hyperlane/core@6.0.0
+  - @humanode-hyperlane/utils@9.0.0
 
 ## 8.9.0
 
@@ -1581,15 +1581,15 @@
 - Updated dependencies [03266e2c2]
 - Updated dependencies [27eadbfc3]
 - Updated dependencies [4147f91cb]
-  - @hyperlane-xyz/core@5.12.0
-  - @hyperlane-xyz/utils@8.9.0
+  - @humanode-hyperlane/core@5.12.0
+  - @humanode-hyperlane/utils@8.9.0
 
 ## 8.8.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.8.1
-- @hyperlane-xyz/core@5.11.6
+- @humanode-hyperlane/utils@8.8.1
+- @humanode-hyperlane/core@5.11.6
 
 ## 8.8.0
 
@@ -1600,8 +1600,8 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.8.0
-- @hyperlane-xyz/core@5.11.5
+- @humanode-hyperlane/utils@8.8.0
+- @humanode-hyperlane/core@5.11.5
 
 ## 8.7.0
 
@@ -1617,15 +1617,15 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.7.0
-- @hyperlane-xyz/core@5.11.4
+- @humanode-hyperlane/utils@8.7.0
+- @humanode-hyperlane/core@5.11.4
 
 ## 8.6.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.6.1
-- @hyperlane-xyz/core@5.11.3
+- @humanode-hyperlane/utils@8.6.1
+- @humanode-hyperlane/core@5.11.3
 
 ## 8.6.0
 
@@ -1641,8 +1641,8 @@
 - ac984a17b: Fix contract address filtering to remove undefined factory addresses from the addresses map
 - ba50e62fc: Added ESLint configuration and dependency to enforce Node.js module restrictions
 - Updated dependencies [ba50e62fc]
-  - @hyperlane-xyz/core@5.11.2
-  - @hyperlane-xyz/utils@8.6.0
+  - @humanode-hyperlane/core@5.11.2
+  - @humanode-hyperlane/utils@8.6.0
 
 ## 8.5.0
 
@@ -1653,8 +1653,8 @@
 ### Patch Changes
 
 - Updated dependencies [044665692]
-  - @hyperlane-xyz/core@5.11.1
-  - @hyperlane-xyz/utils@8.5.0
+  - @humanode-hyperlane/core@5.11.1
+  - @humanode-hyperlane/utils@8.5.0
 
 ## 8.4.0
 
@@ -1665,8 +1665,8 @@
 ### Patch Changes
 
 - Updated dependencies [47ae33c6a]
-  - @hyperlane-xyz/core@5.11.0
-  - @hyperlane-xyz/utils@8.4.0
+  - @humanode-hyperlane/core@5.11.0
+  - @humanode-hyperlane/utils@8.4.0
 
 ## 8.3.0
 
@@ -1679,8 +1679,8 @@
 
 - Updated dependencies [db8c09011]
 - Updated dependencies [11cf66c5e]
-  - @hyperlane-xyz/core@5.10.0
-  - @hyperlane-xyz/utils@8.3.0
+  - @humanode-hyperlane/core@5.10.0
+  - @humanode-hyperlane/utils@8.3.0
 
 ## 8.2.0
 
@@ -1690,8 +1690,8 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.2.0
-- @hyperlane-xyz/core@5.9.2
+- @humanode-hyperlane/utils@8.2.0
+- @humanode-hyperlane/core@5.9.2
 
 ## 8.1.0
 
@@ -1703,8 +1703,8 @@
 
 - 79c61c891: Fix the return type of multisig and aggregation ISMs for zksync-stack chains.
 - 9518dbc84: Enroll new validators for artela, guru, hemi, nero, soneium, torus, xpla.
-  - @hyperlane-xyz/utils@8.1.0
-  - @hyperlane-xyz/core@5.9.1
+  - @humanode-hyperlane/utils@8.1.0
+  - @humanode-hyperlane/core@5.9.1
 
 ## 8.0.0
 
@@ -1731,8 +1731,8 @@
 - Updated dependencies [79f8197f3]
 - Updated dependencies [0eb8d52a4]
 - Updated dependencies [8834a8c92]
-  - @hyperlane-xyz/utils@8.0.0
-  - @hyperlane-xyz/core@5.9.0
+  - @humanode-hyperlane/utils@8.0.0
+  - @humanode-hyperlane/core@5.9.0
 
 ## 7.3.0
 
@@ -1754,8 +1754,8 @@
 ### Patch Changes
 
 - 665a7b8d8: Added decimal consistency checks to the Token checker
-  - @hyperlane-xyz/utils@7.3.0
-  - @hyperlane-xyz/core@5.8.3
+  - @humanode-hyperlane/utils@7.3.0
+  - @humanode-hyperlane/core@5.8.3
 
 ## 7.2.0
 
@@ -1768,8 +1768,8 @@
 ### Patch Changes
 
 - Updated dependencies [fa6d5f5c6]
-  - @hyperlane-xyz/utils@7.2.0
-  - @hyperlane-xyz/core@5.8.2
+  - @humanode-hyperlane/utils@7.2.0
+  - @humanode-hyperlane/core@5.8.2
 
 ## 7.1.0
 
@@ -1785,8 +1785,8 @@
 ### Patch Changes
 
 - Updated dependencies [0e285a443]
-  - @hyperlane-xyz/utils@7.1.0
-  - @hyperlane-xyz/core@5.8.1
+  - @humanode-hyperlane/utils@7.1.0
+  - @humanode-hyperlane/core@5.8.1
 
 ## 7.0.0
 
@@ -1811,8 +1811,8 @@
 - Updated dependencies [f48cf8766]
 - Updated dependencies [836060240]
 - Updated dependencies [e6f9d5c4f]
-  - @hyperlane-xyz/utils@7.0.0
-  - @hyperlane-xyz/core@5.8.0
+  - @humanode-hyperlane/utils@7.0.0
+  - @humanode-hyperlane/core@5.8.0
 
 ## 6.0.0
 
@@ -1828,8 +1828,8 @@
 ### Patch Changes
 
 - Updated dependencies [e3b97c455]
-  - @hyperlane-xyz/utils@6.0.0
-  - @hyperlane-xyz/core@5.7.1
+  - @humanode-hyperlane/utils@6.0.0
+  - @humanode-hyperlane/core@5.7.1
 
 ## 5.7.0
 
@@ -1855,8 +1855,8 @@
 - Updated dependencies [0640f837c]
 - Updated dependencies [a82b4b4cb]
 - Updated dependencies [39a9b2038]
-  - @hyperlane-xyz/core@5.7.0
-  - @hyperlane-xyz/utils@5.7.0
+  - @humanode-hyperlane/core@5.7.0
+  - @humanode-hyperlane/utils@5.7.0
 
 ## 5.6.2
 
@@ -1866,8 +1866,8 @@
 - Updated dependencies [5fd4267e7]
 - Updated dependencies [a36fc5fb2]
 - Updated dependencies [a42616ff3]
-  - @hyperlane-xyz/utils@5.6.2
-  - @hyperlane-xyz/core@5.6.1
+  - @humanode-hyperlane/utils@5.6.2
+  - @humanode-hyperlane/core@5.6.1
 
 ## 5.6.1
 
@@ -1876,8 +1876,8 @@
 - Updated dependencies [8cc0d9a4a]
 - Updated dependencies [c55257cf5]
 - Updated dependencies [8cc0d9a4a]
-  - @hyperlane-xyz/core@5.6.0
-  - @hyperlane-xyz/utils@5.6.1
+  - @humanode-hyperlane/core@5.6.0
+  - @humanode-hyperlane/utils@5.6.1
 
 ## 5.6.0
 
@@ -1902,8 +1902,8 @@
 - Updated dependencies [c9085afd9]
 - Updated dependencies [ec6b874b1]
 - Updated dependencies [72c23c0d6]
-  - @hyperlane-xyz/utils@5.6.0
-  - @hyperlane-xyz/core@5.5.0
+  - @humanode-hyperlane/utils@5.6.0
+  - @humanode-hyperlane/core@5.5.0
 
 ## 5.5.0
 
@@ -1919,8 +1919,8 @@
 - fcfe91113: Reuse SDK transaction typings in tx submitters
 - Updated dependencies [92c86cca6]
 - Updated dependencies [2afc484a2]
-  - @hyperlane-xyz/core@5.4.1
-  - @hyperlane-xyz/utils@5.5.0
+  - @humanode-hyperlane/core@5.4.1
+  - @humanode-hyperlane/utils@5.5.0
 
 ## 5.4.0
 
@@ -1933,8 +1933,8 @@
 - Updated dependencies [bb75eba74]
 - Updated dependencies [4415ac224]
 - Updated dependencies [c5c217f8e]
-  - @hyperlane-xyz/core@5.4.0
-  - @hyperlane-xyz/utils@5.4.0
+  - @humanode-hyperlane/core@5.4.0
+  - @humanode-hyperlane/utils@5.4.0
 
 ## 5.3.0
 
@@ -1948,16 +1948,16 @@
 - fd536a79a: Include priority fee instruction with SVM warp transfers
 - Updated dependencies [746eeb9d9]
 - Updated dependencies [50319d8ba]
-  - @hyperlane-xyz/utils@5.3.0
-  - @hyperlane-xyz/core@5.3.0
+  - @humanode-hyperlane/utils@5.3.0
+  - @humanode-hyperlane/core@5.3.0
 
 ## 5.2.1
 
 ### Patch Changes
 
 - Updated dependencies [eb5afcf3e]
-  - @hyperlane-xyz/core@5.2.1
-  - @hyperlane-xyz/utils@5.2.1
+  - @humanode-hyperlane/core@5.2.1
+  - @humanode-hyperlane/utils@5.2.1
 
 ## 5.2.0
 
@@ -1968,7 +1968,7 @@
 - 74a592e58: Adds OwnerCollateral to token mapping which will output the correct standard to the warp deploy artifact.
 - 739af9a34: Support providing multiple chains for checking in HyperlaneAppChecker
 - 44588c31d: Enroll new validators for cyber degenchain kroma lisk lukso merlin metis mint proofofplay real sanko tangle xai taiko
-- 291c5fe36: Use addBufferToGasLimit from @hyperlane-xyz/utils
+- 291c5fe36: Use addBufferToGasLimit from @humanode-hyperlane/utils
 - 69f17d99a: Fix to correctly infer the default set of multisend addresses for a given chain, and update to latest safe-deployments patch release
 - 9563a8beb: Sorted cwNative funds by denom in transfer tx
 - 73c232b3a: Deploy to oortmainnet
@@ -1990,8 +1990,8 @@
 - Updated dependencies [203084df2]
 - Updated dependencies [291c5fe36]
 - Updated dependencies [445b6222c]
-  - @hyperlane-xyz/utils@5.2.0
-  - @hyperlane-xyz/core@5.2.0
+  - @humanode-hyperlane/utils@5.2.0
+  - @humanode-hyperlane/core@5.2.0
 
 ## 5.1.0
 
@@ -2021,8 +2021,8 @@
 - Updated dependencies [013f19c64]
 - Updated dependencies [013f19c64]
 - Updated dependencies [013f19c64]
-  - @hyperlane-xyz/core@5.1.0
-  - @hyperlane-xyz/utils@5.1.0
+  - @humanode-hyperlane/core@5.1.0
+  - @humanode-hyperlane/utils@5.1.0
 
 ## 5.0.0
 
@@ -2066,8 +2066,8 @@
 - Updated dependencies [dfa908796]
 - Updated dependencies [90598ad44]
 - Updated dependencies [1474865ae]
-  - @hyperlane-xyz/utils@5.0.0
-  - @hyperlane-xyz/core@5.0.0
+  - @humanode-hyperlane/utils@5.0.0
+  - @humanode-hyperlane/core@5.0.0
 
 ## 4.1.0
 
@@ -2080,8 +2080,8 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/core@4.1.0
-- @hyperlane-xyz/utils@4.1.0
+- @humanode-hyperlane/core@4.1.0
+- @humanode-hyperlane/utils@4.1.0
 
 ## 4.0.0
 
@@ -2099,8 +2099,8 @@
 
 - 6b63c5d82: Adds deployment support for IsmConfig within a WarpRouteConfig
 - Updated dependencies [44cc9bf6b]
-  - @hyperlane-xyz/core@4.0.0
-  - @hyperlane-xyz/utils@4.0.0
+  - @humanode-hyperlane/core@4.0.0
+  - @humanode-hyperlane/utils@4.0.0
 
 ## 3.16.0
 
@@ -2112,8 +2112,8 @@
 ### Patch Changes
 
 - f9bbdde76: Fix initial total supply of synthetic token deployments to 0
-  - @hyperlane-xyz/core@3.16.0
-  - @hyperlane-xyz/utils@3.16.0
+  - @humanode-hyperlane/core@3.16.0
+  - @humanode-hyperlane/utils@3.16.0
 
 ## 3.15.1
 
@@ -2122,8 +2122,8 @@
 - acaa22cd9: Do not consider xERC20 a collateral standard to fix fungibility checking logic while maintaining mint limit checking
 - 921e449b4: Support priorityFee fetching from RPC and some better logging
 - Updated dependencies [6620fe636]
-  - @hyperlane-xyz/core@3.15.1
-  - @hyperlane-xyz/utils@3.15.1
+  - @humanode-hyperlane/core@3.15.1
+  - @humanode-hyperlane/utils@3.15.1
 
 ## 3.15.0
 
@@ -2135,16 +2135,16 @@
 ### Patch Changes
 
 - Updated dependencies [51bfff683]
-  - @hyperlane-xyz/core@3.15.0
-  - @hyperlane-xyz/utils@3.15.0
+  - @humanode-hyperlane/core@3.15.0
+  - @humanode-hyperlane/utils@3.15.0
 
 ## 3.14.0
 
 ### Patch Changes
 
 - Updated dependencies [a8a68f6f6]
-  - @hyperlane-xyz/core@3.14.0
-  - @hyperlane-xyz/utils@3.14.0
+  - @humanode-hyperlane/core@3.14.0
+  - @humanode-hyperlane/utils@3.14.0
 
 ## 3.13.0
 
@@ -2159,8 +2159,8 @@
 - Updated dependencies [babe816f8]
 - Updated dependencies [b440d98be]
 - Updated dependencies [0cf692e73]
-  - @hyperlane-xyz/core@3.13.0
-  - @hyperlane-xyz/utils@3.13.0
+  - @humanode-hyperlane/core@3.13.0
+  - @humanode-hyperlane/utils@3.13.0
 
 ## 3.12.0
 
@@ -2172,16 +2172,16 @@
 
 - eba393680: Exports submitter and transformer props types.
 - Updated dependencies [69de68a66]
-  - @hyperlane-xyz/utils@3.12.0
-  - @hyperlane-xyz/core@3.12.0
+  - @humanode-hyperlane/utils@3.12.0
+  - @humanode-hyperlane/core@3.12.0
 
 ## 3.11.1
 
 ### Patch Changes
 
 - c900da187: Workaround TS bug in Safe protocol-lib
-  - @hyperlane-xyz/core@3.11.1
-  - @hyperlane-xyz/utils@3.11.1
+  - @humanode-hyperlane/core@3.11.1
+  - @humanode-hyperlane/utils@3.11.1
 
 ## 3.11.0
 
@@ -2210,8 +2210,8 @@
 - Updated dependencies [b63714ede]
 - Updated dependencies [2b3f75836]
 - Updated dependencies [af2634207]
-  - @hyperlane-xyz/core@3.11.0
-  - @hyperlane-xyz/utils@3.11.0
+  - @humanode-hyperlane/core@3.11.0
+  - @humanode-hyperlane/utils@3.11.0
 
 ## 3.10.0
 
@@ -2228,8 +2228,8 @@
 - Updated dependencies [96485144a]
 - Updated dependencies [38358ecec]
 - Updated dependencies [4e7a43be6]
-  - @hyperlane-xyz/utils@3.10.0
-  - @hyperlane-xyz/core@3.10.0
+  - @humanode-hyperlane/utils@3.10.0
+  - @humanode-hyperlane/core@3.10.0
 
 ## 3.9.0
 
@@ -2239,15 +2239,15 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/core@3.9.0
-- @hyperlane-xyz/utils@3.9.0
+- @humanode-hyperlane/core@3.9.0
+- @humanode-hyperlane/utils@3.9.0
 
 ## 3.8.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/core@3.8.2
-- @hyperlane-xyz/utils@3.8.2
+- @humanode-hyperlane/core@3.8.2
+- @humanode-hyperlane/utils@3.8.2
 
 ## 3.8.1
 
@@ -2255,8 +2255,8 @@
 
 - 5daaae274: Prevent warp transfers to zero-ish addresses
 - Updated dependencies [5daaae274]
-  - @hyperlane-xyz/utils@3.8.1
-  - @hyperlane-xyz/core@3.8.1
+  - @humanode-hyperlane/utils@3.8.1
+  - @humanode-hyperlane/core@3.8.1
 
 ## 3.8.0
 
@@ -2266,7 +2266,7 @@
   **Breaking change**: Token Adapter `quoteGasPayment` method renamed to `quoteTransferRemoteGas` for clarity.
 - 9681df08d: Remove support for goerli networks (including optimismgoerli, arbitrumgoerli, lineagoerli and polygonzkevmtestnet)
 - 9681df08d: Enabled verification of contracts as part of the deployment flow.
-  - Solidity build artifact is now included as part of the `@hyperlane-xyz/core` package.
+  - Solidity build artifact is now included as part of the `@humanode-hyperlane/core` package.
   - Updated the `HyperlaneDeployer` to perform contract verification immediately after deploying a contract. A default verifier is instantiated using the core build artifact.
   - Updated the `HyperlaneIsmFactory` to re-use the `HyperlaneDeployer` for deployment where possible.
   - Minor logging improvements throughout deployers.
@@ -2288,8 +2288,8 @@
 - Updated dependencies [9681df08d]
 - Updated dependencies [9681df08d]
 - Updated dependencies [9681df08d]
-  - @hyperlane-xyz/core@3.8.0
-  - @hyperlane-xyz/utils@3.8.0
+  - @humanode-hyperlane/core@3.8.0
+  - @humanode-hyperlane/utils@3.8.0
 
 ## 3.7.0
 
@@ -2303,15 +2303,15 @@
 - 87151c62b: Bumped injective reorg period
 - ab17af5f7: Updating HyperlaneIgpDeployer to configure storage gas oracles as part of deployment
 - 7b40232af: Remove unhealthy zkevm rpc
-  - @hyperlane-xyz/core@3.7.0
-  - @hyperlane-xyz/utils@3.7.0
+  - @humanode-hyperlane/core@3.7.0
+  - @humanode-hyperlane/utils@3.7.0
 
 ## 3.6.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/core@3.6.2
-- @hyperlane-xyz/utils@3.6.2
+- @humanode-hyperlane/core@3.6.2
+- @humanode-hyperlane/utils@3.6.2
 
 ## 3.6.1
 
@@ -2324,8 +2324,8 @@
 - Updated dependencies [df24eec8b]
 - Updated dependencies [78e50e7da]
 - Updated dependencies [e4e4f93fc]
-  - @hyperlane-xyz/utils@3.6.1
-  - @hyperlane-xyz/core@3.6.1
+  - @humanode-hyperlane/utils@3.6.1
+  - @humanode-hyperlane/core@3.6.1
 
 ## 3.6.0
 
@@ -2338,16 +2338,16 @@
 
 - 67a6d971e: Added `shouldRecover` flag to deployContractFromFactory so that the `TestRecipientDeployer` can deploy new contracts if it's not the owner of the prior deployments (We were recovering the SDK artifacts which meant the deployer won't be able to set the ISM as they needed)
 - 612d4163a: Add mailbox version const to SDK
-  - @hyperlane-xyz/core@3.6.0
-  - @hyperlane-xyz/utils@3.6.0
+  - @humanode-hyperlane/core@3.6.0
+  - @humanode-hyperlane/utils@3.6.0
 
 ## 3.5.1
 
 ### Patch Changes
 
 - a04454d6d: Use getBalance instead of queryContractSmart for CwTokenAdapter
-  - @hyperlane-xyz/core@3.5.1
-  - @hyperlane-xyz/utils@3.5.1
+  - @humanode-hyperlane/core@3.5.1
+  - @humanode-hyperlane/utils@3.5.1
 
 ## 3.5.0
 
@@ -2359,8 +2359,8 @@
 
 - 08ba0d32b: Remove dead arbitrum goerli explorer link"
 - f7d285e3a: Adds Test Recipient addresses to the SDK artifacts
-  - @hyperlane-xyz/core@3.5.0
-  - @hyperlane-xyz/utils@3.5.0
+  - @humanode-hyperlane/core@3.5.0
+  - @humanode-hyperlane/utils@3.5.0
 
 ## 3.4.0
 
@@ -2382,8 +2382,8 @@
 - 79c96d718: Remove healthy RPC URLs and remove NeutronTestnet
 - Updated dependencies [fd4fc1898]
 - Updated dependencies [e06fe0b32]
-  - @hyperlane-xyz/utils@3.4.0
-  - @hyperlane-xyz/core@3.4.0
+  - @humanode-hyperlane/utils@3.4.0
+  - @humanode-hyperlane/core@3.4.0
 
 ## 3.3.0
 
@@ -2393,8 +2393,8 @@
 - 350175581: Rename StaticProtocolFee hook to ProtocolFee for clarity
 - 9f2c7ce7c: Removing agentStartBlocks and using mailbox.deployedBlock() instead
 - Updated dependencies [350175581]
-  - @hyperlane-xyz/core@3.3.0
-  - @hyperlane-xyz/utils@3.3.0
+  - @humanode-hyperlane/core@3.3.0
+  - @humanode-hyperlane/utils@3.3.0
 
 ## 3.2.0
 
@@ -2405,13 +2405,13 @@
 ### Patch Changes
 
 - Updated dependencies [df34198d4]
-  - @hyperlane-xyz/core@3.2.0
-  - @hyperlane-xyz/utils@3.2.0
+  - @humanode-hyperlane/core@3.2.0
+  - @humanode-hyperlane/utils@3.2.0
 
 ## 3.1.10
 
 ### Patch Changes
 
 - Updated dependencies [c9e0aedae]
-  - @hyperlane-xyz/core@3.1.10
-  - @hyperlane-xyz/utils@3.1.10
+  - @humanode-hyperlane/core@3.1.10
+  - @humanode-hyperlane/utils@3.1.10

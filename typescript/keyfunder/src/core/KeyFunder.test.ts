@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import type { Logger } from 'pino';
 import sinon from 'sinon';
 
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
 
 import type { KeyFunderConfig } from '../config/types.js';
 

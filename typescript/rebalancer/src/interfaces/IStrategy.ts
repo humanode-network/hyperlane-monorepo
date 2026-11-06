@@ -1,5 +1,5 @@
-import { type ChainMap, type ChainName } from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+import { type ChainMap, type ChainName } from '@humanode-hyperlane/sdk';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import { ExternalBridgeType } from '../config/types.js';
 import { ExecutionMethod } from '../tracking/types.js';

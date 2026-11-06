@@ -9,8 +9,8 @@ import {
   TestRecipient__factory,
   TimelockController__factory,
   ValidatorAnnounce__factory,
-} from '@hyperlane-xyz/core';
-import { objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { objMap } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { HookConfig, HookType } from '../hook/types.js';

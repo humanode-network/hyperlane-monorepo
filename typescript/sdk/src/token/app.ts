@@ -1,7 +1,7 @@
 import { Logger } from 'pino';
 
-import { TokenRouter } from '@hyperlane-xyz/core';
-import { Address, objKeys } from '@hyperlane-xyz/utils';
+import { TokenRouter } from '@humanode-hyperlane/core';
+import { Address, objKeys } from '@humanode-hyperlane/utils';
 
 import { appFromAddressesMapHelper } from '../contracts/contracts.js';
 import {

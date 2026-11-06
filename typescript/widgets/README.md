@@ -6,15 +6,15 @@ Common react components for projects using Hyperlane.
 
 ```sh
 # Install with npm
-npm install @hyperlane-xyz/widgets
+npm install @humanode-hyperlane/widgets
 
 # Or install with pnpm
-pnpm add @hyperlane-xyz/widgets
+pnpm add @humanode-hyperlane/widgets
 ```
 
 ### Peer dependencies
 
-This package requires `@hyperlane-xyz/sdk`, `react`, and `react-dom`.
+This package requires `@humanode-hyperlane/sdk`, `react`, and `react-dom`.
 
 ## Contents
 

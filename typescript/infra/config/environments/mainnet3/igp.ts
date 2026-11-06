@@ -1,5 +1,10 @@
-import { ChainMap, ChainName, HookType, IgpConfig } from '@hyperlane-xyz/sdk';
-import { exclude, objMap } from '@hyperlane-xyz/utils';
+import {
+  ChainMap,
+  ChainName,
+  HookType,
+  IgpConfig,
+} from '@humanode-hyperlane/sdk';
+import { exclude, objMap } from '@humanode-hyperlane/utils';
 
 import {
   AllStorageGasOracleConfigs,

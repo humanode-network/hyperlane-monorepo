@@ -5,7 +5,7 @@ import {
   TransactionManifest,
 } from '@radixdlt/radix-engine-toolkit';
 
-import { Annotated } from '@hyperlane-xyz/utils';
+import { Annotated } from '@humanode-hyperlane/utils';
 
 export interface RadixSDKTransaction {
   networkId: number;

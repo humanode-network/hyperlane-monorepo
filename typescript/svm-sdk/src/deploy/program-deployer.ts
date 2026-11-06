@@ -15,7 +15,7 @@ import {
   type TransactionSigner,
 } from '@solana/kit';
 
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { LOADER_V3_PROGRAM_ADDRESS } from '../constants.js';
 import { DEFAULT_WRITE_CHUNK_SIZE } from '../tx.js';

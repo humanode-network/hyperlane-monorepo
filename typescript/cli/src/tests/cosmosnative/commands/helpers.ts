@@ -1,8 +1,8 @@
 import { DirectSecp256k1Wallet } from '@cosmjs/proto-signing';
 import path from 'path';
 
-import { CosmosNativeSigner } from '@hyperlane-xyz/cosmos-sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+import { CosmosNativeSigner } from '@humanode-hyperlane/cosmos-sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../../context/context.js';
 import { REGISTRY_PATH, getCombinedWarpRoutePath } from '../consts.js';

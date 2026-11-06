@@ -5,7 +5,7 @@ import {
   buildMultisigIsmConfigs,
   defaultMultisigConfigs,
   multisigConfigToIsmConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { DeployEnvironment } from '../src/config/environment.js';
 

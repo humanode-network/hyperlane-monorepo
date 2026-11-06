@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
-import type { MultiProvider } from '@hyperlane-xyz/sdk';
-import { fetchWithTimeout } from '@hyperlane-xyz/utils';
+import type { MultiProvider } from '@humanode-hyperlane/sdk';
+import { fetchWithTimeout } from '@humanode-hyperlane/utils';
 
 import { HYPERLANE_EXPLORER_API_URL } from '../consts.js';
 import { widgetLogger } from '../logger.js';

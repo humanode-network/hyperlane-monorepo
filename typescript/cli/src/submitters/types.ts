@@ -7,7 +7,7 @@ import {
   ZChainName,
   preprocessChainSubmissionStrategy,
   refineChainSubmissionStrategy,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 export const CustomTxSubmitterType = {
   ...TxSubmitterType,

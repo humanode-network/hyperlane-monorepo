@@ -13,7 +13,7 @@ import { BigNumber, ethers } from 'ethers';
 import { formatUnits } from 'ethers/lib/utils.js';
 import { Hex, decodeFunctionData, getAddress, isHex, parseAbi } from 'viem';
 
-import { ISafe__factory } from '@hyperlane-xyz/core';
+import { ISafe__factory } from '@humanode-hyperlane/core';
 import {
   AnnotatedEV5Transaction,
   ChainName,
@@ -21,14 +21,14 @@ import {
   MultiProvider,
   getSafe,
   getSafeService,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   CallData,
   deepCopy,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getSecretDeployerKey } from '../agents/index.js';

@@ -12,7 +12,7 @@ inputs:
   build-filter:
     description: 'Turbo filter to scope the build'
     required: false
-    default: '@hyperlane-xyz/cli...'
+    default: '@humanode-hyperlane/cli...'
 
 runs:
   using: 'composite'
@@ -58,4 +58,4 @@ runs:
 
     - name: Install the packaged CLI
       shell: bash
-      run: npm i -g typescript/cli/hyperlane-xyz-cli-*.tgz
+      run: npm i -g typescript/cli/humanode-hyperlane-cli-*.tgz

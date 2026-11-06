@@ -6,8 +6,8 @@ import {
   HyperlaneCoreChecker,
   InterchainAccount,
   TestChainName,
-} from '@hyperlane-xyz/sdk';
-import { Address, formatStandardHookMetadata } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, formatStandardHookMetadata } from '@humanode-hyperlane/utils';
 
 import { AnnotatedCallData } from './HyperlaneAppGovernor.js';
 import { HyperlaneHaasGovernor } from './HyperlaneHaasGovernor.js';

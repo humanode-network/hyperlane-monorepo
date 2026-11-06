@@ -1,8 +1,8 @@
 import Safe from '@safe-global/protocol-kit';
 import yargs from 'yargs';
 
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { ChainName } from '@humanode-hyperlane/sdk';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../../config/contexts.js';
 import {

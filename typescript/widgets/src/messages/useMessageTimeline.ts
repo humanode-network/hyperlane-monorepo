@@ -1,4 +1,4 @@
-import type { MultiProvider } from '@hyperlane-xyz/sdk';
+import type { MultiProvider } from '@humanode-hyperlane/sdk';
 
 import { useMessage } from './useMessage.js';
 import { useMessageStage } from './useMessageStage.js';

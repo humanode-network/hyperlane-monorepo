@@ -1,10 +1,10 @@
-# @hyperlane-xyz/utils
+# @humanode-hyperlane/utils
 
 ## 30.0.0
 
 ### Patch Changes
 
-- 7646819: Yaml sorting helpers were exported from `@hyperlane-xyz/utils` so repo tooling can reuse a single implementation for YAML transforms and warp config ordering.
+- 7646819: Yaml sorting helpers were exported from `@humanode-hyperlane/utils` so repo tooling can reuse a single implementation for YAML transforms and warp config ordering.
 
 ## 29.1.0
 
@@ -75,7 +75,7 @@
 
 ### Minor Changes
 
-- 52ce778: A `LazyAsync` helper was added to `@hyperlane-xyz/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
+- 52ce778: A `LazyAsync` helper was added to `@humanode-hyperlane/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
 
 ## 24.0.0
 
@@ -105,12 +105,12 @@
 
 ### Minor Changes
 
-- 66ef635: Added `mapAllSettled` helper to @hyperlane-xyz/utils for typed parallel operations with key-based error tracking. Migrated Promise.allSettled patterns across sdk, cli, infra, and rebalancer packages to use the new helper.
+- 66ef635: Added `mapAllSettled` helper to @humanode-hyperlane/utils for typed parallel operations with key-based error tracking. Migrated Promise.allSettled patterns across sdk, cli, infra, and rebalancer packages to use the new helper.
 - 3aec1c4: Added `timedAsync` utility for trace-level timing instrumentation of async operations.
 
 ### Patch Changes
 
-- b892d63: Created new `@hyperlane-xyz/metrics` package to consolidate Prometheus metric utilities across the monorepo. Includes shared gauge definitions, metric update functions, balance utilities, metrics server, pushgateway utilities, and types. Added `tryFn` utility to `@hyperlane-xyz/utils`.
+- b892d63: Created new `@humanode-hyperlane/metrics` package to consolidate Prometheus metric utilities across the monorepo. Includes shared gauge definitions, metric update functions, balance utilities, metrics server, pushgateway utilities, and types. Added `tryFn` utility to `@humanode-hyperlane/utils`.
 
 ## 21.1.0
 
@@ -145,7 +145,7 @@
 ### Minor Changes
 
 - af2cd1729: Support reading ReorgEvent object from validator buckets.
-- e37100e2e: Add new `@hyperlane-xyz/utils/fs` submodule with filesystem utilities for Node.js. Includes functions for reading/writing JSON and YAML files, path resolution, directory management, and format-agnostic file operations. This submodule is not suitable for browser use.
+- e37100e2e: Add new `@humanode-hyperlane/utils/fs` submodule with filesystem utilities for Node.js. Includes functions for reading/writing JSON and YAML files, path resolution, directory management, and format-agnostic file operations. This submodule is not suitable for browser use.
 
 ### Patch Changes
 

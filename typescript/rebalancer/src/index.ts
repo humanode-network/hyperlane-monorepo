@@ -1,5 +1,5 @@
 /**
- * @hyperlane-xyz/rebalancer
+ * @humanode-hyperlane/rebalancer
  *
  * Hyperlane Warp Route Collateral Rebalancer
  *

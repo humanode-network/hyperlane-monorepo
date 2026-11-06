@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { BigNumber } from 'ethers';
 
-import { ISafe__factory } from '@hyperlane-xyz/core';
+import { ISafe__factory } from '@humanode-hyperlane/core';
 
 import { getOwnerChanges, parseSafeTx } from '../src/utils/safe.js';
 

@@ -7,7 +7,7 @@ import {
   getUtf8Encoder,
 } from '@solana/kit';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { ByteCursor } from '../codecs/binary.js';
 import {

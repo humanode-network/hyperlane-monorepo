@@ -1,12 +1,12 @@
 import type { Logger } from 'pino';
 
-import type { ChainName, Token } from '@hyperlane-xyz/sdk';
+import type { ChainName, Token } from '@humanode-hyperlane/sdk';
 import {
   bytes32ToAddress,
   isValidAddressEvm,
   isZeroishAddress,
   parseWarpRouteMessage,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 type ExplorerMessageRow = {
   msg_id: string;

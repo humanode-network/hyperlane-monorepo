@@ -9,8 +9,8 @@ import {
   setTransactionMessageLifetimeUsingBlockhash,
 } from '@solana/kit';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+import { type AltVM } from '@humanode-hyperlane/provider-sdk';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import {
   DEFAULT_COMPUTE_UNITS,

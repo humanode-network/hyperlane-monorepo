@@ -1,4 +1,4 @@
-import type { Address, Domain } from '@hyperlane-xyz/utils';
+import type { Address, Domain } from '@humanode-hyperlane/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 import type { BridgeTransferStatus } from '../interfaces/IExternalBridge.js';

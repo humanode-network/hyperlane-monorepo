@@ -1,14 +1,14 @@
 import { stringify as yamlStringify } from 'yaml';
 
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
-import { createCoreWriter } from '@hyperlane-xyz/deploy-sdk';
+import { buildArtifact as coreBuildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
+import { createCoreWriter } from '@humanode-hyperlane/deploy-sdk';
 import {
   GasAction,
   ProtocolType,
   coreConfigToArtifact,
   coreResultToDeployedAddresses,
-} from '@hyperlane-xyz/provider-sdk';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/provider-sdk';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainName,
   ContractVerifier,
@@ -17,8 +17,8 @@ import {
   EvmCoreModule,
   ExplorerLicenseType,
   altVmChainLookup,
-} from '@hyperlane-xyz/sdk';
-import { mustGet } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { mustGet } from '@humanode-hyperlane/utils';
 
 import { type MultiProtocolSignerManager } from '../context/strategies/signer/MultiProtocolSignerManager.js';
 import { type WriteCommandContext } from '../context/types.js';
@@ -34,7 +34,7 @@ import {
   validateCoreIsmCompatibility,
 } from './utils.js';
 import { getSubmitterByStrategy } from './warp.js';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
 
 interface DeployParams {
   context: WriteCommandContext;

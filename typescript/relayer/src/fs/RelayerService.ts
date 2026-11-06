@@ -2,10 +2,14 @@ import fs from 'fs';
 import http from 'http';
 import { Logger } from 'pino';
 
-import { startMetricsServer } from '@hyperlane-xyz/metrics';
-import { IRegistry } from '@hyperlane-xyz/registry';
-import { ChainMap, HyperlaneCore, MultiProvider } from '@hyperlane-xyz/sdk';
-import { Address, LazyAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { startMetricsServer } from '@humanode-hyperlane/metrics';
+import { IRegistry } from '@humanode-hyperlane/registry';
+import {
+  ChainMap,
+  HyperlaneCore,
+  MultiProvider,
+} from '@humanode-hyperlane/sdk';
+import { Address, LazyAsync, rootLogger } from '@humanode-hyperlane/utils';
 
 import { RelayerConfigInput } from '../config/schema.js';
 import { HyperlaneRelayer } from '../core/HyperlaneRelayer.js';

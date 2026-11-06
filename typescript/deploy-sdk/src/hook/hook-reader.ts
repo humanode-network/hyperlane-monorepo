@@ -1,9 +1,9 @@
 import {
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
-import { ArtifactReader } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/provider-sdk';
+import { ArtifactReader } from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   DeployedHookAddress,
   DeployedHookArtifact,
@@ -11,8 +11,8 @@ import {
   HookArtifactConfig,
   IRawHookArtifactManager,
   hookArtifactToDerivedConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { Logger, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/hook';
+import { Logger, rootLogger } from '@humanode-hyperlane/utils';
 
 /**
  * Factory function to create a HookReader instance.

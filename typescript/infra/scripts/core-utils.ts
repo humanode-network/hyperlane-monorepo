@@ -1,4 +1,4 @@
-import { HyperlaneCore, MultiProvider } from '@hyperlane-xyz/sdk';
+import { HyperlaneCore, MultiProvider } from '@humanode-hyperlane/sdk';
 
 import { Contexts } from '../config/contexts.js';
 import { environments } from '../config/environments/index.js';

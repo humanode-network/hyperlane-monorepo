@@ -1,8 +1,8 @@
 import { clsx } from 'clsx';
 import React, { ButtonHTMLAttributes } from 'react';
 
-import { ChainName, MultiProtocolProvider } from '@hyperlane-xyz/sdk';
-import { ProtocolType, shortenAddress } from '@hyperlane-xyz/utils';
+import { ChainName, MultiProtocolProvider } from '@humanode-hyperlane/sdk';
+import { ProtocolType, shortenAddress } from '@humanode-hyperlane/utils';
 
 import { Button } from '../components/Button.js';
 import { ChevronIcon } from '../icons/Chevron.js';

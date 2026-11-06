@@ -6,10 +6,10 @@ This guide covers changes introduced in PR #7385 which restructures AltVM (Alter
 
 The Hyperlane SDK has been reorganized to better separate EVM and multi-VM concerns:
 
-- **New Package**: `@hyperlane-xyz/provider-sdk` - Protocol-agnostic provider abstractions and interfaces
-- **New Package**: `@hyperlane-xyz/deploy-sdk` - Deployment modules for all VM types (EVM + AltVM)
-- **Updated**: `@hyperlane-xyz/sdk` - Core SDK with EVM-specific implementations
-- **Updated**: `@hyperlane-xyz/utils` - Shared utilities (no breaking changes)
+- **New Package**: `@humanode-hyperlane/provider-sdk` - Protocol-agnostic provider abstractions and interfaces
+- **New Package**: `@humanode-hyperlane/deploy-sdk` - Deployment modules for all VM types (EVM + AltVM)
+- **Updated**: `@humanode-hyperlane/sdk` - Core SDK with EVM-specific implementations
+- **Updated**: `@humanode-hyperlane/utils` - Shared utilities (no breaking changes)
 
 ## Who is Affected?
 
@@ -18,8 +18,8 @@ The Hyperlane SDK has been reorganized to better separate EVM and multi-VM conce
 If the client application:
 
 - Only uses EVM chains (Ethereum, Polygon, Arbitrum, etc.)
-- Imports from `@hyperlane-xyz/registry`
-- Imports from `@hyperlane-xyz/widgets`
+- Imports from `@humanode-hyperlane/registry`
+- Imports from `@humanode-hyperlane/widgets`
 - Uses `ProtocolType`, `ChainMetadata`, `MultiProvider` from SDK/utils
 - Uses the Warp UI template or Explorer without modifications
 
@@ -42,16 +42,16 @@ If the client application:
 
 This is a **non-breaking refactor** for external repositories. All commonly-used exports remain in their original locations:
 
-- ✅ `ProtocolType` - Still in `@hyperlane-xyz/utils`
-- ✅ `MultiProvider` - Still in `@hyperlane-xyz/sdk`
-- ✅ `ChainMetadata` - Still in `@hyperlane-xyz/sdk`
-- ✅ All EVM modules - Still in `@hyperlane-xyz/sdk`
+- ✅ `ProtocolType` - Still in `@humanode-hyperlane/utils`
+- ✅ `MultiProvider` - Still in `@humanode-hyperlane/sdk`
+- ✅ `ChainMetadata` - Still in `@humanode-hyperlane/sdk`
+- ✅ All EVM modules - Still in `@humanode-hyperlane/sdk`
 
 ### Internal Reorganization
 
 The following exports have been **moved** to new packages:
 
-#### Moved to `@hyperlane-xyz/provider-sdk`
+#### Moved to `@humanode-hyperlane/provider-sdk`
 
 ```typescript
 // Protocol types and enums
@@ -66,21 +66,27 @@ The following exports have been **moved** to new packages:
 - Transaction types
 ```
 
-#### Moved to `@hyperlane-xyz/deploy-sdk`
+#### Moved to `@humanode-hyperlane/deploy-sdk`
 
 ```typescript
 // Core deployment
-import { AltVMCoreModule, AltVMCoreReader } from '@hyperlane-xyz/deploy-sdk';
+import {
+  AltVMCoreModule,
+  AltVMCoreReader,
+} from '@humanode-hyperlane/deploy-sdk';
 // Hook deployment
-import { AltVMHookModule, AltVMHookReader } from '@hyperlane-xyz/deploy-sdk';
+import {
+  AltVMHookModule,
+  AltVMHookReader,
+} from '@humanode-hyperlane/deploy-sdk';
 // ISM deployment
-import { AltVMIsmModule, AltVMIsmReader } from '@hyperlane-xyz/deploy-sdk';
+import { AltVMIsmModule, AltVMIsmReader } from '@humanode-hyperlane/deploy-sdk';
 // Warp deployment
 import {
   AltVMDeployer,
   AltVMWarpModule,
   AltVMWarpRouteReader,
-} from '@hyperlane-xyz/deploy-sdk';
+} from '@humanode-hyperlane/deploy-sdk';
 ```
 
 ## Migration Steps
@@ -90,8 +96,8 @@ import {
 For monorepo internal packages, dependencies are already in place. For external consumers using AltVM features:
 
 ```bash
-yarn add @hyperlane-xyz/provider-sdk@^0.3.0
-yarn add @hyperlane-xyz/deploy-sdk@^0.3.0
+yarn add @humanode-hyperlane/provider-sdk@^0.3.0
+yarn add @humanode-hyperlane/deploy-sdk@^0.3.0
 ```
 
 ### Step 2: Update Import Statements
@@ -102,33 +108,36 @@ Update AltVM modules as indicated above.
 
 ```typescript
 // Before
-import { AltVM } from '@hyperlane-xyz/utils';
+import { AltVM } from '@humanode-hyperlane/utils';
 
 // After
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 ```
 
 #### Gas Action Imports
 
 ```typescript
 // Before
-import { GasAction, MinimumRequiredGasByAction } from '@hyperlane-xyz/utils';
+import {
+  GasAction,
+  MinimumRequiredGasByAction,
+} from '@humanode-hyperlane/utils';
 
 // After
 import {
   GasAction,
   MinimumRequiredGasByAction,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 ```
 
 #### Protocol Type Imports (No Change Needed)
 
 ```typescript
 // Before (still works)
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 // After (also works, preferred for new consumers)
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 ```
 
 ### Step 3: Update Module Instantiation
@@ -142,7 +151,7 @@ AltVM modules have updated constructor signatures. The main change is replacing 
 A new adapter function decouples chain metadata lookup between the SDK and AltVM modules:
 
 ```typescript
-import { altVmChainLookup } from '@hyperlane-xyz/sdk';
+import { altVmChainLookup } from '@humanode-hyperlane/sdk';
 
 const chainLookup = altVmChainLookup(multiProvider);
 
@@ -152,10 +161,10 @@ const coreModule = new AltVMCoreModule(chainLookup, signer, { ... });
 
 ### Config Utilities
 
-Some utilities for config normalization moved to `@hyperlane-xyz/utils` but are not yet completely removed from the SDK:
+Some utilities for config normalization moved to `@humanode-hyperlane/utils` but are not yet completely removed from the SDK:
 
 ```typescript
-import { normalizeConfig, sortArraysInConfig } from '@hyperlane-xyz/utils';
+import { normalizeConfig, sortArraysInConfig } from '@humanode-hyperlane/utils';
 
 const normalized = normalizeConfig(config);
 const sorted = sortArraysInConfig(config);

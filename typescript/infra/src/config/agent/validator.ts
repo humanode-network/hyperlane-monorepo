@@ -5,8 +5,8 @@ import {
   ChainMap,
   ChainName,
   S3Config,
-} from '@hyperlane-xyz/sdk';
-import { isEVMLike } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { isEVMLike } from '@humanode-hyperlane/utils';
 
 import { getChain } from '../../../config/registry.js';
 import { ValidatorAgentAwsUser } from '../../agents/aws/validator-user.js';

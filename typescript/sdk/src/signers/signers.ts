@@ -1,4 +1,4 @@
-import { HexString, ProtocolType } from '@hyperlane-xyz/utils';
+import { HexString, ProtocolType } from '@humanode-hyperlane/utils';
 
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';
 import { ChainName } from '../types.js';

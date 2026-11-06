@@ -3,13 +3,13 @@ import Safe from '@safe-global/protocol-kit';
 import { SafeTransaction } from '@safe-global/safe-core-sdk-types';
 import chalk from 'chalk';
 
-import { ChainName, MultiProvider } from '@hyperlane-xyz/sdk';
+import { ChainName, MultiProvider } from '@humanode-hyperlane/sdk';
 import {
   Address,
   CallData,
   addBufferToGasLimit,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   createSafeTransaction,

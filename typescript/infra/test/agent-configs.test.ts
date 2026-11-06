@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { AgentConfig } from '@hyperlane-xyz/sdk';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { AgentConfig } from '@humanode-hyperlane/sdk';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import { hyperlaneContextAgentChainConfig as mainnet3AgentChainConfig } from '../config/environments/mainnet3/agent.js';
 import { mainnet3SupportedChainNames } from '../config/environments/mainnet3/supportedChainNames.js';

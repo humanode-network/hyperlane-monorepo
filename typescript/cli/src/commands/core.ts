@@ -6,8 +6,8 @@ import {
   type DeployedCoreAddresses,
   DeployedCoreAddressesSchema,
   normalizeConfig,
-} from '@hyperlane-xyz/sdk';
-import { diffObjMerge } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { diffObjMerge } from '@humanode-hyperlane/utils';
 
 import {
   createCoreDeployConfig,

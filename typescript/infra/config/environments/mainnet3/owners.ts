@@ -1,5 +1,5 @@
-import { ChainMap, OwnableConfig } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap, OwnableConfig } from '@humanode-hyperlane/sdk';
+import { Address } from '@humanode-hyperlane/utils';
 
 import { ethereumChainNames } from './chains.js';
 import { awIcasLegacy } from './governance/ica/_awLegacy.js';

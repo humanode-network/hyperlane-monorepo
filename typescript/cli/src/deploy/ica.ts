@@ -3,14 +3,14 @@ import {
   type ChainName,
   InterchainAccount,
   isContractAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   assert,
   eqAddress,
   isAddressEvm,
   mapAllSettled,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type WriteCommandContext } from '../context/types.js';
 import { logBlue, logGreen, logRed, logTable, warnYellow } from '../logger.js';

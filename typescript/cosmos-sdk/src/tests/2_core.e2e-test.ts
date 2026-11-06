@@ -3,8 +3,8 @@ import { type DeliverTxResponse } from '@cosmjs/stargate';
 import { expect } from 'chai';
 import { step } from 'mocha-steps';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import { bytes32ToAddress, isValidAddressEvm } from '@hyperlane-xyz/utils';
+import { type AltVM } from '@humanode-hyperlane/provider-sdk';
+import { bytes32ToAddress, isValidAddressEvm } from '@humanode-hyperlane/utils';
 
 import { createSigner } from '../testing/utils.js';
 

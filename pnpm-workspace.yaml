@@ -1,7 +1,7 @@
 # Reject packages published less than 7 days ago (supply chain protection)
 minimumReleaseAge: 10080
 minimumReleaseAgeExclude:
-  - '@hyperlane-xyz/*'
+  - '@humanode-hyperlane/*'
 
 packages:
   - 'solhint-plugin'
@@ -80,7 +80,7 @@ catalog:
   '@aws-sdk/client-kms': ^3.577.0
 
   # Registry
-  '@hyperlane-xyz/registry': 23.12.0
+  '@humanode-hyperlane/registry': 23.12.0
 
   # CLI prompts
   '@inquirer/prompts': 3.3.2

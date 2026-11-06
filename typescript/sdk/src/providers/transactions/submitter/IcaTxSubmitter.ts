@@ -4,7 +4,7 @@ import {
   assert,
   bytes32ToAddress,
   formatStandardHookMetadata,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   InterchainAccount,

@@ -5,7 +5,7 @@ import {
   getMultiSendDeployment,
 } from '@safe-global/safe-deployments';
 
-import { Address, retryAsync } from '@hyperlane-xyz/utils';
+import { Address, retryAsync } from '@humanode-hyperlane/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { ChainName } from '../types.js';

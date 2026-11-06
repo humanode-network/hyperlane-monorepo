@@ -1,4 +1,4 @@
-import { type Logger, assert, isNullish } from '@hyperlane-xyz/utils';
+import { type Logger, assert, isNullish } from '@humanode-hyperlane/utils';
 
 import {
   Artifact,

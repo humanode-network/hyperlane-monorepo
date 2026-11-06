@@ -3,8 +3,8 @@ import { ethers } from 'ethers';
 import { readFileSync } from 'fs';
 import * as path from 'path';
 
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { addBufferToGasLimit, assert } from '@hyperlane-xyz/utils';
+import { ChainName } from '@humanode-hyperlane/sdk';
+import { addBufferToGasLimit, assert } from '@humanode-hyperlane/utils';
 
 import { getChains } from '../../config/registry.js';
 import { InfraS3Validator } from '../../src/agents/aws/validator.js';

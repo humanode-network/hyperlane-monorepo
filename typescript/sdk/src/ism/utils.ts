@@ -14,7 +14,7 @@ import {
   PausableIsm__factory,
   StaticAggregationIsm__factory,
   TrustedRelayerIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   deepEquals,
@@ -23,7 +23,7 @@ import {
   normalizeAddress,
   objMap,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { getChainNameFromCCIPSelector } from '../ccip/utils.js';
 import { HyperlaneContracts } from '../contracts/types.js';

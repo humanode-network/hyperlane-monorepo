@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import {
   TurnkeyClientManager,

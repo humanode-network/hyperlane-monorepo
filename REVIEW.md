@@ -8,9 +8,9 @@
 - Adherence to existing patterns in the codebase
 - **Use existing utilities** - Search codebase before adding new helpers
 - **Prefer `??` over `||`** - Preserves zero/empty string as valid values
-- **Use `assert()` for preconditions** - Import from `@hyperlane-xyz/utils`
-- **Use `isNullish()` for null checks** - Type-safe null/undefined check from `@hyperlane-xyz/utils`
-- **Async lazy init** - Prefer `LazyAsync` from `@hyperlane-xyz/utils` for cached async initialization
+- **Use `assert()` for preconditions** - Import from `@humanode-hyperlane/utils`
+- **Use `isNullish()` for null checks** - Type-safe null/undefined check from `@humanode-hyperlane/utils`
+- **Async lazy init** - Prefer `LazyAsync` from `@humanode-hyperlane/utils` for cached async initialization
 
 ## Architecture
 
@@ -55,7 +55,7 @@ The only acceptable cast is one with a `// CAST:` comment explaining why it's un
 - **Use `ChainMap<T>`** for per-chain configurations
 - **Use `MultiProvider`** for EVM multi-chain provider management
 - **Use `MultiProtocolProvider`** for cross-VM abstractions (EVM, Cosmos, Sealevel, etc.)
-- **Import types from SDK** - Don't redefine types that exist in `@hyperlane-xyz/sdk`
+- **Import types from SDK** - Don't redefine types that exist in `@humanode-hyperlane/sdk`
 - **Zod schemas** - Follow existing patterns in `typescript/sdk/src/` for config validation
 - **Prefer enums over literals** - Use `Status.Pending` not `'pending'`; enables refactoring and IDE support
 

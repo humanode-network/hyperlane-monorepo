@@ -4,8 +4,8 @@ import { CallData } from 'starknet';
 import {
   ContractType,
   getCompiledContract,
-} from '@hyperlane-xyz/starknet-core';
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/starknet-core';
+import { ZERO_ADDRESS_HEX_32 } from '@humanode-hyperlane/utils';
 
 import {
   StarknetContractName,

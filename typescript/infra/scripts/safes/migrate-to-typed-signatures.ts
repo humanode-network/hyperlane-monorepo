@@ -10,7 +10,7 @@ import {
   configureRootLogger,
   rootLogger,
   stringifyObject,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { awSafes as safes } from '../../config/environments/mainnet3/governance/safe/aw.js';

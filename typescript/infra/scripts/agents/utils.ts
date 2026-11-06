@@ -1,7 +1,11 @@
 import { confirm } from '@inquirer/prompts';
 import chalk from 'chalk';
 
-import { concurrentMap, mapAllSettled, rootLogger } from '@hyperlane-xyz/utils';
+import {
+  concurrentMap,
+  mapAllSettled,
+  rootLogger,
+} from '@humanode-hyperlane/utils';
 
 import {
   AgentHelmManager,

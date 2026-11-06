@@ -7,11 +7,11 @@ import {
   MergedRegistry,
   PartialRegistry,
   warpConfigToWarpAddresses,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   FileSystemRegistry,
   getRegistry as getMergedRegistry,
-} from '@hyperlane-xyz/registry/fs';
+} from '@humanode-hyperlane/registry/fs';
 import {
   ChainMap,
   ChainMetadata,
@@ -19,8 +19,8 @@ import {
   WarpCoreConfig,
   getDomainId as resolveDomainId,
   getReorgPeriod as resolveReorgPeriod,
-} from '@hyperlane-xyz/sdk';
-import { assert, objFilter, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, objFilter, rootLogger } from '@humanode-hyperlane/utils';
 
 import type { DeployEnvironment } from '../src/config/environment.js';
 

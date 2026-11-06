@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { chainMetadata } from '@hyperlane-xyz/registry';
-import { ChainDisabledReason, ChainStatus } from '@hyperlane-xyz/sdk';
-import { pick } from '@hyperlane-xyz/utils';
+import { chainMetadata } from '@humanode-hyperlane/registry';
+import { ChainDisabledReason, ChainStatus } from '@humanode-hyperlane/sdk';
+import { pick } from '@humanode-hyperlane/utils';
 
 import {
   ChainSearchMenu,
