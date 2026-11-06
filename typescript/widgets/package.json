@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/widgets",
-  "version": "30.0.0",
+  "version": "30.0.0-humanode.1",
   "description": "Common react components for Hyperlane projects",
   "keywords": [
     "Components",
