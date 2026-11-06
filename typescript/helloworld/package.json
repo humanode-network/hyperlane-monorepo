@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/helloworld",
-  "version": "30.0.0",
+  "version": "30.0.0-humanode.1",
   "description": "A basic skeleton of an Hyperlane app",
   "keywords": [
     "HelloWorld",

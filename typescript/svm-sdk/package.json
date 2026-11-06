@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/sealevel-sdk",
-  "version": "30.0.0",
+  "version": "30.0.0-humanode.1",
   "description": "Hand-crafted Solana/SVM client for Hyperlane Sealevel programs",
   "keywords": [
     "hyperlane",
