@@ -30,6 +30,10 @@ runs:
 
     - name: Build
       shell: bash
+      # The Starknet build fetches its contracts through the GitHub API, which
+      # limits unauthenticated requests per IP address.
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
       run: |
         if [ -n "${{ inputs.build-filter }}" ]; then
           pnpm exec turbo run build --filter='${{ inputs.build-filter }}'

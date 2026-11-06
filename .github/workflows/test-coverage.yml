@@ -10,9 +10,6 @@ on:
 
 env:
   TURBO_TELEMETRY_DISABLED: 1
-  TURBO_API: https://cache.depot.dev
-  TURBO_TOKEN: ${{ secrets.DEPOT_TURBO_TOKEN }}
-  TURBO_TEAM: ${{ secrets.DEPOT_ORG_ID }}
 
 jobs:
   check-solidity-changes:
@@ -33,7 +30,7 @@ jobs:
           path_pattern: 'solidity/'
 
   coverage-run:
-    runs-on: depot-ubuntu-24.04-8
+    runs-on: ubuntu-24.04
     needs: [check-solidity-changes]
     if: needs.check-solidity-changes.outputs.has_solidity_changes == 'true'
     steps:

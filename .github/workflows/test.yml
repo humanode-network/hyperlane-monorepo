@@ -19,13 +19,10 @@ env:
   LOG_LEVEL: DEBUG
   LOG_FORMAT: PRETTY
   TURBO_TELEMETRY_DISABLED: 1
-  TURBO_API: https://cache.depot.dev
-  TURBO_TOKEN: ${{ secrets.DEPOT_TURBO_TOKEN }}
-  TURBO_TEAM: ${{ secrets.DEPOT_ORG_ID }}
 
 jobs:
   pnpm-install:
-    runs-on: depot-ubuntu-24.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
         with:
@@ -47,7 +44,7 @@ jobs:
         run: ./scripts/check-package-json.sh
 
   lint-prettier-run:
-    runs-on: depot-ubuntu-24.04-8
+    runs-on: ubuntu-24.04
     needs: [change-detection]
     if: needs.change-detection.outputs.run_lint_prettier == 'true'
     timeout-minutes: 10
@@ -325,7 +322,7 @@ jobs:
           echo "has_svm=${{ steps.check-vm.outputs.has_svm }}" >> $GITHUB_OUTPUT
 
   pnpm-test-run:
-    runs-on: depot-ubuntu-24.04
+    runs-on: ubuntu-24.04
     needs: [change-detection]
     timeout-minutes: 20
     if: needs.change-detection.outputs.skip_ts != 'true'
@@ -357,7 +354,7 @@ jobs:
           result: ${{ needs.pnpm-test-run.result }}
 
   infra-test:
-    runs-on: depot-ubuntu-24.04
+    runs-on: ubuntu-24.04
     needs: [set-base-sha, change-detection]
     if: needs.change-detection.outputs.skip_ts != 'true'
     env:
@@ -409,7 +406,7 @@ jobs:
         run: pnpm -C typescript/infra test:warp
 
   cli-install-test-run:
-    runs-on: depot-ubuntu-24.04
+    runs-on: ubuntu-24.04
     needs: [change-detection]
     if: needs.change-detection.outputs.skip_ts != 'true'
     steps:
@@ -508,7 +505,7 @@ jobs:
       current_sha: ${{ needs.set-base-sha.outputs.current_sha }}
 
   agent-configs:
-    runs-on: depot-ubuntu-24.04
+    runs-on: ubuntu-24.04
     needs: [change-detection]
     if: needs.change-detection.outputs.skip_ts != 'true'
     strategy:

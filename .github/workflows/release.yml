@@ -41,9 +41,6 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 env:
   LOG_FORMAT: PRETTY
   TURBO_TELEMETRY_DISABLED: 1
-  TURBO_API: https://cache.depot.dev
-  TURBO_TOKEN: ${{ secrets.DEPOT_TURBO_TOKEN }}
-  TURBO_TEAM: ${{ secrets.DEPOT_ORG_ID }}
 
 jobs:
   # This job prepares the release by creating or updating a release PR.
@@ -54,7 +51,7 @@ jobs:
       id-token: write
       contents: write
       pull-requests: write
-    runs-on: depot-ubuntu-24.04
+    runs-on: ubuntu-24.04
     steps:
       # Generate GitHub App token first.
       # Used by checkout fetch + changesets/action (via GITHUB_TOKEN) for release PR auth.
