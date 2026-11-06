@@ -2,6 +2,8 @@ name: NPM Release
 
 # Publishes the workspace packages under the `@humanode-hyperlane` npm scope on a
 # manually pushed `npm-v<sdk version>` tag, with upstream's `pnpm release`.
+# npm's trusted publishing checks this workflow's OIDC identity, so no npm token
+# is stored, and each package gets a provenance statement.
 # Upstream's `release.yml` drives the same command through changesets release PRs
 # and a GitHub App, and is not used in this fork.
 
@@ -24,7 +26,7 @@ jobs:
     timeout-minutes: 120
     permissions:
       contents: read
-      # Signs the npm provenance statements.
+      # Identifies this workflow to npm for trusted publishing and provenance.
       id-token: write
     steps:
       - name: Checkout Repo
@@ -37,13 +39,17 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
-          registry-url: 'https://registry.npmjs.org'
 
       - name: Setup Foundry
         uses: ./.github/actions/setup-foundry
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
+
+      # pnpm publishes through the npm CLI, and trusted publishing needs npm
+      # 11.5.1 or later.
+      - name: Update npm
+        run: npm install -g npm@11.19.1
 
       - name: Check the tag against the SDK version
         run: |
@@ -58,6 +64,3 @@ jobs:
 
       - name: Build and publish
         run: pnpm release
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_CONFIG_PROVENANCE: true
