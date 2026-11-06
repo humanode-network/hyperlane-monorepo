@@ -18,18 +18,18 @@ Node 18 or newer is required.
 
 ```bash
 # Install with NPM
-npm install -g @hyperlane-xyz/cli
+npm install -g @humanode-hyperlane/cli
 # Or uninstall old versions
-npm uninstall -g @hyperlane-xyz/cli
+npm uninstall -g @humanode-hyperlane/cli
 ```
 
 **Option 2: Temp install:**
 
 ```bash
 # Run via NPM's npx command
-npx @hyperlane-xyz/cli
+npx @humanode-hyperlane/cli
 # Or via pnpm's dlx command
-pnpm dlx @hyperlane-xyz/cli
+pnpm dlx @humanode-hyperlane/cli
 ```
 
 **Option 3: Run from source:**

@@ -2,9 +2,9 @@ import { expect } from 'chai';
 import { step } from 'mocha-steps';
 import { TronWeb } from 'tronweb';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 
-import ERC20TestAbi from '@hyperlane-xyz/core/tron/abi/contracts/test/ERC20Test.sol/ERC20Test.json' with { type: 'json' };
+import ERC20TestAbi from '@humanode-hyperlane/core/tron/abi/contracts/test/ERC20Test.sol/ERC20Test.json' with { type: 'json' };
 import { TronSigner } from '../clients/signer.js';
 import { MAX_TRON_ORIGIN_ENERGY_LIMIT } from '../ethers/TronJsonRpcProvider.js';
 import { TronReceipt, TronTransaction } from '../utils/types.js';

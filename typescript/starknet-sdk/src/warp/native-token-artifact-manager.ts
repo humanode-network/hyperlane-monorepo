@@ -1,8 +1,8 @@
-import { type ArtifactNew } from '@hyperlane-xyz/provider-sdk/artifact';
+import { type ArtifactNew } from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   TokenType,
   type RawWarpArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 
 import {
   type StarknetRemoteRoutersOnChain,

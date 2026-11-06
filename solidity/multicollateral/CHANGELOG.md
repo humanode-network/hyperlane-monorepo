@@ -1,4 +1,4 @@
-# @hyperlane-xyz/multicollateral
+# @humanode-hyperlane/multicollateral
 
 ## 1.0.2
 
@@ -6,14 +6,14 @@
 
 - Updated dependencies [ac297da]
 - Updated dependencies [77db719]
-    - @hyperlane-xyz/core@11.2.0
+    - @humanode-hyperlane/core@11.2.0
 
 ## 1.0.1
 
 ### Patch Changes
 
 - Updated dependencies [6c715a7]
-    - @hyperlane-xyz/core@11.1.0
+    - @humanode-hyperlane/core@11.1.0
 
 ## 1.0.0
 
@@ -30,7 +30,7 @@
 ### Patch Changes
 
 - Updated dependencies [a4a74d8]
-    - @hyperlane-xyz/core@11.0.3
+    - @humanode-hyperlane/core@11.0.3
 
 ## 0.2.0
 
@@ -41,7 +41,7 @@
 ### Patch Changes
 
 - Updated dependencies [f7ebf6c]
-    - @hyperlane-xyz/core@11.0.2
+    - @humanode-hyperlane/core@11.0.2
 
 ## 0.1.0
 
@@ -51,4 +51,4 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/core@11.0.1
+- @humanode-hyperlane/core@11.0.1

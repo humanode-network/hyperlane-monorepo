@@ -10,9 +10,13 @@ import {
   updateNativeWalletBalanceMetrics as sharedUpdateNativeWalletBalanceMetrics,
   updateTokenBalanceMetrics as sharedUpdateTokenBalanceMetrics,
   updateXERC20LimitsMetrics as sharedUpdateXERC20LimitsMetrics,
-} from '@hyperlane-xyz/metrics';
-import { type ChainName, type Token, type WarpCore } from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/metrics';
+import {
+  type ChainName,
+  type Token,
+  type WarpCore,
+} from '@humanode-hyperlane/sdk';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import { getLogger } from './utils.js';
 

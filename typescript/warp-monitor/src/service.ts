@@ -21,9 +21,9 @@
  *   node dist/service.js
  *   WARP_ROUTE_ID=ETH/ethereum-base COINGECKO_API_KEY=... node dist/service.js
  */
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { WarpMonitor } from './monitor.js';
 import { initializeLogger } from './utils.js';

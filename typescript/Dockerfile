@@ -115,11 +115,11 @@ COPY typescript/relayer ./typescript/relayer
 
 # Bundle all services in a single turbo invocation
 RUN pnpm turbo run bundle \
-    --filter=@hyperlane-xyz/rebalancer \
-    --filter=@hyperlane-xyz/warp-monitor \
-    --filter=@hyperlane-xyz/ccip-server \
-    --filter=@hyperlane-xyz/keyfunder \
-    --filter=@hyperlane-xyz/relayer
+    --filter=@humanode-hyperlane/rebalancer \
+    --filter=@humanode-hyperlane/warp-monitor \
+    --filter=@humanode-hyperlane/ccip-server \
+    --filter=@humanode-hyperlane/keyfunder \
+    --filter=@humanode-hyperlane/relayer
 
 # Deduplicate identical NCC assets across bundles.
 # NCC produces byte-identical copies of WASM files (~18MB each), workers,

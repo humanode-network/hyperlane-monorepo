@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { Address, WithAddress, isNullish } from '@hyperlane-xyz/utils';
+import { Address, WithAddress, isNullish } from '@humanode-hyperlane/utils';
 
 import { ProtocolAgnositicGasOracleConfigWithTypicalCostSchema } from '../gas/oracle/types.js';
 import { ZHash } from '../metadata/customZodTypes.js';

@@ -1,7 +1,7 @@
 import { PublicKey } from '@solana/web3.js';
 
-import { ChainMap, ChainName } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap, ChainName } from '@humanode-hyperlane/sdk';
+import { Address } from '@humanode-hyperlane/utils';
 
 export type SquadConfig = {
   programId: Address;

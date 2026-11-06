@@ -1,4 +1,4 @@
-# @hyperlane-xyz/cosmos-sdk
+# @humanode-hyperlane/cosmos-sdk
 
 ## 30.0.0
 
@@ -6,25 +6,25 @@
 
 - Updated dependencies [37255ba]
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/provider-sdk@4.2.3
-  - @hyperlane-xyz/utils@30.0.0
-  - @hyperlane-xyz/cosmos-types@30.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.3
+  - @humanode-hyperlane/utils@30.0.0
+  - @humanode-hyperlane/cosmos-types@30.0.0
 
 ## 29.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@29.1.0
-- @hyperlane-xyz/utils@29.1.0
-- @hyperlane-xyz/provider-sdk@4.2.2
+- @humanode-hyperlane/cosmos-types@29.1.0
+- @humanode-hyperlane/utils@29.1.0
+- @humanode-hyperlane/provider-sdk@4.2.2
 
 ## 29.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@29.0.1
-- @hyperlane-xyz/utils@29.0.1
-- @hyperlane-xyz/provider-sdk@4.2.1
+- @humanode-hyperlane/cosmos-types@29.0.1
+- @humanode-hyperlane/utils@29.0.1
+- @humanode-hyperlane/provider-sdk@4.2.1
 
 ## 29.0.0
 
@@ -33,9 +33,9 @@
 - 084c6b6: The TypeScript packages were updated to support TypeScript 6.0 and to make ambient type loading explicit so the future TypeScript 7.0 upgrade is smoother.
 - Updated dependencies [3c6b1ad]
 - Updated dependencies [084c6b6]
-  - @hyperlane-xyz/utils@29.0.0
-  - @hyperlane-xyz/provider-sdk@4.2.0
-  - @hyperlane-xyz/cosmos-types@29.0.0
+  - @humanode-hyperlane/utils@29.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.0
+  - @humanode-hyperlane/cosmos-types@29.0.0
 
 ## 28.1.0
 
@@ -43,9 +43,9 @@
 
 - 5caac66: Added `crossCollateral` warp token type to the provider-sdk type system. All protocol SDK artifact managers were updated to handle the new type in their exhaustive switches.
 - Updated dependencies [5caac66]
-  - @hyperlane-xyz/provider-sdk@4.1.0
-  - @hyperlane-xyz/cosmos-types@28.1.0
-  - @hyperlane-xyz/utils@28.1.0
+  - @humanode-hyperlane/provider-sdk@4.1.0
+  - @humanode-hyperlane/cosmos-types@28.1.0
+  - @humanode-hyperlane/utils@28.1.0
 
 ## 28.0.0
 
@@ -54,9 +54,9 @@
 - 228ed9f: Added the mailbox artifact API to cosmos-sdk, providing read and create/update capabilities for mailbox deployments.
 - Updated dependencies [83767b9]
 - Updated dependencies [a6b7bf3]
-  - @hyperlane-xyz/provider-sdk@4.0.0
-  - @hyperlane-xyz/cosmos-types@28.0.0
-  - @hyperlane-xyz/utils@28.0.0
+  - @humanode-hyperlane/provider-sdk@4.0.0
+  - @humanode-hyperlane/cosmos-types@28.0.0
+  - @humanode-hyperlane/utils@28.0.0
 
 ## 27.1.0
 
@@ -65,17 +65,17 @@
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
-  - @hyperlane-xyz/provider-sdk@3.1.0
-  - @hyperlane-xyz/utils@27.1.0
-  - @hyperlane-xyz/cosmos-types@27.1.0
+  - @humanode-hyperlane/provider-sdk@3.1.0
+  - @humanode-hyperlane/utils@27.1.0
+  - @humanode-hyperlane/cosmos-types@27.1.0
 
 ## 27.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@27.0.0
-- @hyperlane-xyz/utils@27.0.0
-- @hyperlane-xyz/provider-sdk@3.0.1
+- @humanode-hyperlane/cosmos-types@27.0.0
+- @humanode-hyperlane/utils@27.0.0
+- @humanode-hyperlane/provider-sdk@3.0.1
 
 ## 26.0.0
 
@@ -83,9 +83,9 @@
 
 - Updated dependencies [06aacac]
 - Updated dependencies [1d116d8]
-  - @hyperlane-xyz/utils@26.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.0
-  - @hyperlane-xyz/cosmos-types@26.0.0
+  - @humanode-hyperlane/utils@26.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.0
+  - @humanode-hyperlane/cosmos-types@26.0.0
 
 ## 25.5.0
 
@@ -108,8 +108,8 @@
   - AltVMWarpRouteReader (use createWarpTokenReader instead)
   - AltVMDeployer (use createWarpTokenWriter per-chain instead)
   - warpModuleProvider (no longer needed)
-  - ismConfigToArtifact (moved to @hyperlane-xyz/provider-sdk/ism)
-  - shouldDeployNewIsm (moved to @hyperlane-xyz/provider-sdk/ism)
+  - ismConfigToArtifact (moved to @humanode-hyperlane/provider-sdk/ism)
+  - shouldDeployNewIsm (moved to @humanode-hyperlane/provider-sdk/ism)
 
   provider-sdk breaking change: warpConfigToArtifact no longer accepts pre-built ismArtifact/hookArtifact parameters; ISM and hook conversion is now handled internally from the config.
 
@@ -119,17 +119,17 @@
 
 - Updated dependencies [e197331]
 - Updated dependencies [840fb33]
-  - @hyperlane-xyz/provider-sdk@2.0.0
-  - @hyperlane-xyz/cosmos-types@25.5.0
-  - @hyperlane-xyz/utils@25.5.0
+  - @humanode-hyperlane/provider-sdk@2.0.0
+  - @humanode-hyperlane/cosmos-types@25.5.0
+  - @humanode-hyperlane/utils@25.5.0
 
 ## 25.4.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@25.4.1
-- @hyperlane-xyz/utils@25.4.1
-- @hyperlane-xyz/provider-sdk@1.4.1
+- @humanode-hyperlane/cosmos-types@25.4.1
+- @humanode-hyperlane/utils@25.4.1
+- @humanode-hyperlane/provider-sdk@1.4.1
 
 ## 25.4.0
 
@@ -141,33 +141,33 @@
 
 - Updated dependencies [1f021bf]
 - Updated dependencies [1f021bf]
-  - @hyperlane-xyz/utils@25.4.0
-  - @hyperlane-xyz/provider-sdk@1.4.0
-  - @hyperlane-xyz/cosmos-types@25.4.0
+  - @humanode-hyperlane/utils@25.4.0
+  - @humanode-hyperlane/provider-sdk@1.4.0
+  - @humanode-hyperlane/cosmos-types@25.4.0
 
 ## 25.3.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@25.3.2
-- @hyperlane-xyz/utils@25.3.2
-- @hyperlane-xyz/provider-sdk@1.3.6
+- @humanode-hyperlane/cosmos-types@25.3.2
+- @humanode-hyperlane/utils@25.3.2
+- @humanode-hyperlane/provider-sdk@1.3.6
 
 ## 25.3.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@25.3.1
-- @hyperlane-xyz/utils@25.3.1
-- @hyperlane-xyz/provider-sdk@1.3.5
+- @humanode-hyperlane/cosmos-types@25.3.1
+- @humanode-hyperlane/utils@25.3.1
+- @humanode-hyperlane/provider-sdk@1.3.5
 
 ## 25.3.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@25.3.0
-- @hyperlane-xyz/utils@25.3.0
-- @hyperlane-xyz/provider-sdk@1.3.4
+- @humanode-hyperlane/cosmos-types@25.3.0
+- @humanode-hyperlane/utils@25.3.0
+- @humanode-hyperlane/provider-sdk@1.3.4
 
 ## 25.2.0
 
@@ -175,28 +175,28 @@
 
 - Updated dependencies [360db52]
 - Updated dependencies [ccd638d]
-  - @hyperlane-xyz/utils@25.2.0
-  - @hyperlane-xyz/provider-sdk@1.3.3
-  - @hyperlane-xyz/cosmos-types@25.2.0
+  - @humanode-hyperlane/utils@25.2.0
+  - @humanode-hyperlane/provider-sdk@1.3.3
+  - @humanode-hyperlane/cosmos-types@25.2.0
 
 ## 25.1.0
 
 ### Patch Changes
 
 - Updated dependencies [b930534]
-  - @hyperlane-xyz/utils@25.1.0
-  - @hyperlane-xyz/provider-sdk@1.3.2
-  - @hyperlane-xyz/cosmos-types@25.1.0
+  - @humanode-hyperlane/utils@25.1.0
+  - @humanode-hyperlane/provider-sdk@1.3.2
+  - @humanode-hyperlane/cosmos-types@25.1.0
 
 ## 25.0.0
 
 ### Patch Changes
 
-- 52ce778: A `LazyAsync` helper was added to `@hyperlane-xyz/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
+- 52ce778: A `LazyAsync` helper was added to `@humanode-hyperlane/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
 - Updated dependencies [52ce778]
-  - @hyperlane-xyz/utils@25.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.1
-  - @hyperlane-xyz/cosmos-types@25.0.0
+  - @humanode-hyperlane/utils@25.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.1
+  - @humanode-hyperlane/cosmos-types@25.0.0
 
 ## 24.0.0
 
@@ -206,9 +206,9 @@
 - Updated dependencies [d580bb6]
 - Updated dependencies [9dc71fe]
 - Updated dependencies [bde05e9]
-  - @hyperlane-xyz/utils@24.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.0
-  - @hyperlane-xyz/cosmos-types@24.0.0
+  - @humanode-hyperlane/utils@24.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.0
+  - @humanode-hyperlane/cosmos-types@24.0.0
 
 ## 23.0.0
 
@@ -217,9 +217,9 @@
 - Updated dependencies [0b8c4ea]
 - Updated dependencies [52fd0f8]
 - Updated dependencies [a10cfc8]
-  - @hyperlane-xyz/provider-sdk@1.2.1
-  - @hyperlane-xyz/utils@23.0.0
-  - @hyperlane-xyz/cosmos-types@23.0.0
+  - @humanode-hyperlane/provider-sdk@1.2.1
+  - @humanode-hyperlane/utils@23.0.0
+  - @humanode-hyperlane/cosmos-types@23.0.0
 
 ## 22.0.0
 
@@ -235,9 +235,9 @@
 - Updated dependencies [7f31d77]
 - Updated dependencies [3aec1c4]
 - Updated dependencies [b892d63]
-  - @hyperlane-xyz/utils@22.0.0
-  - @hyperlane-xyz/provider-sdk@1.2.0
-  - @hyperlane-xyz/cosmos-types@22.0.0
+  - @humanode-hyperlane/utils@22.0.0
+  - @humanode-hyperlane/provider-sdk@1.2.0
+  - @humanode-hyperlane/cosmos-types@22.0.0
 
 ## 21.1.0
 
@@ -249,9 +249,9 @@
 ### Patch Changes
 
 - Updated dependencies [57a2053]
-  - @hyperlane-xyz/provider-sdk@1.1.0
-  - @hyperlane-xyz/cosmos-types@21.1.0
-  - @hyperlane-xyz/utils@21.1.0
+  - @humanode-hyperlane/provider-sdk@1.1.0
+  - @humanode-hyperlane/cosmos-types@21.1.0
+  - @humanode-hyperlane/utils@21.1.0
 
 ## 21.0.0
 
@@ -264,9 +264,9 @@
 - Updated dependencies [239e1a1]
 - Updated dependencies [ed10fc1]
 - Updated dependencies [0bce4e7]
-  - @hyperlane-xyz/provider-sdk@1.0.0
-  - @hyperlane-xyz/utils@21.0.0
-  - @hyperlane-xyz/cosmos-types@21.0.0
+  - @humanode-hyperlane/provider-sdk@1.0.0
+  - @humanode-hyperlane/utils@21.0.0
+  - @humanode-hyperlane/cosmos-types@21.0.0
 
 ## 20.1.0
 
@@ -283,9 +283,9 @@
 ### Patch Changes
 
 - Updated dependencies [11fa887]
-  - @hyperlane-xyz/utils@20.1.0
-  - @hyperlane-xyz/provider-sdk@0.7.0
-  - @hyperlane-xyz/cosmos-types@20.1.0
+  - @humanode-hyperlane/utils@20.1.0
+  - @humanode-hyperlane/provider-sdk@0.7.0
+  - @humanode-hyperlane/cosmos-types@20.1.0
 
 ## 20.0.0
 
@@ -293,17 +293,17 @@
 
 - Updated dependencies [b3ebc08]
 - Updated dependencies [aeac943]
-  - @hyperlane-xyz/utils@20.0.0
-  - @hyperlane-xyz/provider-sdk@0.6.0
-  - @hyperlane-xyz/cosmos-types@20.0.0
+  - @humanode-hyperlane/utils@20.0.0
+  - @humanode-hyperlane/provider-sdk@0.6.0
+  - @humanode-hyperlane/cosmos-types@20.0.0
 
 ## 19.13.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@19.13.0
-- @hyperlane-xyz/utils@19.13.0
-- @hyperlane-xyz/provider-sdk@0.5.0
+- @humanode-hyperlane/cosmos-types@19.13.0
+- @humanode-hyperlane/utils@19.13.0
+- @humanode-hyperlane/provider-sdk@0.5.0
 
 ## 19.12.0
 
@@ -322,18 +322,18 @@
 - Updated dependencies [08cf7eca9]
 - Updated dependencies [af2cd1729]
 - Updated dependencies [e37100e2e]
-  - @hyperlane-xyz/provider-sdk@0.4.0
-  - @hyperlane-xyz/utils@19.12.0
-  - @hyperlane-xyz/cosmos-types@19.12.0
+  - @humanode-hyperlane/provider-sdk@0.4.0
+  - @humanode-hyperlane/utils@19.12.0
+  - @humanode-hyperlane/cosmos-types@19.12.0
 
 ## 19.11.0
 
 ### Patch Changes
 
 - Updated dependencies [dd6260eea]
-  - @hyperlane-xyz/provider-sdk@0.3.0
-  - @hyperlane-xyz/cosmos-types@19.11.0
-  - @hyperlane-xyz/utils@19.11.0
+  - @humanode-hyperlane/provider-sdk@0.3.0
+  - @humanode-hyperlane/cosmos-types@19.11.0
+  - @humanode-hyperlane/utils@19.11.0
 
 ## 19.10.0
 
@@ -353,17 +353,17 @@
 - Updated dependencies [a0ba5e2fb]
 - Updated dependencies [66bed7126]
 - Updated dependencies [f604423b9]
-  - @hyperlane-xyz/utils@19.10.0
-  - @hyperlane-xyz/provider-sdk@0.2.0
-  - @hyperlane-xyz/cosmos-types@19.10.0
+  - @humanode-hyperlane/utils@19.10.0
+  - @humanode-hyperlane/provider-sdk@0.2.0
+  - @humanode-hyperlane/cosmos-types@19.10.0
 
 ## 19.9.0
 
 ### Patch Changes
 
 - Updated dependencies [8c027d852]
-  - @hyperlane-xyz/utils@19.9.0
-  - @hyperlane-xyz/cosmos-types@19.9.0
+  - @humanode-hyperlane/utils@19.9.0
+  - @humanode-hyperlane/cosmos-types@19.9.0
 
 ## 19.8.0
 
@@ -376,75 +376,75 @@
 - Updated dependencies [2ed21c97d]
 - Updated dependencies [78ff6cd47]
 - Updated dependencies [3f75ad86d]
-  - @hyperlane-xyz/utils@19.8.0
-  - @hyperlane-xyz/cosmos-types@19.8.0
+  - @humanode-hyperlane/utils@19.8.0
+  - @humanode-hyperlane/cosmos-types@19.8.0
 
 ## 19.7.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@19.7.0
-- @hyperlane-xyz/utils@19.7.0
+- @humanode-hyperlane/cosmos-types@19.7.0
+- @humanode-hyperlane/utils@19.7.0
 
 ## 19.6.0
 
 ### Patch Changes
 
 - Updated dependencies [419e16910]
-  - @hyperlane-xyz/utils@19.6.0
-  - @hyperlane-xyz/cosmos-types@19.6.0
+  - @humanode-hyperlane/utils@19.6.0
+  - @humanode-hyperlane/cosmos-types@19.6.0
 
 ## 19.6.0-beta.0
 
 ### Patch Changes
 
 - Updated dependencies [419e16910]
-  - @hyperlane-xyz/utils@19.6.0-beta.0
-  - @hyperlane-xyz/cosmos-types@19.6.0-beta.0
+  - @humanode-hyperlane/utils@19.6.0-beta.0
+  - @humanode-hyperlane/cosmos-types@19.6.0-beta.0
 
 ## 19.5.0
 
 ### Patch Changes
 
 - Updated dependencies [312826d10]
-  - @hyperlane-xyz/utils@19.5.0
-  - @hyperlane-xyz/cosmos-types@19.5.0
+  - @humanode-hyperlane/utils@19.5.0
+  - @humanode-hyperlane/cosmos-types@19.5.0
 
 ## 19.4.0
 
 ### Patch Changes
 
 - Updated dependencies [5a4e22d34]
-  - @hyperlane-xyz/utils@19.4.0
-  - @hyperlane-xyz/cosmos-types@19.4.0
+  - @humanode-hyperlane/utils@19.4.0
+  - @humanode-hyperlane/cosmos-types@19.4.0
 
 ## 19.3.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@19.3.0
-- @hyperlane-xyz/utils@19.3.0
+- @humanode-hyperlane/cosmos-types@19.3.0
+- @humanode-hyperlane/utils@19.3.0
 
 ## 19.2.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@19.2.0
-- @hyperlane-xyz/utils@19.2.0
+- @humanode-hyperlane/cosmos-types@19.2.0
+- @humanode-hyperlane/utils@19.2.0
 
 ## 19.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@19.1.1
-- @hyperlane-xyz/utils@19.1.1
+- @humanode-hyperlane/cosmos-types@19.1.1
+- @humanode-hyperlane/utils@19.1.1
 
 ## 19.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@19.1.0
-- @hyperlane-xyz/utils@19.1.0
+- @humanode-hyperlane/cosmos-types@19.1.0
+- @humanode-hyperlane/utils@19.1.0
 
 ## 19.0.0
 
@@ -462,14 +462,14 @@
 - Updated dependencies [8eab305bd]
 - Updated dependencies [e42a0e8e1]
 - Updated dependencies [32479e139]
-  - @hyperlane-xyz/utils@19.0.0
-  - @hyperlane-xyz/cosmos-types@19.0.0
+  - @humanode-hyperlane/utils@19.0.0
+  - @humanode-hyperlane/cosmos-types@19.0.0
 
 ## 18.3.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@18.3.0
+- @humanode-hyperlane/cosmos-types@18.3.0
 
 ## 18.2.0
 
@@ -479,85 +479,85 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@18.2.0
+- @humanode-hyperlane/cosmos-types@18.2.0
 
 ## 18.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@18.1.0
+- @humanode-hyperlane/cosmos-types@18.1.0
 
 ## 18.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@18.0.0
+- @humanode-hyperlane/cosmos-types@18.0.0
 
 ## 17.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@17.0.0
+- @humanode-hyperlane/cosmos-types@17.0.0
 
 ## 16.2.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@16.2.0
+- @humanode-hyperlane/cosmos-types@16.2.0
 
 ## 16.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@16.1.1
+- @humanode-hyperlane/cosmos-types@16.1.1
 
 ## 16.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@16.1.0
+- @humanode-hyperlane/cosmos-types@16.1.0
 
 ## 16.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@16.0.0
+- @humanode-hyperlane/cosmos-types@16.0.0
 
 ## 15.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@15.0.0
+- @humanode-hyperlane/cosmos-types@15.0.0
 
 ## 14.4.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@14.4.0
+- @humanode-hyperlane/cosmos-types@14.4.0
 
 ## 14.3.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@14.3.0
+- @humanode-hyperlane/cosmos-types@14.3.0
 
 ## 14.2.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@14.2.0
+- @humanode-hyperlane/cosmos-types@14.2.0
 
 ## 14.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@14.1.0
+- @humanode-hyperlane/cosmos-types@14.1.0
 
 ## 14.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@14.0.0
+- @humanode-hyperlane/cosmos-types@14.0.0
 
 ## 13.4.0
 
@@ -568,25 +568,25 @@
 ### Patch Changes
 
 - Updated dependencies [19384e74b]
-  - @hyperlane-xyz/cosmos-types@13.4.0
+  - @humanode-hyperlane/cosmos-types@13.4.0
 
 ## 13.3.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@13.3.0
+- @humanode-hyperlane/cosmos-types@13.3.0
 
 ## 13.2.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@13.2.1
+- @humanode-hyperlane/cosmos-types@13.2.1
 
 ## 13.2.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@13.2.0
+- @humanode-hyperlane/cosmos-types@13.2.0
 
 ## 13.1.1
 
@@ -594,13 +594,13 @@
 
 - ba4deea: Revert workspace dependency syntax.
 - Updated dependencies [ba4deea]
-  - @hyperlane-xyz/cosmos-types@13.1.1
+  - @humanode-hyperlane/cosmos-types@13.1.1
 
 ## 13.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@13.1.0
+- @humanode-hyperlane/cosmos-types@13.1.0
 
 ## 13.0.0
 
@@ -611,7 +611,7 @@
 ### Patch Changes
 
 - Updated dependencies [2724559]
-  - @hyperlane-xyz/cosmos-types@13.0.0
+  - @humanode-hyperlane/cosmos-types@13.0.0
 
 ## 12.6.0
 
@@ -621,28 +621,28 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@12.6.0
+- @humanode-hyperlane/cosmos-types@12.6.0
 
 ## 12.5.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@12.5.0
+- @humanode-hyperlane/cosmos-types@12.5.0
 
 ## 12.4.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@12.4.0
+- @humanode-hyperlane/cosmos-types@12.4.0
 
 ## 12.3.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@12.3.0
+- @humanode-hyperlane/cosmos-types@12.3.0
 
 ## 12.2.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/cosmos-types@12.2.0
+- @humanode-hyperlane/cosmos-types@12.2.0

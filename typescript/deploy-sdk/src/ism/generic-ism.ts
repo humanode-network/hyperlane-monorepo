@@ -2,13 +2,13 @@ import {
   AltVM,
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 import {
   ArtifactDeployed,
   ArtifactReader,
   isArtifactDeployed,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   DeployedIsmAddress,
   DeployedIsmArtifact,
@@ -18,8 +18,8 @@ import {
   ismArtifactToDerivedConfig,
   RawRoutingIsmArtifactConfig,
   RoutingIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { Logger, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import { Logger, rootLogger } from '@humanode-hyperlane/utils';
 
 /**
  * Factory function to create an IsmReader instance.

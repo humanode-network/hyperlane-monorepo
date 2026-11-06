@@ -169,8 +169,8 @@
                 "message": "Please use a logger and/or the utils package assert"
               },
               {
-                "name": "@hyperlane-xyz/registry",
-                "message": "Imports from @hyperlane-xyz/registry are not allowed in the SDK"
+                "name": "@humanode-hyperlane/registry",
+                "message": "Imports from @humanode-hyperlane/registry are not allowed in the SDK"
               }
             ]
           }
@@ -189,17 +189,17 @@
                 "message": "Please use a logger and/or the utils package assert"
               },
               {
-                "name": "@hyperlane-xyz/sdk",
-                "message": "Imports from @hyperlane-xyz/sdk are not allowed in this package"
+                "name": "@humanode-hyperlane/sdk",
+                "message": "Imports from @humanode-hyperlane/sdk are not allowed in this package"
               },
               {
-                "name": "@hyperlane-xyz/utils",
+                "name": "@humanode-hyperlane/utils",
                 "importNames": [
                   "ProtocolType",
                   "ProtocolTypeValue",
                   "ProtocolSmallestUnit"
                 ],
-                "message": "Use the export from the `@hyperlane-xyz/provider-sdk` package"
+                "message": "Use the export from the `@humanode-hyperlane/provider-sdk` package"
               }
             ]
           }
@@ -226,21 +226,21 @@
                 "message": "Please use a logger and/or the utils package assert"
               },
               {
-                "name": "@hyperlane-xyz/sdk",
-                "message": "Imports from @hyperlane-xyz/sdk are not allowed in this package"
+                "name": "@humanode-hyperlane/sdk",
+                "message": "Imports from @humanode-hyperlane/sdk are not allowed in this package"
               },
               {
-                "name": "@hyperlane-xyz/utils/fs",
-                "message": "The @hyperlane-xyz/utils/fs submodule requires Node.js and cannot be used in browser packages"
+                "name": "@humanode-hyperlane/utils/fs",
+                "message": "The @humanode-hyperlane/utils/fs submodule requires Node.js and cannot be used in browser packages"
               },
               {
-                "name": "@hyperlane-xyz/utils",
+                "name": "@humanode-hyperlane/utils",
                 "importNames": [
                   "ProtocolType",
                   "ProtocolTypeValue",
                   "ProtocolSmallestUnit"
                 ],
-                "message": "Use the export from the `@hyperlane-xyz/provider-sdk` package"
+                "message": "Use the export from the `@humanode-hyperlane/provider-sdk` package"
               }
             ]
           }

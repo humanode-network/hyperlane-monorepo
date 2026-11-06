@@ -1,4 +1,4 @@
-import { assert, objMap } from '@hyperlane-xyz/utils';
+import { assert, objMap } from '@humanode-hyperlane/utils';
 
 import {
   TokenMetadata,

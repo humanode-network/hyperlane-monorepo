@@ -1,5 +1,5 @@
-import { ChainMap, HypTokenRouterConfig } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap, HypTokenRouterConfig } from '@humanode-hyperlane/sdk';
+import { Address } from '@humanode-hyperlane/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 

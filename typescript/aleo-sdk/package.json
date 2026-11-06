@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/aleo-sdk",
+  "name": "@humanode-hyperlane/aleo-sdk",
   "version": "30.0.0",
   "description": "Hyperlane TypeScript SDK for the Aleo Hyperlane SDK module",
   "keywords": [
@@ -10,7 +10,7 @@
   ],
   "homepage": "https://www.hyperlane.xyz",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "/dist"
   ],
@@ -31,14 +31,14 @@
     "test:e2e": "./scripts/run-e2e-test.sh"
   },
   "dependencies": {
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@humanode-hyperlane/provider-sdk": "workspace:*",
+    "@humanode-hyperlane/utils": "workspace:*",
     "@provablehq/sdk": "0.9.15",
     "bignumber.js": "catalog:",
     "unzipper": "^0.12.3"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

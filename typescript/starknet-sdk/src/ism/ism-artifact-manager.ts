@@ -1,9 +1,12 @@
-import { AltVM, type ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk';
-import { type ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import {
+  AltVM,
+  type ChainMetadataForAltVM,
+} from '@humanode-hyperlane/provider-sdk';
+import { type ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type DeployedRawIsmArtifact,
@@ -11,12 +14,12 @@ import {
   type IsmType,
   type RawIsmArtifactConfigs,
   altVMIsmTypeToProviderSdkType,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/module';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { StarknetProvider } from '../clients/provider.js';
 import { StarknetSigner } from '../clients/signer.js';

@@ -3,7 +3,7 @@ import chaiAsPromised from 'chai-as-promised';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { EthJsonRpcBlockParameterTag } from '@hyperlane-xyz/sdk';
+import { EthJsonRpcBlockParameterTag } from '@humanode-hyperlane/sdk';
 
 import {
   DEFAULT_INTENT_TTL_MS,

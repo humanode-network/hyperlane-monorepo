@@ -1,8 +1,8 @@
 import { stringify as yamlStringify } from 'yaml';
 
-import { WarpRouteDeployConfigSchema } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { writeYaml } from '@hyperlane-xyz/utils/fs';
+import { WarpRouteDeployConfigSchema } from '@humanode-hyperlane/sdk';
+import { rootLogger } from '@humanode-hyperlane/utils';
+import { writeYaml } from '@humanode-hyperlane/utils/fs';
 
 import { getWarpConfig } from '../../config/warp.js';
 import {

@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { step } from 'mocha-steps';
 import { TronWeb } from 'tronweb';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 
 import { TronSigner } from '../clients/signer.js';
 import { TronReceipt, TronTransaction } from '../utils/types.js';

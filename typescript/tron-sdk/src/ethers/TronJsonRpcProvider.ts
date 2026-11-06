@@ -1,6 +1,6 @@
 import { BigNumber, providers } from 'ethers';
 
-import { retryAsync } from '@hyperlane-xyz/utils';
+import { retryAsync } from '@humanode-hyperlane/utils';
 
 const DEFAULT_MAX_RETRIES = 3;
 const DEFAULT_BASE_RETRY_MS = 250;

@@ -1,5 +1,5 @@
-import { BaseFee, RoutingFee } from '@hyperlane-xyz/core';
-import { eqAddress } from '@hyperlane-xyz/utils';
+import { BaseFee, RoutingFee } from '@humanode-hyperlane/core';
+import { eqAddress } from '@humanode-hyperlane/utils';
 
 import type { HyperlaneContracts } from '../contracts/types.js';
 import {

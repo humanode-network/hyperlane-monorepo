@@ -1,4 +1,4 @@
-# @hyperlane-xyz/core
+# @humanode-hyperlane/core
 
 ## 11.2.0
 
@@ -67,14 +67,14 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@21.1.0
+- @humanode-hyperlane/utils@21.1.0
 
 ## 10.1.4
 
 ### Patch Changes
 
 - Updated dependencies [0bce4e7]
-    - @hyperlane-xyz/utils@21.0.0
+    - @humanode-hyperlane/utils@21.0.0
 
 ## 10.1.3
 
@@ -89,20 +89,20 @@
     - No breaking changes to public API - all changes are internal or non-breaking
 
 - Updated dependencies [11fa887]
-    - @hyperlane-xyz/utils@20.1.0
+    - @humanode-hyperlane/utils@20.1.0
 
 ## 10.1.2
 
 ### Patch Changes
 
 - Updated dependencies [b3ebc08]
-    - @hyperlane-xyz/utils@20.0.0
+    - @humanode-hyperlane/utils@20.0.0
 
 ## 10.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.13.0
+- @humanode-hyperlane/utils@19.13.0
 
 ## 10.1.0
 
@@ -115,13 +115,13 @@
 - Updated dependencies [08cf7eca9]
 - Updated dependencies [af2cd1729]
 - Updated dependencies [e37100e2e]
-    - @hyperlane-xyz/utils@19.12.0
+    - @humanode-hyperlane/utils@19.12.0
 
 ## 10.0.5
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.11.0
+- @humanode-hyperlane/utils@19.11.0
 
 ## 10.0.4
 
@@ -131,14 +131,14 @@
 - 29ad1d225: Fix bug that prevents addBridge to be called multiple times with the same address on collateral token adapters
 - Updated dependencies [aad2988c9]
 - Updated dependencies [c2a64e8c5]
-    - @hyperlane-xyz/utils@19.10.0
+    - @humanode-hyperlane/utils@19.10.0
 
 ## 10.0.3
 
 ### Patch Changes
 
 - Updated dependencies [8c027d852]
-    - @hyperlane-xyz/utils@19.9.0
+    - @humanode-hyperlane/utils@19.9.0
 
 ## 10.0.2
 
@@ -147,13 +147,13 @@
 - Updated dependencies [2ed21c97d]
 - Updated dependencies [78ff6cd47]
 - Updated dependencies [3f75ad86d]
-    - @hyperlane-xyz/utils@19.8.0
+    - @humanode-hyperlane/utils@19.8.0
 
 ## 10.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.7.0
+- @humanode-hyperlane/utils@19.7.0
 
 ## 10.0.0
 
@@ -201,45 +201,45 @@
 - f930794d7: Update Yield Routes (HypERC4626OwnerCollateral and HypERC4626Collateral) to use safeApprove
 - 9a43cdca9: Remove absolute imports. Fixes compilation for users who import from files under `solidity/contracts`.
 - Updated dependencies [419e16910]
-    - @hyperlane-xyz/utils@19.6.0
+    - @humanode-hyperlane/utils@19.6.0
 
 ## 9.0.17
 
 ### Patch Changes
 
 - Updated dependencies [312826d10]
-    - @hyperlane-xyz/utils@19.5.0
+    - @humanode-hyperlane/utils@19.5.0
 
 ## 9.0.16
 
 ### Patch Changes
 
 - Updated dependencies [5a4e22d34]
-    - @hyperlane-xyz/utils@19.4.0
+    - @humanode-hyperlane/utils@19.4.0
 
 ## 9.0.15
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.3.0
+- @humanode-hyperlane/utils@19.3.0
 
 ## 9.0.14
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.2.0
+- @humanode-hyperlane/utils@19.2.0
 
 ## 9.0.13
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.1.1
+- @humanode-hyperlane/utils@19.1.1
 
 ## 9.0.12
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.1.0
+- @humanode-hyperlane/utils@19.1.0
 
 ## 9.0.11
 
@@ -248,7 +248,7 @@
 - Updated dependencies [8eab305bd]
 - Updated dependencies [e42a0e8e1]
 - Updated dependencies [32479e139]
-    - @hyperlane-xyz/utils@19.0.0
+    - @humanode-hyperlane/utils@19.0.0
 
 ## 9.0.10
 
@@ -258,26 +258,26 @@
 - Updated dependencies [c41bc3b93]
 - Updated dependencies [2c47e1143]
 - Updated dependencies [6b8419370]
-    - @hyperlane-xyz/utils@18.3.0
+    - @humanode-hyperlane/utils@18.3.0
 
 ## 9.0.9
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@18.2.0
+- @humanode-hyperlane/utils@18.2.0
 
 ## 9.0.8
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@18.1.0
+- @humanode-hyperlane/utils@18.1.0
 
 ## 9.0.7
 
 ### Patch Changes
 
 - Updated dependencies [cfc0eb2a7]
-    - @hyperlane-xyz/utils@18.0.0
+    - @humanode-hyperlane/utils@18.0.0
 
 ## 9.0.6
 
@@ -285,31 +285,31 @@
 
 - Updated dependencies [8c15edc67]
 - Updated dependencies [e0bda316a]
-    - @hyperlane-xyz/utils@17.0.0
+    - @humanode-hyperlane/utils@17.0.0
 
 ## 9.0.5
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@16.2.0
+- @humanode-hyperlane/utils@16.2.0
 
 ## 9.0.4
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@16.1.1
+- @humanode-hyperlane/utils@16.1.1
 
 ## 9.0.3
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@16.1.0
+- @humanode-hyperlane/utils@16.1.0
 
 ## 9.0.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@16.0.0
+- @humanode-hyperlane/utils@16.0.0
 
 ## 9.0.1
 
@@ -317,7 +317,7 @@
 
 - Updated dependencies [451f3f6c3]
 - Updated dependencies [a33c8abd4]
-    - @hyperlane-xyz/utils@15.0.0
+    - @humanode-hyperlane/utils@15.0.0
 
 ## 9.0.0
 
@@ -327,20 +327,20 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@14.4.0
+- @humanode-hyperlane/utils@14.4.0
 
 ## 8.1.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@14.3.0
+- @humanode-hyperlane/utils@14.3.0
 
 ## 8.1.1
 
 ### Patch Changes
 
 - c177c4733: Remove absolute imports. Fixes compilation for users who import from files under `solidity/contracts`.
-    - @hyperlane-xyz/utils@14.2.0
+    - @humanode-hyperlane/utils@14.2.0
 
 ## 8.1.0
 
@@ -352,14 +352,14 @@
 
 - bd91094c3: Export CONTRACTS_PACKAGE_VERSION from core package.
 - 04fc563f4: Fix TokenBridgeCCTP.verify burn message sender enforcement
-    - @hyperlane-xyz/utils@14.1.0
+    - @humanode-hyperlane/utils@14.1.0
 
 ## 8.0.2
 
 ### Patch Changes
 
 - Updated dependencies [7ad8e394c]
-    - @hyperlane-xyz/utils@14.0.0
+    - @humanode-hyperlane/utils@14.0.0
 
 ## 8.0.1
 
@@ -368,7 +368,7 @@
 - Updated dependencies [0ec92f775]
 - Updated dependencies [ec8d196d9]
 - Updated dependencies [bacf16a80]
-    - @hyperlane-xyz/utils@13.4.0
+    - @humanode-hyperlane/utils@13.4.0
 
 ## 8.0.0
 
@@ -403,7 +403,7 @@
 ### Patch Changes
 
 - fd3bb39: Use SafeERC20.safeApprove instead of IERC20.approve in HypXERC20Lockbox.approveLockbox()
-    - @hyperlane-xyz/utils@13.3.0
+    - @humanode-hyperlane/utils@13.3.0
 
 ## 7.1.10
 
@@ -411,13 +411,13 @@
 
 - 72887f7: Update to ethers v5.8.0.
 - Updated dependencies [72887f7]
-    - @hyperlane-xyz/utils@13.2.1
+    - @humanode-hyperlane/utils@13.2.1
 
 ## 7.1.9
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@13.2.0
+- @humanode-hyperlane/utils@13.2.0
 
 ## 7.1.8
 
@@ -425,21 +425,21 @@
 
 - ba4deea: Revert workspace dependency syntax.
 - Updated dependencies [ba4deea]
-    - @hyperlane-xyz/utils@13.1.1
+    - @humanode-hyperlane/utils@13.1.1
 
 ## 7.1.7
 
 ### Patch Changes
 
 - Updated dependencies [f41f766]
-    - @hyperlane-xyz/utils@13.1.0
+    - @humanode-hyperlane/utils@13.1.0
 
 ## 7.1.6
 
 ### Patch Changes
 
 - Updated dependencies [0de63e0]
-    - @hyperlane-xyz/utils@13.0.0
+    - @humanode-hyperlane/utils@13.0.0
 
 ## 7.1.5
 
@@ -447,32 +447,32 @@
 
 - Updated dependencies [d182d7d]
 - Updated dependencies [b360802]
-    - @hyperlane-xyz/utils@12.6.0
+    - @humanode-hyperlane/utils@12.6.0
 
 ## 7.1.4
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@12.5.0
+- @humanode-hyperlane/utils@12.5.0
 
 ## 7.1.3
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@12.4.0
+- @humanode-hyperlane/utils@12.4.0
 
 ## 7.1.2
 
 ### Patch Changes
 
 - Updated dependencies [7500bd6fe]
-    - @hyperlane-xyz/utils@12.3.0
+    - @humanode-hyperlane/utils@12.3.0
 
 ## 7.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@12.2.0
+- @humanode-hyperlane/utils@12.2.0
 
 ## 7.1.0
 
@@ -482,7 +482,7 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@12.1.0
+- @humanode-hyperlane/utils@12.1.0
 
 ## 7.0.0
 
@@ -535,7 +535,7 @@
 
 - 59a087ded: Refactor TokenRouter internal amount accounting for use in scaling Warp Routes
 - 59a087ded: Fix yield route (`HypERC4626`/`HypERC4626Collateral`) decimal scaling by leveraging `FungibleTokenRouter`
-    - @hyperlane-xyz/utils@12.0.0
+    - @humanode-hyperlane/utils@12.0.0
 
 ## 6.1.0
 
@@ -551,7 +551,7 @@
 ### Patch Changes
 
 - Updated dependencies [3b060c3e1]
-    - @hyperlane-xyz/utils@11.0.0
+    - @humanode-hyperlane/utils@11.0.0
 
 ## 6.0.4
 
@@ -559,25 +559,25 @@
 
 - fff9cbf57: pin zksync deps from ccip package
 - Updated dependencies [b8d95fc95]
-    - @hyperlane-xyz/utils@10.0.0
+    - @humanode-hyperlane/utils@10.0.0
 
 ## 6.0.3
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@9.2.1
+- @humanode-hyperlane/utils@9.2.1
 
 ## 6.0.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@9.2.0
+- @humanode-hyperlane/utils@9.2.0
 
 ## 6.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@9.1.0
+- @humanode-hyperlane/utils@9.1.0
 
 ## 6.0.0
 
@@ -622,7 +622,7 @@
 
 - 88970a78c: Refactor TokenRouter internal amount accounting for use in scaling Warp Routes
 - Updated dependencies [4df37393f]
-    - @hyperlane-xyz/utils@9.0.0
+    - @humanode-hyperlane/utils@9.0.0
 
 ## 5.12.0
 
@@ -641,45 +641,45 @@
 - 27eadbfc3: Add internal refund logic to hooks
 - Updated dependencies [05f89650b]
 - Updated dependencies [3518f8901]
-    - @hyperlane-xyz/utils@8.9.0
+    - @humanode-hyperlane/utils@8.9.0
 
 ## 5.11.6
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.8.1
+- @humanode-hyperlane/utils@8.8.1
 
 ## 5.11.5
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.8.0
+- @humanode-hyperlane/utils@8.8.0
 
 ## 5.11.4
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.7.0
+- @humanode-hyperlane/utils@8.7.0
 
 ## 5.11.3
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.6.1
+- @humanode-hyperlane/utils@8.6.1
 
 ## 5.11.2
 
 ### Patch Changes
 
 - ba50e62fc: Added ESLint configuration and dependency to enforce Node.js module restrictions
-    - @hyperlane-xyz/utils@8.6.0
+    - @humanode-hyperlane/utils@8.6.0
 
 ## 5.11.1
 
 ### Patch Changes
 
 - 044665692: Make `initialize` function public virtual
-    - @hyperlane-xyz/utils@8.5.0
+    - @humanode-hyperlane/utils@8.5.0
 
 ## 5.11.0
 
@@ -689,7 +689,7 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.4.0
+- @humanode-hyperlane/utils@8.4.0
 
 ## 5.10.0
 
@@ -705,19 +705,19 @@
 ### Patch Changes
 
 - 11cf66c5e: Export empty zksync buildArtifact to satisfy package.json exports
-    - @hyperlane-xyz/utils@8.3.0
+    - @humanode-hyperlane/utils@8.3.0
 
 ## 5.9.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.2.0
+- @humanode-hyperlane/utils@8.2.0
 
 ## 5.9.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@8.1.0
+- @humanode-hyperlane/utils@8.1.0
 
 ## 5.9.0
 
@@ -729,27 +729,27 @@
 
 - Updated dependencies [79f8197f3]
 - Updated dependencies [8834a8c92]
-    - @hyperlane-xyz/utils@8.0.0
+    - @humanode-hyperlane/utils@8.0.0
 
 ## 5.8.3
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@7.3.0
+- @humanode-hyperlane/utils@7.3.0
 
 ## 5.8.2
 
 ### Patch Changes
 
 - Updated dependencies [fa6d5f5c6]
-    - @hyperlane-xyz/utils@7.2.0
+    - @humanode-hyperlane/utils@7.2.0
 
 ## 5.8.1
 
 ### Patch Changes
 
 - Updated dependencies [0e285a443]
-    - @hyperlane-xyz/utils@7.1.0
+    - @humanode-hyperlane/utils@7.1.0
 
 ## 5.8.0
 
@@ -761,14 +761,14 @@
 
 - Updated dependencies [f48cf8766]
 - Updated dependencies [e6f9d5c4f]
-    - @hyperlane-xyz/utils@7.0.0
+    - @humanode-hyperlane/utils@7.0.0
 
 ## 5.7.1
 
 ### Patch Changes
 
 - Updated dependencies [e3b97c455]
-    - @hyperlane-xyz/utils@6.0.0
+    - @humanode-hyperlane/utils@6.0.0
 
 ## 5.7.0
 
@@ -784,7 +784,7 @@
 - Updated dependencies [e104cf6aa]
 - Updated dependencies [04108155d]
 - Updated dependencies [39a9b2038]
-    - @hyperlane-xyz/utils@5.7.0
+    - @humanode-hyperlane/utils@5.7.0
 
 ## 5.6.1
 
@@ -793,7 +793,7 @@
 - a42616ff3: Added overrides for transferFrom, totalSupply to reflect the internal share based accounting for the 4626 mirror asset
 - Updated dependencies [5fd4267e7]
 - Updated dependencies [a36fc5fb2]
-    - @hyperlane-xyz/utils@5.6.2
+    - @humanode-hyperlane/utils@5.6.2
 
 ## 5.6.0
 
@@ -805,7 +805,7 @@
 ### Patch Changes
 
 - 8cc0d9a4a: Add wrapped HypERC4626 for easy defi use
-    - @hyperlane-xyz/utils@5.6.1
+    - @humanode-hyperlane/utils@5.6.1
 
 ## 5.5.0
 
@@ -819,7 +819,7 @@
 - ec6b874b1: Added nonce to HypERC4626
 - Updated dependencies [f1712deb7]
 - Updated dependencies [29341950e]
-    - @hyperlane-xyz/utils@5.6.0
+    - @humanode-hyperlane/utils@5.6.0
 
 ## 5.4.1
 
@@ -827,7 +827,7 @@
 
 - 92c86cca6: Forward value from ICA router to proxy for multicall
 - Updated dependencies [2afc484a2]
-    - @hyperlane-xyz/utils@5.5.0
+    - @humanode-hyperlane/utils@5.5.0
 
 ## 5.4.0
 
@@ -839,7 +839,7 @@
 ### Patch Changes
 
 - Updated dependencies [4415ac224]
-    - @hyperlane-xyz/utils@5.4.0
+    - @humanode-hyperlane/utils@5.4.0
 
 ## 5.3.0
 
@@ -847,14 +847,14 @@
 
 - Updated dependencies [746eeb9d9]
 - Updated dependencies [50319d8ba]
-    - @hyperlane-xyz/utils@5.3.0
+    - @humanode-hyperlane/utils@5.3.0
 
 ## 5.2.1
 
 ### Patch Changes
 
 - eb5afcf3e: Patch `HypNative` with hook overrides `transferRemote` behavior
-    - @hyperlane-xyz/utils@5.2.1
+    - @humanode-hyperlane/utils@5.2.1
 
 ## 5.2.0
 
@@ -867,7 +867,7 @@
 
 - Updated dependencies [d6de34ad5]
 - Updated dependencies [291c5fe36]
-    - @hyperlane-xyz/utils@5.2.0
+    - @humanode-hyperlane/utils@5.2.0
 
 ## 5.1.0
 
@@ -882,7 +882,7 @@
 ### Patch Changes
 
 - 013f19c64: fix: only evaluate dynamic revert reasons in reverting branch
-    - @hyperlane-xyz/utils@5.1.0
+    - @humanode-hyperlane/utils@5.1.0
 
 ## 5.0.0
 
@@ -893,13 +893,13 @@
 - Updated dependencies [488f949ef]
 - Updated dependencies [dfa908796]
 - Updated dependencies [1474865ae]
-    - @hyperlane-xyz/utils@5.0.0
+    - @humanode-hyperlane/utils@5.0.0
 
 ## 4.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@4.1.0
+- @humanode-hyperlane/utils@4.1.0
 
 ## 4.0.0
 
@@ -909,20 +909,20 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@4.0.0
+- @humanode-hyperlane/utils@4.0.0
 
 ## 3.16.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.16.0
+- @humanode-hyperlane/utils@3.16.0
 
 ## 3.15.1
 
 ### Patch Changes
 
 - 6620fe636: fix: `TokenRouter.transferRemote` with hook overrides
-    - @hyperlane-xyz/utils@3.15.1
+    - @humanode-hyperlane/utils@3.15.1
 
 ## 3.15.0
 
@@ -933,14 +933,14 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.15.0
+- @humanode-hyperlane/utils@3.15.0
 
 ## 3.14.0
 
 ### Patch Changes
 
 - a8a68f6f6: fix: make XERC20 and XERC20 Lockbox proxy-able
-    - @hyperlane-xyz/utils@3.14.0
+    - @humanode-hyperlane/utils@3.14.0
 
 ## 3.13.0
 
@@ -952,20 +952,20 @@
 ### Patch Changes
 
 - Updated dependencies [0cf692e73]
-    - @hyperlane-xyz/utils@3.13.0
+    - @humanode-hyperlane/utils@3.13.0
 
 ## 3.12.0
 
 ### Patch Changes
 
 - Updated dependencies [69de68a66]
-    - @hyperlane-xyz/utils@3.12.0
+    - @humanode-hyperlane/utils@3.12.0
 
 ## 3.11.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.11.1
+- @humanode-hyperlane/utils@3.11.1
 
 ## 3.11.0
 
@@ -979,7 +979,7 @@
 - Updated dependencies [b63714ede]
 - Updated dependencies [2b3f75836]
 - Updated dependencies [af2634207]
-    - @hyperlane-xyz/utils@3.11.0
+    - @humanode-hyperlane/utils@3.11.0
 
 ## 3.10.0
 
@@ -992,26 +992,26 @@
 
 - Updated dependencies [96485144a]
 - Updated dependencies [4e7a43be6]
-    - @hyperlane-xyz/utils@3.10.0
+    - @humanode-hyperlane/utils@3.10.0
 
 ## 3.9.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.9.0
+- @humanode-hyperlane/utils@3.9.0
 
 ## 3.8.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.8.2
+- @humanode-hyperlane/utils@3.8.2
 
 ## 3.8.1
 
 ### Patch Changes
 
 - Updated dependencies [5daaae274]
-    - @hyperlane-xyz/utils@3.8.1
+    - @humanode-hyperlane/utils@3.8.1
 
 ## 3.8.0
 
@@ -1019,7 +1019,7 @@
 
 - 9681df08d: Remove support for goerli networks (including optimismgoerli, arbitrumgoerli, lineagoerli and polygonzkevmtestnet)
 - 9681df08d: Enabled verification of contracts as part of the deployment flow.
-    - Solidity build artifact is now included as part of the `@hyperlane-xyz/core` package.
+    - Solidity build artifact is now included as part of the `@humanode-hyperlane/core` package.
     - Updated the `HyperlaneDeployer` to perform contract verification immediately after deploying a contract. A default verifier is instantiated using the core build artifact.
     - Updated the `HyperlaneIsmFactory` to re-use the `HyperlaneDeployer` for deployment where possible.
     - Minor logging improvements throughout deployers.
@@ -1027,19 +1027,19 @@
 ### Patch Changes
 
 - Updated dependencies [9681df08d]
-    - @hyperlane-xyz/utils@3.8.0
+    - @humanode-hyperlane/utils@3.8.0
 
 ## 3.7.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.7.0
+- @humanode-hyperlane/utils@3.7.0
 
 ## 3.6.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.6.2
+- @humanode-hyperlane/utils@3.6.2
 
 ## 3.6.1
 
@@ -1049,25 +1049,25 @@
 - Updated dependencies [3c298d064]
 - Updated dependencies [df24eec8b]
 - Updated dependencies [78e50e7da]
-    - @hyperlane-xyz/utils@3.6.1
+    - @humanode-hyperlane/utils@3.6.1
 
 ## 3.6.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.6.0
+- @humanode-hyperlane/utils@3.6.0
 
 ## 3.5.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.5.1
+- @humanode-hyperlane/utils@3.5.1
 
 ## 3.5.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.5.0
+- @humanode-hyperlane/utils@3.5.0
 
 ## 3.4.0
 
@@ -1075,14 +1075,14 @@
 
 - e06fe0b32: Supporting DefaultFallbackRoutingIsm through non-factory deployments
 - Updated dependencies [fd4fc1898]
-    - @hyperlane-xyz/utils@3.4.0
+    - @humanode-hyperlane/utils@3.4.0
 
 ## 3.3.0
 
 ### Patch Changes
 
 - 350175581: Rename StaticProtocolFee hook to ProtocolFee for clarity
-    - @hyperlane-xyz/utils@3.3.0
+    - @humanode-hyperlane/utils@3.3.0
 
 ## 3.2.0
 
@@ -1092,11 +1092,11 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@3.2.0
+- @humanode-hyperlane/utils@3.2.0
 
 ## 3.1.10
 
 ### Patch Changes
 
 - c9e0aedae: Improve client side StandardHookMetadata library interface
-    - @hyperlane-xyz/utils@3.1.10
+    - @humanode-hyperlane/utils@3.1.10

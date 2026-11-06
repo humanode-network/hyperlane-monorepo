@@ -1,15 +1,15 @@
 import { address as parseAddress, type Address } from '@solana/kit';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import type { MultisigIsmConfig } from '@hyperlane-xyz/provider-sdk/ism';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import type { MultisigIsmConfig } from '@humanode-hyperlane/provider-sdk/ism';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { resolveProgram } from '../deploy/resolve-program.js';
 import {

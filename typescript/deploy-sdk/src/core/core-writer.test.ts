@@ -6,24 +6,24 @@ import {
   MockSigner,
   hasProtocol,
   registerProtocol,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 import {
   ArtifactDeployed,
   ArtifactNew,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   DeployedHookArtifact,
   HookArtifactConfig,
   IRawHookArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@humanode-hyperlane/provider-sdk/hook';
 import {
   DeployedIsmArtifact,
   IRawIsmArtifactManager,
   IsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
 import {
   DeployedMailboxAddress,
   DeployedMailboxArtifact,
@@ -31,18 +31,21 @@ import {
   IRawMailboxArtifactManager,
   MailboxArtifactConfig,
   MailboxOnChain,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/mailbox';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   ProtocolProvider,
   ProtocolType,
-} from '@hyperlane-xyz/provider-sdk/protocol';
+} from '@humanode-hyperlane/provider-sdk/protocol';
 import {
   DeployedValidatorAnnounceArtifact,
   IRawValidatorAnnounceArtifactManager,
   RawValidatorAnnounceConfig,
-} from '@hyperlane-xyz/provider-sdk/validator-announce';
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/validator-announce';
+import { ZERO_ADDRESS_HEX_32 } from '@humanode-hyperlane/utils';
 
 import { CoreWriter } from './core-writer.js';
 

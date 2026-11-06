@@ -1,5 +1,5 @@
-import { BuildArtifact, ChainMap } from '@hyperlane-xyz/sdk';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { BuildArtifact, ChainMap } from '@humanode-hyperlane/sdk';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import { fetchGCPSecret } from '../utils/gcloud.js';
 

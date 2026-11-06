@@ -3,13 +3,13 @@ import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 import {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   DeployedValidatorAnnounceAddress,
   IRawValidatorAnnounceArtifactManager,
   RawValidatorAnnounceArtifactConfigs,
   ValidatorAnnounceType,
-} from '@hyperlane-xyz/provider-sdk/validator-announce';
+} from '@humanode-hyperlane/provider-sdk/validator-announce';
 
 import { RadixSigner } from '../clients/signer.js';
 import { RadixBase } from '../utils/base.js';

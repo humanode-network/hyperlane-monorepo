@@ -6,18 +6,18 @@ import {
   ArtifactReader,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   DeployedMailboxAddress,
   MailboxOnChain,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
-import { TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/mailbox';
+import { TxReceipt } from '@humanode-hyperlane/provider-sdk/module';
 import {
   ZERO_ADDRESS_HEX_32,
   eqAddressRadix,
   eqOptionalAddress,
   isEmptyAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { RadixBase } from '../utils/base.js';
 import { RadixBaseSigner } from '../utils/signer.js';

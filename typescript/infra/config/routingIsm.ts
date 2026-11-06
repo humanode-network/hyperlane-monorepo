@@ -6,7 +6,7 @@ import {
   IsmType,
   ModuleType,
   RoutingIsmConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { DeployEnvironment } from '../src/config/environment.js';
 

@@ -5,8 +5,8 @@ import {
   events as eventsUtils,
 } from 'starknet';
 
-import { getCompiledContract } from '@hyperlane-xyz/starknet-core';
-import { Address, HexString, pollAsync } from '@hyperlane-xyz/utils';
+import { getCompiledContract } from '@humanode-hyperlane/starknet-core';
+import { Address, HexString, pollAsync } from '@humanode-hyperlane/utils';
 
 import { BaseStarknetAdapter } from '../../app/MultiProtocolApp.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

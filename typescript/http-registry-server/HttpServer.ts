@@ -1,8 +1,8 @@
 import express, { Express, Request, Response } from 'express';
 import type { Logger } from 'pino';
 
-import { IRegistry } from '@hyperlane-xyz/registry';
-import { createServiceLogger } from '@hyperlane-xyz/utils';
+import { IRegistry } from '@humanode-hyperlane/registry';
+import { createServiceLogger } from '@humanode-hyperlane/utils';
 
 import packageJson from './package.json' with { type: 'json' };
 import { AppConstants, ServerConstants } from './src/constants/index.js';

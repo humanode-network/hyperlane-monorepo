@@ -16,13 +16,13 @@ import {
   WarpTxCategory,
   getSignerForChain,
   type TypedTransactionReceipt,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   assert,
   ensure0x,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 import type {

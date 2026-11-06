@@ -8,7 +8,7 @@ import {
   objMap,
   pick,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { multiProtocolTestChainMetadata } from '../consts/testChains.js';
 import { ChainMetadataManager } from '../metadata/ChainMetadataManager.js';

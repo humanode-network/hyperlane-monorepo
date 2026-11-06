@@ -2,8 +2,8 @@ import { JsonRpcProvider, type Log } from '@ethersproject/providers';
 import { ethers } from 'ethers';
 import { execa } from 'execa';
 
-import { HttpServer } from '@hyperlane-xyz/http-registry-server';
-import { MergedRegistry, PartialRegistry } from '@hyperlane-xyz/registry';
+import { HttpServer } from '@humanode-hyperlane/http-registry-server';
+import { MergedRegistry, PartialRegistry } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type ChainMetadata,
@@ -17,14 +17,14 @@ import {
   type RevertAssertion,
   TransactionDataType,
   forkedChainConfigByChainFromRaw,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   ProtocolType,
   assert,
   deepEquals,
   retryAsync,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logGray, logRed } from '../logger.js';

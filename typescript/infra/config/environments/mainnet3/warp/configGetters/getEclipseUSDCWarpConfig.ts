@@ -5,8 +5,8 @@ import {
   SubmissionStrategy,
   TokenType,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { getChainAddresses } from '../../../../registry.js';

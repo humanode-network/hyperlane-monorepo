@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import { BigNumber } from 'ethers';
 import sinon from 'sinon';
 
-import { InterchainAccountRouter__factory } from '@hyperlane-xyz/core';
-import { formatStandardHookMetadata } from '@hyperlane-xyz/utils';
+import { InterchainAccountRouter__factory } from '@humanode-hyperlane/core';
+import { formatStandardHookMetadata } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../../consts/testChains.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

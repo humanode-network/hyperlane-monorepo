@@ -1,20 +1,20 @@
 import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 import {
   ArtifactDeployed,
   ArtifactNew,
   ArtifactReader,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { TxReceipt } from '@humanode-hyperlane/provider-sdk/module';
 import {
   DeployedWarpAddress,
   RawCollateralWarpArtifactConfig,
   computeRemoteRoutersUpdates,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { eqAddressRadix } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { eqAddressRadix } from '@humanode-hyperlane/utils';
 
 import { RadixBase } from '../utils/base.js';
 import { RadixBaseSigner } from '../utils/signer.js';

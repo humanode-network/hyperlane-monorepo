@@ -1,4 +1,4 @@
-import { WithAddress, pick } from '@hyperlane-xyz/utils';
+import { WithAddress, pick } from '@humanode-hyperlane/utils';
 
 import { multisigIsmVerifyCosts } from '../consts/multisigIsmVerifyCosts.js';
 

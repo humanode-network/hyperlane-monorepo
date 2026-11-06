@@ -6,8 +6,8 @@ import {
   MockSafe__factory,
   type TimelockController,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type CallData,
   type ChainSubmissionStrategy,
@@ -17,13 +17,13 @@ import {
   TokenType,
   TxSubmitterType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   type Domain,
   ProtocolType,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';

@@ -6,7 +6,7 @@ import {
   type HookConfig,
   type IsmConfig,
   type OwnableConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { type CommandContext } from '../context/types.js';
 import { errorRed, log, logBlue, logGreen } from '../logger.js';

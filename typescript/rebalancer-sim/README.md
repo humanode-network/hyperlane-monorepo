@@ -82,10 +82,10 @@ This separation is important because rebalancer transfers go through external br
 
 Two rebalancer implementations are available:
 
-| Runner                       | Description                                            | Use Case                        |
-| ---------------------------- | ------------------------------------------------------ | ------------------------------- |
-| `SimpleRunner`               | Simplified rebalancer with weighted/minAmount strategy | Fast tests, baseline comparison |
-| `ProductionRebalancerRunner` | Wraps actual `@hyperlane-xyz/rebalancer` CLI service   | Production behavior validation  |
+| Runner                       | Description                                               | Use Case                        |
+| ---------------------------- | --------------------------------------------------------- | ------------------------------- |
+| `SimpleRunner`               | Simplified rebalancer with weighted/minAmount strategy    | Fast tests, baseline comparison |
+| `ProductionRebalancerRunner` | Wraps actual `@humanode-hyperlane/rebalancer` CLI service | Production behavior validation  |
 
 ## Directory Structure
 
@@ -382,7 +382,7 @@ import {
   RebalancerSimulationHarness,
   ScenarioLoader,
   SimpleRunner,
-} from '@hyperlane-xyz/rebalancer-sim';
+} from '@humanode-hyperlane/rebalancer-sim';
 
 // Load scenario from JSON
 const scenario = ScenarioLoader.loadScenario('balanced-bidirectional');
@@ -412,7 +412,7 @@ console.log(`Rebalances: ${result.kpis.totalRebalances}`);
 import {
   ProductionRebalancerRunner,
   SimpleRunner,
-} from '@hyperlane-xyz/rebalancer-sim';
+} from '@humanode-hyperlane/rebalancer-sim';
 
 const rebalancers = [
   new SimpleRunner(), // Simplified baseline
@@ -435,7 +435,7 @@ console.log(`Best latency: ${report.comparison.bestLatency}`);
 ```typescript
 import { parseEther } from 'ethers/lib/utils';
 
-import { ScenarioGenerator } from '@hyperlane-xyz/rebalancer-sim';
+import { ScenarioGenerator } from '@humanode-hyperlane/rebalancer-sim';
 
 // Unidirectional flow (tests drain)
 const drainScenario = ScenarioGenerator.unidirectionalFlow({

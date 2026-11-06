@@ -5,8 +5,8 @@ import { Log, parseEventLogs } from 'viem';
 import {
   HypXERC20Lockbox__factory,
   IXERC20Lockbox__factory,
-} from '@hyperlane-xyz/core';
-import { Address, assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { Address, assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import {
   getContractDeploymentTransaction,

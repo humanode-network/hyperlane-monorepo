@@ -14,13 +14,13 @@ import {
   TransparentUpgradeableProxy__factory,
   XERC20Test,
   XERC20Test__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   eqAddress,
   isZeroishAddress,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { TestCoreApp } from '../core/TestCoreApp.js';

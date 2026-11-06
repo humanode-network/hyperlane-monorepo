@@ -4,8 +4,8 @@ import {
   SubmitterMetadata,
   TokenType,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
-import { objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { objMap } from '@humanode-hyperlane/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { usdcTokenAddresses } from '../cctp.js';

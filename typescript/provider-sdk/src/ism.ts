@@ -4,7 +4,7 @@ import {
   deepEquals,
   isNullish,
   normalizeConfig,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { IsmType as AltVMIsmType } from './altvm.js';
 import {

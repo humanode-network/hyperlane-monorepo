@@ -7,7 +7,7 @@ import {
   assert,
   convertDecimals,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { getProtocolExchangeRateDecimals } from '../consts/igp.js';
 import { ChainMetadataManager } from '../metadata/ChainMetadataManager.js';

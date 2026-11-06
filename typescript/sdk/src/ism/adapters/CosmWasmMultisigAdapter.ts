@@ -5,7 +5,7 @@ import {
   difference,
   objMap,
   promiseObjAll,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { BaseCosmWasmAdapter } from '../../app/MultiProtocolApp.js';
 import {

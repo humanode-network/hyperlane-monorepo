@@ -1,6 +1,6 @@
 import { type Logger } from 'pino';
 
-import { IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type CoreAddresses,
@@ -10,14 +10,14 @@ import {
   type Token,
   WarpCore,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   assert,
   ProtocolType,
   objMap,
   toWei,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { LiFiBridge } from '../bridges/LiFiBridge.js';
 import { type RebalancerConfig } from '../config/RebalancerConfig.js';

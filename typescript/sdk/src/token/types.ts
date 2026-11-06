@@ -1,8 +1,8 @@
 import { compareVersions } from 'compare-versions';
 import { z } from 'zod';
 
-import { CONTRACTS_PACKAGE_VERSION } from '@hyperlane-xyz/core';
-import { objMap } from '@hyperlane-xyz/utils';
+import { CONTRACTS_PACKAGE_VERSION } from '@humanode-hyperlane/core';
+import { objMap } from '@humanode-hyperlane/utils';
 
 import { TokenFeeConfigInput, TokenFeeType } from '../fee/types.js';
 import { HookConfig, HookType } from '../hook/types.js';
@@ -31,7 +31,7 @@ export const contractVersionMatchesDependency = (version: string) => {
   return compareVersions(version, CONTRACTS_PACKAGE_VERSION) === 0;
 };
 
-export const VERSION_ERROR_MESSAGE = `Contract version must match the @hyperlane-xyz/core dependency version (${CONTRACTS_PACKAGE_VERSION})`;
+export const VERSION_ERROR_MESSAGE = `Contract version must match the @humanode-hyperlane/core dependency version (${CONTRACTS_PACKAGE_VERSION})`;
 
 export const TokenMetadataSchema = z.object({
   name: z.string(),

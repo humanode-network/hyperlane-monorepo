@@ -5,7 +5,7 @@ import {
   isEVMLike,
   isValidAddressEvm,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type CommandModuleWithContext } from '../context/types.js';
 import { errorRed, log } from '../logger.js';

@@ -1,19 +1,19 @@
 import { confirm } from '@inquirer/prompts';
 import { stringify as yamlStringify } from 'yaml';
 
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { buildArtifact as coreBuildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
 import {
   AltVMJsonRpcSubmitter,
   createWarpTokenWriter,
-} from '@hyperlane-xyz/deploy-sdk';
-import { AltVMFileSubmitter } from '@hyperlane-xyz/deploy-sdk/AltVMFileSubmitter';
-import { GasAction, ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { warpConfigToArtifact } from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/deploy-sdk';
+import { AltVMFileSubmitter } from '@humanode-hyperlane/deploy-sdk/AltVMFileSubmitter';
+import { GasAction, ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import { warpConfigToArtifact } from '@humanode-hyperlane/provider-sdk/warp';
 import {
   type AddWarpRouteConfigOptions,
   type ChainAddresses,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type AggregationIsmConfig,
   CCIPContractCache,
@@ -56,7 +56,7 @@ import {
   normalizeScale,
   splitWarpCoreAndExtendedConfigs,
   tokenTypeToStandard,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   addressToBytes32,
@@ -69,7 +69,7 @@ import {
   promiseObjAll,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { requestAndSaveApiKeys } from '../context/context.js';
 import { type WriteCommandContext } from '../context/types.js';

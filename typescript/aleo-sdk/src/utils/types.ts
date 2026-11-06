@@ -3,9 +3,9 @@ import {
   type ExecuteOptions,
 } from '@provablehq/sdk';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { type RawWarpArtifactConfig } from '@hyperlane-xyz/provider-sdk/warp';
-import { type Annotated, assert } from '@hyperlane-xyz/utils';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import { type RawWarpArtifactConfig } from '@humanode-hyperlane/provider-sdk/warp';
+import { type Annotated, assert } from '@humanode-hyperlane/utils';
 
 export interface AleoTransaction extends ExecuteOptions {}
 export type AnnotatedAleoTransaction = Annotated<AleoTransaction>;

@@ -18,8 +18,8 @@ import {
   attachContractsMapAndGetForeignDeployments,
   hypERC20factories,
   proxiedFactories,
-} from '@hyperlane-xyz/sdk';
-import { eqAddress, objFilter } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { eqAddress, objFilter } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { DEPLOYER } from '../../config/environments/mainnet3/owners.js';

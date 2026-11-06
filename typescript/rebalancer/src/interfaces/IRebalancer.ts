@@ -1,7 +1,7 @@
 import {
   type EvmMovableCollateralAdapter,
   type TokenAmount,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import {
   type InventoryRoute,

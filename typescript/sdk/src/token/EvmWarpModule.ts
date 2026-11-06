@@ -11,9 +11,9 @@ import {
   MovableCollateralRouter__factory,
   ProxyAdmin__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
-import { CrossCollateralRouter__factory } from '@hyperlane-xyz/multicollateral';
+} from '@humanode-hyperlane/core';
+import { buildArtifact as coreBuildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
+import { CrossCollateralRouter__factory } from '@humanode-hyperlane/multicollateral';
 import {
   Address,
   Domain,
@@ -36,7 +36,7 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ExplorerLicenseType } from '../block-explorer/etherscan.js';
 import { CCIPContractCache } from '../ccip/utils.js';
@@ -1386,7 +1386,7 @@ export class EvmWarpModule extends HyperlaneModule<
     }
 
     // You can only upgrade to the contract version (see `PackageVersioned`)
-    // defined by the @hyperlane-xyz/core package
+    // defined by the @humanode-hyperlane/core package
     assert(
       contractVersionMatchesDependency(expectedConfig.contractVersion),
       VERSION_ERROR_MESSAGE,

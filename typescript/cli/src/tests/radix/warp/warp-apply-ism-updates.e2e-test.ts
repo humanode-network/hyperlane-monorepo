@@ -1,6 +1,6 @@
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
+import { TokenType } from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
 import { HyperlaneE2EWarpTestCommands } from '../../commands/warp.js';

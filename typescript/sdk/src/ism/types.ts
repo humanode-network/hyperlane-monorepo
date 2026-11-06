@@ -14,14 +14,14 @@ import {
   PausableIsm,
   TestIsm,
   TrustedRelayerIsm,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import type {
   Address,
   Domain,
   ValueOf,
   WithAddress,
-} from '@hyperlane-xyz/utils';
-import { isNullish } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
+import { isNullish } from '@humanode-hyperlane/utils';
 
 import { ZHash } from '../metadata/customZodTypes.js';
 import {

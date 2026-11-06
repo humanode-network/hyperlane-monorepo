@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { pino } from 'pino';
 
-import type { ChainName } from '@hyperlane-xyz/sdk';
+import type { ChainName } from '@humanode-hyperlane/sdk';
 
 import type {
   IStrategy,

@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js';
 
-import { Domain } from '@hyperlane-xyz/utils';
+import { Domain } from '@humanode-hyperlane/utils';
 
 import {
   SealevelAccountDataWrapper,

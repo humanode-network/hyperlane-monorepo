@@ -4,14 +4,14 @@ import {
   Mailbox,
   TestRecipient,
   ValidatorAnnounce,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   addBufferToGasLimit,
   assert,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { HyperlaneContracts } from '../contracts/types.js';
 import { HyperlaneDeployer } from '../deploy/HyperlaneDeployer.js';

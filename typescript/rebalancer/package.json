@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/rebalancer",
+  "name": "@humanode-hyperlane/rebalancer",
   "version": "27.2.2",
   "description": "Hyperlane Warp Route Collateral Rebalancer Service",
   "keywords": [
@@ -12,7 +12,7 @@
   ],
   "license": "Apache-2.0",
   "author": "Abacus Works, Inc.",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "bin": {
     "hyperlane-rebalancer": "./dist/service.js"
   },
@@ -40,12 +40,12 @@
   },
   "dependencies": {
     "@google-cloud/pino-logging-gcp-config": "catalog:",
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/metrics": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@humanode-hyperlane/core": "workspace:*",
+    "@humanode-hyperlane/metrics": "workspace:*",
+    "@humanode-hyperlane/provider-sdk": "workspace:*",
+    "@humanode-hyperlane/registry": "catalog:",
+    "@humanode-hyperlane/sdk": "workspace:*",
+    "@humanode-hyperlane/utils": "workspace:*",
     "@inquirer/prompts": "catalog:",
     "@inquirer/select": "catalog:",
     "@lifi/sdk": "catalog:",
@@ -65,8 +65,8 @@
   },
   "devDependencies": {
     "@ethersproject/constants": "*",
-    "@hyperlane-xyz/relayer": "workspace:*",
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/relayer": "workspace:*",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/express": "^5.0.3",

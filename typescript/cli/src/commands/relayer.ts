@@ -1,6 +1,9 @@
-import { HyperlaneRelayer, RelayerCacheSchema } from '@hyperlane-xyz/relayer';
-import { type ChainMap, HyperlaneCore } from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+import {
+  HyperlaneRelayer,
+  RelayerCacheSchema,
+} from '@humanode-hyperlane/relayer';
+import { type ChainMap, HyperlaneCore } from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { type CommandModuleWithContext } from '../context/types.js';
 import { log } from '../logger.js';

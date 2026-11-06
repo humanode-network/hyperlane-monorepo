@@ -1,8 +1,8 @@
 import { ethers } from 'ethers';
 import { Provider as ZKSyncProvider } from 'zksync-ethers';
 
-import { ProxyAdmin__factory } from '@hyperlane-xyz/core';
-import { Address, ChainId, eqAddress } from '@hyperlane-xyz/utils';
+import { ProxyAdmin__factory } from '@humanode-hyperlane/core';
+import { Address, ChainId, eqAddress } from '@humanode-hyperlane/utils';
 
 import { transferOwnershipTransactions } from '../contracts/contracts.js';
 import { AnnotatedEV5Transaction } from '../providers/ProviderType.js';

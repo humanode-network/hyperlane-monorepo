@@ -1,7 +1,7 @@
 import { BigNumber, ethers } from 'ethers';
 import type { Logger } from 'pino';
 
-import { HyperlaneIgp, MultiProvider } from '@hyperlane-xyz/sdk';
+import { HyperlaneIgp, MultiProvider } from '@humanode-hyperlane/sdk';
 
 import type {
   ChainConfig,

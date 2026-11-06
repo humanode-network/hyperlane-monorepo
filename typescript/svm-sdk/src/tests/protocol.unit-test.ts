@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import type { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 
 import { SvmHookArtifactManager } from '../hook/hook-artifact-manager.js';
 import { SvmIsmArtifactManager } from '../ism/ism-artifact-manager.js';

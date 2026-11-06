@@ -1,4 +1,4 @@
-import { S3Receipt, S3Validator } from '@hyperlane-xyz/sdk';
+import { S3Receipt, S3Validator } from '@humanode-hyperlane/sdk';
 import {
   Checkpoint,
   HexString,
@@ -6,7 +6,7 @@ import {
   S3CheckpointWithId,
   SignatureLike,
   isS3CheckpointWithId,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 export enum CheckpointStatus {
   EXTRA = '➕',

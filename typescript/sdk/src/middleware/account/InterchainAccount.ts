@@ -5,7 +5,7 @@ import { ZHash } from '../../metadata/customZodTypes.js';
 import {
   InterchainAccountRouter,
   InterchainAccountRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   CallData,
@@ -22,7 +22,7 @@ import {
   parseStandardHookMetadata,
   promiseObjAll,
   toHexString,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { appFromAddressesMapHelper } from '../../contracts/contracts.js';
 import {

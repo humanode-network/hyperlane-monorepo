@@ -1,4 +1,4 @@
-import { ChainMap, OwnableConfig } from '@hyperlane-xyz/sdk';
+import { ChainMap, OwnableConfig } from '@humanode-hyperlane/sdk';
 
 import { testChainNames } from './chains.js';
 

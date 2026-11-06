@@ -20,11 +20,11 @@ import {
   OpL2NativeTokenBridge__factory,
   TokenBridgeCctpV1__factory,
   TokenBridgeCctpV2__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   CrossCollateralRouter__factory,
   TokenBridgeOft__factory,
-} from '@hyperlane-xyz/multicollateral';
+} from '@humanode-hyperlane/multicollateral';
 
 import { DeployableTokenType, TokenType } from './config.js';
 

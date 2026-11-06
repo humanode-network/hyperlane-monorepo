@@ -6,15 +6,18 @@ import {
   ProtocolProvider,
   SignerConfig,
   TransactionSubmitterConfig,
-} from '@hyperlane-xyz/provider-sdk';
-import { IProvider } from '@hyperlane-xyz/provider-sdk/altvm';
-import { IRawHookArtifactManager } from '@hyperlane-xyz/provider-sdk/hook';
-import { IRawIsmArtifactManager } from '@hyperlane-xyz/provider-sdk/ism';
-import { IRawMailboxArtifactManager } from '@hyperlane-xyz/provider-sdk/mailbox';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { IRawValidatorAnnounceArtifactManager } from '@hyperlane-xyz/provider-sdk/validator-announce';
-import { IRawWarpArtifactManager } from '@hyperlane-xyz/provider-sdk/warp';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk';
+import { IProvider } from '@humanode-hyperlane/provider-sdk/altvm';
+import { IRawHookArtifactManager } from '@humanode-hyperlane/provider-sdk/hook';
+import { IRawIsmArtifactManager } from '@humanode-hyperlane/provider-sdk/ism';
+import { IRawMailboxArtifactManager } from '@humanode-hyperlane/provider-sdk/mailbox';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
+import { IRawValidatorAnnounceArtifactManager } from '@humanode-hyperlane/provider-sdk/validator-announce';
+import { IRawWarpArtifactManager } from '@humanode-hyperlane/provider-sdk/warp';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { StarknetHookArtifactManager } from '../hook/hook-artifact-manager.js';
 import { StarknetIsmArtifactManager } from '../ism/ism-artifact-manager.js';

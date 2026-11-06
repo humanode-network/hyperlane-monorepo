@@ -1,4 +1,4 @@
-import { IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   ChainName,
@@ -8,8 +8,8 @@ import {
   MultiProvider,
   OwnableConfig,
   RouterConfig,
-} from '@hyperlane-xyz/sdk';
-import { mustGet, objKeys, objMap, objMerge } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { mustGet, objKeys, objMap, objMerge } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { environments } from '../../config/environments/index.js';

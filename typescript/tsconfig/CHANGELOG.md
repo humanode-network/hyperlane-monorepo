@@ -1,4 +1,4 @@
-# @hyperlane-xyz/tsconfig
+# @humanode-hyperlane/tsconfig
 
 ## 30.0.0
 

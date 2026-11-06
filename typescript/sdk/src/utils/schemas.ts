@@ -1,6 +1,6 @@
 import { SafeParseReturnType, z } from 'zod';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 export function isCompliant<S extends z.ZodTypeAny>(schema: S) {
   return (config: unknown): config is z.infer<S> =>

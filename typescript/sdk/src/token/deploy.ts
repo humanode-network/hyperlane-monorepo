@@ -13,11 +13,11 @@ import {
   TokenBridgeCctpBase__factory,
   TokenBridgeCctpV2__factory,
   TokenRouter,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   CrossCollateralRouter__factory,
   TokenBridgeOft__factory,
-} from '@hyperlane-xyz/multicollateral';
+} from '@humanode-hyperlane/multicollateral';
 import {
   Address,
   addressToBytes32,
@@ -28,7 +28,7 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   HyperlaneContracts,

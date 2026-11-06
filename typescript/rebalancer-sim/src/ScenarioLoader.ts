@@ -2,8 +2,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 
-import { assert } from '@hyperlane-xyz/utils';
-import type { Address } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import type { ScenarioFile, TransferScenario } from './types.js';
 

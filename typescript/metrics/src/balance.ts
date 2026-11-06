@@ -1,7 +1,7 @@
 import { Contract, type PopulatedTransaction } from 'ethers';
 import type { Logger } from 'pino';
 
-import { IXERC20VS__factory } from '@hyperlane-xyz/core';
+import { IXERC20VS__factory } from '@humanode-hyperlane/core';
 import {
   type EvmHypXERC20Adapter,
   type EvmHypXERC20LockboxAdapter,
@@ -12,8 +12,8 @@ import {
   Token,
   TokenStandard,
   type WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, ProtocolType } from '@humanode-hyperlane/utils';
 
 import type {
   NativeWalletBalance,

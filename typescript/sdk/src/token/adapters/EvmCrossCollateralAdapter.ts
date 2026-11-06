@@ -3,7 +3,7 @@ import { PopulatedTransaction } from 'ethers';
 import {
   CrossCollateralRouter,
   CrossCollateralRouter__factory,
-} from '@hyperlane-xyz/multicollateral';
+} from '@humanode-hyperlane/multicollateral';
 import {
   Address,
   Domain,
@@ -12,7 +12,7 @@ import {
   assert,
   isAddressEvm,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';
 import { ChainName } from '../../types.js';

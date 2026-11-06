@@ -1,9 +1,9 @@
 {
-  "name": "@hyperlane-xyz/provider-sdk",
+  "name": "@humanode-hyperlane/provider-sdk",
   "version": "4.2.3",
   "description": "Protocol Provider SDK for the Hyperlane Protocol",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "dist"
   ],
@@ -36,12 +36,12 @@
     "test:ci": "mocha --config .mocharc.json"
   },
   "dependencies": {
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@humanode-hyperlane/utils": "workspace:*",
     "pino": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/mocha": "catalog:",
     "@types/node": "catalog:",

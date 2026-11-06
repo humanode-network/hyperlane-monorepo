@@ -5,7 +5,7 @@ import {
   addressToBytes32,
   formatMessage,
   messageId,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import testCases from '../../vectors/message.json' with { type: 'json' };
 import {

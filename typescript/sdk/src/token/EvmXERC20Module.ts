@@ -1,13 +1,13 @@
 import { PopulatedTransaction } from 'ethers';
 
-import { IXERC20Lockbox__factory } from '@hyperlane-xyz/core';
+import { IXERC20Lockbox__factory } from '@humanode-hyperlane/core';
 import {
   Address,
   ProtocolType,
   assert,
   normalizeAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   HyperlaneModule,

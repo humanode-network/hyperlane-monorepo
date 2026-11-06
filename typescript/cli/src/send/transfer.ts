@@ -1,11 +1,11 @@
 import { type TransactionReceipt } from '@ethersproject/providers';
 import { stringify as yamlStringify } from 'yaml';
 
-import { GasAction } from '@hyperlane-xyz/provider-sdk';
+import { GasAction } from '@humanode-hyperlane/provider-sdk';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   type ChainMap,
   type ChainName,
@@ -19,7 +19,7 @@ import {
   WarpCore,
   type WarpCoreConfig,
   WarpTxCategory,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   assert,
@@ -30,7 +30,7 @@ import {
   parseWarpRouteMessage,
   sleep,
   timeout,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { EXPLORER_URL } from '../consts.js';
 import { type WriteCommandContext } from '../context/types.js';

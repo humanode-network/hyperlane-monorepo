@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { normalizeConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType, deepEquals } from '@hyperlane-xyz/utils';
+import { normalizeConfig } from '@humanode-hyperlane/sdk';
+import { ProtocolType, deepEquals } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../commands/core.js';

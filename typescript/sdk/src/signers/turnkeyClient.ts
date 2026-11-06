@@ -2,7 +2,7 @@ import { ApiKeyStamper } from '@turnkey/api-key-stamper';
 import type { TActivity } from '@turnkey/sdk-server';
 import { TurnkeyServerClient } from '@turnkey/sdk-server';
 
-import { deepCopy, rootLogger } from '@hyperlane-xyz/utils';
+import { deepCopy, rootLogger } from '@humanode-hyperlane/utils';
 
 const logger = rootLogger.child({ module: 'sdk:turnkey-client' });
 

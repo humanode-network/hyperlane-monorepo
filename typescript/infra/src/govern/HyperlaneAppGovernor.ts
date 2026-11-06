@@ -2,7 +2,10 @@ import chalk from 'chalk';
 import { BigNumber } from 'ethers';
 import prompts from 'prompts';
 
-import { Ownable__factory, ProxyAdmin__factory } from '@hyperlane-xyz/core';
+import {
+  Ownable__factory,
+  ProxyAdmin__factory,
+} from '@humanode-hyperlane/core';
 import {
   ChainMap,
   ChainName,
@@ -15,7 +18,7 @@ import {
   OwnableConfig,
   OwnerViolation,
   ProxyAdminViolation,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   CallData,
@@ -26,7 +29,7 @@ import {
   objMap,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { awIcasLegacy } from '../../config/environments/mainnet3/governance/ica/_awLegacy.js';
 import { regularIcasLegacy } from '../../config/environments/mainnet3/governance/ica/_regularLegacy.js';

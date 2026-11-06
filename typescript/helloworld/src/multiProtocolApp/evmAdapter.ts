@@ -6,8 +6,8 @@ import {
   EvmRouterAdapter,
   MultiProtocolProvider,
   ProviderType,
-} from '@hyperlane-xyz/sdk';
-import { Address, addBufferToGasLimit } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, addBufferToGasLimit } from '@humanode-hyperlane/utils';
 
 import { HelloWorld, HelloWorld__factory } from '../types/index.js';
 

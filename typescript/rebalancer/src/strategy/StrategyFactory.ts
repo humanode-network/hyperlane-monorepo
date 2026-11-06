@@ -1,6 +1,6 @@
 import { type Logger } from 'pino';
 
-import { type ChainMap, type Token } from '@hyperlane-xyz/sdk';
+import { type ChainMap, type Token } from '@humanode-hyperlane/sdk';
 
 import {
   ExecutionType,

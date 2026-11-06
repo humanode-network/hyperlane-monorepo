@@ -1,6 +1,6 @@
 import { ExecuteInstruction } from '@cosmjs/cosmwasm-stargate';
 
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@humanode-hyperlane/utils';
 
 import { BaseCosmWasmAdapter } from '../../app/MultiProtocolApp.js';
 import {

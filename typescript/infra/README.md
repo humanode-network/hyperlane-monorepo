@@ -1,4 +1,4 @@
-# @hyperlane-xyz/infra
+# @humanode-hyperlane/infra
 
 Various scripts and utilities for managing and deploying Hyperlane infrastructure.
 

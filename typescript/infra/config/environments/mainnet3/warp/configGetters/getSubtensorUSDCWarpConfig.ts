@@ -1,5 +1,9 @@
-import { ChainMap, HypTokenRouterConfig, TokenType } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import {
+  ChainMap,
+  HypTokenRouterConfig,
+  TokenType,
+} from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { awIcasLegacy } from '../../governance/ica/_awLegacy.js';

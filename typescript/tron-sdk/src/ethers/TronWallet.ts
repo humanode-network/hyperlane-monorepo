@@ -2,7 +2,7 @@ import { BigNumber, Wallet, ethers, providers } from 'ethers';
 import { keccak256 as ethersKeccak256 } from 'ethers/lib/utils.js';
 import { TronWeb, Types } from 'tronweb';
 
-import { assert, ensure0x, strip0x } from '@hyperlane-xyz/utils';
+import { assert, ensure0x, strip0x } from '@humanode-hyperlane/utils';
 
 import {
   MAX_TRON_ORIGIN_ENERGY_LIMIT,

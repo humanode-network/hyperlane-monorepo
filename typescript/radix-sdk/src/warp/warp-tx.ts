@@ -9,19 +9,19 @@ import {
   u32,
 } from '@radixdlt/radix-engine-toolkit';
 
-import { ArtifactDeployed } from '@hyperlane-xyz/provider-sdk/artifact';
+import { ArtifactDeployed } from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   DeployedWarpAddress,
   RawWarpArtifactConfig,
   computeRemoteRoutersUpdates,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   assert,
   eqAddressRadix,
   eqOptionalAddress,
   isZeroishAddress,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   getComponentOwnershipInfo,

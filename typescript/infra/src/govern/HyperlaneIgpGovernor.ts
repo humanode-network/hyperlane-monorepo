@@ -1,6 +1,6 @@
 import { BigNumber, ethers } from 'ethers';
 
-import { InterchainGasPaymaster } from '@hyperlane-xyz/core';
+import { InterchainGasPaymaster } from '@humanode-hyperlane/core';
 import {
   ChainName,
   CheckerViolation,
@@ -12,7 +12,7 @@ import {
   IgpViolation,
   IgpViolationType,
   OwnerViolation,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { HyperlaneAppGovernor } from '../govern/HyperlaneAppGovernor.js';
 

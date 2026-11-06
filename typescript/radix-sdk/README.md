@@ -7,16 +7,16 @@ It can be used as a standalone SDK for frontend or in backend applications which
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/radix-sdk
+npm install @humanode-hyperlane/radix-sdk
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/radix-sdk
+pnpm add @humanode-hyperlane/radix-sdk
 ```
 
 ## Usage
 
 ```ts
-import { RadixSDK, RadixSigningSDK } from "@hyperlane-xyz/radix-sdk";
+import { RadixSDK, RadixSigningSDK } from "@humanode-hyperlane/radix-sdk";
 
 const signingSdk = await RadixSigningSDK.fromPrivateKey(
   PRIV_KEY,

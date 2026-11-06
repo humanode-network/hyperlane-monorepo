@@ -1,4 +1,4 @@
-import { isEVMLike, strip0x } from '@hyperlane-xyz/utils';
+import { isEVMLike, strip0x } from '@humanode-hyperlane/utils';
 
 import { ChainMetadata, ExplorerFamily } from './chainMetadataTypes.js';
 

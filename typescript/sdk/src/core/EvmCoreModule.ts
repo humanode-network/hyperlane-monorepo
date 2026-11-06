@@ -2,7 +2,7 @@ import {
   Mailbox,
   Mailbox__factory,
   Ownable__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   Domain,
@@ -10,7 +10,7 @@ import {
   ProtocolType,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   attachContractsMap,

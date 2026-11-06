@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { eqAddressStarknet } from '@hyperlane-xyz/utils';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { eqAddressStarknet } from '@humanode-hyperlane/utils';
 
 import { StarknetSigner } from '../clients/signer.js';
 import { DEFAULT_E2E_TEST_TIMEOUT } from '../testing/constants.js';

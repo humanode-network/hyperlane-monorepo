@@ -1,19 +1,19 @@
 import { QueryClient } from '@cosmjs/stargate';
 import { connectComet } from '@cosmjs/tendermint-rpc';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedRawWarpArtifact,
   type DeployedWarpAddress,
   type IRawWarpArtifactManager,
   type RawWarpArtifactConfigs,
   type WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { LazyAsync } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { LazyAsync } from '@humanode-hyperlane/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { setupWarpExtension } from '../hyperlane/warp/query.js';

@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+import { addressToBytes32 } from '@humanode-hyperlane/utils';
 
 import { IcaMessageType, icaMatchingList } from './relayer.js';
 

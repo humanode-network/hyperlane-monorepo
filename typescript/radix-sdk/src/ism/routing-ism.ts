@@ -1,6 +1,6 @@
 import { GatewayApiClient } from '@radixdlt/babylon-gateway-api-sdk';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   ArtifactDeployed,
   ArtifactNew,
@@ -8,13 +8,13 @@ import {
   ArtifactState,
   ArtifactUnderived,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   DeployedIsmAddress,
   RawRoutingIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { eqAddressRadix, isNullish } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import { TxReceipt } from '@humanode-hyperlane/provider-sdk/module';
+import { eqAddressRadix, isNullish } from '@humanode-hyperlane/utils';
 
 import { RadixBase } from '../utils/base.js';
 import { RadixBaseSigner } from '../utils/signer.js';

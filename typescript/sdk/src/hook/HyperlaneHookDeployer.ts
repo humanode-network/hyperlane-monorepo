@@ -9,7 +9,7 @@ import {
   OPStackIsm,
   ProtocolFee,
   StaticAggregationHook__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   ZERO_ADDRESS_HEX_32,
@@ -18,7 +18,7 @@ import {
   assert,
   deepEquals,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { HyperlaneContracts } from '../contracts/types.js';
 import { CoreAddresses } from '../core/contracts.js';

@@ -1,9 +1,9 @@
 import { expect } from 'chai';
 import { Wallet } from 'ethers';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType, type WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
+import { TokenType, type WarpRouteDeployConfig } from '@humanode-hyperlane/sdk';
+import { type Address, ProtocolType } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

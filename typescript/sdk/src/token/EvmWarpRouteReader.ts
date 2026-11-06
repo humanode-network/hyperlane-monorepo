@@ -25,12 +25,12 @@ import {
   TokenBridgeCctpBase__factory,
   TokenBridgeCctpV2__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+} from '@humanode-hyperlane/core';
+import { buildArtifact as coreBuildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
 import {
   CrossCollateralRouter__factory,
   TokenBridgeOft__factory,
-} from '@hyperlane-xyz/multicollateral';
+} from '@humanode-hyperlane/multicollateral';
 import {
   Address,
   arrayToObject,
@@ -43,7 +43,7 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ExplorerLicenseType } from '../block-explorer/etherscan.js';
 import { DEFAULT_CONTRACT_READ_CONCURRENCY } from '../consts/concurrency.js';
@@ -1360,7 +1360,7 @@ export class EvmWarpRouteReader extends EvmRouterReader {
       return await contractWithVersion.PACKAGE_VERSION();
     } catch (err: any) {
       if (err.cause?.code && err.cause?.code === 'CALL_EXCEPTION') {
-        // PACKAGE_VERSION was introduced in @hyperlane-xyz/core@5.4.0
+        // PACKAGE_VERSION was introduced in @humanode-hyperlane/core@5.4.0
         // See https://github.com/hyperlane-xyz/hyperlane-monorepo/releases/tag/%40hyperlane-xyz%2Fcore%405.4.0
         // The real version of a contract without this function is below 5.4.0
         return '5.3.9';

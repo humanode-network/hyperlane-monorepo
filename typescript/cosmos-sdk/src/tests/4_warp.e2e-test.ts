@@ -3,13 +3,13 @@ import { type DeliverTxResponse } from '@cosmjs/stargate';
 import { expect } from 'chai';
 import { step } from 'mocha-steps';
 
-import { AltVM, ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { AltVM, ProtocolType } from '@humanode-hyperlane/provider-sdk';
 import {
   addressToBytes32,
   bytes32ToAddress,
   convertToProtocolAddress,
   isValidAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { createSigner } from '../testing/utils.js';
 

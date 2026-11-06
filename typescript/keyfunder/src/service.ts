@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 import { Wallet } from 'ethers';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { HyperlaneIgp, MultiProvider } from '@hyperlane-xyz/sdk';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import { HyperlaneIgp, MultiProvider } from '@humanode-hyperlane/sdk';
 import {
   applyRpcUrlOverridesFromEnv,
   createServiceLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { KeyFunderConfigLoader } from './config/KeyFunderConfig.js';
 import { KeyFunder } from './core/KeyFunder.js';

@@ -1,21 +1,28 @@
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk';
+import { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   ArtifactDeployed,
   ArtifactNew,
   ArtifactReader,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   DeployedRawValidatorAnnounceArtifact,
   DeployedValidatorAnnounceAddress,
   IRawValidatorAnnounceArtifactManager,
   RawValidatorAnnounceArtifactConfigs,
   ValidatorAnnounceType,
-} from '@hyperlane-xyz/provider-sdk/validator-announce';
-import { assert, isZeroishAddress, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/validator-announce';
+import {
+  assert,
+  isZeroishAddress,
+  rootLogger,
+} from '@humanode-hyperlane/utils';
 import { hash } from 'starknet';
 
 import { StarknetProvider } from '../clients/provider.js';

@@ -2,7 +2,7 @@ import {
   Mailbox__factory,
   ProxyAdmin__factory,
   ValidatorAnnounce__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 
 import { HyperlaneAddresses } from '../contracts/types.js';
 

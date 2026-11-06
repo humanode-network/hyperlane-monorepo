@@ -10,8 +10,8 @@ import {
   ProviderType,
   TypedTransactionReceipt,
   WarpTypedTransaction,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

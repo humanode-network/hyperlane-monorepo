@@ -10,8 +10,8 @@ import {
   InterchainAccountRouter,
   MinimalInterchainAccountRouter__factory,
   TestRecipient__factory,
-} from '@hyperlane-xyz/core';
-import { objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { objMap } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../../consts/testChains.js';
 import { HyperlaneContractsMap } from '../../contracts/types.js';

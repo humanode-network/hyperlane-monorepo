@@ -5,7 +5,7 @@ import {
   AbstractCcipReadIsm__factory,
   DomainRoutingIsm__factory,
   PausableIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   Domain,
@@ -17,7 +17,7 @@ import {
   intersection,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { CCIPContractCache } from '../ccip/utils.js';
 import { transferOwnershipTransactions } from '../contracts/contracts.js';

@@ -38,18 +38,18 @@ import {
   AleoProvider as AleoSDKProvider,
   AleoReceipt as AleoSDKReceipt,
   AleoTransaction as AleoSDKTransaction,
-} from '@hyperlane-xyz/aleo-sdk';
-import { CosmosNativeProvider } from '@hyperlane-xyz/cosmos-sdk';
+} from '@humanode-hyperlane/aleo-sdk';
+import { CosmosNativeProvider } from '@humanode-hyperlane/cosmos-sdk';
 import {
   RadixProvider as RadixSDKProvider,
   RadixSDKReceipt,
   RadixSDKTransaction,
-} from '@hyperlane-xyz/radix-sdk';
+} from '@humanode-hyperlane/radix-sdk';
 import {
   Annotated,
   KnownProtocolType,
   ProtocolType,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 export enum ProviderType {
   EthersV5 = 'ethers-v5',

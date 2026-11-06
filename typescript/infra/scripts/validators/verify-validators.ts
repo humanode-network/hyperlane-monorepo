@@ -1,5 +1,5 @@
-import { CoreConfig } from '@hyperlane-xyz/sdk';
-import { objFilter, objMap, promiseObjAll } from '@hyperlane-xyz/utils';
+import { CoreConfig } from '@humanode-hyperlane/sdk';
+import { objFilter, objMap, promiseObjAll } from '@humanode-hyperlane/utils';
 
 import { InfraS3Validator } from '../../src/agents/aws/validator.js';
 import { getArgs, getValidatorsByChain, withChains } from '../agent-utils.js';

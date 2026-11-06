@@ -18,23 +18,23 @@ import {
   XERC20LockboxTest__factory,
   type XERC20VSTest,
   XERC20VSTest__factory,
-} from '@hyperlane-xyz/core';
-import { type TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/core';
+import { type TestChainMetadata } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   type MultiProvider,
   type WarpCoreConfig,
   WarpCoreConfigSchema,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   ProtocolType,
   assert,
   ensure0x,
   inCIMode,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
-import { TronWallet } from '@hyperlane-xyz/tron-sdk';
+import { TronWallet } from '@humanode-hyperlane/tron-sdk';
 
 import { getContext } from '../../../context/context.js';
 import {
@@ -369,7 +369,9 @@ export async function deployEverclearBridgeAdapter(
 // Verifies if the IS_CI var is set and generates the correct prefix for running the command
 // in the current env
 export function localTestRunCmdPrefix() {
-  return inCIMode() ? [] : ['pnpm', '--filter', '@hyperlane-xyz/cli', 'run'];
+  return inCIMode()
+    ? []
+    : ['pnpm', '--filter', '@humanode-hyperlane/cli', 'run'];
 }
 
 export async function hyperlaneSendMessage(

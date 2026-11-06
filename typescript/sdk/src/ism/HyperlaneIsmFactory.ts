@@ -30,7 +30,7 @@ import {
   TestIsm__factory,
   TrustedRelayerIsm__factory,
   ZKSyncArtifact,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   Domain,
@@ -39,7 +39,7 @@ import {
   eqAddress,
   objFilter,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { HyperlaneApp } from '../app/HyperlaneApp.js';
 import { CCIPContractCache } from '../ccip/utils.js';

@@ -1,6 +1,6 @@
 import { before, describe, it } from 'mocha';
 
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
+import { TokenType } from '@humanode-hyperlane/provider-sdk/warp';
 import { expect } from 'chai';
 import { createRpc } from '../rpc.js';
 import { SvmWarpArtifactManager } from '../warp/warp-artifact-manager.js';

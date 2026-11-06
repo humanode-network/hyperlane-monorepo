@@ -5,12 +5,12 @@ import {
   ProtocolType,
   addressToBytes32,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import {
   TokenStandard,
   TokenType,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { runWarpRouteCombine } from './warp.js';
 

@@ -1,4 +1,4 @@
-import { Address, HexString } from '@hyperlane-xyz/utils';
+import { Address, HexString } from '@humanode-hyperlane/utils';
 
 export type GetEventLogsResponse = {
   address: Address;

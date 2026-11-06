@@ -1,10 +1,10 @@
-import { createHookReader } from '@hyperlane-xyz/deploy-sdk';
-import { type ChainName, EvmHookReader } from '@hyperlane-xyz/sdk';
+import { createHookReader } from '@humanode-hyperlane/deploy-sdk';
+import { type ChainName, EvmHookReader } from '@humanode-hyperlane/sdk';
 import {
   type Address,
   ProtocolType,
   stringifyObject,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { log, logBlue } from '../logger.js';

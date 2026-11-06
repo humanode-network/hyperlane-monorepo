@@ -1,6 +1,6 @@
 import { constants } from 'ethers';
 
-import { RoutingFee__factory } from '@hyperlane-xyz/core';
+import { RoutingFee__factory } from '@humanode-hyperlane/core';
 import {
   Address,
   ProtocolType,
@@ -12,7 +12,7 @@ import {
   objOmit,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { transferOwnershipTransactions } from '../contracts/contracts.js';
 import { HyperlaneContractsMap } from '../contracts/types.js';

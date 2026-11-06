@@ -4,8 +4,8 @@ import {
   ChainMetadata,
   isBlockExplorerHealthy,
   isRpcHealthy,
-} from '@hyperlane-xyz/sdk';
-import { timeout } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { timeout } from '@humanode-hyperlane/utils';
 
 import { ChainConnectionType } from '../chains/types.js';
 

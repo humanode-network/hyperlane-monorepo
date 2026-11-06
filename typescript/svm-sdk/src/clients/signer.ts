@@ -20,8 +20,8 @@ import {
   SOLANA_ERROR__TRANSACTION_ERROR__BLOCKHASH_NOT_FOUND,
 } from '@solana/errors';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import { assert, rootLogger, sleep, strip0x } from '@hyperlane-xyz/utils';
+import { type AltVM } from '@humanode-hyperlane/provider-sdk';
+import { assert, rootLogger, sleep, strip0x } from '@humanode-hyperlane/utils';
 
 import { createRpc } from '../rpc.js';
 import {

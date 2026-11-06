@@ -1,6 +1,6 @@
 import { BigNumber } from 'ethers';
 
-import { eqAddress } from '@hyperlane-xyz/utils';
+import { eqAddress } from '@humanode-hyperlane/utils';
 
 import { BytecodeHash } from '../consts/bytecode.js';
 import { HyperlaneAppChecker } from '../deploy/HyperlaneAppChecker.js';

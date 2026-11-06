@@ -15,7 +15,7 @@ import {
   getOrInitConsensusVersionTestHeights,
 } from '@provablehq/sdk/testnet.js';
 
-import { assert, retryAsync } from '@hyperlane-xyz/utils';
+import { assert, retryAsync } from '@humanode-hyperlane/utils';
 
 import {
   getNetworkPrefix,

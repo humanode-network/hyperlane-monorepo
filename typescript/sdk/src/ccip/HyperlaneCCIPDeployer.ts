@@ -1,10 +1,10 @@
-import { CCIPHook__factory, CCIPIsm__factory } from '@hyperlane-xyz/core';
+import { CCIPHook__factory, CCIPIsm__factory } from '@humanode-hyperlane/core';
 import {
   ZERO_ADDRESS_HEX_32,
   addressToBytes32,
   assert,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   HyperlaneAddressesMap,

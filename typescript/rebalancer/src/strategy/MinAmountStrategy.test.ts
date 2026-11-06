@@ -7,7 +7,7 @@ import {
   type ChainName,
   Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { RebalancerMinAmountType } from '../config/types.js';
 import type { RawBalances } from '../interfaces/IStrategy.js';

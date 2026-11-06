@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { Address, ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { Address, ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { ZChainName } from '../metadata/customZodTypes.js';
 import { ChainName } from '../types.js';

@@ -1,4 +1,4 @@
-# @hyperlane-xyz/cli
+# @humanode-hyperlane/cli
 
 ## 30.0.0
 
@@ -19,7 +19,7 @@
 
 ### Minor Changes
 
-- 09d6760: Added Starknet artifact API support across the TypeScript AltVM toolchain. The new `@hyperlane-xyz/starknet-sdk` package provides Starknet protocol, signer, provider, ISM, hook, mailbox, validator announce, and end-to-end test coverage. Deploy SDK protocol loading and the CLI context/signer flows were updated so Starknet chains can be resolved and used through the shared AltVM paths.
+- 09d6760: Added Starknet artifact API support across the TypeScript AltVM toolchain. The new `@humanode-hyperlane/starknet-sdk` package provides Starknet protocol, signer, provider, ISM, hook, mailbox, validator announce, and end-to-end test coverage. Deploy SDK protocol loading and the CLI context/signer flows were updated so Starknet chains can be resolved and used through the shared AltVM paths.
 
 ### Patch Changes
 
@@ -68,7 +68,7 @@
 
 ### Patch Changes
 
-- 22cb5cb: The `@hyperlane-xyz/sealevel-sdk` package (renamed from `@hyperlane-xyz/svm-sdk`) was published as a Solana/SVM client for Hyperlane Sealevel programs. It provides `SealevelProtocolProvider`, `SealevelProvider`, and `SealevelSigner` implementing the AltVM provider-sdk interfaces, along with warp token readers/writers (native, synthetic, collateral), ISM readers/writers (multisig message-ID, test), hook readers/writers (IGP, merkle tree), BPF program deployment/upgrade plans, PDA derivation utilities, and account decoders. ISM and hook deployment are not yet functional.
+- 22cb5cb: The `@humanode-hyperlane/sealevel-sdk` package (renamed from `@humanode-hyperlane/svm-sdk`) was published as a Solana/SVM client for Hyperlane Sealevel programs. It provides `SealevelProtocolProvider`, `SealevelProvider`, and `SealevelSigner` implementing the AltVM provider-sdk interfaces, along with warp token readers/writers (native, synthetic, collateral), ISM readers/writers (multisig message-ID, test), hook readers/writers (IGP, merkle tree), BPF program deployment/upgrade plans, PDA derivation utilities, and account decoders. ISM and hook deployment are not yet functional.
 
   `SealevelProtocolProvider` was registered in the deploy-sdk for `ProtocolType.Sealevel`, and `ProtocolType.Sealevel` was added to the CLI's supported protocols list, enabling `hyperlane warp deploy` for Solana chains.
 
@@ -101,8 +101,8 @@
   - AltVMWarpRouteReader (use createWarpTokenReader instead)
   - AltVMDeployer (use createWarpTokenWriter per-chain instead)
   - warpModuleProvider (no longer needed)
-  - ismConfigToArtifact (moved to @hyperlane-xyz/provider-sdk/ism)
-  - shouldDeployNewIsm (moved to @hyperlane-xyz/provider-sdk/ism)
+  - ismConfigToArtifact (moved to @humanode-hyperlane/provider-sdk/ism)
+  - shouldDeployNewIsm (moved to @humanode-hyperlane/provider-sdk/ism)
 
   provider-sdk breaking change: warpConfigToArtifact no longer accepts pre-built ismArtifact/hookArtifact parameters; ISM and hook conversion is now handled internally from the config.
 
@@ -165,13 +165,13 @@
 ### Minor Changes
 
 - c094f7f: Allowed `warp check --ica` to validate ICA ownership on chains before warp apply/extension by moving config filtering after the ICA check.
-- 42b72c3: Extracted relayer into dedicated `@hyperlane-xyz/relayer` package
+- 42b72c3: Extracted relayer into dedicated `@humanode-hyperlane/relayer` package
   - Moved `HyperlaneRelayer` class from SDK to new package
   - Moved ISM metadata builders from SDK to relayer package
   - New package supports both manual CLI execution and continuous daemon mode for K8s deployments
   - Added Prometheus metrics support with `/metrics` endpoint (enabled by default on port 9090)
   - CLI and infra now import from new package
-  - **Breaking**: The following exports were removed from `@hyperlane-xyz/sdk` and are now available from `@hyperlane-xyz/relayer`:
+  - **Breaking**: The following exports were removed from `@humanode-hyperlane/sdk` and are now available from `@humanode-hyperlane/relayer`:
     - `HyperlaneRelayer`, `RelayerCacheSchema`, `messageMatchesWhitelist`
     - `BaseMetadataBuilder`, `decodeIsmMetadata`
     - All metadata builder classes (`AggregationMetadataBuilder`, `MultisigMetadataBuilder`, etc.)
@@ -208,7 +208,7 @@
 - cc17360: Signer initialization is now deferred until after interactive chain selection for the `send message` command. This improves startup performance by only creating signers for the chains that will actually be used, rather than all EVM chains upfront.
 - 347ca12: Disabled chains (including deprecated ones) are now filtered out from CLI interactive prompts and the `hyperlane registry list` command output. This prevents users from accidentally selecting unsupported chains when deploying warp routes, sending messages, or running relayers.
 - 223fd7f: Fixed broken error handler in ncc.post-bundle.mjs that referenced undefined variables in the catch block.
-- 66ef635: Added `mapAllSettled` helper to @hyperlane-xyz/utils for typed parallel operations with key-based error tracking. Migrated Promise.allSettled patterns across sdk, cli, infra, and rebalancer packages to use the new helper.
+- 66ef635: Added `mapAllSettled` helper to @humanode-hyperlane/utils for typed parallel operations with key-based error tracking. Migrated Promise.allSettled patterns across sdk, cli, infra, and rebalancer packages to use the new helper.
 - 223fd7f: Suppressed harmless startup warnings via pnpm patches instead of runtime suppression. The bigint-buffer native bindings warning and node-fetch .data deprecation warning are now patched at the source, avoiding the need for --no-warnings flags or console.warn overrides.
 
 ## 21.1.0
@@ -223,10 +223,10 @@
 ### Minor Changes
 
 - 239e1a1: Migrate AltVm JsonSubmittor and FileSubmittor to deploy-sdk (from provider-sdk and cli, respectively)
-- bc8b22f: Moved rebalancer-specific type definitions from `@hyperlane-xyz/sdk` to `@hyperlane-xyz/rebalancer`. Updated CLI and infra imports to use the new location. The rebalancer package is now self-contained and doesn't pollute the SDK with rebalancer-specific types.
+- bc8b22f: Moved rebalancer-specific type definitions from `@humanode-hyperlane/sdk` to `@humanode-hyperlane/rebalancer`. Updated CLI and infra imports to use the new location. The rebalancer package is now self-contained and doesn't pollute the SDK with rebalancer-specific types.
 - 7032a7c: Added `hyperlane ica deploy` command to deploy Interchain Accounts (ICAs) on destination chains for a specified owner on an origin chain. The command accepts `--origin`, `--destinations`, `--owner`, and `--key` parameters, and outputs a table showing the deployment status for each destination chain.
 - 9963e0e: feat: separate rebalancer package
-  - Extract rebalancer logic from CLI into dedicated `@hyperlane-xyz/rebalancer` package
+  - Extract rebalancer logic from CLI into dedicated `@humanode-hyperlane/rebalancer` package
   - New package supports both manual CLI execution and continuous daemon mode for K8s deployments
   - CLI now imports from new package, maintaining backward compatibility for manual rebalancing
 
@@ -274,7 +274,7 @@
 
 ### Patch Changes
 
-- 1133c7a3f: Migrate filesystem utilities to use `@hyperlane-xyz/utils/fs` submodule, reducing code duplication.
+- 1133c7a3f: Migrate filesystem utilities to use `@humanode-hyperlane/utils/fs` submodule, reducing code duplication.
 
 ## 19.11.0
 
@@ -511,7 +511,7 @@
 - aec8961: Updates the `warp check` command output to only show fields that have diffs with the expected config
 - e25af4b: Fixed warp route ID lookup to use deployment configs instead of warp routes when prompting users for selection on warp deployment
 - ce0b173: Refactored warp route configuration functions to use object parameters instead of positional parameters for improved clarity and flexibility.
-- 1770318: Upgraded @hyperlane-xyz/registry to v14.0.0 and updated warp route config API usage.
+- 1770318: Upgraded @humanode-hyperlane/registry to v14.0.0 and updated warp route config API usage.
 - 6a70b8d: Move executeDeploy logic from CLI to SDK
 - 248d2e1: Enables the CLI to warp check routes that include non EVM routes
 - de7c6ae: Added registry based warp configs support
@@ -546,8 +546,8 @@
 - Updated dependencies [c757b6a18]
 - Updated dependencies [a646f9ca1]
 - Updated dependencies [3b615c892]
-  - @hyperlane-xyz/sdk@12.1.0
-  - @hyperlane-xyz/utils@12.1.0
+  - @humanode-hyperlane/sdk@12.1.0
+  - @humanode-hyperlane/utils@12.1.0
 
 ## 12.0.0
 
@@ -563,8 +563,8 @@
 - Updated dependencies [59a087ded]
 - Updated dependencies [59a087ded]
 - Updated dependencies [337193305]
-  - @hyperlane-xyz/sdk@12.0.0
-  - @hyperlane-xyz/utils@12.0.0
+  - @humanode-hyperlane/sdk@12.0.0
+  - @humanode-hyperlane/utils@12.0.0
 
 ## 11.0.0
 
@@ -572,8 +572,8 @@
 
 - Updated dependencies [888d180b6]
 - Updated dependencies [3b060c3e1]
-  - @hyperlane-xyz/sdk@11.0.0
-  - @hyperlane-xyz/utils@11.0.0
+  - @humanode-hyperlane/sdk@11.0.0
+  - @humanode-hyperlane/utils@11.0.0
 
 ## 10.0.0
 
@@ -583,16 +583,16 @@
 - Updated dependencies [b8d95fc95]
 - Updated dependencies [28ca87293]
 - Updated dependencies [4fd5623b8]
-  - @hyperlane-xyz/sdk@10.0.0
-  - @hyperlane-xyz/utils@10.0.0
+  - @humanode-hyperlane/sdk@10.0.0
+  - @humanode-hyperlane/utils@10.0.0
 
 ## 9.2.1
 
 ### Patch Changes
 
 - Updated dependencies [e3d09168e]
-  - @hyperlane-xyz/sdk@9.2.1
-  - @hyperlane-xyz/utils@9.2.1
+  - @humanode-hyperlane/sdk@9.2.1
+  - @humanode-hyperlane/utils@9.2.1
 
 ## 9.2.0
 
@@ -603,8 +603,8 @@
 - Updated dependencies [7fe739d52]
 - Updated dependencies [3e66e8f12]
 - Updated dependencies [3852a9015]
-  - @hyperlane-xyz/sdk@9.2.0
-  - @hyperlane-xyz/utils@9.2.0
+  - @humanode-hyperlane/sdk@9.2.0
+  - @humanode-hyperlane/utils@9.2.0
 
 ## 9.1.0
 
@@ -621,8 +621,8 @@
 - Updated dependencies [97c773476]
 - Updated dependencies [351bf0010]
 - Updated dependencies [cad82683f]
-  - @hyperlane-xyz/sdk@9.1.0
-  - @hyperlane-xyz/utils@9.1.0
+  - @humanode-hyperlane/sdk@9.1.0
+  - @humanode-hyperlane/utils@9.1.0
 
 ## 9.0.0
 
@@ -636,8 +636,8 @@
 - Updated dependencies [b07e2f2ea]
 - Updated dependencies [4df37393f]
 - Updated dependencies [88970a78c]
-  - @hyperlane-xyz/sdk@9.0.0
-  - @hyperlane-xyz/utils@9.0.0
+  - @humanode-hyperlane/sdk@9.0.0
+  - @humanode-hyperlane/utils@9.0.0
 
 ## 8.9.0
 
@@ -648,7 +648,7 @@
 - d6ddf5b9e: make warp:read and warp:check/warp:verify operations independent of signer requirements
 - 766f50695: Change semantics of ism/hook config from undefined to 0x0 for reading/checking purposes
 - 1955579cf: Expand warpDeployConfig for checking purposes
-- 33178eaa8: Move getRegistry function from the CLI to `@hyperlane-xyz/registry` package.
+- 33178eaa8: Move getRegistry function from the CLI to `@humanode-hyperlane/registry` package.
 - 4147f91cb: Added support for the new AmountRoutingIsm to be deployed and managed by the cli
 - 500249649: Enable usage of CCIP Hooks and ISMs in warp routes.
 - 03266e2c2: add amount routing hook support in the sdk and cli
@@ -673,16 +673,16 @@
 - Updated dependencies [cb93c13a4]
 - Updated dependencies [456407dc7]
 - Updated dependencies [4147f91cb]
-  - @hyperlane-xyz/utils@8.9.0
-  - @hyperlane-xyz/sdk@8.9.0
+  - @humanode-hyperlane/utils@8.9.0
+  - @humanode-hyperlane/sdk@8.9.0
 
 ## 8.8.1
 
 ### Patch Changes
 
 - c68529807: Update registry dependency.
-  - @hyperlane-xyz/sdk@8.8.1
-  - @hyperlane-xyz/utils@8.8.1
+  - @humanode-hyperlane/sdk@8.8.1
+  - @humanode-hyperlane/utils@8.8.1
 
 ## 8.8.0
 
@@ -695,8 +695,8 @@
 
 - Updated dependencies [719d022ec]
 - Updated dependencies [c61546cb7]
-  - @hyperlane-xyz/sdk@8.8.0
-  - @hyperlane-xyz/utils@8.8.0
+  - @humanode-hyperlane/sdk@8.8.0
+  - @humanode-hyperlane/utils@8.8.0
 
 ## 8.7.0
 
@@ -714,16 +714,16 @@
 - Updated dependencies [12e3c4da0]
 - Updated dependencies [d6724c4c3]
 - Updated dependencies [d93a38cab]
-  - @hyperlane-xyz/sdk@8.7.0
-  - @hyperlane-xyz/utils@8.7.0
+  - @humanode-hyperlane/sdk@8.7.0
+  - @humanode-hyperlane/utils@8.7.0
 
 ## 8.6.1
 
 ### Patch Changes
 
 - 236f27b5f: Fix cli package dependencies.
-  - @hyperlane-xyz/sdk@8.6.1
-  - @hyperlane-xyz/utils@8.6.1
+  - @humanode-hyperlane/sdk@8.6.1
+  - @humanode-hyperlane/utils@8.6.1
 
 ## 8.6.0
 
@@ -740,24 +740,24 @@
 - Updated dependencies [ba50e62fc]
 - Updated dependencies [1e6ee0b9c]
 - Updated dependencies [77946bb13]
-  - @hyperlane-xyz/sdk@8.6.0
-  - @hyperlane-xyz/utils@8.6.0
+  - @humanode-hyperlane/sdk@8.6.0
+  - @humanode-hyperlane/utils@8.6.0
 
 ## 8.5.0
 
 ### Patch Changes
 
 - Updated dependencies [55b8ccdff]
-  - @hyperlane-xyz/sdk@8.5.0
-  - @hyperlane-xyz/utils@8.5.0
+  - @humanode-hyperlane/sdk@8.5.0
+  - @humanode-hyperlane/utils@8.5.0
 
 ## 8.4.0
 
 ### Patch Changes
 
 - Updated dependencies [f6b682cdb]
-  - @hyperlane-xyz/sdk@8.4.0
-  - @hyperlane-xyz/utils@8.4.0
+  - @humanode-hyperlane/sdk@8.4.0
+  - @humanode-hyperlane/utils@8.4.0
 
 ## 8.3.0
 
@@ -769,8 +769,8 @@
 
 - Updated dependencies [7546c0181]
 - Updated dependencies [49856fbb9]
-  - @hyperlane-xyz/sdk@8.3.0
-  - @hyperlane-xyz/utils@8.3.0
+  - @humanode-hyperlane/sdk@8.3.0
+  - @humanode-hyperlane/utils@8.3.0
 
 ## 8.2.0
 
@@ -783,8 +783,8 @@
 
 - 1536ea570: Print displayName instead of chain name in signer validity logs.
 - Updated dependencies [69a684869]
-  - @hyperlane-xyz/sdk@8.2.0
-  - @hyperlane-xyz/utils@8.2.0
+  - @humanode-hyperlane/sdk@8.2.0
+  - @humanode-hyperlane/utils@8.2.0
 
 ## 8.1.0
 
@@ -797,8 +797,8 @@
 - Updated dependencies [79c61c891]
 - Updated dependencies [9518dbc84]
 - Updated dependencies [9ab961a79]
-  - @hyperlane-xyz/sdk@8.1.0
-  - @hyperlane-xyz/utils@8.1.0
+  - @humanode-hyperlane/sdk@8.1.0
+  - @humanode-hyperlane/utils@8.1.0
 
 ## 8.0.0
 
@@ -834,8 +834,8 @@
 - Updated dependencies [de1190656]
 - Updated dependencies [e9911bb9d]
 - Updated dependencies [8834a8c92]
-  - @hyperlane-xyz/sdk@8.0.0
-  - @hyperlane-xyz/utils@8.0.0
+  - @humanode-hyperlane/sdk@8.0.0
+  - @humanode-hyperlane/utils@8.0.0
 
 ## 7.3.0
 
@@ -860,8 +860,8 @@
 - Updated dependencies [97c1f80b7]
 - Updated dependencies [323f0f158]
 - Updated dependencies [61157097b]
-  - @hyperlane-xyz/sdk@7.3.0
-  - @hyperlane-xyz/utils@7.3.0
+  - @humanode-hyperlane/sdk@7.3.0
+  - @humanode-hyperlane/utils@7.3.0
 
 ## 7.2.0
 
@@ -877,8 +877,8 @@
 - Updated dependencies [4b3537470]
 - Updated dependencies [fa6d5f5c6]
 - Updated dependencies [fa6d5f5c6]
-  - @hyperlane-xyz/sdk@7.2.0
-  - @hyperlane-xyz/utils@7.2.0
+  - @humanode-hyperlane/sdk@7.2.0
+  - @humanode-hyperlane/utils@7.2.0
 
 ## 7.1.0
 
@@ -895,8 +895,8 @@
 - Updated dependencies [0e285a443]
 - Updated dependencies [5db46bd31]
 - Updated dependencies [0cd65c571]
-  - @hyperlane-xyz/sdk@7.1.0
-  - @hyperlane-xyz/utils@7.1.0
+  - @humanode-hyperlane/sdk@7.1.0
+  - @humanode-hyperlane/utils@7.1.0
 
 ## 7.0.0
 
@@ -917,8 +917,8 @@
 - Updated dependencies [e6f9d5c4f]
 - Updated dependencies [f24835438]
 - Updated dependencies [5f41b1134]
-  - @hyperlane-xyz/sdk@7.0.0
-  - @hyperlane-xyz/utils@7.0.0
+  - @humanode-hyperlane/sdk@7.0.0
+  - @humanode-hyperlane/utils@7.0.0
 
 ## 6.0.0
 
@@ -931,8 +931,8 @@
 - Updated dependencies [7b3b07900]
 - Updated dependencies [30d92c319]
 - Updated dependencies [e3b97c455]
-  - @hyperlane-xyz/sdk@6.0.0
-  - @hyperlane-xyz/utils@6.0.0
+  - @humanode-hyperlane/sdk@6.0.0
+  - @humanode-hyperlane/utils@6.0.0
 
 ## 5.7.0
 
@@ -958,8 +958,8 @@
 - Updated dependencies [56328e6e1]
 - Updated dependencies [956ff752a]
 - Updated dependencies [39a9b2038]
-  - @hyperlane-xyz/sdk@5.7.0
-  - @hyperlane-xyz/utils@5.7.0
+  - @humanode-hyperlane/sdk@5.7.0
+  - @humanode-hyperlane/utils@5.7.0
 
 ## 5.6.2
 
@@ -967,16 +967,16 @@
 
 - Updated dependencies [5fd4267e7]
 - Updated dependencies [a36fc5fb2]
-  - @hyperlane-xyz/utils@5.6.2
-  - @hyperlane-xyz/sdk@5.6.2
+  - @humanode-hyperlane/utils@5.6.2
+  - @humanode-hyperlane/sdk@5.6.2
 
 ## 5.6.1
 
 ### Patch Changes
 
 - 3474a8450: Explicitly define inquirer/core and inquirier/figures dependencies
-  - @hyperlane-xyz/sdk@5.6.1
-  - @hyperlane-xyz/utils@5.6.1
+  - @humanode-hyperlane/sdk@5.6.1
+  - @humanode-hyperlane/utils@5.6.1
 
 ## 5.6.0
 
@@ -1008,8 +1008,8 @@
 - Updated dependencies [7d7bcc1a3]
 - Updated dependencies [7f3e0669d]
 - Updated dependencies [2317eca3c]
-  - @hyperlane-xyz/utils@5.6.0
-  - @hyperlane-xyz/sdk@5.6.0
+  - @humanode-hyperlane/utils@5.6.0
+  - @humanode-hyperlane/sdk@5.6.0
 
 ## 5.5.0
 
@@ -1021,8 +1021,8 @@
 - Updated dependencies [3254472e0]
 - Updated dependencies [fcfe91113]
 - Updated dependencies [6176c9861]
-  - @hyperlane-xyz/sdk@5.5.0
-  - @hyperlane-xyz/utils@5.5.0
+  - @humanode-hyperlane/sdk@5.5.0
+  - @humanode-hyperlane/utils@5.5.0
 
 ## 5.4.0
 
@@ -1033,8 +1033,8 @@
 ### Patch Changes
 
 - Updated dependencies [4415ac224]
-  - @hyperlane-xyz/utils@5.4.0
-  - @hyperlane-xyz/sdk@5.4.0
+  - @humanode-hyperlane/utils@5.4.0
+  - @humanode-hyperlane/sdk@5.4.0
 
 ## 5.3.0
 
@@ -1052,15 +1052,15 @@
 - Updated dependencies [746eeb9d9]
 - Updated dependencies [fd536a79a]
 - Updated dependencies [50319d8ba]
-  - @hyperlane-xyz/sdk@5.3.0
-  - @hyperlane-xyz/utils@5.3.0
+  - @humanode-hyperlane/sdk@5.3.0
+  - @humanode-hyperlane/utils@5.3.0
 
 ## 5.2.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/sdk@5.2.1
-- @hyperlane-xyz/utils@5.2.1
+- @humanode-hyperlane/sdk@5.2.1
+- @humanode-hyperlane/utils@5.2.1
 
 ## 5.2.0
 
@@ -1095,8 +1095,8 @@
 - Updated dependencies [2ffb78f5c]
 - Updated dependencies [3c07ded5b]
 - Updated dependencies [815542dd7]
-  - @hyperlane-xyz/sdk@5.2.0
-  - @hyperlane-xyz/utils@5.2.0
+  - @humanode-hyperlane/sdk@5.2.0
+  - @humanode-hyperlane/utils@5.2.0
 
 ## 5.1.0
 
@@ -1128,8 +1128,8 @@
 - Updated dependencies [013f19c64]
 - Updated dependencies [013f19c64]
 - Updated dependencies [19f7d4fd9]
-  - @hyperlane-xyz/sdk@5.1.0
-  - @hyperlane-xyz/utils@5.1.0
+  - @humanode-hyperlane/sdk@5.1.0
+  - @humanode-hyperlane/utils@5.1.0
 
 ## 5.0.0
 
@@ -1186,8 +1186,8 @@
 - Updated dependencies [fef629673]
 - Updated dependencies [be4617b18]
 - Updated dependencies [1474865ae]
-  - @hyperlane-xyz/sdk@5.0.0
-  - @hyperlane-xyz/utils@5.0.0
+  - @humanode-hyperlane/sdk@5.0.0
+  - @humanode-hyperlane/utils@5.0.0
 
 ## 4.1.0
 
@@ -1204,8 +1204,8 @@
 - Updated dependencies [d31677224]
 - Updated dependencies [4cc9327e5]
 - Updated dependencies [1687fca93]
-  - @hyperlane-xyz/sdk@4.1.0
-  - @hyperlane-xyz/utils@4.1.0
+  - @humanode-hyperlane/sdk@4.1.0
+  - @humanode-hyperlane/utils@4.1.0
 
 ## 4.0.0
 
@@ -1242,8 +1242,8 @@
 - Updated dependencies [e38d31685]
 - Updated dependencies [e0f226806]
 - Updated dependencies [6db9fa9ad]
-  - @hyperlane-xyz/sdk@4.0.0
-  - @hyperlane-xyz/utils@4.0.0
+  - @humanode-hyperlane/sdk@4.0.0
+  - @humanode-hyperlane/utils@4.0.0
 
 ## 3.16.0
 
@@ -1251,8 +1251,8 @@
 
 - Updated dependencies [f9bbdde76]
 - Updated dependencies [5cc64eb09]
-  - @hyperlane-xyz/sdk@3.16.0
-  - @hyperlane-xyz/utils@3.16.0
+  - @humanode-hyperlane/sdk@3.16.0
+  - @humanode-hyperlane/utils@3.16.0
 
 ## 3.15.1
 
@@ -1261,8 +1261,8 @@
 - 921e449b4: Support priorityFee fetching from RPC and some better logging
 - Updated dependencies [acaa22cd9]
 - Updated dependencies [921e449b4]
-  - @hyperlane-xyz/sdk@3.15.1
-  - @hyperlane-xyz/utils@3.15.1
+  - @humanode-hyperlane/sdk@3.15.1
+  - @humanode-hyperlane/utils@3.15.1
 
 ## 3.15.0
 
@@ -1274,8 +1274,8 @@
 ### Patch Changes
 
 - Updated dependencies [51bfff683]
-  - @hyperlane-xyz/sdk@3.15.0
-  - @hyperlane-xyz/utils@3.15.0
+  - @humanode-hyperlane/sdk@3.15.0
+  - @humanode-hyperlane/utils@3.15.0
 
 ## 3.14.0
 
@@ -1285,8 +1285,8 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/sdk@3.14.0
-- @hyperlane-xyz/utils@3.14.0
+- @humanode-hyperlane/sdk@3.14.0
+- @humanode-hyperlane/utils@3.14.0
 
 ## 3.13.0
 
@@ -1303,8 +1303,8 @@
 - Updated dependencies [39ea7cdef]
 - Updated dependencies [babe816f8]
 - Updated dependencies [0cf692e73]
-  - @hyperlane-xyz/sdk@3.13.0
-  - @hyperlane-xyz/utils@3.13.0
+  - @humanode-hyperlane/sdk@3.13.0
+  - @humanode-hyperlane/utils@3.13.0
 
 ## 3.12.0
 
@@ -1319,8 +1319,8 @@
 - 2b7dfe27e: Improve defaults in chain config command
 - Updated dependencies [eba393680]
 - Updated dependencies [69de68a66]
-  - @hyperlane-xyz/sdk@3.12.0
-  - @hyperlane-xyz/utils@3.12.0
+  - @humanode-hyperlane/sdk@3.12.0
+  - @humanode-hyperlane/utils@3.12.0
 
 ## 3.11.1
 
@@ -1328,8 +1328,8 @@
 
 - 78b77eecf: Fixes for CLI dry-runs
 - Updated dependencies [c900da187]
-  - @hyperlane-xyz/sdk@3.11.1
-  - @hyperlane-xyz/utils@3.11.1
+  - @humanode-hyperlane/sdk@3.11.1
+  - @humanode-hyperlane/utils@3.11.1
 
 ## 3.11.0
 
@@ -1362,8 +1362,8 @@
 - Updated dependencies [450e8e0d5]
 - Updated dependencies [2b3f75836]
 - Updated dependencies [af2634207]
-  - @hyperlane-xyz/sdk@3.11.0
-  - @hyperlane-xyz/utils@3.11.0
+  - @humanode-hyperlane/sdk@3.11.0
+  - @humanode-hyperlane/utils@3.11.0
 
 ## 3.10.0
 
@@ -1383,8 +1383,8 @@
 - Updated dependencies [38358ecec]
 - Updated dependencies [ed0d4188c]
 - Updated dependencies [4e7a43be6]
-  - @hyperlane-xyz/utils@3.10.0
-  - @hyperlane-xyz/sdk@3.10.0
+  - @humanode-hyperlane/utils@3.10.0
+  - @humanode-hyperlane/sdk@3.10.0
 
 ## 3.9.0
 
@@ -1395,24 +1395,24 @@
 ### Patch Changes
 
 - Updated dependencies [11f257ebc]
-  - @hyperlane-xyz/sdk@3.9.0
-  - @hyperlane-xyz/utils@3.9.0
+  - @humanode-hyperlane/sdk@3.9.0
+  - @humanode-hyperlane/utils@3.9.0
 
 ## 3.8.2
 
 ### Patch Changes
 
 - bfc2b792b: Fix bug with HypCollateral warp route deployments
-  - @hyperlane-xyz/sdk@3.8.2
-  - @hyperlane-xyz/utils@3.8.2
+  - @humanode-hyperlane/sdk@3.8.2
+  - @humanode-hyperlane/utils@3.8.2
 
 ## 3.8.1
 
 ### Patch Changes
 
 - Updated dependencies [5daaae274]
-  - @hyperlane-xyz/utils@3.8.1
-  - @hyperlane-xyz/sdk@3.8.1
+  - @humanode-hyperlane/utils@3.8.1
+  - @humanode-hyperlane/sdk@3.8.1
 
 ## 3.8.0
 
@@ -1432,8 +1432,8 @@
 - Updated dependencies [9681df08d]
 - Updated dependencies [9681df08d]
 - Updated dependencies [9681df08d]
-  - @hyperlane-xyz/sdk@3.8.0
-  - @hyperlane-xyz/utils@3.8.0
+  - @humanode-hyperlane/sdk@3.8.0
+  - @humanode-hyperlane/utils@3.8.0
 
 ## 3.7.0
 
@@ -1450,16 +1450,16 @@
 - Updated dependencies [ab17af5f7]
 - Updated dependencies [7b40232af]
 - Updated dependencies [54aeb6420]
-  - @hyperlane-xyz/sdk@3.7.0
-  - @hyperlane-xyz/utils@3.7.0
+  - @humanode-hyperlane/sdk@3.7.0
+  - @humanode-hyperlane/utils@3.7.0
 
 ## 3.6.2
 
 ### Patch Changes
 
 - 99fe93a5b: Removed IGP from preset hook config
-  - @hyperlane-xyz/sdk@3.6.2
-  - @hyperlane-xyz/utils@3.6.2
+  - @humanode-hyperlane/sdk@3.6.2
+  - @humanode-hyperlane/utils@3.6.2
 
 ## 3.6.1
 
@@ -1471,8 +1471,8 @@
 - Updated dependencies [df24eec8b]
 - Updated dependencies [78e50e7da]
 - Updated dependencies [e4e4f93fc]
-  - @hyperlane-xyz/utils@3.6.1
-  - @hyperlane-xyz/sdk@3.6.1
+  - @humanode-hyperlane/utils@3.6.1
+  - @humanode-hyperlane/sdk@3.6.1
 
 ## 3.6.0
 
@@ -1483,16 +1483,16 @@
 - Updated dependencies [612d4163a]
 - Updated dependencies [0488ef31d]
 - Updated dependencies [8d8ba3f7a]
-  - @hyperlane-xyz/sdk@3.6.0
-  - @hyperlane-xyz/utils@3.6.0
+  - @humanode-hyperlane/sdk@3.6.0
+  - @humanode-hyperlane/utils@3.6.0
 
 ## 3.5.1
 
 ### Patch Changes
 
 - Updated dependencies [a04454d6d]
-  - @hyperlane-xyz/sdk@3.5.1
-  - @hyperlane-xyz/utils@3.5.1
+  - @humanode-hyperlane/sdk@3.5.1
+  - @humanode-hyperlane/utils@3.5.1
 
 ## 3.5.0
 
@@ -1502,8 +1502,8 @@
 - Updated dependencies [655b6a0cd]
 - Updated dependencies [08ba0d32b]
 - Updated dependencies [f7d285e3a]
-  - @hyperlane-xyz/sdk@3.5.0
-  - @hyperlane-xyz/utils@3.5.0
+  - @humanode-hyperlane/sdk@3.5.0
+  - @humanode-hyperlane/utils@3.5.0
 
 ## 3.4.0
 
@@ -1517,8 +1517,8 @@
 - Updated dependencies [e06fe0b32]
 - Updated dependencies [b832e57ae]
 - Updated dependencies [79c96d718]
-  - @hyperlane-xyz/sdk@3.4.0
-  - @hyperlane-xyz/utils@3.4.0
+  - @humanode-hyperlane/sdk@3.4.0
+  - @humanode-hyperlane/utils@3.4.0
 
 ## 3.3.0
 
@@ -1539,8 +1539,8 @@
 - Updated dependencies [7e620c9df]
 - Updated dependencies [350175581]
 - Updated dependencies [9f2c7ce7c]
-  - @hyperlane-xyz/sdk@3.3.0
-  - @hyperlane-xyz/utils@3.3.0
+  - @humanode-hyperlane/sdk@3.3.0
+  - @humanode-hyperlane/utils@3.3.0
 
 ## 3.2.0
 
@@ -1552,13 +1552,13 @@
 
 - 433c5aadb: Fix error form version command
 - Updated dependencies [df693708b]
-  - @hyperlane-xyz/sdk@3.2.0
-  - @hyperlane-xyz/utils@3.2.0
+  - @humanode-hyperlane/sdk@3.2.0
+  - @humanode-hyperlane/utils@3.2.0
 
 ## 3.1.10
 
 ### Patch Changes
 
 - 97f4c9421: Various user experience improvements
-  - @hyperlane-xyz/sdk@3.1.10
-  - @hyperlane-xyz/utils@3.1.10
+  - @humanode-hyperlane/sdk@3.1.10
+  - @humanode-hyperlane/utils@3.1.10

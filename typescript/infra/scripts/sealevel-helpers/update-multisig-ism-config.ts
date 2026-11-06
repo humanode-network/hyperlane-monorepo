@@ -12,9 +12,9 @@ import {
   IsmType,
   MultiProtocolProvider,
   SvmMultiProtocolSignerAdapter,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, rootLogger } from '@humanode-hyperlane/utils';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import { Contexts } from '../../config/contexts.js';
 import { getChain } from '../../config/registry.js';

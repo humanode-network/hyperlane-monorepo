@@ -1,7 +1,7 @@
 import { type TransactionReceipt } from '@ethersproject/providers';
 
-import { type IRegistry } from '@hyperlane-xyz/registry';
-import { HyperlaneRelayer } from '@hyperlane-xyz/relayer';
+import { type IRegistry } from '@humanode-hyperlane/registry';
+import { HyperlaneRelayer } from '@humanode-hyperlane/relayer';
 import {
   type DispatchedMessage,
   HookType,
@@ -9,8 +9,8 @@ import {
   type MultiProvider,
   type TxSubmitterBuilder,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
-import { type ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type ProtocolType } from '@humanode-hyperlane/utils';
 
 import { log, logGreen } from '../logger.js';
 import { type ExtendedSubmissionStrategy } from '../submitters/types.js';

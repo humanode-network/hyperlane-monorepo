@@ -1,5 +1,5 @@
-import { InterchainAccountRouter__factory } from '@hyperlane-xyz/core';
-import { Address, rootLogger } from '@hyperlane-xyz/utils';
+import { InterchainAccountRouter__factory } from '@humanode-hyperlane/core';
+import { Address, rootLogger } from '@humanode-hyperlane/utils';
 
 import { EvmRouterReader } from '../router/EvmRouterReader.js';
 

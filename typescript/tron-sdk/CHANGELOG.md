@@ -1,4 +1,4 @@
-# @hyperlane-xyz/tron-sdk
+# @humanode-hyperlane/tron-sdk
 
 ## 22.1.7
 
@@ -8,25 +8,25 @@
 - Updated dependencies [77db719]
 - Updated dependencies [37255ba]
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/core@11.2.0
-  - @hyperlane-xyz/provider-sdk@4.2.3
-  - @hyperlane-xyz/utils@30.0.0
+  - @humanode-hyperlane/core@11.2.0
+  - @humanode-hyperlane/provider-sdk@4.2.3
+  - @humanode-hyperlane/utils@30.0.0
 
 ## 22.1.6
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@29.1.0
-- @hyperlane-xyz/core@11.1.0
-- @hyperlane-xyz/provider-sdk@4.2.2
+- @humanode-hyperlane/utils@29.1.0
+- @humanode-hyperlane/core@11.1.0
+- @humanode-hyperlane/provider-sdk@4.2.2
 
 ## 22.1.5
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@29.0.1
-- @hyperlane-xyz/core@11.1.0
-- @hyperlane-xyz/provider-sdk@4.2.1
+- @humanode-hyperlane/utils@29.0.1
+- @humanode-hyperlane/core@11.1.0
+- @humanode-hyperlane/provider-sdk@4.2.1
 
 ## 22.1.4
 
@@ -36,9 +36,9 @@
 - 084c6b6: The TypeScript packages were updated to support TypeScript 6.0 and to make ambient type loading explicit so the future TypeScript 7.0 upgrade is smoother.
 - Updated dependencies [3c6b1ad]
 - Updated dependencies [084c6b6]
-  - @hyperlane-xyz/utils@29.0.0
-  - @hyperlane-xyz/provider-sdk@4.2.0
-  - @hyperlane-xyz/core@11.1.0
+  - @humanode-hyperlane/utils@29.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.0
+  - @humanode-hyperlane/core@11.1.0
 
 ## 22.1.3
 
@@ -47,9 +47,9 @@
 - 2e622e8: TronJsonRpcProvider was changed to extend `StaticJsonRpcProvider` with a `detectNetwork` fallback and default `estimateGas` override for Tron's unreliable RPC methods. Automatic `/jsonrpc` suffix appending was removed — callers now pass the correct URL directly. TronWallet now parses `custom_rpc_header` query params from RPC URLs and forwards them as headers to TronWeb HTTP API calls (needed for TronGrid API key auth). `alterTransaction` was switched to `txLocal: true` to avoid unnecessary network roundtrips.
 - Updated dependencies [5caac66]
 - Updated dependencies [6c715a7]
-  - @hyperlane-xyz/provider-sdk@4.1.0
-  - @hyperlane-xyz/core@11.1.0
-  - @hyperlane-xyz/utils@28.1.0
+  - @humanode-hyperlane/provider-sdk@4.1.0
+  - @humanode-hyperlane/core@11.1.0
+  - @humanode-hyperlane/utils@28.1.0
 
 ## 22.1.2
 
@@ -58,9 +58,9 @@
 - Updated dependencies [83767b9]
 - Updated dependencies [a6b7bf3]
 - Updated dependencies [a4a74d8]
-  - @hyperlane-xyz/provider-sdk@4.0.0
-  - @hyperlane-xyz/core@11.0.3
-  - @hyperlane-xyz/utils@28.0.0
+  - @humanode-hyperlane/provider-sdk@4.0.0
+  - @humanode-hyperlane/core@11.0.3
+  - @humanode-hyperlane/utils@28.0.0
 
 ## 22.1.1
 
@@ -69,9 +69,9 @@
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
-  - @hyperlane-xyz/provider-sdk@3.1.0
-  - @hyperlane-xyz/utils@27.1.0
-  - @hyperlane-xyz/core@11.0.2
+  - @humanode-hyperlane/provider-sdk@3.1.0
+  - @humanode-hyperlane/utils@27.1.0
+  - @humanode-hyperlane/core@11.0.2
 
 ## 22.1.0
 
@@ -82,9 +82,9 @@
 ### Patch Changes
 
 - Updated dependencies [f7ebf6c]
-  - @hyperlane-xyz/core@11.0.2
-  - @hyperlane-xyz/utils@27.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.1
+  - @humanode-hyperlane/core@11.0.2
+  - @humanode-hyperlane/utils@27.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.1
 
 ## 22.0.0
 
@@ -96,9 +96,9 @@
 
 - Updated dependencies [06aacac]
 - Updated dependencies [1d116d8]
-  - @hyperlane-xyz/utils@26.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.0
-  - @hyperlane-xyz/core@11.0.1
+  - @humanode-hyperlane/utils@26.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.0
+  - @humanode-hyperlane/core@11.0.1
 
 ## 21.1.5
 
@@ -106,17 +106,17 @@
 
 - Updated dependencies [e197331]
 - Updated dependencies [840fb33]
-  - @hyperlane-xyz/provider-sdk@2.0.0
-  - @hyperlane-xyz/utils@25.5.0
-  - @hyperlane-xyz/core@11.0.1
+  - @humanode-hyperlane/provider-sdk@2.0.0
+  - @humanode-hyperlane/utils@25.5.0
+  - @humanode-hyperlane/core@11.0.1
 
 ## 21.1.4
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.4.1
-- @hyperlane-xyz/provider-sdk@1.4.1
-- @hyperlane-xyz/core@11.0.1
+- @humanode-hyperlane/utils@25.4.1
+- @humanode-hyperlane/provider-sdk@1.4.1
+- @humanode-hyperlane/core@11.0.1
 
 ## 21.1.3
 
@@ -125,38 +125,38 @@
 - Updated dependencies [1f021bf]
 - Updated dependencies [027eeac]
 - Updated dependencies [1f021bf]
-  - @hyperlane-xyz/utils@25.4.0
-  - @hyperlane-xyz/core@11.0.1
-  - @hyperlane-xyz/provider-sdk@1.4.0
+  - @humanode-hyperlane/utils@25.4.0
+  - @humanode-hyperlane/core@11.0.1
+  - @humanode-hyperlane/provider-sdk@1.4.0
 
 ## 21.1.2
 
 ### Patch Changes
 
 - Updated dependencies [521d42b]
-  - @hyperlane-xyz/core@10.2.0
-  - @hyperlane-xyz/utils@25.3.2
-  - @hyperlane-xyz/provider-sdk@1.3.6
+  - @humanode-hyperlane/core@10.2.0
+  - @humanode-hyperlane/utils@25.3.2
+  - @humanode-hyperlane/provider-sdk@1.3.6
 
 ## 21.1.1
 
 ### Patch Changes
 
 - 7636bb4: fix: assert import
-  - @hyperlane-xyz/utils@25.3.1
-  - @hyperlane-xyz/provider-sdk@1.3.5
-  - @hyperlane-xyz/core@10.1.5
+  - @humanode-hyperlane/utils@25.3.1
+  - @humanode-hyperlane/provider-sdk@1.3.5
+  - @humanode-hyperlane/core@10.1.5
 
 ## 21.1.0
 
 ### Minor Changes
 
-- aea767c: Tron Virtual Machine (TVM) support added to the Hyperlane SDK. The new `@hyperlane-xyz/tron-sdk` package provides `TronJsonRpcProvider`, `TronWallet`, and `TronContractFactory` for interacting with Tron chains. The SDK deployers now automatically use Tron-compiled factories for Create2-affected contracts (ISM/hook factories, ICA router) when deploying to Tron chains.
+- aea767c: Tron Virtual Machine (TVM) support added to the Hyperlane SDK. The new `@humanode-hyperlane/tron-sdk` package provides `TronJsonRpcProvider`, `TronWallet`, and `TronContractFactory` for interacting with Tron chains. The SDK deployers now automatically use Tron-compiled factories for Create2-affected contracts (ISM/hook factories, ICA router) when deploying to Tron chains.
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.3.0
-- @hyperlane-xyz/provider-sdk@1.3.4
+- @humanode-hyperlane/utils@25.3.0
+- @humanode-hyperlane/provider-sdk@1.3.4
 
 ## 21.0.2
 
@@ -164,18 +164,18 @@
 
 - Updated dependencies [360db52]
 - Updated dependencies [ccd638d]
-  - @hyperlane-xyz/utils@25.2.0
-  - @hyperlane-xyz/provider-sdk@1.3.3
-  - @hyperlane-xyz/eslint-config@25.2.0
+  - @humanode-hyperlane/utils@25.2.0
+  - @humanode-hyperlane/provider-sdk@1.3.3
+  - @humanode-hyperlane/eslint-config@25.2.0
 
 ## 21.0.1
 
 ### Patch Changes
 
 - Updated dependencies [b930534]
-  - @hyperlane-xyz/utils@25.1.0
-  - @hyperlane-xyz/provider-sdk@1.3.2
-  - @hyperlane-xyz/eslint-config@25.1.0
+  - @humanode-hyperlane/utils@25.1.0
+  - @humanode-hyperlane/provider-sdk@1.3.2
+  - @humanode-hyperlane/eslint-config@25.1.0
 
 ## 21.0.0
 
@@ -186,6 +186,6 @@
 ### Patch Changes
 
 - Updated dependencies [52ce778]
-  - @hyperlane-xyz/utils@25.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.1
-  - @hyperlane-xyz/eslint-config@25.0.0
+  - @humanode-hyperlane/utils@25.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.1
+  - @humanode-hyperlane/eslint-config@25.0.0

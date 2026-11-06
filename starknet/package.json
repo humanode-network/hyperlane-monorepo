@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/starknet-core",
+  "name": "@humanode-hyperlane/starknet-core",
   "version": "30.0.0",
   "description": "Core cairo contracts for Hyperlane",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "homepage": "https://www.hyperlane.xyz",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "dist"
   ],
@@ -33,7 +33,7 @@
     "starknet": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/node": "catalog:",
     "globby": "^14.1.0",
     "tsx": "catalog:",

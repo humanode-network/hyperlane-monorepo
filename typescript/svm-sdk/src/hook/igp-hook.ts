@@ -1,16 +1,16 @@
 import { address as parseAddress, type Address } from '@solana/kit';
 import { keccak_256 } from '@noble/hashes/sha3';
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import type { IgpHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
-import { assert, ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import type { IgpHookConfig } from '@humanode-hyperlane/provider-sdk/hook';
+import { assert, ZERO_ADDRESS_HEX_32 } from '@humanode-hyperlane/utils';
 
 import type { GasOracleConfig, GasOverheadConfig } from '../codecs/shared.js';
 import { resolveProgram } from '../deploy/resolve-program.js';

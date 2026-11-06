@@ -8,8 +8,12 @@ import {
   type IsmConfig,
   IsmType,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, normalizeAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  type Address,
+  assert,
+  normalizeAddress,
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../utils/files.js';
 import { type HyperlaneE2ECoreTestCommands } from '../commands/core.js';

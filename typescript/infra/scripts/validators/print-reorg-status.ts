@@ -1,9 +1,9 @@
-import { ValidatorAnnounce__factory } from '@hyperlane-xyz/core';
+import { ValidatorAnnounce__factory } from '@humanode-hyperlane/core';
 import {
   ChainMap,
   defaultMultisigConfigs,
   getValidatorFromStorageLocation,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   LogFormat,
@@ -12,7 +12,7 @@ import {
   configureRootLogger,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getChainAddresses } from '../../config/registry.js';

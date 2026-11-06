@@ -4,7 +4,7 @@
  */
 import { SafeParseReturnType, z } from 'zod';
 
-import { ProtocolType, objMerge } from '@hyperlane-xyz/utils';
+import { ProtocolType, objMerge } from '@humanode-hyperlane/utils';
 
 import type { ChainMap } from '../types.js';
 

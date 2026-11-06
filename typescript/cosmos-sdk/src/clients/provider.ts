@@ -11,8 +11,8 @@ import {
 } from '@cosmjs/stargate';
 import { type CometClient, connectComet } from '@cosmjs/tendermint-rpc';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { type AltVM } from '@humanode-hyperlane/provider-sdk';
+import { assert, strip0x } from '@humanode-hyperlane/utils';
 
 import {
   getHookType,

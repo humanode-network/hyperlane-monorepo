@@ -3,8 +3,8 @@ import { stringify as yamlStringify } from 'yaml';
 import {
   type AnnotatedEV5Transaction,
   type ChainName,
-} from '@hyperlane-xyz/sdk';
-import { type ProtocolType, errorToString } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type ProtocolType, errorToString } from '@humanode-hyperlane/utils';
 
 import { type WriteCommandContext } from '../context/types.js';
 import { getSubmitterByStrategy } from '../deploy/warp.js';

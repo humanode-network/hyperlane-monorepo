@@ -5,8 +5,8 @@ import {
   type ChainName,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson } from '../../../utils/files.js';
 import {

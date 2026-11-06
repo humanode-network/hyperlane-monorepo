@@ -23,8 +23,8 @@ import {
   MockEverclearAdapter,
   MockEverclearAdapter__factory,
   MovableCollateralRouter__factory,
-} from '@hyperlane-xyz/core';
-import { CrossCollateralRouter__factory } from '@hyperlane-xyz/multicollateral';
+} from '@humanode-hyperlane/core';
+import { CrossCollateralRouter__factory } from '@humanode-hyperlane/multicollateral';
 import {
   EvmIsmModule,
   HookConfig,
@@ -39,7 +39,7 @@ import {
   proxyAdmin,
   proxyImplementation,
   serializeContracts,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   addressToBytes32,
@@ -49,7 +49,7 @@ import {
   normalizeAddressEvm,
   objMap,
   randomInt,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { TestCoreApp } from '../core/TestCoreApp.js';
 import { TestCoreDeployer } from '../core/TestCoreDeployer.js';

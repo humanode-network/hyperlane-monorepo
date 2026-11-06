@@ -1,5 +1,5 @@
-import { ChainMap, defaultMultisigConfigs } from '@hyperlane-xyz/sdk';
-import { eqAddress } from '@hyperlane-xyz/utils';
+import { ChainMap, defaultMultisigConfigs } from '@humanode-hyperlane/sdk';
+import { eqAddress } from '@humanode-hyperlane/utils';
 
 import { isEthereumProtocolChain } from '../../src/utils/utils.js';
 import { getArgs, withChains } from '../agent-utils.js';

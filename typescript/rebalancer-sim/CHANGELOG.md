@@ -1,4 +1,4 @@
-# @hyperlane-xyz/rebalancer-sim
+# @humanode-hyperlane/rebalancer-sim
 
 ## 0.2.8
 
@@ -11,11 +11,11 @@
 - Updated dependencies [37255ba]
 - Updated dependencies [95c2891]
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/core@11.2.0
-  - @hyperlane-xyz/sdk@30.0.0
-  - @hyperlane-xyz/provider-sdk@4.2.3
-  - @hyperlane-xyz/utils@30.0.0
-  - @hyperlane-xyz/rebalancer@27.2.2
+  - @humanode-hyperlane/core@11.2.0
+  - @humanode-hyperlane/sdk@30.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.3
+  - @humanode-hyperlane/utils@30.0.0
+  - @humanode-hyperlane/rebalancer@27.2.2
 
 ## 0.2.7
 
@@ -23,11 +23,11 @@
 
 - Updated dependencies [a8192d7]
 - Updated dependencies [a891402]
-  - @hyperlane-xyz/sdk@29.1.0
-  - @hyperlane-xyz/rebalancer@27.2.1
-  - @hyperlane-xyz/utils@29.1.0
-  - @hyperlane-xyz/core@11.1.0
-  - @hyperlane-xyz/provider-sdk@4.2.2
+  - @humanode-hyperlane/sdk@29.1.0
+  - @humanode-hyperlane/rebalancer@27.2.1
+  - @humanode-hyperlane/utils@29.1.0
+  - @humanode-hyperlane/core@11.1.0
+  - @humanode-hyperlane/provider-sdk@4.2.2
 
 ## 0.2.6
 
@@ -35,11 +35,11 @@
 
 - Updated dependencies [602912c]
 - Updated dependencies [96508ed]
-  - @hyperlane-xyz/rebalancer@27.2.0
-  - @hyperlane-xyz/sdk@29.0.1
-  - @hyperlane-xyz/utils@29.0.1
-  - @hyperlane-xyz/core@11.1.0
-  - @hyperlane-xyz/provider-sdk@4.2.1
+  - @humanode-hyperlane/rebalancer@27.2.0
+  - @humanode-hyperlane/sdk@29.0.1
+  - @humanode-hyperlane/utils@29.0.1
+  - @humanode-hyperlane/core@11.1.0
+  - @humanode-hyperlane/provider-sdk@4.2.1
 
 ## 0.2.5
 
@@ -48,11 +48,11 @@
 - Updated dependencies [cc6d57b]
 - Updated dependencies [3c6b1ad]
 - Updated dependencies [084c6b6]
-  - @hyperlane-xyz/sdk@29.0.0
-  - @hyperlane-xyz/utils@29.0.0
-  - @hyperlane-xyz/provider-sdk@4.2.0
-  - @hyperlane-xyz/rebalancer@27.1.3
-  - @hyperlane-xyz/core@11.1.0
+  - @humanode-hyperlane/sdk@29.0.0
+  - @humanode-hyperlane/utils@29.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.0
+  - @humanode-hyperlane/rebalancer@27.1.3
+  - @humanode-hyperlane/core@11.1.0
 
 ## 0.2.4
 
@@ -63,11 +63,11 @@
 - Updated dependencies [6c715a7]
 - Updated dependencies [2e622e8]
 - Updated dependencies [e93a4c8]
-  - @hyperlane-xyz/provider-sdk@4.1.0
-  - @hyperlane-xyz/core@11.1.0
-  - @hyperlane-xyz/sdk@28.1.0
-  - @hyperlane-xyz/rebalancer@27.1.2
-  - @hyperlane-xyz/utils@28.1.0
+  - @humanode-hyperlane/provider-sdk@4.1.0
+  - @humanode-hyperlane/core@11.1.0
+  - @humanode-hyperlane/sdk@28.1.0
+  - @humanode-hyperlane/rebalancer@27.1.2
+  - @humanode-hyperlane/utils@28.1.0
 
 ## 0.2.3
 
@@ -78,11 +78,11 @@
 - Updated dependencies [a6b7bf3]
 - Updated dependencies [5a5d172]
 - Updated dependencies [a4a74d8]
-  - @hyperlane-xyz/provider-sdk@4.0.0
-  - @hyperlane-xyz/sdk@28.0.0
-  - @hyperlane-xyz/core@11.0.3
-  - @hyperlane-xyz/rebalancer@27.1.1
-  - @hyperlane-xyz/utils@28.0.0
+  - @humanode-hyperlane/provider-sdk@4.0.0
+  - @humanode-hyperlane/sdk@28.0.0
+  - @humanode-hyperlane/core@11.0.3
+  - @humanode-hyperlane/rebalancer@27.1.1
+  - @humanode-hyperlane/utils@28.0.0
 
 ## 0.2.2
 
@@ -94,11 +94,11 @@
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
 - Updated dependencies [7af7728]
-  - @hyperlane-xyz/sdk@27.1.0
-  - @hyperlane-xyz/provider-sdk@3.1.0
-  - @hyperlane-xyz/utils@27.1.0
-  - @hyperlane-xyz/rebalancer@27.1.0
-  - @hyperlane-xyz/core@11.0.2
+  - @humanode-hyperlane/sdk@27.1.0
+  - @humanode-hyperlane/provider-sdk@3.1.0
+  - @humanode-hyperlane/utils@27.1.0
+  - @humanode-hyperlane/rebalancer@27.1.0
+  - @humanode-hyperlane/core@11.0.2
 
 ## 0.2.1
 
@@ -111,11 +111,11 @@
 - Updated dependencies [354668e]
 - Updated dependencies [b05e242]
 - Updated dependencies [aee625c]
-  - @hyperlane-xyz/sdk@27.0.0
-  - @hyperlane-xyz/core@11.0.2
-  - @hyperlane-xyz/rebalancer@27.0.0
-  - @hyperlane-xyz/utils@27.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.1
+  - @humanode-hyperlane/sdk@27.0.0
+  - @humanode-hyperlane/core@11.0.2
+  - @humanode-hyperlane/rebalancer@27.0.0
+  - @humanode-hyperlane/utils@27.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.1
 
 ## 0.2.0
 
@@ -130,11 +130,11 @@
 - Updated dependencies [279b714]
 - Updated dependencies [763a264]
 - Updated dependencies [1d116d8]
-  - @hyperlane-xyz/sdk@26.0.0
-  - @hyperlane-xyz/utils@26.0.0
-  - @hyperlane-xyz/rebalancer@26.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.0
-  - @hyperlane-xyz/core@11.0.1
+  - @humanode-hyperlane/sdk@26.0.0
+  - @humanode-hyperlane/utils@26.0.0
+  - @humanode-hyperlane/rebalancer@26.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.0
+  - @humanode-hyperlane/core@11.0.1
 
 ## 0.1.10
 
@@ -146,22 +146,22 @@
 - Updated dependencies [69b48fa]
 - Updated dependencies [048df98]
 - Updated dependencies [840fb33]
-  - @hyperlane-xyz/provider-sdk@2.0.0
-  - @hyperlane-xyz/sdk@25.5.0
-  - @hyperlane-xyz/rebalancer@25.5.0
-  - @hyperlane-xyz/utils@25.5.0
-  - @hyperlane-xyz/core@11.0.1
+  - @humanode-hyperlane/provider-sdk@2.0.0
+  - @humanode-hyperlane/sdk@25.5.0
+  - @humanode-hyperlane/rebalancer@25.5.0
+  - @humanode-hyperlane/utils@25.5.0
+  - @humanode-hyperlane/core@11.0.1
 
 ## 0.1.9
 
 ### Patch Changes
 
 - Updated dependencies [5a7efbb]
-  - @hyperlane-xyz/sdk@25.4.1
-  - @hyperlane-xyz/rebalancer@3.2.1
-  - @hyperlane-xyz/utils@25.4.1
-  - @hyperlane-xyz/provider-sdk@1.4.1
-  - @hyperlane-xyz/core@11.0.1
+  - @humanode-hyperlane/sdk@25.4.1
+  - @humanode-hyperlane/rebalancer@3.2.1
+  - @humanode-hyperlane/utils@25.4.1
+  - @humanode-hyperlane/provider-sdk@1.4.1
+  - @humanode-hyperlane/core@11.0.1
 
 ## 0.1.8
 
@@ -177,22 +177,22 @@
 - Updated dependencies [a3f7fd3]
 - Updated dependencies [2a6bd61]
 - Updated dependencies [1f021bf]
-  - @hyperlane-xyz/utils@25.4.0
-  - @hyperlane-xyz/sdk@25.4.0
-  - @hyperlane-xyz/rebalancer@3.2.0
-  - @hyperlane-xyz/core@11.0.1
-  - @hyperlane-xyz/provider-sdk@1.4.0
+  - @humanode-hyperlane/utils@25.4.0
+  - @humanode-hyperlane/sdk@25.4.0
+  - @humanode-hyperlane/rebalancer@3.2.0
+  - @humanode-hyperlane/core@11.0.1
+  - @humanode-hyperlane/provider-sdk@1.4.0
 
 ## 0.1.7
 
 ### Patch Changes
 
 - Updated dependencies [521d42b]
-  - @hyperlane-xyz/core@10.2.0
-  - @hyperlane-xyz/rebalancer@3.1.1
-  - @hyperlane-xyz/sdk@25.3.2
-  - @hyperlane-xyz/utils@25.3.2
-  - @hyperlane-xyz/provider-sdk@1.3.6
+  - @humanode-hyperlane/core@10.2.0
+  - @humanode-hyperlane/rebalancer@3.1.1
+  - @humanode-hyperlane/sdk@25.3.2
+  - @humanode-hyperlane/utils@25.3.2
+  - @humanode-hyperlane/provider-sdk@1.3.6
 
 ## 0.1.6
 
@@ -200,11 +200,11 @@
 
 - Updated dependencies [ff8c0f0]
 - Updated dependencies [aa6871b]
-  - @hyperlane-xyz/rebalancer@3.1.0
-  - @hyperlane-xyz/sdk@25.3.1
-  - @hyperlane-xyz/utils@25.3.1
-  - @hyperlane-xyz/provider-sdk@1.3.5
-  - @hyperlane-xyz/core@10.1.5
+  - @humanode-hyperlane/rebalancer@3.1.0
+  - @humanode-hyperlane/sdk@25.3.1
+  - @humanode-hyperlane/utils@25.3.1
+  - @humanode-hyperlane/provider-sdk@1.3.5
+  - @humanode-hyperlane/core@10.1.5
 
 ## 0.1.5
 
@@ -213,11 +213,11 @@
 - Updated dependencies [1970a32]
 - Updated dependencies [1970a32]
 - Updated dependencies [aea767c]
-  - @hyperlane-xyz/rebalancer@3.0.0
-  - @hyperlane-xyz/sdk@25.3.0
-  - @hyperlane-xyz/utils@25.3.0
-  - @hyperlane-xyz/provider-sdk@1.3.4
-  - @hyperlane-xyz/core@10.1.5
+  - @humanode-hyperlane/rebalancer@3.0.0
+  - @humanode-hyperlane/sdk@25.3.0
+  - @humanode-hyperlane/utils@25.3.0
+  - @humanode-hyperlane/provider-sdk@1.3.4
+  - @humanode-hyperlane/core@10.1.5
 
 ## 0.1.4
 
@@ -233,11 +233,11 @@
 - Updated dependencies [ccd638d]
 - Updated dependencies [c61d612]
 - Updated dependencies [c2affe2]
-  - @hyperlane-xyz/sdk@25.2.0
-  - @hyperlane-xyz/utils@25.2.0
-  - @hyperlane-xyz/rebalancer@2.0.0
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/provider-sdk@1.3.3
+  - @humanode-hyperlane/sdk@25.2.0
+  - @humanode-hyperlane/utils@25.2.0
+  - @humanode-hyperlane/rebalancer@2.0.0
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/provider-sdk@1.3.3
 
 ## 0.1.3
 
@@ -245,11 +245,11 @@
 
 - Updated dependencies [b930534]
 - Updated dependencies [a18d0e6]
-  - @hyperlane-xyz/sdk@25.1.0
-  - @hyperlane-xyz/utils@25.1.0
-  - @hyperlane-xyz/rebalancer@1.0.3
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/provider-sdk@1.3.2
+  - @humanode-hyperlane/sdk@25.1.0
+  - @humanode-hyperlane/utils@25.1.0
+  - @humanode-hyperlane/rebalancer@1.0.3
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/provider-sdk@1.3.2
 
 ## 0.1.2
 
@@ -257,11 +257,11 @@
 
 - Updated dependencies [52ce778]
 - Updated dependencies [aaabbad]
-  - @hyperlane-xyz/utils@25.0.0
-  - @hyperlane-xyz/sdk@25.0.0
-  - @hyperlane-xyz/core@10.1.5
-  - @hyperlane-xyz/provider-sdk@1.3.1
-  - @hyperlane-xyz/rebalancer@1.0.2
+  - @humanode-hyperlane/utils@25.0.0
+  - @humanode-hyperlane/sdk@25.0.0
+  - @humanode-hyperlane/core@10.1.5
+  - @humanode-hyperlane/provider-sdk@1.3.1
+  - @humanode-hyperlane/rebalancer@1.0.2
 
 ## 0.1.1
 
@@ -277,8 +277,8 @@
 - Updated dependencies [8c80288]
 - Updated dependencies [d0b8c24]
 - Updated dependencies [4de5071]
-  - @hyperlane-xyz/utils@24.0.0
-  - @hyperlane-xyz/sdk@24.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.0
-  - @hyperlane-xyz/rebalancer@1.0.1
-  - @hyperlane-xyz/core@10.1.5
+  - @humanode-hyperlane/utils@24.0.0
+  - @humanode-hyperlane/sdk@24.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.0
+  - @humanode-hyperlane/rebalancer@1.0.1
+  - @humanode-hyperlane/core@10.1.5

@@ -7,7 +7,7 @@ import { z } from 'zod';
 import {
   CommitmentReadIsmService__factory,
   InterchainAccountRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   AccountConfig,
   InterchainAccount,
@@ -21,13 +21,13 @@ import {
   commitmentFromRevealMessage,
   encodeIcaCalls,
   normalizeCalls,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   addressToBytes32,
   bytes32ToAddress,
   eqAddress,
   parseMessage,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { prisma } from '../db.js';
 import { createAbiHandler } from '../utils/abiHandler.js';

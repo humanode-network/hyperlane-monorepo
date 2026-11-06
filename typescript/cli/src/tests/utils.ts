@@ -1,6 +1,6 @@
 import * as chai from 'chai';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type ChainName,
@@ -8,8 +8,8 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { isObjEmpty } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { isObjEmpty } from '@humanode-hyperlane/utils';
 
 import {
   TEST_CHAIN_METADATA_BY_PROTOCOL,

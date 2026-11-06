@@ -6,7 +6,7 @@ import {
   IsmConfig,
   OwnableConfig,
   TokenType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import {
   RouterConfigWithoutOwner,

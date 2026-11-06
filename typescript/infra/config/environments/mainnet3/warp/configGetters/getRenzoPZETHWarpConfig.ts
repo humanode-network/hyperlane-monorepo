@@ -1,4 +1,4 @@
-import { pick } from '@hyperlane-xyz/utils';
+import { pick } from '@humanode-hyperlane/utils';
 
 import {
   ezEthSafes,

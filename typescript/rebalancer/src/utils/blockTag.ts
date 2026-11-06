@@ -5,8 +5,8 @@ import { providers } from 'ethers';
 import {
   EthJsonRpcBlockParameterTag,
   MultiProtocolProvider,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 import type { ConfirmedBlockTag } from '../interfaces/IMonitor.js';
 
 /**

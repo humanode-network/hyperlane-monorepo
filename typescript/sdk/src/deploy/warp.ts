@@ -1,22 +1,25 @@
-import { ProxyAdmin__factory } from '@hyperlane-xyz/core';
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { ProxyAdmin__factory } from '@humanode-hyperlane/core';
+import { buildArtifact as coreBuildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
 import {
   createHookWriter,
   createIsmWriter,
   createWarpTokenWriter,
   validateIsmConfig,
-} from '@hyperlane-xyz/deploy-sdk';
-import { AltVM, ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/deploy-sdk';
+import { AltVM, ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   HookConfig as ProviderHookConfig,
   hookConfigToArtifact,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@humanode-hyperlane/provider-sdk/hook';
 import {
   IsmConfig as ProviderIsmConfig,
   ismConfigToArtifact,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   CollateralWarpConfig,
   NativeWarpConfig,
@@ -24,7 +27,7 @@ import {
   TokenType as ProviderTokenType,
   WarpConfig as ProviderWarpConfig,
   warpConfigToArtifact,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   Address,
   addressToBytes32,
@@ -38,7 +41,7 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ExplorerLicenseType } from '../block-explorer/etherscan.js';
 import { CCIPContractCache } from '../ccip/utils.js';

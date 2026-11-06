@@ -20,8 +20,8 @@ import {
   TypedTransactionReceipt,
   WarpTypedTransaction,
   chainMetadataToViemChain,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, sleep } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert, sleep } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

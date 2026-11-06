@@ -6,8 +6,8 @@ import {
   types as zksyncTypes,
 } from 'zksync-ethers';
 
-import { ZKSyncArtifact } from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+import { ZKSyncArtifact } from '@humanode-hyperlane/core';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { defaultZKProviderBuilder } from '../providers/providerBuilders.js';
 import { getZKSyncArtifactByContractName } from '../utils/zksync.js';

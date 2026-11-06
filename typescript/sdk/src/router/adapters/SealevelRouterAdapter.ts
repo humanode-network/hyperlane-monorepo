@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js';
 
-import { Address, Domain } from '@hyperlane-xyz/utils';
+import { Address, Domain } from '@humanode-hyperlane/utils';
 
 import { BaseSealevelAdapter } from '../../app/MultiProtocolApp.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

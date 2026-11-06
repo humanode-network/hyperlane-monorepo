@@ -1,4 +1,4 @@
-# @hyperlane-xyz/deploy-sdk
+# @humanode-hyperlane/deploy-sdk
 
 ## 4.2.3
 
@@ -9,46 +9,46 @@
 - Updated dependencies [37255ba]
 - Updated dependencies [2a9b135]
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/starknet-sdk@27.2.3
-  - @hyperlane-xyz/provider-sdk@4.2.3
-  - @hyperlane-xyz/sealevel-sdk@30.0.0
-  - @hyperlane-xyz/utils@30.0.0
-  - @hyperlane-xyz/tron-sdk@22.1.7
-  - @hyperlane-xyz/aleo-sdk@30.0.0
-  - @hyperlane-xyz/cosmos-sdk@30.0.0
-  - @hyperlane-xyz/radix-sdk@30.0.0
+  - @humanode-hyperlane/starknet-sdk@27.2.3
+  - @humanode-hyperlane/provider-sdk@4.2.3
+  - @humanode-hyperlane/sealevel-sdk@30.0.0
+  - @humanode-hyperlane/utils@30.0.0
+  - @humanode-hyperlane/tron-sdk@22.1.7
+  - @humanode-hyperlane/aleo-sdk@30.0.0
+  - @humanode-hyperlane/cosmos-sdk@30.0.0
+  - @humanode-hyperlane/radix-sdk@30.0.0
 
 ## 4.2.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/aleo-sdk@29.1.0
-- @hyperlane-xyz/cosmos-sdk@29.1.0
-- @hyperlane-xyz/radix-sdk@29.1.0
-- @hyperlane-xyz/sealevel-sdk@29.1.0
-- @hyperlane-xyz/utils@29.1.0
-- @hyperlane-xyz/starknet-sdk@27.2.2
-- @hyperlane-xyz/provider-sdk@4.2.2
-- @hyperlane-xyz/tron-sdk@22.1.6
+- @humanode-hyperlane/aleo-sdk@29.1.0
+- @humanode-hyperlane/cosmos-sdk@29.1.0
+- @humanode-hyperlane/radix-sdk@29.1.0
+- @humanode-hyperlane/sealevel-sdk@29.1.0
+- @humanode-hyperlane/utils@29.1.0
+- @humanode-hyperlane/starknet-sdk@27.2.2
+- @humanode-hyperlane/provider-sdk@4.2.2
+- @humanode-hyperlane/tron-sdk@22.1.6
 
 ## 4.2.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/aleo-sdk@29.0.1
-- @hyperlane-xyz/cosmos-sdk@29.0.1
-- @hyperlane-xyz/radix-sdk@29.0.1
-- @hyperlane-xyz/sealevel-sdk@29.0.1
-- @hyperlane-xyz/utils@29.0.1
-- @hyperlane-xyz/starknet-sdk@27.2.1
-- @hyperlane-xyz/provider-sdk@4.2.1
-- @hyperlane-xyz/tron-sdk@22.1.5
+- @humanode-hyperlane/aleo-sdk@29.0.1
+- @humanode-hyperlane/cosmos-sdk@29.0.1
+- @humanode-hyperlane/radix-sdk@29.0.1
+- @humanode-hyperlane/sealevel-sdk@29.0.1
+- @humanode-hyperlane/utils@29.0.1
+- @humanode-hyperlane/starknet-sdk@27.2.1
+- @humanode-hyperlane/provider-sdk@4.2.1
+- @humanode-hyperlane/tron-sdk@22.1.5
 
 ## 4.2.0
 
 ### Minor Changes
 
-- 09d6760: Added Starknet artifact API support across the TypeScript AltVM toolchain. The new `@hyperlane-xyz/starknet-sdk` package provides Starknet protocol, signer, provider, ISM, hook, mailbox, validator announce, and end-to-end test coverage. Deploy SDK protocol loading and the CLI context/signer flows were updated so Starknet chains can be resolved and used through the shared AltVM paths.
+- 09d6760: Added Starknet artifact API support across the TypeScript AltVM toolchain. The new `@humanode-hyperlane/starknet-sdk` package provides Starknet protocol, signer, provider, ISM, hook, mailbox, validator announce, and end-to-end test coverage. Deploy SDK protocol loading and the CLI context/signer flows were updated so Starknet chains can be resolved and used through the shared AltVM paths.
 
 ### Patch Changes
 
@@ -57,14 +57,14 @@
 - Updated dependencies [09d6760]
 - Updated dependencies [084c6b6]
 - Updated dependencies [f0a33c6]
-  - @hyperlane-xyz/tron-sdk@22.1.4
-  - @hyperlane-xyz/utils@29.0.0
-  - @hyperlane-xyz/starknet-sdk@27.2.0
-  - @hyperlane-xyz/aleo-sdk@29.0.0
-  - @hyperlane-xyz/cosmos-sdk@29.0.0
-  - @hyperlane-xyz/provider-sdk@4.2.0
-  - @hyperlane-xyz/radix-sdk@29.0.0
-  - @hyperlane-xyz/sealevel-sdk@29.0.0
+  - @humanode-hyperlane/tron-sdk@22.1.4
+  - @humanode-hyperlane/utils@29.0.0
+  - @humanode-hyperlane/starknet-sdk@27.2.0
+  - @humanode-hyperlane/aleo-sdk@29.0.0
+  - @humanode-hyperlane/cosmos-sdk@29.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.0
+  - @humanode-hyperlane/radix-sdk@29.0.0
+  - @humanode-hyperlane/sealevel-sdk@29.0.0
 
 ## 4.1.0
 
@@ -72,13 +72,13 @@
 
 - Updated dependencies [5caac66]
 - Updated dependencies [2e622e8]
-  - @hyperlane-xyz/provider-sdk@4.1.0
-  - @hyperlane-xyz/sealevel-sdk@28.1.0
-  - @hyperlane-xyz/radix-sdk@28.1.0
-  - @hyperlane-xyz/cosmos-sdk@28.1.0
-  - @hyperlane-xyz/aleo-sdk@28.1.0
-  - @hyperlane-xyz/tron-sdk@22.1.3
-  - @hyperlane-xyz/utils@28.1.0
+  - @humanode-hyperlane/provider-sdk@4.1.0
+  - @humanode-hyperlane/sealevel-sdk@28.1.0
+  - @humanode-hyperlane/radix-sdk@28.1.0
+  - @humanode-hyperlane/cosmos-sdk@28.1.0
+  - @humanode-hyperlane/aleo-sdk@28.1.0
+  - @humanode-hyperlane/tron-sdk@22.1.3
+  - @humanode-hyperlane/utils@28.1.0
 
 ## 4.0.0
 
@@ -96,13 +96,13 @@
 - Updated dependencies [83767b9]
 - Updated dependencies [228ed9f]
 - Updated dependencies [a6b7bf3]
-  - @hyperlane-xyz/aleo-sdk@28.0.0
-  - @hyperlane-xyz/provider-sdk@4.0.0
-  - @hyperlane-xyz/cosmos-sdk@28.0.0
-  - @hyperlane-xyz/radix-sdk@28.0.0
-  - @hyperlane-xyz/sealevel-sdk@28.0.0
-  - @hyperlane-xyz/tron-sdk@22.1.2
-  - @hyperlane-xyz/utils@28.0.0
+  - @humanode-hyperlane/aleo-sdk@28.0.0
+  - @humanode-hyperlane/provider-sdk@4.0.0
+  - @humanode-hyperlane/cosmos-sdk@28.0.0
+  - @humanode-hyperlane/radix-sdk@28.0.0
+  - @humanode-hyperlane/sealevel-sdk@28.0.0
+  - @humanode-hyperlane/tron-sdk@22.1.2
+  - @humanode-hyperlane/utils@28.0.0
 
 ## 3.1.0
 
@@ -118,31 +118,31 @@
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
-  - @hyperlane-xyz/provider-sdk@3.1.0
-  - @hyperlane-xyz/radix-sdk@27.1.0
-  - @hyperlane-xyz/utils@27.1.0
-  - @hyperlane-xyz/aleo-sdk@27.1.0
-  - @hyperlane-xyz/cosmos-sdk@27.1.0
-  - @hyperlane-xyz/sealevel-sdk@27.1.0
-  - @hyperlane-xyz/tron-sdk@22.1.1
+  - @humanode-hyperlane/provider-sdk@3.1.0
+  - @humanode-hyperlane/radix-sdk@27.1.0
+  - @humanode-hyperlane/utils@27.1.0
+  - @humanode-hyperlane/aleo-sdk@27.1.0
+  - @humanode-hyperlane/cosmos-sdk@27.1.0
+  - @humanode-hyperlane/sealevel-sdk@27.1.0
+  - @humanode-hyperlane/tron-sdk@22.1.1
 
 ## 3.0.1
 
 ### Patch Changes
 
-- 22cb5cb: The `@hyperlane-xyz/sealevel-sdk` package (renamed from `@hyperlane-xyz/svm-sdk`) was published as a Solana/SVM client for Hyperlane Sealevel programs. It provides `SealevelProtocolProvider`, `SealevelProvider`, and `SealevelSigner` implementing the AltVM provider-sdk interfaces, along with warp token readers/writers (native, synthetic, collateral), ISM readers/writers (multisig message-ID, test), hook readers/writers (IGP, merkle tree), BPF program deployment/upgrade plans, PDA derivation utilities, and account decoders. ISM and hook deployment are not yet functional.
+- 22cb5cb: The `@humanode-hyperlane/sealevel-sdk` package (renamed from `@humanode-hyperlane/svm-sdk`) was published as a Solana/SVM client for Hyperlane Sealevel programs. It provides `SealevelProtocolProvider`, `SealevelProvider`, and `SealevelSigner` implementing the AltVM provider-sdk interfaces, along with warp token readers/writers (native, synthetic, collateral), ISM readers/writers (multisig message-ID, test), hook readers/writers (IGP, merkle tree), BPF program deployment/upgrade plans, PDA derivation utilities, and account decoders. ISM and hook deployment are not yet functional.
 
   `SealevelProtocolProvider` was registered in the deploy-sdk for `ProtocolType.Sealevel`, and `ProtocolType.Sealevel` was added to the CLI's supported protocols list, enabling `hyperlane warp deploy` for Solana chains.
 
 - Updated dependencies [4a816e3]
 - Updated dependencies [22cb5cb]
-  - @hyperlane-xyz/tron-sdk@22.1.0
-  - @hyperlane-xyz/sealevel-sdk@27.0.0
-  - @hyperlane-xyz/aleo-sdk@27.0.0
-  - @hyperlane-xyz/cosmos-sdk@27.0.0
-  - @hyperlane-xyz/radix-sdk@27.0.0
-  - @hyperlane-xyz/utils@27.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.1
+  - @humanode-hyperlane/tron-sdk@22.1.0
+  - @humanode-hyperlane/sealevel-sdk@27.0.0
+  - @humanode-hyperlane/aleo-sdk@27.0.0
+  - @humanode-hyperlane/cosmos-sdk@27.0.0
+  - @humanode-hyperlane/radix-sdk@27.0.0
+  - @humanode-hyperlane/utils@27.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.1
 
 ## 3.0.0
 
@@ -150,12 +150,12 @@
 
 - Updated dependencies [06aacac]
 - Updated dependencies [1d116d8]
-  - @hyperlane-xyz/utils@26.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.0
-  - @hyperlane-xyz/tron-sdk@22.0.0
-  - @hyperlane-xyz/aleo-sdk@26.0.0
-  - @hyperlane-xyz/cosmos-sdk@26.0.0
-  - @hyperlane-xyz/radix-sdk@26.0.0
+  - @humanode-hyperlane/utils@26.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.0
+  - @humanode-hyperlane/tron-sdk@22.0.0
+  - @humanode-hyperlane/aleo-sdk@26.0.0
+  - @humanode-hyperlane/cosmos-sdk@26.0.0
+  - @humanode-hyperlane/radix-sdk@26.0.0
 
 ## 2.0.0
 
@@ -168,8 +168,8 @@
   - AltVMWarpRouteReader (use createWarpTokenReader instead)
   - AltVMDeployer (use createWarpTokenWriter per-chain instead)
   - warpModuleProvider (no longer needed)
-  - ismConfigToArtifact (moved to @hyperlane-xyz/provider-sdk/ism)
-  - shouldDeployNewIsm (moved to @hyperlane-xyz/provider-sdk/ism)
+  - ismConfigToArtifact (moved to @humanode-hyperlane/provider-sdk/ism)
+  - shouldDeployNewIsm (moved to @humanode-hyperlane/provider-sdk/ism)
 
   provider-sdk breaking change: warpConfigToArtifact no longer accepts pre-built ismArtifact/hookArtifact parameters; ISM and hook conversion is now handled internally from the config.
 
@@ -193,23 +193,23 @@
 
 - Updated dependencies [e197331]
 - Updated dependencies [840fb33]
-  - @hyperlane-xyz/provider-sdk@2.0.0
-  - @hyperlane-xyz/aleo-sdk@25.5.0
-  - @hyperlane-xyz/cosmos-sdk@25.5.0
-  - @hyperlane-xyz/radix-sdk@25.5.0
-  - @hyperlane-xyz/tron-sdk@21.1.5
-  - @hyperlane-xyz/utils@25.5.0
+  - @humanode-hyperlane/provider-sdk@2.0.0
+  - @humanode-hyperlane/aleo-sdk@25.5.0
+  - @humanode-hyperlane/cosmos-sdk@25.5.0
+  - @humanode-hyperlane/radix-sdk@25.5.0
+  - @humanode-hyperlane/tron-sdk@21.1.5
+  - @humanode-hyperlane/utils@25.5.0
 
 ## 1.4.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/aleo-sdk@25.4.1
-- @hyperlane-xyz/cosmos-sdk@25.4.1
-- @hyperlane-xyz/radix-sdk@25.4.1
-- @hyperlane-xyz/utils@25.4.1
-- @hyperlane-xyz/provider-sdk@1.4.1
-- @hyperlane-xyz/tron-sdk@21.1.4
+- @humanode-hyperlane/aleo-sdk@25.4.1
+- @humanode-hyperlane/cosmos-sdk@25.4.1
+- @humanode-hyperlane/radix-sdk@25.4.1
+- @humanode-hyperlane/utils@25.4.1
+- @humanode-hyperlane/provider-sdk@1.4.1
+- @humanode-hyperlane/tron-sdk@21.1.4
 
 ## 1.4.0
 
@@ -218,47 +218,47 @@
 - Updated dependencies [1f021bf]
 - Updated dependencies [1f021bf]
 - Updated dependencies [1f021bf]
-  - @hyperlane-xyz/aleo-sdk@25.4.0
-  - @hyperlane-xyz/utils@25.4.0
-  - @hyperlane-xyz/cosmos-sdk@25.4.0
-  - @hyperlane-xyz/provider-sdk@1.4.0
-  - @hyperlane-xyz/radix-sdk@25.4.0
-  - @hyperlane-xyz/tron-sdk@21.1.3
+  - @humanode-hyperlane/aleo-sdk@25.4.0
+  - @humanode-hyperlane/utils@25.4.0
+  - @humanode-hyperlane/cosmos-sdk@25.4.0
+  - @humanode-hyperlane/provider-sdk@1.4.0
+  - @humanode-hyperlane/radix-sdk@25.4.0
+  - @humanode-hyperlane/tron-sdk@21.1.3
 
 ## 1.3.6
 
 ### Patch Changes
 
-- @hyperlane-xyz/tron-sdk@21.1.2
-- @hyperlane-xyz/aleo-sdk@25.3.2
-- @hyperlane-xyz/cosmos-sdk@25.3.2
-- @hyperlane-xyz/radix-sdk@25.3.2
-- @hyperlane-xyz/utils@25.3.2
-- @hyperlane-xyz/provider-sdk@1.3.6
+- @humanode-hyperlane/tron-sdk@21.1.2
+- @humanode-hyperlane/aleo-sdk@25.3.2
+- @humanode-hyperlane/cosmos-sdk@25.3.2
+- @humanode-hyperlane/radix-sdk@25.3.2
+- @humanode-hyperlane/utils@25.3.2
+- @humanode-hyperlane/provider-sdk@1.3.6
 
 ## 1.3.5
 
 ### Patch Changes
 
 - Updated dependencies [7636bb4]
-  - @hyperlane-xyz/tron-sdk@21.1.1
-  - @hyperlane-xyz/aleo-sdk@25.3.1
-  - @hyperlane-xyz/cosmos-sdk@25.3.1
-  - @hyperlane-xyz/radix-sdk@25.3.1
-  - @hyperlane-xyz/utils@25.3.1
-  - @hyperlane-xyz/provider-sdk@1.3.5
+  - @humanode-hyperlane/tron-sdk@21.1.1
+  - @humanode-hyperlane/aleo-sdk@25.3.1
+  - @humanode-hyperlane/cosmos-sdk@25.3.1
+  - @humanode-hyperlane/radix-sdk@25.3.1
+  - @humanode-hyperlane/utils@25.3.1
+  - @humanode-hyperlane/provider-sdk@1.3.5
 
 ## 1.3.4
 
 ### Patch Changes
 
 - Updated dependencies [aea767c]
-  - @hyperlane-xyz/tron-sdk@21.1.0
-  - @hyperlane-xyz/aleo-sdk@25.3.0
-  - @hyperlane-xyz/cosmos-sdk@25.3.0
-  - @hyperlane-xyz/radix-sdk@25.3.0
-  - @hyperlane-xyz/utils@25.3.0
-  - @hyperlane-xyz/provider-sdk@1.3.4
+  - @humanode-hyperlane/tron-sdk@21.1.0
+  - @humanode-hyperlane/aleo-sdk@25.3.0
+  - @humanode-hyperlane/cosmos-sdk@25.3.0
+  - @humanode-hyperlane/radix-sdk@25.3.0
+  - @humanode-hyperlane/utils@25.3.0
+  - @humanode-hyperlane/provider-sdk@1.3.4
 
 ## 1.3.3
 
@@ -267,11 +267,11 @@
 - Updated dependencies [360db52]
 - Updated dependencies [6091a31]
 - Updated dependencies [ccd638d]
-  - @hyperlane-xyz/utils@25.2.0
-  - @hyperlane-xyz/aleo-sdk@25.2.0
-  - @hyperlane-xyz/cosmos-sdk@25.2.0
-  - @hyperlane-xyz/provider-sdk@1.3.3
-  - @hyperlane-xyz/radix-sdk@25.2.0
+  - @humanode-hyperlane/utils@25.2.0
+  - @humanode-hyperlane/aleo-sdk@25.2.0
+  - @humanode-hyperlane/cosmos-sdk@25.2.0
+  - @humanode-hyperlane/provider-sdk@1.3.3
+  - @humanode-hyperlane/radix-sdk@25.2.0
 
 ## 1.3.2
 
@@ -279,22 +279,22 @@
 
 - Updated dependencies [b930534]
 - Updated dependencies [cbd400c]
-  - @hyperlane-xyz/utils@25.1.0
-  - @hyperlane-xyz/radix-sdk@25.1.0
-  - @hyperlane-xyz/aleo-sdk@25.1.0
-  - @hyperlane-xyz/cosmos-sdk@25.1.0
-  - @hyperlane-xyz/provider-sdk@1.3.2
+  - @humanode-hyperlane/utils@25.1.0
+  - @humanode-hyperlane/radix-sdk@25.1.0
+  - @humanode-hyperlane/aleo-sdk@25.1.0
+  - @humanode-hyperlane/cosmos-sdk@25.1.0
+  - @humanode-hyperlane/provider-sdk@1.3.2
 
 ## 1.3.1
 
 ### Patch Changes
 
 - Updated dependencies [52ce778]
-  - @hyperlane-xyz/utils@25.0.0
-  - @hyperlane-xyz/cosmos-sdk@25.0.0
-  - @hyperlane-xyz/aleo-sdk@25.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.1
-  - @hyperlane-xyz/radix-sdk@25.0.0
+  - @humanode-hyperlane/utils@25.0.0
+  - @humanode-hyperlane/cosmos-sdk@25.0.0
+  - @humanode-hyperlane/aleo-sdk@25.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.1
+  - @humanode-hyperlane/radix-sdk@25.0.0
 
 ## 1.3.0
 
@@ -306,11 +306,11 @@
 - Updated dependencies [b1b941e]
 - Updated dependencies [9dc71fe]
 - Updated dependencies [bde05e9]
-  - @hyperlane-xyz/utils@24.0.0
-  - @hyperlane-xyz/aleo-sdk@24.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.0
-  - @hyperlane-xyz/cosmos-sdk@24.0.0
-  - @hyperlane-xyz/radix-sdk@24.0.0
+  - @humanode-hyperlane/utils@24.0.0
+  - @humanode-hyperlane/aleo-sdk@24.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.0
+  - @humanode-hyperlane/cosmos-sdk@24.0.0
+  - @humanode-hyperlane/radix-sdk@24.0.0
 
 ## 1.2.1
 
@@ -322,11 +322,11 @@
 - Updated dependencies [52fd0f8]
 - Updated dependencies [a10cfc8]
 - Updated dependencies [80f3635]
-  - @hyperlane-xyz/aleo-sdk@23.0.0
-  - @hyperlane-xyz/provider-sdk@1.2.1
-  - @hyperlane-xyz/utils@23.0.0
-  - @hyperlane-xyz/cosmos-sdk@23.0.0
-  - @hyperlane-xyz/radix-sdk@23.0.0
+  - @humanode-hyperlane/aleo-sdk@23.0.0
+  - @humanode-hyperlane/provider-sdk@1.2.1
+  - @humanode-hyperlane/utils@23.0.0
+  - @humanode-hyperlane/cosmos-sdk@23.0.0
+  - @humanode-hyperlane/radix-sdk@23.0.0
 
 ## 1.2.0
 
@@ -347,11 +347,11 @@
 - Updated dependencies [3aec1c4]
 - Updated dependencies [b892d63]
 - Updated dependencies [44fbfd6]
-  - @hyperlane-xyz/aleo-sdk@22.0.0
-  - @hyperlane-xyz/cosmos-sdk@22.0.0
-  - @hyperlane-xyz/utils@22.0.0
-  - @hyperlane-xyz/provider-sdk@1.2.0
-  - @hyperlane-xyz/radix-sdk@22.0.0
+  - @humanode-hyperlane/aleo-sdk@22.0.0
+  - @humanode-hyperlane/cosmos-sdk@22.0.0
+  - @humanode-hyperlane/utils@22.0.0
+  - @humanode-hyperlane/provider-sdk@1.2.0
+  - @humanode-hyperlane/radix-sdk@22.0.0
 
 ## 1.1.0
 
@@ -361,11 +361,11 @@
 - Updated dependencies [57a2053]
 - Updated dependencies [57a2053]
 - Updated dependencies [9c48ac8]
-  - @hyperlane-xyz/cosmos-sdk@21.1.0
-  - @hyperlane-xyz/provider-sdk@1.1.0
-  - @hyperlane-xyz/aleo-sdk@21.1.0
-  - @hyperlane-xyz/radix-sdk@21.1.0
-  - @hyperlane-xyz/utils@21.1.0
+  - @humanode-hyperlane/cosmos-sdk@21.1.0
+  - @humanode-hyperlane/provider-sdk@1.1.0
+  - @humanode-hyperlane/aleo-sdk@21.1.0
+  - @humanode-hyperlane/radix-sdk@21.1.0
+  - @humanode-hyperlane/utils@21.1.0
 
 ## 1.0.0
 
@@ -385,11 +385,11 @@
 - Updated dependencies [239e1a1]
 - Updated dependencies [ed10fc1]
 - Updated dependencies [0bce4e7]
-  - @hyperlane-xyz/aleo-sdk@21.0.0
-  - @hyperlane-xyz/provider-sdk@1.0.0
-  - @hyperlane-xyz/radix-sdk@21.0.0
-  - @hyperlane-xyz/cosmos-sdk@21.0.0
-  - @hyperlane-xyz/utils@21.0.0
+  - @humanode-hyperlane/aleo-sdk@21.0.0
+  - @humanode-hyperlane/provider-sdk@1.0.0
+  - @humanode-hyperlane/radix-sdk@21.0.0
+  - @humanode-hyperlane/cosmos-sdk@21.0.0
+  - @humanode-hyperlane/utils@21.0.0
 
 ## 0.7.0
 
@@ -406,10 +406,10 @@
 ### Patch Changes
 
 - Updated dependencies [11fa887]
-  - @hyperlane-xyz/utils@20.1.0
-  - @hyperlane-xyz/cosmos-sdk@20.1.0
-  - @hyperlane-xyz/radix-sdk@20.1.0
-  - @hyperlane-xyz/provider-sdk@0.7.0
+  - @humanode-hyperlane/utils@20.1.0
+  - @humanode-hyperlane/cosmos-sdk@20.1.0
+  - @humanode-hyperlane/radix-sdk@20.1.0
+  - @humanode-hyperlane/provider-sdk@0.7.0
 
 ## 0.6.0
 
@@ -417,10 +417,10 @@
 
 - Updated dependencies [b3ebc08]
 - Updated dependencies [aeac943]
-  - @hyperlane-xyz/utils@20.0.0
-  - @hyperlane-xyz/provider-sdk@0.6.0
-  - @hyperlane-xyz/cosmos-sdk@20.0.0
-  - @hyperlane-xyz/radix-sdk@20.0.0
+  - @humanode-hyperlane/utils@20.0.0
+  - @humanode-hyperlane/provider-sdk@0.6.0
+  - @humanode-hyperlane/cosmos-sdk@20.0.0
+  - @humanode-hyperlane/radix-sdk@20.0.0
 
 ## 0.5.0
 
@@ -431,10 +431,10 @@
 ### Patch Changes
 
 - Updated dependencies [ae8ef4389]
-  - @hyperlane-xyz/radix-sdk@19.13.0
-  - @hyperlane-xyz/cosmos-sdk@19.13.0
-  - @hyperlane-xyz/utils@19.13.0
-  - @hyperlane-xyz/provider-sdk@0.5.0
+  - @humanode-hyperlane/radix-sdk@19.13.0
+  - @humanode-hyperlane/cosmos-sdk@19.13.0
+  - @humanode-hyperlane/utils@19.13.0
+  - @humanode-hyperlane/provider-sdk@0.5.0
 
 ## 0.4.0
 
@@ -445,10 +445,10 @@
 - Updated dependencies [af2cd1729]
 - Updated dependencies [43b3756d9]
 - Updated dependencies [e37100e2e]
-  - @hyperlane-xyz/provider-sdk@0.4.0
-  - @hyperlane-xyz/cosmos-sdk@19.12.0
-  - @hyperlane-xyz/radix-sdk@19.12.0
-  - @hyperlane-xyz/utils@19.12.0
+  - @humanode-hyperlane/provider-sdk@0.4.0
+  - @humanode-hyperlane/cosmos-sdk@19.12.0
+  - @humanode-hyperlane/radix-sdk@19.12.0
+  - @humanode-hyperlane/utils@19.12.0
 
 ## 0.3.0
 
@@ -456,10 +456,10 @@
 
 - Updated dependencies [dd6260eea]
 - Updated dependencies [dd6260eea]
-  - @hyperlane-xyz/provider-sdk@0.3.0
-  - @hyperlane-xyz/radix-sdk@19.11.0
-  - @hyperlane-xyz/cosmos-sdk@19.11.0
-  - @hyperlane-xyz/utils@19.11.0
+  - @humanode-hyperlane/provider-sdk@0.3.0
+  - @humanode-hyperlane/radix-sdk@19.11.0
+  - @humanode-hyperlane/cosmos-sdk@19.11.0
+  - @humanode-hyperlane/utils@19.11.0
 
 ## 0.2.0
 
@@ -481,7 +481,7 @@
 - Updated dependencies [a0ba5e2fb]
 - Updated dependencies [66bed7126]
 - Updated dependencies [f604423b9]
-  - @hyperlane-xyz/utils@19.10.0
-  - @hyperlane-xyz/cosmos-sdk@19.10.0
-  - @hyperlane-xyz/radix-sdk@19.10.0
-  - @hyperlane-xyz/provider-sdk@0.2.0
+  - @humanode-hyperlane/utils@19.10.0
+  - @humanode-hyperlane/cosmos-sdk@19.10.0
+  - @humanode-hyperlane/radix-sdk@19.10.0
+  - @humanode-hyperlane/provider-sdk@0.2.0

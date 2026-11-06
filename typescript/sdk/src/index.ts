@@ -222,7 +222,7 @@ export {
 export { isHookCompatible } from './hook/utils.js';
 export { EvmIsmReader } from './ism/EvmIsmReader.js';
 export { HyperlaneIsmFactory } from './ism/HyperlaneIsmFactory.js';
-// Note: MetadataBuilder types are now exported from @hyperlane-xyz/relayer
+// Note: MetadataBuilder types are now exported from @humanode-hyperlane/relayer
 export {
   buildAggregationIsmConfigs,
   buildMultisigIsmConfigs,

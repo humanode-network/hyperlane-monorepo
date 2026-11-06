@@ -1,9 +1,9 @@
 import type { Logger } from 'pino';
 import { v4 as uuidv4 } from 'uuid';
 
-import type { MultiProtocolCore } from '@hyperlane-xyz/sdk';
-import type { Address, Domain } from '@hyperlane-xyz/utils';
-import { assert, parseWarpRouteMessage } from '@hyperlane-xyz/utils';
+import type { MultiProtocolCore } from '@humanode-hyperlane/sdk';
+import type { Address, Domain } from '@humanode-hyperlane/utils';
+import { assert, parseWarpRouteMessage } from '@humanode-hyperlane/utils';
 
 import { DEFAULT_MOVEMENT_STALENESS_MS } from '../config/types.js';
 import type { ExternalBridgeRegistry } from '../interfaces/IExternalBridge.js';

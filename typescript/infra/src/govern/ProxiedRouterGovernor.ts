@@ -11,8 +11,8 @@ import {
   RouterViolation,
   RouterViolationType,
   ViolationType,
-} from '@hyperlane-xyz/sdk';
-import { stringifyObject } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { stringifyObject } from '@humanode-hyperlane/utils';
 
 import { HyperlaneAppGovernor } from './HyperlaneAppGovernor.js';
 

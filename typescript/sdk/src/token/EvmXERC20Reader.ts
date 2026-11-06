@@ -1,6 +1,10 @@
 import { parseEventLogs } from 'viem';
 
-import { Address, normalizeAddress, rootLogger } from '@hyperlane-xyz/utils';
+import {
+  Address,
+  normalizeAddress,
+  rootLogger,
+} from '@humanode-hyperlane/utils';
 
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

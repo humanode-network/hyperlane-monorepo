@@ -1,4 +1,4 @@
-import { AccountConfig, InterchainAccount } from '@hyperlane-xyz/sdk';
+import { AccountConfig, InterchainAccount } from '@humanode-hyperlane/sdk';
 import {
   Address,
   LogFormat,
@@ -8,7 +8,7 @@ import {
   isZeroishAddress,
   mapAllSettled,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   getGovernanceIcas,

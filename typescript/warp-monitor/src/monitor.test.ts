@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import type { IRegistry } from '@hyperlane-xyz/registry';
-import type { Token, WarpCore } from '@hyperlane-xyz/sdk';
+import type { IRegistry } from '@humanode-hyperlane/registry';
+import type { Token, WarpCore } from '@humanode-hyperlane/sdk';
 import type {
   PendingDestinationTransfer,
   RouterNodeMetadata,

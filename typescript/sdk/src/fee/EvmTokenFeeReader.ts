@@ -4,8 +4,8 @@ import {
   BaseFee__factory,
   LinearFee__factory,
   RoutingFee__factory,
-} from '@hyperlane-xyz/core';
-import { Address, WithAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { Address, WithAddress } from '@humanode-hyperlane/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { ChainName, ChainNameOrId } from '../types.js';

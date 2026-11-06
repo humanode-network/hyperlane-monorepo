@@ -1,12 +1,12 @@
 import { Logger } from 'pino';
 
-import { IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@humanode-hyperlane/registry';
 import {
   type MultiProtocolProvider,
   type MultiProvider,
   Token,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, toWei } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert, toWei } from '@humanode-hyperlane/utils';
 
 import { RebalancerConfig } from '../config/RebalancerConfig.js';
 import {

@@ -6,7 +6,7 @@ import {
   TokenType,
   buildAggregationIsmConfigs,
   defaultMultisigConfigs,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 

@@ -9,19 +9,19 @@ import {
   shortString,
 } from 'starknet';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   ContractType,
   getCompiledContract,
-} from '@hyperlane-xyz/starknet-core';
+} from '@humanode-hyperlane/starknet-core';
 import {
   ZERO_ADDRESS_HEX_32,
   addressToBytes32,
   assert,
   ensure0x,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   StarknetContractName,

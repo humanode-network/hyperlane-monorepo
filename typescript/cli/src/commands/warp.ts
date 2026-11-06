@@ -2,14 +2,17 @@ import util from 'util';
 import { stringify as yamlStringify } from 'yaml';
 import { type CommandModule } from 'yargs';
 
-import { RebalancerConfig, RebalancerService } from '@hyperlane-xyz/rebalancer';
+import {
+  RebalancerConfig,
+  RebalancerService,
+} from '@humanode-hyperlane/rebalancer';
 import {
   type RawForkedChainConfigByChain,
   RawForkedChainConfigByChainSchema,
   expandVirtualWarpDeployConfig,
   expandWarpDeployConfig,
   getRouterAddressesFromWarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   assert,
   difference,
@@ -17,7 +20,7 @@ import {
   isEVMLike,
   objFilter,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { runWarpIcaOwnerCheck, runWarpRouteCheck } from '../check/warp.js';
 import { createWarpRouteDeployConfig } from '../config/warp.js';

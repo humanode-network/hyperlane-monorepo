@@ -15,8 +15,8 @@ import {
   RoutingIsmConfig,
   defaultMultisigConfigs,
   multisigConfigToIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { Address, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, assert } from '@humanode-hyperlane/utils';
 
 import { getOverheadWithOverrides } from '../../../src/config/gas-oracle.js';
 

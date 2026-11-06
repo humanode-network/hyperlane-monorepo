@@ -5,7 +5,7 @@ import { Router } from 'express';
 import { Logger } from 'pino';
 import { z } from 'zod';
 
-import { OpL2toL1Service__factory } from '@hyperlane-xyz/core';
+import { OpL2toL1Service__factory } from '@humanode-hyperlane/core';
 
 import { createAbiHandler } from '../utils/abiHandler.js';
 

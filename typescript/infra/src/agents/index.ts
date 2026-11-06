@@ -6,8 +6,8 @@ import {
   ChainName,
   RelayerConfig,
   RpcConsensusType,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, objOmitKeys } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, objOmitKeys } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getChain } from '../../config/registry.js';

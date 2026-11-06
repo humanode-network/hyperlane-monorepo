@@ -11,8 +11,8 @@ import {
   XERC20TokenExtraBridgesLimits,
   XERC20Type,
   XERC20VSLimitConfig,
-} from '@hyperlane-xyz/sdk';
-import { Address, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, assert } from '@humanode-hyperlane/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { awTimelocks } from '../../governance/timelock/aw.js';

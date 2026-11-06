@@ -1,6 +1,6 @@
 import type { StartedTestContainer } from 'testcontainers';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { runAleoNode } from '../testing/index.js';
 

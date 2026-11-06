@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/helloworld",
+  "name": "@humanode-hyperlane/helloworld",
   "version": "30.0.0",
   "description": "A basic skeleton of an Hyperlane app",
   "keywords": [
@@ -10,7 +10,7 @@
   ],
   "homepage": "https://www.hyperlane.xyz",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "/dist",
     "/contracts"
@@ -29,10 +29,10 @@
     "test:ci": "pnpm test"
   },
   "dependencies": {
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@humanode-hyperlane/core": "workspace:*",
+    "@humanode-hyperlane/registry": "catalog:",
+    "@humanode-hyperlane/sdk": "workspace:*",
+    "@humanode-hyperlane/utils": "workspace:*",
     "@openzeppelin/contracts": "catalog:",
     "@openzeppelin/contracts-upgradeable": "catalog:",
     "@solana/web3.js": "catalog:",

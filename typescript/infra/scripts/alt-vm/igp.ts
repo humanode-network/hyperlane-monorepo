@@ -7,15 +7,18 @@ import {
   createHookReader,
   createHookWriter,
   loadProtocolProviders,
-} from '@hyperlane-xyz/deploy-sdk';
-import { getProtocolProvider, hasProtocol } from '@hyperlane-xyz/provider-sdk';
-import { HookConfig as ProviderHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
+} from '@humanode-hyperlane/deploy-sdk';
+import {
+  getProtocolProvider,
+  hasProtocol,
+} from '@humanode-hyperlane/provider-sdk';
+import { HookConfig as ProviderHookConfig } from '@humanode-hyperlane/provider-sdk/hook';
 import {
   IgpConfig,
   MultiProvider,
   getProtocolExchangeRateScale,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, rootLogger } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getChainAddresses } from '../../config/registry.js';

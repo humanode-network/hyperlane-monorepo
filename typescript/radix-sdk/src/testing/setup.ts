@@ -1,5 +1,5 @@
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert, retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { TestChainMetadata } from '@humanode-hyperlane/provider-sdk/chain';
+import { assert, retryAsync, rootLogger } from '@humanode-hyperlane/utils';
 
 import { RadixSigner } from '../clients/signer.js';
 

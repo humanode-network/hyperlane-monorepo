@@ -6,8 +6,8 @@ import {
   AgentSignerKeyType,
   ChainName,
   RpcConsensusType,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, objMap } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../../config/contexts.js';
 import { getChain } from '../../../config/registry.js';

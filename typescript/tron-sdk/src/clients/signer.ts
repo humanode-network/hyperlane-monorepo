@@ -1,9 +1,9 @@
 import { TronWeb } from 'tronweb';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 
-import HypNativeAbi from '@hyperlane-xyz/core/tron/abi/contracts/token/HypNative.sol/HypNative.json' with { type: 'json' };
-import TransparentUpgradeableProxyAbi from '@hyperlane-xyz/core/tron/abi/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol/TransparentUpgradeableProxy.json' with { type: 'json' };
+import HypNativeAbi from '@humanode-hyperlane/core/tron/abi/contracts/token/HypNative.sol/HypNative.json' with { type: 'json' };
+import TransparentUpgradeableProxyAbi from '@humanode-hyperlane/core/tron/abi/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol/TransparentUpgradeableProxy.json' with { type: 'json' };
 import {
   getCreateOracleTx,
   getInitIgpTx,
@@ -22,7 +22,7 @@ import {
 import { TronReceipt, TronTransaction } from '../utils/types.js';
 
 import { TronProvider } from './provider.js';
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 export class TronSigner
   extends TronProvider

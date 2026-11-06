@@ -4,9 +4,9 @@ import { Wallet as ZKSyncWallet } from 'zksync-ethers';
 import {
   ChainTechnicalStack,
   type MultiProtocolProvider,
-} from '@hyperlane-xyz/sdk';
-import { TronWallet } from '@hyperlane-xyz/tron-sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { TronWallet } from '@humanode-hyperlane/tron-sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import {
   BaseMultiProtocolSigner,

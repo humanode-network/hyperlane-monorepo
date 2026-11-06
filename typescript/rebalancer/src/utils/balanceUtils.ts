@@ -1,6 +1,6 @@
 import { type Logger } from 'pino';
 
-import { type ChainName } from '@hyperlane-xyz/sdk';
+import { type ChainName } from '@humanode-hyperlane/sdk';
 
 import { type MonitorEvent } from '../interfaces/IMonitor.js';
 import { type RawBalances } from '../interfaces/IStrategy.js';

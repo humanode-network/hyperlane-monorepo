@@ -1,11 +1,11 @@
-import { chainAddresses } from '@hyperlane-xyz/registry';
+import { chainAddresses } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   HyperlaneCore,
   MultiProvider,
   attachContractsMap,
-} from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import { HelloWorldApp } from '../app/app.js';
 import { helloWorldFactories } from '../app/contracts.js';

@@ -2,14 +2,14 @@ import { expect } from 'chai';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { type IRegistry, RegistryType } from '@hyperlane-xyz/registry';
+import { type IRegistry, RegistryType } from '@humanode-hyperlane/registry';
 import {
   MultiProtocolProvider,
   MultiProvider,
   TokenStandard,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import type { RebalancerConfig } from '../config/RebalancerConfig.js';
 import {

@@ -1,21 +1,21 @@
 import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 import {
   type ArtifactDeployed,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedMailboxAddress,
   type MailboxOnChain,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
+} from '@humanode-hyperlane/provider-sdk/mailbox';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { eqAddressAleo } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/module';
+import { eqAddressAleo } from '@humanode-hyperlane/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { AleoSigner } from '../clients/signer.js';

@@ -1,8 +1,8 @@
 import { Wallet, providers } from 'ethers';
 import fs from 'fs';
 
-import { ERC20Test__factory } from '@hyperlane-xyz/core';
-import { TokenType } from '@hyperlane-xyz/sdk';
+import { ERC20Test__factory } from '@humanode-hyperlane/core';
+import { TokenType } from '@humanode-hyperlane/sdk';
 
 async function deployERC20() {
   const [rpcUrl, chain1, chain2, privateKey, outPath] = process.argv.slice(2);

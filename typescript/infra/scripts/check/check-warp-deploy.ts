@@ -1,9 +1,9 @@
 import chalk from 'chalk';
 import { Gauge, Registry } from 'prom-client';
 
-import { submitMetrics } from '@hyperlane-xyz/metrics';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { ChainName } from '@hyperlane-xyz/sdk';
+import { submitMetrics } from '@humanode-hyperlane/metrics';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import { ChainName } from '@humanode-hyperlane/sdk';
 
 import { WarpRouteIds } from '../../config/environments/mainnet3/warp/warpIds.js';
 import { DEFAULT_REGISTRY_URI } from '../../config/registry.js';

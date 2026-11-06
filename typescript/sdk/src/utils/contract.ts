@@ -1,7 +1,7 @@
 import { compareVersions } from 'compare-versions';
 import { providers } from 'ethers';
 
-import { Address, chunk, strip0x } from '@hyperlane-xyz/utils';
+import { Address, chunk, strip0x } from '@humanode-hyperlane/utils';
 
 export function isValidContractVersion(
   currentVersion: string,

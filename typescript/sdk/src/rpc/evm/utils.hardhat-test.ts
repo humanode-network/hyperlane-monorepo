@@ -5,8 +5,8 @@ import chaiAsPromised from 'chai-as-promised';
 import { ethers } from 'ethers';
 import hre from 'hardhat';
 
-import { ERC20Test, ERC20Test__factory } from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+import { ERC20Test, ERC20Test__factory } from '@humanode-hyperlane/core';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../../consts/testChains.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

@@ -1,4 +1,4 @@
-# @hyperlane-xyz/cosmos-types
+# @humanode-hyperlane/cosmos-types
 
 ## 30.0.0
 

@@ -12,8 +12,8 @@ import {
   type MultiProvider,
   type Token,
   type WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { eqAddress, isNullish, mapAllSettled } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { eqAddress, isNullish, mapAllSettled } from '@humanode-hyperlane/utils';
 
 import type {
   IMovableCollateralRebalancer,

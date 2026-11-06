@@ -10,8 +10,8 @@ import {
   Ownable__factory,
   ProxyAdmin__factory,
   TokenRouter,
-} from '@hyperlane-xyz/core';
-import { LazyAsync, eqAddress, objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { LazyAsync, eqAddress, objMap } from '@humanode-hyperlane/utils';
 
 import { filterOwnableContracts } from '../contracts/contracts.js';
 import { isProxy, proxyAdmin } from '../deploy/proxy.js';

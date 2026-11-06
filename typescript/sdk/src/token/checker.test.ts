@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import type { TokenRouter } from '@hyperlane-xyz/core';
+import type { TokenRouter } from '@humanode-hyperlane/core';
 
 import { TestChainName, testChainMetadata } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

@@ -1,7 +1,7 @@
 import { constants } from 'ethers';
 import { zeroAddress } from 'viem';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 import {
   Address,
   TransformObjectTransformer,
@@ -18,7 +18,7 @@ import {
   promiseObjAll,
   sortArraysInObject,
   transformObj,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { isProxy } from '../deploy/proxy.js';
 import {

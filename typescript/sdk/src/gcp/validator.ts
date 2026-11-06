@@ -7,7 +7,7 @@ import {
   ValidatorConfig,
   ValidatorMetadata,
   isS3CheckpointWithId,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { GcpStorageWrapper, StorageConfig } from './storage.js';
 

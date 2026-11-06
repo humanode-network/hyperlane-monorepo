@@ -11,8 +11,8 @@ import {
 import {
   ContractType,
   getCompiledContract,
-} from '@hyperlane-xyz/starknet-core';
-import { Address, eqAddressStarknet } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/starknet-core';
+import { Address, eqAddressStarknet } from '@humanode-hyperlane/utils';
 
 import { DispatchedMessage } from '../core/types.js';
 import { ChainMap, ChainName } from '../types.js';

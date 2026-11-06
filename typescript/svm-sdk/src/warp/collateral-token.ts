@@ -6,18 +6,18 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   TokenType,
   type DeployedWarpAddress,
   type RawCollateralWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   ZERO_ADDRESS_HEX_32,
   assert,
   isNullish,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { fetchMintMetadata, getMintDecimals } from '../accounts/mint.js';
 import { decodeCollateralPlugin } from '../accounts/token.js';

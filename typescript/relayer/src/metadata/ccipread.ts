@@ -1,13 +1,13 @@
 import { utils } from 'ethers';
 
-import { AbstractCcipReadIsm__factory } from '@hyperlane-xyz/core';
+import { AbstractCcipReadIsm__factory } from '@humanode-hyperlane/core';
 import {
   HyperlaneCore,
   IsmType,
   OffchainLookupIsmConfig,
   offchainLookupRequestMessageHash,
-} from '@hyperlane-xyz/sdk';
-import { WithAddress, ensure0x } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { WithAddress, ensure0x } from '@humanode-hyperlane/utils';
 
 import type {
   CcipReadMetadataBuildResult,

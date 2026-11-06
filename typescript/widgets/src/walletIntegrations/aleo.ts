@@ -3,7 +3,7 @@ import { ShieldWalletAdapter } from '@provablehq/aleo-wallet-adaptor-shield';
 import { WalletDecryptPermission } from '@provablehq/aleo-wallet-standard';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import { AleoTransaction } from '@hyperlane-xyz/aleo-sdk';
+import { AleoTransaction } from '@humanode-hyperlane/aleo-sdk';
 import {
   ChainName,
   IToken,
@@ -11,8 +11,13 @@ import {
   ProviderType,
   TypedTransactionReceipt,
   WarpTypedTransaction,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, retryAsync, sleep } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  ProtocolType,
+  assert,
+  retryAsync,
+  sleep,
+} from '@humanode-hyperlane/utils';
 
 import { useAleoPopup } from './aleo/AleoProviders.js';
 import { getAdapter } from './aleo/utils.js';

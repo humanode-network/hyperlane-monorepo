@@ -1,6 +1,6 @@
 import { TronWeb } from 'tronweb';
 
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { assert, strip0x } from '@humanode-hyperlane/utils';
 
 import { IABI } from './types.js';
 import { BigNumber, providers } from 'ethers';

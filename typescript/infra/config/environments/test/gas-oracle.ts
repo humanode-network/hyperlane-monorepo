@@ -1,4 +1,4 @@
-import { ChainMap, GasPriceConfig } from '@hyperlane-xyz/sdk';
+import { ChainMap, GasPriceConfig } from '@humanode-hyperlane/sdk';
 
 import {
   AllStorageGasOracleConfigs,

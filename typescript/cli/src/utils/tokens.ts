@@ -1,7 +1,7 @@
 import select from '@inquirer/select';
 
-import { type IRegistry } from '@hyperlane-xyz/registry';
-import { type Token, type WarpCoreConfig } from '@hyperlane-xyz/sdk';
+import { type IRegistry } from '@humanode-hyperlane/registry';
+import { type Token, type WarpCoreConfig } from '@humanode-hyperlane/sdk';
 
 import { logGreen, logRed } from '../logger.js';
 

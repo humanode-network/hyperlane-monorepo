@@ -1,6 +1,6 @@
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
-import { type TokenType } from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, isNullish, retryAsync } from '@hyperlane-xyz/utils';
+import { type AltVM } from '@humanode-hyperlane/provider-sdk';
+import { type TokenType } from '@humanode-hyperlane/provider-sdk/warp';
+import { assert, isNullish, retryAsync } from '@humanode-hyperlane/utils';
 
 import { type AleoProgram } from '../artifacts.js';
 import {
