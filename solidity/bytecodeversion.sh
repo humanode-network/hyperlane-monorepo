@@ -14,8 +14,22 @@ sedi() {
   fi
 }
 
+# The contracts carry upstream's version. Our package versions add 1000 to the
+# first non-zero component of upstream's (scripts/humanode-version.sh), which
+# taken as is would change the bytecode of every contract that inherits
+# PackageVersioned; the 1000 is subtracted again here.
+version=$(echo "$npm_package_version" | awk -F. -v OFS=. '{
+  for (i = 1; i <= 3; i++) {
+    if ($i > 0) {
+      if ($i >= 1000) $i -= 1000
+      break
+    }
+  }
+  print
+}')
+
 # Update Solidity contract
-sedi "s|string public constant PACKAGE_VERSION = \".*\";|string public constant PACKAGE_VERSION = \"$npm_package_version\";|" contracts/PackageVersioned.sol
+sedi "s|string public constant PACKAGE_VERSION = \".*\";|string public constant PACKAGE_VERSION = \"$version\";|" contracts/PackageVersioned.sol
 
 # Update TypeScript file
-sedi "s|export const CONTRACTS_PACKAGE_VERSION = '.*';|export const CONTRACTS_PACKAGE_VERSION = '$npm_package_version';|" core-utils/index.ts
+sedi "s|export const CONTRACTS_PACKAGE_VERSION = '.*';|export const CONTRACTS_PACKAGE_VERSION = '$version';|" core-utils/index.ts
