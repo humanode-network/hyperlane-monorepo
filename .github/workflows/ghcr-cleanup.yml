@@ -18,15 +18,16 @@ jobs:
     permissions:
       packages: write
     steps:
+      # Cleans up the images this repository's workflows publish, under the
+      # account that owns the repository.
       - name: Delete old untagged images
         uses: snok/container-retention-policy@v3
         with:
-          account: hyperlane-xyz
+          account: ${{ github.repository_owner }}
           token: ${{ secrets.GITHUB_TOKEN }}
           image-names: >-
             hyperlane-agent
             hyperlane-monorepo
-            hyperlane-node-services
           tag-selection: untagged
           cut-off: 1w
           dry-run: ${{ github.event.inputs.dry-run || 'false' }}
@@ -34,12 +35,11 @@ jobs:
       - name: Delete old PR images
         uses: snok/container-retention-policy@v3
         with:
-          account: hyperlane-xyz
+          account: ${{ github.repository_owner }}
           token: ${{ secrets.GITHUB_TOKEN }}
           image-names: >-
             hyperlane-agent
             hyperlane-monorepo
-            hyperlane-node-services
           image-tags: 'pr-*'
           tag-selection: tagged
           cut-off: 1w
