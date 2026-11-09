@@ -30,8 +30,10 @@ const STARKNET_DEVNET_IMAGE: &str = "shardlabs/starknet-devnet-rs";
 const STARKNET_DEVNET_TAG: &str = "0.4.2";
 const STARKNET_CLI_GIT: &str = "https://github.com/xJonathanLEI/starkli";
 const STARKNET_CLI_VERSION: &str = "0.4.1"; // we need 0.3.8 because the latest version breaks the rpc schema
-const CAIRO_HYPERLANE_GIT: &str = "https://github.com/hyperlane-xyz/hyperlane-starknet";
-const CAIRO_HYPERLANE_VERSION: &str = "0.3.9";
+
+// Our fork's `-humanode.N` releases; their contracts are identical to upstream's.
+const CAIRO_HYPERLANE_GIT: &str = "https://github.com/humanode-network/hyperlane-starknet";
+const CAIRO_HYPERLANE_VERSION: &str = "0.3.9-humanode.1";
 
 #[allow(dead_code)]
 pub fn install_starknet(

@@ -5,10 +5,16 @@ set -euo pipefail
 IFS=$'\n\t'
 
 # Constants
-readonly REPO="hyperlane-xyz/hyperlane-starknet"
+# The contracts come from our fork's releases. Each `-humanode.N` tag there is
+# upstream's tag with CI fixes only, and its release's contract class files are
+# identical to upstream's. The zip's SHA-256 is pinned here, so a replaced
+# release fails the build. A new VERSION needs its tag and release in the fork
+# first, and its zip's SHA-256 here.
+readonly REPO="humanode-network/hyperlane-starknet"
 readonly GITHUB_RELEASES_API="https://api.github.com/repos/${REPO}/releases"
 readonly TARGET_DIR="./release"
-readonly VERSION="v0.3.2"
+readonly VERSION="v0.3.2-humanode.1"
+readonly ZIP_SHA256="cd7c7692c90ffb2adf01ffc380139c12add53fc3fff8b80ec8c207e050c6b2d7"
 readonly MAX_RETRIES=3
 readonly RETRY_DELAY=5
 
@@ -142,6 +148,11 @@ verify_checksum() {
         downloaded_checksum="$(sha256sum "$file_path" | cut -d' ' -f1)"
     fi
     log_success "File checksum: ${downloaded_checksum}"
+
+    if [[ "${downloaded_checksum}" != "${ZIP_SHA256}" ]]; then
+        log_error "Checksum does not match the pinned ${ZIP_SHA256}"
+        return 1
+    fi
 
     local expected_checksum
     if ! expected_checksum="$(curl_with_retry "${base_url}/${checksum_filename}" -sL)"; then
