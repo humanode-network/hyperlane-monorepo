@@ -365,14 +365,38 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
+      # The gitleaks tests run the gitleaks CLI. Upstream installs it with
+      # gitleaks-action, which needs a paid license on organization accounts;
+      # the CLI release itself is free, so it is installed directly and checked
+      # against its published checksum.
       - name: Install gitleaks
-        id: gitleaks-install
-        # Skip for merge_group and external PRs (forks don't have access to GITLEAKS_LICENSE secret)
-        if: github.event_name != 'merge_group' && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
-        uses: gitleaks/gitleaks-action@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}}
+          GITLEAKS_VERSION: 8.30.1
+          GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+        run: |
+          archive="gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          curl -fsSLo "$RUNNER_TEMP/$archive" "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/$archive"
+          echo "$GITLEAKS_SHA256  $RUNNER_TEMP/$archive" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/gitleaks"
+          tar -xzf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP/gitleaks" gitleaks
+          echo "$RUNNER_TEMP/gitleaks" >> "$GITHUB_PATH"
+
+      # gitleaks-action also scans the pushed or proposed commits for secrets;
+      # this runs the same scan with the CLI. After a force push or on a new
+      # branch, the base commit is not in the clone, and only the head commit is
+      # scanned: the full history includes upstream's own findings.
+      - name: Scan the commits for secrets
+        env:
+          BASE_SHA: ${{ needs.change-detection.outputs.base_sha }}
+          CURRENT_SHA: ${{ needs.change-detection.outputs.current_sha }}
+        run: |
+          if git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
+            range="$BASE_SHA..$CURRENT_SHA"
+          else
+            echo "::warning::Base commit $BASE_SHA is not available; scanning only $CURRENT_SHA"
+            range="-1 $CURRENT_SHA"
+          fi
+          gitleaks git --config .gitleaks.toml --redact --no-banner --log-opts="$range"
 
       - name: Check for balance/config changes
         run: |
@@ -390,7 +414,6 @@ jobs:
         uses: ./.github/actions/checkout-registry
 
       - name: GitLeaks Tests
-        if: steps.gitleaks-install.outcome != 'skipped'
         run: pnpm -C typescript/infra test:gitleaks
 
       - name: Balance Tests

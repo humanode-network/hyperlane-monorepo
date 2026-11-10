@@ -49,15 +49,6 @@ jobs:
       - name: Run tests with coverage
         run: pnpm exec turbo run coverage --filter=@humanode-hyperlane/core
 
-      - name: Upload coverage reports to Codecov with GitHub Action
-        uses: codecov/codecov-action@v4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: ./solidity/lcov.info
-          disable_search: true
-          flags: solidity
-          fail_ci_if_error: true
-
   coverage:
     runs-on: ubuntu-latest
     needs: [check-solidity-changes, coverage-run]
