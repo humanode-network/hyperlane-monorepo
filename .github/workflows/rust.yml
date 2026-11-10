@@ -117,15 +117,6 @@ jobs:
         run: cargo llvm-cov report --package lander --lcov --output-path lcov.info
         working-directory: ./rust/main
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v5
-        with:
-          files: ./rust/main/lcov.info
-          disable_search: true
-          flags: ./rust/main/lander
-          fail_ci_if_error: true
-          token: ${{ secrets.CODECOV_TOKEN }}
-
   test-rs-run:
     needs: [ts-only]
     if: needs.ts-only.outputs.skip_rust != 'true'

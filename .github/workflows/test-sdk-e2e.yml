@@ -145,14 +145,6 @@ jobs:
       - name: Tron SDK e2e tests with coverage
         run: pnpm -C typescript/tron-sdk coverage
 
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          flags: tron-sdk
-          files: typescript/tron-sdk/coverage/lcov.info
-          fail_ci_if_error: false
-
   svm-sdk-e2e-matrix:
     runs-on: ubuntu-24.04
     if: inputs.has_svm == 'true'
