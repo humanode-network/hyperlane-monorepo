@@ -1,7 +1,7 @@
 import { $, type ProcessPromise } from 'zx';
 
-import { type ChainName } from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+import { type ChainName } from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { ANVIL_KEY, REGISTRY_PATH } from '../consts.js';
 

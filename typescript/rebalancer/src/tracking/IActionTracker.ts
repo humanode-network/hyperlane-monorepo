@@ -2,7 +2,7 @@ import type {
   Address,
   Domain,
   TransactionSubmissionState,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 import type {

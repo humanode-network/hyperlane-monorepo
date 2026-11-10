@@ -21,7 +21,7 @@ import {
   ensure0x,
   fromHexString,
   isNullish,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { BaseStarknetAdapter } from '../../app/MultiProtocolApp.js';
 import { ZUint32 } from '../../metadata/customZodTypes.js';

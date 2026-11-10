@@ -1,7 +1,10 @@
 import { useMemo } from 'react';
 
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import { type KnownProtocolType, ProtocolType } from '@hyperlane-xyz/utils';
+import type { MinimalProviderRegistry } from '@humanode-hyperlane/sdk/providers/MinimalProviderRegistry';
+import {
+  type KnownProtocolType,
+  ProtocolType,
+} from '@humanode-hyperlane/utils';
 
 import { useAleoActiveChain } from './aleoWallet.js';
 import { useCosmosActiveChain } from './cosmosWallet.js';

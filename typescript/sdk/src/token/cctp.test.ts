@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { IMessageTransmitter__factory } from '@hyperlane-xyz/core';
+import { IMessageTransmitter__factory } from '@humanode-hyperlane/core';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

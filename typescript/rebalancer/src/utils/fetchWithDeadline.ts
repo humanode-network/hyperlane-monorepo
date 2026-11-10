@@ -1,4 +1,4 @@
-import { assert, timeout } from '@hyperlane-xyz/utils';
+import { assert, timeout } from '@humanode-hyperlane/utils';
 
 /** Bound headers and body consumption even when fetch ignores cancellation. */
 export async function fetchWithDeadline<T>(

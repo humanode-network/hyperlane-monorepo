@@ -2,13 +2,13 @@ import { ethers } from 'ethers';
 import type { Logger } from 'pino';
 import { z } from 'zod';
 
-import { assert, eqAddress, isAddressEvm } from '@hyperlane-xyz/utils';
+import { assert, eqAddress, isAddressEvm } from '@humanode-hyperlane/utils';
 
 import {
   EthJsonRpcBlockParameterTag,
   type ChainMetadata,
-} from '@hyperlane-xyz/sdk';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
+} from '@humanode-hyperlane/sdk';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
 
 import { fetchWithDeadline } from '../utils/fetchWithDeadline.js';
 

@@ -1,10 +1,10 @@
 import { BigNumber } from 'ethers';
 import { z } from 'zod';
 
-import { InterchainGasPaymaster } from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+import { InterchainGasPaymaster } from '@humanode-hyperlane/core';
+import { assert } from '@humanode-hyperlane/utils';
 import { compareVersions } from 'compare-versions';
-import type { Address } from '@hyperlane-xyz/utils';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import type { CheckerViolation } from '../deploy/types.js';
 import {

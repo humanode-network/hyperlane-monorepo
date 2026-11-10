@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import { CCIPHook, CCIPIsm } from '@hyperlane-xyz/core';
+import { CCIPHook, CCIPIsm } from '@humanode-hyperlane/core';
 
 import { HyperlaneAddressesMap } from '../contracts/types.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

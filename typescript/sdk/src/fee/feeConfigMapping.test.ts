@@ -2,7 +2,7 @@ import {
   FeeParamsType,
   FeeStrategyType,
   FeeType,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@humanode-hyperlane/provider-sdk/fee';
 import { expect } from 'chai';
 
 import { tokenFeeInputToFeeConfig } from './feeConfigMapping.js';

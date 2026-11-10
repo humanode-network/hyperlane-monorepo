@@ -1,5 +1,5 @@
-import { IsmType, MultiProvider, NullIsmConfig } from '@hyperlane-xyz/sdk';
-import { WithAddress, assert, eqAddress } from '@hyperlane-xyz/utils';
+import { IsmType, MultiProvider, NullIsmConfig } from '@humanode-hyperlane/sdk';
+import { WithAddress, assert, eqAddress } from '@humanode-hyperlane/utils';
 
 import type {
   MetadataBuilder,

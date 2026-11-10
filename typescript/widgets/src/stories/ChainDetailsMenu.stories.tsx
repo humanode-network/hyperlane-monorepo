@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { chainMetadata } from '@hyperlane-xyz/registry';
+import { chainMetadata } from '@humanode-hyperlane/registry';
 
 import { ChainDetailsMenu } from '../chains/ChainDetailsMenu.js';
 

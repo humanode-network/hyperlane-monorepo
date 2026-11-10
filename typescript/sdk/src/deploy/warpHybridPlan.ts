@@ -1,11 +1,11 @@
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 import {
   Address,
   assert,
   deepEquals,
   eqAddress,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { HookConfig, HookConfigSchema, HookType } from '../hook/types.js';
 import {

@@ -3,7 +3,7 @@ import { rejects } from 'node:assert/strict';
 import sinon from 'sinon';
 import { RpcProvider } from 'starknet';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { test1 } from '../../consts/testChains.js';
 import { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

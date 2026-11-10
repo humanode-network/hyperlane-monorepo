@@ -4,7 +4,7 @@ import {
   addressToBytes,
   assert,
   padBytesToLength,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import {
   AccountMeta,
   ComputeBudgetProgram,

@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 /**
  * Wire helpers for the Wormhole hook/ISM routers.

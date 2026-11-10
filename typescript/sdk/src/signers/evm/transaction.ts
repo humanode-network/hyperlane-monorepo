@@ -1,11 +1,11 @@
 import { Signer, Wallet, providers, utils } from 'ethers';
 import { Wallet as ZkSyncWallet } from 'zksync-ethers';
-import { TronWallet } from '@hyperlane-xyz/tron-sdk/runtime';
+import { TronWallet } from '@humanode-hyperlane/tron-sdk/runtime';
 import {
   TransactionSubmission,
   type TransactionSubmissionOptions,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 /** Submit without waiting for confirmation, exposing the actual broadcast boundary. */
 export async function submitEvmLikeTransaction(

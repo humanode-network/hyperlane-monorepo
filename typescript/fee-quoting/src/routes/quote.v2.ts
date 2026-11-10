@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
-import { type QuoteV2Response, ZHash } from '@hyperlane-xyz/sdk';
-import { isValidAddressSealevel } from '@hyperlane-xyz/utils';
+import { type QuoteV2Response, ZHash } from '@humanode-hyperlane/sdk';
+import { isValidAddressSealevel } from '@humanode-hyperlane/utils';
 
 import type { FeeQuotingApp } from '../http.js';
 import type { createApiKeyAuth } from '../middleware/apiKeyAuth.js';

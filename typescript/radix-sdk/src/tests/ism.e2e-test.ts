@@ -1,21 +1,24 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   ArtifactDeployed,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   DeployedIsmAddress,
   IsmType,
   MultisigIsmConfig,
   RawRoutingIsmArtifactConfig,
   TestIsmConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { assert, normalizeConfig } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
+import { assert, normalizeConfig } from '@humanode-hyperlane/utils';
 
 import { RadixSigner } from '../clients/signer.js';
 import { RadixIsmArtifactManager } from '../ism/ism-artifact-manager.js';

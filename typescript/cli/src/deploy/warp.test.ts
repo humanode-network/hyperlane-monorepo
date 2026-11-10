@@ -6,12 +6,12 @@ import {
   IPostDispatchHook__factory,
   type Mailbox,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   ProtocolType,
   addressToBytes32,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import {
   ContractVerifier,
   type DerivedTokenRouterConfig,
@@ -35,7 +35,7 @@ import {
   type WarpRouteDeployConfigMailboxRequired,
   WormholeConsistencyType,
   testChainMetadata,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import {
   fullyConnectTokens,

@@ -5,11 +5,11 @@ import {
   airdropSol,
   getPreloadedPrograms,
   runSolanaNode,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@humanode-hyperlane/sealevel-sdk/testing';
 import {
   FALLBACK_SIMULATION_PAYER,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/sealevel-sdk';
 
 import {
   HYP_DEPLOYER_ADDRESS_BY_PROTOCOL,

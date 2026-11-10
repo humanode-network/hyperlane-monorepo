@@ -2,13 +2,13 @@ import { expect } from 'chai';
 import { BigNumber, VoidSigner, constants, providers, utils } from 'ethers';
 import sinon from 'sinon';
 
-import { InterchainAccountRouter__factory } from '@hyperlane-xyz/core';
+import { InterchainAccountRouter__factory } from '@humanode-hyperlane/core';
 import {
   ProtocolType,
   addressToBytes32,
   bytes32ToAddress,
   formatStandardHookMetadata,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../../consts/testChains.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

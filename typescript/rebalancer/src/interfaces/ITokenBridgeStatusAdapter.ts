@@ -1,8 +1,8 @@
 import type { providers } from 'ethers';
 import type { Logger } from 'pino';
 
-import type { ChainName, MultiProtocolCore } from '@hyperlane-xyz/sdk';
-import type { Address, Domain } from '@hyperlane-xyz/utils';
+import type { ChainName, MultiProtocolCore } from '@humanode-hyperlane/sdk';
+import type { Address, Domain } from '@humanode-hyperlane/utils';
 
 export interface MCRExecutionContext {
   origin: ChainName;

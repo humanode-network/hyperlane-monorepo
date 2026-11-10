@@ -1,5 +1,5 @@
-import type { ChainName, TokenStandard } from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+import type { ChainName, TokenStandard } from '@humanode-hyperlane/sdk';
+import type { Address } from '@humanode-hyperlane/utils';
 
 /**
  * xERC20 minting and burning limits for a token.

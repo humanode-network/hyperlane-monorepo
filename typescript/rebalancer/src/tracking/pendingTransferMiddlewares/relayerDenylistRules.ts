@@ -15,7 +15,7 @@ import {
   padBytesToLength,
   strip0x,
   ZERO_ADDRESS_HEX_32,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { ExplorerMessage } from '../../utils/ExplorerClient.js';
 

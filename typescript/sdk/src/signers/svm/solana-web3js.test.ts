@@ -11,7 +11,7 @@ import {
   ProtocolType,
   TransactionSubmissionError,
   bufferToBase58,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';
 import {
   ProviderType,

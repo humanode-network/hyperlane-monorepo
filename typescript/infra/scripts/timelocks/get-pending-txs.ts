@@ -7,7 +7,7 @@ import {
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getGovernanceTimelocks } from '../../config/environments/mainnet3/governance/utils.js';

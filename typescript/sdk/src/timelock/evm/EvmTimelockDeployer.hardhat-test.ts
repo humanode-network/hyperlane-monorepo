@@ -3,8 +3,8 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import hre from 'hardhat';
 
-import { TimelockController__factory } from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+import { TimelockController__factory } from '@humanode-hyperlane/core';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../../consts/testChains.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

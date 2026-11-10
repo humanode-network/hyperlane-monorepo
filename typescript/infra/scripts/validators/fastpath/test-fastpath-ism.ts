@@ -21,14 +21,14 @@
  */
 import { ethers } from 'ethers';
 
-import { getRegistry as getMergedRegistry } from '@hyperlane-xyz/registry/fs';
+import { getRegistry as getMergedRegistry } from '@humanode-hyperlane/registry/fs';
 import {
   DispatchedMessage,
   HyperlaneCore,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
-import { mergeJson, readJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/sdk';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
+import { mergeJson, readJson } from '@humanode-hyperlane/utils/fs';
 
 import { join } from 'path';
 

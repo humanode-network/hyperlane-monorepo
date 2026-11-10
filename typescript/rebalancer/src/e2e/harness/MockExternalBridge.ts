@@ -4,19 +4,19 @@ import { pino, type Logger } from 'pino';
 import {
   HypERC20Collateral__factory,
   HypNative__factory,
-} from '@hyperlane-xyz/core';
-import { HyperlaneRelayer } from '@hyperlane-xyz/relayer';
+} from '@humanode-hyperlane/core';
+import { HyperlaneRelayer } from '@humanode-hyperlane/relayer';
 import {
   HyperlaneCore,
   type MultiProvider,
   submitEvmLikeTransaction,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   assert,
   ProtocolType,
   TransactionSubmission,
   TransactionSubmissionError,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { approveErc20IfNeeded } from '../../bridges/erc20Approve.js';
 

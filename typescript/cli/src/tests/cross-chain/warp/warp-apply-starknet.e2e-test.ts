@@ -2,16 +2,16 @@ import { expect } from 'chai';
 import { Wallet } from 'ethers';
 import { type StartedTestContainer } from 'testcontainers';
 
-import { TEST_STARKNET_ACCOUNT_ADDRESS } from '@hyperlane-xyz/starknet-sdk/testing';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { TEST_STARKNET_ACCOUNT_ADDRESS } from '@humanode-hyperlane/starknet-sdk/testing';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type DerivedWarpRouteDeployConfig,
   IsmType,
   TokenType,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

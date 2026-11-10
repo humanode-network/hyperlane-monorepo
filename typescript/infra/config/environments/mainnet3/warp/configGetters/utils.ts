@@ -11,7 +11,7 @@ import {
   TokenFeeType,
   TokenType,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   addressToBytes32,
@@ -19,7 +19,7 @@ import {
   assert,
   intersection,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { getChainAddresses, getRegistry } from '../../../../registry.js';

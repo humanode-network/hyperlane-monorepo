@@ -1,6 +1,11 @@
 import { ExecuteInstruction } from '@cosmjs/cosmwasm-stargate';
 
-import { Address, HexString, assert, ensure0x } from '@hyperlane-xyz/utils';
+import {
+  Address,
+  HexString,
+  assert,
+  ensure0x,
+} from '@humanode-hyperlane/utils';
 
 import { BaseCosmWasmAdapter } from '../../app/MultiProtocolApp.js';
 import {

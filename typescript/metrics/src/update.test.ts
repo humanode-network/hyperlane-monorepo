@@ -7,7 +7,7 @@ import {
   Token,
   TokenStandard,
   WarpCore,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { createWarpMetricsGauges } from './gauges.js';
 import { updateTokenBalanceMetrics } from './update.js';

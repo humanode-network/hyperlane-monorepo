@@ -1,4 +1,4 @@
-import { createWarpRouteConfigId } from '@hyperlane-xyz/registry';
+import { createWarpRouteConfigId } from '@humanode-hyperlane/registry';
 
 export const E2E_TEST_CONFIGS_PATH = './test-configs';
 export const REGISTRY_PATH = `${E2E_TEST_CONFIGS_PATH}/hyp`;

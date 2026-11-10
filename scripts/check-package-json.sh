@@ -4,7 +4,7 @@
 # 1. All publishable packages have required fields for npm sigstore provenance
 # 2. Dockerfile has COPY statements for all workspace package.json files
 
-EXPECTED_REPO="https://github.com/hyperlane-xyz/hyperlane-monorepo"
+EXPECTED_REPO="https://github.com/humanode-network/hyperlane-monorepo"
 EXPECTED_LICENSE="Apache-2.0"
 ERRORS=0
 ROOT="$(pwd)"
@@ -37,9 +37,9 @@ for pkg in $PACKAGE_FILES; do
         continue
     fi
 
-    # Check if package has @hyperlane-xyz scope (published packages)
+    # Check if package has @humanode-hyperlane scope (published packages)
     NAME=$(jq -r '.name // ""' "$pkg")
-    if [[ ! "$NAME" =~ ^@hyperlane-xyz/ ]]; then
+    if [[ ! "$NAME" =~ ^@humanode-hyperlane/ ]]; then
         continue
     fi
 
@@ -100,7 +100,7 @@ if [ $ERRORS -gt 0 ]; then
     echo ""
     echo "Found $ERRORS error(s)."
     echo ""
-    echo "For package.json issues, all publishable @hyperlane-xyz packages must have:"
+    echo "For package.json issues, all publishable @humanode-hyperlane packages must have:"
     echo "  \"repository\": \"$EXPECTED_REPO\""
     echo "  \"license\": \"$EXPECTED_LICENSE\""
     echo ""

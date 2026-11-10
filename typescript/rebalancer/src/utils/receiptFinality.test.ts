@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { constants, providers } from 'ethers';
 import sinon from 'sinon';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 import { isReceiptFinalized } from './receiptFinality.js';
 
 const txHash = `0x${'a'.repeat(64)}`;

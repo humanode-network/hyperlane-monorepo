@@ -1,13 +1,13 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 import {
   EvmPrivateKeyQuoteSigner,
   EvmQuoteArtifactManager,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { SvmPrivateKeyQuoteSigner } from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/sdk';
+import { SvmPrivateKeyQuoteSigner } from '@humanode-hyperlane/sealevel-sdk';
 
 import {
   createDefaultQuoteSignerForChain,

@@ -4,11 +4,11 @@ import { z } from 'zod';
 import {
   AddWarpRouteConfigOptionsSchema,
   WarpRouteFilterSchema,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   WarpCoreConfigSchema,
   WarpRouteDeployConfigSchema,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { AppConstants } from '../constants/AppConstants.js';
 import {

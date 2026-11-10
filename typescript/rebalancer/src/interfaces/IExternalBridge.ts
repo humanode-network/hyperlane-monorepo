@@ -1,10 +1,10 @@
 import type { Logger } from 'pino';
 
-import type { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
+import type { ChainMap, ChainMetadata } from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   type TransactionSubmissionOptions,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 export interface PendingApproval {
   txHash?: string;

@@ -2,14 +2,14 @@ import { ethers } from 'ethers';
 import type { Logger } from 'pino';
 import { z } from 'zod';
 
-import { TokenBridgeOft__factory } from '@hyperlane-xyz/core';
+import { TokenBridgeOft__factory } from '@humanode-hyperlane/core';
 import {
   ChainStatus,
   type ChainMap,
   type ChainMetadata,
   type WarpCoreConfig,
   submitEvmLikeTransaction,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   TransactionSubmission,
@@ -17,11 +17,11 @@ import {
   addressToBytes32,
   assert,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import {
   TronJsonRpcProvider,
   TronWallet,
-} from '@hyperlane-xyz/tron-sdk/runtime';
+} from '@humanode-hyperlane/tron-sdk/runtime';
 
 import type {
   BridgeExecutionOptions,

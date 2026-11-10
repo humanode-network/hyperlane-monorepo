@@ -1,6 +1,6 @@
 import { Gauge, Registry } from 'prom-client';
 
-import { submitMetrics } from '@hyperlane-xyz/metrics';
+import { submitMetrics } from '@humanode-hyperlane/metrics';
 
 import type { MetricsConfig } from '../config/types.js';
 

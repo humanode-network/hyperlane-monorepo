@@ -1,14 +1,14 @@
 import { type Signer, utils as ethersUtils } from 'ethers';
 
-import { OffchainQuotedLinearFee__factory } from '@hyperlane-xyz/core';
+import { OffchainQuotedLinearFee__factory } from '@humanode-hyperlane/core';
 import {
   type CreateWarpQuoteRequest,
   type IRawWarpQuoteWriter,
   type RawQuoteSigner,
   type SubmittedWarpQuote,
   WarpQuoteAmountKind,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/quote';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   buildEvmSignedQuoteSignable,

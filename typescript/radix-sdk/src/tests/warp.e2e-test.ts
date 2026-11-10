@@ -1,21 +1,24 @@
 import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   DeployedWarpAddress,
   RawCollateralWarpArtifactConfig,
   RawSyntheticWarpArtifactConfig,
   RawWarpArtifactConfig,
   WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, eqAddressRadix } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { assert, eqAddressRadix } from '@humanode-hyperlane/utils';
 
 import { RadixSigner } from '../clients/signer.js';
 import {

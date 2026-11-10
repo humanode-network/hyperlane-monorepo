@@ -7,8 +7,8 @@ import {
   TimelockController__factory,
   TokenBridgeCctpBase__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { HyperlaneDeployer } from '../deploy/HyperlaneDeployer.js';

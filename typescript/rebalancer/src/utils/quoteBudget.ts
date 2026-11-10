@@ -1,4 +1,4 @@
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 /** Smallest destination amount satisfying the fixed input's quote-loss budget. */
 export function minimumOutputForLoss(

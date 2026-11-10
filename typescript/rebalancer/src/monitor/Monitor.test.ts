@@ -12,9 +12,9 @@ import {
   Token,
   TokenStandard,
   WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
 
 import {
   type MonitorEvent,

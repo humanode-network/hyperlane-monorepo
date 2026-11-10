@@ -1,12 +1,12 @@
 import { ethers } from 'ethers';
 import type { Logger } from 'pino';
 
-import { submitEvmLikeTransaction } from '@hyperlane-xyz/sdk';
+import { submitEvmLikeTransaction } from '@humanode-hyperlane/sdk';
 import {
   TransactionSubmissionError,
   type TransactionSubmissionState,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { BridgeExecutionOptions } from '../interfaces/IExternalBridge.js';
 

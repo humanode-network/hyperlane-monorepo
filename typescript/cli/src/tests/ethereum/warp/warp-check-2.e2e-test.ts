@@ -5,11 +5,11 @@ import { zeroAddress } from 'viem';
 import {
   type ERC20Test,
   HypERC20Collateral__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   TokenStandard,
@@ -17,8 +17,8 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, assert } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

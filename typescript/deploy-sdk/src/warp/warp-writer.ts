@@ -1,8 +1,8 @@
 import {
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+} from '@humanode-hyperlane/provider-sdk';
+import { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   ArtifactNew,
   ArtifactOnChain,
@@ -11,20 +11,20 @@ import {
   isArtifactDeployed,
   isArtifactNew,
   isArtifactUnderived,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   DeployedFeeAddress,
   DeployedFeeArtifact,
   FeeArtifactConfig,
   mergeFeeArtifacts,
   withFeeAssetConfig,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@humanode-hyperlane/provider-sdk/fee';
 import {
   DeployedHookAddress,
   HookArtifactConfig,
   mergeHookArtifacts,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@humanode-hyperlane/provider-sdk/hook';
 import {
   type ContextualAddress,
   DeployedIsmAddress,
@@ -33,8 +33,11 @@ import {
   assertRateLimitedIsmRecipientsUnset,
   mergeIsmArtifacts,
   resolveIsmArtifact,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   DeployedWarpAddress,
   DeployedWarpArtifact,
@@ -43,14 +46,14 @@ import {
   WarpArtifactConfig,
   buildFeeReadContextFromWarpArtifactConfig,
   resolveFeeTokenFromWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   addressToBytes32,
   assert,
   eqAddress,
   isNullish,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { createFeeWriter } from '../fee/fee-writer.js';
 import { HookWriter, createHookWriter } from '../hook/hook-writer.js';

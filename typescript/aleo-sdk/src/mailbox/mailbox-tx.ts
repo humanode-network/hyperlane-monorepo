@@ -1,4 +1,4 @@
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { fromAleoAddress } from '../utils/helper.js';
 import { type AleoTransaction } from '../utils/types.js';

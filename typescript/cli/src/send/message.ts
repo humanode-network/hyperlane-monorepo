@@ -1,9 +1,13 @@
 import { stringify as yamlStringify } from 'yaml';
 
-import { GasAction } from '@hyperlane-xyz/provider-sdk';
-import { HyperlaneRelayer } from '@hyperlane-xyz/relayer';
-import { type ChainName, HyperlaneCore } from '@hyperlane-xyz/sdk';
-import { addressToBytes32, isEVMLike, timeout } from '@hyperlane-xyz/utils';
+import { GasAction } from '@humanode-hyperlane/provider-sdk';
+import { HyperlaneRelayer } from '@humanode-hyperlane/relayer';
+import { type ChainName, HyperlaneCore } from '@humanode-hyperlane/sdk';
+import {
+  addressToBytes32,
+  isEVMLike,
+  timeout,
+} from '@humanode-hyperlane/utils';
 
 import { EXPLORER_URL } from '../consts.js';
 import { ensureEvmSignersForChains } from '../context/context.js';

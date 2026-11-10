@@ -1,4 +1,7 @@
-import type { DispatchEvent, ProcessEvent } from '@hyperlane-xyz/core/mailbox';
+import type {
+  DispatchEvent,
+  ProcessEvent,
+} from '@humanode-hyperlane/core/mailbox';
 
 export { DispatchEvent, ProcessEvent };
 

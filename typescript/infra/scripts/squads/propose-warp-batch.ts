@@ -7,8 +7,8 @@ import {
   ChainName,
   MultiProtocolProvider,
   SvmMultiProtocolSignerAdapter,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { DeployEnvironment } from '../../src/config/deploy-environment.js';
 import { getSquadsConfig, getSquadsKeys } from '../../src/config/squads.js';

@@ -1,4 +1,4 @@
-# @hyperlane-xyz/starknet-core
+# @humanode-hyperlane/starknet-core
 
 ## 45.2.0
 

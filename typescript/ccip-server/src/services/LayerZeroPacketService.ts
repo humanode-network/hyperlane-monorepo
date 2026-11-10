@@ -5,13 +5,13 @@ import { z } from 'zod';
 import {
   ILayerZeroPacketService__factory,
   LayerZeroV2HookIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   HyperlaneSmartProvider,
   MultiProvider,
   ProviderMethod,
-} from '@hyperlane-xyz/sdk';
-import { assert, parseMessage } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, parseMessage } from '@humanode-hyperlane/utils';
 
 import type { CcipApp } from '../http.js';
 import {

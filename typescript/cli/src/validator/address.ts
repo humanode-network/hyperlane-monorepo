@@ -5,7 +5,7 @@ import { input } from '@inquirer/prompts';
 import asn1 from 'asn1.js';
 import { ethers } from 'ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { log, logBlue } from '../logger.js';

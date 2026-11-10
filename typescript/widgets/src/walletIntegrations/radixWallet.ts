@@ -4,8 +4,8 @@ import {
 } from '@radixdlt/radix-dapp-toolkit';
 import { useCallback, useEffect, useMemo } from 'react';
 
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import type { MinimalProviderRegistry } from '@humanode-hyperlane/sdk/providers/MinimalProviderRegistry';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

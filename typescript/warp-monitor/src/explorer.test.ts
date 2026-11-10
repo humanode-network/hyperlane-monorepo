@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import {
   ExplorerPendingTransfersClient,

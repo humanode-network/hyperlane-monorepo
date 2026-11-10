@@ -1,13 +1,13 @@
 import { expect } from 'chai';
 import { Wallet } from 'ethers';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type HypTokenRouterConfig,
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

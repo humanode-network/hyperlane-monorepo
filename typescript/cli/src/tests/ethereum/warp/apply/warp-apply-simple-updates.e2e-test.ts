@@ -1,18 +1,18 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type HypTokenRouterConfig,
   TokenType,
   type WarpCoreConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   addressToBytes32,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';

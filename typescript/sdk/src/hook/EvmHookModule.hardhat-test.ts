@@ -7,7 +7,7 @@ import {
   InterchainGasPaymaster__factory,
   PausableHook__factory,
   RateLimitedHook__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   WithAddress,
@@ -15,7 +15,7 @@ import {
   deepCopy,
   deepEquals,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { TestChainName, testChains } from '../consts/testChains.js';
 import { HyperlaneAddresses, HyperlaneContracts } from '../contracts/types.js';

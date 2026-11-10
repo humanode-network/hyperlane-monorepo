@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { HookType } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { HookType } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { HYP_DEPLOYER_ADDRESS_BY_PROTOCOL } from '../../constants.js';
 import { normalizeStarknetAddress } from '../helpers.js';

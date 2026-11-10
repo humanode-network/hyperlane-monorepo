@@ -5,7 +5,7 @@ import { pino } from 'pino';
 import sinon from 'sinon';
 import request from 'supertest';
 
-import { WarpRouteFilterParams } from '@hyperlane-xyz/registry';
+import { WarpRouteFilterParams } from '@humanode-hyperlane/registry';
 
 import { AppConstants } from '../../src/constants/AppConstants.js';
 import { createErrorHandler } from '../../src/middleware/errorHandler.js';

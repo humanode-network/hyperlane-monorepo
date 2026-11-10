@@ -6,16 +6,16 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedMailboxAddress,
   type MailboxOnChain,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
+} from '@humanode-hyperlane/provider-sdk/mailbox';
 import {
   ZERO_ADDRESS_HEX_32,
   eqAddressCosmos,
   eqOptionalAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { getNewContractAddress } from '../utils/base.js';

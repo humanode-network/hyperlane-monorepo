@@ -2,7 +2,7 @@ import {
   EthJsonRpcBlockParameterTag,
   type ChainMap,
   type Token,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { WrappedError } from '../utils/errors.js';
 

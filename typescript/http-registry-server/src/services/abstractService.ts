@@ -1,4 +1,4 @@
-import { IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@humanode-hyperlane/registry';
 
 import { RegistryService } from './registryService.js';
 

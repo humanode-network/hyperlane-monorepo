@@ -12,8 +12,8 @@ import {
   ProtocolFee__factory,
   RateLimitedHook__factory,
   StaticAggregationHook__factory,
-} from '@hyperlane-xyz/core';
-import { ValueOf } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { ValueOf } from '@humanode-hyperlane/utils';
 
 import { HookType } from './types.js';
 

@@ -6,9 +6,12 @@ import {
 } from 'ethers';
 import { readdirSync, rmSync, writeFileSync } from 'fs';
 
-import { type XERC20VSTest, XERC20VSTest__factory } from '@hyperlane-xyz/core';
-import { TxSubmitterType, randomAddress } from '@hyperlane-xyz/sdk';
-import { type Address, randomInt } from '@hyperlane-xyz/utils';
+import {
+  type XERC20VSTest,
+  XERC20VSTest__factory,
+} from '@humanode-hyperlane/core';
+import { TxSubmitterType, randomAddress } from '@humanode-hyperlane/sdk';
+import { type Address, randomInt } from '@humanode-hyperlane/utils';
 
 import { EV5FileSubmitter } from '../../../submitters/EV5FileSubmitter.js';
 import { CustomTxSubmitterType } from '../../../submitters/types.js';

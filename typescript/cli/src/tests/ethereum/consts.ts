@@ -1,7 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { createWarpRouteConfigId } from '@hyperlane-xyz/registry';
+import { createWarpRouteConfigId } from '@humanode-hyperlane/registry';
 
 // Test stack selection via environment variable (default: anvil)
 const TEST_STACK = process.env.TEST_STACK || 'anvil';

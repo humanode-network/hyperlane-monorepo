@@ -5,7 +5,7 @@ import { ethers } from 'ethers';
 import { custom } from 'viem';
 import type { RouteExtended } from '@lifi/sdk';
 
-import { TransactionSubmissionError, assert } from '@hyperlane-xyz/utils';
+import { TransactionSubmissionError, assert } from '@humanode-hyperlane/utils';
 
 import { Erc20ApprovalError } from './erc20Approve.js';
 import { LiFiSubmission } from './lifiSubmission.js';

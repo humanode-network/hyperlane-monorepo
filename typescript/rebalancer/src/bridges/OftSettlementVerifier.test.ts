@@ -4,8 +4,8 @@ import { ethers, type providers } from 'ethers';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { EthJsonRpcBlockParameterTag } from '@hyperlane-xyz/sdk';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
+import { EthJsonRpcBlockParameterTag } from '@humanode-hyperlane/sdk';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
 
 import {
   OftSettlementVerifier,

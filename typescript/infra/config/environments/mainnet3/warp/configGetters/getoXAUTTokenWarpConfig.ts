@@ -5,8 +5,8 @@ import {
   TokenType,
   XERC20LimitsTokenConfig,
   XERC20Type,
-} from '@hyperlane-xyz/sdk';
-import { objFilter } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { objFilter } from '@humanode-hyperlane/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { getGnosisSafeSubmitterStrategyConfigGenerator } from '../../../utils.js';

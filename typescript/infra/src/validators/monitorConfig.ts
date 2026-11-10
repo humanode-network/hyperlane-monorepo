@@ -1,5 +1,5 @@
-import { ChainMap, defaultMultisigConfigs } from '@hyperlane-xyz/sdk';
-import { Address, objMap } from '@hyperlane-xyz/utils';
+import { ChainMap, defaultMultisigConfigs } from '@humanode-hyperlane/sdk';
+import { Address, objMap } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { ezEthValidators } from '../../config/environments/mainnet3/warp/configGetters/getRenzoEZETHWarpConfig.js';

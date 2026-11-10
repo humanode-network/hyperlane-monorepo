@@ -4,16 +4,21 @@ import {
   type WarpCoreConfig,
   altVmChainLookup,
   buildFeeReadContextFromWarpDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { hasProtocol } from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/sdk';
+import { hasProtocol } from '@humanode-hyperlane/provider-sdk';
 import {
   type StandingWarpQuoteEntry,
   WARP_TARGET_ROUTER_NONE,
   WILDCARD_BYTES32,
   WarpQuoteAmountKind,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { DEFAULT_CROSS_COLLATERAL_FEE_ROUTER_KEY } from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, isEVMLike, objMap, promiseObjAll } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/quote';
+import { DEFAULT_CROSS_COLLATERAL_FEE_ROUTER_KEY } from '@humanode-hyperlane/provider-sdk/warp';
+import {
+  assert,
+  isEVMLike,
+  objMap,
+  promiseObjAll,
+} from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logGray } from '../logger.js';

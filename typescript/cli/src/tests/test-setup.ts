@@ -1,4 +1,8 @@
-import { LogFormat, LogLevel, configureRootLogger } from '@hyperlane-xyz/utils';
+import {
+  LogFormat,
+  LogLevel,
+  configureRootLogger,
+} from '@humanode-hyperlane/utils';
 
 // mute logging in tests
 process.env.NODE_ENV === 'test' &&

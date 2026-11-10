@@ -2,8 +2,8 @@ import { useWallet } from '@tronweb3/tronwallet-adapter-react-hooks';
 import { TronLinkAdapterName } from '@tronweb3/tronwallet-adapter-tronlink';
 import { useMemo } from 'react';
 
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import type { MinimalProviderRegistry } from '@humanode-hyperlane/sdk/providers/MinimalProviderRegistry';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import type {
   AccountInfo,

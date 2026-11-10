@@ -2,7 +2,7 @@ import { use as chaiUse, expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 
-import { PartialRegistry } from '@hyperlane-xyz/registry';
+import { PartialRegistry } from '@humanode-hyperlane/registry';
 
 import { NotFoundError } from '../../src/errors/ApiError.js';
 import { ChainService } from '../../src/services/chainService.js';

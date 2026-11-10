@@ -2,7 +2,11 @@ import { expect } from 'chai';
 import { pino } from 'pino';
 import sinon from 'sinon';
 
-import { type ChainName, type Token, TokenStandard } from '@hyperlane-xyz/sdk';
+import {
+  type ChainName,
+  type Token,
+  TokenStandard,
+} from '@humanode-hyperlane/sdk';
 
 import { type MonitorEvent } from '../interfaces/IMonitor.js';
 

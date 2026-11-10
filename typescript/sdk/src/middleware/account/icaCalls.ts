@@ -5,7 +5,7 @@ import {
   addressToBytes32,
   fromHexString,
   toHexString,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ZHash } from '../../metadata/customZodTypes.js';
 

@@ -19,15 +19,15 @@
 import { ethers } from 'ethers';
 import { stringify as yamlStringify } from 'yaml';
 
-import { getRegistry as getMergedRegistry } from '@hyperlane-xyz/registry/fs';
+import { getRegistry as getMergedRegistry } from '@humanode-hyperlane/registry/fs';
 import {
   HyperlaneIsmFactory,
   IsmType,
   MultiProvider,
   MultisigIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
-import { mergeJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/sdk';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
+import { mergeJson } from '@humanode-hyperlane/utils/fs';
 
 import { join } from 'path';
 

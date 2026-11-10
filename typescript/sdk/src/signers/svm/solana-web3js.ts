@@ -18,7 +18,7 @@ import {
   assert,
   bufferToBase58,
   TransactionSubmission,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { SEALEVEL_PRIORITY_FEES } from '../../consts/sealevel.js';
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';

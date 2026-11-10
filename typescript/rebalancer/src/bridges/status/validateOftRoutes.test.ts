@@ -2,15 +2,15 @@ import { expect } from 'chai';
 import { ethers } from 'ethers';
 import Sinon from 'sinon';
 
-import { TokenBridgeOft__factory } from '@hyperlane-xyz/core';
+import { TokenBridgeOft__factory } from '@humanode-hyperlane/core';
 import {
   EvmMovableCollateralAdapter,
   MultiProtocolProvider,
   Token,
   TokenStandard,
   type ChainMap,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { addressToBytes32 } from '@humanode-hyperlane/utils';
 
 import {
   ExecutionType,

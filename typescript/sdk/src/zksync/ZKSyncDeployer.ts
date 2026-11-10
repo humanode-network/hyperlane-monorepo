@@ -6,8 +6,8 @@ import {
   types as zksyncTypes,
 } from 'zksync-ethers';
 
-import { ZKSyncArtifact } from '@hyperlane-xyz/core';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { ZKSyncArtifact } from '@humanode-hyperlane/core';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import type { ChainMetadata } from '../metadata/chainMetadataTypes.js';
 import { defaultZKProviderBuilder } from '../providers/builders/zksync.js';

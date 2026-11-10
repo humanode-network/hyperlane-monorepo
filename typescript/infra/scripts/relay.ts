@@ -1,4 +1,7 @@
-import { HyperlaneRelayer, RelayerCacheSchema } from '@hyperlane-xyz/relayer';
+import {
+  HyperlaneRelayer,
+  RelayerCacheSchema,
+} from '@humanode-hyperlane/relayer';
 
 import { readFile, writeFile } from 'fs/promises';
 

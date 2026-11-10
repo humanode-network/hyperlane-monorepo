@@ -1,7 +1,11 @@
 import { expect } from 'chai';
 import { BigNumber, providers } from 'ethers';
 
-import { HyperlaneCore, MultiProvider, snapshot } from '@hyperlane-xyz/sdk';
+import {
+  HyperlaneCore,
+  MultiProvider,
+  snapshot,
+} from '@humanode-hyperlane/sdk';
 
 import {
   RebalancerMinAmountType,

@@ -1,6 +1,6 @@
 import { ethers, providers } from 'ethers';
 
-import { HypNative__factory } from '@hyperlane-xyz/core';
+import { HypNative__factory } from '@humanode-hyperlane/core';
 
 import {
   type NativeChainDeployment,

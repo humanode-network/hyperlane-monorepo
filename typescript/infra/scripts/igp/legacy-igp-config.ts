@@ -7,8 +7,8 @@ import {
   IgpConfig,
   IgpVersion,
   extractIsmAndHookFactoryAddresses,
-} from '@hyperlane-xyz/sdk';
-import { assert, deepCopy } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, deepCopy } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getEnvAddresses } from '../../config/registry.js';

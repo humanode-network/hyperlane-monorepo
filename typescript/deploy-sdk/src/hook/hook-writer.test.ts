@@ -1,14 +1,17 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   DeployedHookArtifact,
   IRawHookArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/hook';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
 
 import { HookWriter } from './hook-writer.js';
 

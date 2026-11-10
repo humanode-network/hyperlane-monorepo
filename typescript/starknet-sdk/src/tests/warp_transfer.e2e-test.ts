@@ -1,20 +1,20 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { type ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { type ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   type DeployedWarpAddress,
   type RawWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { StarknetSigner } from '../clients/signer.js';
 import { getCreateNoopHookTx } from '../hook/hook-tx.js';

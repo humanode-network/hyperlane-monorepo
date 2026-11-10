@@ -1,20 +1,20 @@
 import {
   RebalancerConfig,
   getStrategyChainNames,
-} from '@hyperlane-xyz/rebalancer';
+} from '@humanode-hyperlane/rebalancer';
 import {
   type ChainName,
   DeployedCoreAddressesSchema,
   EvmCoreReader,
   TxSubmitterType,
   WarpCoreConfigSchema,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   assert,
   isEVMLike,
   symmetricDifference,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { CommandType } from '../../../commands/signCommands.js';
 import { readCoreDeployConfigs } from '../../../config/core.js';

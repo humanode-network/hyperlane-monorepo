@@ -2,8 +2,8 @@ import {
   type EvmMovableCollateralAdapter,
   type IToken,
   type TokenAmount,
-} from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import {
   type InventoryRoute,

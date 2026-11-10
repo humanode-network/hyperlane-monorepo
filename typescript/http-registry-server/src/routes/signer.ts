@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   validateBody,

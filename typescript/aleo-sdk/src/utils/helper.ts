@@ -1,11 +1,11 @@
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
+import { TokenType } from '@humanode-hyperlane/provider-sdk/warp';
 import {
   assert,
   isValidAddressAleo,
   isZeroishAddress,
   strip0x,
   toHexString,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { ALEO_NULL_ADDRESS } from '../constants.js';

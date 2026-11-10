@@ -6,22 +6,22 @@ import {
   type ProtocolProvider,
   type SignerConfig,
   type TransactionSubmitterConfig,
-} from '@hyperlane-xyz/provider-sdk';
-import { type IProvider } from '@hyperlane-xyz/provider-sdk/altvm';
-import { type IRawHookArtifactManager } from '@hyperlane-xyz/provider-sdk/hook';
-import { type IRawIsmArtifactManager } from '@hyperlane-xyz/provider-sdk/ism';
-import { type IRawMailboxArtifactManager } from '@hyperlane-xyz/provider-sdk/mailbox';
+} from '@humanode-hyperlane/provider-sdk';
+import { type IProvider } from '@humanode-hyperlane/provider-sdk/altvm';
+import { type IRawHookArtifactManager } from '@humanode-hyperlane/provider-sdk/hook';
+import { type IRawIsmArtifactManager } from '@humanode-hyperlane/provider-sdk/ism';
+import { type IRawMailboxArtifactManager } from '@humanode-hyperlane/provider-sdk/mailbox';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { type IRawWarpArtifactManager } from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/module';
+import { type IRawWarpArtifactManager } from '@humanode-hyperlane/provider-sdk/warp';
 import {
   type FeeReadContext,
   type IRawFeeArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { type IRawValidatorAnnounceArtifactManager } from '@hyperlane-xyz/provider-sdk/validator-announce';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/fee';
+import { type IRawValidatorAnnounceArtifactManager } from '@humanode-hyperlane/provider-sdk/validator-announce';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { CosmosHookArtifactManager } from '../hook/hook-artifact-manager.js';
 import { CosmosIsmArtifactManager } from '../ism/ism-artifact-manager.js';

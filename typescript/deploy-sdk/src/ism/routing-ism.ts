@@ -1,5 +1,5 @@
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   Artifact,
   ArtifactDeployed,
@@ -10,8 +10,8 @@ import {
   isArtifactDeployed,
   isArtifactNew,
   isArtifactUnderived,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   DeployedIsmAddress,
   DeployedIsmArtifact,
@@ -19,9 +19,12 @@ import {
   IsmArtifactConfig,
   RawRoutingIsmArtifactConfig,
   RoutingIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { Logger, assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
+import { Logger, assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { IsmReader } from './generic-ism.js';
 

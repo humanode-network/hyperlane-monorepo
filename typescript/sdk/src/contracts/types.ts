@@ -1,6 +1,6 @@
 import type { ethers } from 'ethers';
 
-import type { Address } from '@hyperlane-xyz/utils';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import type { ChainMap } from '../types.js';
 

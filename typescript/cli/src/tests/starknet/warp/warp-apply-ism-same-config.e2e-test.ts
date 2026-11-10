@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { IsmType } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { IsmType } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { describeStarknetSingleChainWarpApplyTest } from './warp-apply.shared.js';
 

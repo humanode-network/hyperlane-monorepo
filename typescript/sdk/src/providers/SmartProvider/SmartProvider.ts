@@ -8,7 +8,7 @@ import {
   rootLogger,
   runWithTimeout,
   sleep,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   BlockExplorer,

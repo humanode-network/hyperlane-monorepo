@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import { Router } from '@hyperlane-xyz/core';
+import { Router } from '@humanode-hyperlane/core';
 
 import { HyperlaneContracts } from '../../contracts/types.js';
 import { ContractVerifier } from '../../deploy/verify/ContractVerifier.js';

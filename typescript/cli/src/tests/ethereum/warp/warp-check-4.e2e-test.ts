@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { Wallet } from 'ethers';
 
-import { type ERC20Test } from '@hyperlane-xyz/core';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ERC20Test } from '@humanode-hyperlane/core';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type HookConfig,
   MUTABLE_HOOK_TYPE,
@@ -10,8 +10,8 @@ import {
   type WarpRouteDeployConfig,
   randomAddress,
   randomHookConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, deepCopy } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, assert, deepCopy } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

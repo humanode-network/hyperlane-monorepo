@@ -4,7 +4,7 @@ import { expect } from 'chai';
 import type {
   CompositeIsmArtifactConfig,
   CompositeIsmNodeArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
 
 import { assertValidCompositeIsmArtifact } from './composite-ism.js';
 

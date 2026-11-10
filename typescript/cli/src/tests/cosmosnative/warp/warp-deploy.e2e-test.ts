@@ -3,13 +3,13 @@ import * as chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { fs } from 'zx';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainName,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, ProtocolType } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

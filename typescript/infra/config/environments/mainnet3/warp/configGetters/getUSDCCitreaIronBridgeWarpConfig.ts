@@ -1,5 +1,9 @@
-import { ChainMap, HypTokenRouterConfig, TokenType } from '@hyperlane-xyz/sdk';
-import { assert, addressToBytes32 } from '@hyperlane-xyz/utils';
+import {
+  ChainMap,
+  HypTokenRouterConfig,
+  TokenType,
+} from '@humanode-hyperlane/sdk';
+import { assert, addressToBytes32 } from '@humanode-hyperlane/utils';
 
 import { awIcas } from '../../governance/ica/aw.js';
 import { awSafes } from '../../governance/safe/aw.js';

@@ -6,7 +6,7 @@ import {
   MultiProtocolProvider,
   Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { getXerc20TransferCapacity } from './xerc20Capacity.js';
 

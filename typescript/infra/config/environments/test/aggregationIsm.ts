@@ -1,4 +1,4 @@
-import { AggregationIsmConfig, IsmType } from '@hyperlane-xyz/sdk';
+import { AggregationIsmConfig, IsmType } from '@humanode-hyperlane/sdk';
 
 import { merkleRootMultisig, messageIdMultisig } from './multisigIsm.js';
 

@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@humanode-hyperlane/utils';
 
 import {
   ZBigNumberish,

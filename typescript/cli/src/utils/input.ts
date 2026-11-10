@@ -23,14 +23,14 @@ import type { PartialDeep, Prompt } from '@inquirer/type';
 import ansiEscapes from 'ansi-escapes';
 import chalk from 'chalk';
 
-import { ProxyAdmin__factory } from '@hyperlane-xyz/core';
-import { BaseRegistry, type IRegistry } from '@hyperlane-xyz/registry';
+import { ProxyAdmin__factory } from '@humanode-hyperlane/core';
+import { BaseRegistry, type IRegistry } from '@humanode-hyperlane/registry';
 import {
   type ChainName,
   type DeployedOwnableConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { isAddress, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { isAddress, rootLogger } from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logGray } from '../logger.js';

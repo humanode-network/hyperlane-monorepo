@@ -5,9 +5,9 @@ import { z } from 'zod';
 import {
   IWormholeVaaService__factory,
   WormholeVaaHookIsm__factory,
-} from '@hyperlane-xyz/core';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
-import { assert, parseMessage, sleep } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
+import { assert, parseMessage, sleep } from '@humanode-hyperlane/utils';
 
 import type { CcipApp } from '../http.js';
 import {

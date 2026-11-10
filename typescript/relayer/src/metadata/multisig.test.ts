@@ -7,8 +7,8 @@ import {
   HyperlaneCore,
   IsmType,
   ModuleType,
-} from '@hyperlane-xyz/sdk';
-import { SignatureLike } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { SignatureLike } from '@humanode-hyperlane/utils';
 
 import { MultisigMetadata, MultisigMetadataBuilder } from './multisig.js';
 import { Fixture } from './types.test.js';

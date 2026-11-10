@@ -4,7 +4,7 @@ import os from 'os';
 import path from 'path';
 import { $ } from 'zx';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { hyperlaneCoreDeploy } from './commands/core.js';
 import {

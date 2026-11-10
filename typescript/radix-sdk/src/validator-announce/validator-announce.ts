@@ -6,12 +6,12 @@ import {
   ArtifactReader,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { TxReceipt } from '@humanode-hyperlane/provider-sdk/module';
 import {
   DeployedValidatorAnnounceAddress,
   RawValidatorAnnounceConfig,
-} from '@hyperlane-xyz/provider-sdk/validator-announce';
+} from '@humanode-hyperlane/provider-sdk/validator-announce';
 
 import { RadixBase } from '../utils/base.js';
 import { RadixBaseSigner } from '../utils/signer.js';

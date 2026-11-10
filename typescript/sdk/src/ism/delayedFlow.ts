@@ -1,7 +1,7 @@
 import type { Logger } from 'pino';
 
-import { DelayedFlowRouterHookIsm } from '@hyperlane-xyz/core';
-import { concurrentMap, isNullish } from '@hyperlane-xyz/utils';
+import { DelayedFlowRouterHookIsm } from '@humanode-hyperlane/core';
+import { concurrentMap, isNullish } from '@humanode-hyperlane/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { ChainName } from '../types.js';

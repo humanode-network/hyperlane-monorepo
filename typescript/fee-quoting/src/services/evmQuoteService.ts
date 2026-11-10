@@ -26,15 +26,15 @@ import {
   type SubmitQuoteCommand,
   TokenFeeType,
   WARP_FEE_COMMANDS,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 import {
   type WithAddress,
   assert,
   concurrentMap,
   eqAddress,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { QuoteMode } from '../config.js';
 import {

@@ -7,7 +7,7 @@ import {
   MockWormholeCore__factory,
   Mailbox__factory,
   WormholeVaaHookIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 
 import {
   CombinedHookIsmWarpChainConfig,
@@ -40,7 +40,7 @@ import {
   WormholeConsistencyLevel,
   type WormholeConsistencyLevelConfig,
 } from './consistency.js';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+import { addressToBytes32, assert } from '@humanode-hyperlane/utils';
 
 chai.use(chaiAsPromised);
 const { expect } = chai;

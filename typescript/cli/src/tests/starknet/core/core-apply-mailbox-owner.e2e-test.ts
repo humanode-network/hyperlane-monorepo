@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { type CoreConfig } from '@hyperlane-xyz/sdk';
+import { type CoreConfig } from '@humanode-hyperlane/sdk';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import {

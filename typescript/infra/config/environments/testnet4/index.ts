@@ -1,5 +1,5 @@
-import { IRegistry } from '@hyperlane-xyz/registry';
-import { ChainName } from '@hyperlane-xyz/sdk';
+import { IRegistry } from '@humanode-hyperlane/registry';
+import { ChainName } from '@humanode-hyperlane/sdk';
 
 import {
   getKeysForRole,

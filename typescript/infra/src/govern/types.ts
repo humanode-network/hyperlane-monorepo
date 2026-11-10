@@ -1,5 +1,5 @@
-import { ChainName, GetCallRemoteSettings } from '@hyperlane-xyz/sdk';
-import { CallData } from '@hyperlane-xyz/utils';
+import { ChainName, GetCallRemoteSettings } from '@humanode-hyperlane/sdk';
+import { CallData } from '@humanode-hyperlane/utils';
 
 import { GovernanceType } from '../governanceTypes.js';
 

@@ -10,14 +10,18 @@ import {
   CrossCollateralRoutingFee__factory,
   OffchainQuotedLinearFee__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   EvmTokenFeeReader,
   MultiProvider,
   OnchainTokenFeeType,
   convertToBps,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  addressToBytes32,
+  assert,
+  rootLogger,
+} from '@humanode-hyperlane/utils';
 
 import { getDomainId, getWarpCoreConfig } from '../../config/registry.js';
 import { WarpRouteIds } from '../../config/environments/mainnet3/warp/warpIds.js';

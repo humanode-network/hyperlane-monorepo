@@ -3,16 +3,16 @@ import { expect } from 'chai';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
-import { SealevelSigner, createRpc } from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol } from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@humanode-hyperlane/registry';
+import { SealevelSigner, createRpc } from '@humanode-hyperlane/sealevel-sdk';
+import { airdropSol } from '@humanode-hyperlane/sealevel-sdk/testing';
 import {
   IsmType,
   type RoutingMessageIdMultisigIsmConfig,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

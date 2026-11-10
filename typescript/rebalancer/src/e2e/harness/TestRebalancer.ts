@@ -1,14 +1,18 @@
 import { BigNumber, ethers } from 'ethers';
 import { type Logger, pino } from 'pino';
 
-import { ERC20Test__factory } from '@hyperlane-xyz/core';
+import { ERC20Test__factory } from '@humanode-hyperlane/core';
 import {
   HyperlaneCore,
   MultiProtocolProvider,
   type MultiProvider,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  ProtocolType,
+  addressToBytes32,
+  assert,
+} from '@humanode-hyperlane/utils';
 
 import { RebalancerConfig } from '../../config/RebalancerConfig.js';
 import {

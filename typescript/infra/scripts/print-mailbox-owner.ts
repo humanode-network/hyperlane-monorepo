@@ -1,16 +1,16 @@
-import { ChainAddresses } from '@hyperlane-xyz/registry';
+import { ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   CoreFactories,
   HyperlaneContracts,
   HyperlaneCore,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   objFilter,
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../config/contexts.js';
 import { Owner, determineGovernanceType } from '../src/governance.js';

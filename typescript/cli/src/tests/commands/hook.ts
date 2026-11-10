@@ -1,7 +1,10 @@
 import { $, type ProcessPromise } from 'zx';
 
-import { type ChainName, type DerivedHookConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import {
+  type ChainName,
+  type DerivedHookConfig,
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson } from '../../utils/files.js';
 

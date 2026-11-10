@@ -4,28 +4,28 @@
   "commit": true,
   "fixed": [
     [
-      "@hyperlane-xyz/aleo-sdk",
-      "@hyperlane-xyz/starknet-core",
-      "@hyperlane-xyz/ccip-server",
-      "@hyperlane-xyz/cli",
-      "@hyperlane-xyz/cosmos-sdk",
-      "@hyperlane-xyz/cosmos-types",
-      "@hyperlane-xyz/github-proxy",
-      "@hyperlane-xyz/helloworld",
-      "@hyperlane-xyz/http-registry-server",
-      "@hyperlane-xyz/infra",
-      "@hyperlane-xyz/radix-sdk",
-      "@hyperlane-xyz/sealevel-sdk",
-      "@hyperlane-xyz/sdk",
-      "@hyperlane-xyz/tsconfig",
-      "@hyperlane-xyz/utils",
-      "@hyperlane-xyz/widgets"
+      "@humanode-hyperlane/aleo-sdk",
+      "@humanode-hyperlane/starknet-core",
+      "@humanode-hyperlane/ccip-server",
+      "@humanode-hyperlane/cli",
+      "@humanode-hyperlane/cosmos-sdk",
+      "@humanode-hyperlane/cosmos-types",
+      "@humanode-hyperlane/github-proxy",
+      "@humanode-hyperlane/helloworld",
+      "@humanode-hyperlane/http-registry-server",
+      "@humanode-hyperlane/infra",
+      "@humanode-hyperlane/radix-sdk",
+      "@humanode-hyperlane/sealevel-sdk",
+      "@humanode-hyperlane/sdk",
+      "@humanode-hyperlane/tsconfig",
+      "@humanode-hyperlane/utils",
+      "@humanode-hyperlane/widgets"
     ]
   ],
   "linked": [
     [
-      "@hyperlane-xyz/deploy-sdk",
-      "@hyperlane-xyz/provider-sdk"
+      "@humanode-hyperlane/deploy-sdk",
+      "@humanode-hyperlane/provider-sdk"
     ]
   ],
   "access": "public",

@@ -3,7 +3,7 @@ import type { Logger } from 'pino';
 import {
   TransactionSubmissionError,
   type TransactionSubmissionState,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Erc20ApprovalError } from '../bridges/erc20Approve.js';
 import type {

@@ -7,21 +7,21 @@ import {
   MockLayerZeroEndpointV2__factory,
   MockLayerZeroUln302__factory,
   TestRecipient__factory,
-} from '@hyperlane-xyz/core';
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   EvmLayerZeroV2HookIsmModule,
   EvmLayerZeroV2HookIsmReader,
   LayerZeroV2ConfigMode,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import type {
   ChainMap,
   ChainName,
   LayerZeroV2MeshConfig,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../../context/context.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

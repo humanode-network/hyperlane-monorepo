@@ -1,5 +1,5 @@
 import { type Address, getAddressDecoder } from '@solana/kit';
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { decodeAccountData } from '../codecs/account-data.js';
 import { ByteCursor } from '../codecs/binary.js';

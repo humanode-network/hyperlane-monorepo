@@ -1,11 +1,11 @@
 import { ethers } from 'ethers';
 
-import { ModuleType, OnchainHookType } from '@hyperlane-xyz/sdk';
+import { ModuleType, OnchainHookType } from '@humanode-hyperlane/sdk';
 import {
   addressToBytes32,
   assert,
   bytes32ToAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readOnchain } from '../utils/rpcErrors.js';
 

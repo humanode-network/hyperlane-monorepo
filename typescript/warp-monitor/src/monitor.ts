@@ -9,8 +9,8 @@ import {
   getTokenBridgedBalance,
   getXERC20Info,
   startMetricsServer,
-} from '@hyperlane-xyz/metrics';
-import type { IRegistry } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/metrics';
+import type { IRegistry } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type ChainMetadata,
@@ -20,7 +20,7 @@ import {
   TokenType,
   WarpCore,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   applyRpcUrlOverridesFromEnv,
@@ -28,7 +28,7 @@ import {
   objMerge,
   sleep,
   tryFn,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   ExplorerPendingTransfersClient,

@@ -3,14 +3,14 @@ import * as chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { Wallet } from 'ethers';
 
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk';
 
 import {
   type ERC20Test,
   EverclearTokenBridge__factory,
   type MockEverclearAdapter,
   MovableCollateralRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type ChainMetadata,
   IsmType,
@@ -25,7 +25,7 @@ import {
   type WarpRouteDeployConfigMailboxRequired,
   WarpRouteDeployConfigSchema,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   addressToBytes32,
@@ -33,7 +33,7 @@ import {
   normalizeAddressEvm,
   objMap,
   pick,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

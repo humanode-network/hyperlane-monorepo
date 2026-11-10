@@ -1,25 +1,28 @@
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk';
+import { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   ArtifactDeployed,
   ArtifactNew,
   ArtifactReader,
   ArtifactState,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   DeployedMailboxAddress,
   DeployedRawMailboxArtifact,
   IRawMailboxArtifactManager,
   MailboxType,
   RawMailboxArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/mailbox';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   assert,
   eqAddressStarknet,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { StarknetProvider } from '../clients/provider.js';
 import { StarknetSigner } from '../clients/signer.js';

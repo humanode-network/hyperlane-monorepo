@@ -12,7 +12,7 @@ import {
 import { expect } from 'chai';
 import bs58 from 'bs58';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   type PrintableSvmInstruction,

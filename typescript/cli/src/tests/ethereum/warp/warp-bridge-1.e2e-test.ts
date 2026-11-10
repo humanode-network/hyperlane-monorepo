@@ -1,7 +1,7 @@
 import * as chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { type WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
+import { type WarpRouteDeployConfig } from '@humanode-hyperlane/sdk';
 
 import { DEFAULT_E2E_TEST_TIMEOUT } from '../consts.js';
 

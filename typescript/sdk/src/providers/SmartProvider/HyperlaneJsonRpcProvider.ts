@@ -5,7 +5,7 @@ import {
   isBigNumberish,
   isNullish,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   AllProviderMethods,

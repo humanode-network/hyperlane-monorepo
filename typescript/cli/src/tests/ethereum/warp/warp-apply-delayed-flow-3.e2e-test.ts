@@ -1,13 +1,13 @@
 import { expect } from 'chai';
 import { ethers, Wallet } from 'ethers';
 
-import { DelayedFlowRouterHookIsm__factory } from '@hyperlane-xyz/core';
+import { DelayedFlowRouterHookIsm__factory } from '@humanode-hyperlane/core';
 import {
   type CallData,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   CustomTxSubmitterType,

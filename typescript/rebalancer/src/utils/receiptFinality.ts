@@ -1,8 +1,8 @@
 import type { providers } from 'ethers';
 
-import type { ChainMetadata } from '@hyperlane-xyz/sdk';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import type { ChainMetadata } from '@humanode-hyperlane/sdk';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 /** A receipt must satisfy both confirmation depth and the chain's finality boundary. */
 export async function isReceiptFinalized(

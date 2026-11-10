@@ -5,13 +5,13 @@ import {
   type ChainMap,
   type MultisigIsmConfig,
   ZHash,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   isValidAddress,
   normalizeAddressEvm,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { errorRed, log, logBlue, logGreen } from '../logger.js';

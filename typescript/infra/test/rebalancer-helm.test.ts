@@ -8,8 +8,8 @@ import { pathToFileURL } from 'url';
 import Sinon from 'sinon';
 import { parse, parseAllDocuments, stringify } from 'yaml';
 
-import { GithubRegistry } from '@hyperlane-xyz/registry';
-import { TokenStandard } from '@hyperlane-xyz/sdk';
+import { GithubRegistry } from '@humanode-hyperlane/registry';
+import { TokenStandard } from '@humanode-hyperlane/sdk';
 
 import { DockerImageRepos, mainnetDockerTags } from '../config/docker.js';
 import { readRebalancerConfig } from '../src/rebalancer/config.js';
@@ -292,7 +292,7 @@ describe('Rebalancer Helm deployment', () => {
     const preload = path.join(directory, 'registry.mjs');
     fs.writeFileSync(
       preload,
-      `import { GithubRegistry } from ${JSON.stringify(pathToFileURL(path.join(getInfraPath(), 'node_modules/@hyperlane-xyz/registry/dist/index.js')).href)};\nGithubRegistry.prototype.getWarpRoute = async () => (${JSON.stringify({ tokens: [{ chainName: 'ethereum', standard: TokenStandard.EvmHypCollateral, decimals: 6, symbol: 'TEST', name: 'Test', addressOrDenom: ADDRESS }] })});\n`,
+      `import { GithubRegistry } from ${JSON.stringify(pathToFileURL(path.join(getInfraPath(), 'node_modules/@humanode-hyperlane/registry/dist/index.js')).href)};\nGithubRegistry.prototype.getWarpRoute = async () => (${JSON.stringify({ tokens: [{ chainName: 'ethereum', standard: TokenStandard.EvmHypCollateral, decimals: 6, symbol: 'TEST', name: 'Test', addressOrDenom: ADDRESS }] })});\n`,
     );
     config({
       warpRouteId: route,

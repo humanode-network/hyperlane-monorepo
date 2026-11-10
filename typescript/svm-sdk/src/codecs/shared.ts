@@ -1,5 +1,5 @@
 import type { Address, ReadonlyUint8Array } from '@solana/kit';
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   addCodecSizePrefix,

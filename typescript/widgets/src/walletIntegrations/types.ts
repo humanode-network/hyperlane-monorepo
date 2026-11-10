@@ -1,8 +1,8 @@
-import { type TypedTransactionReceipt } from '@hyperlane-xyz/sdk/providers/ProviderType';
-import type { ITokenMetadata } from '@hyperlane-xyz/sdk/token/ITokenMetadata';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import type { WarpTypedTransaction } from '@hyperlane-xyz/sdk/warp/types';
-import { HexString, ProtocolType } from '@hyperlane-xyz/utils';
+import { type TypedTransactionReceipt } from '@humanode-hyperlane/sdk/providers/ProviderType';
+import type { ITokenMetadata } from '@humanode-hyperlane/sdk/token/ITokenMetadata';
+import type { ChainName } from '@humanode-hyperlane/sdk/types';
+import type { WarpTypedTransaction } from '@humanode-hyperlane/sdk/warp/types';
+import { HexString, ProtocolType } from '@humanode-hyperlane/utils';
 
 export interface ChainAddress {
   address: string;

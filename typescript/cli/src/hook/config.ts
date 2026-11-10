@@ -1,10 +1,10 @@
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type HookConfig,
   HookConfigSchema,
   isHookCompatible,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { type WriteCommandContext } from '../context/types.js';
 import { readYamlOrJson } from '../utils/files.js';

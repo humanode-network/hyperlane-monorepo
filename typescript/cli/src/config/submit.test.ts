@@ -11,7 +11,7 @@ import {
   MultiProvider,
   testChainMetadata,
   testSealevelChain,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { readYamlOrJson } from '../utils/files.js';
 

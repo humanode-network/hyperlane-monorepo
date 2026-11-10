@@ -1,6 +1,6 @@
 import { type Logger } from 'pino';
 
-import { IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type ChainMetadata,
@@ -12,7 +12,7 @@ import {
   type Token,
   WarpCore,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   assert,
@@ -20,7 +20,7 @@ import {
   ProtocolType,
   objFilter,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { createStatusAdapters } from '../bridges/status/index.js';
 import { validateOftRoutes } from '../bridges/status/validateOftRoutes.js';

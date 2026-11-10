@@ -1,7 +1,7 @@
 import { TransactionReceipt } from '@ethersproject/providers';
 import { Logger } from 'pino';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import {
   impersonateAccount,

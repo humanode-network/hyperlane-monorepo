@@ -16,8 +16,8 @@ import {
   InterchainQueryChecker,
   IsmType,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { DEPLOYER } from '../../config/environments/mainnet3/owners.js';

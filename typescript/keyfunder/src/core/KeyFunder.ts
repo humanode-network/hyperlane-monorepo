@@ -2,13 +2,13 @@ import { BigNumber, ethers } from 'ethers';
 import type { PopulatedTransaction } from 'ethers';
 import type { Logger } from 'pino';
 
-import { ERC20__factory } from '@hyperlane-xyz/core';
+import { ERC20__factory } from '@humanode-hyperlane/core';
 import {
   ChainTechnicalStack,
   HyperlaneIgp,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { addBufferToGasLimit, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { addBufferToGasLimit, assert } from '@humanode-hyperlane/utils';
 
 import type {
   ChainConfig,

@@ -1,4 +1,4 @@
-# @hyperlane-xyz/scraper-proxy
+# @humanode-hyperlane/scraper-proxy
 
 ## 0.1.3
 
@@ -8,7 +8,7 @@
 - 9ef15ff: Added scraper WebSocket wake-ups configured through a single Secret Manager JSON map, retaining five-second HTTP polling for recovery, batching proxy head updates, and keeping endpoint credentials out of Helm values.
 - Updated dependencies [aa84958]
 - Updated dependencies [c520224]
-  - @hyperlane-xyz/utils@45.2.0
+  - @humanode-hyperlane/utils@45.2.0
 
 ## 0.1.2
 
@@ -20,14 +20,14 @@
 - Updated dependencies [9a59116]
 - Updated dependencies [28eda66]
 - Updated dependencies [4e2ab65]
-  - @hyperlane-xyz/utils@45.0.0
+  - @humanode-hyperlane/utils@45.0.0
 
 ## 0.1.1
 
 ### Patch Changes
 
 - Updated dependencies [6fbe5ad]
-  - @hyperlane-xyz/utils@44.0.0
+  - @humanode-hyperlane/utils@44.0.0
 
 ## 0.1.0
 
@@ -40,4 +40,4 @@
 ### Patch Changes
 
 - Updated dependencies [7cf9c01]
-  - @hyperlane-xyz/utils@43.0.0
+  - @humanode-hyperlane/utils@43.0.0

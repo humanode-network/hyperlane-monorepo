@@ -4,9 +4,9 @@ import {
   ChainName,
   ERC20_FEE_AGGREGATION_HOOK_VERSION,
   getTxConfigBatchSize,
-} from '@hyperlane-xyz/sdk';
-import { isValidContractVersion } from '@hyperlane-xyz/sdk/utils/contract';
-import { Address, assert, chunk, eqAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { isValidContractVersion } from '@humanode-hyperlane/sdk/utils/contract';
+import { Address, assert, chunk, eqAddress } from '@humanode-hyperlane/utils';
 
 import {
   AggregatorSet,

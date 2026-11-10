@@ -6,7 +6,7 @@ import {
   ERC20__factory,
   HypXERC20Lockbox__factory,
   IXERC20__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 
 import { test1 } from '../../consts/testChains.js';
 import { MultiProtocolProvider } from '../../providers/MultiProtocolProvider.js';

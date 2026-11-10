@@ -1,26 +1,26 @@
 import {
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 import {
   ArtifactReader,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
-import { DerivedCoreConfig } from '@hyperlane-xyz/provider-sdk/core';
-import { hookArtifactToDerivedConfig } from '@hyperlane-xyz/provider-sdk/hook';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
+import { DerivedCoreConfig } from '@humanode-hyperlane/provider-sdk/core';
+import { hookArtifactToDerivedConfig } from '@humanode-hyperlane/provider-sdk/hook';
 import {
   DeployedMailboxAddress,
   DeployedMailboxArtifact,
   IRawMailboxArtifactManager,
   MailboxOnChain,
   mailboxArtifactToDerivedCoreConfig,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
-import { Logger, isEmptyAddress, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/mailbox';
+import { Logger, isEmptyAddress, rootLogger } from '@humanode-hyperlane/utils';
 
 import { HookReader, createHookReader } from '../hook/hook-reader.js';
 import { IsmReader, createIsmReader } from '../ism/generic-ism.js';
-import { ismArtifactToDerivedConfig } from '@hyperlane-xyz/provider-sdk/ism';
+import { ismArtifactToDerivedConfig } from '@humanode-hyperlane/provider-sdk/ism';
 
 /**
  * Factory function to create a CoreArtifactReader instance.

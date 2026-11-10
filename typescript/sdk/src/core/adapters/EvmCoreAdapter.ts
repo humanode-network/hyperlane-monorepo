@@ -1,5 +1,5 @@
-import { Mailbox__factory } from '@hyperlane-xyz/core';
-import { Address, HexString } from '@hyperlane-xyz/utils';
+import { Mailbox__factory } from '@humanode-hyperlane/core';
+import { Address, HexString } from '@humanode-hyperlane/utils';
 
 import { BaseEvmAdapter } from '../../app/MultiProtocolApp.js';
 import { HyperlaneContractsMap } from '../../contracts/types.js';

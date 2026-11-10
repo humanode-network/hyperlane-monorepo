@@ -1,4 +1,4 @@
-import { assert, isNullish, rootLogger } from '@hyperlane-xyz/utils';
+import { assert, isNullish, rootLogger } from '@humanode-hyperlane/utils';
 
 import { allocateSequentialPorts } from './helpers.js';
 import { ForkManagerRegistry } from './registry.js';

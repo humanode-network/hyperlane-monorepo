@@ -9,8 +9,8 @@ import {
   InterchainGasPaymaster__factory,
   ProxyAdmin__factory,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
-import { HyperlaneIgp, MultiProvider } from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/core';
+import { HyperlaneIgp, MultiProvider } from '@humanode-hyperlane/sdk';
 
 import type { KeyFunderConfig } from '../config/types.js';
 import { KeyFunderMetrics } from '../metrics/Metrics.js';

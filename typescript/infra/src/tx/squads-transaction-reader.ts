@@ -42,8 +42,8 @@ import {
   SealevelSetInterchainSecurityModuleInstructionSchema,
   WarpCoreConfig,
   defaultMultisigConfigs,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, rootLogger } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getDomainId } from '../../config/registry.js';

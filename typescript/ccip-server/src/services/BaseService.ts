@@ -1,9 +1,12 @@
 import { Logger } from 'pino';
 import { z } from 'zod';
 
-import { DEFAULT_GITHUB_REGISTRY, IRegistry } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk/providers/MultiProvider';
+import {
+  DEFAULT_GITHUB_REGISTRY,
+  IRegistry,
+} from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import { MultiProvider } from '@humanode-hyperlane/sdk/providers/MultiProvider';
 
 import type { CcipApp } from '../http.js';
 

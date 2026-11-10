@@ -1,6 +1,9 @@
-import { MerkleTreeHook, MerkleTreeHook__factory } from '@hyperlane-xyz/core';
-import { getValidatorFromStorageLocation } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import {
+  MerkleTreeHook,
+  MerkleTreeHook__factory,
+} from '@humanode-hyperlane/core';
+import { getValidatorFromStorageLocation } from '@humanode-hyperlane/sdk';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { getArgs, withChainRequired } from '../agent-utils.js';
 import { getHyperlaneCore } from '../core-utils.js';

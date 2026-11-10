@@ -1,19 +1,19 @@
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { FeeParamsType, FeeType } from '@hyperlane-xyz/provider-sdk/fee';
-import type { FeeArtifactConfig } from '@hyperlane-xyz/provider-sdk/fee';
-import type { HookArtifactConfig } from '@hyperlane-xyz/provider-sdk/hook';
-import type { IsmArtifactConfig } from '@hyperlane-xyz/provider-sdk/ism';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import type { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { FeeParamsType, FeeType } from '@humanode-hyperlane/provider-sdk/fee';
+import type { FeeArtifactConfig } from '@humanode-hyperlane/provider-sdk/fee';
+import type { HookArtifactConfig } from '@humanode-hyperlane/provider-sdk/hook';
+import type { IsmArtifactConfig } from '@humanode-hyperlane/provider-sdk/ism';
 import type {
   CollateralWarpArtifactConfig,
   CrossCollateralWarpArtifactConfig,
   WarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { TokenType } from '@humanode-hyperlane/provider-sdk/warp';
 
 import { SvmProvider } from '../clients/provider.js';
 

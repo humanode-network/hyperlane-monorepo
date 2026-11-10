@@ -3,24 +3,24 @@ import { expect } from 'chai';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type RawCrossCollateralWarpArtifactConfig,
   TokenType as ArtifactTokenType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   SealevelSigner,
   SvmCrossCollateralTokenReader,
   SvmCrossCollateralTokenWriter,
   SvmWarpArtifactManager,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/sealevel-sdk';
 import {
   LEGACY_SVM_PROGRAM_BYTES,
   TEST_ATA_PAYER_FUNDING_AMOUNT,
   airdropSol,
   createSplMint,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@humanode-hyperlane/sealevel-sdk/testing';
 import { Connection, PublicKey } from '@solana/web3.js';
 import {
   TokenFeeType,
@@ -28,8 +28,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

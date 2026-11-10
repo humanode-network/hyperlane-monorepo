@@ -7,7 +7,7 @@ import {
   eqAddress,
   pick,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { multisigIsmVerifyCosts } from '../consts/multisigIsmVerifyCosts.js';
 import type { HookConfig } from '../hook/types.js';

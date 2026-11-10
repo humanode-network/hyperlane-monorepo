@@ -124,13 +124,13 @@ ARG TARGETARCH
 RUN --mount=type=cache,id=node-services-turbo-${TARGETARCH},target=/hyperlane-monorepo/.turbo/cache \
     --mount=type=cache,target=/root/.tron/solc \
     pnpm turbo run bundle \
-    --filter=@hyperlane-xyz/rebalancer \
-    --filter=@hyperlane-xyz/warp-monitor \
-    --filter=@hyperlane-xyz/ccip-server \
-    --filter=@hyperlane-xyz/keyfunder \
-    --filter=@hyperlane-xyz/relayer \
-    --filter=@hyperlane-xyz/fee-quoting \
-    --filter=@hyperlane-xyz/scraper-proxy
+    --filter=@humanode-hyperlane/rebalancer \
+    --filter=@humanode-hyperlane/warp-monitor \
+    --filter=@humanode-hyperlane/ccip-server \
+    --filter=@humanode-hyperlane/keyfunder \
+    --filter=@humanode-hyperlane/relayer \
+    --filter=@humanode-hyperlane/fee-quoting \
+    --filter=@humanode-hyperlane/scraper-proxy
 
 # Deduplicate identical NCC assets across bundles.
 # NCC produces byte-identical copies of WASM files (~18MB each), workers,

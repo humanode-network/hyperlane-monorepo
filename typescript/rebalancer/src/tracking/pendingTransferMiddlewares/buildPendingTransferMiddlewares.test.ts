@@ -6,8 +6,8 @@ import { pathToFileURL } from 'node:url';
 import { type Logger, pino } from 'pino';
 import Sinon from 'sinon';
 
-import { MultiProvider } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import {
   type PendingTransferMiddlewareConfig,

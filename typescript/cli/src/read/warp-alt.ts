@@ -1,12 +1,12 @@
-import { createWarpAltReader } from '@hyperlane-xyz/sealevel-sdk';
-import { type ChainName, altVmChainLookup } from '@hyperlane-xyz/sdk';
+import { createWarpAltReader } from '@humanode-hyperlane/sealevel-sdk';
+import { type ChainName, altVmChainLookup } from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   assert,
   objFilter,
   objMap,
   promiseObjAll,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logGray } from '../logger.js';

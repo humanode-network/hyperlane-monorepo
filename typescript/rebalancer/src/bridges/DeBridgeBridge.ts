@@ -15,18 +15,18 @@ import {
   type ChainMap,
   type ChainMetadata,
   submitEvmLikeTransaction,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   TronJsonRpcProvider,
   TronWallet,
-} from '@hyperlane-xyz/tron-sdk/runtime';
+} from '@humanode-hyperlane/tron-sdk/runtime';
 import {
   ProtocolType,
   TransactionSubmission,
   addressToBytesTron,
   assert,
   bufferToBase58,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type {
   BridgeExecutionOptions,

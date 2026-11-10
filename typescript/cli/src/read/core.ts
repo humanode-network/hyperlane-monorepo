@@ -1,11 +1,11 @@
-import { createCoreReader } from '@hyperlane-xyz/deploy-sdk';
+import { createCoreReader } from '@humanode-hyperlane/deploy-sdk';
 import {
   type ChainName,
   type CoreConfig,
   EvmCoreReader,
   altVmChainLookup,
-} from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { errorRed } from '../logger.js';

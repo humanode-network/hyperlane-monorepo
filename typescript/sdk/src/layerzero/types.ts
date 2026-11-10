@@ -1,6 +1,10 @@
 import { z } from 'zod';
 
-import { Address, isAddressEvm, isZeroishAddress } from '@hyperlane-xyz/utils';
+import {
+  Address,
+  isAddressEvm,
+  isZeroishAddress,
+} from '@humanode-hyperlane/utils';
 
 import { ZBigNumberish, ZChainName } from '../metadata/customZodTypes.js';
 import { ChainMap, OwnableSchema } from '../types.js';

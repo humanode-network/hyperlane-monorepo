@@ -1,10 +1,10 @@
-import { type ChainName } from '@hyperlane-xyz/sdk';
+import { type ChainName } from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   assert,
   isValidAddressEvm,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { getSigner } from '../../../utils/keys.js';
 import { type CommandContext } from '../../types.js';

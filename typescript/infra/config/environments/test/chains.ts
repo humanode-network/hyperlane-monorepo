@@ -1,7 +1,7 @@
 import {
   testChainMetadata as defaultTestChainMetadata,
   testChains as defaultTestChains,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { AgentChainNames, Role } from '../../../src/roles.js';
 

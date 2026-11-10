@@ -1,4 +1,4 @@
-# @hyperlane-xyz/cosmos-types
+# @humanode-hyperlane/cosmos-types
 
 ## 45.2.0
 

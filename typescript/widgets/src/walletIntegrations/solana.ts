@@ -5,13 +5,13 @@ import { useCallback } from 'react';
 import {
   ProviderType,
   type TypedTransactionReceipt,
-} from '@hyperlane-xyz/sdk/providers/ProviderType';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import type { ITokenMetadata } from '@hyperlane-xyz/sdk/token/ITokenMetadata';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import type { WarpTypedTransaction } from '@hyperlane-xyz/sdk/warp/types';
+} from '@humanode-hyperlane/sdk/providers/ProviderType';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
+import type { ITokenMetadata } from '@humanode-hyperlane/sdk/token/ITokenMetadata';
+import type { ChainName } from '@humanode-hyperlane/sdk/types';
+import type { WarpTypedTransaction } from '@humanode-hyperlane/sdk/warp/types';
 
-import { sleep } from '@hyperlane-xyz/utils';
+import { sleep } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

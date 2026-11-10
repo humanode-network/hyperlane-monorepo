@@ -4,7 +4,7 @@ import {
   getTokenConnectionId,
   parseTokenConnectionId,
 } from './TokenConnection.js';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 describe('TokenConnection', () => {
   it('parses serialized token connection ids', () => {

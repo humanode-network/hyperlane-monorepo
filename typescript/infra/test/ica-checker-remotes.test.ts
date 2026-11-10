@@ -5,7 +5,7 @@ import {
   HyperlaneRouterChecker,
   InterchainAccount,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { HyperlaneICAChecker } from '../src/govern/HyperlaneICAChecker.js';
 

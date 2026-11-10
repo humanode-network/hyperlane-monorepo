@@ -1,5 +1,5 @@
-import { Mailbox__factory } from '@hyperlane-xyz/core';
-import { Address, ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+import { Mailbox__factory } from '@humanode-hyperlane/core';
+import { Address, ProtocolType, rootLogger } from '@humanode-hyperlane/utils';
 
 import { ChainMetadata } from '../metadata/chainMetadataTypes.js';
 

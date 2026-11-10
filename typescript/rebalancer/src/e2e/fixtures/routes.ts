@@ -1,7 +1,7 @@
 import { BigNumber } from 'ethers';
 
-import { TokenStandard, type WarpCoreConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { TokenStandard, type WarpCoreConfig } from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import {
   ExecutionType,

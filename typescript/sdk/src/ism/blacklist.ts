@@ -1,8 +1,8 @@
 import { providers } from 'ethers';
 import { getAbiItem, parseEventLogs, toEventSelector } from 'viem';
 
-import { BlacklistIsm__factory } from '@hyperlane-xyz/core';
-import { Address, assert, rootLogger } from '@hyperlane-xyz/utils';
+import { BlacklistIsm__factory } from '@humanode-hyperlane/core';
+import { Address, assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { EthJsonRpcBlockParameterTag } from '../metadata/chainMetadataTypes.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

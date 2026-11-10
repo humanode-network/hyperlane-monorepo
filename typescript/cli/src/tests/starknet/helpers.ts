@@ -8,14 +8,14 @@ import {
   HookType,
   IsmType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   assert,
   normalizeAddressStarknet,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 
 import { TEST_CHAIN_NAMES_BY_PROTOCOL } from '../constants.js';
 

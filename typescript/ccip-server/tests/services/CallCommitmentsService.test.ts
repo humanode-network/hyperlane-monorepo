@@ -5,19 +5,19 @@ import sinon from 'sinon';
 import {
   InterchainAccountRouter__factory,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   PostCallsSchema,
   commitmentFromIcaCalls,
   encodeIcaCalls,
   isPostCallsIca,
   normalizeCalls,
-} from '@hyperlane-xyz/sdk/middleware/account/icaCalls';
+} from '@humanode-hyperlane/sdk/middleware/account/icaCalls';
 import {
   addressToBytes32,
   formatMessage,
   parseMessage,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { prisma } from '../../src/db.js';
 import type { Prisma } from '../../src/generated/prisma/client.js';

@@ -1,11 +1,11 @@
 import { expect } from 'chai';
 import { Wallet } from 'ethers';
 
-import { type ERC20Test } from '@hyperlane-xyz/core';
+import { type ERC20Test } from '@humanode-hyperlane/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type IsmConfig,
   IsmType,
@@ -14,8 +14,8 @@ import {
   type WarpRouteDeployConfig,
   randomAddress,
   randomIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, deepCopy } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, assert, deepCopy } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

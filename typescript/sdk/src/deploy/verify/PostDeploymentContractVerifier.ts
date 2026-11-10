@@ -1,4 +1,4 @@
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { ExplorerFamily } from '../../metadata/chainMetadataTypes.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

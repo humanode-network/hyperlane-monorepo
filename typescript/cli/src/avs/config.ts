@@ -1,5 +1,5 @@
-import { type ChainMap } from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+import { type ChainMap } from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 interface AVSContracts {
   avsDirectory: Address;

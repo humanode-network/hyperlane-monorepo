@@ -4,7 +4,7 @@ import {
   CrossCollateralRoutingFee__factory,
   OffchainQuotedLinearFee__factory,
   RoutingFee__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   ProtocolType,
@@ -17,7 +17,7 @@ import {
   objOmit,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { transferOwnershipTransactions } from '../contracts/contracts.js';
 import {

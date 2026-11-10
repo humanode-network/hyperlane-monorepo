@@ -4,14 +4,14 @@ import { z } from 'zod';
 import {
   MailboxClient__factory,
   TokenBridgeOft__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   EvmMovableCollateralAdapter,
   type ChainMap,
   type Token,
-} from '@hyperlane-xyz/sdk';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import { addressToBytes32, assert, eqAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
+import { addressToBytes32, assert, eqAddress } from '@humanode-hyperlane/utils';
 
 import {
   ExecutionType,

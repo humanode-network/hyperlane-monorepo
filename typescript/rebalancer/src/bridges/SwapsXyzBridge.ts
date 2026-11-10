@@ -2,11 +2,11 @@ import {
   type ChainMap,
   type ChainMetadata,
   submitEvmLikeTransaction,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   TronJsonRpcProvider,
   TronWallet,
-} from '@hyperlane-xyz/tron-sdk/runtime';
+} from '@humanode-hyperlane/tron-sdk/runtime';
 import {
   ACCOUNT_SIZE,
   AccountLayout,
@@ -30,7 +30,7 @@ import {
   ensure0x,
   isEVMLike,
   sleep,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import { BigNumber, Contract, Wallet, providers, utils } from 'ethers';
 import type { Logger } from 'pino';
 import { TronWeb } from 'tronweb';

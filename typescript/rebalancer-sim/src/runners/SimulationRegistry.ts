@@ -6,15 +6,15 @@ import type {
   UpdateChainParams,
   WarpRouteConfigMap,
   WarpRouteFilterParams,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   type ChainName,
   TokenStandard,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import type { MultiDomainDeploymentResult } from '../types.js';
 

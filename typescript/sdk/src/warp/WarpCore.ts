@@ -12,7 +12,7 @@ import {
   isValidAddress,
   isZeroishAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import { Keypair } from '@solana/web3.js';
 
 import { ChainTechnicalStack } from '../metadata/chainMetadataTypes.js';

@@ -1,7 +1,7 @@
 import { Request, Response, Router } from 'express';
 
-import { UpdateChainSchema } from '@hyperlane-xyz/registry';
-import { ZChainName } from '@hyperlane-xyz/sdk';
+import { UpdateChainSchema } from '@humanode-hyperlane/registry';
+import { ZChainName } from '@humanode-hyperlane/sdk';
 
 import { AppConstants } from '../constants/AppConstants.js';
 import {

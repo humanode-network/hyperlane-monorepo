@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import { strip0x } from '@hyperlane-xyz/utils';
+import { strip0x } from '@humanode-hyperlane/utils';
 
 /**
  * Returns the lowercase hex (without 0x) of the address a `matchBody: true`

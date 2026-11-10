@@ -1,5 +1,8 @@
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import type { ContractType } from '@hyperlane-xyz/starknet-core/runtime';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
+import type { ContractType } from '@humanode-hyperlane/starknet-core/runtime';
 import {
   Call,
   GetTransactionReceiptResponse,

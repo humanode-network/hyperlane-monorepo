@@ -1,5 +1,5 @@
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ChainName } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { getArgs } from '../agent-utils.js';
 import { getEnvironmentConfig } from '../core-utils.js';

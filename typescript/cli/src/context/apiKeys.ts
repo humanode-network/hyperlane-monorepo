@@ -1,12 +1,12 @@
 import { confirm } from '@inquirer/prompts';
 
-import { type IRegistry } from '@hyperlane-xyz/registry';
+import { type IRegistry } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type ChainMetadata,
   type ChainName,
   ExplorerFamily,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { detectAndConfirmOrPrompt } from '../utils/input.js';
 

@@ -2,8 +2,8 @@ import { utils } from 'ethers';
 import type { FastifyReply } from 'fastify';
 import { z } from 'zod';
 
-import { offchainLookupRequestMessageHash } from '@hyperlane-xyz/sdk/ism/utils';
-import { assert } from '@hyperlane-xyz/utils';
+import { offchainLookupRequestMessageHash } from '@humanode-hyperlane/sdk/ism/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import type { CcipRequest } from '../http.js';
 

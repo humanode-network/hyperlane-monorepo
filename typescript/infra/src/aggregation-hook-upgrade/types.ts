@@ -1,4 +1,4 @@
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
 import type {
   AnnotatedEV5Transaction,
   ChainMap,
@@ -6,8 +6,8 @@ import type {
   ContractVerificationInput,
   ContractVerifier,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import type { Address, Logger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import type { Address, Logger } from '@humanode-hyperlane/utils';
 
 import type { Modules } from '../../scripts/agent-utils.js';
 import type { DeployEnvironment } from '../config/deploy-environment.js';

@@ -18,9 +18,9 @@ import yargs from 'yargs';
 
 import { checkbox, confirm, input } from '@inquirer/prompts';
 
-import { getRegistry as getMergedRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { getRegistry as getMergedRegistry } from '@humanode-hyperlane/registry/fs';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { getRegistry } from '../../config/registry.js';
 

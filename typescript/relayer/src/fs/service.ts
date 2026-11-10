@@ -4,13 +4,13 @@ import 'zod/compile';
 import { Wallet } from 'ethers';
 import { z } from 'zod';
 
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
 import {
   applyRpcUrlOverridesFromEnv,
   createServiceLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { RelayerConfigInput } from '../config/schema.js';
 

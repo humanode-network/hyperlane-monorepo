@@ -1,4 +1,4 @@
-import { IsmType } from '@hyperlane-xyz/sdk';
+import { IsmType } from '@humanode-hyperlane/sdk';
 
 import { Contexts } from '../../config/contexts.js';
 import { multisigIsms } from '../../config/multisigIsm.js';

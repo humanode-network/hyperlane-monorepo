@@ -1,7 +1,7 @@
 import { ContractFactory } from 'ethers';
 import { Types } from 'tronweb';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TronTransactionResponse, TronWallet } from './TronWallet.js';
 

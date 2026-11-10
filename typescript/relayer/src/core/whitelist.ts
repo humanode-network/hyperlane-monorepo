@@ -1,5 +1,9 @@
-import type { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address, ParsedMessage, bytes32ToAddress } from '@hyperlane-xyz/utils';
+import type { ChainMap } from '@humanode-hyperlane/sdk';
+import {
+  Address,
+  ParsedMessage,
+  bytes32ToAddress,
+} from '@humanode-hyperlane/utils';
 
 export type MessageWhitelist = ChainMap<Set<Address>>;
 

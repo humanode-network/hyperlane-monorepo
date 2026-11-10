@@ -4,13 +4,13 @@ import {
   type ProtocolTypedTransaction,
   type TxSubmitterInterface,
   type TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Annotated,
   type ProtocolType,
   assert,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../utils/files.js';
 

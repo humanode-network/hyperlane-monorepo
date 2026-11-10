@@ -7,7 +7,7 @@ import {
   addressToBytes32,
   assert,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { BaseCosmWasmAdapter } from '../../app/MultiProtocolApp.js';
 import {

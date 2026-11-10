@@ -1,7 +1,7 @@
 import { Wallet, ethers } from 'ethers';
 import { $, type ProcessOutput, type ProcessPromise } from 'zx';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainName,
   HypERC20Deployer,
@@ -11,13 +11,13 @@ import {
   type WarpRouteDeployConfig,
   type WarpRouteDeployConfigMailboxRequired,
   WarpRouteDeployConfigSchema,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   assert,
   type Address,
   ProtocolType,
   randomInt,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readChainSubmissionStrategyConfig } from '../../../config/strategy.js';
 import { createAltVMSigners } from '../../../context/altvm.js';

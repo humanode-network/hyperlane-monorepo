@@ -3,15 +3,15 @@ import { ethers } from 'ethers';
 import {
   ERC20__factory,
   HypERC20Collateral__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type ChainMetadata,
   HyperlaneCore,
   MultiProvider,
   TokenStandard,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, rootLogger } from '@humanode-hyperlane/utils';
 
 import { KPICollector } from './KPICollector.js';
 import { MockInfrastructureController } from './MockInfrastructureController.js';

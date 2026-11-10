@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/cosmos-types",
+  "name": "@humanode-hyperlane/cosmos-types",
   "version": "45.2.0",
   "description": "Hyperlane TypeScript SDK types for the Cosmos Hyperlane SDK module",
   "keywords": [
@@ -11,7 +11,7 @@
   ],
   "homepage": "https://www.hyperlane.xyz",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "/dist"
   ],
@@ -33,7 +33,7 @@
     "protobufjs": "^7.4.0"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/node": "catalog:",
     "oxfmt": "catalog:",
     "typescript": "catalog:"

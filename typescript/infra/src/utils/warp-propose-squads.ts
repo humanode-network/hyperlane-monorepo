@@ -12,8 +12,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { z } from 'zod';
 
-import { ChainName, MultiProtocolProvider } from '@hyperlane-xyz/sdk';
-import { ProtocolType, eqAddressSol } from '@hyperlane-xyz/utils';
+import { ChainName, MultiProtocolProvider } from '@humanode-hyperlane/sdk';
+import { ProtocolType, eqAddressSol } from '@humanode-hyperlane/utils';
 
 // Filename pattern produced by AltVMFileSubmitter via `hyperlane warp apply`'s
 // default file-submitter naming: `<chain>-file-<timestamp>-receipts.json`.

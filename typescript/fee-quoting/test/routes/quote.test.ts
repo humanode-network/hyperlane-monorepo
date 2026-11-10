@@ -8,8 +8,8 @@ import {
   type DerivedTokenRouterConfig,
   HookType,
   TokenFeeType,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 
 import { ZERO_ADDRESS } from '../../src/constants.js';
 import type { FeeQuotingApp } from '../../src/http.js';

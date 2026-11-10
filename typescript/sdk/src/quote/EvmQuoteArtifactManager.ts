@@ -1,13 +1,13 @@
 import { ethers } from 'ethers';
 
-import { type FeeReadContext } from '@hyperlane-xyz/provider-sdk/fee';
+import { type FeeReadContext } from '@humanode-hyperlane/provider-sdk/fee';
 import {
   type IRawWarpQuoteArtifactManager,
   type IRawWarpQuoteReader,
   type IRawWarpQuoteWriter,
   type RawQuoteSigner,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/quote';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { type MultiProvider } from '../providers/MultiProvider.js';
 

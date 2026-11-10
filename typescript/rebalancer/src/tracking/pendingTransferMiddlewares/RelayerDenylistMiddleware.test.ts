@@ -13,7 +13,7 @@ import { pathToFileURL } from 'node:url';
 import { type Logger, pino } from 'pino';
 import Sinon from 'sinon';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import type {
   ExplorerMessage,

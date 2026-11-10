@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@humanode-hyperlane/sdk';
+import { Address } from '@humanode-hyperlane/utils';
 
 import { chainOwners } from '../../owners.js';
 import { awIcas } from '../ica/aw.js';

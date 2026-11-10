@@ -2,12 +2,12 @@ import type { ethers } from 'ethers';
 import type { CommandModule } from 'yargs';
 import { z } from 'zod';
 
-import { type AltVM } from '@hyperlane-xyz/provider-sdk';
+import { type AltVM } from '@humanode-hyperlane/provider-sdk';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import type { IRegistry } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/provider-sdk/module';
+import type { IRegistry } from '@humanode-hyperlane/registry';
 import type {
   ChainMap,
   ChainMetadata,
@@ -15,8 +15,8 @@ import type {
   MultiProvider,
   WarpCoreConfig,
   WarpRouteDeployConfigMailboxRequired,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 export const SignerKeyProtocolMapSchema = z
   .partialRecord(z.enum(ProtocolType), z.string().nonempty(), {

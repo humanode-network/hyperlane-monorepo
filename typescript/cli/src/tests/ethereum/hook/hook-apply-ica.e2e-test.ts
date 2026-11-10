@@ -9,9 +9,9 @@ import {
   InterchainAccountRouter__factory,
   Mailbox__factory,
   ProtocolFee__factory,
-} from '@hyperlane-xyz/core';
-import { HookType, TxSubmitterType } from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { HookType, TxSubmitterType } from '@humanode-hyperlane/sdk';
+import { addressToBytes32, assert } from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../../context/context.js';
 import { type ExtendedSubmissionStrategy } from '../../../submitters/types.js';

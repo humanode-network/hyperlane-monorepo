@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js';
 
-import { Domain, assert, toHexString } from '@hyperlane-xyz/utils';
+import { Domain, assert, toHexString } from '@humanode-hyperlane/utils';
 
 import {
   SealevelAccountDataWrapper,

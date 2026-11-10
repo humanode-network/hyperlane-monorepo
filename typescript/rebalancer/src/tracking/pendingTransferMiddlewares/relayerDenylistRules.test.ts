@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { readFileSync } from 'node:fs';
 
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+import { ZERO_ADDRESS_HEX_32 } from '@humanode-hyperlane/utils';
 
 import type { ExplorerMessage } from '../../utils/ExplorerClient.js';
 

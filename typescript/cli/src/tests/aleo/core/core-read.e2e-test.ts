@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { type CoreConfig, HookType, IsmType } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { type CoreConfig, HookType, IsmType } from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
 import {

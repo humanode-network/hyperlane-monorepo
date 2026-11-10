@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ProtocolType, isAddressEvm } from '@hyperlane-xyz/utils';
+import { ProtocolType, isAddressEvm } from '@humanode-hyperlane/utils';
 
 const SEALEVEL_ADDRESS_REGEX = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
 

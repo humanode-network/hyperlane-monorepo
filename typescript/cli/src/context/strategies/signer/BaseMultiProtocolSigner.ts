@@ -4,8 +4,8 @@ import { type Signer } from 'ethers';
 import {
   type MultiProtocolProvider,
   type TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { type ExtendedChainSubmissionStrategy } from '../../../submitters/types.js';
 

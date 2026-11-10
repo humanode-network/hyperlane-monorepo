@@ -1,7 +1,7 @@
 import { BigNumber, BigNumberish, constants, utils } from 'ethers';
 
-import type { LayerZeroV2HookIsm } from '@hyperlane-xyz/core';
-import { Address, assert } from '@hyperlane-xyz/utils';
+import type { LayerZeroV2HookIsm } from '@humanode-hyperlane/core';
+import { Address, assert } from '@humanode-hyperlane/utils';
 
 import {
   LayerZeroV2ConfigMode,

@@ -2,14 +2,14 @@ import chalk from 'chalk';
 import { BigNumber } from 'ethers';
 import yargs from 'yargs';
 
-import { AnnotatedEV5Transaction } from '@hyperlane-xyz/sdk';
+import { AnnotatedEV5Transaction } from '@humanode-hyperlane/sdk';
 import {
   LogFormat,
   LogLevel,
   assert,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { getGovernanceSafes } from '../../config/environments/mainnet3/governance/utils.js';
 import { withGovernanceType } from '../../src/governance.js';

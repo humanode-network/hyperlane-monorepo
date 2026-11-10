@@ -6,7 +6,7 @@ import {
   configureRootLogger,
   rootLogger,
   timedAsync,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { mainnetDockerTags } from '../../config/docker.js';

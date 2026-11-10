@@ -1,15 +1,15 @@
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type TestIsmConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
 
 import { type AnyAleoNetworkClient } from '../clients/base.js';
 import { type AleoSigner } from '../clients/signer.js';

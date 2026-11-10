@@ -6,7 +6,7 @@ import {
   isZeroishAddress,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { AnyAleoNetworkClient } from '../clients/base.js';
 import {

@@ -7,9 +7,9 @@ import type {
   TransactionSigner,
 } from '@solana/kit';
 
-import type { DeployedHookAddress } from '@hyperlane-xyz/provider-sdk/hook';
-import type { DeployedIsmAddress } from '@hyperlane-xyz/provider-sdk/ism';
-import { isNullish } from '@hyperlane-xyz/utils';
+import type { DeployedHookAddress } from '@humanode-hyperlane/provider-sdk/hook';
+import type { DeployedIsmAddress } from '@humanode-hyperlane/provider-sdk/ism';
+import { isNullish } from '@humanode-hyperlane/utils';
 
 import type { IgpFeeConfig } from './codecs/igp.js';
 import type { InstructionAccountMeta } from './instructions/utils.js';

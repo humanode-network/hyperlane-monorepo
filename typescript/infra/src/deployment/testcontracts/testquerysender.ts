@@ -1,10 +1,10 @@
-import { TestQuerySender__factory } from '@hyperlane-xyz/core';
+import { TestQuerySender__factory } from '@humanode-hyperlane/core';
 import {
   ChainName,
   ContractVerifier,
   HyperlaneDeployer,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 export const TEST_QUERY_SENDER_FACTORIES = {
   TestQuerySender: new TestQuerySender__factory(),

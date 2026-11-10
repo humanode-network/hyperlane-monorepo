@@ -4,8 +4,8 @@ import { parseArgs } from 'node:util';
 import { pino } from 'pino';
 import { z } from 'zod';
 
-import { ChainMetadataSchema } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ChainMetadataSchema } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { DeBridgeBridge } from '../bridges/DeBridgeBridge.js';
 

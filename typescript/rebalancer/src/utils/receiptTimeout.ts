@@ -1,6 +1,6 @@
 import type { providers } from 'ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 /** Default deadline for waiting for a single on-chain transaction receipt. */
 export const DEFAULT_RECEIPT_TIMEOUT_MS = 5 * 60 * 1000;

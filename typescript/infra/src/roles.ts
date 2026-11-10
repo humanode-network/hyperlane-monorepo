@@ -1,4 +1,4 @@
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 import { z } from 'zod';
 
 export enum Role {

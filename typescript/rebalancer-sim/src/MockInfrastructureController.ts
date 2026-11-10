@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 
-import type { HyperlaneCore } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import type { HyperlaneCore } from '@humanode-hyperlane/sdk';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { KPICollector } from './KPICollector.js';
 import { MockActionTracker } from './runners/MockActionTracker.js';

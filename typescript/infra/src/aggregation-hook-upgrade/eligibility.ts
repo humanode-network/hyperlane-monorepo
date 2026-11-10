@@ -1,10 +1,10 @@
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   ChainName,
   ChainTechnicalStack,
   isStaticDeploymentSupported,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType, isEVMLike } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, ProtocolType, isEVMLike } from '@humanode-hyperlane/utils';
 
 import { SkipReason, SkipLists } from './types.js';
 

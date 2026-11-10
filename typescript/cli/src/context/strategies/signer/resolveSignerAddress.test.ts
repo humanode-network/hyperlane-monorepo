@@ -1,13 +1,13 @@
 import { expect } from 'chai';
 import { Wallet } from 'ethers';
 
-import { PartialRegistry } from '@hyperlane-xyz/registry';
+import { PartialRegistry } from '@humanode-hyperlane/registry';
 import {
   IsmType,
   MultiProtocolProvider,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, normalizeAddressEvm } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, normalizeAddressEvm } from '@humanode-hyperlane/utils';
 
 import { createTrustedRelayerConfig } from '../../../config/ism.js';
 import { type CommandContext } from '../../types.js';

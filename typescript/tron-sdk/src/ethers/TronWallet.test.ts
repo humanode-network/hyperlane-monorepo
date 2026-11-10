@@ -9,7 +9,7 @@ import {
   assert,
   strip0x,
   TransactionSubmissionError,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   TronTransaction,

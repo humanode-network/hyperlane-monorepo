@@ -29,8 +29,8 @@ import {
   StaticAggregationHookFactory__factory,
   StorageGasOracle__factory,
   TestIsm__factory,
-} from '@hyperlane-xyz/core';
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   AnnotatedEV5Transaction,
   ChainMap,
@@ -38,9 +38,9 @@ import {
   ContractVerifier,
   ExplorerFamily,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { Address, Logger, assert, eqAddress } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/sdk';
+import { Address, Logger, assert, eqAddress } from '@humanode-hyperlane/utils';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import { Modules } from '../scripts/agent-utils.js';
 import {

@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/tsconfig",
+  "name": "@humanode-hyperlane/tsconfig",
   "version": "45.2.0",
   "private": true,
   "description": "Hyperlane TypeScript config",

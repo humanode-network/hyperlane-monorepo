@@ -1,4 +1,7 @@
-import { FeeType, type LinearFeeConfig } from '@hyperlane-xyz/provider-sdk/fee';
+import {
+  FeeType,
+  type LinearFeeConfig,
+} from '@humanode-hyperlane/provider-sdk/fee';
 
 import { SvmLeafFeeReader, SvmLeafFeeWriter } from './leaf-fee.js';
 

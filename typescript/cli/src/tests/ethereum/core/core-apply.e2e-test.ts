@@ -1,20 +1,20 @@
 import { expect } from 'chai';
 import { type Signer, Wallet, ethers } from 'ethers';
 
-import { ProxyAdmin__factory } from '@hyperlane-xyz/core';
+import { ProxyAdmin__factory } from '@humanode-hyperlane/core';
 import {
   type ChainMetadata,
   type CoreConfig,
   type DerivedCoreConfig,
   type ProtocolFeeHookConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   type Domain,
   ProtocolType,
   addressToBytes32,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

@@ -1,4 +1,4 @@
-import { Address, assert } from '@hyperlane-xyz/utils';
+import { Address, assert } from '@humanode-hyperlane/utils';
 
 import { HookConfig, HookType } from '../hook/types.js';
 import { collectHookTreeNodes, mapHookTreeNodes } from '../hook/utils.js';

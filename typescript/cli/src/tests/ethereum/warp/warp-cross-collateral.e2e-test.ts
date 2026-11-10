@@ -4,14 +4,14 @@ import { parseUnits } from 'ethers/lib/utils.js';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type Token,
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

@@ -9,19 +9,19 @@ import {
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type FeeArtifactConfig,
   type FeeReadContext,
   FeeParamsType,
   FeeType,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@humanode-hyperlane/provider-sdk/fee';
 import {
   type CrossCollateralWarpArtifactConfig,
   TokenType,
   buildFeeReadContextFromWarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { DEFAULT_ROUTER } from '../codecs/fee.js';
 import {

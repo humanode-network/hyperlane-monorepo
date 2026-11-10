@@ -12,15 +12,15 @@ import {
   AbstractMessageIdAuthorizedIsm__factory,
   ArbSys__factory,
   IOutbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   ArbL2ToL1HookConfig,
   ArbL2ToL1IsmConfig,
   HyperlaneCore,
   IsmType,
   findMatchingLogEvents,
-} from '@hyperlane-xyz/sdk';
-import { WithAddress, assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { WithAddress, assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import type {
   ArbL2ToL1MetadataBuildResult,

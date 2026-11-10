@@ -19,14 +19,14 @@ import {
   setTransactionMessageLifetimeUsingBlockhash,
 } from '@solana/kit';
 
-import { PartialRegistry } from '@hyperlane-xyz/registry';
+import { PartialRegistry } from '@humanode-hyperlane/registry';
 import {
   ProtocolType,
   assert,
   ensure0x,
   fromHexString,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { HttpServer } from '../../HttpServer.js';
 import {

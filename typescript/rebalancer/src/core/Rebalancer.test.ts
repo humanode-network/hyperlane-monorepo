@@ -4,8 +4,8 @@ import { ethers } from 'ethers';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { HyperlaneCore, MultiProvider } from '@hyperlane-xyz/sdk';
-import { TransactionSubmissionError } from '@hyperlane-xyz/utils';
+import { HyperlaneCore, MultiProvider } from '@humanode-hyperlane/sdk';
+import { TransactionSubmissionError } from '@humanode-hyperlane/utils';
 
 import type { Erc20ContractFactory } from '../bridges/erc20Approve.js';
 import { TokenBridgeStatusAdapterType } from '../config/types.js';

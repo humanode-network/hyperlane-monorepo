@@ -6,8 +6,13 @@ import {
   QuotedCalls__factory,
   TestRecipient,
   ValidatorAnnounce,
-} from '@hyperlane-xyz/core';
-import { Address, assert, eqAddress, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import {
+  Address,
+  assert,
+  eqAddress,
+  rootLogger,
+} from '@humanode-hyperlane/utils';
 
 import { HyperlaneContracts } from '../contracts/types.js';
 import { HyperlaneDeployer } from '../deploy/HyperlaneDeployer.js';

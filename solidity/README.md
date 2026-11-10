@@ -6,10 +6,10 @@ Hyperlane Core contains the contracts and typechain artifacts for the Hyperlane 
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/core
+npm install @humanode-hyperlane/core
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/core
+pnpm add @humanode-hyperlane/core
 ```
 
 Note, this package uses [ESM Modules](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c#pure-esm-package)
@@ -48,7 +48,7 @@ To add a changeset, run:
 pnpm changeset
 ```
 
-Select `@hyperlane-xyz/core` and choose the appropriate bump level based on your changes.
+Select `@humanode-hyperlane/core` and choose the appropriate bump level based on your changes.
 
 ## License
 

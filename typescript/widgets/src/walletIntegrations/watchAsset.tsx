@@ -1,7 +1,10 @@
 import { useMemo } from 'react';
 
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import { type KnownProtocolType, ProtocolType } from '@hyperlane-xyz/utils';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
+import {
+  type KnownProtocolType,
+  ProtocolType,
+} from '@humanode-hyperlane/utils';
 
 import { useAleoWatchAsset } from './aleo.js';
 import { useCosmosWatchAsset } from './cosmos.js';

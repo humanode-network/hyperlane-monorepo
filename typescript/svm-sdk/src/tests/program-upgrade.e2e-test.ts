@@ -5,11 +5,11 @@ import { before, describe, it } from 'mocha';
 
 chai.use(chaiAsPromised);
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { FeeParamsType, FeeType } from '@hyperlane-xyz/provider-sdk/fee';
-import type { IgpHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
-import { sleep } from '@hyperlane-xyz/utils';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import { FeeParamsType, FeeType } from '@humanode-hyperlane/provider-sdk/fee';
+import type { IgpHookConfig } from '@humanode-hyperlane/provider-sdk/hook';
+import { TokenType } from '@humanode-hyperlane/provider-sdk/warp';
+import { sleep } from '@humanode-hyperlane/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmMailboxWriter } from '../core/mailbox.js';

@@ -10,7 +10,7 @@ import {
   isNullish,
   sleep,
   strip0x,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   MAX_TRON_ORIGIN_ENERGY_LIMIT,

@@ -13,14 +13,14 @@ import {
   TransferParams,
   getCollateralTokenAdapter,
   getSignerForChain,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   ProtocolType,
   assert,
   rootLogger,
   toWei,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getDeployerKey } from '../../src/agents/key-utils.js';

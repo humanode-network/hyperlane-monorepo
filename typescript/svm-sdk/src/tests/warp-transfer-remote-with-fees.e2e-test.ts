@@ -11,24 +11,24 @@ import {
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { assert, pollAsync, toHexString } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { assert, pollAsync, toHexString } from '@humanode-hyperlane/utils';
 import {
   FeeParamsType,
   FeeStrategyType,
   FeeType,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import type { IgpHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
+} from '@humanode-hyperlane/provider-sdk/fee';
+import type { IgpHookConfig } from '@humanode-hyperlane/provider-sdk/hook';
 import {
   type CrossCollateralWarpArtifactConfig,
   type DeployedWarpAddress,
   type NativeWarpArtifactConfig,
   TokenType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 
 import { createWarpAltManager } from '../alt/warp-alt-manager.js';
 import { SvmSigner } from '../clients/signer.js';

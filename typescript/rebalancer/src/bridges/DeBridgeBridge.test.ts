@@ -20,16 +20,16 @@ import { ethers } from 'ethers';
 import { pino } from 'pino';
 import sinon from 'sinon';
 
-import { ChainDisabledReason, ChainStatus } from '@hyperlane-xyz/sdk';
+import { ChainDisabledReason, ChainStatus } from '@humanode-hyperlane/sdk';
 import {
   TronJsonRpcProvider,
   TronWallet,
-} from '@hyperlane-xyz/tron-sdk/runtime';
+} from '@humanode-hyperlane/tron-sdk/runtime';
 import {
   ProtocolType,
   TransactionSubmissionError,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type {
   BridgeQuote,

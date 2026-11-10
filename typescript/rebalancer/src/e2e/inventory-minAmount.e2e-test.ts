@@ -1,7 +1,11 @@
 import { expect } from 'chai';
 import { ethers, providers } from 'ethers';
 
-import { HyperlaneCore, MultiProvider, snapshot } from '@hyperlane-xyz/sdk';
+import {
+  HyperlaneCore,
+  MultiProvider,
+  snapshot,
+} from '@humanode-hyperlane/sdk';
 
 import { ExternalBridgeType } from '../config/types.js';
 

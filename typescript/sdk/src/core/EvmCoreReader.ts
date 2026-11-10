@@ -1,7 +1,10 @@
 import { providers } from 'ethers';
 
-import { Mailbox__factory, ProxyAdmin__factory } from '@hyperlane-xyz/core';
-import { Address, assert, rootLogger } from '@hyperlane-xyz/utils';
+import {
+  Mailbox__factory,
+  ProxyAdmin__factory,
+} from '@humanode-hyperlane/core';
+import { Address, assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { DEFAULT_CONTRACT_READ_CONCURRENCY } from '../consts/concurrency.js';
 import { proxyAdmin } from '../deploy/proxy.js';

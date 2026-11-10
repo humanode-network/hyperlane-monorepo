@@ -5,9 +5,9 @@ import { providers } from 'ethers';
 import {
   EthJsonRpcBlockParameterTag,
   type MultiProtocolProvider,
-} from '@hyperlane-xyz/sdk';
-import { assert, isEVMLike, ProtocolType } from '@hyperlane-xyz/utils';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
+} from '@humanode-hyperlane/sdk';
+import { assert, isEVMLike, ProtocolType } from '@humanode-hyperlane/utils';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
 import type { ConfirmedBlockTag } from '../interfaces/IMonitor.js';
 
 const HEX_BLOCK_NUMBER_REGEX = /^0x[0-9a-fA-F]+$/;

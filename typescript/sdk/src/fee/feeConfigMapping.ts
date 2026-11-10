@@ -3,8 +3,8 @@ import {
   type FeeConfig,
   type FeeParams,
   type FeeStrategy,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { assert, objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/fee';
+import { assert, objMap } from '@humanode-hyperlane/utils';
 
 import { TokenFeeType, type TokenFeeConfigInput } from './types.js';
 

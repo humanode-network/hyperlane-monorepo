@@ -1,4 +1,4 @@
-import { pick } from '@hyperlane-xyz/utils';
+import { pick } from '@humanode-hyperlane/utils';
 
 import { getArgs } from '../agent-utils.js';
 import { getEnvironmentConfig } from '../core-utils.js';

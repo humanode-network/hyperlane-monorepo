@@ -1,25 +1,25 @@
-import { type ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk';
+import { type ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type RawHookArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@humanode-hyperlane/provider-sdk/hook';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   assert,
   eqAddressStarknet,
   isNullish,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import { hash } from 'starknet';
 
 import { StarknetProvider } from '../clients/provider.js';

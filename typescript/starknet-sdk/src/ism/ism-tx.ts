@@ -1,6 +1,6 @@
 import { type RpcProvider } from 'starknet';
 
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+import { addressToBytes32 } from '@humanode-hyperlane/utils';
 
 import {
   StarknetContractName,

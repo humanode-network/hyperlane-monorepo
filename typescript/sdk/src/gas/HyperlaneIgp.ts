@@ -1,7 +1,7 @@
 import { BigNumber } from 'ethers';
 
-import { InterchainGasPaymaster__factory } from '@hyperlane-xyz/core';
-import { Address } from '@hyperlane-xyz/utils';
+import { InterchainGasPaymaster__factory } from '@humanode-hyperlane/core';
+import { Address } from '@humanode-hyperlane/utils';
 
 import { HyperlaneApp } from '../app/HyperlaneApp.js';
 import { appFromAddressesMapHelper } from '../contracts/contracts.js';

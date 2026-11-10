@@ -7,10 +7,10 @@ import {
   RebalancerConfig,
   RebalancerService,
   RebalancerStrategyOptions,
-} from '@hyperlane-xyz/rebalancer';
-import type { StrategyConfig } from '@hyperlane-xyz/rebalancer';
-import { MultiProtocolProvider, MultiProvider } from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/rebalancer';
+import type { StrategyConfig } from '@humanode-hyperlane/rebalancer';
+import { MultiProtocolProvider, MultiProvider } from '@humanode-hyperlane/sdk';
+import { ProtocolType, rootLogger } from '@humanode-hyperlane/utils';
 
 import type { IRebalancerRunner, RebalancerSimConfig } from '../types.js';
 

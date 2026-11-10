@@ -5,8 +5,8 @@ import {
   deployHyperlaneRadixPackage,
   downloadRadixContracts,
   runRadixNode,
-} from '@hyperlane-xyz/radix-sdk/testing';
-import { ProtocolType, deepCopy } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/radix-sdk/testing';
+import { ProtocolType, deepCopy } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../utils/files.js';
 import {

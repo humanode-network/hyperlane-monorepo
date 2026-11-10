@@ -1,15 +1,15 @@
 import * as chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
 import {
   HypTokenRouterConfig,
   MultiProvider,
   WarpRouteDeployConfig,
   normalizeConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { WarpRouteIds } from '../config/environments/mainnet3/warp/warpIds.js';
 import { getWarpConfig, warpConfigGetterMap } from '../config/warp.js';

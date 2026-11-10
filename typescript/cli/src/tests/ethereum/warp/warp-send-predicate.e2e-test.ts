@@ -9,18 +9,18 @@ import { Wallet } from 'ethers';
 import {
   ERC20Test__factory,
   MockPredicateRegistry__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { WarpSendLogs } from '../../../send/transfer.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';

@@ -4,7 +4,7 @@ import sinon from 'sinon';
 import {
   TransactionSubmission,
   TransactionSubmissionError,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Erc20ApprovalError } from '../bridges/erc20Approve.js';
 

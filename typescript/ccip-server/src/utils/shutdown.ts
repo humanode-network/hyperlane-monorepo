@@ -2,7 +2,7 @@ import type { Server } from 'node:http';
 
 import type { Logger } from 'pino';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import type { CcipApp } from '../http.js';
 

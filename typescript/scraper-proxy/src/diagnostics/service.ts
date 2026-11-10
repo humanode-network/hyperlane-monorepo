@@ -1,4 +1,4 @@
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 import { GraphQLError } from 'graphql';
 import pg from 'pg';
 

@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@humanode-hyperlane/sdk';
+import { Address } from '@humanode-hyperlane/utils';
 
 export const irregularTimelocks: ChainMap<Address> = {
   // Apr 18, 2025 - Timelock for the Ethereum "Irregular" Safe

@@ -1,12 +1,12 @@
 import { Logger } from 'pino';
 
-import { WormholeVaaHookIsm__factory } from '@hyperlane-xyz/core';
+import { WormholeVaaHookIsm__factory } from '@humanode-hyperlane/core';
 import {
   Address,
   bytes32ToAddress,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import { constants } from 'ethers';
 
 import { MultiProvider } from '../providers/MultiProvider.js';

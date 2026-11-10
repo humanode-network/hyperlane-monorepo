@@ -1,7 +1,7 @@
 import type { Logger } from 'pino';
 
-import { HyperlaneCore } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { HyperlaneCore } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TokenBridgeStatusAdapterType } from '../../config/types.js';
 import type {

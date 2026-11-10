@@ -1,4 +1,4 @@
-# @hyperlane-xyz/github-proxy
+# @humanode-hyperlane/github-proxy
 
 ## 45.2.0
 

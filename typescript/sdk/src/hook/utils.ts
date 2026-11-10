@@ -3,8 +3,12 @@ import { Logger } from 'pino';
 import {
   DomainRoutingHook,
   FallbackDomainRoutingHook,
-} from '@hyperlane-xyz/core';
-import { Address, addBufferToGasLimit, eqAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import {
+  Address,
+  addBufferToGasLimit,
+  eqAddress,
+} from '@humanode-hyperlane/utils';
 
 import { submitBatched } from '../deploy/utils.js';
 import { ChainTechnicalStack } from '../metadata/chainMetadataTypes.js';

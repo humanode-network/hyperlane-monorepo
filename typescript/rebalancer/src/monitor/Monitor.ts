@@ -5,7 +5,7 @@ import {
   type ChainName,
   type Token,
   type WarpCore,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   ProtocolType,
@@ -14,7 +14,7 @@ import {
   isEVMLike,
   fromWei,
   sleep,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   type ConfirmedBlockTag,

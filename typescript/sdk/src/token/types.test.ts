@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TokenFeeConfigInput, TokenFeeType } from '../fee/types.js';
 import { IsmType } from '../ism/types.js';

@@ -9,7 +9,7 @@ description:
 
 # Add a Registry Changeset
 
-The `hyperlane-registry` repo uses changesets to track PR-level changes and drive npm releases of `@hyperlane-xyz/registry`. Every PR that touches the published surface (warp route configs, chain metadata, addresses, deployments) MUST carry a changeset, otherwise the merge bot blocks the PR and the published package falls behind. Skills that open registry PRs invoke this skill to write the changeset before committing.
+The `hyperlane-registry` repo uses changesets to track PR-level changes and drive npm releases of `@humanode-hyperlane/registry`. Every PR that touches the published surface (warp route configs, chain metadata, addresses, deployments) MUST carry a changeset, otherwise the merge bot blocks the PR and the published package falls behind. Skills that open registry PRs invoke this skill to write the changeset before committing.
 
 ## Why a dedicated skill
 
@@ -54,7 +54,7 @@ The content has TWO parts: a YAML frontmatter block specifying the package + bum
 
 ```markdown
 ---
-'@hyperlane-xyz/registry': <bump>
+'@humanode-hyperlane/registry': <bump>
 ---
 
 <change summary — one or two sentences, past tense, lowercase, concise>
@@ -83,7 +83,7 @@ cat "$REGISTRY_PATH/.changeset/<filename>"
 
 Confirm:
 
-- Frontmatter has exactly one package entry: `'@hyperlane-xyz/registry': <bump>`
+- Frontmatter has exactly one package entry: `'@humanode-hyperlane/registry': <bump>`
 - Bump value matches the rule above
 - Body is one or two sentences in the right tense + voice
 - No secrets / private RPC URLs leaked into the body

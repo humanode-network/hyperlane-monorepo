@@ -2,18 +2,18 @@ import { expect } from 'chai';
 import { type BigNumber, Wallet, ethers } from 'ethers';
 import { type ProcessPromise } from 'zx';
 
-import { type ERC20Test } from '@hyperlane-xyz/core';
+import { type ERC20Test } from '@humanode-hyperlane/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   TokenType,
   TransactionConfigType,
   TransactionDataType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, retryAsync } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, assert, retryAsync } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

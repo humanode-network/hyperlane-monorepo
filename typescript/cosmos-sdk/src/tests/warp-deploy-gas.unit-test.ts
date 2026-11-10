@@ -4,12 +4,12 @@ import { describe, it } from 'mocha';
 import {
   composeWarpDeployGas,
   nativeAmountFromGasUnits,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import type {
   CollateralWarpArtifactConfig,
   WarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { TokenType } from '@humanode-hyperlane/provider-sdk/warp';
 
 // Mirrors the private cosmos-native breakdown in clients/provider.ts. Cosmos is
 // the only AltVM whose getMinGasForWarpDeploy composes GAS UNITS and then

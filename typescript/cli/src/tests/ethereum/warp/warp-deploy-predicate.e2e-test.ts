@@ -9,8 +9,8 @@ import {
   PredicateRouterWrapper__factory,
   StaticAggregationHook__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   type CollateralTokenConfig,
@@ -18,8 +18,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

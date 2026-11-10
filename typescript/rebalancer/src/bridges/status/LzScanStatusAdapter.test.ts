@@ -3,9 +3,12 @@ import { providers } from 'ethers';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { MultiProtocolCore, MultiProtocolProvider } from '@hyperlane-xyz/sdk';
+import {
+  MultiProtocolCore,
+  MultiProtocolProvider,
+} from '@humanode-hyperlane/sdk';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { OftSettlementVerifier } from '../OftSettlementVerifier.js';
 import { LzScanStatusAdapter } from './LzScanStatusAdapter.js';

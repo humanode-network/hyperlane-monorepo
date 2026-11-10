@@ -6,7 +6,7 @@ import chaiAsPromised from 'chai-as-promised';
 import { utils } from 'ethers';
 import { TronWeb } from 'tronweb';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TRON_EMPTY_ADDRESS, toTronHex } from '../utils/index.js';
 import { TronJsonRpcProvider } from './TronJsonRpcProvider.js';

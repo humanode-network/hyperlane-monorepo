@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState } from 'react';
 
-import type { IRegistry } from '@hyperlane-xyz/registry';
+import type { IRegistry } from '@humanode-hyperlane/registry';
 
 import { Circle } from '../icons/Circle.js';
 import { QuestionMarkIcon } from '../icons/QuestionMark.js';

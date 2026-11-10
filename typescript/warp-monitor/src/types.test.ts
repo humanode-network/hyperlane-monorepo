@@ -4,7 +4,7 @@ import type {
   NativeWalletBalance,
   WarpRouteBalance,
   XERC20Limit,
-} from '@hyperlane-xyz/metrics';
+} from '@humanode-hyperlane/metrics';
 
 import type { WarpMonitorConfig } from './types.js';
 

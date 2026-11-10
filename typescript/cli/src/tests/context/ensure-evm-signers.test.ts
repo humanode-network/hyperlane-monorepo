@@ -6,8 +6,8 @@ import {
   MultiProtocolProvider,
   MultiProvider,
   test1,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { ensureEvmSignersForChains } from '../../context/context.js';
 import { type SignerKeyProtocolMap } from '../../context/types.js';

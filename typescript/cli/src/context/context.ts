@@ -1,25 +1,25 @@
 import { type ethers } from 'ethers';
 
-import { loadProtocolProviders } from '@hyperlane-xyz/deploy-sdk';
+import { loadProtocolProviders } from '@humanode-hyperlane/deploy-sdk';
 import {
   type AltVM,
   getProtocolProvider,
   hasProtocol,
-} from '@hyperlane-xyz/provider-sdk';
-import { type IRegistry } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
+} from '@humanode-hyperlane/provider-sdk';
+import { type IRegistry } from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
 import {
   type ChainMap,
   type ChainName,
   MultiProtocolProvider,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   isEVMLike,
   assert,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { isSignCommand } from '../commands/signCommands.js';
 import { readChainSubmissionStrategyConfig } from '../config/strategy.js';

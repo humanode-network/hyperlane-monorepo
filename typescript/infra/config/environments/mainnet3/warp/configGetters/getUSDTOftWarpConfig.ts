@@ -1,4 +1,8 @@
-import { ChainMap, HypTokenRouterConfig, TokenType } from '@hyperlane-xyz/sdk';
+import {
+  ChainMap,
+  HypTokenRouterConfig,
+  TokenType,
+} from '@humanode-hyperlane/sdk';
 
 import {
   RouterConfigWithoutOwner,

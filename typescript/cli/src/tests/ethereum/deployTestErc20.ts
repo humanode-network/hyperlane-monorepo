@@ -1,8 +1,8 @@
 import { Wallet } from 'ethers';
 import fs from 'fs';
 
-import { ERC20Test__factory } from '@hyperlane-xyz/core';
-import { TokenType } from '@hyperlane-xyz/sdk';
+import { ERC20Test__factory } from '@humanode-hyperlane/core';
+import { TokenType } from '@humanode-hyperlane/sdk';
 
 import { createLocalProvider } from './localProvider.js';
 

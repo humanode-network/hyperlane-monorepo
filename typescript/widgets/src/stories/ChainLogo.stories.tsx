@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
-import { GithubRegistry } from '@hyperlane-xyz/registry';
+import { GithubRegistry } from '@humanode-hyperlane/registry';
 
 import { ChainLogo } from '../chains/ChainLogo.js';
 

@@ -6,8 +6,8 @@ import {
   WarpCoreConfig,
   getTokenConnectionId,
   parseTokenConnectionId,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { WarpRouteIds } from '../../../config/environments/mainnet3/warp/warpIds.js';
 import { getRegistry } from '../../../config/registry.js';

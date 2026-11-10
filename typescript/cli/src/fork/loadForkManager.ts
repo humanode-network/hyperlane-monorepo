@@ -1,11 +1,11 @@
-import { type ForkManagerRegistry } from '@hyperlane-xyz/forking-sdk';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { type ForkManagerRegistry } from '@humanode-hyperlane/forking-sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 import {
   type MultiProvider,
   RawForkedChainConfigByChainSchema,
   forkedChainConfigByChainFromRaw,
-} from '@hyperlane-xyz/sdk';
-import { objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { objMap } from '@humanode-hyperlane/utils';
 
 export type ForkConfigParser = (
   rawSubset: Record<string, unknown>,
@@ -49,7 +49,7 @@ export async function loadForkManager(
     }
     case ProtocolType.Sealevel: {
       const { createSvmForkManager, parseSvmForkConfig } =
-        await import('@hyperlane-xyz/sealevel-sdk/fork');
+        await import('@humanode-hyperlane/sealevel-sdk/fork');
       registry.registerProtocol(protocol, (ctx) =>
         createSvmForkManager({
           chainName: ctx.chainName,

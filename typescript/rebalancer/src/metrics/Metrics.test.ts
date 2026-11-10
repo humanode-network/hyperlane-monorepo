@@ -2,12 +2,12 @@ import { expect } from 'chai';
 import { ethers } from 'ethers';
 import sinon from 'sinon';
 
-import { MANAGED_LOCKBOX_MINIMAL_ABI } from '@hyperlane-xyz/metrics';
+import { MANAGED_LOCKBOX_MINIMAL_ABI } from '@humanode-hyperlane/metrics';
 import {
   XERC20ExtraBridgeType,
   XERC20Type,
   type XERC20TokenExtraBridgesLimits,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { isManagedLockboxExtraBridge } from './Metrics.js';
 

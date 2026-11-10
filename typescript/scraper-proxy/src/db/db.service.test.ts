@@ -3,7 +3,7 @@ import { Socket } from 'node:net';
 import { it } from 'node:test';
 
 import pg from 'pg';
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 process.env.DATABASE_URL ??= 'postgresql://scraper-proxy-test';
 process.env.DATABASE_READ_REPLICA_URL ??=

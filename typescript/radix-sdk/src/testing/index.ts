@@ -1,6 +1,6 @@
 /**
  * Test utilities for Radix SDK
- * Export via @hyperlane-xyz/radix-sdk/testing
+ * Export via @humanode-hyperlane/radix-sdk/testing
  */
 
 // Constants

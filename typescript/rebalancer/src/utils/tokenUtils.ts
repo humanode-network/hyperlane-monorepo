@@ -1,4 +1,4 @@
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 
@@ -7,8 +7,8 @@ import {
   PROTOCOL_TO_HYP_NATIVE_STANDARD,
   type Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
+} from '@humanode-hyperlane/sdk';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
 
 const REBALANCEABLE_LOCKBOX_STANDARDS = new Set<TokenStandard>([
   TokenStandard.EvmHypXERC20Lockbox,

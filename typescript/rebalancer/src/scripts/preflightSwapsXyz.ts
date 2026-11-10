@@ -6,8 +6,8 @@ import { parseArgs } from 'node:util';
 import { pino } from 'pino';
 import { z } from 'zod';
 
-import { ChainMetadataSchema } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { ChainMetadataSchema } from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { SwapsXyzBridge } from '../bridges/SwapsXyzBridge.js';
 import { SwapsXyzBridgeConfigSchema } from '../config/types.js';

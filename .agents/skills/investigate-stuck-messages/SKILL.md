@@ -97,7 +97,7 @@ Wait a few seconds for the port-forward to establish.
 Look up domain IDs from the registry:
 
 ```bash
-cat node_modules/.pnpm/@hyperlane-xyz+registry@*/node_modules/@hyperlane-xyz/registry/dist/chains/<chain>/metadata.json | jq '.domainId'
+cat node_modules/.pnpm/@humanode-hyperlane+registry@*/node_modules/@humanode-hyperlane/registry/dist/chains/<chain>/metadata.json | jq '.domainId'
 ```
 
 Common domain IDs:

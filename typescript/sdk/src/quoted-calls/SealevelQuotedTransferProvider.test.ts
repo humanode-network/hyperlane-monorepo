@@ -5,8 +5,8 @@ import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 import { type Hex, bytesToHex, hexToBytes, keccak256 } from 'viem';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { isNullish } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { isNullish } from '@humanode-hyperlane/utils';
 
 import { Token } from '../token/Token.js';
 import { TokenAmount } from '../token/TokenAmount.js';

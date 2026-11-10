@@ -1,5 +1,5 @@
 ---
-'@hyperlane-xyz/rebalancer': patch
+'@humanode-hyperlane/rebalancer': patch
 ---
 
 Recorded source transaction identities before confirmation and kept uncertain execution reserved. LiFi authorization paths were restricted to observed transactions, and unsupported multi-transaction signing was rejected.

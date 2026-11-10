@@ -8,8 +8,8 @@ import {
   type ERC20Test,
   type XERC20LockboxTest,
   type XERC20VSTest,
-} from '@hyperlane-xyz/core';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   TokenType,
@@ -17,8 +17,8 @@ import {
   type WarpRouteDeployConfig,
   XERC20Type,
   isXERC20TokenConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, assert } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import {

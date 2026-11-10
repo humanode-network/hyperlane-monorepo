@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 
 import { utils, type providers } from 'ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 // dln-contracts@d54e94f2b5102bff89a4df506404bb77f3edc148, DlnOrderLib.
 export const DLN_ORDER_ABI =

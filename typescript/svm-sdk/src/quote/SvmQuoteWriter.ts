@@ -8,8 +8,8 @@ import {
   type SubmittedWarpQuote,
   WARP_TARGET_ROUTER_NONE,
   WarpQuoteAmountKind,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert, fromHexString, toHexString } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/quote';
+import { assert, fromHexString, toHexString } from '@humanode-hyperlane/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { u48be } from '../codecs/binary.js';

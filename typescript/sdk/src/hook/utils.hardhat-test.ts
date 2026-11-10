@@ -7,8 +7,8 @@ import {
   DomainRoutingHook,
   DomainRoutingHook__factory,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

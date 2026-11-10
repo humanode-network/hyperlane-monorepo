@@ -2,7 +2,7 @@ import { open } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import type { Logger } from 'pino';
 
-import { assert, sleep, timeout } from '@hyperlane-xyz/utils';
+import { assert, sleep, timeout } from '@humanode-hyperlane/utils';
 
 import { PendingTransferMiddlewareType } from '../../config/types.js';
 import type {

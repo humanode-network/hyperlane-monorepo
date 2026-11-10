@@ -1,6 +1,6 @@
 import { type Logger } from 'pino';
 
-import type { ChainMap, ChainName, Token } from '@hyperlane-xyz/sdk';
+import type { ChainMap, ChainName, Token } from '@humanode-hyperlane/sdk';
 
 import type {
   IStrategy,

@@ -11,19 +11,19 @@ import {
   HypERC20Collateral__factory,
   type MockValueTransferBridge,
   MockValueTransferBridge__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   RebalancerMinAmountType,
   RebalancerStrategyOptions,
-} from '@hyperlane-xyz/rebalancer';
-import { createWarpRouteConfigId } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/rebalancer';
+import { createWarpRouteConfigId } from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   type Domain,
@@ -31,7 +31,7 @@ import {
   bytes32ToAddress,
   sleep,
   toWei,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { createLocalProvider } from '../localProvider.js';

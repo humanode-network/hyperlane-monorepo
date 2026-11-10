@@ -1,4 +1,4 @@
-import { WarpRouteFilterParams } from '@hyperlane-xyz/registry';
+import { WarpRouteFilterParams } from '@humanode-hyperlane/registry';
 
 import { AbstractService } from './abstractService.js';
 import { RegistryService } from './registryService.js';

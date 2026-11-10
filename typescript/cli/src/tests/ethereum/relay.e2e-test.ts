@@ -1,5 +1,5 @@
-import { createWarpRouteConfigId } from '@hyperlane-xyz/registry';
-import { TokenType } from '@hyperlane-xyz/sdk';
+import { createWarpRouteConfigId } from '@humanode-hyperlane/registry';
+import { TokenType } from '@humanode-hyperlane/sdk';
 
 import { writeYamlOrJson } from '../../utils/files.js';
 

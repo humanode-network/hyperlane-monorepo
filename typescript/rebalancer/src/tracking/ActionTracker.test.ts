@@ -10,9 +10,9 @@ import { type Logger, pino } from 'pino';
 import Sinon from 'sinon';
 import { Registry } from 'prom-client';
 
-import { EthJsonRpcBlockParameterTag } from '@hyperlane-xyz/sdk';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { EthJsonRpcBlockParameterTag } from '@humanode-hyperlane/sdk';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import {
   DEFAULT_INTENT_TTL_MS,

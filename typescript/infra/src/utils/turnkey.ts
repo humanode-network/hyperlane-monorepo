@@ -5,13 +5,13 @@ import {
   TurnkeyConfigSchema,
   TurnkeyEvmSigner,
   TurnkeySealevelSigner,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   SignerBackendError,
   type Eip712Payload,
   type SignerAccount,
   type TransactionSignerBackend,
-} from '@hyperlane-xyz/http-registry-server';
+} from '@humanode-hyperlane/http-registry-server';
 import {
   TurnkeyActivityConsensusNeededError,
   TurnkeyActivityError,
@@ -28,7 +28,7 @@ import {
   isEVMLike,
   isValidTransactionHashEvm,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { DeployEnvironment } from '../config/deploy-environment.js';
 import { TurnkeyRole, type TurnkeySignerProtocol } from '../roles.js';

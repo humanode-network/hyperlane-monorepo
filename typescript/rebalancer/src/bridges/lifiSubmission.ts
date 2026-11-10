@@ -8,7 +8,7 @@ import {
   TransactionSubmissionError,
   type TransactionSubmissionState,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type {
   BridgeExecutionOptions,

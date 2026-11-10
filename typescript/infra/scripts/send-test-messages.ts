@@ -10,15 +10,15 @@ import {
   StorageGasOracle,
   StorageGasOracle__factory,
   TestSendReceiver__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   ChainName,
   HookType,
   HyperlaneCore,
   MultiProvider,
   TestChainName,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, sleep } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { addressToBytes32, sleep } from '@humanode-hyperlane/utils';
 
 const ANVIL_KEY =
   '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80';

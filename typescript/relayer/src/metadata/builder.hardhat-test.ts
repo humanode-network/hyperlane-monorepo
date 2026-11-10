@@ -7,7 +7,7 @@ import {
   MerkleTreeHook,
   MerkleTreeHook__factory,
   TestRecipient,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   ChainName,
   EvmHookModule,
@@ -25,7 +25,7 @@ import {
   TestRecipientDeployer,
   randomDeployableIsmConfig,
   testChains,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   BaseValidator,
@@ -37,7 +37,7 @@ import {
   eqAddress,
   objMap,
   randomElement,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { BaseMetadataBuilder } from './builder.js';
 import { decodeIsmMetadata } from './decode.js';

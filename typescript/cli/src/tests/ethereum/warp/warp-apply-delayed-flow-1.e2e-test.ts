@@ -5,8 +5,8 @@ import {
   type ChainMap,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { addressToBytes32 } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { syncWarpDeployConfigToRegistry } from '../../commands/warp-config-sync.js';

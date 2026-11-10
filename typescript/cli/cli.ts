@@ -4,7 +4,7 @@ import 'zod/compile';
 import chalk from 'chalk';
 import yargs from 'yargs';
 
-import type { LogFormat, LogLevel } from '@hyperlane-xyz/utils';
+import type { LogFormat, LogLevel } from '@humanode-hyperlane/utils';
 
 import { avsCommand } from './src/commands/avs.js';
 import { configCommand } from './src/commands/config.js';

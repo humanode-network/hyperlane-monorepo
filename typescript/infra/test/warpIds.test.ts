@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { retryAsync, rootLogger } from '@hyperlane-xyz/utils';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import { retryAsync, rootLogger } from '@humanode-hyperlane/utils';
 
 import { WarpRouteIds } from '../config/environments/mainnet3/warp/warpIds.js';
 

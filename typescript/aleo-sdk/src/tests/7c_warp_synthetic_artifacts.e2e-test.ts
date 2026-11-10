@@ -1,10 +1,10 @@
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
 
-import { isNullish } from '@hyperlane-xyz/utils';
+import { isNullish } from '@humanode-hyperlane/utils';
 
 import { AleoSigner } from '../clients/signer.js';
 import { AleoHookArtifactManager } from '../hook/hook-artifact-manager.js';

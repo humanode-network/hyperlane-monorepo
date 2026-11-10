@@ -9,7 +9,7 @@ import {
   configureRootLogger,
   rootLogger,
   setRootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { DeployEnvironment } from '../../src/config/deploy-environment.js';
 import { readRebalancerConfig } from '../../src/rebalancer/config.js';

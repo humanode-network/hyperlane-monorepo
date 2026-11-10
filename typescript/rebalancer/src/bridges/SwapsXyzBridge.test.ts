@@ -1,12 +1,12 @@
-import type { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
+import type { ChainMap, ChainMetadata } from '@humanode-hyperlane/sdk';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
 import {
   ProtocolType,
   TransactionSubmissionError,
   assert,
   bufferToBase58,
   bytesToAddressTron,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { AccountLayout, TOKEN_PROGRAM_ID } from '@solana/spl-token';
 import {

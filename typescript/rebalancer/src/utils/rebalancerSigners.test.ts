@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 
-import { MultiProvider } from '@hyperlane-xyz/sdk';
-import { TronJsonRpcProvider, TronWallet } from '@hyperlane-xyz/tron-sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
+import { TronJsonRpcProvider, TronWallet } from '@humanode-hyperlane/tron-sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { configureRebalancerSigners } from './rebalancerSigners.js';
 

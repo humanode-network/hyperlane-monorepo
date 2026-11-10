@@ -2,8 +2,8 @@ import chalk from 'chalk';
 import { Gauge, Registry } from 'prom-client';
 import { stringify as yamlStringify } from 'yaml';
 
-import { submitMetrics } from '@hyperlane-xyz/metrics';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
+import { submitMetrics } from '@humanode-hyperlane/metrics';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
 import {
   type ChainName,
   InterchainAccount,
@@ -14,8 +14,8 @@ import {
   WarpRouteDeployConfigMailboxRequiredSchema,
   checkWarpRouteDeployConfig,
   resolveWarpDeployConfigRouterKeys,
-} from '@hyperlane-xyz/sdk';
-import { assert, objFilter } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, objFilter } from '@humanode-hyperlane/utils';
 
 import { WarpRouteIds } from '../../config/environments/mainnet3/warp/warpIds.js';
 import { DEFAULT_REGISTRY_URI } from '../../config/registry.js';

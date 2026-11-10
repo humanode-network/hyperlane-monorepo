@@ -1,5 +1,5 @@
 ---
-"@hyperlane-xyz/scraper-proxy": minor
+"@humanode-hyperlane/scraper-proxy": minor
 ---
 
 Removed historical agent WebSocket backfills, replay cursors, catch-up frames and metrics, and the subscription metric's state label. Limited agent frames to 64 KiB and documented per-type, mid-range live starts and the required RPC overlap.

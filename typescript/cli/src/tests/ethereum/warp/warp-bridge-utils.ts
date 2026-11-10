@@ -9,8 +9,8 @@ import {
   type MockEverclearAdapter,
   type XERC20LockboxTest,
   type XERC20VSTest,
-} from '@hyperlane-xyz/core';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type ChainMetadata,
@@ -18,8 +18,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { createLocalProvider } from '../localProvider.js';

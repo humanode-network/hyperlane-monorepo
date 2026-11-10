@@ -1,8 +1,8 @@
 import { DirectSecp256k1Wallet } from '@cosmjs/proto-signing';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType } from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
+import { TokenType } from '@humanode-hyperlane/sdk';
+import { type Address, ProtocolType } from '@humanode-hyperlane/utils';
 
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';
 import { HyperlaneE2EWarpTestCommands } from '../../commands/warp.js';

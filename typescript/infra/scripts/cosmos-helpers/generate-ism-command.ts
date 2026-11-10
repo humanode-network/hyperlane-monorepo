@@ -1,6 +1,6 @@
 import { Argv } from 'yargs';
 
-import { defaultMultisigConfigs } from '@hyperlane-xyz/sdk';
+import { defaultMultisigConfigs } from '@humanode-hyperlane/sdk';
 
 import { getArgs, withChains } from '../agent-utils.js';
 import { getEnvironmentConfig } from '../core-utils.js';

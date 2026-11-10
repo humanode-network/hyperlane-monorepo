@@ -1,15 +1,15 @@
 import { expect } from 'chai';
 import { Wallet } from 'ethers';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type HypTokenRouterConfig,
   TokenType,
   type WarpRouteDeployConfig,
   normalizeConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { addressToBytes32 } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { deployOrUseExistingCore } from '../commands/core.js';

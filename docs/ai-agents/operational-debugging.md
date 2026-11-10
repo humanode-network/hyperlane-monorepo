@@ -757,7 +757,7 @@ The [Hyperlane Registry](https://github.com/hyperlane-xyz/hyperlane-registry/) p
 
 ### Registry Usage for Debugging
 
-**Registry Source**: Clone from https://github.com/hyperlane-xyz/hyperlane-registry/ or use `@hyperlane-xyz/registry` package.
+**Registry Source**: Clone from https://github.com/hyperlane-xyz/hyperlane-registry/ or use `@humanode-hyperlane/registry` package.
 
 **Quick Chain Lookups:**
 
@@ -789,7 +789,7 @@ ls <registry-path>/chains/ | grep -i arbitrum
 **Programmatic Access:**
 
 ```typescript
-import { FileSystemRegistry } from '@hyperlane-xyz/registry';
+import { FileSystemRegistry } from '@humanode-hyperlane/registry';
 
 const registry = new FileSystemRegistry({
   uri: '<registry-path>',
@@ -856,7 +856,7 @@ grep -i "0x36f2bd8200ede5f969d63a0a28e654392c51a193" typescript/sdk/src/consts/m
 **Programmatic Access:**
 
 ```typescript
-import { defaultMultisigConfigs } from '@hyperlane-xyz/sdk';
+import { defaultMultisigConfigs } from '@humanode-hyperlane/sdk';
 
 // Get validator info for a chain
 const chainValidators = defaultMultisigConfigs.ethereum.validators;

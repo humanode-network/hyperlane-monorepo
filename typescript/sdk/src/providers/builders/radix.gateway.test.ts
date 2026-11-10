@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import { ChainMetadataSchema } from '../../metadata/chainMetadataTypes.js';

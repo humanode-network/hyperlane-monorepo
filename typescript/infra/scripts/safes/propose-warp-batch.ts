@@ -10,8 +10,8 @@ import {
   TurnkeyEvmSigner,
   getSafe,
   getSafeService,
-} from '@hyperlane-xyz/sdk';
-import { Address, assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { DeployEnvironment } from '../../src/config/deploy-environment.js';
 import { GovernanceType } from '../../src/governanceTypes.js';

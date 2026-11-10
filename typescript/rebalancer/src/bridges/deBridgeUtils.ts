@@ -7,7 +7,7 @@ import {
   isValidAddressEvm,
   isValidAddressSealevel,
   isValidAddressTron,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 export const DEBRIDGE_API_BASE = 'https://dln.debridge.finance/v1.0';
 export const DEBRIDGE_STATUS_API = 'https://api.dln.trade/v1.0';

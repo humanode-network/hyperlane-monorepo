@@ -4,8 +4,8 @@ import {
   WarpDeployConfigMap,
   WarpRouteFilterParams,
   WarpRouteId,
-} from '@hyperlane-xyz/registry';
-import { WarpCoreConfig, WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/registry';
+import { WarpCoreConfig, WarpRouteDeployConfig } from '@humanode-hyperlane/sdk';
 
 import { NotFoundError } from '../errors/ApiError.js';
 

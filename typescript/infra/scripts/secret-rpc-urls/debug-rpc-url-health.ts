@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 
-import { ChainMetadata } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, timeout } from '@hyperlane-xyz/utils';
+import { ChainMetadata } from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert, timeout } from '@humanode-hyperlane/utils';
 
 import {
   getSecretRpcEndpoints,

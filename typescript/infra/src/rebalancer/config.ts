@@ -5,7 +5,7 @@ import { z } from 'zod';
 import {
   RebalancerConfigSchema,
   getStrategyChainNames,
-} from '@hyperlane-xyz/rebalancer';
+} from '@humanode-hyperlane/rebalancer';
 
 // Deployment settings belong to infra, not the runtime rebalancer schema.
 const DeploymentMetadataSchema = z.strictObject({

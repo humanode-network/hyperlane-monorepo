@@ -6,8 +6,8 @@ import { stringify } from 'yaml';
 import {
   DEFAULT_GITHUB_REGISTRY,
   GithubRegistry,
-} from '@hyperlane-xyz/registry';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/registry';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { DockerImageRepos, mainnetDockerTags } from '../../config/docker.js';
 import { getWarpCoreConfig } from '../../config/registry.js';

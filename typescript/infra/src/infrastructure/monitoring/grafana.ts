@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { inCIMode, rootLogger } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@humanode-hyperlane/sdk';
+import { inCIMode, rootLogger } from '@humanode-hyperlane/utils';
 
 import {
   AlertType,

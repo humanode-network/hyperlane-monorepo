@@ -1,18 +1,18 @@
 import { TronWeb } from 'tronweb';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import type { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   composeWarpDeployGas,
   type WarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, ensure0x, sleep, strip0x } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { assert, ensure0x, sleep, strip0x } from '@humanode-hyperlane/utils';
 
-import ERC20Abi from '@hyperlane-xyz/core/tron/abi/@openzeppelin/contracts/token/ERC20/ERC20.sol/ERC20.json' with { type: 'json' };
-import HypNativeAbi from '@hyperlane-xyz/core/tron/abi/contracts/token/HypNative.sol/HypNative.json' with { type: 'json' };
-import IERC20Abi from '@hyperlane-xyz/core/tron/abi/@openzeppelin/contracts/token/ERC20/IERC20.sol/IERC20.json' with { type: 'json' };
-import MailboxAbi from '@hyperlane-xyz/core/tron/abi/contracts/Mailbox.sol/Mailbox.json' with { type: 'json' };
-import ProxyAdminAbi from '@hyperlane-xyz/core/tron/abi/@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol/ProxyAdmin.json' with { type: 'json' };
+import ERC20Abi from '@humanode-hyperlane/core/tron/abi/@openzeppelin/contracts/token/ERC20/ERC20.sol/ERC20.json' with { type: 'json' };
+import HypNativeAbi from '@humanode-hyperlane/core/tron/abi/contracts/token/HypNative.sol/HypNative.json' with { type: 'json' };
+import IERC20Abi from '@humanode-hyperlane/core/tron/abi/@openzeppelin/contracts/token/ERC20/IERC20.sol/IERC20.json' with { type: 'json' };
+import MailboxAbi from '@humanode-hyperlane/core/tron/abi/contracts/Mailbox.sol/Mailbox.json' with { type: 'json' };
+import ProxyAdminAbi from '@humanode-hyperlane/core/tron/abi/@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol/ProxyAdmin.json' with { type: 'json' };
 import {
   EIP1967_ADMIN_SLOT,
   TRON_EMPTY_ADDRESS,

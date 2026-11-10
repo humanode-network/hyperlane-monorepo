@@ -14,8 +14,8 @@ import { homedir } from 'node:os';
 // eslint-disable-next-line import/no-nodejs-modules
 import { join } from 'node:path';
 
-import { waitUntilReady } from '@hyperlane-xyz/forking-sdk';
-import { assert, isNullish, rootLogger } from '@hyperlane-xyz/utils';
+import { waitUntilReady } from '@humanode-hyperlane/forking-sdk';
+import { assert, isNullish, rootLogger } from '@humanode-hyperlane/utils';
 
 import { createRpc } from '../rpc.js';
 

@@ -1,7 +1,7 @@
 import { StartedDockerComposeEnvironment } from 'testcontainers';
 
-import { TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { deepCopy } from '@hyperlane-xyz/utils';
+import { TestChainMetadata } from '@humanode-hyperlane/provider-sdk/chain';
+import { deepCopy } from '@humanode-hyperlane/utils';
 
 import {
   DEFAULT_E2E_TEST_TIMEOUT,

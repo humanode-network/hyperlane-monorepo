@@ -1,12 +1,12 @@
-import { type ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { type ProtocolType } from '@humanode-hyperlane/provider-sdk';
 import {
   WARP_QUOTE_AMOUNT_WILDCARD,
   WARP_TARGET_ROUTER_NONE,
   WILDCARD_BYTES32,
   type WarpQuoteAmount,
   WarpQuoteAmountKind,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { DEFAULT_CROSS_COLLATERAL_FEE_ROUTER_KEY } from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/quote';
+import { DEFAULT_CROSS_COLLATERAL_FEE_ROUTER_KEY } from '@humanode-hyperlane/provider-sdk/warp';
 import {
   type ChainName,
   type DerivedTokenFeeConfig,
@@ -14,13 +14,13 @@ import {
   TokenFeeType,
   altVmChainLookup,
   buildFeeReadContextFromWarpDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   addressToBytes32,
   assert,
   isNullish,
   stringifyObject,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type WriteCommandContext } from '../context/types.js';
 import { log, logBlue, logGreen, warnYellow } from '../logger.js';

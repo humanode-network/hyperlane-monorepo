@@ -1,18 +1,21 @@
 import { expect } from 'chai';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type CoreConfig,
   type DerivedCoreConfig,
   HookType,
   IsmType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   assert,
   isValidAddressSealevel,
-} from '@hyperlane-xyz/utils';
-import { SealevelIgpHookReader, createRpc } from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/utils';
+import {
+  SealevelIgpHookReader,
+  createRpc,
+} from '@humanode-hyperlane/sealevel-sdk';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

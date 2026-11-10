@@ -1,14 +1,14 @@
 import type {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import type {
   DeployedMailboxAddress,
   DeployedRawMailboxArtifact,
   IRawMailboxArtifactManager,
   MailboxType,
   RawMailboxArtifactConfigs,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
+} from '@humanode-hyperlane/provider-sdk/mailbox';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';

@@ -1,7 +1,7 @@
 import { type QueryClient } from '@cosmjs/stargate';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { type PostDispatchExtension } from '../hyperlane/post_dispatch/query.js';
 

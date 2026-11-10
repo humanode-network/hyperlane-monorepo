@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
-import { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
+import { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
@@ -10,13 +10,13 @@ import {
   TokenStandard,
   TokenType,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   TransactionSubmissionError,
   assert,
   bytesToAddressTron,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { BridgeQuoteParams } from '../interfaces/IExternalBridge.js';
 import {

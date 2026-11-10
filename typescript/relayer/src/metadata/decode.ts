@@ -1,4 +1,4 @@
-import { IsmType } from '@hyperlane-xyz/sdk';
+import { IsmType } from '@humanode-hyperlane/sdk';
 
 import { AggregationMetadataBuilder } from './aggregation.js';
 import { ArbL2ToL1MetadataBuilder } from './arbL2ToL1.js';

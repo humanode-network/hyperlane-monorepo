@@ -51,13 +51,13 @@ After installing frozen dependencies, run Docker's seven-service build invocatio
 
 ```sh
 pnpm turbo run bundle --concurrency=2 \
-  --filter=@hyperlane-xyz/rebalancer \
-  --filter=@hyperlane-xyz/warp-monitor \
-  --filter=@hyperlane-xyz/ccip-server \
-  --filter=@hyperlane-xyz/keyfunder \
-  --filter=@hyperlane-xyz/relayer \
-  --filter=@hyperlane-xyz/fee-quoting \
-  --filter=@hyperlane-xyz/scraper-proxy
+  --filter=@humanode-hyperlane/rebalancer \
+  --filter=@humanode-hyperlane/warp-monitor \
+  --filter=@humanode-hyperlane/ccip-server \
+  --filter=@humanode-hyperlane/keyfunder \
+  --filter=@humanode-hyperlane/relayer \
+  --filter=@humanode-hyperlane/fee-quoting \
+  --filter=@humanode-hyperlane/scraper-proxy
 ```
 
 Use all seven bundle directories as `inputs` in the comparison snippet below. Compare the Dockerfile from `d8e5fcdf` against packaging source `5cb6327949c9472c56d345c1afb3cc04cf821ecc`. Hash every resolved output file, compare existing symlink targets, and rerun the new loop to verify idempotence. Subsequent documentation-only commits do not alter that shell input.

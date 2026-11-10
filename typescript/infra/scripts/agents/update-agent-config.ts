@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import fs from 'fs';
 
-import { ChainAddresses } from '@hyperlane-xyz/registry';
+import { ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   AgentConfig,
   ChainMap,
@@ -14,7 +14,7 @@ import {
   MultiProvider,
   buildAgentConfig,
   getCosmosChainGasPrice,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   assert,
@@ -23,8 +23,8 @@ import {
   objMerge,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/utils';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import { Contexts } from '../../config/contexts.js';
 import {

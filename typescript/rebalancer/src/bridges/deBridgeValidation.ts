@@ -1,7 +1,7 @@
 import { PublicKey } from '@solana/web3.js';
 import { utils } from 'ethers';
 
-import { addressToBytesTron } from '@hyperlane-xyz/utils';
+import { addressToBytesTron } from '@humanode-hyperlane/utils';
 
 import {
   DEBRIDGE_SOLANA_CHAIN_ID,

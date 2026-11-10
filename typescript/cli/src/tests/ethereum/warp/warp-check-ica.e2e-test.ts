@@ -4,11 +4,11 @@ import { Wallet, ethers } from 'ethers';
 import {
   type ERC20Test,
   InterchainAccountRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type AccountConfig,
   type ChainMetadata,
@@ -16,12 +16,12 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   addressToBytes32,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../../context/context.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';

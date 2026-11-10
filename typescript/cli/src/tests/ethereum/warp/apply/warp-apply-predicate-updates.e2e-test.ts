@@ -7,14 +7,14 @@ import {
   PredicateRouterWrapper__factory,
   StaticAggregationHook__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   OnchainHookType,
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';

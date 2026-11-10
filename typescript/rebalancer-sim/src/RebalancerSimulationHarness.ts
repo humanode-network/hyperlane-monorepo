@@ -1,4 +1,4 @@
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { deployMultiDomainSimulation } from './SimulationDeployment.js';
 import { DEFAULT_TIMING, SimulationEngine } from './SimulationEngine.js';

@@ -1,6 +1,6 @@
 import { providers } from 'ethers';
 
-import { IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   ChainMetadata,
@@ -9,7 +9,7 @@ import {
   HyperlaneSmartProvider,
   ProviderRetryOptions,
   safeApiKeyRequired,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   inCIMode,
@@ -18,7 +18,7 @@ import {
   objFilter,
   objMerge,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   getChain,

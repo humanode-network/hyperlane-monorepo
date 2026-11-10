@@ -1,4 +1,4 @@
-import { Address, Domain } from '@hyperlane-xyz/utils';
+import { Address, Domain } from '@humanode-hyperlane/utils';
 
 import { BaseAppAdapter } from '../../app/MultiProtocolApp.js';
 import { ChainName } from '../../types.js';

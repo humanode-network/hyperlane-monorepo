@@ -6,7 +6,7 @@ import {
   Wallet,
   providers,
 } from 'ethers';
-import { TransactionSubmissionError } from '@hyperlane-xyz/utils';
+import { TransactionSubmissionError } from '@humanode-hyperlane/utils';
 import type { ContractTransaction } from 'ethers';
 import {
   Provider as ZKSyncProvider,
@@ -18,15 +18,15 @@ import {
   Mailbox__factory,
   ProxyAdmin__factory,
   TestRecipient__factory,
-} from '@hyperlane-xyz/core';
-import type { ZKSyncArtifact } from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
+import type { ZKSyncArtifact } from '@humanode-hyperlane/core';
 import {
   LayerZeroV2HookIsm__factory as TronLayerZeroV2HookIsm__factory,
   Mailbox__factory as TronMailbox__factory,
   ProxyAdmin__factory as TronProxyAdmin__factory,
   TronContractFactory,
   TestRecipient__factory as TronTestRecipient__factory,
-} from '@hyperlane-xyz/tron-sdk';
+} from '@humanode-hyperlane/tron-sdk';
 import { TestChainName, test1, test2 } from '../consts/testChains.js';
 import type { ProtocolTransaction, ProtocolReceipt } from './ProviderType.js';
 import {
@@ -35,7 +35,7 @@ import {
 } from '../metadata/chainMetadataTypes.js';
 import sinon from 'sinon';
 
-import { TronWallet } from '@hyperlane-xyz/tron-sdk/runtime';
+import { TronWallet } from '@humanode-hyperlane/tron-sdk/runtime';
 import { submitEvmLikeTransaction } from '../signers/evm/transaction.js';
 
 import { MultiProvider } from './MultiProvider.js';

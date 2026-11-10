@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
 
 import { registryUriFromCommit } from '../src/warp-monitor/helm.js';
 

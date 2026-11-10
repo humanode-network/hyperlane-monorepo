@@ -3,7 +3,7 @@ import {
   ProtocolType,
   isEVMLike,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { AdapterClassType, MultiProtocolApp } from '../app/MultiProtocolApp.js';
 import type { MultiProviderAdapter } from '../providers/MultiProviderAdapter.js';

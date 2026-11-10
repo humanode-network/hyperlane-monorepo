@@ -4,8 +4,8 @@ import {
   IRegistry,
   MergedRegistry,
   RegistryType,
-} from '@hyperlane-xyz/registry';
-import { LazyAsync, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/registry';
+import { LazyAsync, assert } from '@humanode-hyperlane/utils';
 
 import { IWatcher } from './watcherService.js';
 

@@ -16,7 +16,7 @@ import {
   TestCcipReadIsm__factory,
   WormholeVaaHookIsm,
   WormholeVaaHookIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   DerivedIsmConfig,
   DispatchedMessage,
@@ -33,13 +33,13 @@ import {
   TestRecipientDeployer,
   WormholeConsistencyLevel,
   offchainLookupRequestMessageHash,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   WithAddress,
   addressToBytes32,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { HyperlaneRelayer } from '../core/HyperlaneRelayer.js';
 

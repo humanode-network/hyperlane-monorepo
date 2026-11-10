@@ -9,22 +9,22 @@ import {
   shortString,
 } from 'starknet';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   composeWarpDeployGas,
   type WarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   ContractType,
   getContractClassHash,
-} from '@hyperlane-xyz/starknet-core/runtime';
+} from '@humanode-hyperlane/starknet-core/runtime';
 import {
   addressToBytes32,
   assert,
   ensure0x,
   isNullish,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   StarknetContractName,

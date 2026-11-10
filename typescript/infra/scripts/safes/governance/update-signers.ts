@@ -7,8 +7,8 @@ import {
   ChainName,
   EV5GnosisSafeTxBuilder,
   getSafe,
-} from '@hyperlane-xyz/sdk';
-import { assert, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, rootLogger } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../../config/contexts.js';
 import {

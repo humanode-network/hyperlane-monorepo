@@ -1,8 +1,8 @@
 import { Wallet } from 'ethers';
 
-import { type MultiProvider } from '@hyperlane-xyz/sdk';
-import { TronWallet } from '@hyperlane-xyz/tron-sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { type MultiProvider } from '@humanode-hyperlane/sdk';
+import { TronWallet } from '@humanode-hyperlane/tron-sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 export interface RebalancerSignerSetup {
   address: string;

@@ -3,7 +3,7 @@ import fs from 'fs';
 import os from 'os';
 import path from 'path';
 
-import { TxSubmitterType } from '@hyperlane-xyz/sdk';
+import { TxSubmitterType } from '@humanode-hyperlane/sdk';
 
 import { type ExtendedSubmissionStrategy } from '../../../submitters/types.js';
 

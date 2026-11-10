@@ -1,12 +1,12 @@
-import { cosmoshub } from '@hyperlane-xyz/registry';
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
+import { cosmoshub } from '@humanode-hyperlane/registry';
+import type { MinimalProviderRegistry } from '@humanode-hyperlane/sdk/providers/MinimalProviderRegistry';
+import type { ChainName } from '@humanode-hyperlane/sdk/types';
 import {
   type Address,
   type HexString,
   type KnownProtocolType,
   ProtocolType,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { AccountInfo } from './types.js';
 import { getAddressForChain } from './walletAddresses.js';

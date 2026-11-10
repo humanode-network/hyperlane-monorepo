@@ -1,7 +1,7 @@
 ---
-'@hyperlane-xyz/utils': minor
-'@hyperlane-xyz/sdk': minor
-'@hyperlane-xyz/tron-sdk': minor
+'@humanode-hyperlane/utils': minor
+'@humanode-hyperlane/sdk': minor
+'@humanode-hyperlane/tron-sdk': minor
 ---
 
 Added transaction submission observers and typed failures that retained known identities across delegated sends, ambiguous broadcast responses, and later failures.

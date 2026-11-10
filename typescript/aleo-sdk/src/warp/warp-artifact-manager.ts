@@ -1,14 +1,14 @@
 import {
   type ArtifactReader,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedRawWarpArtifact,
   type DeployedWarpAddress,
   type IRawWarpArtifactManager,
   type RawWarpArtifactConfigs,
   type WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 
 import type { AnyAleoNetworkClient } from '../clients/base.js';
 import type { AleoSigner } from '../clients/signer.js';

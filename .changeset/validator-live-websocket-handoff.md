@@ -1,5 +1,5 @@
 ---
-'@hyperlane-xyz/sdk': major
+'@humanode-hyperlane/sdk': major
 ---
 
 Removed lightweight validator mode and its `lightweight` and `leightweigt` configuration fields. Validators now require RPC indexing for historical recovery before handing off to optional live WebSocket insertions. Existing configurations must remove either field, including when set to `false`.

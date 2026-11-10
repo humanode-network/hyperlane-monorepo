@@ -1,5 +1,5 @@
-import { GasRouter } from '@hyperlane-xyz/core';
-import { Address } from '@hyperlane-xyz/utils';
+import { GasRouter } from '@humanode-hyperlane/core';
+import { Address } from '@humanode-hyperlane/utils';
 
 import {
   HyperlaneContracts,

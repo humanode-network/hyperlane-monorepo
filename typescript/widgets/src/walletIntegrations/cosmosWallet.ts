@@ -1,11 +1,11 @@
 import { useChain, useChains } from '@cosmos-kit/react';
 import { useMemo } from 'react';
 
-import { cosmoshub } from '@hyperlane-xyz/registry';
-import type { ChainMetadata } from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import { HexString, ProtocolType, ensure0x } from '@hyperlane-xyz/utils';
+import { cosmoshub } from '@humanode-hyperlane/registry';
+import type { ChainMetadata } from '@humanode-hyperlane/sdk/metadata/chainMetadataTypes';
+import type { MinimalProviderRegistry } from '@humanode-hyperlane/sdk/providers/MinimalProviderRegistry';
+import type { ChainName } from '@humanode-hyperlane/sdk/types';
+import { HexString, ProtocolType, ensure0x } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

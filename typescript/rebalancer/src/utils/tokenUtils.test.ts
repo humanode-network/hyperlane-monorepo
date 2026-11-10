@@ -2,8 +2,8 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 
-import { type Token, TokenStandard } from '@hyperlane-xyz/sdk';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
+import { type Token, TokenStandard } from '@humanode-hyperlane/sdk';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
 
 import { ExternalBridgeType } from '../config/types.js';
 

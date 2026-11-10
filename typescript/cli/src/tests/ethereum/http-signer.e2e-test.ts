@@ -6,9 +6,9 @@ import { $ } from 'zx';
 import {
   HttpServer,
   type TransactionSignerBackend,
-} from '@hyperlane-xyz/http-registry-server';
-import { FileSystemRegistry } from '@hyperlane-xyz/registry/fs';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/http-registry-server';
+import { FileSystemRegistry } from '@humanode-hyperlane/registry/fs';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../utils/files.js';
 import { localTestRunCmdPrefix } from './commands/helpers.js';

@@ -1,6 +1,6 @@
 import { BlockTag, RpcProvider as StarknetRpcProvider } from 'starknet';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import { parseCustomRpcHeaders } from '../../utils/provider.js';

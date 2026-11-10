@@ -1,7 +1,7 @@
 import {
   FeeType,
   type RegressiveFeeConfig,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@humanode-hyperlane/provider-sdk/fee';
 
 import { SvmLeafFeeReader, SvmLeafFeeWriter } from './leaf-fee.js';
 

@@ -38,7 +38,7 @@ import {
   TestIsm__factory,
   TrustedRelayerIsm__factory,
   ZKSyncArtifact,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 
 import {
   Address,
@@ -48,7 +48,7 @@ import {
   isZeroishAddress,
   objFilter,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { HyperlaneApp } from '../app/HyperlaneApp.js';
 import { CCIPContractCache } from '../ccip/utils.js';
@@ -116,7 +116,7 @@ type RoutingIsmContract =
   | IncrementalDomainRoutingIsm
   | DefaultFallbackRoutingIsm;
 
-// First @hyperlane-xyz/core version with setIsms/removeIsms on
+// First @humanode-hyperlane/core version with setIsms/removeIsms on
 // DomainRoutingIsm. Routing ISMs at or above this version let the SDK
 // consolidate per-domain txs into chunked setIsms/removeIsms calls;
 // older ISMs fall back to the per-domain loop.
@@ -1165,7 +1165,7 @@ export class HyperlaneIsmFactory extends HyperlaneApp<ProxyFactoryFactories> {
 
   /**
    * Resolves whether a routing ISM's deployed bytecode has the
-   * `setIsms`/`removeIsms` ops (introduced in `@hyperlane-xyz/core`
+   * `setIsms`/`removeIsms` ops (introduced in `@humanode-hyperlane/core`
    * 12.0.0). Memoized per chain+address.
    */
   private routingIsmSupportsBatch(

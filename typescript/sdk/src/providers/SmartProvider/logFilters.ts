@@ -5,7 +5,7 @@ import {
   isNullish,
   isValidAddressEvm,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ProviderMethod } from './ProviderMethods.js';
 import { HyperlaneLogFilter } from './types.js';

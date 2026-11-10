@@ -5,9 +5,9 @@ import {
   TokenStandard,
   XERC20_STANDARDS,
   localAmountFromMessage,
-} from '@hyperlane-xyz/sdk';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { normalizeToCanonical } from './balanceUtils.js';
 

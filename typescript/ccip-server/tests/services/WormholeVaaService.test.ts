@@ -4,14 +4,14 @@ import { pino } from 'pino';
 import { Registry } from 'prom-client';
 import sinon from 'sinon';
 
-import { WormholeVaaHookIsm__factory } from '@hyperlane-xyz/core';
+import { WormholeVaaHookIsm__factory } from '@humanode-hyperlane/core';
 import {
   HyperlaneSmartProvider,
   ModuleType,
   MultiProvider,
   OnchainHookType,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { addressToBytes32, assert } from '@humanode-hyperlane/utils';
 
 import { WormholeVaaFetcher } from '../../src/services/WormholeVaaFetcher.js';
 import {

@@ -1,13 +1,13 @@
 import { confirm } from '@inquirer/prompts';
 import { stringify as yamlStringify } from 'yaml';
 
-import { IPostDispatchHook__factory } from '@hyperlane-xyz/core';
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { IPostDispatchHook__factory } from '@humanode-hyperlane/core';
+import { buildArtifact as coreBuildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
 import {
   AltVMJsonRpcSubmitter,
   createWarpTokenWriter,
-} from '@hyperlane-xyz/deploy-sdk';
-import { AltVMFileSubmitter } from '@hyperlane-xyz/deploy-sdk/AltVMFileSubmitter';
+} from '@humanode-hyperlane/deploy-sdk';
+import { AltVMFileSubmitter } from '@humanode-hyperlane/deploy-sdk/AltVMFileSubmitter';
 import {
   type AltVM,
   type FileSubmitterConfig,
@@ -16,20 +16,20 @@ import {
   ProtocolType,
   SubmitterType,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/module';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type WarpArtifactConfig,
   warpConfigToArtifact,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   type AddWarpRouteConfigOptions,
   type ChainAddresses,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type AggregationIsmConfig,
   CCIPContractCache,
@@ -100,9 +100,9 @@ import {
   splitWarpCoreAndExtendedConfigs,
   throwIfNotMissingSelector,
   tokenTypeToStandard,
-} from '@hyperlane-xyz/sdk';
-import { mapHybridHookNodes } from '@hyperlane-xyz/sdk/hook/utils';
-import { mapHybridIsmNodes } from '@hyperlane-xyz/sdk/utils/ism';
+} from '@humanode-hyperlane/sdk';
+import { mapHybridHookNodes } from '@humanode-hyperlane/sdk/hook/utils';
+import { mapHybridIsmNodes } from '@humanode-hyperlane/sdk/utils/ism';
 import {
   type Address,
   type Annotated,
@@ -118,7 +118,7 @@ import {
   promiseObjAll,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { requestAndSaveApiKeys } from '../context/apiKeys.js';
 import { type WriteCommandContext } from '../context/types.js';

@@ -1,6 +1,6 @@
 import { parseEther } from 'ethers/lib/utils.js';
 
-import { Mailbox__factory } from '@hyperlane-xyz/core';
+import { Mailbox__factory } from '@humanode-hyperlane/core';
 import {
   ChainMap,
   ChainName,
@@ -11,8 +11,12 @@ import {
   MultisigConfig,
   TokenType,
   buildAggregationIsmConfigs,
-} from '@hyperlane-xyz/sdk';
-import { Address, assert, symmetricDifference } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  Address,
+  assert,
+  symmetricDifference,
+} from '@humanode-hyperlane/utils';
 
 import { getEnvironmentConfig } from '../../../../../scripts/core-utils.js';
 import { getRegistry as getMainnet3Registry } from '../../chains.js';

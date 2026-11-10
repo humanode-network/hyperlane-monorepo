@@ -1,12 +1,12 @@
 import yargs from 'yargs';
 
-import { InterchainAccount } from '@hyperlane-xyz/sdk';
+import { InterchainAccount } from '@humanode-hyperlane/sdk';
 import {
   assert,
   formatStandardHookMetadata,
   objFilter,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { getGovernanceSafes } from '../../../config/environments/mainnet3/governance/utils.js';
 import { supportedChainNames } from '../../../config/environments/mainnet3/supportedChainNames.js';

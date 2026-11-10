@@ -8,8 +8,8 @@ import {
   MergedRegistry,
   PartialRegistry,
   RegistryType,
-} from '@hyperlane-xyz/registry';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/registry';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { RegistryService } from '../../src/services/registryService.js';
 import { IWatcher } from '../../src/services/watcherService.js';

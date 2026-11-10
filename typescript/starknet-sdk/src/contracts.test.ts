@@ -4,14 +4,14 @@ import { CallData, hash } from 'starknet';
 import {
   getCompiledClassHash,
   getCompiledContract,
-} from '@hyperlane-xyz/starknet-core';
+} from '@humanode-hyperlane/starknet-core';
 import {
   ContractType,
   getContractAbi,
   getContractClassHash,
   getRuntimeContractNames,
-} from '@hyperlane-xyz/starknet-core/runtime';
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/starknet-core/runtime';
+import { ZERO_ADDRESS_HEX_32 } from '@humanode-hyperlane/utils';
 
 import {
   StarknetContractName,

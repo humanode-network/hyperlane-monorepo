@@ -190,7 +190,7 @@ Common domain IDs (destination field in logs):
 - `137` - Polygon
 - `4114` - Citrea
 
-Check `@hyperlane-xyz/registry` or chain metadata for full mapping.
+Check `@humanode-hyperlane/registry` or chain metadata for full mapping.
 
 ## Example Investigation
 

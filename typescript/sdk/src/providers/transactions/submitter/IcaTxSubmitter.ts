@@ -7,7 +7,7 @@ import {
   bytes32ToAddress,
   formatStandardHookMetadata,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   InterchainAccount,

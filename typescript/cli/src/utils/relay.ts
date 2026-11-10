@@ -1,8 +1,8 @@
 import { type TransactionReceipt } from '@ethersproject/providers';
 
-import { Mailbox__factory } from '@hyperlane-xyz/core';
-import { type IRegistry } from '@hyperlane-xyz/registry';
-import { HyperlaneRelayer } from '@hyperlane-xyz/relayer';
+import { Mailbox__factory } from '@humanode-hyperlane/core';
+import { type IRegistry } from '@humanode-hyperlane/registry';
+import { HyperlaneRelayer } from '@humanode-hyperlane/relayer';
 import {
   type ChainMap,
   type ChainName,
@@ -12,8 +12,8 @@ import {
   type MultiProvider,
   type TxSubmitterBuilder,
   TxSubmitterType,
-} from '@hyperlane-xyz/sdk';
-import { type ProtocolType, isEVMLike } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type ProtocolType, isEVMLike } from '@humanode-hyperlane/utils';
 
 import { log, logDebug, logGreen } from '../logger.js';
 import { type ExtendedSubmissionStrategy } from '../submitters/types.js';

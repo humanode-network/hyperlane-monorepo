@@ -6,7 +6,7 @@ import {
   LogLevel,
   configureRootLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { HelmManager, getHelmReleaseName } from '../../src/utils/helm.js';
 import { WarpRouteMonitorHelmManager } from '../../src/warp-monitor/helm.js';

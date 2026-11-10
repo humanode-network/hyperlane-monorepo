@@ -1,6 +1,6 @@
 import { type DeliverTxResponse } from '@cosmjs/stargate';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { COSMOS_MODULE_MESSAGE_REGISTRY as MessageRegistry } from '../registry.js';
 

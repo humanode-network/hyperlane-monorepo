@@ -1,4 +1,4 @@
-import { Domain, assert } from '@hyperlane-xyz/utils';
+import { Domain, assert } from '@humanode-hyperlane/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { ChainName } from '../types.js';

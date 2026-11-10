@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { RpcConsensusType } from '@hyperlane-xyz/sdk';
+import { RpcConsensusType } from '@humanode-hyperlane/sdk';
 
 import { Contexts } from '../config/contexts.js';
 import { agents } from '../config/environments/mainnet3/agent.js';

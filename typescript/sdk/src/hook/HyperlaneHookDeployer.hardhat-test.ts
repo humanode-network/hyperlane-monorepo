@@ -7,8 +7,8 @@ import {
   FallbackDomainRoutingHook__factory,
   PausableHook__factory,
   StaticAggregationHook__factory,
-} from '@hyperlane-xyz/core';
-import { WithAddress, eqAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { WithAddress, eqAddress } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { TestCoreDeployer } from '../core/TestCoreDeployer.js';
