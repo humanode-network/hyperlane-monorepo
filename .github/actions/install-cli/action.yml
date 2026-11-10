@@ -38,8 +38,11 @@ runs:
     - name: pnpm-install-build-without-cache
       if: inputs.no-cache != 'false'
       shell: bash
+      # The Starknet build fetches its contracts through the GitHub API, which
+      # limits unauthenticated requests per IP address.
       env:
         BUILD_FILTER: ${{ inputs.build-filter }}
+        GITHUB_TOKEN: ${{ github.token }}
       run: |
         pnpm install --frozen-lockfile
         if [ -n "$BUILD_FILTER" ]; then

@@ -5,12 +5,28 @@ set -euo pipefail
 IFS=$'\n\t'
 
 # Constants
-readonly REPO="hyperlane-xyz/hyperlane-starknet"
+# The contracts come from our fork's releases. Their tags are upstream's version
+# with 1000 added to its first non-zero component (v0.1003.2 is upstream's
+# v0.3.2), on upstream's tag with CI fixes only, and their contract class files
+# are identical to upstream's. The zip's SHA-256 is pinned here, so a replaced
+# release fails the build. A new VERSION needs its tag and release in the fork
+# first, and its zip's SHA-256 here.
+readonly REPO="humanode-network/hyperlane-starknet"
 readonly GITHUB_RELEASES_API="https://api.github.com/repos/${REPO}/releases"
 readonly TARGET_DIR="./release"
-readonly VERSION="v0.3.2"
+readonly VERSION="v0.1003.2"
+readonly ZIP_SHA256="108c90e2bb733f8b80f7a274cc8066637ea02a39b05e729ddc846be5374c3a60"
 readonly MAX_RETRIES=3
 readonly RETRY_DELAY=5
+
+# GitHub allows 60 unauthenticated API requests an hour per IP address, which
+# shared CI runners run out of. When `GITHUB_TOKEN` is set, the API requests
+# authenticate with it; the release downloads do not go through the API.
+API_AUTH=()
+if [[ -n "${GITHUB_TOKEN:-}" ]]; then
+    API_AUTH=(--header "Authorization: Bearer ${GITHUB_TOKEN}")
+fi
+readonly API_AUTH
 
 # Color definitions
 declare -r COLOR_GREEN='\033[0;32m'
@@ -73,7 +89,7 @@ check_if_contracts_exist() {
 
 verify_version_exists() {
     local version=$1
-    if ! curl_with_retry "${GITHUB_RELEASES_API}/tags/${version}" --output /dev/null --silent --head --fail; then
+    if ! curl_with_retry "${GITHUB_RELEASES_API}/tags/${version}" ${API_AUTH[@]+"${API_AUTH[@]}"} --output /dev/null --silent --head --fail; then
         log_error "Version ${version} does not exist"
         exit 1
     fi
@@ -83,7 +99,7 @@ get_release_info() {
     local version=$1
     local release_info
 
-    release_info=$(curl_with_retry "${GITHUB_RELEASES_API}/tags/${version}" -sf) || {
+    release_info=$(curl_with_retry "${GITHUB_RELEASES_API}/tags/${version}" ${API_AUTH[@]+"${API_AUTH[@]}"} -sf) || {
         log_error "Failed to fetch release information for version ${version}"
         exit 1
     }
@@ -133,6 +149,11 @@ verify_checksum() {
         downloaded_checksum="$(sha256sum "$file_path" | cut -d' ' -f1)"
     fi
     log_success "File checksum: ${downloaded_checksum}"
+
+    if [[ "${downloaded_checksum}" != "${ZIP_SHA256}" ]]; then
+        log_error "Checksum does not match the pinned ${ZIP_SHA256}"
+        return 1
+    fi
 
     local expected_checksum
     if ! expected_checksum="$(curl_with_retry "${base_url}/${checksum_filename}" -sL)"; then
