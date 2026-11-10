@@ -356,6 +356,13 @@ export const ChainMetadataSchemaObject = z.object({
       'The technical stack of the chain. See ChainTechnicalStack for valid values.',
     ),
 
+  contractsVariant: z
+    .enum(['paris'])
+    .optional()
+    .describe(
+      "The build of the Hyperlane contracts to deploy on the chain, when the chain's EVM lacks opcodes the default build uses: 'paris' for an EVM without the Cancun opcodes. Unset for the default build.",
+    ),
+
   transactionOverrides: z
     .record(z.string(), z.unknown())
     .optional()

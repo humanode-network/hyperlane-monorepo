@@ -451,7 +451,7 @@ export class MultiProvider<MetaExt = {}> extends ChainMetadataManager<MetaExt> {
     const overrides = this.getTransactionOverrides(chainNameOrId);
     const signer = this.getSigner(chainNameOrId);
     const metadata = this.getChainMetadata(chainNameOrId);
-    const { protocol, technicalStack } = metadata;
+    const { protocol, technicalStack, contractsVariant } = metadata;
 
     let contract: Contract;
     let estimatedGas: BigNumber;
@@ -471,10 +471,12 @@ export class MultiProvider<MetaExt = {}> extends ChainMetadataManager<MetaExt> {
       // no need to `handleTx` for zkSync as the zksync deployer itself
       // will wait for the deploy tx to be confirmed before returning
     } else {
-      const resolved =
-        protocol === ProtocolType.Tron
-          ? await this.resolveTronFactory(factory)
-          : factory;
+      let resolved = factory;
+      if (protocol === ProtocolType.Tron) {
+        resolved = await this.resolveTronFactory(factory);
+      } else if (contractsVariant === 'paris') {
+        resolved = await this.resolveParisFactory(factory);
+      }
       const contractFactory = resolved.connect(signer);
 
       const deployTx = contractFactory.getDeployTransaction(...params);
@@ -527,6 +529,24 @@ export class MultiProvider<MetaExt = {}> extends ChainMetadataManager<MetaExt> {
    * with TronContractFactory to handle Tron's deployment flow.
    * @throws if no matching Tron factory is found
    */
+  /**
+   * The factory of the Paris build of a contract, for chains whose EVM lacks the
+   * Cancun opcodes the default build uses (chain metadata `contractsVariant`).
+   * Same ABI, bytecode compiled for the `paris` EVM.
+   */
+  async resolveParisFactory<F extends ContractFactory>(factory: F): Promise<F> {
+    const paris = await import('@humanode-hyperlane/core/paris/typechain');
+    const ParisFactory = (paris as Record<string, any>)[
+      factory.constructor.name
+    ];
+    if (!ParisFactory) {
+      throw new Error(
+        `No Paris-compiled factory found for ${factory.constructor.name}`,
+      );
+    }
+    return new ParisFactory() as F;
+  }
+
   async resolveTronFactory<F extends ContractFactory>(factory: F): Promise<F> {
     const TronSdk = await import('@humanode-hyperlane/tron-sdk');
     const TronFactory = (TronSdk as Record<string, any>)[
