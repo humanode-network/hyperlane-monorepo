@@ -13,13 +13,10 @@ env:
   RUST_BACKTRACE: full
   RUSTC_WRAPPER: sccache
   TURBO_TELEMETRY_DISABLED: 1
-  TURBO_API: https://cache.depot.dev
-  TURBO_TOKEN: ${{ secrets.DEPOT_TURBO_TOKEN }}
-  TURBO_TEAM: ${{ secrets.DEPOT_ORG_ID }}
 
 jobs:
   e2e-matrix:
-    runs-on: depot-ubuntu-24.04-8
+    runs-on: ubuntu-24.04
     if: inputs.event_name == 'push' || (inputs.event_name == 'pull_request' && inputs.base_ref == 'main') || inputs.event_name == 'merge_group' || inputs.event_name == 'workflow_dispatch'
     strategy:
       fail-fast: false
