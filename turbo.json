@@ -17,6 +17,10 @@
         "dist/tron/typechain/**"
       ]
     },
+    "build:paris": {
+      "dependsOn": ["build"],
+      "outputs": ["cache-paris/**", "artifacts-paris/**", "dist/paris/**"]
+    },
     "test:ci": {
       "dependsOn": ["build", "^test:ci"]
     },

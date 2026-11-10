@@ -1,5 +1,6 @@
 import { Logger } from 'pino';
 
+import { buildArtifact as parisBuildArtifact } from '@humanode-hyperlane/core/buildArtifact-paris.js';
 import { buildArtifact as zksyncBuildArtifact } from '@humanode-hyperlane/core/buildArtifact-zksync.js';
 import {
   Address,
@@ -32,6 +33,11 @@ const COMPILER_VERSION_REGEX = /v(\d.\d.\d+)\+commit.\w+/;
 export class ContractVerifier extends BaseContractVerifier {
   protected logger = rootLogger.child({ module: 'ContractVerifier' });
   protected readonly compilerOptions: CompilerOptions;
+  private readonly licenseType: CompilerOptions['licenseType'];
+  // Verifies the chains on the Paris build of the contracts (chain metadata
+  // `contractsVariant`), whose sources and compiler settings differ from the
+  // build artifact this verifier was given.
+  private parisVerifier?: ContractVerifier;
 
   constructor(
     protected readonly multiProvider: MultiProvider,
@@ -40,6 +46,7 @@ export class ContractVerifier extends BaseContractVerifier {
     licenseType: CompilerOptions['licenseType'],
   ) {
     super(multiProvider, buildArtifact);
+    this.licenseType = licenseType;
     const compilerversion = `v${buildArtifact.solcLongVersion}`;
     const matches = COMPILER_VERSION_REGEX.exec(compilerversion);
     if (!matches) {
@@ -52,6 +59,27 @@ export class ContractVerifier extends BaseContractVerifier {
     };
     if (zksyncBuildArtifact?.zk_version)
       this.compilerOptions.zksolcversion = `v${zksyncBuildArtifact.zk_version}`;
+  }
+
+  public override async verifyContract(
+    chain: ChainName,
+    input: ContractVerificationInput,
+    logger = this.logger,
+  ): Promise<void> {
+    const metadata = this.multiProvider.tryGetChainMetadata(chain);
+    if (
+      metadata?.contractsVariant === 'paris' &&
+      this.standardInputJson !== parisBuildArtifact.input
+    ) {
+      this.parisVerifier ??= new ContractVerifier(
+        this.multiProvider,
+        this.apiKeys,
+        parisBuildArtifact,
+        this.licenseType,
+      );
+      return this.parisVerifier.verifyContract(chain, input, logger);
+    }
+    return super.verifyContract(chain, input, logger);
   }
 
   protected async verify(
