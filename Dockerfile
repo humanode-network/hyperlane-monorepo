@@ -98,7 +98,7 @@ RUN --mount=type=cache,id=monorepo-turbo-${TARGETARCH},target=/hyperlane-monorep
 # keep for back-compat until we update all usage of the monorepo image (e.g. key-funder)
 ENV REGISTRY_URI="/hyperlane-registry"
 ARG REGISTRY_COMMIT="main"
-RUN git clone https://github.com/hyperlane-xyz/hyperlane-registry.git "$REGISTRY_URI" \
+RUN git clone https://github.com/humanode-network/hyperlane-registry.git "$REGISTRY_URI" \
     && cd "$REGISTRY_URI" \
     && git fetch origin "$REGISTRY_COMMIT" \
     && git checkout "$REGISTRY_COMMIT"
