@@ -1,6 +1,6 @@
 services:
   relayer-service:
-    image: ghcr.io/hyperlane-xyz/hyperlane-agent:c558a9f-20260304-105241
+    image: ghcr.io/humanode-network/hyperlane-agent:agents-v1003.0.0
     command: >
       /bin/sh -c "./relayer
       --db /relayer/database
