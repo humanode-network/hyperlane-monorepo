@@ -8,7 +8,7 @@ description:
 
 # Find Docker Images
 
-Find existing Hyperlane Docker images on GHCR (`ghcr.io/hyperlane-xyz/*`).
+Find existing Hyperlane Docker images on GHCR (`ghcr.io/humanode-network/*`).
 
 ## Image Repositories
 
@@ -33,7 +33,7 @@ The `hyperlane-node-services` image is a unified image. Set `SERVICE_NAME` env v
 Use the mutable branch tag directly:
 
 ```
-ghcr.io/hyperlane-xyz/hyperlane-agent:main
+ghcr.io/humanode-network/hyperlane-agent:main
 ```
 
 ### List all tags for an image
@@ -41,8 +41,8 @@ ghcr.io/hyperlane-xyz/hyperlane-agent:main
 Query the OCI registry API (no auth needed for public images):
 
 ```bash
-TOKEN=$(curl -s "https://ghcr.io/token?service=ghcr.io&scope=repository:hyperlane-xyz/<IMAGE>:pull" | jq -r .token)
-curl -s -H "Authorization: Bearer $TOKEN" "https://ghcr.io/v2/hyperlane-xyz/<IMAGE>/tags/list" | jq '.tags'
+TOKEN=$(curl -s "https://ghcr.io/token?service=ghcr.io&scope=repository:humanode-network/<IMAGE>:pull" | jq -r .token)
+curl -s -H "Authorization: Bearer $TOKEN" "https://ghcr.io/v2/humanode-network/<IMAGE>/tags/list" | jq '.tags'
 ```
 
 Replace `<IMAGE>` with the image name (e.g. `hyperlane-agent`).
@@ -52,8 +52,8 @@ Replace `<IMAGE>` with the image name (e.g. `hyperlane-agent`).
 Grep the tag list for a sha prefix:
 
 ```bash
-TOKEN=$(curl -s "https://ghcr.io/token?service=ghcr.io&scope=repository:hyperlane-xyz/<IMAGE>:pull" | jq -r .token)
-curl -s -H "Authorization: Bearer $TOKEN" "https://ghcr.io/v2/hyperlane-xyz/<IMAGE>/tags/list" | jq -r '.tags[]' | grep '<SHA_PREFIX>'
+TOKEN=$(curl -s "https://ghcr.io/token?service=ghcr.io&scope=repository:humanode-network/<IMAGE>:pull" | jq -r .token)
+curl -s -H "Authorization: Bearer $TOKEN" "https://ghcr.io/v2/humanode-network/<IMAGE>/tags/list" | jq -r '.tags[]' | grep '<SHA_PREFIX>'
 ```
 
 ### Find tag from latest workflow run
@@ -83,7 +83,7 @@ grep -E '(tag|Tag)' typescript/infra/config/docker.ts
 
 1. Determine what the user needs: latest for a branch, a specific commit, or what's deployed.
 2. Use the appropriate method above to find the tag.
-3. Return the full image reference: `ghcr.io/hyperlane-xyz/<image>:<tag>`.
+3. Return the full image reference: `ghcr.io/humanode-network/<image>:<tag>`.
 4. If no image exists for their branch/commit, suggest using `/build-docker-image` to trigger one.
 
 ## References

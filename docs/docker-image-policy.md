@@ -2,9 +2,7 @@
 
 ## Registry
 
-All images publish to **GHCR**: `ghcr.io/hyperlane-xyz/*`
-
-GCR (`gcr.io/abacus-labs-dev`) is deprecated. A 30-day cleanup policy is applied to the old repo.
+All images publish to **GHCR** under the account that owns the repository: `ghcr.io/humanode-network/*`
 
 ## Images
 
@@ -68,9 +66,9 @@ Additionally:
 
 Via UI:
 
-- https://github.com/hyperlane-xyz/hyperlane-monorepo/actions/workflows/rust-docker.yml
-- https://github.com/hyperlane-xyz/hyperlane-monorepo/actions/workflows/monorepo-docker.yml
-- https://github.com/hyperlane-xyz/hyperlane-monorepo/actions/workflows/node-services-docker.yml
+- https://github.com/humanode-network/hyperlane-monorepo/actions/workflows/rust-docker.yml
+- https://github.com/humanode-network/hyperlane-monorepo/actions/workflows/monorepo-docker.yml
+- https://github.com/humanode-network/hyperlane-monorepo/actions/workflows/node-services-docker.yml
 
 Via `gh` CLI:
 
