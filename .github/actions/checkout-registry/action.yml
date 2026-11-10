@@ -27,7 +27,7 @@ runs:
     - name: Checkout hyperlane-registry
       uses: actions/checkout@v7
       with:
-        repository: hyperlane-xyz/hyperlane-registry
+        repository: humanode-network/hyperlane-registry
         ref: ${{ env.REGISTRY_VERSION }}
         fetch-depth: 1
         path: ./hyperlane-registry
