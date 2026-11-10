@@ -18,7 +18,9 @@ RUN curl -fSL "https://github.com/anza-xyz/agave/releases/download/${AGAVE_VERSI
     && tar jxf /tmp/solana.tar.bz2 -C /opt \
     && rm /tmp/solana.tar.bz2
 
-RUN useradd -m -u 1000 solana
+# Ubuntu's images come with an `ubuntu` user at UID 1000, which the validator's
+# user takes over.
+RUN userdel -r ubuntu && useradd -m -u 1000 solana
 USER 1000
 
 ENV PATH="/opt/solana-release/bin:${PATH}"
