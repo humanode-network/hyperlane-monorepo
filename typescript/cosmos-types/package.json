@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/cosmos-types",
-  "version": "45.2.0",
+  "version": "1045.2.0",
   "description": "Hyperlane TypeScript SDK types for the Cosmos Hyperlane SDK module",
   "keywords": [
     "blockchain",

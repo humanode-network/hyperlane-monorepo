@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/starknet-sdk",
-  "version": "30.0.6",
+  "version": "1030.0.6",
   "description": "Hyperlane TypeScript SDK for Starknet artifact API support",
   "keywords": [
     "blockchain",

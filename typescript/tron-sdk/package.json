@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/tron-sdk",
-  "version": "26.0.3",
+  "version": "1026.0.3",
   "description": "Hyperlane TypeScript SDK for Tron",
   "keywords": [
     "blockchain",

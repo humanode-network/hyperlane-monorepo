@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/starknet-core",
-  "version": "45.2.0",
+  "version": "1045.2.0",
   "description": "Core cairo contracts for Hyperlane",
   "keywords": [
     "Cairo",
