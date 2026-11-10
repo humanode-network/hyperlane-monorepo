@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/provider-sdk",
-  "version": "11.0.3",
+  "version": "1011.0.3",
   "description": "Protocol Provider SDK for the Hyperlane Protocol",
   "license": "Apache-2.0",
   "repository": "https://github.com/humanode-network/hyperlane-monorepo",

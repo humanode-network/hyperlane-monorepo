@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/utils",
-  "version": "45.2.0",
+  "version": "1045.2.0",
   "description": "General utilities and types for the Hyperlane network",
   "keywords": [
     "Hyperlane",
