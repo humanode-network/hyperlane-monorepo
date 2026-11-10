@@ -10,10 +10,13 @@
     "./dist",
     "zk-hardhat.config.cts",
     "tron-hardhat.config.cts",
+    "paris-hardhat.config.cts",
     "rootHardhatConfig.cts",
     "./plugins",
     "./dependencies",
     "./artifacts-tron",
+    "./artifacts-paris",
+    "./.paris",
     "./multicollateral"
   ]
 }
