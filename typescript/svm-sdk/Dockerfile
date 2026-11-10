@@ -18,8 +18,10 @@ RUN curl -fSL "https://github.com/anza-xyz/agave/releases/download/${AGAVE_VERSI
     && tar jxf /tmp/solana.tar.bz2 -C /opt \
     && rm /tmp/solana.tar.bz2
 
-RUN useradd -m -u 1000 solana
-USER 1000
+# The validator runs as root, as in upstream's published image. Upstream's
+# Dockerfile asks for UID 1000, which does not build on ubuntu:24.04 (its
+# `ubuntu` user holds that UID), and built that way the validator exits before
+# binding its RPC in the e2e setup.
 
 ENV PATH="/opt/solana-release/bin:${PATH}"
 
