@@ -1,0 +1,9 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["@humanode-hyperlane/core#build:paris", "^build"],
+      "outputs": ["dist/**", "cache/**", "src/generated/**"]
+    }
+  }
+}
