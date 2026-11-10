@@ -156,8 +156,8 @@ catalogs:
       specifier: ^1.3.5
       version: 1.3.5
     '@humanode-hyperlane/registry':
-      specifier: 23.12.0-humanode.1
-      version: 23.12.0-humanode.1
+      specifier: 1026.3.0
+      version: 1026.3.0
     '@inquirer/prompts':
       specifier: 3.3.2
       version: 3.3.2
@@ -710,7 +710,7 @@ importers:
         version: link:../metrics
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -849,7 +849,7 @@ importers:
         version: link:../rebalancer
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/relayer':
         specifier: workspace:*
         version: link:../relayer
@@ -1173,7 +1173,7 @@ importers:
         version: link:../provider-sdk
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -1310,7 +1310,7 @@ importers:
         version: link:../../solidity
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -1422,7 +1422,7 @@ importers:
         version: 1.3.5(supports-color@8.1.1)
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -1567,7 +1567,7 @@ importers:
         version: link:../rebalancer
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/relayer':
         specifier: workspace:*
         version: link:../relayer
@@ -1781,7 +1781,7 @@ importers:
         version: link:../metrics
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -2031,7 +2031,7 @@ importers:
         version: link:../provider-sdk
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -2152,7 +2152,7 @@ importers:
         version: link:../rebalancer
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -2222,7 +2222,7 @@ importers:
         version: link:../metrics
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -2710,7 +2710,7 @@ importers:
         version: link:../provider-sdk
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/utils':
         specifier: workspace:*
         version: link:../utils
@@ -2870,7 +2870,7 @@ importers:
         version: link:../metrics
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -3070,7 +3070,7 @@ importers:
         version: 11.14.1(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1)(supports-color@8.1.1))(@types/react@18.3.27)(react@18.3.1)(supports-color@8.1.1)
       '@humanode-hyperlane/registry':
         specifier: 'catalog:'
-        version: 23.12.0-humanode.1
+        version: 1026.3.0
       '@humanode-hyperlane/tsconfig':
         specifier: workspace:^
         version: link:../tsconfig
@@ -5322,8 +5322,8 @@ packages:
     resolution: {integrity: sha512-mFfnZfgp4OKkUIS/FKikfUgdnDKRy25ytCKBQiV+N+HbYy3I4v4ZCPBQ69QL+TYmKmCZJeUEnYeS5K+OBRP+Eg==}
     engines: {node: '>=16.0.0'}
 
-  '@humanode-hyperlane/registry@23.12.0-humanode.1':
-    resolution: {integrity: sha512-1hMEdiXrK3xfc+hxljYvqsfekk3PvarsyQn1dp73HyGNUgR+9KOTJPeYfvSDmny5q0y/OWoCvrSnpcGtKtvg9Q==}
+  '@humanode-hyperlane/registry@1026.3.0':
+    resolution: {integrity: sha512-Lm25U4bX3teqe0T/05Xg5quQRsRyh5eBJV4zmvIWT1gEsMOBpMZI6i73JXCDJSkPHIIWhxJ54wa7Mn7NDqh6hQ==}
     engines: {node: '>=24'}
 
   '@humanwhocodes/momoa@2.0.4':
@@ -21522,11 +21522,12 @@ snapshots:
     dependencies:
       '@hpke/common': 1.10.1
 
-  '@humanode-hyperlane/registry@23.12.0-humanode.1':
+  '@humanode-hyperlane/registry@1026.3.0':
     dependencies:
       jszip: 3.10.1
-      yaml: 2.4.5
-      zod: 3.25.76
+      pino: 8.21.0
+      yaml: 2.9.0
+      zod: 4.5.4
 
   '@humanwhocodes/momoa@2.0.4': {}
 
