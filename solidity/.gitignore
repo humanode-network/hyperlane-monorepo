@@ -27,6 +27,10 @@ artifacts-tron
 cache-tron
 out-tron
 forge-cache-tron
+# Paris variant (see paris-hardhat.config.cts and test-paris.sh)
+artifacts-paris
+cache-paris
+.paris
 core-utils/zksync/artifacts/output
 .zksolc-libraries-cache/
 typechain-types/
