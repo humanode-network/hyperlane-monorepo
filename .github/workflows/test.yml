@@ -131,6 +131,7 @@ jobs:
     outputs:
       base_sha: ${{ steps.determine-sha.outputs.base_sha }}
       current_sha: ${{ steps.determine-sha.outputs.current_sha }}
+      base_fallback: ${{ steps.determine-sha.outputs.base_fallback }}
       skip_ts: ${{ steps.decide.outputs.skip_ts }}
       run_lint_prettier: ${{ steps.decide.outputs.run_lint_prettier }}
       run_cli_e2e: ${{ steps.decide.outputs.run_cli_e2e }}
@@ -383,17 +384,19 @@ jobs:
 
       # gitleaks-action also scans the pushed or proposed commits for secrets;
       # this runs the same scan with the CLI. After a force push or on a new
-      # branch, the base commit is not in the clone, and only the head commit is
-      # scanned: the full history includes upstream's own findings.
+      # branch, the base commit is not in the clone and change detection falls
+      # back to the root commit; only the head commit is scanned then, since the
+      # full history includes upstream's own findings.
       - name: Scan the commits for secrets
         env:
           BASE_SHA: ${{ needs.change-detection.outputs.base_sha }}
           CURRENT_SHA: ${{ needs.change-detection.outputs.current_sha }}
+          BASE_FALLBACK: ${{ needs.change-detection.outputs.base_fallback }}
         run: |
-          if git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
+          if [ "$BASE_FALLBACK" != "true" ] && git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
             range="$BASE_SHA..$CURRENT_SHA"
           else
-            echo "::warning::Base commit $BASE_SHA is not available; scanning only $CURRENT_SHA"
+            echo "::warning::Base commit is not available; scanning only $CURRENT_SHA"
             range="-1 $CURRENT_SHA"
           fi
           gitleaks git --config .gitleaks.toml --redact --no-banner --log-opts="$range"

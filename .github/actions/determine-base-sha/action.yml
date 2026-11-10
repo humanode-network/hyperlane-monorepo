@@ -7,6 +7,9 @@ outputs:
   current_sha:
     description: 'The current commit SHA'
     value: ${{ steps.determine-base-sha.outputs.current_sha }}
+  base_fallback:
+    description: "'true' when the event's base commit was unavailable and base_sha is the root commit instead"
+    value: ${{ steps.determine-base-sha.outputs.base_fallback }}
 runs:
   using: 'composite'
   steps:
@@ -14,6 +17,7 @@ runs:
       id: determine-base-sha
       shell: bash
       run: |
+        echo "base_fallback=false" >> $GITHUB_OUTPUT
         if [ "${{ github.event_name }}" == "pull_request" ]; then
           echo "base_sha=${{ github.event.pull_request.base.sha }}" >> $GITHUB_OUTPUT
           echo "current_sha=${{ github.event.pull_request.head.sha }}" >> $GITHUB_OUTPUT
@@ -21,7 +25,18 @@ runs:
           echo "base_sha=${{ github.event.merge_group.base_sha }}" >> $GITHUB_OUTPUT
           echo "current_sha=${{ github.event.merge_group.head_sha }}" >> $GITHUB_OUTPUT
         elif [ "${{ github.event_name }}" == "push" ]; then
-          echo "base_sha=${{ github.event.before }}" >> $GITHUB_OUTPUT
+          # After a force push, or on a new branch, the commit the branch pointed
+          # at before the push is not in the clone (or is all zeros). The
+          # comparison then falls back to the root commit, so that every file
+          # counts as changed and every job runs.
+          before="${{ github.event.before }}"
+          if git cat-file -e "$before^{commit}" 2>/dev/null; then
+            echo "base_sha=$before" >> $GITHUB_OUTPUT
+          else
+            echo "::warning::Base commit $before is not available; comparing against the root commit"
+            echo "base_sha=$(git rev-list --max-parents=0 HEAD | tail -n 1)" >> $GITHUB_OUTPUT
+            echo "base_fallback=true" >> $GITHUB_OUTPUT
+          fi
           echo "current_sha=${{ github.event.after }}" >> $GITHUB_OUTPUT
         else
           echo "base_sha=$(git rev-parse HEAD^)" >> $GITHUB_OUTPUT
