@@ -47,7 +47,7 @@ function getSeccompProfile(): string {
 // overrides the built-in Token-2022 with v10.0.0 (via --bpf-program) which
 // uses zero-init realloc and is compatible with the stricter runtime.
 // See https://github.com/anza-xyz/agave/issues/9799
-export const SOLANA_VALIDATOR_IMAGE = `ghcr.io/hyperlane-xyz/hyperlane-solana-validator:${AGAVE_VERSION}`;
+export const SOLANA_VALIDATOR_IMAGE = `ghcr.io/humanode-network/hyperlane-solana-validator:${AGAVE_VERSION}`;
 
 export function isAppleSilicon(): boolean {
   try {

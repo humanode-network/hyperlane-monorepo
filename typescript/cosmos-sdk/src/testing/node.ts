@@ -52,7 +52,7 @@ export async function runCosmosNode({
   const container = await retryAsync(
     () =>
       new GenericContainer(
-        'ghcr.io/hyperlane-xyz/hyperlane-cosmos-simapp:v1.0.1',
+        'ghcr.io/humanode-network/hyperlane-cosmos-simapp:v1.0.1',
       )
         .withExposedPorts(
           {

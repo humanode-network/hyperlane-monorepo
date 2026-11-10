@@ -1,5 +1,5 @@
 image:
-  repository: ghcr.io/hyperlane-xyz/hyperlane-agent
+  repository: ghcr.io/humanode-network/hyperlane-agent
   pullPolicy: IfNotPresent
   tag: 'latest'
 

@@ -109,7 +109,7 @@ docker run -v /path/to/config.yaml:/config/keyfunder.yaml \
   -e HYP_KEY=0x... \
   -e RPC_URL_ETHEREUM=https://... \
   -e SERVICE_NAME=keyfunder \
-  ghcr.io/hyperlane-xyz/hyperlane-node-services:latest
+  ghcr.io/humanode-network/hyperlane-node-services:latest
 ```
 
 ### Local Development
