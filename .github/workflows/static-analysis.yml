@@ -16,6 +16,12 @@ on:
 jobs:
   slither:
     runs-on: ubuntu-latest
+    # The SARIF upload writes Slither's findings to code scanning. Upstream's
+    # repository grants workflows write access by default; ours grants read
+    # access only, so the job asks for the permission it needs.
+    permissions:
+      contents: read
+      security-events: write
 
     steps:
       - uses: actions/checkout@v7
@@ -31,7 +37,7 @@ jobs:
       - name: pnpm-cache
         uses: ./.github/actions/pnpm-cache
         with:
-          cache-provider: buildjet
+          cache-provider: github
 
       - name: pnpm-install
         run: pnpm install --frozen-lockfile

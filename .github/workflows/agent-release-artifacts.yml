@@ -22,17 +22,17 @@ jobs:
       matrix:
         include:
           - TARGET: x86_64-unknown-linux-gnu
-            OS: depot-ubuntu-24.04-8
+            OS: ubuntu-24.04
           - TARGET: x86_64-apple-darwin
-            OS: depot-macos-15
+            OS: macos-15
           - TARGET: aarch64-apple-darwin
-            OS: depot-macos-15
+            OS: macos-15
     runs-on: ${{ matrix.OS }}
     steps:
       - name: checkout
         uses: actions/checkout@v7
       - name: ubuntu setup
-        if: ${{ matrix.OS == 'depot-ubuntu-24.04-8' }}
+        if: ${{ matrix.OS == 'ubuntu-24.04' }}
         run: |
           sudo apt-get update -qq
           sudo apt-get install -qq crossbuild-essential-arm64 crossbuild-essential-armhf
@@ -55,7 +55,7 @@ jobs:
         run: cargo build --release --target ${{ matrix.TARGET }} --bin relayer --bin scraper --bin validator
         working-directory: ./rust/main
       - name: make executable
-        if: ${{ matrix.OS == 'depot-ubuntu-24.04-8' || matrix.OS == 'depot-macos-15' }}
+        if: ${{ matrix.OS == 'ubuntu-24.04' || matrix.OS == 'macos-15' }}
         run: chmod ug+x,-w relayer scraper validator
         working-directory: rust/main/target/${{ matrix.TARGET }}/release
       - name: upload binaries
