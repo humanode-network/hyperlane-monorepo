@@ -30,6 +30,11 @@
     "build:tron": {
       "inputs": ["$TURBO_DEFAULT$", "!test/**"],
       "dependsOn": ["deps:soldeer", "deps:hardhat", "version:update"]
+    },
+    "build:paris": {
+      "inputs": ["$TURBO_DEFAULT$", "!test/**"],
+      "dependsOn": ["deps:soldeer", "deps:hardhat", "version:update"],
+      "outputs": ["artifacts-paris/**", "cache-paris/**", "dist/paris/**"]
     }
   }
 }

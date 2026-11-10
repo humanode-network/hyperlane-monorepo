@@ -1,0 +1,8 @@
+{
+  "extends": "@humanode-hyperlane/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/paris/typechain",
+    "rootDir": "./artifacts-paris/typechain"
+  },
+  "include": ["./artifacts-paris/typechain/**/*.ts"]
+}
