@@ -117,6 +117,11 @@ jobs:
             NODE_VERSION=${{ env.NODE_VERSION }}
             FOUNDRY_VERSION=${{ env.FOUNDRY_VERSION }}
             SERVICE_VERSION=${{ steps.taggen.outputs.TAG_SHA }}-${{ steps.taggen.outputs.TAG_DATE }}
+          # The Starknet contracts are fetched from our fork's releases through
+          # GitHub's API during the build; the token lifts the anonymous per-IP
+          # rate limit. A BuildKit secret, so it never enters an image layer.
+          secrets: |
+            github_token=${{ github.token }}
           platforms: ${{ steps.determine-platforms.outputs.platforms }}
 
       - name: Generate image tags output

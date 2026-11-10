@@ -123,7 +123,8 @@ COPY typescript/scraper-proxy ./typescript/scraper-proxy
 ARG TARGETARCH
 RUN --mount=type=cache,id=node-services-turbo-${TARGETARCH},target=/hyperlane-monorepo/.turbo/cache \
     --mount=type=cache,target=/root/.tron/solc \
-    pnpm turbo run bundle \
+    --mount=type=secret,id=github_token \
+    GITHUB_TOKEN="$(cat /run/secrets/github_token 2>/dev/null)" pnpm turbo run bundle \
     --filter=@humanode-hyperlane/rebalancer \
     --filter=@humanode-hyperlane/warp-monitor \
     --filter=@humanode-hyperlane/ccip-server \

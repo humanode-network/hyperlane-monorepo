@@ -92,7 +92,8 @@ RUN SOLC_BINARY="solc-linux-amd64-v${SOLC_VERSION}+commit.${SOLC_COMMIT}" && \
 ARG TARGETARCH
 RUN --mount=type=cache,id=monorepo-turbo-${TARGETARCH},target=/hyperlane-monorepo/.turbo/cache \
     --mount=type=cache,target=/root/.tron/solc \
-    pnpm build
+    --mount=type=secret,id=github_token \
+    GITHUB_TOKEN="$(cat /run/secrets/github_token 2>/dev/null)" pnpm build
 
 # Baked-in registry version
 # keep for back-compat until we update all usage of the monorepo image (e.g. key-funder)
