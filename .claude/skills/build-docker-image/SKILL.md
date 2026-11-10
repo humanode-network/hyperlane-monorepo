@@ -5,7 +5,7 @@ description: Trigger Docker image builds for Hyperlane agent, monorepo, or node 
 
 # Trigger Docker Image Builds
 
-Build and publish Docker images to GHCR (`ghcr.io/hyperlane-xyz/*`).
+Build and publish Docker images to GHCR (`ghcr.io/humanode-network/*`).
 
 ## Workflows
 
@@ -57,7 +57,7 @@ gh workflow run rust-docker.yml --ref <branch> -f include_arm64=true
 
 4. The resulting image tag will be `<7-char-sha>-<YYYYMMDD>-<HHMMSS>`, e.g. `c558a9f-20260304-105241`.
 
-5. Images are at `ghcr.io/hyperlane-xyz/<image-name>:<tag>`.
+5. Images are at `ghcr.io/humanode-network/<image-name>:<tag>`.
 
 ## Instructions
 
