@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { HookConfig, HookType } from '../hook/types.js';
 import {

@@ -7,8 +7,8 @@ import {
   type IsmConfig,
   IsmType,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, normalizeConfig } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, normalizeConfig } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

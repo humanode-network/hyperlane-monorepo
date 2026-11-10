@@ -3,8 +3,8 @@ import { readFileSync, statSync } from 'fs';
 import { type Signer } from 'ethers';
 import { z } from 'zod';
 
-import { TurnkeyConfigSchema, TurnkeyEvmSigner } from '@hyperlane-xyz/sdk';
-import { assert, isValidAddressEvm } from '@hyperlane-xyz/utils';
+import { TurnkeyConfigSchema, TurnkeyEvmSigner } from '@humanode-hyperlane/sdk';
+import { assert, isValidAddressEvm } from '@humanode-hyperlane/utils';
 
 export const ExternalSignerType = {
   TURNKEY: 'turnkey',

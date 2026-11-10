@@ -3,34 +3,34 @@ import { Wallet, providers } from 'ethers';
 import { type StartedTestContainer } from 'testcontainers';
 import { $ } from 'zx';
 
-import { CrossCollateralRouter__factory } from '@hyperlane-xyz/core';
+import { CrossCollateralRouter__factory } from '@humanode-hyperlane/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   SealevelSigner,
   SvmCrossCollateralTokenReader,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/sealevel-sdk';
 import {
   type SolanaTestValidator,
   airdropSol,
   createSplMint,
   getPreloadedPrograms,
   runSolanaNode,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@humanode-hyperlane/sealevel-sdk/testing';
 import {
   ProtocolType,
   addressToBytes32,
   assert,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

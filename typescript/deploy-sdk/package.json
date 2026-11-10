@@ -1,9 +1,9 @@
 {
-  "name": "@hyperlane-xyz/deploy-sdk",
+  "name": "@humanode-hyperlane/deploy-sdk",
   "version": "11.0.3",
   "description": "Deployer SDK for the Hyperlane Protocol",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "dist"
   ],
@@ -23,18 +23,18 @@
     "test": "mocha --config .mocharc.json './src/**/*.test.ts' --exit"
   },
   "dependencies": {
-    "@hyperlane-xyz/aleo-sdk": "workspace:*",
-    "@hyperlane-xyz/cosmos-sdk": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/radix-sdk": "workspace:*",
-    "@hyperlane-xyz/sealevel-sdk": "workspace:*",
-    "@hyperlane-xyz/starknet-sdk": "workspace:*",
-    "@hyperlane-xyz/tron-sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@humanode-hyperlane/aleo-sdk": "workspace:*",
+    "@humanode-hyperlane/cosmos-sdk": "workspace:*",
+    "@humanode-hyperlane/provider-sdk": "workspace:*",
+    "@humanode-hyperlane/radix-sdk": "workspace:*",
+    "@humanode-hyperlane/sealevel-sdk": "workspace:*",
+    "@humanode-hyperlane/starknet-sdk": "workspace:*",
+    "@humanode-hyperlane/tron-sdk": "workspace:*",
+    "@humanode-hyperlane/utils": "workspace:*",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

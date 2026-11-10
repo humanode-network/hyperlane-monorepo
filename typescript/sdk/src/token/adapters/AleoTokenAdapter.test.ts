@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { AleoProvider } from '@hyperlane-xyz/aleo-sdk/runtime';
+import { AleoProvider } from '@humanode-hyperlane/aleo-sdk/runtime';
 
 import { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';
 

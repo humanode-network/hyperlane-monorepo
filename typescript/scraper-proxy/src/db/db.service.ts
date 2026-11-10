@@ -1,6 +1,6 @@
-import { rootLogger, type Logger } from '@hyperlane-xyz/utils';
-import { formatError } from '@hyperlane-xyz/utils/errors';
-import { assert } from '@hyperlane-xyz/utils/validation';
+import { rootLogger, type Logger } from '@humanode-hyperlane/utils';
+import { formatError } from '@humanode-hyperlane/utils/errors';
+import { assert } from '@humanode-hyperlane/utils/validation';
 import pg from 'pg';
 
 import { config } from '../config.js';

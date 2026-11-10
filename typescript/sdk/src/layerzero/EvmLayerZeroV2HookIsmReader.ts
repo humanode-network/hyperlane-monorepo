@@ -1,5 +1,5 @@
-import { LayerZeroV2HookIsm__factory } from '@hyperlane-xyz/core';
-import { Address, bytes32ToAddress } from '@hyperlane-xyz/utils';
+import { LayerZeroV2HookIsm__factory } from '@humanode-hyperlane/core';
+import { Address, bytes32ToAddress } from '@humanode-hyperlane/utils';
 import { BigNumberish, Contract } from 'ethers';
 
 import { OnchainHookType } from '../hook/types.js';

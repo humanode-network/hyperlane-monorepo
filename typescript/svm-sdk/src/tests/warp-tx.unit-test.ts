@@ -2,8 +2,8 @@ import { address } from '@solana/kit';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import type { RawNativeWarpArtifactConfig } from '@hyperlane-xyz/provider-sdk/warp';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import type { RawNativeWarpArtifactConfig } from '@humanode-hyperlane/provider-sdk/warp';
 
 import { computeWarpTokenUpdateInstructions } from '../warp/warp-tx.js';
 import type { SvmRpc } from '../types.js';

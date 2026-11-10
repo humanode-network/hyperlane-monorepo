@@ -5,7 +5,7 @@ import {
   ProxyAdmin__factory,
   TimelockController__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   CANCELLER_ROLE,
   EXECUTOR_ROLE,
@@ -15,12 +15,12 @@ import {
   TokenType,
   proxyAdmin,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   ProtocolType,
   normalizeAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';

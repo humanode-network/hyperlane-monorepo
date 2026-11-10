@@ -1,6 +1,6 @@
 import http from 'node:http';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 export const CLOSED_RPC_URL = 'http://127.0.0.1:1';
 

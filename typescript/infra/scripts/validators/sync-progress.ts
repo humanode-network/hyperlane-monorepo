@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 import chalk from 'chalk';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getArgs, withChains, withContext } from '../agent-utils.js';

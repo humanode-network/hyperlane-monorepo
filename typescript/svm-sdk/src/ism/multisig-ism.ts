@@ -12,13 +12,13 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type DomainMultisigConfig,
   assertValidDomainRoutingMultisig as assertValidSharedDomainRoutingMultisig,
   type RoutingMessageIdMultisigIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
 import {
   ZERO_ADDRESS_HEX_32,
   assert,
@@ -32,7 +32,7 @@ import {
   nonEmptyArray,
   normalizeConfig,
   retryAsync,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { encodeH160 } from '../codecs/shared.js';
 import { resolveProgram } from '../deploy/resolve-program.js';

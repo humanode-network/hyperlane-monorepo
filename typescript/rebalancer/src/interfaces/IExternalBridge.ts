@@ -1,7 +1,7 @@
 import type { Logger } from 'pino';
 
-import type { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import type { ChainMap, ChainMetadata } from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import type { ExternalBridgeType } from '../config/types.js';
 

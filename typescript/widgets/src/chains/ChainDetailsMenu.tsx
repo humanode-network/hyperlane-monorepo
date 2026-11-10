@@ -2,12 +2,12 @@ import { clsx } from 'clsx';
 import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react';
 import { stringify as yamlStringify } from 'yaml';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
 import {
   isValidChainMetadata,
   mergeChainMetadata,
   type ChainMetadata,
-} from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
+} from '@humanode-hyperlane/sdk/metadata/chainMetadataTypes';
 import {
   Result,
   failure,
@@ -17,7 +17,7 @@ import {
   objOmit,
   success,
   tryParseJsonOrYaml,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ColorPalette } from '../color.js';
 import { CopyButton } from '../components/CopyButton.js';

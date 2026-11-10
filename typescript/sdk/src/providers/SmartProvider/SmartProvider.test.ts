@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { BigNumber, errors as EthersError, providers, utils } from 'ethers';
 import sinon from 'sinon';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   AllProviderMethods,

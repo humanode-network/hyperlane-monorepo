@@ -4,7 +4,7 @@ import type { PopulatedTransaction } from 'ethers';
 import { pino } from 'pino';
 import sinon from 'sinon';
 
-import { ChainTechnicalStack, MultiProvider } from '@hyperlane-xyz/sdk';
+import { ChainTechnicalStack, MultiProvider } from '@humanode-hyperlane/sdk';
 
 import { KeyFunderMetrics } from '../metrics/Metrics.js';
 

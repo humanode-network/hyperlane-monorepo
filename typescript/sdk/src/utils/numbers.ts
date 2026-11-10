@@ -1,4 +1,4 @@
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import { assert, strip0x } from '@humanode-hyperlane/utils';
 
 const HEX_NUMBER_REGEX = /^0x[0-9a-fA-F]*$/;
 const DECIMAL_NUMBER_REGEX = /^[0-9]+$/;

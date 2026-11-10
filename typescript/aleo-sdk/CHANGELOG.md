@@ -1,4 +1,4 @@
-# @hyperlane-xyz/aleo-sdk
+# @humanode-hyperlane/aleo-sdk
 
 ## 45.2.0
 
@@ -7,8 +7,8 @@
 - c520224: Invariant regular expressions were reused across calls, redundant URL parsing was removed from RPC-header and explorer helpers, and independent token reads were overlapped with bounded concurrency and failure draining. URL normalization, validation, and dependent read ordering were preserved.
 - Updated dependencies [aa84958]
 - Updated dependencies [c520224]
-  - @hyperlane-xyz/utils@45.2.0
-  - @hyperlane-xyz/provider-sdk@11.0.3
+  - @humanode-hyperlane/utils@45.2.0
+  - @humanode-hyperlane/provider-sdk@11.0.3
 
 ## 45.1.0
 
@@ -17,15 +17,15 @@
 - 78a31fa: Resolved token discovery with transitive ARC imports, added Aleo v3 warp route support for ARC-22 token metadata and supply queries and documented deployment with compiled program overrides.
 
   Fixed empty Aleo view inputs and preserved decimal scaling for newly deployed warp route legs.
-  - @hyperlane-xyz/utils@45.1.0
-  - @hyperlane-xyz/provider-sdk@11.0.2
+  - @humanode-hyperlane/utils@45.1.0
+  - @humanode-hyperlane/provider-sdk@11.0.2
 
 ## 45.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@45.0.1
-- @hyperlane-xyz/provider-sdk@11.0.1
+- @humanode-hyperlane/utils@45.0.1
+- @humanode-hyperlane/provider-sdk@11.0.1
 
 ## 45.0.0
 
@@ -47,31 +47,31 @@
 - Updated dependencies [4e2ab65]
 - Updated dependencies [4ad4577]
 - Updated dependencies [f64f992]
-  - @hyperlane-xyz/provider-sdk@11.0.0
-  - @hyperlane-xyz/utils@45.0.0
+  - @humanode-hyperlane/provider-sdk@11.0.0
+  - @humanode-hyperlane/utils@45.0.0
 
 ## 44.0.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@44.0.2
-- @hyperlane-xyz/provider-sdk@10.0.2
+- @humanode-hyperlane/utils@44.0.2
+- @humanode-hyperlane/provider-sdk@10.0.2
 
 ## 44.0.1
 
 ### Patch Changes
 
 - Updated dependencies [f269e03]
-  - @hyperlane-xyz/provider-sdk@10.0.1
-  - @hyperlane-xyz/utils@44.0.1
+  - @humanode-hyperlane/provider-sdk@10.0.1
+  - @humanode-hyperlane/utils@44.0.1
 
 ## 44.0.0
 
 ### Patch Changes
 
 - Updated dependencies [6fbe5ad]
-  - @hyperlane-xyz/utils@44.0.0
-  - @hyperlane-xyz/provider-sdk@10.0.0
+  - @humanode-hyperlane/utils@44.0.0
+  - @humanode-hyperlane/provider-sdk@10.0.0
 
 ## 43.0.0
 
@@ -79,44 +79,44 @@
 
 - Updated dependencies [8bcc7ab]
 - Updated dependencies [7cf9c01]
-  - @hyperlane-xyz/provider-sdk@9.0.0
-  - @hyperlane-xyz/utils@43.0.0
+  - @humanode-hyperlane/provider-sdk@9.0.0
+  - @humanode-hyperlane/utils@43.0.0
 
 ## 42.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@42.0.0
-- @hyperlane-xyz/provider-sdk@8.1.3
+- @humanode-hyperlane/utils@42.0.0
+- @humanode-hyperlane/provider-sdk@8.1.3
 
 ## 41.3.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@41.3.1
-- @hyperlane-xyz/provider-sdk@8.1.2
+- @humanode-hyperlane/utils@41.3.1
+- @humanode-hyperlane/provider-sdk@8.1.2
 
 ## 41.3.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@41.3.0
-- @hyperlane-xyz/provider-sdk@8.1.1
+- @humanode-hyperlane/utils@41.3.0
+- @humanode-hyperlane/provider-sdk@8.1.1
 
 ## 41.2.0
 
 ### Patch Changes
 
 - Updated dependencies [bd4e5f0]
-  - @hyperlane-xyz/provider-sdk@8.1.0
-  - @hyperlane-xyz/utils@41.2.0
+  - @humanode-hyperlane/provider-sdk@8.1.0
+  - @humanode-hyperlane/utils@41.2.0
 
 ## 41.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@41.1.0
-- @hyperlane-xyz/provider-sdk@8.0.4
+- @humanode-hyperlane/utils@41.1.0
+- @humanode-hyperlane/provider-sdk@8.0.4
 
 ## 41.0.0
 
@@ -124,23 +124,23 @@
 
 - 178614d: The Aleo warp token reader no longer throws when a v1 token is absent from token_registry.aleo. Decimals now fall back to the authoritative app_metadata.local_decimals value and name/symbol degrade to empty strings on a registry miss, so legacy synthetics (e.g. USAD) can be read by check-warp-deploy. The fallback is scoped to a genuine registry miss only; v2 ARC-20 read failures and RPC/transport/decode errors continue to propagate rather than being masked as healthy. The miss stays recoverable so an empty read is retried across the bounded budget — covering a just-registered mapping that has not finalized/indexed yet — and only falls back once those retries are exhausted. The exception boundary is covered by unit tests.
 - Updated dependencies [fa19409]
-  - @hyperlane-xyz/utils@41.0.0
-  - @hyperlane-xyz/provider-sdk@8.0.3
+  - @humanode-hyperlane/utils@41.0.0
+  - @humanode-hyperlane/provider-sdk@8.0.3
 
 ## 40.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@40.0.0
-- @hyperlane-xyz/provider-sdk@8.0.2
+- @humanode-hyperlane/utils@40.0.0
+- @humanode-hyperlane/provider-sdk@8.0.2
 
 ## 39.1.0
 
 ### Patch Changes
 
 - Updated dependencies [4976bb1]
-  - @hyperlane-xyz/utils@39.1.0
-  - @hyperlane-xyz/provider-sdk@8.0.1
+  - @humanode-hyperlane/utils@39.1.0
+  - @humanode-hyperlane/provider-sdk@8.0.1
 
 ## 39.0.0
 
@@ -159,16 +159,16 @@
 - f41f9fd: Removed Aleo deployment artifacts, the Provable runtime, and the Shield wallet adapter from eager browser bundles. Lightweight constants and program metadata stayed synchronous, while browser providers and wallet integrations loaded their protocol runtimes on first use. Aleo mainnet and testnet runtimes were split so browser providers only downloaded the configured network.
 - Updated dependencies [4ef1fde]
 - Updated dependencies [735793b]
-  - @hyperlane-xyz/provider-sdk@8.0.0
-  - @hyperlane-xyz/utils@39.0.0
+  - @humanode-hyperlane/provider-sdk@8.0.0
+  - @humanode-hyperlane/utils@39.0.0
 
 ## 38.0.0
 
 ### Patch Changes
 
 - Updated dependencies [961a89d]
-  - @hyperlane-xyz/provider-sdk@7.2.0
-  - @hyperlane-xyz/utils@38.0.0
+  - @humanode-hyperlane/provider-sdk@7.2.0
+  - @humanode-hyperlane/utils@38.0.0
 
 ## 37.0.0
 
@@ -183,8 +183,8 @@
 - Updated dependencies [cc4bdb6]
 - Updated dependencies [31f8b51]
 - Updated dependencies [97e8ca1]
-  - @hyperlane-xyz/provider-sdk@7.1.0
-  - @hyperlane-xyz/utils@37.0.0
+  - @humanode-hyperlane/provider-sdk@7.1.0
+  - @humanode-hyperlane/utils@37.0.0
 
 ## 36.0.0
 
@@ -199,15 +199,15 @@
 - Updated dependencies [aa41ce4]
 - Updated dependencies [2f9d783]
 - Updated dependencies [9bdab1d]
-  - @hyperlane-xyz/utils@36.0.0
-  - @hyperlane-xyz/provider-sdk@7.0.0
+  - @humanode-hyperlane/utils@36.0.0
+  - @humanode-hyperlane/provider-sdk@7.0.0
 
 ## 35.2.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@35.2.0
-- @hyperlane-xyz/provider-sdk@6.1.1
+- @humanode-hyperlane/utils@35.2.0
+- @humanode-hyperlane/provider-sdk@6.1.1
 
 ## 35.1.0
 
@@ -218,16 +218,16 @@
 ### Patch Changes
 
 - Updated dependencies [d1b6f0a]
-  - @hyperlane-xyz/provider-sdk@6.1.0
-  - @hyperlane-xyz/utils@35.1.0
+  - @humanode-hyperlane/provider-sdk@6.1.0
+  - @humanode-hyperlane/utils@35.1.0
 
 ## 35.0.1
 
 ### Patch Changes
 
 - Updated dependencies [da1cfb1]
-  - @hyperlane-xyz/utils@35.0.1
-  - @hyperlane-xyz/provider-sdk@6.0.4
+  - @humanode-hyperlane/utils@35.0.1
+  - @humanode-hyperlane/provider-sdk@6.0.4
 
 ## 35.0.0
 
@@ -243,30 +243,30 @@
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@35.0.0
-- @hyperlane-xyz/provider-sdk@6.0.3
+- @humanode-hyperlane/utils@35.0.0
+- @humanode-hyperlane/provider-sdk@6.0.3
 
 ## 34.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@34.0.0
-- @hyperlane-xyz/provider-sdk@6.0.2
+- @humanode-hyperlane/utils@34.0.0
+- @humanode-hyperlane/provider-sdk@6.0.2
 
 ## 33.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@33.1.1
-- @hyperlane-xyz/provider-sdk@6.0.1
+- @humanode-hyperlane/utils@33.1.1
+- @humanode-hyperlane/provider-sdk@6.0.1
 
 ## 33.1.0
 
 ### Patch Changes
 
 - Updated dependencies [bfe4d2e]
-  - @hyperlane-xyz/provider-sdk@6.0.0
-  - @hyperlane-xyz/utils@33.1.0
+  - @humanode-hyperlane/provider-sdk@6.0.0
+  - @humanode-hyperlane/utils@33.1.0
 
 ## 33.0.2
 
@@ -275,29 +275,29 @@
 - b864cca: Multi-VM fee type support was added to provider-sdk and deploy-sdk. Fee types (linear, regressive, progressive, offchainQuotedLinear, routing, crossCollateralRouting) were defined with Config API and Artifact API variants. FeeReader and FeeWriter with required FeeReadContext were added to deploy-sdk. Fee was integrated into warp types and the warp writer update flow. All protocol providers received createFeeArtifactManager stubs.
 - Updated dependencies [b864cca]
 - Updated dependencies [1f918d0]
-  - @hyperlane-xyz/provider-sdk@5.1.0
-  - @hyperlane-xyz/utils@33.0.2
+  - @humanode-hyperlane/provider-sdk@5.1.0
+  - @humanode-hyperlane/utils@33.0.2
 
 ## 33.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@33.0.1
-- @hyperlane-xyz/provider-sdk@5.0.3
+- @humanode-hyperlane/utils@33.0.1
+- @humanode-hyperlane/provider-sdk@5.0.3
 
 ## 33.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@33.0.0
-- @hyperlane-xyz/provider-sdk@5.0.2
+- @humanode-hyperlane/utils@33.0.0
+- @humanode-hyperlane/provider-sdk@5.0.2
 
 ## 32.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@32.0.1
-- @hyperlane-xyz/provider-sdk@5.0.1
+- @humanode-hyperlane/utils@32.0.1
+- @humanode-hyperlane/provider-sdk@5.0.1
 
 ## 32.0.0
 
@@ -319,60 +319,60 @@
 
 - Updated dependencies [3dc6367]
 - Updated dependencies [fa08f2a]
-  - @hyperlane-xyz/provider-sdk@5.0.0
-  - @hyperlane-xyz/utils@32.0.0
+  - @humanode-hyperlane/provider-sdk@5.0.0
+  - @humanode-hyperlane/utils@32.0.0
 
 ## 31.2.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@31.2.1
-- @hyperlane-xyz/provider-sdk@4.3.4
+- @humanode-hyperlane/utils@31.2.1
+- @humanode-hyperlane/provider-sdk@4.3.4
 
 ## 31.2.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@31.2.0
-- @hyperlane-xyz/provider-sdk@4.3.3
+- @humanode-hyperlane/utils@31.2.0
+- @humanode-hyperlane/provider-sdk@4.3.3
 
 ## 31.1.0
 
 ### Patch Changes
 
 - 8a082af: Added runtime entrypoints for non-EVM SDKs and avoided bundling heavy deploy-time modules in UI wallet integrations.
-  - @hyperlane-xyz/utils@31.1.0
-  - @hyperlane-xyz/provider-sdk@4.3.2
+  - @humanode-hyperlane/utils@31.1.0
+  - @humanode-hyperlane/provider-sdk@4.3.2
 
 ## 31.0.1
 
 ### Patch Changes
 
 - Updated dependencies [d5168fc]
-  - @hyperlane-xyz/utils@31.0.1
-  - @hyperlane-xyz/provider-sdk@4.3.1
+  - @humanode-hyperlane/utils@31.0.1
+  - @humanode-hyperlane/provider-sdk@4.3.1
 
 ## 31.0.0
 
 ### Patch Changes
 
 - Updated dependencies [44626fb]
-  - @hyperlane-xyz/provider-sdk@4.3.0
-  - @hyperlane-xyz/utils@31.0.0
+  - @humanode-hyperlane/provider-sdk@4.3.0
+  - @humanode-hyperlane/utils@31.0.0
 
 ## 30.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@30.1.1
-- @hyperlane-xyz/provider-sdk@4.2.5
+- @humanode-hyperlane/utils@30.1.1
+- @humanode-hyperlane/provider-sdk@4.2.5
 
 ## 30.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@30.1.0
-- @hyperlane-xyz/provider-sdk@4.2.4
+- @humanode-hyperlane/utils@30.1.0
+- @humanode-hyperlane/provider-sdk@4.2.4
 
 ## 30.0.0
 
@@ -380,22 +380,22 @@
 
 - Updated dependencies [37255ba]
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/provider-sdk@4.2.3
-  - @hyperlane-xyz/utils@30.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.3
+  - @humanode-hyperlane/utils@30.0.0
 
 ## 29.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@29.1.0
-- @hyperlane-xyz/provider-sdk@4.2.2
+- @humanode-hyperlane/utils@29.1.0
+- @humanode-hyperlane/provider-sdk@4.2.2
 
 ## 29.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@29.0.1
-- @hyperlane-xyz/provider-sdk@4.2.1
+- @humanode-hyperlane/utils@29.0.1
+- @humanode-hyperlane/provider-sdk@4.2.1
 
 ## 29.0.0
 
@@ -404,8 +404,8 @@
 - 084c6b6: The TypeScript packages were updated to support TypeScript 6.0 and to make ambient type loading explicit so the future TypeScript 7.0 upgrade is smoother.
 - Updated dependencies [3c6b1ad]
 - Updated dependencies [084c6b6]
-  - @hyperlane-xyz/utils@29.0.0
-  - @hyperlane-xyz/provider-sdk@4.2.0
+  - @humanode-hyperlane/utils@29.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.0
 
 ## 28.1.0
 
@@ -413,8 +413,8 @@
 
 - 5caac66: Added `crossCollateral` warp token type to the provider-sdk type system. All protocol SDK artifact managers were updated to handle the new type in their exhaustive switches.
 - Updated dependencies [5caac66]
-  - @hyperlane-xyz/provider-sdk@4.1.0
-  - @hyperlane-xyz/utils@28.1.0
+  - @humanode-hyperlane/provider-sdk@4.1.0
+  - @humanode-hyperlane/utils@28.1.0
 
 ## 28.0.0
 
@@ -426,8 +426,8 @@
 
 - Updated dependencies [83767b9]
 - Updated dependencies [a6b7bf3]
-  - @hyperlane-xyz/provider-sdk@4.0.0
-  - @hyperlane-xyz/utils@28.0.0
+  - @humanode-hyperlane/provider-sdk@4.0.0
+  - @humanode-hyperlane/utils@28.0.0
 
 ## 27.1.0
 
@@ -436,15 +436,15 @@
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
 - Updated dependencies [b892e61]
-  - @hyperlane-xyz/provider-sdk@3.1.0
-  - @hyperlane-xyz/utils@27.1.0
+  - @humanode-hyperlane/provider-sdk@3.1.0
+  - @humanode-hyperlane/utils@27.1.0
 
 ## 27.0.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@27.0.0
-- @hyperlane-xyz/provider-sdk@3.0.1
+- @humanode-hyperlane/utils@27.0.0
+- @humanode-hyperlane/provider-sdk@3.0.1
 
 ## 26.0.0
 
@@ -452,8 +452,8 @@
 
 - Updated dependencies [06aacac]
 - Updated dependencies [1d116d8]
-  - @hyperlane-xyz/utils@26.0.0
-  - @hyperlane-xyz/provider-sdk@3.0.0
+  - @humanode-hyperlane/utils@26.0.0
+  - @humanode-hyperlane/provider-sdk@3.0.0
 
 ## 25.5.0
 
@@ -471,15 +471,15 @@
 
 - Updated dependencies [e197331]
 - Updated dependencies [840fb33]
-  - @hyperlane-xyz/provider-sdk@2.0.0
-  - @hyperlane-xyz/utils@25.5.0
+  - @humanode-hyperlane/provider-sdk@2.0.0
+  - @humanode-hyperlane/utils@25.5.0
 
 ## 25.4.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.4.1
-- @hyperlane-xyz/provider-sdk@1.4.1
+- @humanode-hyperlane/utils@25.4.1
+- @humanode-hyperlane/provider-sdk@1.4.1
 
 ## 25.4.0
 
@@ -491,29 +491,29 @@
 
 - Updated dependencies [1f021bf]
 - Updated dependencies [1f021bf]
-  - @hyperlane-xyz/utils@25.4.0
-  - @hyperlane-xyz/provider-sdk@1.4.0
+  - @humanode-hyperlane/utils@25.4.0
+  - @humanode-hyperlane/provider-sdk@1.4.0
 
 ## 25.3.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.3.2
-- @hyperlane-xyz/provider-sdk@1.3.6
+- @humanode-hyperlane/utils@25.3.2
+- @humanode-hyperlane/provider-sdk@1.3.6
 
 ## 25.3.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.3.1
-- @hyperlane-xyz/provider-sdk@1.3.5
+- @humanode-hyperlane/utils@25.3.1
+- @humanode-hyperlane/provider-sdk@1.3.5
 
 ## 25.3.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@25.3.0
-- @hyperlane-xyz/provider-sdk@1.3.4
+- @humanode-hyperlane/utils@25.3.0
+- @humanode-hyperlane/provider-sdk@1.3.4
 
 ## 25.2.0
 
@@ -525,24 +525,24 @@
 
 - Updated dependencies [360db52]
 - Updated dependencies [ccd638d]
-  - @hyperlane-xyz/utils@25.2.0
-  - @hyperlane-xyz/provider-sdk@1.3.3
+  - @humanode-hyperlane/utils@25.2.0
+  - @humanode-hyperlane/provider-sdk@1.3.3
 
 ## 25.1.0
 
 ### Patch Changes
 
 - Updated dependencies [b930534]
-  - @hyperlane-xyz/utils@25.1.0
-  - @hyperlane-xyz/provider-sdk@1.3.2
+  - @humanode-hyperlane/utils@25.1.0
+  - @humanode-hyperlane/provider-sdk@1.3.2
 
 ## 25.0.0
 
 ### Patch Changes
 
 - Updated dependencies [52ce778]
-  - @hyperlane-xyz/utils@25.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.1
+  - @humanode-hyperlane/utils@25.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.1
 
 ## 24.0.0
 
@@ -553,8 +553,8 @@
 - Updated dependencies [d580bb6]
 - Updated dependencies [9dc71fe]
 - Updated dependencies [bde05e9]
-  - @hyperlane-xyz/utils@24.0.0
-  - @hyperlane-xyz/provider-sdk@1.3.0
+  - @humanode-hyperlane/utils@24.0.0
+  - @humanode-hyperlane/provider-sdk@1.3.0
 
 ## 23.0.0
 
@@ -573,8 +573,8 @@
 - Updated dependencies [0b8c4ea]
 - Updated dependencies [52fd0f8]
 - Updated dependencies [a10cfc8]
-  - @hyperlane-xyz/provider-sdk@1.2.1
-  - @hyperlane-xyz/utils@23.0.0
+  - @humanode-hyperlane/provider-sdk@1.2.1
+  - @humanode-hyperlane/utils@23.0.0
 
 ## 22.0.0
 
@@ -582,7 +582,7 @@
 
 - ade2653: Implemented hook artifact API for Aleo. Added hook query functions, transaction builders, and artifact readers/writers for IGP and MerkleTree hooks. The AleoHookArtifactManager provides factory methods for creating type-specific hook readers and writers, with optional mailbox address that is validated only when creating writers for deployment. Hook writers support creating new hooks and updating mutable configurations (IGP owner and gas configs). Existing provider implementation was refactored to use the new shared query and transaction functions, reducing code duplication. Comprehensive e2e tests verify all hook operations following the established artifact API patterns.
 - 8b3f8da: Implemented ISM writers for Aleo SDK. Added Test ISM, MessageId Multisig ISM, and Routing ISM writers with full CRUD support through the artifact API.
-- 0acaa0e: The Aleo SDK e2e test infrastructure was refactored to use testcontainers and expose reusable testing utilities for client packages. A new testing module (`@hyperlane-xyz/aleo-sdk/testing`) exports test chain metadata, node management functions, and signer creation helpers following the Cosmos SDK pattern. The testcontainers library replaced docker-compose for automatic container lifecycle management with proper port binding and environment configuration. A global test setup file handles before/after hooks for starting and stopping the devnode. All 54 e2e tests pass with the new infrastructure, and the shell script was simplified to only set environment variables while testcontainers manages the container.
+- 0acaa0e: The Aleo SDK e2e test infrastructure was refactored to use testcontainers and expose reusable testing utilities for client packages. A new testing module (`@humanode-hyperlane/aleo-sdk/testing`) exports test chain metadata, node management functions, and signer creation helpers following the Cosmos SDK pattern. The testcontainers library replaced docker-compose for automatic container lifecycle management with proper port binding and environment configuration. A global test setup file handles before/after hooks for starting and stopping the devnode. All 54 e2e tests pass with the new infrastructure, and the shell script was simplified to only set environment variables while testcontainers manages the container.
 - 7f31d77: Migrated deploy-sdk to use Hook Artifact API, replacing AltVMHookReader and AltVMHookModule with unified reader/writer pattern. The migration adds deployment context support (mailbox address, nativeTokenDenom) for hook creation, following the same pattern as the ISM artifact migration. Key changes include new factory functions (createHookReader, createHookWriter), config conversion utilities (hookConfigToArtifact, shouldDeployNewHook), and removal of deprecated hook module classes.
 
 ### Patch Changes
@@ -592,8 +592,8 @@
 - Updated dependencies [7f31d77]
 - Updated dependencies [3aec1c4]
 - Updated dependencies [b892d63]
-  - @hyperlane-xyz/utils@22.0.0
-  - @hyperlane-xyz/provider-sdk@1.2.0
+  - @humanode-hyperlane/utils@22.0.0
+  - @humanode-hyperlane/provider-sdk@1.2.0
 
 ## 21.1.0
 
@@ -604,8 +604,8 @@
 ### Patch Changes
 
 - Updated dependencies [57a2053]
-  - @hyperlane-xyz/provider-sdk@1.1.0
-  - @hyperlane-xyz/utils@21.1.0
+  - @humanode-hyperlane/provider-sdk@1.1.0
+  - @humanode-hyperlane/utils@21.1.0
 
 ## 21.0.0
 
@@ -623,8 +623,8 @@
 - Updated dependencies [239e1a1]
 - Updated dependencies [ed10fc1]
 - Updated dependencies [0bce4e7]
-  - @hyperlane-xyz/provider-sdk@1.0.0
-  - @hyperlane-xyz/utils@21.0.0
+  - @humanode-hyperlane/provider-sdk@1.0.0
+  - @humanode-hyperlane/utils@21.0.0
 
 ## 20.1.0
 
@@ -641,8 +641,8 @@
 ### Patch Changes
 
 - Updated dependencies [11fa887]
-  - @hyperlane-xyz/utils@20.1.0
-  - @hyperlane-xyz/provider-sdk@0.7.0
+  - @humanode-hyperlane/utils@20.1.0
+  - @humanode-hyperlane/provider-sdk@0.7.0
 
 ## 20.0.0
 
@@ -650,15 +650,15 @@
 
 - Updated dependencies [b3ebc08]
 - Updated dependencies [aeac943]
-  - @hyperlane-xyz/utils@20.0.0
-  - @hyperlane-xyz/provider-sdk@0.6.0
+  - @humanode-hyperlane/utils@20.0.0
+  - @humanode-hyperlane/provider-sdk@0.6.0
 
 ## 19.13.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/utils@19.13.0
-- @hyperlane-xyz/provider-sdk@0.5.0
+- @humanode-hyperlane/utils@19.13.0
+- @humanode-hyperlane/provider-sdk@0.5.0
 
 ## 19.12.0
 
@@ -668,13 +668,13 @@
 - Updated dependencies [08cf7eca9]
 - Updated dependencies [af2cd1729]
 - Updated dependencies [e37100e2e]
-  - @hyperlane-xyz/provider-sdk@0.4.0
-  - @hyperlane-xyz/utils@19.12.0
+  - @humanode-hyperlane/provider-sdk@0.4.0
+  - @humanode-hyperlane/utils@19.12.0
 
 ## 19.11.0
 
 ### Patch Changes
 
 - Updated dependencies [dd6260eea]
-  - @hyperlane-xyz/provider-sdk@0.3.0
-  - @hyperlane-xyz/utils@19.11.0
+  - @humanode-hyperlane/provider-sdk@0.3.0
+  - @humanode-hyperlane/utils@19.11.0

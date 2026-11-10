@@ -6,8 +6,8 @@ import { type StartedTestContainer } from 'testcontainers';
 import {
   createSignerWithPrivateKey,
   runCosmosNode,
-} from '@hyperlane-xyz/cosmos-sdk/testing';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/cosmos-sdk/testing';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type DerivedWarpRouteDeployConfig,
@@ -15,12 +15,12 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   ProtocolType,
   addressToBytes32,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

@@ -2,14 +2,14 @@ import { join } from 'path';
 import { pathToFileURL } from 'url';
 import prompts from 'prompts';
 
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+import { buildArtifact as coreBuildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
 import {
   ChainName,
   ContractVerifier,
   ExplorerLicenseType,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { assert, inCIMode, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, inCIMode, rootLogger } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getChainMetadata, getEnvAddresses } from '../../config/registry.js';

@@ -1,4 +1,4 @@
-# @hyperlane-xyz/utils
+# @humanode-hyperlane/utils
 
 ## 45.2.0
 
@@ -26,7 +26,7 @@
 
 - 4e2ab65: Added `SealevelRoutingMessageIdMultisigIsmReader`, `SealevelRoutingMessageIdMultisigIsmWriter` and `SealevelRoutingMessageIdMultisigIsmWriterConfig` to the Sealevel SDK, which read and write a message-id multisig ISM holding an independent validator set and threshold per origin domain. The writer enforces per-domain caps of 24 validators and a threshold of 8 when writing a domain (on create, and for added or changed domains on update, not for unchanged on-chain domains), and the reader and writer take a non-empty list of candidate domain ids. They replace `SealevelMessageIdMultisigIsmReader`, `SealevelMessageIdMultisigIsmWriter` and `SealevelMultisigIsmConfig`, which were removed. The multisig ISM set-validators and transfer-ownership instruction builders now take `Address` owners.
 
-  `NonEmptyArray`, `nonEmptyArray` and `isNonEmptyArray` were added to `@hyperlane-xyz/utils`. `@hyperlane-xyz/provider-sdk/ism` exports `DomainMultisigConfig` and `RoutingMessageIdMultisigIsmArtifactConfig`.
+  `NonEmptyArray`, `nonEmptyArray` and `isNonEmptyArray` were added to `@humanode-hyperlane/utils`. `@humanode-hyperlane/provider-sdk/ism` exports `DomainMultisigConfig` and `RoutingMessageIdMultisigIsmArtifactConfig`.
 
 ### Patch Changes
 
@@ -98,7 +98,7 @@
 
 ### Patch Changes
 
-- da1cfb1: A `syntheticCcrSwapMessageId` helper was added to `@hyperlane-xyz/utils` for deterministically computing the synthetic message ID of a same-chain CCR swap given its transaction hash and log index. The scraper agent config schema in `@hyperlane-xyz/sdk` was extended with an optional `ccrRouters` field mapping domain IDs to their CCR router-to-collateral address pairs.
+- da1cfb1: A `syntheticCcrSwapMessageId` helper was added to `@humanode-hyperlane/utils` for deterministically computing the synthetic message ID of a same-chain CCR swap given its transaction hash and log index. The scraper agent config schema in `@humanode-hyperlane/sdk` was extended with an optional `ccrRouters` field mapping domain IDs to their CCR router-to-collateral address pairs.
 
 ## 35.0.0
 
@@ -112,7 +112,7 @@
 
 ### Patch Changes
 
-- 1f918d0: Added `@hyperlane-xyz/sdk` subpath exports for `core`, `hook`, and `ism` modules. Hardened `@hyperlane-xyz/utils` pretty-mode logging with a graceful fallback when `pino-pretty` is not installed.
+- 1f918d0: Added `@humanode-hyperlane/sdk` subpath exports for `core`, `hook`, and `ism` modules. Hardened `@humanode-hyperlane/utils` pretty-mode logging with a graceful fallback when `pino-pretty` is not installed.
 
 ## 33.0.1
 
@@ -144,7 +144,7 @@
 
 ### Patch Changes
 
-- 7646819: Yaml sorting helpers were exported from `@hyperlane-xyz/utils` so repo tooling can reuse a single implementation for YAML transforms and warp config ordering.
+- 7646819: Yaml sorting helpers were exported from `@humanode-hyperlane/utils` so repo tooling can reuse a single implementation for YAML transforms and warp config ordering.
 
 ## 29.1.0
 
@@ -215,7 +215,7 @@
 
 ### Minor Changes
 
-- 52ce778: A `LazyAsync` helper was added to `@hyperlane-xyz/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
+- 52ce778: A `LazyAsync` helper was added to `@humanode-hyperlane/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
 
 ## 24.0.0
 
@@ -245,12 +245,12 @@
 
 ### Minor Changes
 
-- 66ef635: Added `mapAllSettled` helper to @hyperlane-xyz/utils for typed parallel operations with key-based error tracking. Migrated Promise.allSettled patterns across sdk, cli, infra, and rebalancer packages to use the new helper.
+- 66ef635: Added `mapAllSettled` helper to @humanode-hyperlane/utils for typed parallel operations with key-based error tracking. Migrated Promise.allSettled patterns across sdk, cli, infra, and rebalancer packages to use the new helper.
 - 3aec1c4: Added `timedAsync` utility for trace-level timing instrumentation of async operations.
 
 ### Patch Changes
 
-- b892d63: Created new `@hyperlane-xyz/metrics` package to consolidate Prometheus metric utilities across the monorepo. Includes shared gauge definitions, metric update functions, balance utilities, metrics server, pushgateway utilities, and types. Added `tryFn` utility to `@hyperlane-xyz/utils`.
+- b892d63: Created new `@humanode-hyperlane/metrics` package to consolidate Prometheus metric utilities across the monorepo. Includes shared gauge definitions, metric update functions, balance utilities, metrics server, pushgateway utilities, and types. Added `tryFn` utility to `@humanode-hyperlane/utils`.
 
 ## 21.1.0
 
@@ -285,7 +285,7 @@
 ### Minor Changes
 
 - af2cd1729: Support reading ReorgEvent object from validator buckets.
-- e37100e2e: Add new `@hyperlane-xyz/utils/fs` submodule with filesystem utilities for Node.js. Includes functions for reading/writing JSON and YAML files, path resolution, directory management, and format-agnostic file operations. This submodule is not suitable for browser use.
+- e37100e2e: Add new `@humanode-hyperlane/utils/fs` submodule with filesystem utilities for Node.js. Includes functions for reading/writing JSON and YAML files, path resolution, directory management, and format-agnostic file operations. This submodule is not suitable for browser use.
 
 ### Patch Changes
 

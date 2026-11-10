@@ -10,8 +10,8 @@ import {
   MockPredicateRegistry__factory,
   PredicateRouterWrapper__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { Address } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { HyperlaneContracts } from '../contracts/types.js';

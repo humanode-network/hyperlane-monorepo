@@ -18,17 +18,17 @@ chai.use(chaiAsPromised);
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import type {
   DeployedIsmAddress,
   RoutingMessageIdMultisigIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
 import {
   type NonEmptyArray,
   ZERO_ADDRESS_HEX_32,
   assert,
   nonEmptyArray,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { SYSTEM_PROGRAM_ADDRESS } from '../constants.js';
 

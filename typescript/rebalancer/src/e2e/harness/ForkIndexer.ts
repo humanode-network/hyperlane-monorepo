@@ -1,12 +1,12 @@
 import { providers } from 'ethers';
 import type { Logger } from 'pino';
 
-import { HyperlaneCore } from '@hyperlane-xyz/sdk';
+import { HyperlaneCore } from '@humanode-hyperlane/sdk';
 import {
   bytes32ToAddress,
   messageId,
   parseMessage,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { ConfirmedBlockTags } from '../../interfaces/IMonitor.js';
 import type { ExplorerMessage } from '../../utils/ExplorerClient.js';

@@ -11,7 +11,7 @@ import {
   StaticAggregationHook__factory,
   StaticAggregationIsm__factory,
   WormholeVaaHookIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   EvmWormholeHookIsmReader,
   type HookConfig,
@@ -26,8 +26,12 @@ import {
   WormholeConsistencyType,
   type WormholeIsmConfig,
   proxyAdmin,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert, type Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  addressToBytes32,
+  assert,
+  type Address,
+} from '@humanode-hyperlane/utils';
 
 import { syncWarpDeployConfigToRegistry } from '../../commands/warp-config-sync.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';

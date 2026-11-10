@@ -1,5 +1,8 @@
-import { TestRecipient, TestRecipient__factory } from '@hyperlane-xyz/core';
-import { Address, rootLogger } from '@hyperlane-xyz/utils';
+import {
+  TestRecipient,
+  TestRecipient__factory,
+} from '@humanode-hyperlane/core';
+import { Address, rootLogger } from '@humanode-hyperlane/utils';
 
 import { HyperlaneDeployer } from '../deploy/HyperlaneDeployer.js';
 import { ContractVerifier } from '../deploy/verify/ContractVerifier.js';

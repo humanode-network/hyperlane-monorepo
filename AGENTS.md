@@ -88,10 +88,10 @@ Restructures the registry code.
 │   │   └── token/         # Warp route token contracts
 │   └── test/              # Contract tests
 ├── typescript/
-│   ├── sdk/               # Core SDK (@hyperlane-xyz/sdk)
+│   ├── sdk/               # Core SDK (@humanode-hyperlane/sdk)
 │   ├── cli/               # Hyperlane CLI tool
 │   ├── infra/             # Infrastructure and deployment scripts
-│   ├── utils/             # Shared utilities (@hyperlane-xyz/utils)
+│   ├── utils/             # Shared utilities (@humanode-hyperlane/utils)
 │   └── [other packages]/  # cosmos-sdk, widgets, etc.
 ├── rust/
 │   └── main/              # Rust agents monorepo
@@ -119,7 +119,7 @@ Restructures the registry code.
 The codebase uses `assert()` as the primary error handling pattern:
 
 ```typescript
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 // Validate preconditions - fails fast with clear message
 assert(config, `Missing config for chain ${chain}`);
@@ -271,11 +271,11 @@ hyperlane warp deploy --help
 
 For AltVM (Cosmos, Sealevel, Starknet, Radix) development:
 
-| Package                       | Purpose                                 |
-| ----------------------------- | --------------------------------------- |
-| `@hyperlane-xyz/provider-sdk` | Protocol-agnostic provider abstractions |
-| `@hyperlane-xyz/deploy-sdk`   | Deployment modules for all VM types     |
-| `@hyperlane-xyz/sdk`          | Core SDK (EVM-specific)                 |
+| Package                            | Purpose                                 |
+| ---------------------------------- | --------------------------------------- |
+| `@humanode-hyperlane/provider-sdk` | Protocol-agnostic provider abstractions |
+| `@humanode-hyperlane/deploy-sdk`   | Deployment modules for all VM types     |
+| `@humanode-hyperlane/sdk`          | Core SDK (EVM-specific)                 |
 
 See `docs/2025-11-20-multi-vm-migration.md` for full migration guide.
 
@@ -317,7 +317,7 @@ See `docs/2025-11-20-multi-vm-migration.md` for full migration guide.
 
 - `rust/main/config/` - Agent chain configurations (mainnet3, testnet4)
 - `typescript/sdk/src/consts/` - SDK chain metadata
-- Registry: External package `@hyperlane-xyz/registry` contains canonical chain configs
+- Registry: External package `@humanode-hyperlane/registry` contains canonical chain configs
 
 ### Environment Files
 
@@ -563,7 +563,7 @@ When you encounter a type error, the fix priority is:
 
 - Use `ChainMap<T>` for per-chain configurations
 - Use `MultiProvider` for multi-chain provider management
-- Import types from `@hyperlane-xyz/sdk` rather than redefining
+- Import types from `@humanode-hyperlane/sdk` rather than redefining
 - Use `MultiProtocolProvider` for cross-VM abstractions
 
 ### Schema Validation
@@ -592,10 +592,10 @@ Available MCP servers:
 
 1. **Run tests incrementally** - Don't run full test suite; run specific tests for changed code
 2. **Check existing patterns** - Search codebase for similar implementations before writing new code
-3. **Use TypeScript SDK types** - The SDK has comprehensive types; import from `@hyperlane-xyz/sdk`
+3. **Use TypeScript SDK types** - The SDK has comprehensive types; import from `@humanode-hyperlane/sdk`
 4. **Solidity inheritance** - Many contracts inherit from base classes; check the hierarchy
 5. **Config-driven** - Most deployments are config-driven; check `typescript/infra/config/` for examples
-6. **Registry is external** - Chain metadata lives in `@hyperlane-xyz/registry`, not this repo
+6. **Registry is external** - Chain metadata lives in `@humanode-hyperlane/registry`, not this repo
 7. **Keep changes minimal** - Only modify what's necessary; avoid scope creep
 8. **Use `assert()` liberally** - For preconditions, invariants, and unexpected states
 9. **Check error patterns first** - Review existing error handling before adding new try/catch

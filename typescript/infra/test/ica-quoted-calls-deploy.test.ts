@@ -11,8 +11,12 @@ import {
   MultiProvider,
   OnchainHookType,
   PERMIT2_ADDRESS,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType, addressToBytes32 } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  Address,
+  ProtocolType,
+  addressToBytes32,
+} from '@humanode-hyperlane/utils';
 
 import {
   createFileChainStore,

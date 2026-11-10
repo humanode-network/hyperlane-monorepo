@@ -1,13 +1,16 @@
-import { TokenRouter__factory } from '@hyperlane-xyz/core';
-import { HyperlaneRelayer, RelayerCacheSchema } from '@hyperlane-xyz/relayer';
+import { TokenRouter__factory } from '@humanode-hyperlane/core';
+import {
+  HyperlaneRelayer,
+  RelayerCacheSchema,
+} from '@humanode-hyperlane/relayer';
 import {
   type ChainMap,
   EvmHookReader,
   HookType,
   HyperlaneCore,
   collectHybridHookNodes,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, isEVMLike } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { type Address, assert, isEVMLike } from '@humanode-hyperlane/utils';
 
 import { type CommandModuleWithContext } from '../context/types.js';
 import { log } from '../logger.js';

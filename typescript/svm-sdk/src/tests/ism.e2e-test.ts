@@ -2,22 +2,22 @@
 import { expect } from 'chai';
 import { before, describe, it } from 'mocha';
 
-import { IsmType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { IsmType } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DomainMultisigConfig,
   type RoutingMessageIdMultisigIsmArtifactConfig,
   type TestIsmConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
 import {
   type NonEmptyArray,
   ZERO_ADDRESS_HEX_32,
   assert,
   nonEmptyArray,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';

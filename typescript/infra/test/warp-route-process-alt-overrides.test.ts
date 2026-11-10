@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { TokenStandard, type WarpCoreConfig } from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+import { TokenStandard, type WarpCoreConfig } from '@humanode-hyperlane/sdk';
+import { addressToBytes32 } from '@humanode-hyperlane/utils';
 
 import { buildWarpRouteProcessAltOverrides } from '../src/config/agent/relayer.js';
 

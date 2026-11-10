@@ -8,14 +8,14 @@ import {
   ERC20Test__factory,
   OffchainQuotedLinearFee,
   OffchainQuotedLinearFee__factory,
-} from '@hyperlane-xyz/core';
-import { type FeeReadContext } from '@hyperlane-xyz/provider-sdk/fee';
+} from '@humanode-hyperlane/core';
+import { type FeeReadContext } from '@humanode-hyperlane/provider-sdk/fee';
 import {
   WARP_QUOTE_AMOUNT_WILDCARD,
   WARP_TARGET_ROUTER_NONE,
   WILDCARD_BYTES32,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/quote';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

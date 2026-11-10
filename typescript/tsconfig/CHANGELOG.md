@@ -1,4 +1,4 @@
-# @hyperlane-xyz/tsconfig
+# @humanode-hyperlane/tsconfig
 
 ## 45.2.0
 

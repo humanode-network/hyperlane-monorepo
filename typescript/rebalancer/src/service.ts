@@ -29,16 +29,16 @@ import 'zod/compile';
 import { Wallet } from 'ethers';
 import { Keypair } from '@solana/web3.js';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
 import {
   applyRpcUrlOverridesFromEnv,
   createServiceLogger,
   isEVMLike,
   ProtocolType,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { RebalancerConfig } from './config/RebalancerConfig.js';
 import { RebalancerService } from './core/RebalancerService.js';

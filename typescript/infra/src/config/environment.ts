@@ -1,4 +1,4 @@
-import { IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   ChainName,
@@ -7,7 +7,7 @@ import {
   MultiProtocolProvider,
   MultiProvider,
   OwnableConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { Contexts } from '../../config/contexts.js';
 import { CloudAgentKey } from '../agents/keys.js';

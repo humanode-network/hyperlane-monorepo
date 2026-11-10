@@ -5,8 +5,8 @@ import type {
   NativeWalletBalance,
   WarpRouteBalance,
   XERC20Limit,
-} from '@hyperlane-xyz/metrics';
-import { TokenStandard } from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/metrics';
+import { TokenStandard } from '@humanode-hyperlane/sdk';
 
 import {
   metricsRegister,

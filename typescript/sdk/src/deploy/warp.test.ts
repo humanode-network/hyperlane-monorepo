@@ -1,5 +1,5 @@
-import { Mailbox, Mailbox__factory } from '@hyperlane-xyz/core';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+import { Mailbox, Mailbox__factory } from '@humanode-hyperlane/core';
+import { addressToBytes32, assert } from '@humanode-hyperlane/utils';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

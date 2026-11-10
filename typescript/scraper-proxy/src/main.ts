@@ -1,6 +1,6 @@
 import 'zod/compile';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { formatError } from '@hyperlane-xyz/utils/errors';
+import { rootLogger } from '@humanode-hyperlane/utils';
+import { formatError } from '@humanode-hyperlane/utils/errors';
 
 import { config } from './config.js';
 import { openDiagnostics } from './diagnostics/service.js';

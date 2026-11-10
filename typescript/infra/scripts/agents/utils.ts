@@ -1,7 +1,7 @@
 import { confirm } from '@inquirer/prompts';
 import chalk from 'chalk';
 
-import { concurrentMap, rootLogger } from '@hyperlane-xyz/utils';
+import { concurrentMap, rootLogger } from '@humanode-hyperlane/utils';
 
 import {
   RelayerHelmManager,

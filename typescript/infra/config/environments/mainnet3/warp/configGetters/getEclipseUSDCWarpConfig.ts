@@ -3,8 +3,8 @@ import {
   ChainSubmissionStrategy,
   HypTokenRouterConfig,
   TokenType,
-} from '@hyperlane-xyz/sdk';
-import { assert, objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, objMap } from '@humanode-hyperlane/utils';
 
 import { RouterConfigWithoutOwner } from '../../../../../src/config/warp.js';
 import { awIcas } from '../../governance/ica/aw.js';

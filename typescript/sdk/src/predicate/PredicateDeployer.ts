@@ -9,8 +9,8 @@ import {
   StaticAggregationHook__factory,
   StaticAggregationHookFactory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
-import { Address, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { Address, rootLogger } from '@humanode-hyperlane/utils';
 
 import { OnchainHookType } from '../hook/types.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

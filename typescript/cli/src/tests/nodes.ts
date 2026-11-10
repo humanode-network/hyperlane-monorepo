@@ -4,8 +4,8 @@ import {
   Wait,
 } from 'testcontainers';
 
-import { type TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
-import { retryAsync } from '@hyperlane-xyz/utils';
+import { type TestChainMetadata } from '@humanode-hyperlane/provider-sdk/chain';
+import { retryAsync } from '@humanode-hyperlane/utils';
 
 export async function runEvmNode({
   rpcPort,
@@ -42,6 +42,6 @@ export {
   runTronNode,
   stopTronNode,
   type TronTestChainMetadata,
-} from '@hyperlane-xyz/tron-sdk/testing';
+} from '@humanode-hyperlane/tron-sdk/testing';
 
-export { runStarknetNode } from '@hyperlane-xyz/starknet-sdk/testing';
+export { runStarknetNode } from '@humanode-hyperlane/starknet-sdk/testing';

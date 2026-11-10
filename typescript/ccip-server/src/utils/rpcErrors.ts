@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 
-import { BlockchainError } from '@hyperlane-xyz/sdk/providers/SmartProvider/SmartProvider';
-import { isMissingSelectorCallException } from '@hyperlane-xyz/sdk/utils/contract';
+import { BlockchainError } from '@humanode-hyperlane/sdk/providers/SmartProvider/SmartProvider';
+import { isMissingSelectorCallException } from '@humanode-hyperlane/sdk/utils/contract';
 
 /** No RPC provider answered an onchain read. */
 export class RpcUnavailableError extends Error {

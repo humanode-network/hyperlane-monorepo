@@ -6,8 +6,8 @@ import {
   IgpConfig,
   ProtocolAgnositicGasOracleConfigWithTypicalCost,
   getLocalStorageGasOracleConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, rootLogger } from '@humanode-hyperlane/utils';
 
 import { EXCHANGE_RATE_MARGIN_PCT } from '../../../src/config/gas-oracle.js';
 import { mustGetChainNativeToken } from '../../../src/utils/utils.js';

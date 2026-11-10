@@ -36,9 +36,9 @@
 import {
   DEFAULT_GITHUB_REGISTRY,
   type IRegistry,
-} from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import { rootLogger } from '@humanode-hyperlane/utils';
 
 import { DEFAULT_EXPLORER_QUERY_LIMIT } from './constants.js';
 import { MultiWarpMonitor } from './multi-monitor.js';

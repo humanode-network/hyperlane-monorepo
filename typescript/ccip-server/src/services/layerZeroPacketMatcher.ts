@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 
-import { Mailbox__factory } from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+import { Mailbox__factory } from '@humanode-hyperlane/core';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { RpcUnavailableError, readOnchain } from '../utils/rpcErrors.js';
 

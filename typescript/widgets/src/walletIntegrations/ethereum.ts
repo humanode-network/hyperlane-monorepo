@@ -9,21 +9,21 @@ import { useCallback } from 'react';
 import { Chain as ViemChain } from 'viem';
 import { useConfig } from 'wagmi';
 
-import { chainMetadataToViemChain } from '@hyperlane-xyz/sdk/metadata/chainMetadataConversion';
+import { chainMetadataToViemChain } from '@humanode-hyperlane/sdk/metadata/chainMetadataConversion';
 import {
   ProviderType,
   type TypedTransactionReceipt,
-} from '@hyperlane-xyz/sdk/providers/ProviderType';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import type { ITokenMetadata } from '@hyperlane-xyz/sdk/token/ITokenMetadata';
-import { LOCKBOX_STANDARDS } from '@hyperlane-xyz/sdk/token/TokenStandard';
+} from '@humanode-hyperlane/sdk/providers/ProviderType';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
+import type { ITokenMetadata } from '@humanode-hyperlane/sdk/token/ITokenMetadata';
+import { LOCKBOX_STANDARDS } from '@humanode-hyperlane/sdk/token/TokenStandard';
 import type {
   IHypTokenAdapter,
   IMovableCollateralRouterAdapter,
-} from '@hyperlane-xyz/sdk/token/adapters/ITokenAdapter';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import type { WarpTypedTransaction } from '@hyperlane-xyz/sdk/warp/types';
-import { ProtocolType, assert, sleep } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk/token/adapters/ITokenAdapter';
+import type { ChainName } from '@humanode-hyperlane/sdk/types';
+import type { WarpTypedTransaction } from '@humanode-hyperlane/sdk/warp/types';
+import { ProtocolType, assert, sleep } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 
@@ -85,7 +85,7 @@ export function useEthereumWatchAsset(
       let tokenAddress = '';
       if (LOCKBOX_STANDARDS.includes(token.standard)) {
         const { createEvmHypAdapter } =
-          await import('@hyperlane-xyz/sdk/token/adapters/evmHyp');
+          await import('@humanode-hyperlane/sdk/token/adapters/evmHyp');
         const adapter = createEvmHypAdapter(multiProvider, token);
         assert(
           adapter,

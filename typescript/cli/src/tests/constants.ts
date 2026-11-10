@@ -1,15 +1,15 @@
-import { TEST_ALEO_PRIVATE_KEY } from '@hyperlane-xyz/aleo-sdk/testing';
-import { type TestChainMetadata } from '@hyperlane-xyz/provider-sdk/chain';
+import { TEST_ALEO_PRIVATE_KEY } from '@humanode-hyperlane/aleo-sdk/testing';
+import { type TestChainMetadata } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
-import { type ChainMetadata, type ProtocolMap } from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/registry';
+import { type ChainMetadata, type ProtocolMap } from '@humanode-hyperlane/sdk';
 import {
   TEST_STARKNET_ACCOUNT_ADDRESS,
   TEST_STARKNET_PRIVATE_KEY,
-} from '@hyperlane-xyz/starknet-sdk/testing';
-import { ProtocolType, assert, objMap } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/starknet-sdk/testing';
+import { ProtocolType, assert, objMap } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson } from '../utils/files.js';
 

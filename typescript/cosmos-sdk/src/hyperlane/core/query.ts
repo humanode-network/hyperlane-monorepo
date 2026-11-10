@@ -1,6 +1,6 @@
 import { type QueryClient, createProtobufRpcClient } from '@cosmjs/stargate';
 
-import { coreQuery } from '@hyperlane-xyz/cosmos-types';
+import { coreQuery } from '@humanode-hyperlane/cosmos-types';
 
 export interface CoreExtension {
   readonly core: {

@@ -1,20 +1,20 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import type { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
 import type {
   AnnotatedTx,
   TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/module';
 import type {
   DeployedRawWarpArtifact,
   RawCollateralWarpArtifactConfig,
   RawNativeWarpArtifactConfig,
   RawSyntheticWarpArtifactConfig,
   WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert, eqAddressAleo } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { assert, eqAddressAleo } from '@humanode-hyperlane/utils';
 
 import { type AleoSigner } from '../clients/signer.js';
 import { type AleoHookArtifactManager } from '../hook/hook-artifact-manager.js';

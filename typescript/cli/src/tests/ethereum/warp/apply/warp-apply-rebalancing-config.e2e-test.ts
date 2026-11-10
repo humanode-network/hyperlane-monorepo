@@ -5,7 +5,7 @@ import {
   type ERC20Test,
   EverclearTokenBridge__factory,
   type MockEverclearAdapter,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type EverclearCollateralTokenConfig,
   HypTokenRouterConfigMailboxOptionalSchema,
@@ -13,14 +13,14 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   randomAddress,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   addressToBytes32,
   assert,
   normalizeAddressEvm,
   randomInt,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';

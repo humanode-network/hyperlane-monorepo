@@ -3,7 +3,7 @@ import chalk from 'chalk';
 import path from 'path';
 import yargs, { Argv } from 'yargs';
 
-import { ChainAddresses, IRegistry } from '@hyperlane-xyz/registry';
+import { ChainAddresses, IRegistry } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   ChainMetadata,
@@ -12,7 +12,7 @@ import {
   MultiProtocolProvider,
   MultiProvider,
   collectValidators,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   ProtocolType,
@@ -23,8 +23,8 @@ import {
   objMap,
   promiseObjAll,
   rootLogger,
-} from '@hyperlane-xyz/utils';
-import { mergeJson, readJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/utils';
+import { mergeJson, readJson } from '@humanode-hyperlane/utils/fs';
 
 import { Contexts } from '../config/contexts.js';
 import { agents } from '../config/environments/agents.js';

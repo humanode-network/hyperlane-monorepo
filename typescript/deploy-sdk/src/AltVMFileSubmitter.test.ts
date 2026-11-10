@@ -4,8 +4,8 @@ import { join } from 'node:path';
 
 import { expect } from 'chai';
 
-import { ProtocolType, SubmitterType } from '@hyperlane-xyz/provider-sdk';
-import { SealevelSigner } from '@hyperlane-xyz/sealevel-sdk';
+import { ProtocolType, SubmitterType } from '@humanode-hyperlane/provider-sdk';
+import { SealevelSigner } from '@humanode-hyperlane/sealevel-sdk';
 
 import { AltVMFileSubmitter } from './AltVMFileSubmitter.js';
 

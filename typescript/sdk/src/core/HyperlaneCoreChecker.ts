@@ -1,7 +1,7 @@
 import { ethers, utils as ethersUtils } from 'ethers';
 
-import { Ownable__factory } from '@hyperlane-xyz/core';
-import { assert, eqAddress, rootLogger } from '@hyperlane-xyz/utils';
+import { Ownable__factory } from '@humanode-hyperlane/core';
+import { assert, eqAddress, rootLogger } from '@humanode-hyperlane/utils';
 
 import { BytecodeHash } from '../consts/bytecode.js';
 import { HyperlaneAppChecker } from '../deploy/HyperlaneAppChecker.js';

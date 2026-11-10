@@ -8,7 +8,7 @@ import {
   MailboxClient__factory,
   Mailbox__factory,
   StaticAggregationIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type DerivedIsmConfig,
   EthJsonRpcBlockParameterTag,
@@ -17,18 +17,18 @@ import {
   IsmType,
   ModuleType,
   type MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { readBlacklistedIds } from '@hyperlane-xyz/sdk/ism/blacklist';
+} from '@humanode-hyperlane/sdk';
+import { readBlacklistedIds } from '@humanode-hyperlane/sdk/ism/blacklist';
 import {
   isMissingSelectorCallException,
   isRevertData,
-} from '@hyperlane-xyz/sdk/utils/contract';
+} from '@humanode-hyperlane/sdk/utils/contract';
 import {
   assert,
   concurrentMap,
   LogLevel,
   ProtocolType,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { PendingTransferMiddlewareType } from '../../config/types.js';
 import type {

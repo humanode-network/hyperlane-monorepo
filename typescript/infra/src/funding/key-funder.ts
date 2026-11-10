@@ -3,8 +3,8 @@ import { join } from 'path';
 import YAML from 'yaml';
 import { z } from 'zod';
 
-import { KeyFunderConfigSchema } from '@hyperlane-xyz/keyfunder';
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { KeyFunderConfigSchema } from '@humanode-hyperlane/keyfunder';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
 
 import { Contexts } from '../../config/contexts.js';
 import { DockerImageRepos } from '../../config/docker.js';

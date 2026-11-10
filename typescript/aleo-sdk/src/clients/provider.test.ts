@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 
 import { AleoProvider } from '../runtime/mainnet.js';
 import { toAleoAddress } from '../utils/helper.crypto.js';

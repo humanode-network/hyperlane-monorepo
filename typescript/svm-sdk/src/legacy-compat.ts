@@ -13,7 +13,7 @@ import type {
   TransactionSigner,
 } from '@solana/kit';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { COMPUTE_BUDGET_PROGRAM_ID } from './constants.js';
 import type { LegacyKeypair, SvmTransaction } from './types.js';

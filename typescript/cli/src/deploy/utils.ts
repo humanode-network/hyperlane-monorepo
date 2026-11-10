@@ -2,9 +2,9 @@ import { confirm } from '@inquirer/prompts';
 import { BigNumber, ethers } from 'ethers';
 import path from 'path';
 
-import { type GasAction, ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { type WarpArtifactConfig } from '@hyperlane-xyz/provider-sdk/warp';
-import { createWarpRouteConfigId } from '@hyperlane-xyz/registry';
+import { type GasAction, ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { type WarpArtifactConfig } from '@humanode-hyperlane/provider-sdk/warp';
+import { createWarpRouteConfigId } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type ChainMetadata,
@@ -15,8 +15,13 @@ import {
   type MultisigConfig,
   type WarpRouteDeployConfig,
   isIsmCompatible,
-} from '@hyperlane-xyz/sdk';
-import { type Address, assert, isEVMLike, mustGet } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  type Address,
+  assert,
+  isEVMLike,
+  mustGet,
+} from '@humanode-hyperlane/utils';
 
 import { parseIsmConfig } from '../config/ism.js';
 import {

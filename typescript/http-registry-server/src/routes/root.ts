@@ -1,6 +1,6 @@
 import { Request, Response, Router } from 'express';
 
-import { WarpRouteFilterSchema } from '@hyperlane-xyz/registry';
+import { WarpRouteFilterSchema } from '@humanode-hyperlane/registry';
 
 import { validateQueryParams } from '../middleware/validateRequest.js';
 import { RootService } from '../services/rootService.js';

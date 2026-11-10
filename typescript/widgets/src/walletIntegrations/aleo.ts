@@ -1,15 +1,15 @@
 import { useCallback } from 'react';
 
-import type { AleoTransaction } from '@hyperlane-xyz/aleo-sdk/runtime';
+import type { AleoTransaction } from '@humanode-hyperlane/aleo-sdk/runtime';
 import {
   ProviderType,
   type TypedTransactionReceipt,
-} from '@hyperlane-xyz/sdk/providers/ProviderType';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import type { ITokenMetadata } from '@hyperlane-xyz/sdk/token/ITokenMetadata';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import type { WarpTypedTransaction } from '@hyperlane-xyz/sdk/warp/types';
-import { assert, retryAsync, sleep } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk/providers/ProviderType';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
+import type { ITokenMetadata } from '@humanode-hyperlane/sdk/token/ITokenMetadata';
+import type { ChainName } from '@humanode-hyperlane/sdk/types';
+import type { WarpTypedTransaction } from '@humanode-hyperlane/sdk/warp/types';
+import { assert, retryAsync, sleep } from '@humanode-hyperlane/utils';
 
 import { getAdapter, setAleoNetwork } from './aleo/utils.js';
 import {

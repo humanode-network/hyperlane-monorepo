@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 import { z } from 'zod';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type AgentConfig,
   AgentConfigSchema,
@@ -9,8 +9,8 @@ import {
   HyperlaneCore,
   type HyperlaneDeploymentArtifacts,
   buildAgentConfig,
-} from '@hyperlane-xyz/sdk';
-import { objMap, pick, promiseObjAll } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { objMap, pick, promiseObjAll } from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { errorRed, logBlue, logGreen, warnYellow } from '../logger.js';

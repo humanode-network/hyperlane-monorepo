@@ -4,11 +4,11 @@ import { Wallet, providers } from 'ethers';
 import {
   NetFlowRateLimitedHookIsm__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   HookType,
@@ -16,8 +16,8 @@ import {
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert, eqAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, eqAddress } from '@humanode-hyperlane/utils';
 
 import { syncWarpDeployConfigToRegistry } from '../../commands/warp-config-sync.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';

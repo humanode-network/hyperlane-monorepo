@@ -9,13 +9,13 @@ import {
   MultiProvider,
   NetFlowRateLimitedHookIsmConfig,
   TestChainName,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   WithAddress,
   formatMessage,
   messageId,
   parseMessage,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { decodeIsmMetadata } from './decode.js';
 import { testTransactionReceipt } from './testUtils.js';

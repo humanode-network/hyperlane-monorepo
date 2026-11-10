@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { IRoutingIsm__factory } from '@hyperlane-xyz/core';
+import { IRoutingIsm__factory } from '@humanode-hyperlane/core';
 import {
   DispatchedMessage,
   EvmIsmReader,
@@ -11,14 +11,14 @@ import {
   MultiProvider,
   TestChainName,
   TrustedRelayerIsmConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   WithAddress,
   assert,
   formatMessage,
   messageId,
   parseMessage,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { BaseMetadataBuilder } from './builder.js';
 import { DynamicRoutingMetadataBuilder } from './routing.js';

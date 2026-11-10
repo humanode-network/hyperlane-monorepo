@@ -1,5 +1,5 @@
-import { assert } from '@hyperlane-xyz/utils';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+import { assert } from '@humanode-hyperlane/utils';
+import type { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
 
 import { AleoProvider as RuntimeAleoProvider } from '../clients/provider.js';
 import type { AleoSdk } from '../utils/provable.js';

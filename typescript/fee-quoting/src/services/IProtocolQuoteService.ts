@@ -1,7 +1,7 @@
 import type { Hex } from 'viem';
 
-import type { AnyQuoteV2Entry } from '@hyperlane-xyz/sdk';
-import type { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import type { AnyQuoteV2Entry } from '@humanode-hyperlane/sdk';
+import type { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 
 import { QuoteMode } from '../config.js';
 

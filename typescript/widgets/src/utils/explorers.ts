@@ -1,5 +1,5 @@
-import type { ChainMetadataManager } from '@hyperlane-xyz/sdk/metadata/ChainMetadataManager';
-import { fetchWithTimeout } from '@hyperlane-xyz/utils';
+import type { ChainMetadataManager } from '@humanode-hyperlane/sdk/metadata/ChainMetadataManager';
+import { fetchWithTimeout } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

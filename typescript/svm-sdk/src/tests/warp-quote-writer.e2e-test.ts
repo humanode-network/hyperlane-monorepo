@@ -4,13 +4,13 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { before, describe, it } from 'mocha';
 
-import { FeeParamsType, FeeType } from '@hyperlane-xyz/provider-sdk/fee';
+import { FeeParamsType, FeeType } from '@humanode-hyperlane/provider-sdk/fee';
 import {
   WARP_QUOTE_AMOUNT_WILDCARD,
   WARP_TARGET_ROUTER_NONE,
   WarpQuoteAmountKind,
-} from '@hyperlane-xyz/provider-sdk/quote';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/quote';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { decodeStandingQuotePda } from '../accounts/fee.js';
 import { SvmSigner } from '../clients/signer.js';

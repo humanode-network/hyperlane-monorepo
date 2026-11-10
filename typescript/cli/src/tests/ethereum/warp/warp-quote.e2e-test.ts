@@ -8,8 +8,8 @@ import {
   TokenFeeType,
   TokenType,
   WarpRouteDeployConfigSchema,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { addressToBytes32, assert } from '@humanode-hyperlane/utils';
 
 type TokenFeeInputShape = z.input<typeof TokenFeeConfigInputSchema>;
 

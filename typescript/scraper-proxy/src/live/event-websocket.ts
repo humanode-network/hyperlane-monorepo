@@ -2,8 +2,8 @@ import type { IncomingMessage, Server } from 'node:http';
 import { isIP } from 'node:net';
 import type { Duplex } from 'node:stream';
 
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { formatError } from '@hyperlane-xyz/utils/errors';
+import { rootLogger } from '@humanode-hyperlane/utils';
+import { formatError } from '@humanode-hyperlane/utils/errors';
 import { WebSocket, WebSocketServer } from 'ws';
 
 import { DiagnosticsStream } from '../diagnostics/stream.js';

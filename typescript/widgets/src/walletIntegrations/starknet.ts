@@ -8,16 +8,16 @@ import {
 import { useCallback } from 'react';
 import { Call } from 'starknet';
 
-import { chainMetadataToStarknetChain } from '@hyperlane-xyz/sdk/metadata/chainMetadataConversion';
+import { chainMetadataToStarknetChain } from '@humanode-hyperlane/sdk/metadata/chainMetadataConversion';
 import {
   ProviderType,
   type TypedTransactionReceipt,
-} from '@hyperlane-xyz/sdk/providers/ProviderType';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import type { ITokenMetadata } from '@hyperlane-xyz/sdk/token/ITokenMetadata';
-import type { ChainName } from '@hyperlane-xyz/sdk/types';
-import type { WarpTypedTransaction } from '@hyperlane-xyz/sdk/warp/types';
-import { ProtocolType, assert, sleep } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk/providers/ProviderType';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
+import type { ITokenMetadata } from '@humanode-hyperlane/sdk/token/ITokenMetadata';
+import type { ChainName } from '@humanode-hyperlane/sdk/types';
+import type { WarpTypedTransaction } from '@humanode-hyperlane/sdk/warp/types';
+import { ProtocolType, assert, sleep } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

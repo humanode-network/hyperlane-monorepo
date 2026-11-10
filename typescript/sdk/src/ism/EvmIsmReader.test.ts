@@ -41,13 +41,13 @@ import {
   TestIsm__factory,
   TrustedRelayerIsm,
   TrustedRelayerIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   WithAddress,
   addressToBytes32,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { TestChainName, test2 } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

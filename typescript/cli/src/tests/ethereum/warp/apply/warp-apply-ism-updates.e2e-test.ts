@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { RateLimitedIsm__factory } from '@hyperlane-xyz/core';
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { RateLimitedIsm__factory } from '@humanode-hyperlane/core';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 import {
   type IsmConfig,
   IsmType,
@@ -10,8 +10,8 @@ import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
   normalizeConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../../commands/core.js';

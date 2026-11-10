@@ -7,7 +7,7 @@ import {
   ProgressiveFee__factory,
   RegressiveFee__factory,
   RoutingFee__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 
 import { TokenFeeType } from './types.js';
 

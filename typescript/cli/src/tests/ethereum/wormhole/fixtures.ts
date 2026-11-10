@@ -5,7 +5,7 @@ import {
   type MockWormholeCore,
   MockWormholeCore__factory,
   TestRecipient__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type ChainMap,
   type ChainName,
@@ -15,8 +15,12 @@ import {
   WormholeConsistencyType,
   type WormholeHookIsmConfig,
   type WormholeMeshConfig,
-} from '@hyperlane-xyz/sdk';
-import { type Address, addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  type Address,
+  addressToBytes32,
+  assert,
+} from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../../context/context.js';
 import { setSignerForChain, startCcipServer } from '../commands/helpers.js';

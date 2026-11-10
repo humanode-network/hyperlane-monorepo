@@ -2,8 +2,8 @@ import {
   ChainMap,
   ChainStatus,
   defaultMultisigConfigs,
-} from '@hyperlane-xyz/sdk';
-import { eqAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { eqAddress } from '@humanode-hyperlane/utils';
 
 import { getChain } from '../../config/registry.js';
 import { isEthereumProtocolChain } from '../../src/utils/utils.js';

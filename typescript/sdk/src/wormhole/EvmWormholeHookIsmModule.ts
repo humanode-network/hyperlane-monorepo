@@ -1,4 +1,4 @@
-import { WormholeVaaHookIsm__factory } from '@hyperlane-xyz/core';
+import { WormholeVaaHookIsm__factory } from '@humanode-hyperlane/core';
 import {
   Address,
   Domain,
@@ -9,7 +9,7 @@ import {
   deepEquals,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import { Contract } from 'ethers';
 
 import { resolveRemoteDomainId } from '../combinedHookIsm/remoteDomain.js';

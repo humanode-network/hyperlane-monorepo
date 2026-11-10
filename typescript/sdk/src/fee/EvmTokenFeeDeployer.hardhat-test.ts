@@ -8,8 +8,8 @@ import {
   LinearFee__factory,
   OffchainQuotedLinearFee__factory,
   ProgressiveFee__factory,
-} from '@hyperlane-xyz/core';
-import { addressToBytes32, randomInt } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { addressToBytes32, randomInt } from '@humanode-hyperlane/utils';
 
 import { TestChainName } from '../consts/testChains.js';
 import { MultiProvider } from '../providers/MultiProvider.js';

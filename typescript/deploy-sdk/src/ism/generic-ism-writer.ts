@@ -2,21 +2,24 @@ import {
   AltVM,
   ChainMetadataForAltVM,
   getProtocolProvider,
-} from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+} from '@humanode-hyperlane/provider-sdk';
+import { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   ArtifactNew,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   DeployedIsmAddress,
   DeployedIsmArtifact,
   IRawIsmArtifactManager,
   IsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { assert, isNonEmptyArray } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
+import { assert, isNonEmptyArray } from '@humanode-hyperlane/utils';
 
 import { IsmReader } from './generic-ism.js';
 import { RoutingIsmWriter } from './routing-ism.js';

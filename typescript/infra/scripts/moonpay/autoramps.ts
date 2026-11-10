@@ -34,8 +34,8 @@ import 'dotenv/config';
 
 import yargs from 'yargs';
 
-import { WarpCoreConfig } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { WarpCoreConfig } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { getRegistry } from '../../config/registry.js';
 import { WarpRouteIds } from '../../config/environments/mainnet3/warp/warpIds.js';

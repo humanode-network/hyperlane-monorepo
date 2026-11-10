@@ -1,11 +1,11 @@
 import { expect } from 'chai';
 import { RpcProvider } from 'starknet';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
-import { ZERO_ADDRESS_HEX_32 } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
+import { TokenType } from '@humanode-hyperlane/provider-sdk/warp';
+import { ZERO_ADDRESS_HEX_32 } from '@humanode-hyperlane/utils';
 
 import { StarknetSigner } from '../clients/signer.js';
 import { StarknetAnnotatedTx, StarknetTxReceipt } from '../types.js';

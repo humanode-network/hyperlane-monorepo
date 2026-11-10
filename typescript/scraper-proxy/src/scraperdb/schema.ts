@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-import { assert } from '@hyperlane-xyz/utils/validation';
+import { assert } from '@humanode-hyperlane/utils/validation';
 import { Kind, parse } from 'graphql';
 
 const schemaPath = [

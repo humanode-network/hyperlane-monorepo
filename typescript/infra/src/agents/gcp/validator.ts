@@ -1,9 +1,9 @@
-import { GcpValidator } from '@hyperlane-xyz/sdk';
+import { GcpValidator } from '@humanode-hyperlane/sdk';
 import {
   S3Checkpoint,
   S3CheckpointWithId,
   isS3CheckpointWithId,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   CheckpointMetric,

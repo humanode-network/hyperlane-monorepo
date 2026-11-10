@@ -5,9 +5,13 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-import { ERC20__factory } from '@hyperlane-xyz/core';
-import { HyperlaneCore, MultiProvider, snapshot } from '@hyperlane-xyz/sdk';
-import { assert, sleep } from '@hyperlane-xyz/utils';
+import { ERC20__factory } from '@humanode-hyperlane/core';
+import {
+  HyperlaneCore,
+  MultiProvider,
+  snapshot,
+} from '@humanode-hyperlane/sdk';
+import { assert, sleep } from '@humanode-hyperlane/utils';
 
 import {
   PendingTransferMiddlewareType,

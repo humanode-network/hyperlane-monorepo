@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 
-import { isZeroishAddress, rootLogger, sleep } from '@hyperlane-xyz/utils';
+import { isZeroishAddress, rootLogger, sleep } from '@humanode-hyperlane/utils';
 
 import { ExplorerFamily } from '../../metadata/chainMetadataTypes.js';
 import { MultiProvider } from '../../providers/MultiProvider.js';

@@ -1,14 +1,14 @@
 import type { BigNumber } from 'ethers';
 
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
 import type {
   ChainMap,
   ChainName,
   ContractVerificationInput,
   ContractVerifier,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import type { Address, Logger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import type { Address, Logger } from '@humanode-hyperlane/utils';
 
 import type { IcaExportStore, RegistryBefore } from './export.js';
 

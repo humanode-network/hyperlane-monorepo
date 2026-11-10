@@ -1,7 +1,7 @@
 import { confirm } from '@inquirer/prompts';
 import path from 'path';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   IToken,
@@ -9,8 +9,8 @@ import {
   SealevelHypTokenAdapter,
   TokenStandard,
   WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { difference, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { difference, rootLogger } from '@humanode-hyperlane/utils';
 
 import { DockerImageRepos, mainnetDockerTags } from '../../config/docker.js';
 import { getRegistry, getWarpCoreConfig } from '../../config/registry.js';

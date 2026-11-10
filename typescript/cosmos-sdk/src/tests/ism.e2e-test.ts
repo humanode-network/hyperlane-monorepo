@@ -1,12 +1,12 @@
 import { expect } from 'chai';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import { type ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import { type ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import {
   type ArtifactDeployed,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedIsmAddress,
   type IsmType,
@@ -14,12 +14,12 @@ import {
   type RawIsmArtifactConfig,
   type RawRoutingIsmArtifactConfig,
   type TestIsmConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { assert, normalizeConfig } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/module';
+import { assert, normalizeConfig } from '@humanode-hyperlane/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { CosmosIsmArtifactManager } from '../ism/ism-artifact-manager.js';

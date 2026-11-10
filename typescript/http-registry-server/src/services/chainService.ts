@@ -1,5 +1,8 @@
-import { ChainAddresses, UpdateChainParams } from '@hyperlane-xyz/registry';
-import { ChainMetadata, ChainName } from '@hyperlane-xyz/sdk';
+import {
+  ChainAddresses,
+  UpdateChainParams,
+} from '@humanode-hyperlane/registry';
+import { ChainMetadata, ChainName } from '@humanode-hyperlane/sdk';
 
 import { NotFoundError } from '../errors/ApiError.js';
 

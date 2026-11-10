@@ -8,12 +8,12 @@ import {
   type MultiProvider,
   type Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   addBufferToGasLimit,
   isEVMLike,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 /**
  * Fallback gas limit for transferRemote when eth_estimateGas fails.

@@ -27,12 +27,12 @@ import { Gauge, Registry } from 'prom-client';
 import {
   MerkleTreeHook__factory,
   ValidatorAnnounce__factory,
-} from '@hyperlane-xyz/core';
-import { submitMetrics } from '@hyperlane-xyz/metrics';
+} from '@humanode-hyperlane/core';
+import { submitMetrics } from '@humanode-hyperlane/metrics';
 import {
   MultiProvider,
   getValidatorFromStorageLocation,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   BaseValidator,
   LogFormat,
@@ -42,8 +42,8 @@ import {
   configureRootLogger,
   eqAddress,
   rootLogger,
-} from '@hyperlane-xyz/utils';
-import type { Checkpoint } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
+import type { Checkpoint } from '@humanode-hyperlane/utils';
 
 import { getChainAddresses } from '../../config/registry.js';
 import { isEthereumProtocolChain } from '../../src/utils/utils.js';

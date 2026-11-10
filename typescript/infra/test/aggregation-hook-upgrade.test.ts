@@ -9,17 +9,17 @@ import { join } from 'path';
 import {
   FallbackDomainRoutingHook__factory,
   StaticAggregationHookFactory__factory,
-} from '@hyperlane-xyz/core';
-import { PartialRegistry } from '@hyperlane-xyz/registry';
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import { PartialRegistry } from '@humanode-hyperlane/registry';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   ChainTechnicalStack,
   ContractVerificationInput,
   MultiProvider,
   OnchainHookType,
   testChainMetadata,
-} from '@hyperlane-xyz/sdk';
-import { Address, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { Address, ProtocolType } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../config/contexts.js';
 import {

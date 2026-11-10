@@ -1,12 +1,12 @@
 import path from 'path';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
 
 import { DockerImageRepos, mainnetDockerTags } from '../../config/docker.js';
 import { DeployEnvironment } from '../config/deploy-environment.js';
 import { HelmManager } from '../utils/helm.js';
 import { getInfraPath } from '../utils/utils.js';
-import { readYaml } from '@hyperlane-xyz/utils/fs';
+import { readYaml } from '@humanode-hyperlane/utils/fs';
 
 export class FeeQuotingHelmManager extends HelmManager {
   readonly helmChartPath: string = path.join(

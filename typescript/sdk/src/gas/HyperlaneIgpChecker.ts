@@ -1,6 +1,6 @@
 import { BigNumber, ethers } from 'ethers';
 
-import { eqAddress } from '@hyperlane-xyz/utils';
+import { eqAddress } from '@humanode-hyperlane/utils';
 
 import { throwIfNotMissingSelector } from '../utils/contract.js';
 

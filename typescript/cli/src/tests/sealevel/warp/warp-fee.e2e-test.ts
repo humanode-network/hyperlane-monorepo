@@ -3,15 +3,15 @@ import { expect } from 'chai';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
-import { SealevelSigner, createRpc } from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol } from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@humanode-hyperlane/registry';
+import { SealevelSigner, createRpc } from '@humanode-hyperlane/sealevel-sdk';
+import { airdropSol } from '@humanode-hyperlane/sealevel-sdk/testing';
 import {
   TokenFeeType,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 import {
   TOKEN_2022_PROGRAM_ID,
   getAssociatedTokenAddressSync,

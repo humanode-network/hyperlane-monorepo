@@ -2,8 +2,8 @@ import type { ShieldWalletAdapter } from '@provablehq/aleo-wallet-adaptor-shield
 import { WalletDecryptPermission } from '@provablehq/aleo-wallet-standard';
 import { useEffect, useMemo, useState } from 'react';
 
-import type { MinimalProviderRegistry } from '@hyperlane-xyz/sdk/providers/MinimalProviderRegistry';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import type { MinimalProviderRegistry } from '@humanode-hyperlane/sdk/providers/MinimalProviderRegistry';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 

@@ -7,7 +7,7 @@ import {
   isNullish,
   retryAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   getContractDeploymentTransaction,

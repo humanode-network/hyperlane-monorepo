@@ -1,6 +1,6 @@
 import type { ReadonlyUint8Array } from '@solana/kit';
 
-import { assert, isNullish } from '@hyperlane-xyz/utils';
+import { assert, isNullish } from '@humanode-hyperlane/utils';
 
 import {
   FeeDataKind,

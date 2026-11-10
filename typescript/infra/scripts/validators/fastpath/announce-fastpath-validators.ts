@@ -16,8 +16,8 @@
 import chalk from 'chalk';
 import { ethers } from 'ethers';
 
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { addBufferToGasLimit } from '@hyperlane-xyz/utils';
+import { ChainName } from '@humanode-hyperlane/sdk';
+import { addBufferToGasLimit } from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../../config/contexts.js';
 import { getChains } from '../../../config/registry.js';

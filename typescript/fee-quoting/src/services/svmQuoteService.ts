@@ -7,23 +7,23 @@ import {
   getProtocolProvider,
   hasProtocol,
   registerProtocol,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 import {
   type FeeArtifactConfig,
   type FeeStrategy,
   FeeType,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@humanode-hyperlane/provider-sdk/fee';
 import {
   buildFeeReadContextFromWarpArtifactConfig,
   type DeployedRawWarpArtifact,
   type WarpArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   DEFAULT_ROUTER_KEY,
   type MultiProvider,
   NoQuoteAvailableReason,
   type SealevelQuoteV2Entry,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   FeeStrategyKind,
   SealevelProtocolProvider,
@@ -39,13 +39,13 @@ import {
   isSealevelDeployedWarpAddress,
   signSvmQuote,
   wildcardRecipient,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/sealevel-sdk';
 import {
   assert,
   concurrentMap,
   eqAddress,
   isValidAddressSealevel,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { QuoteMode } from '../config.js';
 import { ApiError, NoQuoteAvailableError } from '../middleware/errorHandler.js';

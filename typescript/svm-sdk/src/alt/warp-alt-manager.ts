@@ -1,12 +1,12 @@
 import { address as parseAddress } from '@solana/kit';
 
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ArtifactDeployed } from '@hyperlane-xyz/provider-sdk/artifact';
+import type { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk';
+import type { ArtifactDeployed } from '@humanode-hyperlane/provider-sdk/artifact';
 import type {
   WarpArtifactConfigs,
   WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { assert } from '@humanode-hyperlane/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { createRpc } from '../rpc.js';

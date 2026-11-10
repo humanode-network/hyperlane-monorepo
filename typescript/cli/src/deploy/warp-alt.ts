@@ -1,12 +1,12 @@
 import { stringify as yamlStringify } from 'yaml';
 
-import { createWarpTokenReader } from '@hyperlane-xyz/deploy-sdk';
+import { createWarpTokenReader } from '@humanode-hyperlane/deploy-sdk';
 import {
   SealevelSigner,
   createWarpAltManager,
-} from '@hyperlane-xyz/sealevel-sdk';
-import { type ChainName, altVmChainLookup } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert, mustGet } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sealevel-sdk';
+import { type ChainName, altVmChainLookup } from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert, mustGet } from '@humanode-hyperlane/utils';
 
 import { type WriteCommandContext } from '../context/types.js';
 import { log, logGray, logGreen, logRed } from '../logger.js';

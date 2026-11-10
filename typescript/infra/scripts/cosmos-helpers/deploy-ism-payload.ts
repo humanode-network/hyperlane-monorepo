@@ -1,7 +1,7 @@
 import { stringify as yamlStringify } from 'yaml';
 
-import { defaultMultisigConfigs } from '@hyperlane-xyz/sdk';
-import { strip0x } from '@hyperlane-xyz/utils';
+import { defaultMultisigConfigs } from '@humanode-hyperlane/sdk';
+import { strip0x } from '@humanode-hyperlane/utils';
 
 import { getArgs } from '../agent-utils.js';
 import { getEnvironmentConfig } from '../core-utils.js';

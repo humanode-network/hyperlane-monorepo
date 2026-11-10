@@ -3,7 +3,7 @@ import assert, { rejects } from 'node:assert/strict';
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
 
 import { Contexts } from '../config/contexts.js';
 import { environment } from '../config/environments/mainnet3/index.js';

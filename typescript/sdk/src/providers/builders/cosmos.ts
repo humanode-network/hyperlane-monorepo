@@ -1,8 +1,8 @@
 import { CosmWasmClient } from '@cosmjs/cosmwasm-stargate';
 import { StargateClient } from '@cosmjs/stargate';
 
-import { CosmosNativeProvider } from '@hyperlane-xyz/cosmos-sdk/runtime';
-import { assert } from '@hyperlane-xyz/utils';
+import { CosmosNativeProvider } from '@humanode-hyperlane/cosmos-sdk/runtime';
+import { assert } from '@humanode-hyperlane/utils';
 
 import type { ChainMetadata } from '../../metadata/chainMetadataTypes.js';
 import type {

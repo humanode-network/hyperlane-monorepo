@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { RadixProvider } from '@hyperlane-xyz/radix-sdk/runtime';
+import { RadixProvider } from '@humanode-hyperlane/radix-sdk/runtime';
 
 import { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';
 

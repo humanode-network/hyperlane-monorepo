@@ -5,8 +5,8 @@ import {
   FeeStrategyType,
   bpsToRawFeeParams,
   computeBps,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { assert, isNullish, setEquality } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/fee';
+import { assert, isNullish, setEquality } from '@humanode-hyperlane/utils';
 
 import type { RouteDomainData } from '../accounts/fee.js';
 import type { SvmFeeDataStrategy, SvmFeeParams } from '../codecs/fee.js';

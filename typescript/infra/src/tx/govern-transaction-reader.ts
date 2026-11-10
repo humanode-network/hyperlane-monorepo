@@ -28,7 +28,7 @@ import {
   RoutingFee__factory,
   TimelockController__factory,
   TokenRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   AnnotatedEV5Transaction,
   ChainMap,
@@ -50,7 +50,7 @@ import {
   isProxyAdminFromBytecode,
   normalizeConfig,
   onChainTypeToTokenFeeTypeMap,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   StandardHookMetadataParams,
@@ -61,7 +61,7 @@ import {
   isZeroishAddress,
   parseStandardHookMetadata,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { awIcasLegacy } from '../../config/environments/mainnet3/governance/ica/_awLegacy.js';
 import { regularIcasLegacy } from '../../config/environments/mainnet3/governance/ica/_regularLegacy.js';

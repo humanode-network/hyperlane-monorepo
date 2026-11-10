@@ -1,6 +1,6 @@
 import type { Logger } from 'pino';
 
-import type { MultiProvider } from '@hyperlane-xyz/sdk';
+import type { MultiProvider } from '@humanode-hyperlane/sdk';
 
 import {
   type PendingTransferMiddlewareConfig,

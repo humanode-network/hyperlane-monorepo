@@ -1,5 +1,5 @@
-import type { DeployedWarpAddress } from '@hyperlane-xyz/provider-sdk/warp';
-import { isNullish } from '@hyperlane-xyz/utils';
+import type { DeployedWarpAddress } from '@humanode-hyperlane/provider-sdk/warp';
+import { isNullish } from '@humanode-hyperlane/utils';
 
 import type { TokenFeeConfig } from '../accounts/token.js';
 import type { SvmProgramTarget } from '../types.js';

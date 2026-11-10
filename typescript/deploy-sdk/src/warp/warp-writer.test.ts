@@ -2,33 +2,36 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import Sinon from 'sinon';
 
-import type { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
+import type { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
 import type {
   ArtifactNew,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   ArtifactState,
   isArtifactDeployed,
   isArtifactUnderived,
-} from '@hyperlane-xyz/provider-sdk/artifact';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/provider-sdk/artifact';
+import type { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
 import type {
   DeployedHookArtifact,
   HookArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
+} from '@humanode-hyperlane/provider-sdk/hook';
 import type {
   CompositeIsmArtifactConfig,
   CompositeIsmNodeArtifactConfig,
   DeployedIsmArtifact,
   IsmArtifactConfig,
   RoutingIsmArtifactConfig,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { CompositeIsmNodeType, IsmType } from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import {
+  CompositeIsmNodeType,
+  IsmType,
+} from '@humanode-hyperlane/provider-sdk/ism';
 import type {
   AnnotatedTx,
   TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   type DeployedFeeArtifact,
   type FeeArtifactConfig,
@@ -36,12 +39,12 @@ import {
   FeeStrategyType,
   FeeType,
   type IRawFeeArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@humanode-hyperlane/provider-sdk/fee';
 import {
   ProtocolType,
   hasProtocol,
   registerProtocol,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 import {
   type CollateralWarpArtifactConfig,
   type DeployedWarpAddress,
@@ -50,8 +53,8 @@ import {
   TokenType,
   type WarpArtifactConfig,
   type WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { WarpTokenWriter } from './warp-writer.js';
 

@@ -5,8 +5,8 @@
 import { PublicKey } from '@solana/web3.js';
 import { z } from 'zod';
 
-import { ModuleType } from '@hyperlane-xyz/sdk';
-import { ProtocolType, isEmptyAddress } from '@hyperlane-xyz/utils';
+import { ModuleType } from '@humanode-hyperlane/sdk';
+import { ProtocolType, isEmptyAddress } from '@humanode-hyperlane/utils';
 
 import { MultiProvider } from '../providers/MultiProvider.js';
 import { ChainMap, ChainName } from '../types.js';

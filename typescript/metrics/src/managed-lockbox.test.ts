@@ -7,8 +7,8 @@ import {
   MultiProtocolProvider,
   Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import {
   getExtraLockboxBalance,

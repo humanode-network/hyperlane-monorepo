@@ -1,6 +1,6 @@
 import { type QueryClient, createProtobufRpcClient } from '@cosmjs/stargate';
 
-import { pdQuery } from '@hyperlane-xyz/cosmos-types';
+import { pdQuery } from '@humanode-hyperlane/cosmos-types';
 
 export interface PostDispatchExtension {
   readonly postDispatch: {

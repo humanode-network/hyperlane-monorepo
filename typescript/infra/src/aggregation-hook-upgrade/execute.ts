@@ -6,7 +6,7 @@ import {
   FallbackDomainRoutingHook__factory,
   StaticAggregationHookFactory,
   StaticAggregationHookFactory__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   AnnotatedEV5Transaction,
   ChainName,
@@ -16,7 +16,7 @@ import {
   OnchainHookType,
   submitRoutingHookConfigs,
   verificationUtils,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   Logger,
@@ -26,7 +26,7 @@ import {
   concurrentMap,
   eqAddress,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   assertChildrenPreserved,
@@ -153,7 +153,7 @@ export async function ensureFactory(args: {
 
   assert(
     isFixedVersion(CONTRACTS_PACKAGE_VERSION),
-    `@hyperlane-xyz/core ${CONTRACTS_PACKAGE_VERSION} predates the fixed aggregation hook version; refusing to deploy a factory on ${chain}`,
+    `@humanode-hyperlane/core ${CONTRACTS_PACKAGE_VERSION} predates the fixed aggregation hook version; refusing to deploy a factory on ${chain}`,
   );
 
   const factoryContract = new StaticAggregationHookFactory__factory();

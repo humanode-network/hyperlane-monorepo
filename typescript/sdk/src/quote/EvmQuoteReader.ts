@@ -1,7 +1,7 @@
 import { providers as ethersProviders } from 'ethers';
 
-import { OffchainQuotedLinearFee__factory } from '@hyperlane-xyz/core';
-import { type FeeReadContext } from '@hyperlane-xyz/provider-sdk/fee';
+import { OffchainQuotedLinearFee__factory } from '@humanode-hyperlane/core';
+import { type FeeReadContext } from '@humanode-hyperlane/provider-sdk/fee';
 import {
   type IRawWarpQuoteReader,
   type ReadStandingQuotesOpts,
@@ -11,7 +11,7 @@ import {
   WILDCARD_DESTINATION_DOMAIN,
   type WarpQuoteScope,
   enumerateWarpQuoteCandidates,
-} from '@hyperlane-xyz/provider-sdk/quote';
+} from '@humanode-hyperlane/provider-sdk/quote';
 
 /**
  * Reads standing offchain-quote entries from a deployed `OffchainQuotedLinearFee`.

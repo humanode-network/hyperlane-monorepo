@@ -1,4 +1,4 @@
-import { assert } from '@hyperlane-xyz/utils/validation';
+import { assert } from '@humanode-hyperlane/utils/validation';
 
 import {
   type Row,

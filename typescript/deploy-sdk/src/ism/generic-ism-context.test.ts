@@ -6,16 +6,19 @@ import {
   ProtocolType,
   hasProtocol,
   registerProtocol,
-} from '@hyperlane-xyz/provider-sdk';
-import { ISigner } from '@hyperlane-xyz/provider-sdk/altvm';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import { ChainLookup } from '@hyperlane-xyz/provider-sdk/chain';
+} from '@humanode-hyperlane/provider-sdk';
+import { ISigner } from '@humanode-hyperlane/provider-sdk/altvm';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import { ChainLookup } from '@humanode-hyperlane/provider-sdk/chain';
 import {
   DeployedIsmArtifact,
   IRawIsmArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/ism';
-import { AnnotatedTx, TxReceipt } from '@hyperlane-xyz/provider-sdk/module';
-import { ProtocolProvider } from '@hyperlane-xyz/provider-sdk/protocol';
+} from '@humanode-hyperlane/provider-sdk/ism';
+import {
+  AnnotatedTx,
+  TxReceipt,
+} from '@humanode-hyperlane/provider-sdk/module';
+import { ProtocolProvider } from '@humanode-hyperlane/provider-sdk/protocol';
 
 import { createIsmReader } from './generic-ism.js';
 import { IsmWriter, createIsmWriter } from './generic-ism-writer.js';

@@ -1,12 +1,12 @@
 import { ethers } from 'ethers';
 
-import { ChainMetadata, ChainTechnicalStack } from '@hyperlane-xyz/sdk';
+import { ChainMetadata, ChainTechnicalStack } from '@humanode-hyperlane/sdk';
 import {
   deepEquals,
   eqAddressEvm,
   isZeroish,
   normalizeAddressEvm,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { SignerAccount, TransactionCodec } from './types.js';
 

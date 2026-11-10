@@ -13,10 +13,10 @@ import { ethers } from 'ethers';
 import {
   IInterchainSecurityModule__factory,
   IMultisigIsm__factory,
-} from '@hyperlane-xyz/core';
-import { ModuleType } from '@hyperlane-xyz/sdk';
-import { rootLogger } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/core';
+import { ModuleType } from '@humanode-hyperlane/sdk';
+import { rootLogger } from '@humanode-hyperlane/utils';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import { Contexts } from '../../../config/contexts.js';
 import { DEFAULT_FASTPATH_VALIDATORS } from '../../../config/environments/mainnet3/fastpath/validators.js';

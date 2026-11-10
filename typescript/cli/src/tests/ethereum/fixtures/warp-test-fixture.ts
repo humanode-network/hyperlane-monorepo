@@ -1,7 +1,7 @@
 import {
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { createSnapshot, restoreSnapshot } from '../commands/helpers.js';

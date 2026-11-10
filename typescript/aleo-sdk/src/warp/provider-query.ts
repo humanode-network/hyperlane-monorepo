@@ -1,4 +1,4 @@
-import { assert, ensure0x, retryAsync } from '@hyperlane-xyz/utils';
+import { assert, ensure0x, retryAsync } from '@humanode-hyperlane/utils';
 
 import type { AnyAleoNetworkClient } from '../clients/base.js';
 import {

@@ -3,8 +3,8 @@ import { groupBy } from 'lodash-es';
 import {
   type SubmissionStrategy,
   SubmissionStrategySchema,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   getTransactions,

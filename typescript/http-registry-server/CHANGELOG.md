@@ -1,4 +1,4 @@
-# @hyperlane-xyz/http-registry-server
+# @humanode-hyperlane/http-registry-server
 
 ## 45.2.0
 
@@ -19,8 +19,8 @@
 - Updated dependencies [7be44b5]
 - Updated dependencies [9ef15ff]
 - Updated dependencies [48cd574]
-  - @hyperlane-xyz/sdk@45.2.0
-  - @hyperlane-xyz/utils@45.2.0
+  - @humanode-hyperlane/sdk@45.2.0
+  - @humanode-hyperlane/utils@45.2.0
 
 ## 45.1.0
 
@@ -43,8 +43,8 @@
 - Updated dependencies [5a8eed5]
 - Updated dependencies [670000c]
 - Updated dependencies [bfbb755]
-  - @hyperlane-xyz/sdk@45.1.0
-  - @hyperlane-xyz/utils@45.1.0
+  - @humanode-hyperlane/sdk@45.1.0
+  - @humanode-hyperlane/utils@45.1.0
 
 ## 45.0.1
 
@@ -54,8 +54,8 @@
 - Updated dependencies [35d3002]
 - Updated dependencies [fe26a26]
 - Updated dependencies [19dbb59]
-  - @hyperlane-xyz/sdk@45.0.1
-  - @hyperlane-xyz/utils@45.0.1
+  - @humanode-hyperlane/sdk@45.0.1
+  - @humanode-hyperlane/utils@45.0.1
 
 ## 45.0.0
 
@@ -95,24 +95,24 @@
 - Updated dependencies [ea5b010]
 - Updated dependencies [b83bac5]
 - Updated dependencies [67f3cd3]
-  - @hyperlane-xyz/sdk@45.0.0
-  - @hyperlane-xyz/utils@45.0.0
+  - @humanode-hyperlane/sdk@45.0.0
+  - @humanode-hyperlane/utils@45.0.0
 
 ## 44.0.2
 
 ### Patch Changes
 
 - Updated dependencies [16df6ee]
-  - @hyperlane-xyz/sdk@44.0.2
-  - @hyperlane-xyz/utils@44.0.2
+  - @humanode-hyperlane/sdk@44.0.2
+  - @humanode-hyperlane/utils@44.0.2
 
 ## 44.0.1
 
 ### Patch Changes
 
 - Updated dependencies [f269e03]
-  - @hyperlane-xyz/sdk@44.0.1
-  - @hyperlane-xyz/utils@44.0.1
+  - @humanode-hyperlane/sdk@44.0.1
+  - @humanode-hyperlane/utils@44.0.1
 
 ## 44.0.0
 
@@ -124,8 +124,8 @@
 
 - Updated dependencies [85c44af]
 - Updated dependencies [6fbe5ad]
-  - @hyperlane-xyz/sdk@44.0.0
-  - @hyperlane-xyz/utils@44.0.0
+  - @humanode-hyperlane/sdk@44.0.0
+  - @humanode-hyperlane/utils@44.0.0
 
 ## 43.0.0
 
@@ -141,8 +141,8 @@
 - Updated dependencies [7cf9c01]
 - Updated dependencies [8d91ef8]
 - Updated dependencies [11f2dee]
-  - @hyperlane-xyz/sdk@43.0.0
-  - @hyperlane-xyz/utils@43.0.0
+  - @humanode-hyperlane/sdk@43.0.0
+  - @humanode-hyperlane/utils@43.0.0
 
 ## 42.0.0
 
@@ -156,16 +156,16 @@
 - Updated dependencies [1b136e1]
 - Updated dependencies [1b136e1]
 - Updated dependencies [9a8bb17]
-  - @hyperlane-xyz/sdk@42.0.0
-  - @hyperlane-xyz/utils@42.0.0
+  - @humanode-hyperlane/sdk@42.0.0
+  - @humanode-hyperlane/utils@42.0.0
 
 ## 41.3.1
 
 ### Patch Changes
 
 - Updated dependencies [c201794]
-  - @hyperlane-xyz/sdk@41.3.1
-  - @hyperlane-xyz/utils@41.3.1
+  - @humanode-hyperlane/sdk@41.3.1
+  - @humanode-hyperlane/utils@41.3.1
 
 ## 41.3.0
 
@@ -177,8 +177,8 @@
 - Updated dependencies [4a21153]
 - Updated dependencies [322a418]
 - Updated dependencies [d5d7d1a]
-  - @hyperlane-xyz/sdk@41.3.0
-  - @hyperlane-xyz/utils@41.3.0
+  - @humanode-hyperlane/sdk@41.3.0
+  - @humanode-hyperlane/utils@41.3.0
 
 ## 41.2.0
 
@@ -188,8 +188,8 @@
 - Updated dependencies [5fac94d]
 - Updated dependencies [5899416]
 - Updated dependencies [5fac94d]
-  - @hyperlane-xyz/sdk@41.2.0
-  - @hyperlane-xyz/utils@41.2.0
+  - @humanode-hyperlane/sdk@41.2.0
+  - @humanode-hyperlane/utils@41.2.0
 
 ## 41.1.0
 
@@ -197,13 +197,13 @@
 
 - 0adcbb2: Added local mainnet forking support for Solana (Sealevel) warp routes and made the `warp fork` engine VM-agnostic.
 
-  - Introduced `@hyperlane-xyz/forking-sdk`, a VM-agnostic forking abstraction: the `IForkManager<TConfig>` interface, a `ForkManagerRegistry` keyed by `ProtocolType`, a `buildForkedChainMetadata` orchestration routine, and readiness/port helpers. Depends only on `@hyperlane-xyz/provider-sdk` and `@hyperlane-xyz/utils`.
-  - Added a node-only `@hyperlane-xyz/sealevel-sdk/fork` subpath (isolated from the main entry so browser/edge consumers are unaffected): a mode-typed `SurfpoolNode` controller (fork/network/offline) that runs a locally-installed `surfpool` binary, an `SvmForkManager` that forks a Solana RPC via surfpool and replays `PrintableSvmTransaction[]` governance txs under skip-signature-verification, and an `SvmRawForkConfigSchema` fork-config parser.
+  - Introduced `@humanode-hyperlane/forking-sdk`, a VM-agnostic forking abstraction: the `IForkManager<TConfig>` interface, a `ForkManagerRegistry` keyed by `ProtocolType`, a `buildForkedChainMetadata` orchestration routine, and readiness/port helpers. Depends only on `@humanode-hyperlane/provider-sdk` and `@humanode-hyperlane/utils`.
+  - Added a node-only `@humanode-hyperlane/sealevel-sdk/fork` subpath (isolated from the main entry so browser/edge consumers are unaffected): a mode-typed `SurfpoolNode` controller (fork/network/offline) that runs a locally-installed `surfpool` binary, an `SvmForkManager` that forks a Solana RPC via surfpool and replays `PrintableSvmTransaction[]` governance txs under skip-signature-verification, and an `SvmRawForkConfigSchema` fork-config parser.
   - Reworked the CLI `warp fork` command to dispatch per protocol through `forking-sdk`: EVM chains fork with anvil (extracted into an `EvmForkManager`, behavior unchanged) and Sealevel chains fork with surfpool, with per-protocol fork-config parsing. A Sealevel warp route can now be forked and its governance transactions replayed and validated with `warp check` before being submitted on-chain or through a Squads multisig.
   - Hardened the `HttpServer.start()` used to serve the forked registry: it now awaits the `listening` event and rejects on a bind failure (instead of only logging), so a caller can observe the failure and tear down. The CLI `warp fork` command uses this to kill every fork node if the registry server cannot start, and redacts the upstream RPC URL (which may carry credentials) from any surfaced anvil error.
   - Note: `warp fork` on a Sealevel route requires a locally-installed `surfpool` binary (`>= 1.5.0`) on `PATH` — there is no Docker fallback in the CLI. Install a pinned, checksum-verified `surfpool` release (`>= 1.5.0`) from https://github.com/txtx/surfpool/releases (verify the archive's SHA-256) rather than piping the mutable installer to a shell. The `surfpool/surfpool:1.5.0` Docker image is used only by the SDK's own test suite.
-  - @hyperlane-xyz/sdk@41.1.0
-  - @hyperlane-xyz/utils@41.1.0
+  - @humanode-hyperlane/sdk@41.1.0
+  - @humanode-hyperlane/utils@41.1.0
 
 ## 41.0.0
 
@@ -222,8 +222,8 @@
 - Updated dependencies [b1c6b7e]
 - Updated dependencies [a09ba71]
 - Updated dependencies [d9426bc]
-  - @hyperlane-xyz/sdk@41.0.0
-  - @hyperlane-xyz/utils@41.0.0
+  - @humanode-hyperlane/sdk@41.0.0
+  - @humanode-hyperlane/utils@41.0.0
 
 ## 40.0.0
 
@@ -237,8 +237,8 @@
 - Updated dependencies [a7f757b]
 - Updated dependencies [4acd9a6]
 - Updated dependencies [c6a2f61]
-  - @hyperlane-xyz/sdk@40.0.0
-  - @hyperlane-xyz/utils@40.0.0
+  - @humanode-hyperlane/sdk@40.0.0
+  - @humanode-hyperlane/utils@40.0.0
 
 ## 39.1.0
 
@@ -247,8 +247,8 @@
 - Updated dependencies [4976bb1]
 - Updated dependencies [6c9210b]
 - Updated dependencies [086ec59]
-  - @hyperlane-xyz/sdk@39.1.0
-  - @hyperlane-xyz/utils@39.1.0
+  - @humanode-hyperlane/sdk@39.1.0
+  - @humanode-hyperlane/utils@39.1.0
 
 ## 39.0.0
 
@@ -271,8 +271,8 @@
 - Updated dependencies [6c2ca1d]
 - Updated dependencies [1a31d04]
 - Updated dependencies [9997aee]
-  - @hyperlane-xyz/sdk@39.0.0
-  - @hyperlane-xyz/utils@39.0.0
+  - @humanode-hyperlane/sdk@39.0.0
+  - @humanode-hyperlane/utils@39.0.0
 
 ## 38.0.0
 
@@ -284,8 +284,8 @@
 - Updated dependencies [2208b91]
 - Updated dependencies [197b1e0]
 - Updated dependencies [293abdc]
-  - @hyperlane-xyz/sdk@38.0.0
-  - @hyperlane-xyz/utils@38.0.0
+  - @humanode-hyperlane/sdk@38.0.0
+  - @humanode-hyperlane/utils@38.0.0
 
 ## 37.0.0
 
@@ -311,8 +311,8 @@
 - Updated dependencies [31f8b51]
 - Updated dependencies [955281d]
 - Updated dependencies [9c8b435]
-  - @hyperlane-xyz/sdk@37.0.0
-  - @hyperlane-xyz/utils@37.0.0
+  - @humanode-hyperlane/sdk@37.0.0
+  - @humanode-hyperlane/utils@37.0.0
 
 ## 36.0.0
 
@@ -336,8 +336,8 @@
 - Updated dependencies [cf6857e]
 - Updated dependencies [32b87ad]
 - Updated dependencies [cf6857e]
-  - @hyperlane-xyz/sdk@36.0.0
-  - @hyperlane-xyz/utils@36.0.0
+  - @humanode-hyperlane/sdk@36.0.0
+  - @humanode-hyperlane/utils@36.0.0
 
 ## 35.2.0
 
@@ -355,8 +355,8 @@
 - Updated dependencies [b77faf4]
 - Updated dependencies [fb63f5f]
 - Updated dependencies [fb63f5f]
-  - @hyperlane-xyz/sdk@35.2.0
-  - @hyperlane-xyz/utils@35.2.0
+  - @humanode-hyperlane/sdk@35.2.0
+  - @humanode-hyperlane/utils@35.2.0
 
 ## 35.1.0
 
@@ -364,8 +364,8 @@
 
 - Updated dependencies [830ce1d]
 - Updated dependencies [9cdf9eb]
-  - @hyperlane-xyz/sdk@35.1.0
-  - @hyperlane-xyz/utils@35.1.0
+  - @humanode-hyperlane/sdk@35.1.0
+  - @humanode-hyperlane/utils@35.1.0
 
 ## 35.0.1
 
@@ -375,8 +375,8 @@
 - Updated dependencies [da1cfb1]
 - Updated dependencies [4bb1c3e]
 - Updated dependencies [93c2290]
-  - @hyperlane-xyz/sdk@35.0.1
-  - @hyperlane-xyz/utils@35.0.1
+  - @humanode-hyperlane/sdk@35.0.1
+  - @humanode-hyperlane/utils@35.0.1
 
 ## 35.0.0
 
@@ -389,8 +389,8 @@
 - Updated dependencies [631d7e7]
 - Updated dependencies [6c687ee]
 - Updated dependencies [a8c9430]
-  - @hyperlane-xyz/sdk@35.0.0
-  - @hyperlane-xyz/utils@35.0.0
+  - @humanode-hyperlane/sdk@35.0.0
+  - @humanode-hyperlane/utils@35.0.0
 
 ## 34.0.0
 
@@ -400,8 +400,8 @@
 - Updated dependencies [f758a70]
 - Updated dependencies [2151352]
 - Updated dependencies [b8a600c]
-  - @hyperlane-xyz/sdk@34.0.0
-  - @hyperlane-xyz/utils@34.0.0
+  - @humanode-hyperlane/sdk@34.0.0
+  - @humanode-hyperlane/utils@34.0.0
 
 ## 33.1.1
 
@@ -411,8 +411,8 @@
 - Updated dependencies [530f02e]
 - Updated dependencies [9670e43]
 - Updated dependencies [cc90a8f]
-  - @hyperlane-xyz/sdk@33.1.1
-  - @hyperlane-xyz/utils@33.1.1
+  - @humanode-hyperlane/sdk@33.1.1
+  - @humanode-hyperlane/utils@33.1.1
 
 ## 33.1.0
 
@@ -424,8 +424,8 @@
 - Updated dependencies [47649b7]
 - Updated dependencies [0b1c1d1]
 - Updated dependencies [d9dec53]
-  - @hyperlane-xyz/sdk@33.1.0
-  - @hyperlane-xyz/utils@33.1.0
+  - @humanode-hyperlane/sdk@33.1.0
+  - @humanode-hyperlane/utils@33.1.0
 
 ## 33.0.2
 
@@ -433,8 +433,8 @@
 
 - Updated dependencies [1f918d0]
 - Updated dependencies [78199f4]
-  - @hyperlane-xyz/sdk@33.0.2
-  - @hyperlane-xyz/utils@33.0.2
+  - @humanode-hyperlane/sdk@33.0.2
+  - @humanode-hyperlane/utils@33.0.2
 
 ## 33.0.1
 
@@ -442,16 +442,16 @@
 
 - Updated dependencies [a2081df]
 - Updated dependencies [4c91737]
-  - @hyperlane-xyz/sdk@33.0.1
-  - @hyperlane-xyz/utils@33.0.1
+  - @humanode-hyperlane/sdk@33.0.1
+  - @humanode-hyperlane/utils@33.0.1
 
 ## 33.0.0
 
 ### Patch Changes
 
 - Updated dependencies [dc8e560]
-  - @hyperlane-xyz/sdk@33.0.0
-  - @hyperlane-xyz/utils@33.0.0
+  - @humanode-hyperlane/sdk@33.0.0
+  - @humanode-hyperlane/utils@33.0.0
 
 ## 32.0.1
 
@@ -459,8 +459,8 @@
 
 - Updated dependencies [611b911]
 - Updated dependencies [c6de4c9]
-  - @hyperlane-xyz/sdk@32.0.1
-  - @hyperlane-xyz/utils@32.0.1
+  - @humanode-hyperlane/sdk@32.0.1
+  - @humanode-hyperlane/utils@32.0.1
 
 ## 32.0.0
 
@@ -470,24 +470,24 @@
 - Updated dependencies [d588eb5]
 - Updated dependencies [ab17263]
 - Updated dependencies [ebde778]
-  - @hyperlane-xyz/sdk@32.0.0
-  - @hyperlane-xyz/utils@32.0.0
+  - @humanode-hyperlane/sdk@32.0.0
+  - @humanode-hyperlane/utils@32.0.0
 
 ## 31.2.1
 
 ### Patch Changes
 
 - Updated dependencies [f9c8f83]
-  - @hyperlane-xyz/sdk@31.2.1
-  - @hyperlane-xyz/utils@31.2.1
+  - @humanode-hyperlane/sdk@31.2.1
+  - @humanode-hyperlane/utils@31.2.1
 
 ## 31.2.0
 
 ### Patch Changes
 
 - Updated dependencies [35fb5c8]
-  - @hyperlane-xyz/sdk@31.2.0
-  - @hyperlane-xyz/utils@31.2.0
+  - @humanode-hyperlane/sdk@31.2.0
+  - @humanode-hyperlane/utils@31.2.0
 
 ## 31.1.0
 
@@ -496,16 +496,16 @@
 - Updated dependencies [8a082af]
 - Updated dependencies [c8fe242]
 - Updated dependencies [8a082af]
-  - @hyperlane-xyz/sdk@31.1.0
-  - @hyperlane-xyz/utils@31.1.0
+  - @humanode-hyperlane/sdk@31.1.0
+  - @humanode-hyperlane/utils@31.1.0
 
 ## 31.0.1
 
 ### Patch Changes
 
 - Updated dependencies [d5168fc]
-  - @hyperlane-xyz/utils@31.0.1
-  - @hyperlane-xyz/sdk@31.0.1
+  - @humanode-hyperlane/utils@31.0.1
+  - @humanode-hyperlane/sdk@31.0.1
 
 ## 31.0.0
 
@@ -517,16 +517,16 @@
 - Updated dependencies [9003721]
 - Updated dependencies [69e6b3f]
 - Updated dependencies [fc0a1cf]
-  - @hyperlane-xyz/sdk@31.0.0
-  - @hyperlane-xyz/utils@31.0.0
+  - @humanode-hyperlane/sdk@31.0.0
+  - @humanode-hyperlane/utils@31.0.0
 
 ## 30.1.1
 
 ### Patch Changes
 
 - Updated dependencies [26d682b]
-  - @hyperlane-xyz/sdk@30.1.1
-  - @hyperlane-xyz/utils@30.1.1
+  - @humanode-hyperlane/sdk@30.1.1
+  - @humanode-hyperlane/utils@30.1.1
 
 ## 30.1.0
 
@@ -541,8 +541,8 @@
 - Updated dependencies [6f8c503]
 - Updated dependencies [5eae48e]
 - Updated dependencies [57e46b1]
-  - @hyperlane-xyz/sdk@30.1.0
-  - @hyperlane-xyz/utils@30.1.0
+  - @humanode-hyperlane/sdk@30.1.0
+  - @humanode-hyperlane/utils@30.1.0
 
 ## 30.0.0
 
@@ -552,8 +552,8 @@
 - Updated dependencies [d0dbf1a]
 - Updated dependencies [95c2891]
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/sdk@30.0.0
-  - @hyperlane-xyz/utils@30.0.0
+  - @humanode-hyperlane/sdk@30.0.0
+  - @humanode-hyperlane/utils@30.0.0
 
 ## 29.1.0
 
@@ -561,16 +561,16 @@
 
 - Updated dependencies [a8192d7]
 - Updated dependencies [a891402]
-  - @hyperlane-xyz/sdk@29.1.0
-  - @hyperlane-xyz/utils@29.1.0
+  - @humanode-hyperlane/sdk@29.1.0
+  - @humanode-hyperlane/utils@29.1.0
 
 ## 29.0.1
 
 ### Patch Changes
 
 - Updated dependencies [96508ed]
-  - @hyperlane-xyz/sdk@29.0.1
-  - @hyperlane-xyz/utils@29.0.1
+  - @humanode-hyperlane/sdk@29.0.1
+  - @humanode-hyperlane/utils@29.0.1
 
 ## 29.0.0
 
@@ -579,8 +579,8 @@
 - Updated dependencies [cc6d57b]
 - Updated dependencies [3c6b1ad]
 - Updated dependencies [084c6b6]
-  - @hyperlane-xyz/sdk@29.0.0
-  - @hyperlane-xyz/utils@29.0.0
+  - @humanode-hyperlane/sdk@29.0.0
+  - @humanode-hyperlane/utils@29.0.0
 
 ## 28.1.0
 
@@ -589,8 +589,8 @@
 - Updated dependencies [6c715a7]
 - Updated dependencies [2e622e8]
 - Updated dependencies [e93a4c8]
-  - @hyperlane-xyz/sdk@28.1.0
-  - @hyperlane-xyz/utils@28.1.0
+  - @humanode-hyperlane/sdk@28.1.0
+  - @humanode-hyperlane/utils@28.1.0
 
 ## 28.0.0
 
@@ -599,8 +599,8 @@
 - Updated dependencies [b9c6844]
 - Updated dependencies [5a5d172]
 - Updated dependencies [a4a74d8]
-  - @hyperlane-xyz/sdk@28.0.0
-  - @hyperlane-xyz/utils@28.0.0
+  - @humanode-hyperlane/sdk@28.0.0
+  - @humanode-hyperlane/utils@28.0.0
 
 ## 27.1.0
 
@@ -610,8 +610,8 @@
 - Updated dependencies [a1f9e41]
 - Updated dependencies [b892e61]
 - Updated dependencies [7af7728]
-  - @hyperlane-xyz/sdk@27.1.0
-  - @hyperlane-xyz/utils@27.1.0
+  - @humanode-hyperlane/sdk@27.1.0
+  - @humanode-hyperlane/utils@27.1.0
 
 ## 27.0.0
 
@@ -622,8 +622,8 @@
 - Updated dependencies [8a6f742]
 - Updated dependencies [b05e242]
 - Updated dependencies [aee625c]
-  - @hyperlane-xyz/sdk@27.0.0
-  - @hyperlane-xyz/utils@27.0.0
+  - @humanode-hyperlane/sdk@27.0.0
+  - @humanode-hyperlane/utils@27.0.0
 
 ## 26.0.0
 
@@ -633,8 +633,8 @@
 - Updated dependencies [06aacac]
 - Updated dependencies [763a264]
 - Updated dependencies [1d116d8]
-  - @hyperlane-xyz/sdk@26.0.0
-  - @hyperlane-xyz/utils@26.0.0
+  - @humanode-hyperlane/sdk@26.0.0
+  - @humanode-hyperlane/utils@26.0.0
 
 ## 25.5.0
 
@@ -645,16 +645,16 @@
 - Updated dependencies [69b48fa]
 - Updated dependencies [048df98]
 - Updated dependencies [840fb33]
-  - @hyperlane-xyz/sdk@25.5.0
-  - @hyperlane-xyz/utils@25.5.0
+  - @humanode-hyperlane/sdk@25.5.0
+  - @humanode-hyperlane/utils@25.5.0
 
 ## 25.4.1
 
 ### Patch Changes
 
 - Updated dependencies [5a7efbb]
-  - @hyperlane-xyz/sdk@25.4.1
-  - @hyperlane-xyz/utils@25.4.1
+  - @humanode-hyperlane/sdk@25.4.1
+  - @humanode-hyperlane/utils@25.4.1
 
 ## 25.4.0
 
@@ -667,30 +667,30 @@
 - Updated dependencies [942bbfb]
 - Updated dependencies [a3f7fd3]
 - Updated dependencies [2a6bd61]
-  - @hyperlane-xyz/utils@25.4.0
-  - @hyperlane-xyz/sdk@25.4.0
+  - @humanode-hyperlane/utils@25.4.0
+  - @humanode-hyperlane/sdk@25.4.0
 
 ## 25.3.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/sdk@25.3.2
-- @hyperlane-xyz/utils@25.3.2
+- @humanode-hyperlane/sdk@25.3.2
+- @humanode-hyperlane/utils@25.3.2
 
 ## 25.3.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/sdk@25.3.1
-- @hyperlane-xyz/utils@25.3.1
+- @humanode-hyperlane/sdk@25.3.1
+- @humanode-hyperlane/utils@25.3.1
 
 ## 25.3.0
 
 ### Patch Changes
 
 - Updated dependencies [aea767c]
-  - @hyperlane-xyz/sdk@25.3.0
-  - @hyperlane-xyz/utils@25.3.0
+  - @humanode-hyperlane/sdk@25.3.0
+  - @humanode-hyperlane/utils@25.3.0
 
 ## 25.2.0
 
@@ -705,8 +705,8 @@
 - Updated dependencies [ccd638d]
 - Updated dependencies [c61d612]
 - Updated dependencies [c2affe2]
-  - @hyperlane-xyz/sdk@25.2.0
-  - @hyperlane-xyz/utils@25.2.0
+  - @humanode-hyperlane/sdk@25.2.0
+  - @humanode-hyperlane/utils@25.2.0
 
 ## 25.1.0
 
@@ -714,18 +714,18 @@
 
 - Updated dependencies [b930534]
 - Updated dependencies [a18d0e6]
-  - @hyperlane-xyz/sdk@25.1.0
-  - @hyperlane-xyz/utils@25.1.0
+  - @humanode-hyperlane/sdk@25.1.0
+  - @humanode-hyperlane/utils@25.1.0
 
 ## 25.0.0
 
 ### Patch Changes
 
-- 52ce778: A `LazyAsync` helper was added to `@hyperlane-xyz/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
+- 52ce778: A `LazyAsync` helper was added to `@humanode-hyperlane/utils` for safe, deduplicated async initialization. It replaces the scattered pattern of `if (!cached) { cached = await init(); } return cached` with an approach that deduplicates concurrent callers, clears state on errors to allow retries, and supports reset capability. Consumer packages were migrated to use this utility.
 - Updated dependencies [52ce778]
 - Updated dependencies [aaabbad]
-  - @hyperlane-xyz/utils@25.0.0
-  - @hyperlane-xyz/sdk@25.0.0
+  - @humanode-hyperlane/utils@25.0.0
+  - @humanode-hyperlane/sdk@25.0.0
 
 ## 24.0.0
 
@@ -744,8 +744,8 @@
 - Updated dependencies [bde05e9]
 - Updated dependencies [d0b8c24]
 - Updated dependencies [4de5071]
-  - @hyperlane-xyz/utils@24.0.0
-  - @hyperlane-xyz/sdk@24.0.0
+  - @humanode-hyperlane/utils@24.0.0
+  - @humanode-hyperlane/sdk@24.0.0
 
 ## 23.0.0
 
@@ -763,8 +763,8 @@
 - Updated dependencies [9aa93f4]
 - Updated dependencies [42b72c3]
 - Updated dependencies [a5d6cae]
-  - @hyperlane-xyz/sdk@23.0.0
-  - @hyperlane-xyz/utils@23.0.0
+  - @humanode-hyperlane/sdk@23.0.0
+  - @humanode-hyperlane/utils@23.0.0
 
 ## 22.0.0
 
@@ -780,15 +780,15 @@
 - Updated dependencies [7a0a9e4]
 - Updated dependencies [3aec1c4]
 - Updated dependencies [b892d63]
-  - @hyperlane-xyz/sdk@22.0.0
-  - @hyperlane-xyz/utils@22.0.0
+  - @humanode-hyperlane/sdk@22.0.0
+  - @humanode-hyperlane/utils@22.0.0
 
 ## 21.1.0
 
 ### Patch Changes
 
-- @hyperlane-xyz/sdk@21.1.0
-- @hyperlane-xyz/utils@21.1.0
+- @humanode-hyperlane/sdk@21.1.0
+- @humanode-hyperlane/utils@21.1.0
 
 ## 21.0.0
 
@@ -800,16 +800,16 @@
 - Updated dependencies [bc8b22f]
 - Updated dependencies [ed10fc1]
 - Updated dependencies [0bce4e7]
-  - @hyperlane-xyz/sdk@21.0.0
-  - @hyperlane-xyz/utils@21.0.0
+  - @humanode-hyperlane/sdk@21.0.0
+  - @humanode-hyperlane/utils@21.0.0
 
 ## 20.1.0
 
 ### Patch Changes
 
 - Updated dependencies [11fa887]
-  - @hyperlane-xyz/sdk@20.1.0
-  - @hyperlane-xyz/utils@20.1.0
+  - @humanode-hyperlane/sdk@20.1.0
+  - @humanode-hyperlane/utils@20.1.0
 
 ## 20.0.0
 
@@ -817,16 +817,16 @@
 
 - Updated dependencies [b3ebc08]
 - Updated dependencies [a7dc73d]
-  - @hyperlane-xyz/utils@20.0.0
-  - @hyperlane-xyz/sdk@20.0.0
+  - @humanode-hyperlane/utils@20.0.0
+  - @humanode-hyperlane/sdk@20.0.0
 
 ## 19.13.0
 
 ### Patch Changes
 
 - Updated dependencies [3592f258a]
-  - @hyperlane-xyz/sdk@19.13.0
-  - @hyperlane-xyz/utils@19.13.0
+  - @humanode-hyperlane/sdk@19.13.0
+  - @humanode-hyperlane/utils@19.13.0
 
 ## 19.12.0
 
@@ -838,8 +838,8 @@
 - Updated dependencies [618615dc4]
 - Updated dependencies [e37100e2e]
 - Updated dependencies [08cf7eca9]
-  - @hyperlane-xyz/sdk@19.12.0
-  - @hyperlane-xyz/utils@19.12.0
+  - @humanode-hyperlane/sdk@19.12.0
+  - @humanode-hyperlane/utils@19.12.0
 
 ## 19.11.0
 
@@ -847,8 +847,8 @@
 
 - Updated dependencies [156a37d6e]
 - Updated dependencies [4c29cd341]
-  - @hyperlane-xyz/sdk@19.11.0
-  - @hyperlane-xyz/utils@19.11.0
+  - @humanode-hyperlane/sdk@19.11.0
+  - @humanode-hyperlane/utils@19.11.0
 
 ## 19.10.0
 
@@ -863,8 +863,8 @@
 - Updated dependencies [66bed7126]
 - Updated dependencies [43ecd628c]
 - Updated dependencies [f604423b9]
-  - @hyperlane-xyz/utils@19.10.0
-  - @hyperlane-xyz/sdk@19.10.0
+  - @humanode-hyperlane/utils@19.10.0
+  - @humanode-hyperlane/sdk@19.10.0
 
 ## 19.9.0
 
@@ -872,8 +872,8 @@
 
 - Updated dependencies [8c027d852]
 - Updated dependencies [8c027d852]
-  - @hyperlane-xyz/utils@19.9.0
-  - @hyperlane-xyz/sdk@19.9.0
+  - @humanode-hyperlane/utils@19.9.0
+  - @humanode-hyperlane/sdk@19.9.0
 
 ## 19.8.0
 
@@ -885,8 +885,8 @@
 - Updated dependencies [78ff6cd47]
 - Updated dependencies [00b014a3e]
 - Updated dependencies [3f75ad86d]
-  - @hyperlane-xyz/sdk@19.8.0
-  - @hyperlane-xyz/utils@19.8.0
+  - @humanode-hyperlane/sdk@19.8.0
+  - @humanode-hyperlane/utils@19.8.0
 
 ## 19.7.0
 
@@ -898,8 +898,8 @@
 - Updated dependencies [343737271]
 - Updated dependencies [c68722d93]
 - Updated dependencies [5c4cef1d4]
-  - @hyperlane-xyz/sdk@19.7.0
-  - @hyperlane-xyz/utils@19.7.0
+  - @humanode-hyperlane/sdk@19.7.0
+  - @humanode-hyperlane/utils@19.7.0
 
 ## 19.6.0
 
@@ -914,8 +914,8 @@
 - Updated dependencies [b259966fe]
 - Updated dependencies [419e16910]
 - Updated dependencies [9185b9c5b]
-  - @hyperlane-xyz/sdk@19.6.0
-  - @hyperlane-xyz/utils@19.6.0
+  - @humanode-hyperlane/sdk@19.6.0
+  - @humanode-hyperlane/utils@19.6.0
 
 ## 19.6.0-beta.0
 
@@ -930,8 +930,8 @@
 - Updated dependencies [b259966fe]
 - Updated dependencies [419e16910]
 - Updated dependencies [9185b9c5b]
-  - @hyperlane-xyz/sdk@19.6.0-beta.0
-  - @hyperlane-xyz/utils@19.6.0-beta.0
+  - @humanode-hyperlane/sdk@19.6.0-beta.0
+  - @humanode-hyperlane/utils@19.6.0-beta.0
 
 ## 19.5.0
 
@@ -941,8 +941,8 @@
 - Updated dependencies [bf2c2caa6]
 - Updated dependencies [312826d10]
 - Updated dependencies [79a51debe]
-  - @hyperlane-xyz/sdk@19.5.0
-  - @hyperlane-xyz/utils@19.5.0
+  - @humanode-hyperlane/sdk@19.5.0
+  - @humanode-hyperlane/utils@19.5.0
 
 ## 19.4.0
 
@@ -954,39 +954,39 @@
 - Updated dependencies [79f55e09d]
 - Updated dependencies [5a4e22d34]
 - Updated dependencies [517bbaa42]
-  - @hyperlane-xyz/sdk@19.4.0
-  - @hyperlane-xyz/utils@19.4.0
+  - @humanode-hyperlane/sdk@19.4.0
+  - @humanode-hyperlane/utils@19.4.0
 
 ## 19.3.0
 
 ### Patch Changes
 
 - Updated dependencies [fcdda58a8]
-  - @hyperlane-xyz/sdk@19.3.0
-  - @hyperlane-xyz/utils@19.3.0
+  - @humanode-hyperlane/sdk@19.3.0
+  - @humanode-hyperlane/utils@19.3.0
 
 ## 19.2.0
 
 ### Patch Changes
 
 - Updated dependencies [f68419605]
-  - @hyperlane-xyz/sdk@19.2.0
-  - @hyperlane-xyz/utils@19.2.0
+  - @humanode-hyperlane/sdk@19.2.0
+  - @humanode-hyperlane/utils@19.2.0
 
 ## 19.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/sdk@19.1.1
-- @hyperlane-xyz/utils@19.1.1
+- @humanode-hyperlane/sdk@19.1.1
+- @humanode-hyperlane/utils@19.1.1
 
 ## 19.1.0
 
 ### Patch Changes
 
 - Updated dependencies [554ff1a66]
-  - @hyperlane-xyz/sdk@19.1.0
-  - @hyperlane-xyz/utils@19.1.0
+  - @humanode-hyperlane/sdk@19.1.0
+  - @humanode-hyperlane/utils@19.1.0
 
 ## 19.0.0
 
@@ -999,8 +999,8 @@
 - Updated dependencies [dd4928b1c]
 - Updated dependencies [32479e139]
 - Updated dependencies [32479e139]
-  - @hyperlane-xyz/utils@19.0.0
-  - @hyperlane-xyz/sdk@19.0.0
+  - @humanode-hyperlane/utils@19.0.0
+  - @humanode-hyperlane/sdk@19.0.0
 
 ## 18.3.0
 
@@ -1019,8 +1019,8 @@
 - Updated dependencies [ee7c7ade4]
 - Updated dependencies [6b8419370]
 - Updated dependencies [94e7116c2]
-  - @hyperlane-xyz/sdk@18.3.0
-  - @hyperlane-xyz/utils@18.3.0
+  - @humanode-hyperlane/sdk@18.3.0
+  - @humanode-hyperlane/utils@18.3.0
 
 ## 18.2.0
 
@@ -1029,16 +1029,16 @@
 - Updated dependencies [fed6906e4]
 - Updated dependencies [ca64e73cd]
 - Updated dependencies [dfa9d368c]
-  - @hyperlane-xyz/sdk@18.2.0
-  - @hyperlane-xyz/utils@18.2.0
+  - @humanode-hyperlane/sdk@18.2.0
+  - @humanode-hyperlane/utils@18.2.0
 
 ## 18.1.0
 
 ### Patch Changes
 
 - Updated dependencies [73be9b8d2]
-  - @hyperlane-xyz/sdk@18.1.0
-  - @hyperlane-xyz/utils@18.1.0
+  - @humanode-hyperlane/sdk@18.1.0
+  - @humanode-hyperlane/utils@18.1.0
 
 ## 18.0.0
 
@@ -1047,8 +1047,8 @@
 - Updated dependencies [552b253b9]
 - Updated dependencies [ba832828f]
 - Updated dependencies [cfc0eb2a7]
-  - @hyperlane-xyz/sdk@18.0.0
-  - @hyperlane-xyz/utils@18.0.0
+  - @humanode-hyperlane/sdk@18.0.0
+  - @humanode-hyperlane/utils@18.0.0
 
 ## 17.0.0
 
@@ -1060,8 +1060,8 @@
 - Updated dependencies [6583df016]
 - Updated dependencies [e0bda316a]
 - Updated dependencies [7f542b288]
-  - @hyperlane-xyz/sdk@17.0.0
-  - @hyperlane-xyz/utils@17.0.0
+  - @humanode-hyperlane/sdk@17.0.0
+  - @humanode-hyperlane/utils@17.0.0
 
 ## 16.2.0
 
@@ -1070,16 +1070,16 @@
 - Updated dependencies [22ceaa109]
 - Updated dependencies [ce4974214]
 - Updated dependencies [a89018a3f]
-  - @hyperlane-xyz/sdk@16.2.0
-  - @hyperlane-xyz/utils@16.2.0
+  - @humanode-hyperlane/sdk@16.2.0
+  - @humanode-hyperlane/utils@16.2.0
 
 ## 16.1.1
 
 ### Patch Changes
 
 - Updated dependencies [ea77b6ae4]
-  - @hyperlane-xyz/sdk@16.1.1
-  - @hyperlane-xyz/utils@16.1.1
+  - @humanode-hyperlane/sdk@16.1.1
+  - @humanode-hyperlane/utils@16.1.1
 
 ## 16.1.0
 
@@ -1088,8 +1088,8 @@
 - Updated dependencies [2a2c29c39]
 - Updated dependencies [e69ac9f62]
 - Updated dependencies [d9b8a7551]
-  - @hyperlane-xyz/sdk@16.1.0
-  - @hyperlane-xyz/utils@16.1.0
+  - @humanode-hyperlane/sdk@16.1.0
+  - @humanode-hyperlane/utils@16.1.0
 
 ## 16.0.0
 
@@ -1107,8 +1107,8 @@
 - Updated dependencies [a71193486]
 - Updated dependencies [1f4412909]
 - Updated dependencies [af783be54]
-  - @hyperlane-xyz/sdk@16.0.0
-  - @hyperlane-xyz/utils@16.0.0
+  - @humanode-hyperlane/sdk@16.0.0
+  - @humanode-hyperlane/utils@16.0.0
 
 ## 15.0.0
 
@@ -1124,5 +1124,5 @@
 - Updated dependencies [a33c8abd4]
 - Updated dependencies [e0ea8910c]
 - Updated dependencies [d16a853c0]
-  - @hyperlane-xyz/utils@15.0.0
-  - @hyperlane-xyz/sdk@15.0.0
+  - @humanode-hyperlane/utils@15.0.0
+  - @humanode-hyperlane/sdk@15.0.0

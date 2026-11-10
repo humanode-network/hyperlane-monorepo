@@ -5,8 +5,8 @@ import { providers } from 'ethers';
 import {
   EthJsonRpcBlockParameterTag,
   type MultiProtocolProvider,
-} from '@hyperlane-xyz/sdk';
-import { isEVMLike, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { isEVMLike, ProtocolType } from '@humanode-hyperlane/utils';
 import type { ConfirmedBlockTag } from '../interfaces/IMonitor.js';
 
 const HEX_BLOCK_NUMBER_REGEX = /^0x[0-9a-fA-F]+$/;

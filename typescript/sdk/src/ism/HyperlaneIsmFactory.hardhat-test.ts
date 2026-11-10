@@ -19,7 +19,7 @@ import {
   TestIsm__factory,
   TestLegacyBlacklistIsm__factory,
   TrustedRelayerIsm,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   WithAddress,
@@ -27,7 +27,7 @@ import {
   addressToBytes32,
   assert,
   randomInt,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { TestChainName, test2, testChains } from '../consts/testChains.js';
 import { HyperlaneContractsMap } from '../contracts/types.js';

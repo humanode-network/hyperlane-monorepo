@@ -1,4 +1,4 @@
-import type { ProtocolType } from '@hyperlane-xyz/provider-sdk';
+import type { ProtocolType } from '@humanode-hyperlane/provider-sdk';
 
 import type { IToken } from '../token/IToken.js';
 import type { TokenAmount } from '../token/TokenAmount.js';

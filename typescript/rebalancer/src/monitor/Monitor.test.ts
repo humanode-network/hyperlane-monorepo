@@ -11,8 +11,8 @@ import {
   Token,
   TokenStandard,
   WarpCore,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { type MonitorEvent, MonitorEventType } from '../interfaces/IMonitor.js';
 

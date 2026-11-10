@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { TokenFeeType, TxSubmitterType } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { TokenFeeType, TxSubmitterType } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   getEclipseWarpStrategyConfig,

@@ -5,8 +5,8 @@ import {
   localAmountFromMessage,
   type ChainMap,
   type Token,
-} from '@hyperlane-xyz/sdk';
-import { fromWei } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { fromWei } from '@humanode-hyperlane/utils';
 
 import {
   type MinAmountStrategyConfig,

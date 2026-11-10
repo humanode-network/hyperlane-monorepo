@@ -4,13 +4,13 @@ import { pino } from 'pino';
 import { getAddress, hexToBytes } from 'viem';
 import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedRawWarpArtifact,
   TokenType as ArtifactTokenType,
-} from '@hyperlane-xyz/provider-sdk/warp';
-import { SvmWarpArtifactManager } from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/provider-sdk/warp';
+import { SvmWarpArtifactManager } from '@humanode-hyperlane/sealevel-sdk';
 import {
   type DerivedTokenRouterConfig,
   EvmWarpRouteReader,
@@ -18,7 +18,7 @@ import {
   HyperlaneCore,
   MultiProvider,
   TokenType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { QuoteMode } from '../../src/config.js';
 import { EvmQuoteService } from '../../src/services/evmQuoteService.js';

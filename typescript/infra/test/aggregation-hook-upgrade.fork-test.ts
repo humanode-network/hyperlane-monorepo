@@ -9,20 +9,20 @@ import {
   IERC20__factory,
   InterchainGasPaymaster__factory,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   ChainMap,
   ChainMetadata,
   MultiProvider,
   getDomainId as resolveDomainId,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   ProtocolType,
   assert,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { supportedChainNames } from '../config/environments/mainnet3/supportedChainNames.js';
 import { getChainMetadata, getDomainId } from '../config/registry.js';

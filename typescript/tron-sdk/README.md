@@ -7,17 +7,17 @@ It can be used as a standalone SDK for frontend or in backend applications which
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/tron-sdk
+npm install @humanode-hyperlane/tron-sdk
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/tron-sdk
+pnpm add @humanode-hyperlane/tron-sdk
 ```
 
 ## Usage
 
 ```ts
-import { TronProvider, TronSigner } from "@hyperlane-xyz/tron-sdk";
-import { ChainMetadataForAltVM, ProtocolType } from "@hyperlane-xyz/provider-sdk";
+import { TronProvider, TronSigner } from "@humanode-hyperlane/tron-sdk";
+import { ChainMetadataForAltVM, ProtocolType } from "@humanode-hyperlane/provider-sdk";
 
 const metadata: ChainMetadataForAltVM = {
   name: 'tron',

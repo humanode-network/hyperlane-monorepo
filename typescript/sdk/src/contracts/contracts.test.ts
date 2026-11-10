@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { Address } from '@hyperlane-xyz/utils';
+import { Address } from '@humanode-hyperlane/utils';
 
 import type { EthersLikeProvider } from '../deploy/proxy.js';
 

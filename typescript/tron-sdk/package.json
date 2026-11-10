@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/tron-sdk",
+  "name": "@humanode-hyperlane/tron-sdk",
   "version": "26.0.3",
   "description": "Hyperlane TypeScript SDK for Tron",
   "keywords": [
@@ -10,7 +10,7 @@
   ],
   "homepage": "https://www.hyperlane.xyz",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "/dist",
     "local-node"
@@ -43,16 +43,16 @@
   "dependencies": {
     "@ethersproject/abi": "*",
     "@ethersproject/providers": "*",
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/provider-sdk": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@humanode-hyperlane/core": "workspace:*",
+    "@humanode-hyperlane/provider-sdk": "workspace:*",
+    "@humanode-hyperlane/registry": "catalog:",
+    "@humanode-hyperlane/utils": "workspace:*",
     "bignumber.js": "catalog:",
     "ethers": "catalog:",
     "tronweb": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/chai": "catalog:",
     "@types/chai-as-promised": "catalog:",
     "@types/mocha": "catalog:",

@@ -11,15 +11,15 @@ import {
   MailboxClient__factory,
   Mailbox__factory,
   StaticAggregationIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   type DerivedIsmConfig,
   EvmIsmReader,
   type IsmConfig,
   IsmType,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import type {
   ExplorerMessage,

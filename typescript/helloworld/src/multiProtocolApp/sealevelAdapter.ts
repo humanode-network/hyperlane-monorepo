@@ -20,9 +20,9 @@ import {
   SealevelRouterAdapter,
   SolanaWeb3Transaction,
   getSealevelAccountDataSchema,
-} from '@hyperlane-xyz/sdk';
-import type { MultiProviderAdapter } from '@hyperlane-xyz/sdk/providers/MultiProviderAdapter';
-import { Address, Domain } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import type { MultiProviderAdapter } from '@humanode-hyperlane/sdk/providers/MultiProviderAdapter';
+import { Address, Domain } from '@humanode-hyperlane/utils';
 
 import { IHelloWorldAdapter } from './types.js';
 

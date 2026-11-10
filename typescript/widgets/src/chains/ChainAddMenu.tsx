@@ -1,23 +1,23 @@
 import { clsx } from 'clsx';
 import React, { useMemo, useState } from 'react';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
 import {
   ChainMetadata,
   ChainMetadataSchema,
   mergeChainMetadataMap,
-} from '@hyperlane-xyz/sdk/metadata/chainMetadataTypes';
+} from '@humanode-hyperlane/sdk/metadata/chainMetadataTypes';
 import {
   areChainIdsEqual,
   getEffectiveDomainId,
-} from '@hyperlane-xyz/sdk/metadata/chainIdUtils';
-import type { ChainMap } from '@hyperlane-xyz/sdk/types';
+} from '@humanode-hyperlane/sdk/metadata/chainIdUtils';
+import type { ChainMap } from '@humanode-hyperlane/sdk/types';
 import {
   Result,
   failure,
   success,
   tryParseJsonOrYaml,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ColorPalette } from '../color.js';
 import { Button } from '../components/Button.js';

@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/relayer",
+  "name": "@humanode-hyperlane/relayer",
   "version": "4.1.0",
   "description": "Hyperlane Message Relayer Service",
   "keywords": [
@@ -11,7 +11,7 @@
   ],
   "license": "Apache-2.0",
   "author": "Abacus Works, Inc.",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "dist",
     "src"
@@ -60,11 +60,11 @@
   "dependencies": {
     "@arbitrum/sdk": "catalog:",
     "@google-cloud/pino-logging-gcp-config": "catalog:",
-    "@hyperlane-xyz/core": "workspace:*",
-    "@hyperlane-xyz/metrics": "workspace:*",
-    "@hyperlane-xyz/registry": "catalog:",
-    "@hyperlane-xyz/sdk": "workspace:*",
-    "@hyperlane-xyz/utils": "workspace:*",
+    "@humanode-hyperlane/core": "workspace:*",
+    "@humanode-hyperlane/metrics": "workspace:*",
+    "@humanode-hyperlane/registry": "catalog:",
+    "@humanode-hyperlane/sdk": "workspace:*",
+    "@humanode-hyperlane/utils": "workspace:*",
     "ethers": "catalog:",
     "pino": "catalog:",
     "pino-pretty": "catalog:",
@@ -74,7 +74,7 @@
   },
   "devDependencies": {
     "@ethersproject/providers": "*",
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@nomiclabs/hardhat-ethers": "catalog:",
     "@nomiclabs/hardhat-waffle": "catalog:",
     "@types/chai": "catalog:",

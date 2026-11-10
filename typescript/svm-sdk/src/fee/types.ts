@@ -1,8 +1,8 @@
 import type { Address } from '@solana/kit';
 import { keccak_256 } from '@noble/hashes/sha3';
 
-import type { DeployedFeeAddress } from '@hyperlane-xyz/provider-sdk/fee';
-import { assert, strip0x } from '@hyperlane-xyz/utils';
+import type { DeployedFeeAddress } from '@humanode-hyperlane/provider-sdk/fee';
+import { assert, strip0x } from '@humanode-hyperlane/utils';
 
 import type { SvmProgramTarget } from '../types.js';
 

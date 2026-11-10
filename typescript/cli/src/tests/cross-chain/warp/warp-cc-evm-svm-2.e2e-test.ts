@@ -6,24 +6,24 @@ import { $ } from 'zx';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   TokenFeeType,
   TokenType,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   FALLBACK_SIMULATION_PAYER,
   SealevelSigner,
   createRpc,
-} from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/sealevel-sdk';
 import {
   type SolanaTestValidator,
   airdropSol,
   getPreloadedPrograms,
   runSolanaNode,
-} from '@hyperlane-xyz/sealevel-sdk/testing';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sealevel-sdk/testing';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

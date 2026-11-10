@@ -7,8 +7,8 @@ import { join } from 'node:path';
 import sinon from 'sinon';
 import request from 'supertest';
 
-import { PartialRegistry } from '@hyperlane-xyz/registry';
-import { FileSystemRegistry } from '@hyperlane-xyz/registry/fs';
+import { PartialRegistry } from '@humanode-hyperlane/registry';
+import { FileSystemRegistry } from '@humanode-hyperlane/registry/fs';
 
 import { HttpServer, parseCorsAllowedOrigins } from '../HttpServer.js';
 import { RegistryService } from '../src/services/registryService.js';

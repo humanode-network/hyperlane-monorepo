@@ -8,8 +8,12 @@ import {
   HyperlaneCore,
   MultiProvider,
   RouterApp,
-} from '@hyperlane-xyz/sdk';
-import { Address, addBufferToGasLimit, rootLogger } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  Address,
+  addBufferToGasLimit,
+  rootLogger,
+} from '@humanode-hyperlane/utils';
 
 import { HelloWorld } from '../types/index.js';
 

@@ -1,7 +1,7 @@
 import { BigNumber, providers } from 'ethers';
 
-import { IMessageRecipient } from '@hyperlane-xyz/core';
-import { Address } from '@hyperlane-xyz/utils';
+import { IMessageRecipient } from '@humanode-hyperlane/core';
+import { Address } from '@humanode-hyperlane/utils';
 
 export const DEFAULT_CALL_GAS_FALLBACK = BigNumber.from(50_000);
 

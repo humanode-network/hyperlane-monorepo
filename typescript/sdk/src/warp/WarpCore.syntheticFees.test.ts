@@ -2,7 +2,10 @@ import { expect } from 'chai';
 import { BigNumber, constants, utils } from 'ethers';
 import sinon from 'sinon';
 
-import { ProtocolType, convertToProtocolAddress } from '@hyperlane-xyz/utils';
+import {
+  ProtocolType,
+  convertToProtocolAddress,
+} from '@humanode-hyperlane/utils';
 
 import { test1, test2 } from '../consts/testChains.js';
 import { MultiProtocolProvider } from '../providers/MultiProtocolProvider.js';

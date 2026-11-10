@@ -1,7 +1,7 @@
 import { BigNumber, Contract, ethers } from 'ethers';
 import yargs from 'yargs';
 
-import { ChainMap, InterchainAccount } from '@hyperlane-xyz/sdk';
+import { ChainMap, InterchainAccount } from '@humanode-hyperlane/sdk';
 import {
   Address,
   CallData,
@@ -10,7 +10,7 @@ import {
   formatStandardHookMetadata,
   objFilter,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { Contexts } from '../../config/contexts.js';
 import { getGovernanceSafes } from '../../config/environments/mainnet3/governance/utils.js';

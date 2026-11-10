@@ -4,17 +4,17 @@ import type { Logger } from 'pino';
 import { Registry } from 'prom-client';
 import { type Address, hexToBytes, isAddress, isHex } from 'viem';
 
-import { IRegistry } from '@hyperlane-xyz/registry';
+import { IRegistry } from '@humanode-hyperlane/registry';
 import {
   type ChainMetadata,
   HyperlaneCore,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type ChainMetadataForAltVM,
   ProtocolType,
-} from '@hyperlane-xyz/provider-sdk';
-import { assert, createServiceLogger, pick } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk';
+import { assert, createServiceLogger, pick } from '@humanode-hyperlane/utils';
 
 import packageJson from './package.json' with { type: 'json' };
 import type { ServerConfig } from './src/config.js';

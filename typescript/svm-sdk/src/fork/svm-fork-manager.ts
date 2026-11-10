@@ -15,14 +15,14 @@ import {
 import {
   type ForkedChainMetadata,
   type IForkManager,
-} from '@hyperlane-xyz/forking-sdk';
+} from '@humanode-hyperlane/forking-sdk';
 import {
   assert,
   concurrentMap,
   isNullish,
   pollAsync,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   type AccountInfoRpc,

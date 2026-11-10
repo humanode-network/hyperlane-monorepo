@@ -4,8 +4,12 @@ import { ethers } from 'ethers';
 import { pino } from 'pino';
 import sinon from 'sinon';
 
-import { PartialRegistry } from '@hyperlane-xyz/registry';
-import { ProtocolType, fromHexString, strip0x } from '@hyperlane-xyz/utils';
+import { PartialRegistry } from '@humanode-hyperlane/registry';
+import {
+  ProtocolType,
+  fromHexString,
+  strip0x,
+} from '@humanode-hyperlane/utils';
 
 import { RegistryService } from '../../src/services/registryService.js';
 import { SignerService } from '../../src/signer/signerService.js';

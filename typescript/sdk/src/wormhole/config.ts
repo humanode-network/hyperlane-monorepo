@@ -1,6 +1,6 @@
 import { constants } from 'ethers';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   CombinedHookIsmConfigPair,

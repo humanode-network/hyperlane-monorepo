@@ -1,8 +1,8 @@
 import { TronWeb } from 'tronweb';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert } from '@hyperlane-xyz/utils';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
+import type { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TronReceipt, TronTransaction } from '../utils/types.js';
 

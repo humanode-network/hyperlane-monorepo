@@ -11,15 +11,15 @@ import {
   Mailbox__factory,
   ProxyAdmin__factory,
   TestRecipient__factory,
-} from '@hyperlane-xyz/core';
-import type { ZKSyncArtifact } from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
+import type { ZKSyncArtifact } from '@humanode-hyperlane/core';
 import {
   LayerZeroV2HookIsm__factory as TronLayerZeroV2HookIsm__factory,
   Mailbox__factory as TronMailbox__factory,
   ProxyAdmin__factory as TronProxyAdmin__factory,
   TronContractFactory,
   TestRecipient__factory as TronTestRecipient__factory,
-} from '@hyperlane-xyz/tron-sdk';
+} from '@humanode-hyperlane/tron-sdk';
 import { TestChainName, test1, test2 } from '../consts/testChains.js';
 import type { ProtocolTransaction, ProtocolReceipt } from './ProviderType.js';
 import {

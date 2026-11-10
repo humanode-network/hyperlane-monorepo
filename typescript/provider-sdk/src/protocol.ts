@@ -1,4 +1,4 @@
-import { type NonEmptyArray, assert } from '@hyperlane-xyz/utils';
+import { type NonEmptyArray, assert } from '@humanode-hyperlane/utils';
 
 import { IProvider, ISigner } from './altvm.js';
 import type { ChainMetadataForAltVM } from './chain.js';

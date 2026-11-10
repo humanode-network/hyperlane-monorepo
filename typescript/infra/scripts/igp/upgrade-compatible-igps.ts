@@ -8,7 +8,7 @@ import {
   PackageVersioned__factory,
   ProxyAdmin__factory,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   AnnotatedEV5Transaction,
   ChainMap,
@@ -25,11 +25,11 @@ import {
   extractIsmAndHookFactoryAddresses,
   proxyAdmin,
   proxyImplementation,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   isMissingSelectorCallException,
   isValidContractVersion,
-} from '@hyperlane-xyz/sdk/utils/contract';
+} from '@humanode-hyperlane/sdk/utils/contract';
 import {
   Address,
   assert,
@@ -39,7 +39,7 @@ import {
   formatStandardHookMetadata,
   isEVMLike,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import { BigNumber, ethers } from 'ethers';
 
 import { Contexts } from '../../config/contexts.js';

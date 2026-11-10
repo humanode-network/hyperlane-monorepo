@@ -10,8 +10,8 @@ import {
   TimelockController,
   TimelockController__factory,
   TransparentUpgradeableProxy__factory,
-} from '@hyperlane-xyz/core';
-import { buildArtifact as coreBuildArtifact } from '@hyperlane-xyz/core/buildArtifact.js';
+} from '@humanode-hyperlane/core';
+import { buildArtifact as coreBuildArtifact } from '@humanode-hyperlane/core/buildArtifact.js';
 import {
   Address,
   ProtocolType,
@@ -22,7 +22,7 @@ import {
   pollAsync,
   rootLogger,
   runWithTimeout,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { ExplorerLicenseType } from '../block-explorer/etherscan.js';
 import {

@@ -1,11 +1,11 @@
 import { Wallet } from 'ethers';
 
-import { chainAddresses } from '@hyperlane-xyz/registry';
+import { chainAddresses } from '@humanode-hyperlane/registry';
 import {
   HyperlaneCore,
   MultiProvider,
   serializeContractsMap,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { prodConfigs } from '../deploy/config.js';
 import { HelloWorldDeployer } from '../deploy/deploy.js';

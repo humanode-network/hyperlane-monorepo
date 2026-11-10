@@ -8,13 +8,13 @@ import {
   Mailbox__factory,
   MockLayerZeroEndpointV2__factory,
   MockLayerZeroUln302__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Address,
   ProtocolType,
   addressToBytes32,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   CombinedHookIsmWarpChainConfig,

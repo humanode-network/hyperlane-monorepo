@@ -5,10 +5,10 @@ import { before, describe, it } from 'mocha';
 
 chai.use(chaiAsPromised);
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import type { IgpHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
-import { sleep } from '@hyperlane-xyz/utils';
+import { HookType } from '@humanode-hyperlane/provider-sdk/altvm';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import type { IgpHookConfig } from '@humanode-hyperlane/provider-sdk/hook';
+import { sleep } from '@humanode-hyperlane/utils';
 
 import { SvmSigner } from '../clients/signer.js';
 import { DEFAULT_IGP_SALT, SvmIgpHookWriter } from '../hook/igp-hook.js';

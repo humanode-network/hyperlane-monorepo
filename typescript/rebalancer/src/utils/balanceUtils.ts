@@ -11,8 +11,8 @@ import {
   type NormalizedScale,
   type ScaleAlignment,
   type Token,
-} from '@hyperlane-xyz/sdk';
-import { toWei } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { toWei } from '@humanode-hyperlane/utils';
 
 import { type MonitorEvent } from '../interfaces/IMonitor.js';
 import { type RawBalances } from '../interfaces/IStrategy.js';

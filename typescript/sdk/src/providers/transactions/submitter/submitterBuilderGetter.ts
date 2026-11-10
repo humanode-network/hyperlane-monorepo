@@ -1,4 +1,4 @@
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { ChainMap, ProtocolMap } from '../../../types.js';
 import { MultiProvider } from '../../MultiProvider.js';

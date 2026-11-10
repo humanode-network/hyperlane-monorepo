@@ -2,8 +2,8 @@
 pragma solidity ^0.8.13;
 
 // ============ External Imports ============
-import {Router} from "@hyperlane-xyz/core/contracts/client/Router.sol";
-import {StandardHookMetadata} from "@hyperlane-xyz/core/contracts/hooks/libs/StandardHookMetadata.sol";
+import {Router} from "@humanode-hyperlane/core/contracts/client/Router.sol";
+import {StandardHookMetadata} from "@humanode-hyperlane/core/contracts/hooks/libs/StandardHookMetadata.sol";
 
 /*
  * @title The Hello World App

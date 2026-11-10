@@ -1,4 +1,4 @@
-import { rootLogger } from '@hyperlane-xyz/utils';
+import { rootLogger } from '@humanode-hyperlane/utils';
 import type { FastifyInstance, FastifyRequest } from 'fastify';
 import mercurius, { type MercuriusOptions } from 'mercurius';
 

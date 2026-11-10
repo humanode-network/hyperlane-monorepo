@@ -1,7 +1,7 @@
 import type { Address } from '@solana/kit';
 
-import { FeeType } from '@hyperlane-xyz/provider-sdk/fee';
-import { assert } from '@hyperlane-xyz/utils';
+import { FeeType } from '@humanode-hyperlane/provider-sdk/fee';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   type CrossCollateralRouteData,

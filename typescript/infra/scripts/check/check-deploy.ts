@@ -1,5 +1,5 @@
-import { assert, objMap } from '@hyperlane-xyz/utils';
-import { writeJson } from '@hyperlane-xyz/utils/fs';
+import { assert, objMap } from '@humanode-hyperlane/utils';
+import { writeJson } from '@humanode-hyperlane/utils/fs';
 
 import {
   getCheckDeployArgs,

@@ -7,14 +7,14 @@ import {
   FeeParamsType,
   FeeStrategyType,
   FeeType,
-} from '@hyperlane-xyz/provider-sdk/fee';
+} from '@humanode-hyperlane/provider-sdk/fee';
 import {
   DEFAULT_ROUTER_KEY,
   NoQuoteAvailableReason,
   type SealevelQuoteV2Entry,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { ethAddressHexFromPrivateKey } from '@hyperlane-xyz/sealevel-sdk';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { ethAddressHexFromPrivateKey } from '@humanode-hyperlane/sealevel-sdk';
 
 import { QuoteMode } from '../../src/config.js';
 import {

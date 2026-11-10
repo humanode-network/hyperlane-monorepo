@@ -1,9 +1,9 @@
 import {
   HttpServer,
   type SignerBackends,
-} from '@hyperlane-xyz/http-registry-server';
-import { IRegistry } from '@hyperlane-xyz/registry';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/http-registry-server';
+import { IRegistry } from '@humanode-hyperlane/registry';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { getRegistry as getMainnet3Registry } from '../config/environments/mainnet3/chains.js';
 import { getRegistry as getTestnet4Registry } from '../config/environments/testnet4/chains.js';

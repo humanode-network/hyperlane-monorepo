@@ -7,10 +7,10 @@ import { type StartedTestContainer } from 'testcontainers';
 import {
   createSignerWithPrivateKey,
   runCosmosNode,
-} from '@hyperlane-xyz/cosmos-sdk/testing';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
-import { TokenType, type WarpRouteDeployConfig } from '@hyperlane-xyz/sdk';
-import { type Address, ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/cosmos-sdk/testing';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
+import { TokenType, type WarpRouteDeployConfig } from '@humanode-hyperlane/sdk';
+import { type Address, ProtocolType } from '@humanode-hyperlane/utils';
 
 import { writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

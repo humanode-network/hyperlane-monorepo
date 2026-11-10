@@ -1,5 +1,5 @@
-import { ChainMap } from '@hyperlane-xyz/sdk';
-import { Address } from '@hyperlane-xyz/utils';
+import { ChainMap } from '@humanode-hyperlane/sdk';
+import { Address } from '@humanode-hyperlane/utils';
 
 // Active AbacusWorks safes: own warp routes and/or are referenced as an owner by
 // monorepo config (proxy-admin / warp-router config). Verified against on-chain

@@ -12,7 +12,7 @@ import {
   ProxyAdmin__factory,
   StaticAggregationHook__factory,
   StaticAggregationIsm__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   EvmLayerZeroV2HookIsmReader,
   HookType,
@@ -23,7 +23,7 @@ import {
   WarpRouteDeployConfigSchema,
   WormholeConsistencyType,
   proxyAdmin,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import type {
   HookConfig,
   IsmConfig,
@@ -31,9 +31,9 @@ import type {
   MultiProvider,
   WarpRouteDeployConfigMailboxRequired,
   WormholeIsmConfig,
-} from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../../context/context.js';
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';

@@ -1,18 +1,18 @@
 import { type DeliverTxResponse } from '@cosmjs/stargate';
 
-import { AltVM } from '@hyperlane-xyz/provider-sdk';
+import { AltVM } from '@humanode-hyperlane/provider-sdk';
 import {
   type ArtifactDeployed,
   type ArtifactNew,
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedHookAddress,
   type IgpHookConfig,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { eqAddressCosmos } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/hook';
+import { eqAddressCosmos } from '@humanode-hyperlane/utils';
 
 import { type CosmosNativeSigner } from '../clients/signer.js';
 import { getNewContractAddress } from '../utils/base.js';

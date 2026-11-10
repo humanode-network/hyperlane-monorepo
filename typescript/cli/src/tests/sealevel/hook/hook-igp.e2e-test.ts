@@ -4,12 +4,12 @@ import {
   type HookConfig,
   HookType,
   type IgpHookConfig as IgpHookModuleConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   assert,
   normalizeAddressEvm,
   ProtocolType,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

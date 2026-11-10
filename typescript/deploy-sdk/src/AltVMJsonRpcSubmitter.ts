@@ -1,1 +1,1 @@
-export { AltVMJsonRpcSubmitter } from '@hyperlane-xyz/provider-sdk';
+export { AltVMJsonRpcSubmitter } from '@humanode-hyperlane/provider-sdk';

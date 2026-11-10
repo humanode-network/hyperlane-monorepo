@@ -9,7 +9,7 @@ import {
   getTokenBridgedBalance,
   getXERC20Info,
   startMetricsServer,
-} from '@hyperlane-xyz/metrics';
+} from '@humanode-hyperlane/metrics';
 import {
   Token,
   type TokenAmount,
@@ -17,8 +17,8 @@ import {
   TokenType,
   type WarpCore,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, tryFn } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, tryFn } from '@humanode-hyperlane/utils';
 
 import { type IMetrics } from '../interfaces/IMetrics.js';
 import { type MonitorEvent } from '../interfaces/IMonitor.js';

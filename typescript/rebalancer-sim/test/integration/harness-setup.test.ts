@@ -24,7 +24,7 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { toWei } from '@hyperlane-xyz/utils';
+import { toWei } from '@humanode-hyperlane/utils';
 
 import {
   deployMultiDomainSimulation,

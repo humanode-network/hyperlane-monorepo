@@ -6,7 +6,7 @@ import {
   isNullish,
   rootLogger,
   sleep,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   assertIsContractAddress,

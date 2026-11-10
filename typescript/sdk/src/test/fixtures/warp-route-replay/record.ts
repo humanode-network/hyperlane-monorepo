@@ -4,7 +4,7 @@
 // eslint-disable-next-line import/no-nodejs-modules
 import { writeFileSync } from 'fs';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import {
   REPLAY_FIXTURE_DIR,

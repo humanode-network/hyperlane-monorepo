@@ -1,6 +1,6 @@
 import type { Logger } from 'pino';
 
-import { parseWarpRouteMessage } from '@hyperlane-xyz/utils';
+import { parseWarpRouteMessage } from '@humanode-hyperlane/utils';
 
 import {
   DEFAULT_INFLIGHT_USER_TRANSFER_LIMIT,

@@ -4,7 +4,7 @@ import {
   ProtocolType,
   assert,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { ChainMetadata } from '../metadata/chainMetadataTypes.js';
 import type { ChainName } from '../types.js';

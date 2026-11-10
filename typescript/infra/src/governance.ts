@@ -1,7 +1,7 @@
 import { Argv } from 'yargs';
 
-import { ChainName } from '@hyperlane-xyz/sdk';
-import { Address, eqAddressEvm } from '@hyperlane-xyz/utils';
+import { ChainName } from '@humanode-hyperlane/sdk';
+import { Address, eqAddressEvm } from '@humanode-hyperlane/utils';
 
 import {
   getGovernanceIcas,

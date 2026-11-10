@@ -7,8 +7,8 @@ import {
   MockSafe__factory,
   type TimelockController,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/core';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type CallData,
   type ChainSubmissionStrategy,
@@ -20,7 +20,7 @@ import {
   TxSubmitterType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   type Domain,
@@ -28,7 +28,7 @@ import {
   assert,
   bytes32ToAddress,
   eqAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   CustomTxSubmitterType,

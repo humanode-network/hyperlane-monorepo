@@ -5,7 +5,7 @@ import {
   difference,
   isNullish,
   objMap,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   Artifact,

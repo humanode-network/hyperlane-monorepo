@@ -7,17 +7,17 @@ It can be used as a standalone SDK for frontend or in backend applications which
 
 ```bash
 # Install with NPM
-npm install @hyperlane-xyz/cosmos-sdk
+npm install @humanode-hyperlane/cosmos-sdk
 
 # Or with pnpm
-pnpm add @hyperlane-xyz/cosmos-sdk
+pnpm add @humanode-hyperlane/cosmos-sdk
 ```
 
 ## Usage
 
 ```ts
-import { CosmosNativeProvider, CosmosNativeSigner } from "@hyperlane-xyz/cosmos-sdk";
-import { ChainMetadataForAltVM, ProtocolType } from "@hyperlane-xyz/provider-sdk";
+import { CosmosNativeProvider, CosmosNativeSigner } from "@humanode-hyperlane/cosmos-sdk";
+import { ChainMetadataForAltVM, ProtocolType } from "@humanode-hyperlane/provider-sdk";
 import { DirectSecp256k1Wallet } from '@cosmjs/proto-signing';
 
 const metadata: ChainMetadataForAltVM = {

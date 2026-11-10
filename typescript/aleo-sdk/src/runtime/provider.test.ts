@@ -3,8 +3,8 @@ import { expect } from 'chai';
 import {
   ProtocolType,
   type ChainMetadataForAltVM,
-} from '@hyperlane-xyz/provider-sdk';
-import type { WarpArtifactConfig } from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk';
+import type { WarpArtifactConfig } from '@humanode-hyperlane/provider-sdk/warp';
 
 import { AleoProvider as NodeAleoProvider } from '../clients/provider.node.js';
 

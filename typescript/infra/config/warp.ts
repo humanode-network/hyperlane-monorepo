@@ -1,5 +1,5 @@
-import { IRegistry } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
+import { IRegistry } from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
 import {
   ChainMap,
   ChainSubmissionStrategy,
@@ -8,8 +8,8 @@ import {
   OwnableConfig,
   WarpRouteDeployConfig,
   WarpRouteDeployConfigMailboxRequired,
-} from '@hyperlane-xyz/sdk';
-import { assert, objMap, promiseObjAll } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { assert, objMap, promiseObjAll } from '@humanode-hyperlane/utils';
 
 import { getRouterConfigsForAllVms } from '../scripts/core-utils.js';
 import { EnvironmentConfig } from '../src/config/environment.js';

@@ -5,9 +5,9 @@ import {
   ChainTechnicalStack,
   type ChainMap,
   type ChainName,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
-import { readYaml } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
+import { readYaml } from '@humanode-hyperlane/utils/fs';
 
 import { isStandardEvm } from '../aggregation-hook-upgrade/protocol.js';
 

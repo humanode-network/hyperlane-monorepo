@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import { providers } from 'ethers';
 import sinon from 'sinon';
 
-import { BlacklistIsm, BlacklistIsm__factory } from '@hyperlane-xyz/core';
-import { assert } from '@hyperlane-xyz/utils';
+import { BlacklistIsm, BlacklistIsm__factory } from '@humanode-hyperlane/core';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { TestChainName, test1 } from '../consts/testChains.js';
 import { EthJsonRpcBlockParameterTag } from '../metadata/chainMetadataTypes.js';

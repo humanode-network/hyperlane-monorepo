@@ -3,7 +3,7 @@ import {
   HypTokenRouterConfig,
   OwnableConfig,
   TokenType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { RouterConfigWithoutOwner } from '../../../../src/config/warp.js';
 import { ETHEREUM_DEPLOYER_ADDRESS } from '../../testnet4/owners.js';

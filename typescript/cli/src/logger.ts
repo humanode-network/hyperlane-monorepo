@@ -8,7 +8,7 @@ import {
   getLogFormat,
   rootLogger,
   safelyAccessEnvVar,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 let logger = rootLogger;
 

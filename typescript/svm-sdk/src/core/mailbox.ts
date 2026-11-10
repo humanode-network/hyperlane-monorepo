@@ -6,11 +6,11 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import type {
   DeployedMailboxAddress,
   MailboxOnChain,
-} from '@hyperlane-xyz/provider-sdk/mailbox';
+} from '@humanode-hyperlane/provider-sdk/mailbox';
 import {
   ZERO_ADDRESS_HEX_32,
   assert,
@@ -18,7 +18,7 @@ import {
   eqOptionalAddress,
   isEmptyAddress,
   isZeroishAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { getProgramUpgradeAuthority } from '../deploy/program-deployer.js';

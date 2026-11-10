@@ -6,29 +6,29 @@ import type {
   ProtocolProvider,
   SignerConfig,
   TransactionSubmitterConfig,
-} from '@hyperlane-xyz/provider-sdk';
+} from '@humanode-hyperlane/provider-sdk';
 import {
   AltVMImpersonatedSubmitter,
   AltVMJsonRpcSubmitter,
   SubmitterType,
-} from '@hyperlane-xyz/provider-sdk';
-import type { IProvider } from '@hyperlane-xyz/provider-sdk/altvm';
-import type { IRawHookArtifactManager } from '@hyperlane-xyz/provider-sdk/hook';
-import type { IRawIsmArtifactManager } from '@hyperlane-xyz/provider-sdk/ism';
+} from '@humanode-hyperlane/provider-sdk';
+import type { IProvider } from '@humanode-hyperlane/provider-sdk/altvm';
+import type { IRawHookArtifactManager } from '@humanode-hyperlane/provider-sdk/hook';
+import type { IRawIsmArtifactManager } from '@humanode-hyperlane/provider-sdk/ism';
 import type {
   AnnotatedTx,
   TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
-import { type IRawWarpArtifactManager } from '@hyperlane-xyz/provider-sdk/warp';
-import { type NonEmptyArray, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/module';
+import { type IRawWarpArtifactManager } from '@humanode-hyperlane/provider-sdk/warp';
+import { type NonEmptyArray, assert } from '@humanode-hyperlane/utils';
 import { address as parseAddress } from '@solana/kit';
 
-import { type IRawMailboxArtifactManager } from '@hyperlane-xyz/provider-sdk/mailbox';
+import { type IRawMailboxArtifactManager } from '@humanode-hyperlane/provider-sdk/mailbox';
 import {
   type FeeReadContext,
   type IRawFeeArtifactManager,
-} from '@hyperlane-xyz/provider-sdk/fee';
-import { type IRawValidatorAnnounceArtifactManager } from '@hyperlane-xyz/provider-sdk/validator-announce';
+} from '@humanode-hyperlane/provider-sdk/fee';
+import { type IRawValidatorAnnounceArtifactManager } from '@humanode-hyperlane/provider-sdk/validator-announce';
 import { SvmMailboxArtifactManager } from '../core/mailbox-artifact-manager.js';
 import { SvmValidatorAnnounceArtifactManager } from '../core/validator-announce-artifact-manager.js';
 import { SvmFeeArtifactManager } from '../fee/fee-artifact-manager.js';

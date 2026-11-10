@@ -3,8 +3,8 @@ import {
   ChainMap,
   ScraperConfig as ScraperAgentConfig,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
-import { isAddress } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { isAddress } from '@humanode-hyperlane/utils';
 
 import { getDomainId, getRegistry } from '../../../config/registry.js';
 import { Role } from '../../roles.js';

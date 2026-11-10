@@ -7,14 +7,14 @@ import sinon from 'sinon';
 import {
   LayerZeroV2HookIsm__factory,
   Mailbox__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   HyperlaneSmartProvider,
   ModuleType,
   MultiProvider,
   OnchainHookType,
-} from '@hyperlane-xyz/sdk';
-import { addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { addressToBytes32, assert } from '@humanode-hyperlane/utils';
 
 import { LayerZeroPacketService } from '../../src/services/LayerZeroPacketService.js';
 import { encodeLayerZeroPayload } from '../../src/services/layerZeroPacketMatcher.js';

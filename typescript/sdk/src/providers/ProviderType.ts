@@ -39,15 +39,15 @@ import type {
   AleoProvider as AleoSDKProvider,
   AleoReceipt as AleoSDKReceipt,
   AleoTransaction as AleoSDKTransaction,
-} from '@hyperlane-xyz/aleo-sdk/runtime';
-import type { CosmosNativeProvider } from '@hyperlane-xyz/cosmos-sdk/runtime';
+} from '@humanode-hyperlane/aleo-sdk/runtime';
+import type { CosmosNativeProvider } from '@humanode-hyperlane/cosmos-sdk/runtime';
 import type {
   RadixProvider as RadixSDKProvider,
   RadixSDKReceipt,
   RadixSDKTransaction,
-} from '@hyperlane-xyz/radix-sdk/runtime';
-import type { Annotated, KnownProtocolType } from '@hyperlane-xyz/utils';
-import { ProtocolType } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/radix-sdk/runtime';
+import type { Annotated, KnownProtocolType } from '@humanode-hyperlane/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 /**
  * Union of the two on-the-wire transaction shapes Sealevel adapters may

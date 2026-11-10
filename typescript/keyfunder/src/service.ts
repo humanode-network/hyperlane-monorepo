@@ -3,17 +3,21 @@ import 'zod/compile';
 
 import { Wallet } from 'ethers';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { getRegistry } from '@hyperlane-xyz/registry/fs';
-import { ChainMetadata, HyperlaneIgp, MultiProvider } from '@hyperlane-xyz/sdk';
-import { TronWallet } from '@hyperlane-xyz/tron-sdk';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
+import { getRegistry } from '@humanode-hyperlane/registry/fs';
+import {
+  ChainMetadata,
+  HyperlaneIgp,
+  MultiProvider,
+} from '@humanode-hyperlane/sdk';
+import { TronWallet } from '@humanode-hyperlane/tron-sdk';
 import {
   ProtocolType,
   applyRpcUrlOverridesFromEnv,
   assert,
   createServiceLogger,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { KeyFunderConfigLoader } from './config/KeyFunderConfig.js';
 import { KeyFunder } from './core/KeyFunder.js';

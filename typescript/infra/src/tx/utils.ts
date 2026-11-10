@@ -1,8 +1,8 @@
 import { confirm } from '@inquirer/prompts';
 import chalk from 'chalk';
 
-import { rootLogger, stringifyObject } from '@hyperlane-xyz/utils';
-import { writeYaml } from '@hyperlane-xyz/utils/fs';
+import { rootLogger, stringifyObject } from '@humanode-hyperlane/utils';
+import { writeYaml } from '@humanode-hyperlane/utils/fs';
 
 import { GovernTransaction } from './govern-transaction-reader.js';
 

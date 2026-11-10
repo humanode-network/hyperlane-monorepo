@@ -3,27 +3,27 @@ import { expect } from 'chai';
 import {
   isArtifactDeployed,
   isArtifactUnderived,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type ChainAddresses,
   createWarpRouteConfigId,
-} from '@hyperlane-xyz/registry';
+} from '@humanode-hyperlane/registry';
 import {
   SealevelAddressLookupTableReader,
   SealevelSigner,
   SvmWarpArtifactManager,
   createRpc,
   createWarpAltReader,
-} from '@hyperlane-xyz/sealevel-sdk';
-import { airdropSol } from '@hyperlane-xyz/sealevel-sdk/testing';
+} from '@humanode-hyperlane/sealevel-sdk';
+import { airdropSol } from '@humanode-hyperlane/sealevel-sdk/testing';
 import {
   IsmType,
   TokenFeeType,
   TokenType,
   type WarpCoreConfig,
   type WarpRouteDeployConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { HyperlaneE2ECoreTestCommands } from '../../commands/core.js';

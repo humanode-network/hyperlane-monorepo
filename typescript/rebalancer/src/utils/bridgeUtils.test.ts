@@ -2,7 +2,7 @@ import assert from 'node:assert';
 
 import { expect } from 'chai';
 
-import { type ChainMap } from '@hyperlane-xyz/sdk';
+import { type ChainMap } from '@humanode-hyperlane/sdk';
 
 import { ExecutionType, ExternalBridgeType } from '../config/types.js';
 import {

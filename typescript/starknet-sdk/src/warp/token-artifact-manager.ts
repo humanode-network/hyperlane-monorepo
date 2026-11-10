@@ -6,11 +6,11 @@ import {
   type ArtifactWriter,
   addressToUnderivedArtifact,
   artifactOnChainToAddress,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type AnnotatedTx,
   type TxReceipt,
-} from '@hyperlane-xyz/provider-sdk/module';
+} from '@humanode-hyperlane/provider-sdk/module';
 import {
   TokenType,
   computeRemoteRoutersUpdates,
@@ -18,13 +18,13 @@ import {
   type RawWarpArtifactConfig,
   type RawWarpArtifactConfigs,
   type WarpType,
-} from '@hyperlane-xyz/provider-sdk/warp';
+} from '@humanode-hyperlane/provider-sdk/warp';
 import {
   ZERO_ADDRESS_HEX_32,
   assert,
   eqAddressStarknet,
   isEmptyAddress,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { StarknetProvider } from '../clients/provider.js';
 import { StarknetSigner } from '../clients/signer.js';

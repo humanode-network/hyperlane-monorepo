@@ -1,8 +1,8 @@
 import os from 'os';
 import { type Options } from 'yargs';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@hyperlane-xyz/registry';
-import { LogFormat, LogLevel } from '@hyperlane-xyz/utils';
+import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
+import { LogFormat, LogLevel } from '@humanode-hyperlane/utils';
 
 import { ENV } from '../utils/env.js';
 

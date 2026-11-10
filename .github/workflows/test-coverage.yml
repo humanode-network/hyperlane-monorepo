@@ -50,7 +50,7 @@ jobs:
         uses: ./.github/actions/pnpm-build-with-cache
 
       - name: Run tests with coverage
-        run: pnpm exec turbo run coverage --filter=@hyperlane-xyz/core
+        run: pnpm exec turbo run coverage --filter=@humanode-hyperlane/core
 
       - name: Upload coverage reports to Codecov with GitHub Action
         uses: codecov/codecov-action@v4

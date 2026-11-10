@@ -1,11 +1,11 @@
 import { TronWeb } from 'tronweb';
 
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
-import IPostDispatchHookAbi from '@hyperlane-xyz/core/tron/abi/contracts/interfaces/hooks/IPostDispatchHook.sol/IPostDispatchHook.json' with { type: 'json' };
-import InterchainGasPaymasterAbi from '@hyperlane-xyz/core/tron/abi/contracts/hooks/igp/InterchainGasPaymaster.sol/InterchainGasPaymaster.json' with { type: 'json' };
-import MerkleTreeHookAbi from '@hyperlane-xyz/core/tron/abi/contracts/hooks/MerkleTreeHook.sol/MerkleTreeHook.json' with { type: 'json' };
-import StorageGasOracleAbi from '@hyperlane-xyz/core/tron/abi/contracts/hooks/igp/StorageGasOracle.sol/StorageGasOracle.json' with { type: 'json' };
+import IPostDispatchHookAbi from '@humanode-hyperlane/core/tron/abi/contracts/interfaces/hooks/IPostDispatchHook.sol/IPostDispatchHook.json' with { type: 'json' };
+import InterchainGasPaymasterAbi from '@humanode-hyperlane/core/tron/abi/contracts/hooks/igp/InterchainGasPaymaster.sol/InterchainGasPaymaster.json' with { type: 'json' };
+import MerkleTreeHookAbi from '@humanode-hyperlane/core/tron/abi/contracts/hooks/MerkleTreeHook.sol/MerkleTreeHook.json' with { type: 'json' };
+import StorageGasOracleAbi from '@humanode-hyperlane/core/tron/abi/contracts/hooks/igp/StorageGasOracle.sol/StorageGasOracle.json' with { type: 'json' };
 import { TronHookTypes } from '../utils/types.js';
 
 /**

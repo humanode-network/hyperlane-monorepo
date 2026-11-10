@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/warp-widget",
+  "name": "@humanode-hyperlane/warp-widget",
   "version": "2.0.1",
   "description": "Embed the Hyperlane Warp bridge widget in any web app",
   "keywords": [
@@ -12,7 +12,7 @@
   ],
   "homepage": "https://www.hyperlane.xyz",
   "license": "Apache-2.0",
-  "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+  "repository": "https://github.com/humanode-network/hyperlane-monorepo",
   "files": [
     "/dist"
   ],
@@ -30,7 +30,7 @@
     "format": "oxfmt --write ./src"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/node": "catalog:",
     "@types/react": "^18.0.27",
     "react": "^18.2.0",

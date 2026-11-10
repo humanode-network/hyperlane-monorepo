@@ -1,4 +1,4 @@
-# @hyperlane-xyz/starknet-sdk
+# @humanode-hyperlane/starknet-sdk
 
 ## 30.0.6
 
@@ -7,25 +7,25 @@
 - c520224: Invariant regular expressions were reused across calls, redundant URL parsing was removed from RPC-header and explorer helpers, and independent token reads were overlapped with bounded concurrency and failure draining. URL normalization, validation, and dependent read ordering were preserved.
 - Updated dependencies [aa84958]
 - Updated dependencies [c520224]
-  - @hyperlane-xyz/utils@45.2.0
-  - @hyperlane-xyz/provider-sdk@11.0.3
-  - @hyperlane-xyz/starknet-core@45.2.0
+  - @humanode-hyperlane/utils@45.2.0
+  - @humanode-hyperlane/provider-sdk@11.0.3
+  - @humanode-hyperlane/starknet-core@45.2.0
 
 ## 30.0.5
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@45.1.0
-- @hyperlane-xyz/utils@45.1.0
-- @hyperlane-xyz/provider-sdk@11.0.2
+- @humanode-hyperlane/starknet-core@45.1.0
+- @humanode-hyperlane/utils@45.1.0
+- @humanode-hyperlane/provider-sdk@11.0.2
 
 ## 30.0.4
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@45.0.1
-- @hyperlane-xyz/utils@45.0.1
-- @hyperlane-xyz/provider-sdk@11.0.1
+- @humanode-hyperlane/starknet-core@45.0.1
+- @humanode-hyperlane/utils@45.0.1
+- @humanode-hyperlane/provider-sdk@11.0.1
 
 ## 30.0.3
 
@@ -41,26 +41,26 @@
 - Updated dependencies [4e2ab65]
 - Updated dependencies [4ad4577]
 - Updated dependencies [f64f992]
-  - @hyperlane-xyz/provider-sdk@11.0.0
-  - @hyperlane-xyz/starknet-core@45.0.0
-  - @hyperlane-xyz/utils@45.0.0
+  - @humanode-hyperlane/provider-sdk@11.0.0
+  - @humanode-hyperlane/starknet-core@45.0.0
+  - @humanode-hyperlane/utils@45.0.0
 
 ## 30.0.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@44.0.2
-- @hyperlane-xyz/utils@44.0.2
-- @hyperlane-xyz/provider-sdk@10.0.2
+- @humanode-hyperlane/starknet-core@44.0.2
+- @humanode-hyperlane/utils@44.0.2
+- @humanode-hyperlane/provider-sdk@10.0.2
 
 ## 30.0.1
 
 ### Patch Changes
 
 - Updated dependencies [f269e03]
-  - @hyperlane-xyz/provider-sdk@10.0.1
-  - @hyperlane-xyz/starknet-core@44.0.1
-  - @hyperlane-xyz/utils@44.0.1
+  - @humanode-hyperlane/provider-sdk@10.0.1
+  - @humanode-hyperlane/starknet-core@44.0.1
+  - @humanode-hyperlane/utils@44.0.1
 
 ## 30.0.0
 
@@ -71,9 +71,9 @@
 ### Patch Changes
 
 - Updated dependencies [6fbe5ad]
-  - @hyperlane-xyz/starknet-core@44.0.0
-  - @hyperlane-xyz/utils@44.0.0
-  - @hyperlane-xyz/provider-sdk@10.0.0
+  - @humanode-hyperlane/starknet-core@44.0.0
+  - @humanode-hyperlane/utils@44.0.0
+  - @humanode-hyperlane/provider-sdk@10.0.0
 
 ## 29.1.8
 
@@ -81,67 +81,67 @@
 
 - Updated dependencies [8bcc7ab]
 - Updated dependencies [7cf9c01]
-  - @hyperlane-xyz/provider-sdk@9.0.0
-  - @hyperlane-xyz/utils@43.0.0
-  - @hyperlane-xyz/starknet-core@43.0.0
+  - @humanode-hyperlane/provider-sdk@9.0.0
+  - @humanode-hyperlane/utils@43.0.0
+  - @humanode-hyperlane/starknet-core@43.0.0
 
 ## 29.1.7
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@42.0.0
-- @hyperlane-xyz/utils@42.0.0
-- @hyperlane-xyz/provider-sdk@8.1.3
+- @humanode-hyperlane/starknet-core@42.0.0
+- @humanode-hyperlane/utils@42.0.0
+- @humanode-hyperlane/provider-sdk@8.1.3
 
 ## 29.1.6
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@41.3.1
-- @hyperlane-xyz/utils@41.3.1
-- @hyperlane-xyz/provider-sdk@8.1.2
+- @humanode-hyperlane/starknet-core@41.3.1
+- @humanode-hyperlane/utils@41.3.1
+- @humanode-hyperlane/provider-sdk@8.1.2
 
 ## 29.1.5
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@41.3.0
-- @hyperlane-xyz/utils@41.3.0
-- @hyperlane-xyz/provider-sdk@8.1.1
+- @humanode-hyperlane/starknet-core@41.3.0
+- @humanode-hyperlane/utils@41.3.0
+- @humanode-hyperlane/provider-sdk@8.1.1
 
 ## 29.1.4
 
 ### Patch Changes
 
 - Updated dependencies [bd4e5f0]
-  - @hyperlane-xyz/provider-sdk@8.1.0
-  - @hyperlane-xyz/starknet-core@41.2.0
-  - @hyperlane-xyz/utils@41.2.0
+  - @humanode-hyperlane/provider-sdk@8.1.0
+  - @humanode-hyperlane/starknet-core@41.2.0
+  - @humanode-hyperlane/utils@41.2.0
 
 ## 29.1.3
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@41.1.0
-- @hyperlane-xyz/utils@41.1.0
-- @hyperlane-xyz/provider-sdk@8.0.4
+- @humanode-hyperlane/starknet-core@41.1.0
+- @humanode-hyperlane/utils@41.1.0
+- @humanode-hyperlane/provider-sdk@8.0.4
 
 ## 29.1.2
 
 ### Patch Changes
 
 - Updated dependencies [fa19409]
-  - @hyperlane-xyz/utils@41.0.0
-  - @hyperlane-xyz/provider-sdk@8.0.3
-  - @hyperlane-xyz/starknet-core@41.0.0
+  - @humanode-hyperlane/utils@41.0.0
+  - @humanode-hyperlane/provider-sdk@8.0.3
+  - @humanode-hyperlane/starknet-core@41.0.0
 
 ## 29.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@40.0.0
-- @hyperlane-xyz/utils@40.0.0
-- @hyperlane-xyz/provider-sdk@8.0.2
+- @humanode-hyperlane/starknet-core@40.0.0
+- @humanode-hyperlane/utils@40.0.0
+- @humanode-hyperlane/provider-sdk@8.0.2
 
 ## 29.1.0
 
@@ -153,9 +153,9 @@
 
 - Updated dependencies [4976bb1]
 - Updated dependencies [086ec59]
-  - @hyperlane-xyz/utils@39.1.0
-  - @hyperlane-xyz/starknet-core@39.1.0
-  - @hyperlane-xyz/provider-sdk@8.0.1
+  - @humanode-hyperlane/utils@39.1.0
+  - @humanode-hyperlane/starknet-core@39.1.0
+  - @humanode-hyperlane/provider-sdk@8.0.1
 
 ## 29.0.0
 
@@ -173,18 +173,18 @@
 
 - Updated dependencies [4ef1fde]
 - Updated dependencies [735793b]
-  - @hyperlane-xyz/provider-sdk@8.0.0
-  - @hyperlane-xyz/utils@39.0.0
-  - @hyperlane-xyz/starknet-core@39.0.0
+  - @humanode-hyperlane/provider-sdk@8.0.0
+  - @humanode-hyperlane/utils@39.0.0
+  - @humanode-hyperlane/starknet-core@39.0.0
 
 ## 28.1.4
 
 ### Patch Changes
 
 - Updated dependencies [961a89d]
-  - @hyperlane-xyz/provider-sdk@7.2.0
-  - @hyperlane-xyz/starknet-core@38.0.0
-  - @hyperlane-xyz/utils@38.0.0
+  - @humanode-hyperlane/provider-sdk@7.2.0
+  - @humanode-hyperlane/starknet-core@38.0.0
+  - @humanode-hyperlane/utils@38.0.0
 
 ## 28.1.3
 
@@ -194,9 +194,9 @@
 - Updated dependencies [cc4bdb6]
 - Updated dependencies [31f8b51]
 - Updated dependencies [97e8ca1]
-  - @hyperlane-xyz/provider-sdk@7.1.0
-  - @hyperlane-xyz/starknet-core@37.0.0
-  - @hyperlane-xyz/utils@37.0.0
+  - @humanode-hyperlane/provider-sdk@7.1.0
+  - @humanode-hyperlane/starknet-core@37.0.0
+  - @humanode-hyperlane/utils@37.0.0
 
 ## 28.1.2
 
@@ -207,17 +207,17 @@
 - Updated dependencies [aa41ce4]
 - Updated dependencies [2f9d783]
 - Updated dependencies [9bdab1d]
-  - @hyperlane-xyz/utils@36.0.0
-  - @hyperlane-xyz/provider-sdk@7.0.0
-  - @hyperlane-xyz/starknet-core@36.0.0
+  - @humanode-hyperlane/utils@36.0.0
+  - @humanode-hyperlane/provider-sdk@7.0.0
+  - @humanode-hyperlane/starknet-core@36.0.0
 
 ## 28.1.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@35.2.0
-- @hyperlane-xyz/utils@35.2.0
-- @hyperlane-xyz/provider-sdk@6.1.1
+- @humanode-hyperlane/starknet-core@35.2.0
+- @humanode-hyperlane/utils@35.2.0
+- @humanode-hyperlane/provider-sdk@6.1.1
 
 ## 28.1.0
 
@@ -229,51 +229,51 @@
 
 - a911f17: Starknet read calls defaulted to the latest accepted block instead of the pending block, so warp token reads no longer fail against RPC providers that reject `block_id: "pending"`.
 - Updated dependencies [d1b6f0a]
-  - @hyperlane-xyz/provider-sdk@6.1.0
-  - @hyperlane-xyz/starknet-core@35.1.0
-  - @hyperlane-xyz/utils@35.1.0
+  - @humanode-hyperlane/provider-sdk@6.1.0
+  - @humanode-hyperlane/starknet-core@35.1.0
+  - @humanode-hyperlane/utils@35.1.0
 
 ## 28.0.9
 
 ### Patch Changes
 
 - Updated dependencies [da1cfb1]
-  - @hyperlane-xyz/utils@35.0.1
-  - @hyperlane-xyz/provider-sdk@6.0.4
-  - @hyperlane-xyz/starknet-core@35.0.1
+  - @humanode-hyperlane/utils@35.0.1
+  - @humanode-hyperlane/provider-sdk@6.0.4
+  - @humanode-hyperlane/starknet-core@35.0.1
 
 ## 28.0.8
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@35.0.0
-- @hyperlane-xyz/utils@35.0.0
-- @hyperlane-xyz/provider-sdk@6.0.3
+- @humanode-hyperlane/starknet-core@35.0.0
+- @humanode-hyperlane/utils@35.0.0
+- @humanode-hyperlane/provider-sdk@6.0.3
 
 ## 28.0.7
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@34.0.0
-- @hyperlane-xyz/utils@34.0.0
-- @hyperlane-xyz/provider-sdk@6.0.2
+- @humanode-hyperlane/starknet-core@34.0.0
+- @humanode-hyperlane/utils@34.0.0
+- @humanode-hyperlane/provider-sdk@6.0.2
 
 ## 28.0.6
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@33.1.1
-- @hyperlane-xyz/utils@33.1.1
-- @hyperlane-xyz/provider-sdk@6.0.1
+- @humanode-hyperlane/starknet-core@33.1.1
+- @humanode-hyperlane/utils@33.1.1
+- @humanode-hyperlane/provider-sdk@6.0.1
 
 ## 28.0.5
 
 ### Patch Changes
 
 - Updated dependencies [bfe4d2e]
-  - @hyperlane-xyz/provider-sdk@6.0.0
-  - @hyperlane-xyz/starknet-core@33.1.0
-  - @hyperlane-xyz/utils@33.1.0
+  - @humanode-hyperlane/provider-sdk@6.0.0
+  - @humanode-hyperlane/starknet-core@33.1.0
+  - @humanode-hyperlane/utils@33.1.0
 
 ## 28.0.4
 
@@ -282,33 +282,33 @@
 - b864cca: Multi-VM fee type support was added to provider-sdk and deploy-sdk. Fee types (linear, regressive, progressive, offchainQuotedLinear, routing, crossCollateralRouting) were defined with Config API and Artifact API variants. FeeReader and FeeWriter with required FeeReadContext were added to deploy-sdk. Fee was integrated into warp types and the warp writer update flow. All protocol providers received createFeeArtifactManager stubs.
 - Updated dependencies [b864cca]
 - Updated dependencies [1f918d0]
-  - @hyperlane-xyz/provider-sdk@5.1.0
-  - @hyperlane-xyz/utils@33.0.2
-  - @hyperlane-xyz/starknet-core@33.0.2
+  - @humanode-hyperlane/provider-sdk@5.1.0
+  - @humanode-hyperlane/utils@33.0.2
+  - @humanode-hyperlane/starknet-core@33.0.2
 
 ## 28.0.3
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@33.0.1
-- @hyperlane-xyz/utils@33.0.1
-- @hyperlane-xyz/provider-sdk@5.0.3
+- @humanode-hyperlane/starknet-core@33.0.1
+- @humanode-hyperlane/utils@33.0.1
+- @humanode-hyperlane/provider-sdk@5.0.3
 
 ## 28.0.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@33.0.0
-- @hyperlane-xyz/utils@33.0.0
-- @hyperlane-xyz/provider-sdk@5.0.2
+- @humanode-hyperlane/starknet-core@33.0.0
+- @humanode-hyperlane/utils@33.0.0
+- @humanode-hyperlane/provider-sdk@5.0.2
 
 ## 28.0.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@32.0.1
-- @hyperlane-xyz/utils@32.0.1
-- @hyperlane-xyz/provider-sdk@5.0.1
+- @humanode-hyperlane/starknet-core@32.0.1
+- @humanode-hyperlane/utils@32.0.1
+- @humanode-hyperlane/provider-sdk@5.0.1
 
 ## 28.0.0
 
@@ -330,68 +330,68 @@
 
 - Updated dependencies [3dc6367]
 - Updated dependencies [fa08f2a]
-  - @hyperlane-xyz/provider-sdk@5.0.0
-  - @hyperlane-xyz/starknet-core@32.0.0
-  - @hyperlane-xyz/utils@32.0.0
+  - @humanode-hyperlane/provider-sdk@5.0.0
+  - @humanode-hyperlane/starknet-core@32.0.0
+  - @humanode-hyperlane/utils@32.0.0
 
 ## 27.2.10
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@31.2.1
-- @hyperlane-xyz/utils@31.2.1
-- @hyperlane-xyz/provider-sdk@4.3.4
+- @humanode-hyperlane/starknet-core@31.2.1
+- @humanode-hyperlane/utils@31.2.1
+- @humanode-hyperlane/provider-sdk@4.3.4
 
 ## 27.2.9
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@31.2.0
-- @hyperlane-xyz/utils@31.2.0
-- @hyperlane-xyz/provider-sdk@4.3.3
+- @humanode-hyperlane/starknet-core@31.2.0
+- @humanode-hyperlane/utils@31.2.0
+- @humanode-hyperlane/provider-sdk@4.3.3
 
 ## 27.2.8
 
 ### Patch Changes
 
 - cf3f11c: Starknet devnet switched to instant per-transaction block mining and starknet.js polling interval reduced for fast block times, speeding up e2e tests ~5x.
-  - @hyperlane-xyz/starknet-core@31.1.0
-  - @hyperlane-xyz/utils@31.1.0
-  - @hyperlane-xyz/provider-sdk@4.3.2
+  - @humanode-hyperlane/starknet-core@31.1.0
+  - @humanode-hyperlane/utils@31.1.0
+  - @humanode-hyperlane/provider-sdk@4.3.2
 
 ## 27.2.7
 
 ### Patch Changes
 
 - Updated dependencies [d5168fc]
-  - @hyperlane-xyz/utils@31.0.1
-  - @hyperlane-xyz/provider-sdk@4.3.1
-  - @hyperlane-xyz/starknet-core@31.0.1
+  - @humanode-hyperlane/utils@31.0.1
+  - @humanode-hyperlane/provider-sdk@4.3.1
+  - @humanode-hyperlane/starknet-core@31.0.1
 
 ## 27.2.6
 
 ### Patch Changes
 
 - Updated dependencies [44626fb]
-  - @hyperlane-xyz/provider-sdk@4.3.0
-  - @hyperlane-xyz/starknet-core@31.0.0
-  - @hyperlane-xyz/utils@31.0.0
+  - @humanode-hyperlane/provider-sdk@4.3.0
+  - @humanode-hyperlane/starknet-core@31.0.0
+  - @humanode-hyperlane/utils@31.0.0
 
 ## 27.2.5
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@30.1.1
-- @hyperlane-xyz/utils@30.1.1
-- @hyperlane-xyz/provider-sdk@4.2.5
+- @humanode-hyperlane/starknet-core@30.1.1
+- @humanode-hyperlane/utils@30.1.1
+- @humanode-hyperlane/provider-sdk@4.2.5
 
 ## 27.2.4
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@30.1.0
-- @hyperlane-xyz/utils@30.1.0
-- @hyperlane-xyz/provider-sdk@4.2.4
+- @humanode-hyperlane/starknet-core@30.1.0
+- @humanode-hyperlane/utils@30.1.0
+- @humanode-hyperlane/provider-sdk@4.2.4
 
 ## 27.2.3
 
@@ -401,36 +401,36 @@
 - 37255ba: Starknet AltVM follow-up behavior was fixed across the CLI toolchain. Warp apply/update paths now preserve existing Starknet hook and ISM settings when config leaves them unset or uses empty addresses, zero-address hook and ISM references are normalized as unset during provider artifact conversion, and core mailbox bootstrap only passes through existing hook addresses for Starknet while other AltVMs keep zero-address placeholders.
 - Updated dependencies [37255ba]
 - Updated dependencies [7646819]
-  - @hyperlane-xyz/provider-sdk@4.2.3
-  - @hyperlane-xyz/utils@30.0.0
-  - @hyperlane-xyz/starknet-core@30.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.3
+  - @humanode-hyperlane/utils@30.0.0
+  - @humanode-hyperlane/starknet-core@30.0.0
 
 ## 27.2.2
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@29.1.0
-- @hyperlane-xyz/utils@29.1.0
-- @hyperlane-xyz/provider-sdk@4.2.2
+- @humanode-hyperlane/starknet-core@29.1.0
+- @humanode-hyperlane/utils@29.1.0
+- @humanode-hyperlane/provider-sdk@4.2.2
 
 ## 27.2.1
 
 ### Patch Changes
 
-- @hyperlane-xyz/starknet-core@29.0.1
-- @hyperlane-xyz/utils@29.0.1
-- @hyperlane-xyz/provider-sdk@4.2.1
+- @humanode-hyperlane/starknet-core@29.0.1
+- @humanode-hyperlane/utils@29.0.1
+- @humanode-hyperlane/provider-sdk@4.2.1
 
 ## 27.2.0
 
 ### Minor Changes
 
-- 09d6760: Added Starknet artifact API support across the TypeScript AltVM toolchain. The new `@hyperlane-xyz/starknet-sdk` package provides Starknet protocol, signer, provider, ISM, hook, mailbox, validator announce, and end-to-end test coverage. Deploy SDK protocol loading and the CLI context/signer flows were updated so Starknet chains can be resolved and used through the shared AltVM paths.
+- 09d6760: Added Starknet artifact API support across the TypeScript AltVM toolchain. The new `@humanode-hyperlane/starknet-sdk` package provides Starknet protocol, signer, provider, ISM, hook, mailbox, validator announce, and end-to-end test coverage. Deploy SDK protocol loading and the CLI context/signer flows were updated so Starknet chains can be resolved and used through the shared AltVM paths.
 
 ### Patch Changes
 
 - Updated dependencies [3c6b1ad]
 - Updated dependencies [084c6b6]
-  - @hyperlane-xyz/utils@29.0.0
-  - @hyperlane-xyz/provider-sdk@4.2.0
-  - @hyperlane-xyz/starknet-core@29.0.0
+  - @humanode-hyperlane/utils@29.0.0
+  - @humanode-hyperlane/provider-sdk@4.2.0
+  - @humanode-hyperlane/starknet-core@29.0.0

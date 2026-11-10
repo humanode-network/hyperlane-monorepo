@@ -1,18 +1,18 @@
 import search from '@inquirer/search';
 
-import { filterWarpRoutesIds } from '@hyperlane-xyz/registry';
+import { filterWarpRoutesIds } from '@humanode-hyperlane/registry';
 import {
   type ChainName,
   filterWarpCoreConfigMapByChains,
   type WarpCoreConfig,
   type WarpRouteDeployConfigMailboxRequired,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   assert,
   intersection,
   objFilter,
   setEquality,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   readWarpCoreConfig,

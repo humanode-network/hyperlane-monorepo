@@ -5,7 +5,7 @@ import {
   type ChainMetadata,
   CoinGeckoTokenPriceGetter,
   type Token,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 export class PriceGetter extends CoinGeckoTokenPriceGetter {
   private readonly logger: Logger;

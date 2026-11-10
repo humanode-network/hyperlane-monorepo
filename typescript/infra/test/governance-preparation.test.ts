@@ -4,7 +4,7 @@ import { expect } from 'chai';
 import { BigNumber } from 'ethers';
 import sinon from 'sinon';
 
-import { Mailbox__factory } from '@hyperlane-xyz/core';
+import { Mailbox__factory } from '@humanode-hyperlane/core';
 
 import {
   CoreConfig,
@@ -17,7 +17,7 @@ import {
   MailboxViolation,
   MailboxViolationType,
   MultiProvider,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 import { HyperlaneAppGovernor } from '../src/govern/HyperlaneAppGovernor.js';
 import { HyperlaneCoreGovernor } from '../src/govern/HyperlaneCoreGovernor.js';

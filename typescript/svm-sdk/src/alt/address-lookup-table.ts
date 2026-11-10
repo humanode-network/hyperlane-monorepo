@@ -6,7 +6,7 @@ import {
   type ArtifactReader,
   ArtifactState,
   type ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   assert,
   chunk,
@@ -16,7 +16,7 @@ import {
   nonEmptyArray,
   normalizeAddressSealevel,
   sleep,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { fetchAddressLookupTableState } from '../accounts/address-lookup-table.js';
 import type { SvmSigner } from '../clients/signer.js';

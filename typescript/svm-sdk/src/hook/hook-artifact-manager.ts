@@ -1,17 +1,17 @@
 import { address as parseAddress, type Address } from '@solana/kit';
 
-import { HookType } from '@hyperlane-xyz/provider-sdk/altvm';
+import { HookType } from '@humanode-hyperlane/provider-sdk/altvm';
 import type {
   ArtifactReader,
   ArtifactWriter,
-} from '@hyperlane-xyz/provider-sdk/artifact';
+} from '@humanode-hyperlane/provider-sdk/artifact';
 import {
   type DeployedHookArtifact,
   type IRawHookArtifactManager,
   type RawHookArtifactConfigs,
   throwUnsupportedHookType,
-} from '@hyperlane-xyz/provider-sdk/hook';
-import { assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/provider-sdk/hook';
+import { assert } from '@humanode-hyperlane/utils';
 
 import type { SvmSigner } from '../clients/signer.js';
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';

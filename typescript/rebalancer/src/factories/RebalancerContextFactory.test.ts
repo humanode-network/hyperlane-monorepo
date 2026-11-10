@@ -3,8 +3,11 @@ import { ethers, type providers } from 'ethers';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { BlacklistIsm__factory, Mailbox__factory } from '@hyperlane-xyz/core';
-import { type IRegistry, RegistryType } from '@hyperlane-xyz/registry';
+import {
+  BlacklistIsm__factory,
+  Mailbox__factory,
+} from '@humanode-hyperlane/core';
+import { type IRegistry, RegistryType } from '@humanode-hyperlane/registry';
 import {
   EvmIsmReader,
   IsmType,
@@ -13,8 +16,8 @@ import {
   MultiProvider,
   TokenStandard,
   type WarpCoreConfig,
-} from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import { RebalancerConfig } from '../config/RebalancerConfig.js';
 import {

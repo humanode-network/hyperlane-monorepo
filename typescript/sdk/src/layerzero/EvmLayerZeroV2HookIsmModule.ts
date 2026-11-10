@@ -1,5 +1,5 @@
-import { LayerZeroV2HookIsm__factory } from '@hyperlane-xyz/core';
-import type { LayerZeroV2HookIsm } from '@hyperlane-xyz/core';
+import { LayerZeroV2HookIsm__factory } from '@humanode-hyperlane/core';
+import type { LayerZeroV2HookIsm } from '@humanode-hyperlane/core';
 import {
   Address,
   ProtocolType,
@@ -8,7 +8,7 @@ import {
   eqAddress,
   deepEquals,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 import { Contract, constants } from 'ethers';
 
 import { resolveRemoteDomainId } from '../combinedHookIsm/remoteDomain.js';

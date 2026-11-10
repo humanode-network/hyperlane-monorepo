@@ -7,8 +7,8 @@ import { pathToFileURL } from 'node:url';
 import { type Logger, pino } from 'pino';
 import Sinon from 'sinon';
 
-import { EthJsonRpcBlockParameterTag } from '@hyperlane-xyz/sdk';
-import { ProtocolType, assert } from '@hyperlane-xyz/utils';
+import { EthJsonRpcBlockParameterTag } from '@humanode-hyperlane/sdk';
+import { ProtocolType, assert } from '@humanode-hyperlane/utils';
 
 import {
   DEFAULT_INTENT_TTL_MS,

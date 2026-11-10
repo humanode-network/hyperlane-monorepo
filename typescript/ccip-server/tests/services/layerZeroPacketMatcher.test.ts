@@ -1,9 +1,9 @@
 import { expect } from 'chai';
 import { ethers } from 'ethers';
 
-import { Mailbox__factory } from '@hyperlane-xyz/core';
-import { ModuleType, OnchainHookType } from '@hyperlane-xyz/sdk';
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
+import { Mailbox__factory } from '@humanode-hyperlane/core';
+import { ModuleType, OnchainHookType } from '@humanode-hyperlane/sdk';
+import { addressToBytes32 } from '@humanode-hyperlane/utils';
 
 import { resolveLayerZeroRoutes } from '../../src/services/layerZeroRouteResolver.js';
 import type { LayerZeroRouterReader } from '../../src/services/layerZeroRouteResolver.js';

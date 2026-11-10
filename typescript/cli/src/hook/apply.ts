@@ -1,18 +1,18 @@
-import { createHookWriter } from '@hyperlane-xyz/deploy-sdk';
+import { createHookWriter } from '@humanode-hyperlane/deploy-sdk';
 import {
   EvmHookModule,
   type HookConfig,
   type TypedAnnotatedTransaction,
   altVmChainLookup,
   extractIsmAndHookFactoryAddresses,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   type Address,
   assert,
   eqAddress,
   isEVMLike,
   mustGet,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { type WriteCommandContext } from '../context/types.js';
 import { validateHookConfigForAltVM } from '../deploy/configValidation.js';

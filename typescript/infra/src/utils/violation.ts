@@ -10,7 +10,7 @@ import {
   IsmConfigSchema,
   MailboxViolation,
   MailboxViolationType,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 
 interface AnyObject {
   [key: string]: any;

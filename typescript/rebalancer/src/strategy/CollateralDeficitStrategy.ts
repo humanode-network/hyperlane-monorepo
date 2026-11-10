@@ -1,6 +1,10 @@
 import { Logger } from 'pino';
 
-import { type ChainMap, type ChainName, type Token } from '@hyperlane-xyz/sdk';
+import {
+  type ChainMap,
+  type ChainName,
+  type Token,
+} from '@humanode-hyperlane/sdk';
 
 import {
   type CollateralDeficitStrategyConfig,

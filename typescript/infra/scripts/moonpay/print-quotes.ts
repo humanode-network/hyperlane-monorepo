@@ -21,8 +21,8 @@
 
 import yargs from 'yargs';
 
-import { getRegistry as getMergedRegistry } from '@hyperlane-xyz/registry/fs';
-import { MultiProvider } from '@hyperlane-xyz/sdk';
+import { getRegistry as getMergedRegistry } from '@humanode-hyperlane/registry/fs';
+import { MultiProvider } from '@humanode-hyperlane/sdk';
 
 import { getRegistry } from '../../config/registry.js';
 

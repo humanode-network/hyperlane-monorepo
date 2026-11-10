@@ -4,12 +4,12 @@ import {
   type ForkChainInput,
   ForkManagerRegistry,
   buildForkedChainMetadata,
-} from '@hyperlane-xyz/forking-sdk';
-import { HttpServer } from '@hyperlane-xyz/http-registry-server';
-import { type ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { MergedRegistry, PartialRegistry } from '@hyperlane-xyz/registry';
-import { type ChainName } from '@hyperlane-xyz/sdk';
-import { assert, isEVMLike, isNullish } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/forking-sdk';
+import { HttpServer } from '@humanode-hyperlane/http-registry-server';
+import { type ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { MergedRegistry, PartialRegistry } from '@humanode-hyperlane/registry';
+import { type ChainName } from '@humanode-hyperlane/sdk';
+import { assert, isEVMLike, isNullish } from '@humanode-hyperlane/utils';
 
 import { type CommandContext } from '../context/types.js';
 import { logRed } from '../logger.js';

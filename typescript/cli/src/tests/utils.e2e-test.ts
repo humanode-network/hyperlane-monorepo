@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { $ } from 'zx';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { localTestRunCmdPrefix } from './ethereum/commands/helpers.js';
 

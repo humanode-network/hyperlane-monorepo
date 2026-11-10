@@ -1,6 +1,10 @@
 import { expect } from 'chai';
 
-import { type ChainMap, type IsmConfig, IsmType } from '@hyperlane-xyz/sdk';
+import {
+  type ChainMap,
+  type IsmConfig,
+  IsmType,
+} from '@humanode-hyperlane/sdk';
 
 import { readIsmConfig } from '../../config/ism.js';
 

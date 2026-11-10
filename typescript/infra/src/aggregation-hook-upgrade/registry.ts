@@ -1,5 +1,5 @@
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
-import { Address, objMerge } from '@hyperlane-xyz/utils';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
+import { Address, objMerge } from '@humanode-hyperlane/utils';
 
 export interface RegistryAddressUpdate {
   staticAggregationHookFactory?: Address;

@@ -5,9 +5,9 @@ import { step } from 'mocha-steps';
 
 import { HYPERLANE_SVM_PROGRAM_BYTES } from '../hyperlane/program-bytes.js';
 
-import { ArtifactState } from '@hyperlane-xyz/provider-sdk/artifact';
-import type { IgpHookConfig } from '@hyperlane-xyz/provider-sdk/hook';
-import { TokenType } from '@hyperlane-xyz/provider-sdk/warp';
+import { ArtifactState } from '@humanode-hyperlane/provider-sdk/artifact';
+import type { IgpHookConfig } from '@humanode-hyperlane/provider-sdk/hook';
+import { TokenType } from '@humanode-hyperlane/provider-sdk/warp';
 
 import { SvmSigner } from '../clients/signer.js';
 import { SvmMailboxWriter } from '../core/mailbox.js';

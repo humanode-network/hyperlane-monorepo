@@ -1,7 +1,7 @@
 import { constants } from 'ethers';
 
-import { Ownable, Ownable__factory } from '@hyperlane-xyz/core';
-import type { TronJsonRpcProvider } from '@hyperlane-xyz/tron-sdk/runtime';
+import { Ownable, Ownable__factory } from '@humanode-hyperlane/core';
+import type { TronJsonRpcProvider } from '@humanode-hyperlane/tron-sdk/runtime';
 import {
   Address,
   EvmChainId,
@@ -17,7 +17,7 @@ import {
   objMap,
   pick,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import type { EthersLikeProvider } from '../deploy/proxy.js';
 import { ChainMetadataManager } from '../metadata/ChainMetadataManager.js';
@@ -353,7 +353,7 @@ export function transferOwnershipTransactions(
  *
  * The shape is derived from the Tron provider rather than declared
  * independently so that renaming or removing `isAccountActive` in
- * @hyperlane-xyz/tron-sdk breaks this build, instead of silently reverting the
+ * @humanode-hyperlane/tron-sdk breaks this build, instead of silently reverting the
  * structural check below to the always-zero nonce path.
  */
 type AccountActivationProvider = Pick<TronJsonRpcProvider, 'isAccountActive'>;

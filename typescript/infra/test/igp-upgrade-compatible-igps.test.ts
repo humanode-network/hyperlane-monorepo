@@ -1,5 +1,8 @@
-import { ProxyAdmin__factory } from '@hyperlane-xyz/core';
-import { ContractVerificationInput, MultiProvider } from '@hyperlane-xyz/sdk';
+import { ProxyAdmin__factory } from '@humanode-hyperlane/core';
+import {
+  ContractVerificationInput,
+  MultiProvider,
+} from '@humanode-hyperlane/sdk';
 import { expect } from 'chai';
 import { BigNumber } from 'ethers';
 import sinon from 'sinon';

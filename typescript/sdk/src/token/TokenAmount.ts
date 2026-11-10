@@ -1,4 +1,4 @@
-import { Numberish, fromWei } from '@hyperlane-xyz/utils';
+import { Numberish, fromWei } from '@humanode-hyperlane/utils';
 
 import type { ITokenMetadata } from './ITokenMetadata.js';
 

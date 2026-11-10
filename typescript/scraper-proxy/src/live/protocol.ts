@@ -1,4 +1,4 @@
-import { setEquality } from '@hyperlane-xyz/utils/sets';
+import { setEquality } from '@humanode-hyperlane/utils/sets';
 
 const MESSAGE_ID_REGEX = /^[\da-fA-F]{64}$/;
 const SIGNED_INTEGER_REGEX = /^-?\d+$/;

@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import type { IRegistry } from '@hyperlane-xyz/registry';
+import type { IRegistry } from '@humanode-hyperlane/registry';
 
 import {
   type MultiWarpMonitorConfig,

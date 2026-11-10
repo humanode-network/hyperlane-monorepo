@@ -30,7 +30,7 @@ import {
   TokenRouter__factory,
   XERC20LockboxTest__factory,
   XERC20Test__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   HookConfig,
   HookType,
@@ -44,7 +44,7 @@ import {
   proxyAdmin,
   proxyImplementation,
   serializeContracts,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   addressToBytes32,
@@ -55,7 +55,7 @@ import {
   normalizeAddressEvm,
   objMap,
   randomInt,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { TestCoreApp } from '../core/TestCoreApp.js';
 import { TestCoreDeployer } from '../core/TestCoreDeployer.js';

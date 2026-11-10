@@ -3,7 +3,7 @@ import { BigNumber, Wallet, constants, providers } from 'ethers';
 import hre from 'hardhat';
 import sinon from 'sinon';
 
-import type { ChainAddresses } from '@hyperlane-xyz/registry';
+import type { ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   CONTRACTS_PACKAGE_VERSION,
   DomainRoutingHook__factory,
@@ -15,7 +15,7 @@ import {
   Mailbox__factory,
   QuotedCalls__factory,
   StorageGasOracle__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   ChainMap,
   ContractVerificationInput,
@@ -23,14 +23,14 @@ import {
   MultiProvider,
   OnchainHookType,
   PERMIT2_ADDRESS,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   Address,
   addBufferToGasLimit,
   addressToBytes32,
   assert,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { DEFAULT_OFFCHAIN_LOOKUP_ISM_URLS } from '../config/environments/utils.js';
 import { createMemoryChainStore } from '../src/aggregation-hook-upgrade/address-export.js';

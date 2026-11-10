@@ -3,8 +3,8 @@ import { ethers } from 'ethers';
 import {
   defaultMultisigConfigs,
   getValidatorFromStorageLocation,
-} from '@hyperlane-xyz/sdk';
-import { validatorMetadataRpcUrlHash } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import { validatorMetadataRpcUrlHash } from '@humanode-hyperlane/utils';
 
 import { isEthereumProtocolChain } from '../../src/utils/utils.js';
 import { getArgs, withChains } from '../agent-utils.js';

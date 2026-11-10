@@ -16,7 +16,7 @@ import {
   getLocalStorageGasOracleConfig,
   getProtocolExchangeRateScale,
   multisigIsmVerificationCost,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
   assert,
@@ -25,8 +25,8 @@ import {
   isEVMLike,
   rootLogger,
   toWei,
-} from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+} from '@humanode-hyperlane/utils';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import { getChain } from '../../config/registry.js';
 import { mustGetChainNativeToken } from '../utils/utils.js';

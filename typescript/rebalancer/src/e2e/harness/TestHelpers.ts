@@ -1,8 +1,8 @@
 import { BigNumber, providers } from 'ethers';
 
-import { HyperlaneCore, MultiProvider } from '@hyperlane-xyz/sdk';
-import { assert } from '@hyperlane-xyz/utils';
-import { ERC20Test__factory } from '@hyperlane-xyz/core';
+import { HyperlaneCore, MultiProvider } from '@humanode-hyperlane/sdk';
+import { assert } from '@humanode-hyperlane/utils';
+import { ERC20Test__factory } from '@humanode-hyperlane/core';
 import { expect } from 'chai';
 
 import type { RebalanceAction } from '../../tracking/types.js';

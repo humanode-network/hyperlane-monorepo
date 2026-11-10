@@ -6,8 +6,8 @@ import {
   signTransactionMessageWithSigners,
 } from '@solana/kit';
 
-import type { ChainMetadataForAltVM } from '@hyperlane-xyz/provider-sdk/chain';
-import { assert, type Logger, rootLogger } from '@hyperlane-xyz/utils';
+import type { ChainMetadataForAltVM } from '@humanode-hyperlane/provider-sdk/chain';
+import { assert, type Logger, rootLogger } from '@humanode-hyperlane/utils';
 
 import type { SvmRpc } from '../types.js';
 

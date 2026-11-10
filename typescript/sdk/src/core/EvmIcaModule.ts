@@ -3,7 +3,7 @@ import { ethers } from 'ethers';
 import {
   IERC20__factory,
   InterchainAccountRouter__factory,
-} from '@hyperlane-xyz/core';
+} from '@humanode-hyperlane/core';
 import {
   Domain,
   EvmChainId,
@@ -12,7 +12,7 @@ import {
   bytes32ToAddress,
   difference,
   rootLogger,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { serializeContracts } from '../contracts/contracts.js';
 import { HyperlaneAddresses } from '../contracts/types.js';

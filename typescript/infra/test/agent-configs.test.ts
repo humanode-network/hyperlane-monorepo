@@ -3,9 +3,13 @@ import { rejects } from 'node:assert/strict';
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { AgentConfig } from '@hyperlane-xyz/sdk';
-import { ProtocolType, addressToBytes32, assert } from '@hyperlane-xyz/utils';
-import { readJson } from '@hyperlane-xyz/utils/fs';
+import { AgentConfig } from '@humanode-hyperlane/sdk';
+import {
+  ProtocolType,
+  addressToBytes32,
+  assert,
+} from '@humanode-hyperlane/utils';
+import { readJson } from '@humanode-hyperlane/utils/fs';
 
 import { Contexts, RELEASE_CANDIDATE_INDEX_FROM } from '../config/contexts.js';
 import { DockerImageRepos, testnetDockerTags } from '../config/docker.js';

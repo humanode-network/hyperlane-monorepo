@@ -1,4 +1,4 @@
-import { assert } from '@hyperlane-xyz/utils';
+import { assert } from '@humanode-hyperlane/utils';
 
 import type { MultiProviderAdapter } from '../../providers/MultiProviderAdapter.js';
 

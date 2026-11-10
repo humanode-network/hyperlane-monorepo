@@ -5,8 +5,8 @@ import {
   ProxyAdmin__factory,
   Router,
   TimelockController__factory,
-} from '@hyperlane-xyz/core';
-import { Address, AddressBytes32, isNumeric } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/core';
+import { Address, AddressBytes32, isNumeric } from '@humanode-hyperlane/utils';
 
 import { HyperlaneFactories } from '../contracts/types.js';
 import { UpgradeConfig, UpgradeConfigSchema } from '../deploy/proxy.js';

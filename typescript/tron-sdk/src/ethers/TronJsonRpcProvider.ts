@@ -1,7 +1,7 @@
 import { BigNumber, providers, utils } from 'ethers';
 import { TronWeb } from 'tronweb';
 
-import { ensure0x, isNullish, retryAsync } from '@hyperlane-xyz/utils';
+import { ensure0x, isNullish, retryAsync } from '@humanode-hyperlane/utils';
 
 import { buildTronTriggerRequest, toTronHex } from '../utils/index.js';
 import { stripCustomRpcHeaders, toHttpApiUrl } from './urlUtils.js';
@@ -51,7 +51,7 @@ const JSON_RPC_REVERT_CODE = 3;
 
 /**
  * Shapes native constant-call reverts as ethers CALL_EXCEPTION errors so the
- * SDK's missing-selector detection (see @hyperlane-xyz/sdk contract utils)
+ * SDK's missing-selector detection (see @humanode-hyperlane/sdk contract utils)
  * recognizes them exactly as it would an eth_call revert.
  */
 const callExceptionLogger = new utils.Logger('tron-sdk');

@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import { rmSync, writeFileSync } from 'fs';
 import { $ } from 'zx';
 
-import { ChainMetadataSchema, randomAddress } from '@hyperlane-xyz/sdk';
-import { randomInt } from '@hyperlane-xyz/utils';
+import { ChainMetadataSchema, randomAddress } from '@humanode-hyperlane/sdk';
+import { randomInt } from '@humanode-hyperlane/utils';
 
 import { readYamlOrJson, writeYamlOrJson } from '../../../utils/files.js';
 import { localTestRunCmdPrefix } from '../../commands/helpers.js';

@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { pino } from 'pino';
 import Sinon from 'sinon';
 
-import { CoinGeckoTokenPriceGetter } from '@hyperlane-xyz/sdk';
+import { CoinGeckoTokenPriceGetter } from '@humanode-hyperlane/sdk';
 
 import { PriceGetter } from './PriceGetter.js';
 

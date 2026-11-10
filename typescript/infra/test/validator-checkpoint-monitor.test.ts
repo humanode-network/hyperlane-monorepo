@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { addressToBytes32 } from '@hyperlane-xyz/utils';
-import type { Checkpoint } from '@hyperlane-xyz/utils';
+import { addressToBytes32 } from '@humanode-hyperlane/utils';
+import type { Checkpoint } from '@humanode-hyperlane/utils';
 
 import { ValidatorSetName } from '../src/validators/monitorConfig.js';
 import {

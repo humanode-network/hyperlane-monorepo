@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { type ChainAddresses } from '@hyperlane-xyz/registry';
+import { type ChainAddresses } from '@humanode-hyperlane/registry';
 import {
   type ChainMap,
   type ChainName,
@@ -8,8 +8,12 @@ import {
   EvmWormholeHookIsmModule,
   WormholeConsistencyLevel,
   WormholeConsistencyType,
-} from '@hyperlane-xyz/sdk';
-import { type Address, addressToBytes32, assert } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import {
+  type Address,
+  addressToBytes32,
+  assert,
+} from '@humanode-hyperlane/utils';
 
 import { getContext } from '../../../context/context.js';
 import { writeYamlOrJson } from '../../../utils/files.js';

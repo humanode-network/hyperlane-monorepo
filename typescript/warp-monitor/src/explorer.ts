@@ -5,13 +5,13 @@ import {
   type ChainName,
   type ScaleInput,
   type Token,
-} from '@hyperlane-xyz/sdk';
+} from '@humanode-hyperlane/sdk';
 import {
   bytes32ToAddress,
   isValidAddressEvm,
   isZeroishAddress,
   parseWarpRouteMessage,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { DEFAULT_EXPLORER_QUERY_LIMIT } from './constants.js';
 

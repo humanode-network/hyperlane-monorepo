@@ -5,7 +5,7 @@ import { tmpdir } from 'os';
 import { join } from 'path';
 import type { z } from 'zod';
 
-import { writeYamlOrJson } from '@hyperlane-xyz/utils/fs';
+import { writeYamlOrJson } from '@humanode-hyperlane/utils/fs';
 
 import { RebalancerConfig } from './RebalancerConfig.js';
 import {

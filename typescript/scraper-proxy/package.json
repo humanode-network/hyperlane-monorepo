@@ -1,5 +1,5 @@
 {
-  "name": "@hyperlane-xyz/scraper-proxy",
+  "name": "@humanode-hyperlane/scraper-proxy",
   "version": "0.1.3",
   "private": true,
   "description": "GraphQL proxy for the scraper database",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@fastify/cors": "catalog:",
-    "@hyperlane-xyz/utils": "workspace:^",
+    "@humanode-hyperlane/utils": "workspace:^",
     "dotenv-flow": "^4.1.0",
     "fastify": "catalog:",
     "graphql": "catalog:",
@@ -42,7 +42,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@hyperlane-xyz/tsconfig": "workspace:^",
+    "@humanode-hyperlane/tsconfig": "workspace:^",
     "@types/node": "catalog:",
     "@types/pg": "^8.16.0",
     "@types/ws": "catalog:",

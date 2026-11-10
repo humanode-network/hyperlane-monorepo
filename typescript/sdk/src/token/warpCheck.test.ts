@@ -1,15 +1,15 @@
-import type { DerivedCollateralWarpConfig } from '@hyperlane-xyz/provider-sdk/warp';
+import type { DerivedCollateralWarpConfig } from '@humanode-hyperlane/provider-sdk/warp';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import { zeroAddress } from 'viem';
 
-import { CrossCollateralRouter__factory } from '@hyperlane-xyz/core';
+import { CrossCollateralRouter__factory } from '@humanode-hyperlane/core';
 import {
   type ObjectDiff,
   ProtocolType,
   addressToBytes32,
   assert,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import {
   test1,

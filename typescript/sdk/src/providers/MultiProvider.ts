@@ -15,7 +15,7 @@ import {
   Wallet as ZKSyncWallet,
 } from 'zksync-ethers';
 
-import { ZKSyncArtifact } from '@hyperlane-xyz/core';
+import { ZKSyncArtifact } from '@humanode-hyperlane/core';
 import {
   Address,
   ProtocolType,
@@ -25,7 +25,7 @@ import {
   rootLogger,
   sleep,
   timeout,
-} from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/utils';
 
 import { testChainMetadata, testChains } from '../consts/testChains.js';
 import { ChainMetadataManager } from '../metadata/ChainMetadataManager.js';
@@ -519,8 +519,8 @@ export class MultiProvider<MetaExt = {}> extends ChainMetadataManager<MetaExt> {
    * Resolve a core typechain factory to its Tron-compiled equivalent
    * wrapped with TronContractFactory for deployment.
    *
-   * @hyperlane-xyz/tron-sdk exports typechain factories with class names identical to
-   * @hyperlane-xyz/core (e.g. Mailbox__factory), generated from the same Solidity source.
+   * @humanode-hyperlane/tron-sdk exports typechain factories with class names identical to
+   * @humanode-hyperlane/core (e.g. Mailbox__factory), generated from the same Solidity source.
    * They share the same ABIs and deploy signatures, differing only in TVM bytecode.
    *
    * Looks up the tron factory by factory.constructor.name and wraps it
@@ -528,7 +528,7 @@ export class MultiProvider<MetaExt = {}> extends ChainMetadataManager<MetaExt> {
    * @throws if no matching Tron factory is found
    */
   async resolveTronFactory<F extends ContractFactory>(factory: F): Promise<F> {
-    const TronSdk = await import('@hyperlane-xyz/tron-sdk');
+    const TronSdk = await import('@humanode-hyperlane/tron-sdk');
     const TronFactory = (TronSdk as Record<string, any>)[
       factory.constructor.name
     ];

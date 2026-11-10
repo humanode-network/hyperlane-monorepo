@@ -6,8 +6,12 @@ import { ethers } from 'ethers';
 import hre from 'hardhat';
 import sinon from 'sinon';
 
-import { TimelockController__factory } from '@hyperlane-xyz/core';
-import { assert, deepCopy, normalizeAddressEvm } from '@hyperlane-xyz/utils';
+import { TimelockController__factory } from '@humanode-hyperlane/core';
+import {
+  assert,
+  deepCopy,
+  normalizeAddressEvm,
+} from '@humanode-hyperlane/utils';
 
 import {
   EXPLORER_API_URL,

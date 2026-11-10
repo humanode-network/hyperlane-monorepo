@@ -6,8 +6,8 @@ import {
   type ChainName,
   Token,
   TokenStandard,
-} from '@hyperlane-xyz/sdk';
-import type { Address } from '@hyperlane-xyz/utils';
+} from '@humanode-hyperlane/sdk';
+import type { Address } from '@humanode-hyperlane/utils';
 
 import { ExternalBridgeType } from '../config/types.js';
 import type {

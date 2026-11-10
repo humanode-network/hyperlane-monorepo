@@ -1,4 +1,7 @@
-import { ZKSyncArtifact, loadAllZKSyncArtifacts } from '@hyperlane-xyz/core';
+import {
+  ZKSyncArtifact,
+  loadAllZKSyncArtifacts,
+} from '@humanode-hyperlane/core';
 
 /**
  * @dev Retrieves a ZkSync artifact by its contract name or qualified name.

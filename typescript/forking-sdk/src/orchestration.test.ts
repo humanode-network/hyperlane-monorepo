@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/provider-sdk';
-import { assert } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/provider-sdk';
+import { assert } from '@humanode-hyperlane/utils';
 
 import { buildForkedChainMetadata } from './orchestration.js';
 import { ForkManagerRegistry } from './registry.js';

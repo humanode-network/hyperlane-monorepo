@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { ProtocolType } from '@hyperlane-xyz/utils';
+import { ProtocolType } from '@humanode-hyperlane/utils';
 
 import { createChainMetadataResolver } from './ChainMetadataResolver.js';
 import type { ChainMetadata } from './chainMetadataTypes.js';
