@@ -8,7 +8,10 @@ import { pathToFileURL } from 'url';
 import Sinon from 'sinon';
 import { parse, parseAllDocuments, stringify } from 'yaml';
 
-import { GithubRegistry } from '@humanode-hyperlane/registry';
+import {
+  DEFAULT_GITHUB_REGISTRY,
+  GithubRegistry,
+} from '@humanode-hyperlane/registry';
 import { TokenStandard } from '@humanode-hyperlane/sdk';
 
 import { DockerImageRepos, mainnetDockerTags } from '../config/docker.js';
@@ -215,7 +218,7 @@ describe('Rebalancer Helm deployment', () => {
     });
     expect(container.env).to.deep.include({
       name: 'REGISTRY_URI',
-      value: `https://github.com/hyperlane-xyz/hyperlane-registry/tree/${options.registryCommit}`,
+      value: `${DEFAULT_GITHUB_REGISTRY}/tree/${options.registryCommit}`,
     });
     const runtime = parse(values.hyperlane.rebalancerConfig);
     expect(runtime.intentTTL).to.equal(1209600);
@@ -332,7 +335,7 @@ describe('Rebalancer Helm deployment', () => {
       });
       expect(container.env).to.deep.include({
         name: 'REGISTRY_URI',
-        value: `https://github.com/hyperlane-xyz/hyperlane-registry/tree/${options.registryCommit}`,
+        value: `${DEFAULT_GITHUB_REGISTRY}/tree/${options.registryCommit}`,
       });
     } finally {
       fs.rmSync(routeDirectory, { recursive: true, force: true });

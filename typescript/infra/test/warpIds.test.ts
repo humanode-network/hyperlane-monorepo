@@ -13,6 +13,9 @@ describe('Warp IDs', function () {
     const registry = getRegistry({
       registryUris: [DEFAULT_GITHUB_REGISTRY],
       enableProxy: true,
+      // Our registry reads GitHub's API directly, without Hyperlane's proxy;
+      // anonymous calls share a small per-IP limit on CI runners.
+      authToken: process.env.GH_AUTH_TOKEN,
       logger: rootLogger,
     });
     for (const warpId of Object.values(WarpRouteIds)) {

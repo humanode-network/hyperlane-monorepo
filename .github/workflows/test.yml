@@ -337,6 +337,10 @@ jobs:
 
       - name: Unit Tests
         run: pnpm run test:ci
+        env:
+          # Tests that read the registry from GitHub call its API directly;
+          # the workflow's token lifts the anonymous per-IP rate limit.
+          GH_AUTH_TOKEN: ${{ github.token }}
 
   pnpm-test:
     runs-on: ubuntu-latest
