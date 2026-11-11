@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/relayer",
-  "version": "1004.1.0",
+  "version": "1004.1.1",
   "description": "Hyperlane Message Relayer Service",
   "keywords": [
     "blockchain",
