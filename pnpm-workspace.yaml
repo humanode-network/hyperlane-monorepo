@@ -102,7 +102,7 @@ catalog:
   '@aws-sdk/client-kms': ^3.577.0
 
   # Registry
-  '@humanode-hyperlane/registry': 1026.3.0
+  '@humanode-hyperlane/registry': 1026.3.1
 
   # CLI prompts
   '@inquirer/prompts': 3.3.2
