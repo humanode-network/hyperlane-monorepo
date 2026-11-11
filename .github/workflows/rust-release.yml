@@ -76,6 +76,12 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
         with:
           target: ${{ matrix.TARGET }}
+      # The build runs with the toolchain pinned in rust/main/rust-toolchain,
+      # which rustup installs on first use without the cross target; the step
+      # above only equips `stable`.
+      - name: Install the target for the pinned toolchain
+        run: rustup target add ${{ matrix.TARGET }}
+        working-directory: ./rust/main
       - name: Build
         run: cargo build --release --target ${{ matrix.TARGET }} --bin relayer --bin scraper --bin validator
         working-directory: ./rust/main
