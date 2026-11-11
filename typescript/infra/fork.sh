@@ -10,12 +10,29 @@ if [ -z "$ENVIRONMENT" ] || [ -z "$MODULE" ] || [ -z "$CHAIN" ]; then
   exit 1
 fi
 
+anvil_listening() {
+  if command -v lsof >/dev/null 2>&1; then
+    lsof -ti tcp:8545 >/dev/null 2>&1
+  elif command -v fuser >/dev/null 2>&1; then
+    fuser 8545/tcp >/dev/null 2>&1
+  else
+    false
+  fi
+}
+
 kill_local_anvil() {
   if command -v lsof >/dev/null 2>&1; then
     lsof -ti tcp:8545 | xargs -r kill 2>/dev/null || true
   elif command -v fuser >/dev/null 2>&1; then
     fuser -k 8545/tcp >/dev/null 2>&1 || true
   fi
+  # Anvil writes its fork RPC cache while shutting down and releases the port
+  # once it has exited, so the wait here is what gets the cache onto disk
+  # before the caller moves on (or CI saves it).
+  for _ in $(seq 60); do
+    anvil_listening || return 0
+    sleep 1
+  done
 }
 
 cleanup() {

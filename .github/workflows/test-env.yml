@@ -18,18 +18,38 @@ jobs:
       MAINNET3_OPTIMISM_RPC_URLS: ${{ secrets.MAINNET3_OPTIMISM_RPC_URLS }}
       MAINNET3_ETHEREUM_RPC_URLS: ${{ secrets.MAINNET3_ETHEREUM_RPC_URLS }}
       TESTNET4_SEPOLIA_RPC_URLS: ${{ secrets.TESTNET4_SEPOLIA_RPC_URLS }}
+      # The RPC URLs above are free-tier plans. Alchemy's allows about 300
+      # compute units per second for the whole account, so anvil paces its
+      # fork requests under this budget, and the matrix runs one job at a
+      # time so that a single anvil has nearly all of it.
+      ANVIL_COMPUTE_UNITS_PER_SECOND: 250
+      ANVIL_FORK_BLOCK_NUMBER: ${{ matrix.block }}
 
-    timeout-minutes: 30
+    timeout-minutes: 60
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
         environment: [mainnet3]
         chain: [ethereum, arbitrum, optimism]
         module: [core, igp]
+        # Each chain is forked at a pinned block, which makes anvil's RPC
+        # cache reusable across runs (the cache step below); most of a run's
+        # reads then never reach the provider. The blocks are the chains'
+        # state at 2026-11-10 14:39 UTC, the time of the upstream commit this
+        # fork is based on, when upstream's configs matched that state. A
+        # sync with upstream moves them to the new base's time.
         include:
+          - chain: ethereum
+            block: 26385162
+          - chain: arbitrum
+            block: 523006019
+          - chain: optimism
+            block: 159361384
           - environment: testnet4
             chain: sepolia
             module: core
+            block: 12105276
 
     steps:
       - uses: actions/checkout@v7
@@ -44,10 +64,23 @@ jobs:
       - name: Checkout registry
         uses: ./.github/actions/checkout-registry
 
+      - name: Cache anvil's fork reads
+        uses: actions/cache@v6
+        with:
+          path: ~/.foundry/cache/rpc
+          # An existing cache entry is never overwritten, so every job saves
+          # a new one and the restore takes the newest for the chain and
+          # block, which carries everything the earlier jobs read.
+          key: anvil-rpc-${{ matrix.chain }}-${{ matrix.block }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.module }}
+          restore-keys: |
+            anvil-rpc-${{ matrix.chain }}-${{ matrix.block }}-
+
       - name: Fork test ${{ matrix.environment }} ${{ matrix.module }} ${{ matrix.chain }} deployment with retries
         uses: nick-fields/retry@v3
         with:
-          timeout_minutes: 8
+          # A cold cache at the free-tier pace needs the room; a warm one
+          # finishes in a fraction of it.
+          timeout_minutes: 15
           max_attempts: 3
           retry_wait_seconds: 30
           command: cd typescript/infra && ./fork.sh ${{ matrix.environment }} ${{ matrix.module }} ${{ matrix.chain }}
