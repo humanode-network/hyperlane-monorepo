@@ -9,5 +9,4 @@ export const ETHEREUM_MINIMUM_GAS: MinimumRequiredGasByAction = {
   AVS_GAS: BigInt(3e6),
 };
 
-export const PROXY_DEPLOYED_URL = 'https://proxy.hyperlane.xyz';
 export const EXPLORER_URL = 'https://explorer.hyperlane.xyz';

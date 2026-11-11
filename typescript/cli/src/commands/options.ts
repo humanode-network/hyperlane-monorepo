@@ -85,10 +85,13 @@ export const keyCommandOption: Options = {
   defaultDescription: 'process.env.HYP_KEY',
 };
 
+// Upstream routed GitHub API requests through Hyperlane's proxy unless this was
+// set. This fork's registry reads GitHub directly in either case; the option
+// stays so that existing invocations keep working.
 export const disableProxyCommandOption: Options = {
   type: 'boolean',
   description:
-    'Disable routing of Github API requests through the Hyperlane registry proxy.',
+    'Accepted for compatibility; GitHub API requests go to GitHub directly, there is no registry proxy.',
   default: false,
 };
 
