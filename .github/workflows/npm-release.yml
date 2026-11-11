@@ -4,8 +4,9 @@ name: NPM Release
 # manually pushed `npm-v<sdk version>` tag, with upstream's `pnpm release`.
 # npm's trusted publishing checks this workflow's OIDC identity, so no npm token
 # is stored, and each package gets a provenance statement.
-# Upstream's `release.yml` drives the same command through changesets release PRs
-# and a GitHub App, and is not used in this fork.
+# Upstream's `release.yml` drove the same command through changesets release PRs
+# and a GitHub App; our versions follow upstream's releases
+# (scripts/humanode-version.sh), so that workflow is gone from this fork.
 
 on:
   push:
