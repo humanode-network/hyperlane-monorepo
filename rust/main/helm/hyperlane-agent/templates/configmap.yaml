@@ -15,4 +15,7 @@ data:
 {{- include "agent-common.config-env-vars" (dict "config" . "key_name_prefix" (printf "chains_%s_" .name) "format" "config_map") | indent 2 }}
   {{- end }}
   HYP_METRICSPORT: {{ .Values.hyperlane.metrics.port | quote }}
+  {{- range $name, $value := .Values.hyperlane.extraEnv }}
+  {{ $name }}: {{ $value | quote }}
+  {{- end }}
 {{- end }}
