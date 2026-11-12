@@ -17,6 +17,9 @@ externalSecrets:
   # Available types: SecretStore, ClusterSecretStore
   storeType: ClusterSecretStore
   storeName:
+  # Prepended to every remoteRef.key. GCP Secret Manager takes bare names;
+  # ESO's Scaleway provider wants "name:" (or "id:" / "path:") in front.
+  keyPrefix: ''
 
 podAnnotations: {}
 podCommonLabels: {}
@@ -45,6 +48,9 @@ hyperlane:
   metrics:
     port: 9090
   aws: # true | false
+  # Extra environment for every agent, rendered into the shared ConfigMap.
+  # For example AWS_ENDPOINT_URL for an S3-compatible checkpoint store.
+  extraEnv: {}
 
   # -- Chain overrides, a sequence
   # This should mirror @humanode-hyperlane/sdk AgentChainMetadata
