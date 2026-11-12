@@ -14,12 +14,28 @@ serviceAccount:
 
 # -- External Secret Store type and name
 externalSecrets:
+  # Whether the chart renders ExternalSecrets for the External Secrets Operator
+  # to fill. With false, the Secrets named under `secrets` exist already.
+  enabled: true
   # Available types: SecretStore, ClusterSecretStore
   storeType: ClusterSecretStore
   storeName:
   # Prepended to every remoteRef.key. GCP Secret Manager takes bare names;
   # ESO's Scaleway provider wants "name:" (or "id:" / "path:") in front.
   keyPrefix: ''
+
+# Names of pre-existing Secrets the pods mount, for clusters without the
+# External Secrets Operator. Empty means the chart's own ExternalSecret output.
+secrets:
+  # HYP_CHAINS_<CHAIN>_CUSTOMRPCURLS per chain.
+  rpcEndpoints: ''
+  # validator-<i>.env per replica: HYP_VALIDATOR_KEY, HYP_CHAINS_<CHAIN>_SIGNER_KEY.
+  validatorKeys: ''
+  # validator-<i>.env per replica: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY.
+  # Kept apart from the signing keys; mounted only when set.
+  validatorS3: ''
+  # HYP_CHAINS_<CHAIN>_SIGNER_KEY and _SIGNER_TYPE per chain.
+  relayerKeys: ''
 
 podAnnotations: {}
 podCommonLabels: {}

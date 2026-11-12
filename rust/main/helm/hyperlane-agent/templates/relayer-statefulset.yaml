@@ -88,9 +88,9 @@ spec:
         - configMapRef:
             name: {{ include "agent-common.fullname" . }}
         - secretRef:
-            name: {{ include "agent-common.fullname" . }}-secret
+            name: {{ include "agent.secret.rpcEndpoints" . }}
         - secretRef:
-            name: {{ include "agent-common.fullname" . }}-relayer-secret
+            name: {{ include "agent.secret.relayerKeys" . }}
         env:
           {{- include "agent-common.config-env-vars" (dict "config" .Values.hyperlane.relayer.envConfig) | nindent 10 }}
           - name: CONFIG_FILES
