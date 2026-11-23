@@ -54,6 +54,30 @@ pub struct S3Storage {
 /// We've seen freshly created S3 clients make expensive DNS / TCP
 /// requests when creating them. This cache allows us to reuse
 /// anonymous clients across the entire agent.
+/// Prefix of the environment variable that gives the S3 endpoint of one region:
+/// `HYP_S3_ENDPOINT_` and the region's name in upper case, with `-` as `_`, e.g.
+/// `HYP_S3_ENDPOINT_NL_AMS=https://s3.nl-ams.scw.cloud` for a bucket announced as
+/// `s3://<bucket>/nl-ams`. A region without one goes to AWS, or to the SDK's own
+/// `AWS_ENDPOINT_URL` when that is set. Unlike `AWS_ENDPOINT_URL`, which sends
+/// every bucket to one endpoint, this lets one agent read validators whose
+/// buckets are on AWS and on other S3-compatible stores at once.
+pub const S3_ENDPOINT_ENV_PREFIX: &str = "HYP_S3_ENDPOINT_";
+
+/// The name of the environment variable that gives `region`'s S3 endpoint.
+pub fn s3_endpoint_env_var(region: &Region) -> String {
+    format!(
+        "{S3_ENDPOINT_ENV_PREFIX}{}",
+        region.as_ref().to_ascii_uppercase().replace('-', "_")
+    )
+}
+
+/// `region`'s S3 endpoint from the environment, if one is given.
+fn s3_endpoint_override(region: &Region) -> Option<String> {
+    std::env::var(s3_endpoint_env_var(region))
+        .ok()
+        .filter(|url| !url.is_empty())
+}
+
 static ANONYMOUS_CLIENT_CACHE: OnceLock<DashMap<Region, Arc<OnceCell<Client>>>> = OnceLock::new();
 
 fn anonymous_client_cell(region: Region) -> Arc<OnceCell<Client>> {
@@ -207,17 +231,23 @@ impl S3Storage {
         .clone()
     }
 
-    /// A default ConfigLoader with timeout, region, and behavior version.
-    /// Unless overridden, credentials will be loaded from the env.
+    /// A default ConfigLoader with timeout, region, and behavior version, and
+    /// the region's endpoint when the environment gives one
+    /// (`S3_ENDPOINT_ENV_PREFIX`). Unless overridden, credentials will be loaded
+    /// from the env.
     fn default_aws_sdk_config_loader(&self) -> aws_config::ConfigLoader {
-        ConfigLoader::default()
+        let loader = ConfigLoader::default()
             .timeout_config(
                 TimeoutConfig::builder()
                     .operation_timeout(S3_REQUEST_TIMEOUT)
                     .build(),
             )
             .behavior_version(BehaviorVersion::latest())
-            .region(self.region.clone())
+            .region(self.region.clone());
+        match s3_endpoint_override(&self.region) {
+            Some(url) => loader.endpoint_url(url),
+            None => loader,
+        }
     }
 
     fn get_composite_key(&self, key: String) -> String {
@@ -617,6 +647,42 @@ mod tests {
             .unwrap_err();
         assert!(error.to_string().contains("Timed out"));
         assert_eq!(started.elapsed(), deadline);
+    }
+
+    #[test]
+    fn s3_endpoint_env_var_names_the_region() {
+        assert_eq!(
+            s3_endpoint_env_var(&Region::new("nl-ams")),
+            "HYP_S3_ENDPOINT_NL_AMS"
+        );
+        assert_eq!(
+            s3_endpoint_env_var(&Region::new("us-east-1")),
+            "HYP_S3_ENDPOINT_US_EAST_1"
+        );
+    }
+
+    #[tokio::test]
+    async fn s3_endpoint_override_applies_to_its_region_only() {
+        let overridden = Region::new("test-endpoint-override-a");
+        let other = Region::new("test-endpoint-override-b");
+        std::env::set_var(
+            s3_endpoint_env_var(&overridden),
+            "https://s3.example.invalid",
+        );
+        let storage = S3Storage::new("bucket".into(), None, overridden, None);
+        let config = storage.default_aws_sdk_config_loader().load().await;
+        assert_eq!(config.endpoint_url(), Some("https://s3.example.invalid"));
+
+        let storage = S3Storage::new("bucket".into(), None, other.clone(), None);
+        assert_eq!(s3_endpoint_override(&other), None);
+        let config = storage.default_aws_sdk_config_loader().load().await;
+        assert_eq!(
+            config.endpoint_url(),
+            std::env::var("AWS_ENDPOINT_URL").ok().as_deref()
+        );
+        std::env::remove_var(s3_endpoint_env_var(&Region::new(
+            "test-endpoint-override-a",
+        )));
     }
 
     /// Builds a plain HTTP-only S3 client pointed at a local mock server. Building an explicit
