@@ -86,7 +86,10 @@ export class EvmCoreModule extends HyperlaneModule<
     this.chainId = multiProvider.getEvmChainId(args.chain);
     this.domainId = multiProvider.getDomainId(args.chain);
 
-    if (args.config.interchainAccountRouter) {
+    if (
+      args.config.interchainAccountRouter &&
+      args.addresses.interchainAccountRouter
+    ) {
       this.evmIcaModule = new EvmIcaModule(multiProvider, {
         chain: args.chain,
         addresses: {
@@ -418,23 +421,26 @@ export class EvmCoreModule extends HyperlaneModule<
       chain,
     });
 
-    // Deploy ICA ISM and Router
-    const { interchainAccountRouter } = (
-      await EvmIcaModule.create({
-        chain: chainName,
-        multiProvider: multiProvider,
-        config: {
-          mailbox: mailbox.address,
-          owner: await multiProvider.getSigner(chain).getAddress(),
-          commitmentIsm: {
-            type: IsmType.OFFCHAIN_LOOKUP,
-            urls: ['https://commitment-read-ism.hyperlane.xyz'],
+    // Deploy ICA ISM and Router, unless the config opts out
+    let interchainAccountRouter: Address | undefined;
+    if (config.deployInterchainAccountRouter !== false) {
+      interchainAccountRouter = (
+        await EvmIcaModule.create({
+          chain: chainName,
+          multiProvider: multiProvider,
+          config: {
+            mailbox: mailbox.address,
             owner: await multiProvider.getSigner(chain).getAddress(),
+            commitmentIsm: {
+              type: IsmType.OFFCHAIN_LOOKUP,
+              urls: ['https://commitment-read-ism.hyperlane.xyz'],
+              owner: await multiProvider.getSigner(chain).getAddress(),
+            },
           },
-        },
-        contractVerifier,
-      })
-    ).serialize();
+          contractVerifier,
+        })
+      ).serialize().interchainAccountRouter;
+    }
 
     // Deploy Validator announce
     const validatorAnnounce = (

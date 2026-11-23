@@ -236,6 +236,18 @@ describe('EvmCoreModule', async () => {
       expect(module.serialize().quotedCalls).to.be.undefined;
     });
 
+    it('should skip the ICA when disabled', async () => {
+      const module = await EvmCoreModule.create({
+        chain: CHAIN,
+        config: { ...config, deployInterchainAccountRouter: false },
+        multiProvider,
+      });
+
+      expect(module.serialize().interchainAccountRouter).to.be.undefined;
+      const derived = await module.read();
+      expect(derived.interchainAccountRouter).to.be.undefined;
+    });
+
     it('should deploy testRecipient', async () => {
       expect(evmCoreModule.serialize().testRecipient).to.exist;
       expect(await testRecipientContract.owner()).to.equal(signer.address);

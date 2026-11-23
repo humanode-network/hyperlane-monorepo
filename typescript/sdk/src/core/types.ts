@@ -35,6 +35,9 @@ const CoreConfigBaseSchema = OwnableSchema.extend({
   permit2: z.string().optional(),
   // Set false for chains that should keep legacy core artifacts only.
   deployQuotedCalls: z.boolean().optional(),
+  // Set false to deploy the core without an InterchainAccountRouter: the
+  // router's commitment ISM reads from a service Hyperlane runs.
+  deployInterchainAccountRouter: z.boolean().optional(),
   contractVersion: z.string().optional(),
 });
 
@@ -132,7 +135,8 @@ export const DeployedCoreAddressesSchema = ProxyFactoryFactoriesSchema.extend({
   proxyAdmin: z.string(),
   testRecipient: z.string(),
   timelockController: z.string().optional(),
-  interchainAccountRouter: z.string(),
+  // Absent when the core was deployed with deployInterchainAccountRouter: false.
+  interchainAccountRouter: z.string().optional(),
   quotedCalls: z.string().optional(),
   batchContractAddress: z.string().optional(),
   merkleTreeHook: z.string().optional(),

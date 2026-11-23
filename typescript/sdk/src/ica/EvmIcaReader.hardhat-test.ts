@@ -32,7 +32,8 @@ describe(EvmIcaRouterReader.name, async () => {
     });
 
     signerAddress = signer.address;
-    interchainAccountRouterAddress = addresses.interchainAccountRouter;
+    expect(addresses.interchainAccountRouter).to.not.be.undefined;
+    interchainAccountRouterAddress = addresses.interchainAccountRouter!;
     interchainAccountRouterReader = new EvmIcaRouterReader(
       multiProvider,
       CHAIN,
