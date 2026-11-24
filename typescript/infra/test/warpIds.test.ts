@@ -1,31 +1,18 @@
 import { expect } from 'chai';
 
-import { DEFAULT_GITHUB_REGISTRY } from '@humanode-hyperlane/registry';
-import { getRegistry } from '@humanode-hyperlane/registry/fs';
-import { retryAsync, rootLogger } from '@humanode-hyperlane/utils';
-
 import { WarpRouteIds } from '../config/environments/mainnet3/warp/warpIds.js';
+import { getRegistry } from '../config/registry.js';
 
 describe('Warp IDs', function () {
   this.timeout(60_000); // 60s timeout for fetching all warp IDs from registry
 
   it('Has all warp IDs in the registry', async () => {
-    const registry = getRegistry({
-      registryUris: [DEFAULT_GITHUB_REGISTRY],
-      enableProxy: true,
-      // Our registry reads GitHub's API directly, without Hyperlane's proxy;
-      // anonymous calls share a small per-IP limit on CI runners.
-      authToken: process.env.GH_AUTH_TOKEN,
-      logger: rootLogger,
-    });
+    // The registry checked out next to the monorepo at the version in
+    // .registryrc (REGISTRY_URI overrides it), read from disk: one GitHub API
+    // call per warp ID used up the workflow token's hourly limit.
+    const registry = getRegistry();
     for (const warpId of Object.values(WarpRouteIds)) {
-      // Retry to handle transient network failures (e.g. socket closed)
-      // when fetching from GitHub registry in CI
-      const route = await retryAsync(
-        () => registry.getWarpRoute(warpId),
-        3,
-        500,
-      );
+      const route = await registry.getWarpRoute(warpId);
       expect(
         route,
         `Warp ID ${warpId} not in registry, the .registryrc or your local registry may be out of date`,
