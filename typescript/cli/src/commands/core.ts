@@ -253,6 +253,12 @@ export const check: CommandModuleWithContext<{
       onChainCoreConfig.contractVersion = undefined;
     }
 
+    // deployQuotedCalls and deployInterchainAccountRouter say what core
+    // deploy creates, not state a deployed core has, so the reader never
+    // reports them; left in the expected config they always differ.
+    delete expectedCoreConfig.deployQuotedCalls;
+    delete expectedCoreConfig.deployInterchainAccountRouter;
+
     const { mergedObject, isInvalid } = diffObjMerge(
       normalizeConfig(onChainCoreConfig),
       normalizeConfig(expectedCoreConfig),
