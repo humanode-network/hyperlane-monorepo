@@ -693,6 +693,43 @@ describe('EvmHookModule', async () => {
       await expectTxsAndUpdate(hook, config, 1);
     });
 
+    const externallyManagedOracleConfig = () =>
+      Object.fromEntries(
+        testChains.map((c) => [
+          c,
+          {
+            initialTokenExchangeRate: randomInt(987654321).toString(),
+            initialGasPrice: randomInt(987654321).toString(),
+            tokenDecimals: DEFAULT_TOKEN_DECIMALS,
+          },
+        ]),
+      );
+
+    it('should not update an externally managed oracle entry that holds a value', async () => {
+      const config = await createDeployerOwnedIgpHookConfig();
+      const { hook } = await createHook(config);
+
+      // The oracle holds the deployed values; the config now only seeds it.
+      config.oracleConfig = externallyManagedOracleConfig();
+
+      await expectTxsAndUpdate(hook, config, 0);
+    });
+
+    it('should seed externally managed oracle entries on a new IGP', async () => {
+      const config = await createDeployerOwnedIgpHookConfig();
+      config.oracleConfig = externallyManagedOracleConfig();
+      const { hook } = await createHook(config);
+
+      const derived = (await hook.read()) as IgpHookConfig;
+      for (const [remote, entry] of Object.entries(config.oracleConfig)) {
+        expect(derived.oracleConfig[remote]).to.deep.include({
+          gasPrice: entry.initialGasPrice,
+          tokenExchangeRate: entry.initialTokenExchangeRate,
+        });
+      }
+      await expectTxsAndUpdate(hook, config, 0);
+    });
+
     it('should not update IGP only because igpVersion is legacy', async () => {
       const config = await createDeployerOwnedIgpHookConfig();
       const { hook } = await createHook(config);

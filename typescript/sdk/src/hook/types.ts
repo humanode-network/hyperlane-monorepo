@@ -11,7 +11,7 @@ import {
 
 import {
   ProtocolAgnositicGasOracleConfigSchema,
-  ProtocolAgnositicGasOracleConfigWithTypicalCostSchema,
+  IgpOracleConfigEntrySchema,
 } from '../gas/oracle/types.js';
 import { MAX_SAFE_UINT48, ZRouterBytes32 } from '../ism/types.js';
 import {
@@ -307,10 +307,7 @@ export const IgpSchema = OwnableSchema.extend({
   beneficiary: z.string(),
   oracleKey: z.string(),
   overhead: z.record(z.string(), z.number()),
-  oracleConfig: z.record(
-    z.string(),
-    ProtocolAgnositicGasOracleConfigWithTypicalCostSchema,
-  ),
+  oracleConfig: z.record(z.string(), IgpOracleConfigEntrySchema),
   igpVersion: z.enum(IgpVersion).optional(),
   quoteSigners: z.array(z.string()).optional(),
   contractVersion: z.string().optional(),

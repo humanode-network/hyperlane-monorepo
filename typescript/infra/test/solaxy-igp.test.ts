@@ -1,6 +1,8 @@
 import { expect } from 'chai';
 
 import oracleConfigs from '../../../rust/sealevel/environments/mainnet3/gas-oracle-configs.json' with { type: 'json' };
+import { gasOracleConfigValues } from '@humanode-hyperlane/sdk';
+
 import { getIgp } from '../config/environments/mainnet3/igp.js';
 import tokenPrices from '../config/environments/mainnet3/tokenPrices.json' with { type: 'json' };
 import { getChain } from '../config/registry.js';
@@ -13,7 +15,7 @@ describe('Solaxy IGP decimal compensation', () => {
         oracleConfigs.solaxy[remote].oracleConfig,
       );
     }
-    const oracle = solaxyOracles.solanamainnet;
+    const oracle = gasOracleConfigValues(solaxyOracles.solanamainnet);
     expect(getChain('solaxy').nativeToken?.decimals).to.equal(6);
     expect(oracle.tokenDecimals).to.equal(9);
     // This checks a sample quote, not an enforced minimum or a live oracle.

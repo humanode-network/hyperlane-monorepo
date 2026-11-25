@@ -274,6 +274,14 @@ export { HyperlaneIgp } from './gas/HyperlaneIgp.js';
 export { HyperlaneIgpChecker } from './gas/HyperlaneIgpChecker.js';
 export { HyperlaneIgpDeployer } from './gas/HyperlaneIgpDeployer.js';
 export {
+  ConfigManagedGasOracleConfig,
+  ConfigManagedGasOracleConfigSchema,
+  ExternallyManagedGasOracleConfig,
+  ExternallyManagedGasOracleConfigSchema,
+  gasOracleConfigValues,
+  IgpOracleConfigEntry,
+  IgpOracleConfigEntrySchema,
+  isExternallyManagedGasOracleConfig,
   ProtocolAgnositicGasOracleConfig,
   ProtocolAgnositicGasOracleConfigSchema,
   ProtocolAgnositicGasOracleConfigWithTypicalCost,
@@ -281,6 +289,7 @@ export {
   StorageGasOracleConfig,
   StorageGasOracleConfigSchema,
 } from './gas/oracle/types.js';
+export { withoutExternallyManagedGasOracleValues } from './gas/oracle/externally-managed.js';
 export { CoinGeckoTokenPriceGetter } from './gas/token-prices.js';
 export {
   IgpBeneficiaryViolation,

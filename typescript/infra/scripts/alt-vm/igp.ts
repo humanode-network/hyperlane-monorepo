@@ -17,7 +17,9 @@ import {
   IgpConfig,
   MultiProvider,
   altVmChainLookup,
+  gasOracleConfigValues,
   getProtocolExchangeRateScale,
+  isExternallyManagedGasOracleConfig,
 } from '@humanode-hyperlane/sdk';
 import { ProtocolType, rootLogger } from '@humanode-hyperlane/utils';
 
@@ -277,6 +279,11 @@ async function main() {
 function adjustRadixIGP(config: IgpConfig) {
   for (const key of Object.keys(config.oracleConfig)) {
     const value = config.oracleConfig[key];
+    if (isExternallyManagedGasOracleConfig(value)) {
+      throw new Error(
+        `The gas oracle for ${key} is managed externally; Radix's adjustment applies to config-managed entries only`,
+      );
+    }
 
     const product = new BigNumber(value.gasPrice).times(
       value.tokenExchangeRate,
@@ -303,10 +310,10 @@ function exampleCost(
 ) {
   const overhead = config.overhead[remote];
   const exampleRemoteGas = (overhead ?? 200_000) + 50_000;
-  const oracleData = config.oracleConfig[remote] || {
-    gasPrice: 0,
-    tokenExchangeRate: 1,
-  };
+  const entry = config.oracleConfig[remote];
+  const oracleData = entry
+    ? gasOracleConfigValues(entry)
+    : { gasPrice: 0, tokenExchangeRate: 1 };
   const protocol = provider.getProtocol(local);
   let exampleRemoteGasCost = new BigNumber(oracleData.tokenExchangeRate)
     .times(oracleData.gasPrice)

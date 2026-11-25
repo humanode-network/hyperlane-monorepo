@@ -2,6 +2,7 @@ import {
   ChainMap,
   ChainName,
   ProtocolAgnositicGasOracleConfigWithTypicalCost,
+  isExternallyManagedGasOracleConfig,
 } from '@humanode-hyperlane/sdk';
 import {
   ProtocolType,
@@ -60,6 +61,11 @@ async function main() {
           `No oracle config for ${origin} -> ${destination}, skipping`,
         );
         return agg;
+      }
+      if (isExternallyManagedGasOracleConfig(oracleConfig)) {
+        throw new Error(
+          `The gas oracle for ${origin} -> ${destination} is managed externally; Sealevel oracle configs are config-managed only`,
+        );
       }
       if (oracleConfig.tokenDecimals === undefined) {
         throw new Error(

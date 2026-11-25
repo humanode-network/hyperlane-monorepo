@@ -60,6 +60,10 @@ import { ProxyFactoryFactories } from '../deploy/contracts.js';
 import { isProxy, proxyAdmin } from '../deploy/proxy.js';
 import { ContractVerifier } from '../deploy/verify/ContractVerifier.js';
 import {
+  gasOracleConfigValues,
+  isExternallyManagedGasOracleConfig,
+} from '../gas/oracle/types.js';
+import {
   IgpConfig,
   assertTokenOracleConfigHasNativeRemotes,
   igpSupportsOffchainFeeQuoting,
@@ -910,19 +914,43 @@ export class EvmHookModule extends HyperlaneModule<
         continue;
       }
 
+      // An externally managed entry is only seeded: once the oracle holds a
+      // value for the remote, the value is its manager's.
+      const currentValues = current && gasOracleConfigValues(current);
+      if (
+        isExternallyManagedGasOracleConfig(target) &&
+        currentValues &&
+        !(
+          BigNumber.from(currentValues.gasPrice).isZero() &&
+          BigNumber.from(currentValues.tokenExchangeRate).isZero()
+        )
+      ) {
+        this.logger.info(
+          `${this.chain} -> ${remote}: gas oracle managed externally, left as it is`,
+        );
+        continue;
+      }
+
       // only update if the oracle config has changed
+      const targetValues = gasOracleConfigValues(target);
       const comparableTarget = {
-        gasPrice: target.gasPrice,
-        tokenExchangeRate: target.tokenExchangeRate,
-        tokenDecimals: target.tokenDecimals,
+        gasPrice: targetValues.gasPrice,
+        tokenExchangeRate: targetValues.tokenExchangeRate,
+        tokenDecimals: targetValues.tokenDecimals,
       };
       if (!current || !deepEquals(current, comparableTarget)) {
-        configsToSet.push({ remoteDomain, ...target });
+        configsToSet.push({
+          remoteDomain,
+          gasPrice: targetValues.gasPrice,
+          tokenExchangeRate: targetValues.tokenExchangeRate,
+        });
 
         // Log an example remote gas cost
         const exampleRemoteGas = (targetOverhead[remote] ?? 200_000) + 50_000;
-        const exampleRemoteGasCost = BigNumber.from(target.tokenExchangeRate)
-          .mul(target.gasPrice)
+        const exampleRemoteGasCost = BigNumber.from(
+          targetValues.tokenExchangeRate,
+        )
+          .mul(targetValues.gasPrice)
           .mul(exampleRemoteGas)
           .div(TOKEN_EXCHANGE_RATE_SCALE_ETHEREUM);
         this.logger.info(

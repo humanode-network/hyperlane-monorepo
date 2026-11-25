@@ -15,7 +15,7 @@ import { ChainMap } from '../../types.js';
 import { HyperlaneIgpDeployer } from '../HyperlaneIgpDeployer.js';
 import { IgpConfig } from '../types.js';
 
-import { oracleConfigToOracleData } from './types.js';
+import { gasOracleConfigValues, oracleConfigToOracleData } from './types.js';
 
 describe('HyperlaneIgpDeployer', () => {
   const local = TestChainName.test1;
@@ -44,7 +44,7 @@ describe('HyperlaneIgpDeployer', () => {
     // Assert
     const deployedConfig = await igp.getExchangeRateAndGasPrice(remoteId);
     const expected = oracleConfigToOracleData(
-      testConfig[local].oracleConfig![remote],
+      gasOracleConfigValues(testConfig[local].oracleConfig![remote]),
     );
 
     expect(
@@ -72,7 +72,7 @@ describe('HyperlaneIgpDeployer', () => {
 
     const modifiedConfig = await igp.getExchangeRateAndGasPrice(remoteId);
     const expected = oracleConfigToOracleData(
-      testConfig[local].oracleConfig![remote],
+      gasOracleConfigValues(testConfig[local].oracleConfig![remote]),
     );
 
     expect(
@@ -83,6 +83,47 @@ describe('HyperlaneIgpDeployer', () => {
       modifiedConfig.tokenExchangeRate.eq(expected.tokenExchangeRate),
       `tokenExchangeRate mismatch: expected ${expected.tokenExchangeRate.toString()}, got ${modifiedConfig.tokenExchangeRate.toString()}`,
     ).to.be.true;
+  });
+
+  it('should leave an externally managed entry that holds a value as it is', async () => {
+    const before = await igp.getExchangeRateAndGasPrice(remoteId);
+    testConfig[local].oracleConfig![remote] = {
+      initialTokenExchangeRate: utils.parseUnits('9', 'gwei').toString(),
+      initialGasPrice: utils.parseUnits('9', 'gwei').toString(),
+      tokenDecimals: 18,
+    };
+
+    const localContracts = await deployer.deployContracts(
+      local,
+      testConfig[local],
+    );
+    igp = localContracts.interchainGasPaymaster;
+
+    const after = await igp.getExchangeRateAndGasPrice(remoteId);
+    expect(after.gasPrice.eq(before.gasPrice)).to.be.true;
+    expect(after.tokenExchangeRate.eq(before.tokenExchangeRate)).to.be.true;
+  });
+
+  it('should seed an externally managed entry on a new oracle', async () => {
+    const [signer] = await hre.ethers.getSigners();
+    const config = testIgpConfig([local, remote], signer.address);
+    config[local].oracleConfig![remote] = {
+      initialTokenExchangeRate: utils.parseUnits('4', 'gwei').toString(),
+      initialGasPrice: utils.parseUnits('6', 'gwei').toString(),
+      tokenDecimals: 18,
+    };
+
+    const contracts = await new HyperlaneIgpDeployer(multiProvider).deploy(
+      config,
+    );
+
+    const seeded =
+      await contracts[local].interchainGasPaymaster.getExchangeRateAndGasPrice(
+        remoteId,
+      );
+    expect(seeded.gasPrice.eq(utils.parseUnits('6', 'gwei'))).to.be.true;
+    expect(seeded.tokenExchangeRate.eq(utils.parseUnits('4', 'gwei'))).to.be
+      .true;
   });
 
   it('should wire a per-fee-token gas oracle via setTokenGasOracles', async () => {

@@ -6,6 +6,7 @@ import {
   type DeployedCoreAddresses,
   DeployedCoreAddressesSchema,
   normalizeConfig,
+  withoutExternallyManagedGasOracleValues,
 } from '@humanode-hyperlane/sdk';
 import { diffObjMerge } from '@humanode-hyperlane/utils';
 
@@ -259,9 +260,16 @@ export const check: CommandModuleWithContext<{
     delete expectedCoreConfig.deployQuotedCalls;
     delete expectedCoreConfig.deployInterchainAccountRouter;
 
+    // An externally managed oracle entry's values are its manager's, so the
+    // chain's are not compared with the config's initial ones.
+    const [comparedOnChain, comparedExpected] =
+      withoutExternallyManagedGasOracleValues(
+        onChainCoreConfig,
+        expectedCoreConfig,
+      );
     const { mergedObject, isInvalid } = diffObjMerge(
-      normalizeConfig(onChainCoreConfig),
-      normalizeConfig(expectedCoreConfig),
+      normalizeConfig(comparedOnChain),
+      normalizeConfig(comparedExpected),
     );
 
     if (isInvalid) {

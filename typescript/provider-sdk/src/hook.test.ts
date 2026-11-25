@@ -230,6 +230,23 @@ describe('hook interchainGasPaymaster support', () => {
     });
   });
 
+  it('refuses an externally managed oracle entry', () => {
+    const config = {
+      type: 'interchainGasPaymaster',
+      owner: '0xowner',
+      beneficiary: '0xbeneficiary',
+      oracleKey: '0xoracleKey',
+      overhead: { ethereum: 50000 },
+      oracleConfig: {
+        ethereum: { initialGasPrice: '1', initialTokenExchangeRate: '1' },
+      },
+    } as unknown as HookConfig;
+
+    expect(() => hookConfigToArtifact(config, chainLookup)).to.throw(
+      /managed externally/,
+    );
+  });
+
   it('passes through undefined quoteSigners and contractVersion', () => {
     const config: HookConfig = {
       type: 'interchainGasPaymaster',

@@ -325,6 +325,14 @@ export function hookConfigToArtifact(
           );
           continue;
         }
+        // Alt-VM IGPs take config-managed entries only: an externally managed
+        // one would be deployed and applied as if its initial values were the
+        // config's.
+        if ('initialGasPrice' in value || 'initialTokenExchangeRate' in value) {
+          throw new Error(
+            `The gas oracle for ${chainName} is managed externally (initialGasPrice, initialTokenExchangeRate), which only EVM chains support`,
+          );
+        }
         oracleConfig[domainId] = value;
       }
 

@@ -24,6 +24,8 @@ import { ChainName } from '../types.js';
 
 import { IgpFactories, igpFactories } from './contracts.js';
 import {
+  gasOracleConfigValues,
+  isExternallyManagedGasOracleConfig,
   oracleConfigToOracleData,
   serializeDifference,
 } from './oracle/types.js';
@@ -206,7 +208,7 @@ export class HyperlaneIgpDeployer extends HyperlaneDeployer<
     const configsToSet: Array<StorageGasOracle.RemoteGasDataConfigStruct> = [];
 
     // For each remote, check if the gas oracle has the correct data
-    for (const [remote, desired] of Object.entries(oracleConfig)) {
+    for (const [remote, entry] of Object.entries(oracleConfig)) {
       // TODO: add back support for non-EVM remotes.
       // Previously would check core metadata for non EVMs and fallback to multiprovider for custom EVMs
       const remoteDomain = this.multiProvider.tryGetDomainId(remote);
@@ -219,6 +221,19 @@ export class HyperlaneIgpDeployer extends HyperlaneDeployer<
 
       const actual = await gasOracle.remoteGasData(remoteDomain);
 
+      // An externally managed entry is only seeded: once it holds a value,
+      // the value is its manager's.
+      if (
+        isExternallyManagedGasOracleConfig(entry) &&
+        !(actual.gasPrice.isZero() && actual.tokenExchangeRate.isZero())
+      ) {
+        this.logger.info(
+          `${chain} -> ${remote}: managed externally, left as it is`,
+        );
+        continue;
+      }
+
+      const desired = gasOracleConfigValues(entry);
       const desiredData = oracleConfigToOracleData(desired);
 
       if (
