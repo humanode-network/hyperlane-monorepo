@@ -1,7 +1,6 @@
 import { useChain, useChains } from '@cosmos-kit/react';
 import { useMemo } from 'react';
 
-import { cosmoshub } from '@humanode-hyperlane/registry';
 import type { ChainMetadata } from '@humanode-hyperlane/sdk/metadata/chainMetadataTypes';
 import type { MinimalProviderRegistry } from '@humanode-hyperlane/sdk/providers/MinimalProviderRegistry';
 import type { ChainName } from '@humanode-hyperlane/sdk/types';
@@ -9,6 +8,7 @@ import { HexString, ProtocolType, ensure0x } from '@humanode-hyperlane/utils';
 
 import { widgetLogger } from '../logger.js';
 
+import { COSMOS_PLACEHOLDER_CHAIN } from './cosmosPlaceholderChain.js';
 import type {
   AccountInfo,
   ActiveChainInfo,
@@ -17,7 +17,7 @@ import type {
 } from './types.js';
 import { getChainsForProtocol } from './utils.js';
 
-const PLACEHOLDER_COSMOS_CHAIN = cosmoshub.name;
+const PLACEHOLDER_COSMOS_CHAIN = COSMOS_PLACEHOLDER_CHAIN.name;
 const logger = widgetLogger.child({
   module: 'widgets/walletIntegrations/cosmosWallet',
 });
@@ -102,8 +102,8 @@ export function getCosmosChains(
     ...getChainsForProtocol(multiProvider, ProtocolType.Cosmos),
     ...getChainsForProtocol(multiProvider, ProtocolType.CosmosNative),
   ];
-  if (!chains.some((chain) => chain.name === cosmoshub.name)) {
-    chains.push(cosmoshub);
+  if (!chains.some((chain) => chain.name === COSMOS_PLACEHOLDER_CHAIN.name)) {
+    chains.push(COSMOS_PLACEHOLDER_CHAIN);
   }
   return chains;
 }

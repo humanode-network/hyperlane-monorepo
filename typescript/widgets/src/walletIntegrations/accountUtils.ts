@@ -1,4 +1,3 @@
-import { cosmoshub } from '@humanode-hyperlane/registry';
 import type { MinimalProviderRegistry } from '@humanode-hyperlane/sdk/providers/MinimalProviderRegistry';
 import type { ChainName } from '@humanode-hyperlane/sdk/types';
 import {
@@ -8,6 +7,7 @@ import {
   ProtocolType,
 } from '@humanode-hyperlane/utils';
 
+import { COSMOS_PLACEHOLDER_CHAIN } from './cosmosPlaceholderChain.js';
 import type { AccountInfo } from './types.js';
 import { getAddressForChain } from './walletAddresses.js';
 
@@ -49,8 +49,9 @@ export function getAddressFromAccountAndChain(
     // for the cosmos hub address as fallback
     return (
       cosmosAddress ??
-      account?.addresses?.find((a) => a.chainName === cosmoshub.name)
-        ?.address ??
+      account?.addresses?.find(
+        (a) => a.chainName === COSMOS_PLACEHOLDER_CHAIN.name,
+      )?.address ??
       'Unknown'
     );
   }
