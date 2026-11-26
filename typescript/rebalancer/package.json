@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/rebalancer",
-  "version": "1029.1.1",
+  "version": "1029.1.2",
   "description": "Hyperlane Warp Route Collateral Rebalancer Service",
   "keywords": [
     "blockchain",

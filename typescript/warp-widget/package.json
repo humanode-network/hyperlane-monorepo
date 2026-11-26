@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/warp-widget",
-  "version": "1002.0.1",
+  "version": "1002.0.2",
   "description": "Embed the Hyperlane Warp bridge widget in any web app",
   "keywords": [
     "Bridge",

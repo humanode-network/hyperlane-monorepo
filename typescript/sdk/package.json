@@ -1,6 +1,6 @@
 {
   "name": "@humanode-hyperlane/sdk",
-  "version": "1045.2.5",
+  "version": "1045.2.6",
   "description": "The official SDK for the Hyperlane Network",
   "keywords": [
     "Hyperlane",
